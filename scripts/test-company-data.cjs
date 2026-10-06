@@ -33,6 +33,10 @@ function context(key, transform, failed = false) {
   const out = state.nodes.app.innerHTML;
   assert.equal(state.errors.length,0,entry.key);
   assert.ok(out.includes(entry.name),entry.key);
+  for (const id of ["intro","business","annual","quarterly","drivers","glossary"]) {
+   assert.ok(out.includes(`href="#company-${id}"`) && out.includes(`id="company-${id}"`),`${entry.key}/${id}`);
+  }
+  assert.equal((out.match(/class="vertical-chart"/g)||[]).length,4);
   assert.ok(!out.includes("undefined") && !out.includes("NaN"),entry.key);
   assert.equal(JSON.parse(state.storage.get("sianalyRecent"))[0].key,entry.key);
   if (entry.key === "samsung") {
@@ -75,5 +79,9 @@ function context(key, transform, failed = false) {
  assert.ok(failure.nodes.app.innerHTML.includes("다시 시도"));
  const cycle = context("samsung",data=>{if(data.profile?.key === "samsung") data.financials={companyRef:"samsungpref"};});
  await assert.rejects(vm.runInContext("loadCompanyData('samsung')",cycle.ctx),/순환/);
+ const loss = context("sksquare");
+ await vm.runInContext(script,loss.ctx);
+ assert.ok(loss.nodes.app.innerHTML.includes('fill="#dc2626"'));
+ assert.ok(loss.nodes.app.innerHTML.includes("영업손실은 0선 아래"));
  console.log("Passed: all 5 pages, shared financials, future periods, invalid keys, load failure and circular references.");
 })().catch(error=>{console.error(error);process.exitCode=1;});

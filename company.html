@@ -23,6 +23,7 @@ table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px s
 @media(max-width:1050px){.layout{grid-template-columns:1fr}.side{position:static}.recent{display:none}}@media(max-width:650px){.nums,.grid,.valuation-row,.glossary{grid-template-columns:1fr}.hero h1{font-size:34px}.bars{gap:8px}.bar{width:70%}}
 .metric-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}.metric-panel{margin:0;padding:20px;background:#f8fafc;border-radius:14px}.metric-panel figcaption{font-size:16px;font-weight:800;margin-bottom:5px}.metric-help{font-size:12px;color:#6b7280;line-height:1.6;margin:0 0 18px}.metric-row{display:grid;grid-template-columns:76px minmax(0,1fr) 58px;gap:10px;align-items:center;margin:16px 0;font-size:12px}.metric-period{color:#4b5563}.metric-track{height:16px;border-left:1px solid #cbd5e1;background:#e8edf3;border-radius:0 4px 4px 0;overflow:hidden}.metric-fill{height:100%;background:#2563eb;border-radius:0 4px 4px 0}.metric-fill.profit{background:#111827}.metric-value{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}.metric-scale{display:flex;justify-content:space-between;margin:0 68px 0 86px;font-size:11px;color:#6b7280}.chart-reading{font-size:12px;color:#6b7280;line-height:1.7;margin:14px 0 0}.financial-basis{font-size:12px;color:#6b7280;line-height:1.7}.source-links{font-size:12px;color:#6b7280;line-height:1.8;margin-top:18px}.source-links a{color:#2563eb;text-decoration:underline;text-underline-offset:3px}.source-links ul{padding-left:18px;margin:5px 0}.hero .source-links,.hero .source-links a{color:#cbd5e1}.samsung-page .take{line-height:1.7}.samsung-page .title{line-height:1.4}.samsung-page th,.samsung-page td{font-variant-numeric:tabular-nums}.samsung-page .hero .nums{grid-template-columns:repeat(2,1fr)}
 @media(max-width:650px){.metric-charts{grid-template-columns:1fr}.samsung-page .hero .nums{grid-template-columns:1fr}.samsung-page section{padding:22px 18px}.samsung-page .hero{padding:26px 22px}.metric-panel{padding:16px}.metric-row{grid-template-columns:68px minmax(0,1fr) 52px;gap:8px}.metric-scale{margin-left:76px;margin-right:60px}.samsung-page main{padding-left:12px;padding-right:12px}.samsung-page .title{font-size:24px}}
+html{scroll-behavior:smooth}.section-toc{position:sticky;top:10px;z-index:10;background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:14px 18px;margin-bottom:18px;box-shadow:0 3px 12px #00000006}.section-toc strong{display:block;font-size:13px;color:#4b5563;margin-bottom:10px}.toc-links{display:flex;gap:8px;flex-wrap:wrap}.toc-links a{display:block;border-radius:8px;padding:7px 11px;background:#f8fafc;color:#374151;font-size:13px;line-height:1.4}.toc-links a:hover,.toc-links a:focus-visible{background:#eff6ff;color:#2563eb}.content section[id]{scroll-margin-top:135px}.vertical-chart{display:block;width:100%;height:auto}.vertical-chart .axis-label{fill:#6b7280;font-size:15px}.vertical-chart .value-label{fill:#374151;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums}@media(max-width:650px){.content section[id]{scroll-margin-top:180px}.section-toc{padding:12px 14px}.toc-links a{font-size:12px;padding:6px 9px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head>
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><a href="index.html">← 기업 검색</a></header>
@@ -63,42 +64,31 @@ function sourceLinks(ids){
  return `<div class="source-links"><b>공식 자료</b><ul>${ids.map(id=>{const s=c.sourceLinks[id];return `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a> · 발표 ${esc(s.published)}</li>`}).join("")}</ul><span>확인일: ${esc(c.verifiedAt)}</span></div>`;
 }
 function comparisonChart(rows){
- const metrics=[{field:"sales",title:"매출",help:"제품과 서비스를 팔아 얻은 전체 금액",className:""},{field:"op",title:"영업이익",help:"제품을 만드는 비용과 판매·관리 비용 등을 뺀 본업의 이익",className:"profit"}];
+ const metrics=[{field:"sales",title:"매출",help:"제품과 서비스를 팔아 얻은 전체 금액",color:"#2563eb"},{field:"op",title:"영업이익",help:"제품을 만드는 비용과 판매·관리 비용 등을 뺀 본업의 이익",color:"#111827"}];
  return `<div class="metric-charts">${metrics.map(m=>{
- const max=Math.max(...rows.map(r=>r[m.field]),0);
- const scale=Math.max(1,Math.ceil(max/10)*10);
- return `<figure class="metric-panel"><figcaption>${m.title}</figcaption><p class="metric-help">${m.help}</p>${rows.map(r=>`<div class="metric-row"><span class="metric-period">${esc(r.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"))}</span><div class="metric-track" aria-hidden="true"><div class="metric-fill ${m.className}" style="width:${r[m.field]/scale*100}%"></div></div><span class="metric-value">${r[m.field].toFixed(1)}</span></div>`).join("")}<div class="metric-scale"><span>0</span><span>${scale}조원</span></div></figure>`;
- }).join("")}</div><p class="chart-reading">각 그래프는 0에서 시작합니다. 매출과 영업이익은 눈금이 다르므로, 같은 그래프 안에서 기간별 변화를 비교해 주세요. 그래프는 소수 첫째 자리로 반올림했습니다.</p>`;
+  const values=rows.map(r=>r[m.field]), highest=Math.max(...values,0), lowest=Math.min(...values,0);
+  const magnitude=Math.pow(10,Math.floor(Math.log10(Math.max(highest,Math.abs(lowest),0.1)))), step=magnitude/2;
+  const upper=Math.max(step,Math.ceil(highest/step)*step), lower=lowest<0?Math.floor(lowest/step)*step:0;
+  const left=45, right=350, top=28, bottom=208, y=value=>bottom-(value-lower)/(upper-lower)*(bottom-top), zero=y(0);
+  const ticks=[...new Set([upper,upper/2,0,...(lower<0?[lower]:[])])];
+  const slots=(right-left)/Math.max(rows.length,1), width=Math.min(48,slots*0.5);
+  const labels=rows.map(r=>`${r.quarter?r.quarter+"분기":r.period}: ${r[m.field]}조원`).join(", ");
+  return `<figure class="metric-panel"><figcaption>${m.title}</figcaption><p class="metric-help">${m.help}</p><svg class="vertical-chart" viewBox="0 0 370 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
+  ${ticks.map(value=>`<line x1="${left}" y1="${y(value)}" x2="${right}" y2="${y(value)}" stroke="${value===0?"#94a3b8":"#e2e8f0"}"/><text x="${left-8}" y="${y(value)+4}" text-anchor="end" class="axis-label">${value.toFixed(1)}</text>`).join("")}
+  <text x="${left}" y="12" class="axis-label">단위: 조원</text>
+  ${rows.map((r,i)=>{const value=r[m.field],x=left+slots*(i+0.5),pos=y(value);return `<rect x="${x-width/2}" y="${Math.min(pos,zero)}" width="${width}" height="${Math.abs(zero-pos)}" rx="3" fill="${value<0?"#dc2626":m.color}"/><text x="${x}" y="${value<0?pos+15:pos-8}" text-anchor="middle" class="value-label">${value.toFixed(1)}</text><text x="${x}" y="238" text-anchor="middle" class="axis-label">${esc(r.quarter?r.quarter+"분기":r.period)}</text>`}).join("")}
+  </svg></figure>`;
+ }).join("")}</div><p class="chart-reading">매출과 영업이익은 눈금이 다르므로 같은 그래프 안에서 기간별 변화를 비교해 주세요. 표시 값은 소수 첫째 자리로 반올림했습니다.${rows.some(r=>r.op<0)?" 영업손실은 0선 아래에 표시합니다.":""}</p>`;
 }
-function maxFor(rows,field){return Math.max(...rows.map(x=>Math.abs(x[field])),0.0001);}
-function chart(rows){
- const maxS=maxFor(rows,"sales"),maxO=maxFor(rows,"op");
- return `<div class="chart">
- <div class="chart-head"><strong>연간/분기 실적 흐름</strong><span class="chart-unit">단위: 조원</span></div>
- <div class="bars">${rows.map(x=>{
-   const sh=Math.max(3,x.sales/maxS*180), oh=Math.max(3,Math.abs(x.op)/maxO*180);
-   return `<div class="bar-col"><div class="bar-value">${x.sales.toFixed(1)}</div><div class="bar" style="height:${sh}px"></div><div class="bar-label">${esc(x.period)}</div></div>`;
- }).join("")}</div>
- <div class="legend"><span><i class="dot sales"></i>매출</span><span><i class="dot op"></i>영업이익</span></div>
- </div>`;
-}
-function twoMetricChart(rows){
- const maxS=maxFor(rows,"sales"), maxO=maxFor(rows,"op");
- return `<div class="chart">
- <div class="chart-head"><strong>기간별 매출·영업이익</strong><span class="chart-unit">단위: 조원</span></div>
- <div class="bars">${rows.flatMap(x=>{
-   const sh=Math.max(3,Math.abs(x.sales)/maxS*180), oh=Math.max(3,Math.abs(x.op)/maxO*180);
-   return [`<div class="bar-col"><div class="bar-value">${x.sales.toFixed(1)}</div><div class="bar" style="height:${sh}px"></div><div class="bar-label">${esc(x.period)}</div></div>`,
-           `<div class="bar-col"><div class="bar-value">${x.op.toFixed(1)}</div><div class="bar op" style="height:${oh}px"></div><div class="bar-label">영업익</div></div>`];
- }).join("")}</div>
- <div class="legend"><span><i class="dot sales"></i>매출</span><span><i class="dot op"></i>영업이익</span></div></div>`;
-}
+function chart(rows){return comparisonChart(rows)}
+function twoMetricChart(rows){return comparisonChart(rows)}
 if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>';}
 else{
  const tableUnit=c.presentation.tableNumbersOnly?"":"조원";
  const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${x.sales}${tableUnit}</td><td>${x.op}${tableUnit}</td></tr>`).join("");
  const q=c.quarterly.map(x=>`<tr><td>${esc(c.presentation.tableNumbersOnly?`${x.quarter}분기`:compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${x.sales}${tableUnit}</td><td>${x.op}${tableUnit}</td></tr>`).join("");
  app.innerHTML=`
+ <nav class="section-toc" aria-label="기업 분석 목차"><strong>목차</strong><div class="toc-links"><a href="#company-intro">기업 소개</a><a href="#company-business">주요 사업</a><a href="#company-annual">연간 실적</a><a href="#company-quarterly">분기 실적</a><a href="#company-drivers">핵심 변수</a><a href="#company-glossary">용어 설명</a></div></nav>
  <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
  <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}영업이익</small><strong>${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
 
@@ -108,22 +98,22 @@ else{
  <div class="vcard"><span>PBR</span><strong>${c.pbr}</strong><small>기준일 데이터</small></div></div>
  <p class="note">※ PER·PBR은 데이터 제공처의 산식과 기준일에 따라 달라질 수 있습니다. SIANALY는 이를 매수·매도 판단으로 해석하지 않습니다.</p></section>`}
 
- <section>${compact?"":`<div class="blue">01 · 처음 보는 사람을 위한 5줄</div>`}<div class="title">${compact?`${c.name} 한눈에 보기`:`${c.name}을 한눈에`}</div>${compact?"":`<div class="desc">${c.summary}</div>`}
+ <section id="company-intro">${compact?"":`<div class="blue">01 · 처음 보는 사람을 위한 5줄</div>`}<div class="title">${compact?`${c.name} 한눈에 보기`:`${c.name}을 한눈에`}</div>${compact?"":`<div class="desc">${c.summary}</div>`}
  ${c.takeaways.map((x,i)=>`<div class="take"><b>${i+1}</b><span>${x}</span></div>`).join("")}</section>
 
- <section>${compact?"":`<div class="blue">02 · 돈은 어디서 벌까?</div>`}<div class="title">주요 사업</div><div class="desc">어떤 사업이 이 회사의 매출과 이익을 만드는지 봅니다.</div>
+ <section id="company-business">${compact?"":`<div class="blue">02 · 돈은 어디서 벌까?</div>`}<div class="title">주요 사업</div><div class="desc">어떤 사업이 이 회사의 매출과 이익을 만드는지 봅니다.</div>
  <div class="grid">${c.business.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.name}</h3><p>${x.desc}</p></div>`).join("")}</div>${sourceLinks(c.sectionSourceIds.business || [])}</section>
 
- <section>${compact?"":`<div class="blue">03 · 실적은 어떻게 변했을까?</div>`}<div class="title">연간 실적 그래프</div><div class="desc">과거에서 최신 연간 실적으로 갈수록 매출과 영업이익이 어떻게 움직였는지 한눈에 봅니다.</div>
+ <section id="company-annual">${compact?"":`<div class="blue">03 · 실적은 어떻게 변했을까?</div>`}<div class="title">연간 실적 그래프</div><div class="desc">과거에서 최신 연간 실적으로 갈수록 매출과 영업이익이 어떻게 움직였는지 한눈에 봅니다.</div>
  ${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 연도 1–12월</div>${comparison?comparisonChart(c.annual):chart(c.annual)}`:chart(c.annual)}<table style="margin-top:24px" aria-label="연간 매출과 영업이익"><thead><tr><th scope="col">기간</th><th scope="col">매출</th><th scope="col">영업이익</th></tr></thead><tbody>${annual}</tbody></table>${compact?`${c.latestNet?`<p class="financial-basis">${c.latestYear}년 당기순이익: ${esc(c.latestNet)} · 본업의 이익에 금융손익·세금 등을 반영한 최종 이익입니다.</p>`:""}${sourceLinks(c.annualSourceIds)}`:""}</section>
 
- <section>${compact?"":`<div class="blue">04 · ${c.quarterlyYear}년 현재는?</div>`}<div class="title">${c.quarterlyYear} 분기 실적 그래프</div><div class="desc">최근 분기 실적이 어느 방향으로 움직이는지 봅니다.</div>
+ <section id="company-quarterly">${compact?"":`<div class="blue">04 · ${c.quarterlyYear}년 현재는?</div>`}<div class="title">${c.quarterlyYear} 분기 실적 그래프</div><div class="desc">최근 분기 실적이 어느 방향으로 움직이는지 봅니다.</div>
  ${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 분기 3개월 실적(누적 아님)</div>${comparison?comparisonChart(c.quarterly):twoMetricChart(c.quarterly)}`:twoMetricChart(c.quarterly)}<table style="margin-top:24px" aria-label="분기 매출과 영업이익"><thead><tr><th scope="col">기간</th><th scope="col">매출</th><th scope="col">영업이익</th></tr></thead><tbody>${q}</tbody></table>${compact?`<p class="financial-basis">1분기: 1–3월 · 2분기: 4–6월<br>공식 자료에서 확인한 ${c.latestQuarter.year}년 ${c.latestQuarter.quarter}분기까지 표시합니다. 신제품 출시와 계절적 수요도 분기 실적에 영향을 줍니다.</p>${sourceLinks(c.quarterlySourceIds)}`:""}</section>
 
- <section>${compact?"":`<div class="blue">05 · 무엇이 실적을 움직일까?</div>`}<div class="title">핵심 변수</div><div class="desc">실적에 영향을 주는 요소를 쉽게 연결해서 봅니다.</div>
+ <section id="company-drivers">${compact?"":`<div class="blue">05 · 무엇이 실적을 움직일까?</div>`}<div class="title">핵심 변수</div><div class="desc">실적에 영향을 주는 요소를 쉽게 연결해서 봅니다.</div>
  <div class="grid">${c.drivers.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.title}</h3><p>${x.desc}</p></div>`).join("")}</div>
  ${compact?sourceLinks(c.sectionSourceIds.drivers || []):`<div class="source"><b>데이터 출처</b><br>${c.sources.join(" · ")}<br>주가·시가총액·PER·PBR 기준일: ${c.marketDate}</div>`}</section>
- <section><div class="blue">용어 쉽게 보기</div><div class="title">어려운 단어, 짧게 이해하기</div><div class="desc">이 페이지에서 자주 나오는 용어만 간단히 설명합니다.</div>
+ <section id="company-glossary"><div class="blue">용어 쉽게 보기</div><div class="title">어려운 단어, 짧게 이해하기</div><div class="desc">이 페이지에서 자주 나오는 용어만 간단히 설명합니다.</div>
  <div class="glossary">${compact?c.glossary.map(t=>`<div class="term"><b>${esc(t.name)}</b><span>${esc(t.desc)}</span></div>`).join(""):`
   <div class="term"><b>PER</b><span>주가가 회사의 이익에 비해 어느 정도 수준인지 보는 지표입니다.</span></div>
   <div class="term"><b>PBR</b><span>주가가 회사의 순자산에 비해 어느 정도 수준인지 보는 지표입니다.</span></div>
