@@ -74,7 +74,7 @@ function comparisonChart(rows){
   const ticks=[...new Set([upper,upper/2,0,...(lower<0?[lower]:[])])];
   const slots=(right-left)/Math.max(rows.length,1), width=Math.min(48,slots*0.5);
   const labels=rows.map(r=>`${r.quarter?r.quarter+"분기":r.period}: ${r[m.field]}조원`).join(", ");
-  return `<figure class="metric-panel"><figcaption>${m.title}</figcaption><p class="metric-help">${m.help}</p><svg class="vertical-chart" viewBox="0 0 370 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
+  return `<figure class="metric-panel"><figcaption>${m.title}</figcaption><svg class="vertical-chart" viewBox="0 0 370 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
   ${ticks.map(value=>`<line x1="${left}" y1="${y(value)}" x2="${right}" y2="${y(value)}" stroke="${value===0?"#94a3b8":"#e2e8f0"}"/><text x="${left-8}" y="${y(value)+4}" text-anchor="end" class="axis-label">${value.toFixed(1)}</text>`).join("")}
   <text x="${left}" y="12" class="axis-label">단위: 조원</text>
   ${rows.map((r,i)=>{const value=r[m.field],x=left+slots*(i+0.5),pos=y(value);return `<rect x="${x-width/2}" y="${Math.min(pos,zero)}" width="${width}" height="${Math.abs(zero-pos)}" rx="3" fill="${value<0?"#dc2626":m.color}"/><text x="${x}" y="${value<0?pos+15:pos-8}" text-anchor="middle" class="value-label">${value.toFixed(1)}</text><text x="${x}" y="238" text-anchor="middle" class="axis-label">${esc(r.quarter?r.quarter+"분기":r.period)}</text>`}).join("")}
