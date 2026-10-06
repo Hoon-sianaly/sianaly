@@ -43,11 +43,11 @@ function context(key, transform, failed = false) {
   assert.ok(out.includes("공식 자료") && !out.includes("발표 null"),entry.key);
   if (entry.key === "sksquare") {
    assert.ok(out.includes("지분법 이익이 포함") && out.includes("재작성 수치"));
-   assert.ok(out.includes("1.6499</td>") && out.includes("19.2354</td>"));
+   assert.ok(out.includes("1.6</td>") && out.includes("19.2</td>"));
   }
   if (entry.key === "samsungel") {
    assert.ok(out.includes("자료 기준 2025년 연간까지"));
-   assert.ok(out.includes("11.3145</td>") && out.includes("0.4404</td>"));
+   assert.ok(out.includes("11.3</td>") && out.includes("0.4</td>"));
    assert.ok(out.includes("패키지솔루션") && !out.includes("<h3>4. 전장"));
   }
   if (entry.key === "samsungpref") {
@@ -62,7 +62,7 @@ function context(key, transform, failed = false) {
   if (entry.key === "hynix") {
    assert.equal((out.match(/metric-panel/g)||[]).length,4);
    assert.ok(out.includes("97.1조원") && out.includes("47.2조원"));
-   assert.ok(out.includes("97.1467</td>") && out.includes("79.3187</td>"));
+   assert.ok(out.includes("97.1</td>") && out.includes("79.3</td>"));
    assert.ok(out.includes("SK하이닉스 공식 연간 실적 자료"));
    assert.ok(!out.includes("삼성전자 공식 연간 실적 자료"));
    assert.ok(!out.includes("주가와 밸류에이션"));

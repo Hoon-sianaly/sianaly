@@ -32,9 +32,7 @@ async function loadCompanyRecord(key, ancestors = []) {
 
 function formatFinancialHighlight(value, style) {
  if (value == null) return "-";
- if (style !== "mixed") return `${value.toFixed(1)}조원`;
- const amount = Math.round(Math.abs(value)*10000), trillions = Math.floor(amount/10000), remainder = amount%10000;
- return `${value < 0 ? "-" : ""}${trillions ? `${trillions}조` : ""}${trillions && remainder ? " " : ""}${remainder ? `${remainder.toLocaleString("ko-KR")}억` : ""}원`;
+ return `${value.toFixed(1)}조원`;
 }
 
 function companyPageData(record) {

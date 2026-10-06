@@ -79,19 +79,20 @@ function comparisonChart(rows){
   <text x="${left}" y="12" class="axis-label">단위: 조원</text>
   ${rows.map((r,i)=>{const value=r[m.field],x=left+slots*(i+0.5),pos=y(value);return `<rect x="${x-width/2}" y="${Math.min(pos,zero)}" width="${width}" height="${Math.abs(zero-pos)}" rx="3" fill="${value<0?"#dc2626":m.color}"/><text x="${x}" y="${value<0?pos+15:pos-8}" text-anchor="middle" class="value-label">${value.toFixed(1)}</text><text x="${x}" y="238" text-anchor="middle" class="axis-label">${esc(r.quarter?r.quarter+"분기":r.period)}</text>`}).join("")}
   </svg></figure>`;
- }).join("")}</div><p class="chart-reading">매출과 영업이익은 눈금이 다르므로 같은 그래프 안에서 기간별 변화를 비교해 주세요. 표시 값은 소수 첫째 자리로 반올림했습니다.${rows.some(r=>r.op<0)?" 영업손실은 0선 아래에 표시합니다.":""}</p>`;
+ }).join("")}</div><p class="chart-reading">매출과 영업이익은 눈금이 다르므로 같은 그래프 안에서 기간별 변화를 비교해 주세요. 그래프와 표의 표시값은 소수점 첫째 자리에서 반올림했습니다.${rows.some(r=>r.op<0)?" 영업손실은 0선 아래에 표시합니다.":""}</p>`;
 }
 function chart(rows){return comparisonChart(rows)}
 function twoMetricChart(rows){return comparisonChart(rows)}
 if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>';}
 else{
  const tableUnit=c.presentation.tableNumbersOnly?"":"조원";
- const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${x.sales}${tableUnit}</td><td>${x.op}${tableUnit}</td></tr>`).join("");
- const q=c.quarterly.map(x=>`<tr><td>${esc(c.presentation.tableNumbersOnly?`${x.quarter}분기`:compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${x.sales}${tableUnit}</td><td>${x.op}${tableUnit}</td></tr>`).join("");
+ const displayNumber=value=>`${Number(value).toFixed(1)}${tableUnit}`;
+ const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
+ const q=c.quarterly.map(x=>`<tr><td>${esc(c.presentation.tableNumbersOnly?`${x.quarter}분기`:compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
  app.innerHTML=`
  <nav class="section-toc" aria-label="기업 분석 목차"><strong>목차</strong><div class="toc-links"><a href="#company-intro">기업 소개</a><a href="#company-business">주요 사업</a><a href="#company-annual">연간 실적</a><a href="#company-quarterly">분기 실적</a><a href="#company-drivers">핵심 변수</a><a href="#company-glossary">용어 설명</a></div></nav>
  <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
- <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}영업이익</small><strong>${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
+ <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}매출</small><strong>약 ${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}영업이익</small><strong>약 ${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
 
  ${compact?"":` <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
  <div class="valuation-row"><div class="vcard"><span>종가</span><strong>${c.price}</strong><small>${c.marketDate} 기준</small></div>
