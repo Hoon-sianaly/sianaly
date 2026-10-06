@@ -78,13 +78,13 @@ else{
  const q=c.q2026.map(x=>`<tr><td>${esc(x.period)}</td><td>${x.sales}조원</td><td>${x.op}조원</td></tr>`).join("");
  app.innerHTML=`
  <div class="hero"><div class="tag">국내 시총 ${c.rank}위 · ${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
- <div class="nums"><div class="num"><small>${c.latestYear} 매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} 영업이익</small><strong>${c.latestOp}</strong></div><div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div></div></div>
+ <div class="nums"><div class="num"><small>${c.latestYear} 매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} 영업이익</small><strong>${c.latestOp}</strong></div>${key==="samsung"?`<div class="num"><small>2025 당기순이익</small><strong>45.2조원</strong><small>연결 기준</small></div>`:`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div></div>
 
- <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
+ ${key==="samsung"?"":` <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
  <div class="valuation-row"><div class="vcard"><span>종가</span><strong>${c.price}</strong><small>${c.marketDate} 기준</small></div>
  <div class="vcard"><span>PER</span><strong>${c.per}</strong><small>기준일 데이터</small></div>
  <div class="vcard"><span>PBR</span><strong>${c.pbr}</strong><small>기준일 데이터</small></div></div>
- <p class="note">※ PER·PBR은 데이터 제공처의 산식과 기준일에 따라 달라질 수 있습니다. SIANALY는 이를 매수·매도 판단으로 해석하지 않습니다.</p></section>
+ <p class="note">※ PER·PBR은 데이터 제공처의 산식과 기준일에 따라 달라질 수 있습니다. SIANALY는 이를 매수·매도 판단으로 해석하지 않습니다.</p></section>`}
 
  <section><div class="blue">01 · 처음 보는 사람을 위한 5줄</div><div class="title">${c.name}을 한눈에</div><div class="desc">${c.summary}</div>
  ${c.takeaways.map((x,i)=>`<div class="take"><b>${i+1}</b><span>${x}</span></div>`).join("")}</section>
@@ -100,7 +100,7 @@ else{
 
  <section><div class="blue">05 · 무엇이 실적을 움직일까?</div><div class="title">핵심 변수</div><div class="desc">실적에 영향을 주는 요소를 쉽게 연결해서 봅니다.</div>
  <div class="grid">${c.drivers.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.title}</h3><p>${x.desc}</p></div>`).join("")}</div>
- <div class="source"><b>데이터 출처</b><br>${c.sources.join(" · ")}<br>주가·시가총액·PER·PBR 기준일: ${c.marketDate}</div></section>
+ <div class="source"><b>데이터 출처</b><br>${c.sources.join(" · ")}${key==="samsung"?"":`<br>주가·시가총액·PER·PBR 기준일: ${c.marketDate}`}</div></section>
  <section><div class="blue">용어 쉽게 보기</div><div class="title">어려운 단어, 짧게 이해하기</div><div class="desc">이 페이지에서 자주 나오는 용어만 간단히 설명합니다.</div>
  <div class="glossary">
   <div class="term"><b>PER</b><span>주가가 회사의 이익에 비해 어느 정도 수준인지 보는 지표입니다.</span></div>
