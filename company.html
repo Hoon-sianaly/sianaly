@@ -7,7 +7,7 @@
 *{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#111827;font-family:Arial,"Noto Sans KR",sans-serif}
 header{height:70px;background:#fff;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;padding:0 7%}
 .logo{font-size:25px;font-weight:800}.logo span{color:#2563eb}a{text-decoration:none;color:#6b7280}
-main{max-width:1080px;margin:auto;padding:45px 20px 80px}.hero{background:#111827;color:#fff;border-radius:24px;padding:35px}
+main{max-width:1380px;margin:auto;padding:45px 20px 80px}.layout{display:grid;grid-template-columns:minmax(0,1080px) 260px;gap:22px;align-items:start}.content{min-width:0}.side{position:sticky;top:20px}.recent{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:18px}.recent h3{margin:0 0 5px;font-size:16px}.recent-sub{font-size:12px;color:#9ca3af;margin-bottom:12px}.recent-item{display:block;padding:11px 0;border-top:1px solid #f0f1f3;color:#111827}.recent-item:first-of-type{border-top:0}.recent-item b{display:block;font-size:14px}.recent-item span{font-size:11px;color:#9ca3af}.recent-empty{font-size:12px;color:#9ca3af;line-height:1.6;padding-top:6px}.hero{background:#111827;color:#fff;border-radius:24px;padding:35px}
 .tag{color:#93c5fd;font-size:13px;font-weight:800}.hero h1{font-size:42px;margin:10px 0}.hero p{color:#d1d5db;line-height:1.6}
 .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.num{background:#ffffff12;padding:16px;border-radius:13px}.num small{color:#cbd5e1}.num strong{display:block;font-size:23px;margin:5px 0}
 section{background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:28px;margin-top:18px}
@@ -19,16 +19,24 @@ table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px s
 .chart{margin-top:18px}.chart-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:12px}.chart-head strong{font-size:15px}.chart-unit{font-size:11px;color:#9ca3af}
 .bars{height:240px;display:flex;align-items:flex-end;gap:16px;border-bottom:1px solid #d1d5db;padding:0 10px 0}.bar-col{height:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:45px}.bar-value{font-size:11px;color:#374151;margin-bottom:5px;white-space:nowrap}.bar{width:58%;max-width:62px;background:#2563eb;border-radius:7px 7px 0 0;min-height:3px}.bar.op{background:#111827}.bar-label{font-size:11px;color:#6b7280;margin-top:8px;white-space:nowrap}
 .legend{display:flex;gap:18px;font-size:12px;color:#6b7280;margin-top:12px}.dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}.dot.sales{background:#2563eb}.dot.op{background:#111827}
-.source{font-size:11px;color:#9ca3af;line-height:1.6;margin-top:16px}.source b{color:#6b7280}.empty{text-align:center;color:#6b7280}
-@media(max-width:650px){.nums,.grid,.valuation-row{grid-template-columns:1fr}.hero h1{font-size:34px}.bars{gap:8px}.bar{width:70%}}
+.source{font-size:11px;color:#9ca3af;line-height:1.6;margin-top:16px}.source b{color:#6b7280}.glossary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.term{background:#f8fafc;border-radius:12px;padding:14px}.term b{display:block;font-size:13px;margin-bottom:5px}.term span{font-size:12px;color:#6b7280;line-height:1.55}.empty{text-align:center;color:#6b7280}
+@media(max-width:1050px){.layout{grid-template-columns:1fr}.side{position:static}.recent{display:none}}@media(max-width:650px){.nums,.grid,.valuation-row,.glossary{grid-template-columns:1fr}.hero h1{font-size:34px}.bars{gap:8px}.bar{width:70%}}
 </style></head>
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><a href="index.html">← 기업 검색</a></header>
-<main id="app"></main>
+<main><div class="layout"><div id="app" class="content"></div><aside class="side"><div class="recent"><h3>최근 본 기업</h3><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div></main>
 <script src="companies.js"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company"), c=companies[key];
 const app=document.getElementById("app");
+const recentList=document.getElementById("recentList");
+function updateRecent(){
+ if(!c)return;
+ let items=[];try{items=JSON.parse(localStorage.getItem("sianalyRecent")||"[]")}catch(e){}
+ items=items.filter(x=>x.key!==key);items.unshift({key,name:c.name,ticker:c.ticker});items=items.slice(0,5);
+ try{localStorage.setItem("sianalyRecent",JSON.stringify(items))}catch(e){}
+ recentList.innerHTML=items.length?items.map(x=>`<a class="recent-item" href="company.html?company=${encodeURIComponent(x.key)}"><b>${esc(x.name)}</b><span>${esc(x.ticker)}</span></a>`).join(""):'<div class="recent-empty">아직 본 기업이 없습니다.</div>';
+}
 const esc=v=>String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 function maxFor(rows,field){return Math.max(...rows.map(x=>Math.abs(x[field])),0.0001);}
 function chart(rows){
@@ -82,6 +90,16 @@ else{
  <section><div class="blue">05 · 무엇이 실적을 움직일까?</div><div class="title">핵심 변수</div><div class="desc">실적에 영향을 주는 요소를 쉽게 연결해서 봅니다.</div>
  <div class="grid">${c.drivers.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.title}</h3><p>${x.desc}</p></div>`).join("")}</div>
  <div class="source"><b>데이터 출처</b><br>${c.sources.join(" · ")}<br>주가·시가총액·PER·PBR 기준일: ${c.marketDate}</div></section>
+ <section><div class="blue">용어 쉽게 보기</div><div class="title">어려운 단어, 짧게 이해하기</div><div class="desc">이 페이지에서 자주 나오는 용어만 간단히 설명합니다.</div>
+ <div class="glossary">
+  <div class="term"><b>PER</b><span>주가가 회사의 이익에 비해 어느 정도 수준인지 보는 지표입니다.</span></div>
+  <div class="term"><b>PBR</b><span>주가가 회사의 순자산에 비해 어느 정도 수준인지 보는 지표입니다.</span></div>
+  <div class="term"><b>영업이익</b><span>회사가 본업을 통해 벌어들인 이익을 뜻합니다.</span></div>
+  <div class="term"><b>HBM</b><span>여러 개의 메모리를 쌓아 데이터 처리 속도를 높인 고성능 메모리로, AI 반도체에 많이 사용됩니다.</span></div>
+  <div class="term"><b>DRAM</b><span>PC·스마트폰·서버 등에서 작업 중인 데이터를 빠르게 저장하고 꺼내 쓰는 메모리입니다.</span></div>
+  <div class="term"><b>NAND</b><span>전원이 꺼져도 데이터가 남는 메모리로, SSD와 스마트폰 저장장치 등에 사용됩니다.</span></div>
+ </div></section>
  `;
+ updateRecent();
 }
 </script></body></html>
