@@ -43,7 +43,7 @@ function context(key, transform, failed = false) {
   if (entry.key === "hynix") {
    assert.equal((out.match(/metric-panel/g)||[]).length,4);
    assert.ok(out.includes("97.1조원") && out.includes("47.2조원"));
-   assert.ok(out.includes("97.1467조원") && out.includes("79.3187조원"));
+   assert.ok(out.includes("97.1467</td>") && out.includes("79.3187</td>"));
    assert.ok(out.includes("SK하이닉스 공식 연간 실적 자료"));
    assert.ok(!out.includes("삼성전자 공식 연간 실적 자료"));
    assert.ok(!out.includes("주가와 밸류에이션"));

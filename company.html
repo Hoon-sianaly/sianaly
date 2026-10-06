@@ -95,8 +95,9 @@ function twoMetricChart(rows){
 }
 if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>';}
 else{
- const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${x.sales}조원</td><td>${x.op}조원</td></tr>`).join("");
- const q=c.quarterly.map(x=>`<tr><td>${esc(compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${x.sales}조원</td><td>${x.op}조원</td></tr>`).join("");
+ const tableUnit=c.presentation.tableNumbersOnly?"":"조원";
+ const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${x.sales}${tableUnit}</td><td>${x.op}${tableUnit}</td></tr>`).join("");
+ const q=c.quarterly.map(x=>`<tr><td>${esc(c.presentation.tableNumbersOnly?`${x.quarter}분기`:compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${x.sales}${tableUnit}</td><td>${x.op}${tableUnit}</td></tr>`).join("");
  app.innerHTML=`
  <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
  <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}영업이익</small><strong>${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
