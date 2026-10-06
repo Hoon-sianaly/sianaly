@@ -62,7 +62,7 @@ function validateFinancials(record, seen = []) {
    for (const id of row.sourceIds) {
     const source = record.sources.find(source => source.id === id);
     assert.ok(source, `Missing row source: ${key}/${id}`);
-    if (verified) assert.ok(source.url && source.published && source.verifiedAt, `Incomplete verified source: ${key}/${id}`);
+    if (verified) assert.ok(source.url && (source.published || source.asOf) && source.verifiedAt, `Incomplete verified source: ${key}/${id}`);
    }
   }
  }
