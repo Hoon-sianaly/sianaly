@@ -2,31 +2,46 @@ const companies = {
 samsung:{
 key:"samsung",rank:1,name:"삼성전자",ticker:"005930",type:"종합 전자기업",
 short:"DX·DS·SDC·Harman 사업을 운영하는 글로벌 전자기업",
-summary:"DX(스마트폰·TV·가전 등), DS(메모리·System LSI·Foundry), SDC(디스플레이), Harman(전장·오디오) 사업을 운영하는 글로벌 전자기업입니다.",
+summary:"스마트폰·TV·가전 같은 완제품과 반도체·디스플레이 같은 핵심 부품을 만드는 회사입니다.",
 price:"-",marketCap:"-",per:"-",pbr:"-",marketDate:"-",
 latestSales:"333.6조원",latestOp:"43.6조원",latestYear:"2025",
+latestNet:"45.2조원",verifiedAt:"2026.10.06",financialBasis:"K-IFRS 연결 기준",
+sourceLinks:{
+annual:{label:"2025년 연간 실적발표 자료 · PDF 5–6쪽",url:"https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_conference_eng.pdf",published:"2026.01.29"},
+q1:{label:"2026년 1분기 확정 실적 · 2분기 잠정실적 공지의 비교표",url:"https://news.samsungsemiconductor.com/global/samsung-electronics-announces-earnings-guidance-for-second-quarter-2026/",published:"2026.07.07"},
+q2:{label:"2026년 2분기 실적발표",url:"https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results",published:"2026.07.30"},
+business:{label:"사업별 실적·주요 사업 설명 · PDF 7–12쪽",url:"https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_conference_eng.pdf",published:"2026.01.29"}
+},
+glossary:[
+{name:"매출",desc:"제품과 서비스를 팔아 얻은 전체 금액입니다."},
+{name:"영업이익",desc:"매출에서 제품을 만드는 비용과 판매·관리 비용 등을 뺀 본업의 이익입니다."},
+{name:"HBM",desc:"여러 층의 DRAM을 쌓아 많은 데이터를 빠르게 주고받는 메모리입니다. AI 연산에 쓰입니다."},
+{name:"DRAM · NAND",desc:"DRAM은 작업 중인 데이터를, NAND는 전원이 꺼져도 남아야 하는 데이터를 저장합니다."},
+{name:"파운드리",desc:"다른 회사가 설계한 반도체를 대신 생산하는 사업입니다."},
+{name:"연결 기준",desc:"삼성전자와 종속회사를 하나의 기업처럼 합쳐 계산합니다. 회사 간 내부 거래는 제거합니다."}
+],
 annual:[
 {period:"2023",sales:258.9,op:6.6},{period:"2024",sales:300.9,op:32.7},{period:"2025",sales:333.6,op:43.6}],
 q2026:[
 {period:"1Q 2026",sales:133.87,op:57.23},{period:"2Q 2026",sales:171.50,op:89.50}],
 business:[
-{name:"DS · 반도체",desc:"DRAM·NAND 등 메모리와 System LSI, Foundry 사업을 운영합니다. AI 인프라 확대에 따른 고부가 메모리 수요가 중요한 변수입니다."},
 {name:"DX · 완제품",desc:"스마트폰, TV·모니터, 냉장고·세탁기·에어컨, 네트워크 시스템, 컴퓨터 등 완제품 사업을 담당합니다."},
+{name:"DS · 반도체",desc:"데이터를 저장하는 메모리, 연산·촬영 등에 쓰는 시스템 반도체(System LSI), 다른 회사의 반도체를 대신 생산하는 파운드리 사업을 합니다."},
 {name:"SDC · 디스플레이",desc:"스마트폰용 OLED 패널 등을 중심으로 디스플레이 패널 사업을 운영합니다."},
-{name:"Harman · 전장·오디오",desc:"디지털 콕핏·텔레매틱스 등 전장 제품과 스피커 등 오디오 제품을 개발·생산·판매합니다."}],
+{name:"Harman · 자동차 전자장치·오디오",desc:"자동차의 디지털 계기판·통신 장치와 차량용 오디오, 소비자용 스피커·이어폰 등을 판매합니다."}],
 drivers:[
 {title:"메모리 가격",desc:"DRAM·NAND 가격 변화가 반도체 수익성에 직접 영향을 줍니다."},
-{title:"AI 메모리 수요",desc:"HBM·서버 DRAM·eSSD 등 AI 인프라 관련 수요를 봅니다."},
+{title:"AI 메모리 수요",desc:"AI 서버가 늘면 HBM·서버용 DRAM·저장장치 수요가 커질 수 있습니다. 실제 판매량과 공급 능력도 함께 봅니다."},
 {title:"스마트폰 판매",desc:"갤럭시 신제품과 프리미엄 제품 판매가 DX 실적에 영향을 줍니다."},
 {title:"환율·원가",desc:"부품 원가와 주요 통화 환율도 영업이익 변동에 영향을 줍니다."}],
 takeaways:[
 "삼성전자는 반도체부터 스마트폰·TV·생활가전까지 다양한 전자제품과 핵심 부품을 만드는 글로벌 전자기업입니다.",
 "사업은 크게 완제품을 담당하는 DX와 반도체를 담당하는 DS가 중심이며, 디스플레이와 전장·오디오 사업도 함께 운영합니다.",
-"DS에서는 DRAM·NAND 같은 메모리뿐 아니라 시스템 반도체와 파운드리 사업까지 하고 있습니다.",
+"반도체 사업은 데이터를 저장하는 메모리, 연산 등을 담당하는 시스템 반도체, 다른 회사의 설계를 생산하는 파운드리로 나뉩니다.",
 "DX에서는 갤럭시 스마트폰을 비롯해 TV·모니터·냉장고·세탁기 등 소비자용 제품을 판매합니다.",
-"최근에는 AI 인프라 확대에 따라 HBM을 포함한 고부가 메모리 수요가 삼성전자 실적을 이해할 때 중요한 요소가 되고 있습니다."
+"AI 서버에 쓰이는 HBM 등 고성능 메모리의 수요와 판매, 메모리 가격 변화가 최근 실적에 중요한 영향을 줍니다."
 ],
-sources:["삼성전자 2025 연결재무제표·정기주주총회 공시","삼성전자 2026년 1분기 실적발표","삼성전자 2026년 2분기 실적발표","삼성전자 2026년 반기 사업보고서"]
+sources:["삼성전자 2025년 연간 실적발표 자료","삼성전자 2026년 2분기 잠정실적 공지의 1분기 확정 실적 비교표","삼성전자 2026년 2분기 실적발표"]
 },
 hynix:{
 key:"hynix",rank:2,name:"SK하이닉스",ticker:"000660",type:"메모리 반도체 기업",
