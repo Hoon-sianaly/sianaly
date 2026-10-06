@@ -1,154 +1,72 @@
-const companies = {
-samsung:{
-key:"samsung",rank:1,name:"삼성전자",ticker:"005930",type:"종합 전자기업",
-short:"DX·DS·SDC·Harman 사업을 운영하는 글로벌 전자기업",
-summary:"스마트폰·TV·가전 같은 완제품과 반도체·디스플레이 같은 핵심 부품을 만드는 회사입니다.",
-price:"-",marketCap:"-",per:"-",pbr:"-",marketDate:"-",
-latestSales:"333.6조원",latestOp:"43.6조원",latestYear:"2025",
-latestNet:"45.2조원",verifiedAt:"2026.10.06",financialBasis:"K-IFRS 연결 기준",
-sourceLinks:{
-annual:{label:"2025년 연간 실적발표 자료 · PDF 5–6쪽",url:"https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_conference_eng.pdf",published:"2026.01.29"},
-q1:{label:"2026년 1분기 확정 실적 · 2분기 잠정실적 공지의 비교표",url:"https://news.samsungsemiconductor.com/global/samsung-electronics-announces-earnings-guidance-for-second-quarter-2026/",published:"2026.07.07"},
-q2:{label:"2026년 2분기 실적발표",url:"https://news.samsung.com/global/samsung-electronics-announces-second-quarter-2026-results",published:"2026.07.30"},
-business:{label:"사업별 실적·주요 사업 설명 · PDF 7–12쪽",url:"https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_conference_eng.pdf",published:"2026.01.29"}
-},
-glossary:[
-{name:"매출",desc:"제품과 서비스를 팔아 얻은 전체 금액입니다."},
-{name:"영업이익",desc:"매출에서 제품을 만드는 비용과 판매·관리 비용 등을 뺀 본업의 이익입니다."},
-{name:"HBM",desc:"여러 층의 DRAM을 쌓아 많은 데이터를 빠르게 주고받는 메모리입니다. AI 연산에 쓰입니다."},
-{name:"DRAM · NAND",desc:"DRAM은 작업 중인 데이터를, NAND는 전원이 꺼져도 남아야 하는 데이터를 저장합니다."},
-{name:"파운드리",desc:"다른 회사가 설계한 반도체를 대신 생산하는 사업입니다."},
-{name:"연결 기준",desc:"삼성전자와 종속회사를 하나의 기업처럼 합쳐 계산합니다. 회사 간 내부 거래는 제거합니다."}
-],
-annual:[
-{period:"2023",sales:258.9,op:6.6},{period:"2024",sales:300.9,op:32.7},{period:"2025",sales:333.6,op:43.6}],
-q2026:[
-{period:"1Q 2026",sales:133.87,op:57.23},{period:"2Q 2026",sales:171.50,op:89.50}],
-business:[
-{name:"DX · 완제품",desc:"스마트폰, TV·모니터, 냉장고·세탁기·에어컨, 네트워크 시스템, 컴퓨터 등 완제품 사업을 담당합니다."},
-{name:"DS · 반도체",desc:"데이터를 저장하는 메모리, 연산·촬영 등에 쓰는 시스템 반도체(System LSI), 다른 회사의 반도체를 대신 생산하는 파운드리 사업을 합니다."},
-{name:"SDC · 디스플레이",desc:"스마트폰용 OLED 패널 등을 중심으로 디스플레이 패널 사업을 운영합니다."},
-{name:"Harman · 자동차 전자장치·오디오",desc:"자동차의 디지털 계기판·통신 장치와 차량용 오디오, 소비자용 스피커·이어폰 등을 판매합니다."}],
-drivers:[
-{title:"메모리 가격",desc:"DRAM·NAND 가격 변화가 반도체 수익성에 직접 영향을 줍니다."},
-{title:"AI 메모리 수요",desc:"AI 서버가 늘면 HBM·서버용 DRAM·저장장치 수요가 커질 수 있습니다. 실제 판매량과 공급 능력도 함께 봅니다."},
-{title:"스마트폰 판매",desc:"갤럭시 신제품과 프리미엄 제품 판매가 DX 실적에 영향을 줍니다."},
-{title:"환율·원가",desc:"부품 원가와 주요 통화 환율도 영업이익 변동에 영향을 줍니다."}],
-takeaways:[
-"삼성전자는 반도체부터 스마트폰·TV·생활가전까지 다양한 전자제품과 핵심 부품을 만드는 글로벌 전자기업입니다.",
-"사업은 크게 완제품을 담당하는 DX와 반도체를 담당하는 DS가 중심이며, 디스플레이와 전장·오디오 사업도 함께 운영합니다.",
-"반도체 사업은 데이터를 저장하는 메모리, 연산 등을 담당하는 시스템 반도체, 다른 회사의 설계를 생산하는 파운드리로 나뉩니다.",
-"DX에서는 갤럭시 스마트폰을 비롯해 TV·모니터·냉장고·세탁기 등 소비자용 제품을 판매합니다.",
-"AI 서버에 쓰이는 HBM 등 고성능 메모리의 수요와 판매, 메모리 가격 변화가 최근 실적에 중요한 영향을 줍니다."
-],
-sources:["삼성전자 2025년 연간 실적발표 자료","삼성전자 2026년 2분기 잠정실적 공지의 1분기 확정 실적 비교표","삼성전자 2026년 2분기 실적발표"]
-},
-hynix:{
-key:"hynix",rank:2,name:"SK하이닉스",ticker:"000660",type:"메모리 반도체 기업",
-short:"DRAM·NAND·HBM을 중심으로 하는 메모리 반도체 기업",
-summary:"DRAM·NAND·HBM 등 메모리 반도체를 중심으로 하며 AI 데이터센터 투자와 고대역폭메모리 수요의 영향을 크게 받는 기업입니다.",
-price:"1,841,000원",marketCap:"1,344.8조원",per:"8.21배",pbr:"4.99배",marketDate:"2026.10.02",
-latestSales:"97.1조원",latestOp:"47.2조원",latestYear:"2025",
-annual:[{period:"2024",sales:66.2,op:23.5},{period:"2025",sales:97.1,op:47.2}],
-q2026:[{period:"1Q 2026",sales:52.5763,op:37.6103},{period:"2Q 2026",sales:79.3187,op:60.5426}],
-business:[
-{name:"DRAM",desc:"서버·PC·모바일 등에 사용되는 대표적인 메모리 반도체입니다."},
-{name:"HBM",desc:"AI 가속기와 데이터센터에 사용되는 고대역폭 메모리입니다."},
-{name:"NAND",desc:"SSD와 저장장치 등에 사용되는 비휘발성 메모리입니다."},
-{name:"솔루션",desc:"메모리 제품을 고객 시스템에 맞게 제공하는 사업입니다."}],
-drivers:[
-{title:"메모리 가격",desc:"DRAM·NAND 가격이 수익성에 직접적인 영향을 줍니다."},
-{title:"HBM 수요",desc:"AI 가속기용 HBM 공급과 수요가 핵심 변수입니다."},
-{title:"AI 데이터센터",desc:"글로벌 AI 인프라 투자가 메모리 수요를 좌우합니다."},
-{title:"생산능력·수율",desc:"선단공정 전환과 생산능력 확대, 수율 개선이 중요합니다."}],
-takeaways:[
-"메모리 반도체가 핵심인 기업입니다.",
-"AI 데이터센터 확대가 HBM 수요를 끌어올리는 중요한 요인입니다.",
-"2025년 매출은 97.1조원, 영업이익은 47.2조원이었습니다.",
-"2026년 2분기 매출 79.3조원, 영업이익 60.5조원의 분기 최대 실적을 기록했습니다.",
-"앞으로는 HBM 수요와 메모리 가격 흐름이 중요합니다."
-],
-sources:["SK하이닉스 2026년 2분기 경영실적","FnGuide 기업모니터 2026.10.02"]
-},
-samsungpref:{
-key:"samsungpref",rank:3,name:"삼성전자우",ticker:"005935",type:"삼성전자 우선주",
-short:"삼성전자 보통주와 같은 회사의 우선주로, 주가·배당 구조를 별도로 봅니다.",
-summary:"삼성전자와 동일한 사업 기반을 가지지만 보통주와 주가 및 배당 구조가 다른 우선주입니다. 따라서 회사 실적은 삼성전자와 함께 보고, 주식 자체의 가격·배당 특성은 별도로 봅니다.",
-price:"201,500원",marketCap:"164.1조원",per:"18.27배",pbr:"1.87배",marketDate:"2026.10.02",
-latestSales:"333.6조원",latestOp:"43.6조원",latestYear:"2025",
-annual:[{period:"2023",sales:258.9,op:6.6},{period:"2024",sales:300.9,op:32.7},{period:"2025",sales:333.6,op:43.6}],
-q2026:[{period:"1Q 2026",sales:133.87,op:57.23},{period:"2Q 2026",sales:171.50,op:89.50}],
-business:[
-{name:"삼성전자 실적",desc:"우선주의 기초가 되는 회사가 삼성전자이므로 삼성전자의 사업·실적을 함께 봅니다."},
-{name:"배당",desc:"우선주는 보통주와 다른 배당 구조와 배당수익률을 확인할 필요가 있습니다."},
-{name:"주가 차이",desc:"보통주와 우선주의 가격 차이가 시장에서 어떻게 형성되는지 봅니다."},
-{name:"의결권 구조",desc:"보통주와 달리 의결권 등 권리 구조가 다르다는 점을 알아둘 필요가 있습니다."}],
-drivers:[
-{title:"삼성전자 실적",desc:"반도체·모바일·가전 등 삼성전자 전체 실적이 가장 큰 기반입니다."},
-{title:"배당",desc:"배당 규모와 배당수익률이 우선주 투자자에게 중요한 변수입니다."},
-{title:"보통주와 가격차",desc:"두 종목의 가격 차이가 확대·축소되는 흐름을 함께 봅니다."},
-{title:"AI·메모리",desc:"삼성전자 실적의 핵심인 AI 메모리와 반도체 업황도 함께 봅니다."}],
-takeaways:[
-"삼성전자우는 별도 사업회사가 아니라 삼성전자의 우선주입니다.",
-"따라서 사업과 실적은 삼성전자 페이지와 같은 내용을 기반으로 합니다.",
-"2025년 삼성전자의 매출은 333.6조원, 영업이익은 43.6조원이었습니다.",
-"2026년 2분기 삼성전자는 매출 171.5조원, 영업이익 89.5조원을 기록했습니다.",
-"우선주를 볼 때는 삼성전자 실적과 함께 배당 및 보통주와의 가격 차이를 봐야 합니다."
-],
-sources:["삼성전자 2026년 1·2분기 실적 발표","삼성전자우 시세정보 2026.10.02"]
-},
-sksquare:{
-key:"sksquare",rank:4,name:"SK스퀘어",ticker:"402340",type:"투자·지주회사",
-short:"SK하이닉스 등 주요 자산에 투자하는 투자회사 성격의 기업",
-summary:"SK하이닉스 등 주요 자산을 보유하고 기업가치를 높이는 투자회사 성격이 강한 기업입니다.",
-price:"1,160,000원",marketCap:"153.0조원",per:"4.67배",pbr:"2.79배",marketDate:"2026.10.02",
-latestSales:"1조 4,115억원",latestOp:"8조 7,974억원",latestYear:"2025",
-annual:[{period:"2023",sales:2.2765,op:-2.3397},{period:"2024",sales:1.6499,op:3.9206},{period:"2025",sales:1.4115,op:8.7974}],
-q2026:[{period:"1Q 2026",sales:0.3003,op:8.2783},{period:"2Q 2026",sales:0.3285,op:19.2354}],
-business:[
-{name:"SK하이닉스 투자",desc:"핵심 보유자산인 SK하이닉스의 주가와 실적이 기업가치에 큰 영향을 줍니다."},
-{name:"ICT·플랫폼",desc:"SK그룹 내 ICT·플랫폼 관련 자산에 투자합니다."},
-{name:"포트폴리오 투자",desc:"신규 투자와 자산 매각·재편이 실적과 기업가치에 영향을 줍니다."},
-{name:"주주가치",desc:"자사주·배당 등 주주환원과 NAV 할인율을 함께 볼 필요가 있습니다."}],
-drivers:[
-{title:"SK하이닉스 가치",desc:"핵심 보유자산인 SK하이닉스의 주가와 실적 변화가 중요합니다."},
-{title:"NAV",desc:"보유자산 순자산가치와 시장가치의 차이를 봅니다."},
-{title:"자산 재편",desc:"포트폴리오 신규 투자와 매각이 기업가치에 영향을 줍니다."},
-{title:"주주환원",desc:"자사주 매입·소각과 배당 등 주주환원 정책을 봅니다."}],
-takeaways:[
-"일반 제조기업보다 투자·지주회사 성격이 강합니다.",
-"SK하이닉스를 비롯한 주요 보유자산의 가치가 중요합니다.",
-"2025년 연결 매출은 1조 4,115억원, 영업이익은 8조 7,974억원이었습니다.",
-"2026년 2분기 영업이익은 19조 2,354억원이었습니다.",
-"이 회사는 매출만 보기보다 보유자산 가치와 NAV를 함께 보는 것이 중요합니다."
-],
-sources:["SK스퀘어 2025년 연간·2026년 1분기 실적 발표","시세정보 2026.10.02"]
-},
-samsungel:{
-key:"samsungel",rank:5,name:"삼성전기",ticker:"009150",type:"전자부품 기업",
-short:"MLCC·카메라모듈·반도체 패키지 기판을 만드는 전자부품 기업",
-summary:"MLCC, 카메라모듈, 반도체 패키지 기판 등을 생산하며 AI 서버·데이터센터와 전장 수요 확대의 영향을 받는 전자부품 기업입니다.",
-price:"1,577,000원",marketCap:"116.6조원",per:"27.07배",pbr:"2.02배",marketDate:"2026.10.02",
-latestSales:"11조 3,145억원",latestOp:"9,133억원",latestYear:"2025",
-annual:[{period:"2023",sales:8.8924,op:0.6605},{period:"2024",sales:10.2941,op:0.7350},{period:"2025",sales:11.3145,op:0.9133}],
-q2026:[{period:"1Q 2026",sales:3.2091,op:0.2806},{period:"2Q 2026",sales:3.4572,op:0.4404}],
-business:[
-{name:"컴포넌트",desc:"MLCC 등 전자회로에 들어가는 핵심 수동부품을 생산합니다. AI 서버·전장 수요가 중요합니다."},
-{name:"광학솔루션",desc:"스마트폰 카메라모듈과 전장용 카메라 등 광학 부품을 생산합니다."},
-{name:"패키지솔루션",desc:"FCBGA 등 반도체 패키지 기판을 생산하며 AI 가속기·서버 CPU 수요와 연결됩니다."},
-{name:"전장",desc:"전기차·ADAS·자율주행 관련 부품 수요가 새로운 성장축입니다."}],
-drivers:[
-{title:"MLCC 수요",desc:"AI 서버·데이터센터와 전장용 고사양 MLCC 수요가 중요합니다."},
-{title:"AI 패키지 기판",desc:"AI 가속기와 서버 CPU용 고성능 FCBGA 공급 확대를 봅니다."},
-{title:"카메라모듈",desc:"스마트폰 신제품과 전장 카메라 공급량이 영향을 줍니다."},
-{title:"전장·자율주행",desc:"전기차와 ADAS 확산이 중장기 부품 수요에 영향을 줍니다."}],
-takeaways:[
-"MLCC·카메라모듈·반도체 기판을 만드는 전자부품 기업입니다.",
-"2025년 매출은 11조 3,145억원으로 창사 이래 최대 연간 매출을 기록했습니다.",
-"2026년 2분기 매출 3조 4,572억원, 영업이익 4,404억원을 기록했습니다.",
-"AI 서버와 데이터센터용 MLCC·FCBGA 수요가 실적에 중요합니다.",
-"스마트폰뿐 아니라 AI·전장으로 사업 적용처가 넓어지는지 보는 것이 핵심입니다."
-],
-sources:["삼성전기 2025년 연간·2026년 1·2분기 경영실적","삼성전기 재무정보","시세정보 2026.10.02"]
+// Bump this release when deploying catalog or company JSON changes.
+const COMPANY_DATA_VERSION = "20261006-data-1";
+const companyDataCache = new Map();
+let companyCatalogPromise;
+
+async function readCompanyJSON(path) {
+ const response = await fetch(`${path}?v=${COMPANY_DATA_VERSION}`);
+ if (!response.ok) throw new Error(`기업 데이터를 불러오지 못했습니다 (${response.status}).`);
+ const data = await response.json();
+ if (data.schemaVersion !== 1) throw new Error("지원하지 않는 기업 데이터 형식입니다.");
+ return data;
 }
-};
+
+function loadCompanyCatalog() {
+ if (!companyCatalogPromise) companyCatalogPromise = readCompanyJSON("data/company-index.json");
+ return companyCatalogPromise;
+}
+
+async function loadCompanyRecord(key, ancestors = []) {
+ if (ancestors.includes(key)) throw new Error("회사 실적 참조가 순환합니다.");
+ const catalog = await loadCompanyCatalog();
+ const entry = catalog.companies.find(company => company.key === key);
+ if (!entry) return null;
+ if (!companyDataCache.has(key)) companyDataCache.set(key, readCompanyJSON(`data/companies/${entry.file}`));
+ const record = await companyDataCache.get(key);
+ if (record.profile.key !== key) throw new Error("기업 식별자가 일치하지 않습니다.");
+ if (!record.financials.companyRef) return record;
+ const parent = await loadCompanyRecord(record.financials.companyRef, [...ancestors, key]);
+ if (!parent) throw new Error("참조한 회사의 실적이 없습니다.");
+ return {...record, financials:parent.financials, financialSources:parent.sources};
+}
+
+function formatFinancialHighlight(value, style) {
+ if (value == null) return "-";
+ if (style !== "mixed") return `${value}조원`;
+ const amount = Math.round(Math.abs(value)*10000), trillions = Math.floor(amount/10000), remainder = amount%10000;
+ return `${value < 0 ? "-" : ""}${trillions ? `${trillions}조` : ""}${trillions && remainder ? " " : ""}${remainder ? `${remainder.toLocaleString("ko-KR")}억` : ""}원`;
+}
+
+function companyPageData(record) {
+ const financials = record.financials;
+ const annual = [...financials.annual].sort((a,b) => a.year-b.year);
+ const allQuarters = [...financials.quarterly].sort((a,b) => a.year-b.year || a.quarter-b.quarter);
+ const latest = annual.at(-1), latestQuarter = allQuarters.at(-1);
+ const quarterly = allQuarters.filter(row => row.year === latestQuarter?.year);
+ const sourceList = [...(record.financialSources || []), ...record.sources];
+ const sourceLinks = Object.fromEntries(sourceList.filter(source => source.url).map(source => [source.id,source]));
+ return {
+  ...record.profile, ...record.overview, ...record.market,
+  marketDate:record.market.date,
+  annual:annual.map(row => ({...row,period:String(row.year)})),
+  quarterly:quarterly.map(row => ({...row,period:`${row.quarter}Q ${row.year}`})),
+  latestQuarter, quarterlyYear:latestQuarter?.year || "",
+  latestYear:String(latest?.year || ""),
+  latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),
+  latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),
+  latestNet:latest?.net == null ? null : `${latest.net}조원`,
+  financialBasis:financials.basis === "consolidated" ? "K-IFRS 연결 기준" : "K-IFRS 별도 기준",
+  verifiedAt:financials.verification.verifiedAt,
+  sourceLinks, sources:record.sources.map(source => source.label),
+  annualSourceIds:[...new Set(annual.flatMap(row => row.sourceIds))],
+  latestAnnualSourceId:latest?.sourceIds[0],
+  quarterlySourceIds:[...new Set(quarterly.flatMap(row => row.sourceIds))],
+  sectionSourceIds:record.sectionSourceIds,
+  glossary:record.glossary, presentation:record.presentation
+ };
+}
+
+async function loadCompanyData(key) {
+ const record = await loadCompanyRecord(key);
+ return record ? companyPageData(record) : null;
+}

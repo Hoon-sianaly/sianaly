@@ -1,0 +1,35 @@
+# 기업 데이터 관리
+
+화면 디자인은 `company.html`, 데이터 로딩은 `companies.js`, 기업 내용은 `data/companies/*.json`에서 관리합니다. 기존 홈페이지 `index.html`은 변경하지 않았습니다.
+
+## 파일 구성
+
+- `company-index.json`: 기업 키·이름·종목코드·데이터 파일 목록. 기업 분석 페이지는 이 목록에 등록된 기업만 읽습니다.
+- `companies/samsung.json`: 기업 정보, 5줄 소개, 주요 사업, 핵심 변수, 실적, 출처, 용어 설명.
+- `companies/samsungpref.json`: 우선주 설명·시세는 별도로 관리하고 회사 실적은 `financials.companyRef: "samsung"`으로 참조합니다.
+
+홈페이지의 검색 목록은 현재 `index.html` 안에 별도로 있습니다. 새 기업을 검색에 노출할 때만 사용자 요청 범위에 맞춰 해당 목록을 추가하고, 홈페이지 디자인·문구는 유지합니다.
+
+## 실적과 출처
+
+- 숫자는 조원(`KRW_trillion`)으로 저장합니다. 예: 1억원은 0.0001조원입니다.
+- 연간은 `year`, 분기는 `year`와 `quarter`(1~4)를 사용합니다. 분기 수치는 각 3개월 실적이며 누적 실적을 넣지 않습니다.
+- `basis`는 `consolidated`(연결) 또는 `separate`(별도)입니다. 한 데이터 묶음에서 기준을 섞지 않습니다.
+- `sourceIds`는 해당 숫자를 확인한 `sources[].id`를 가리킵니다. 출처에는 문서명·공식 URL·발표일·확인일을 기록합니다.
+- `verification.status`의 `verified`는 원자료와 대조를 마친 자료에만 사용합니다. 삼성전자 외 기존 기업 데이터는 이번 작업에서 재검증하지 않았으므로 `unverified`로 유지했습니다.
+- 확인되지 않은 숫자를 추정해서 넣지 않습니다. 새 기업의 실적과 설명을 준비하고 검증한 뒤 검색 목록에 등록합니다.
+- 상단 연간 실적은 가장 최근 연간 행에서 자동으로 계산합니다. 분기 영역은 저장된 분기 중 가장 최근 연도의 실적을 표시합니다. 지난 연도 행도 JSON에는 보관할 수 있습니다.
+- `highlightFormat`은 `trillion`(조원) 또는 `mixed`(조·억원)입니다. 숫자 원본은 항상 조원으로 저장합니다.
+- `presentation`은 기존 화면 유지용 설정입니다. 기존 삼성전자 화면은 `compact: true`, `chartStyle: "comparison"`을 사용합니다.
+
+## 기업 추가·업데이트
+
+1. 기존 기업 JSON 구조를 참고해 새 파일을 만들고 공식 자료로 내용을 채웁니다. 금융회사 등 업종별 설명 방식은 별도로 검토합니다.
+2. 기업 목록에 고유한 키·종목코드와 파일을 등록합니다.
+3. `node scripts/validate-data.cjs`와 `node scripts/test-company-data.cjs`를 실행합니다.
+4. 데이터 파일을 바꿨다면 `companies.js`의 `COMPANY_DATA_VERSION`과 `company.html`의 스크립트 버전을 함께 올립니다. 캐시로 서로 다른 버전이 섞이는 것을 방지합니다.
+5. 개발 사이트에서 화면·검색 연결·최근 본 기업·모바일 표시를 확인합니다.
+
+## 배포
+
+현재 Cloudflare Pages의 `sianaly` 프로젝트는 `main` 브랜치를 자동 배포하며 연결된 도메인은 `dev.sianaly.com`입니다. `sianaly.com`은 운영용입니다. 운영 사이트 반영은 사용자가 별도로 요청한 경우에만 진행합니다.
