@@ -4,84 +4,53 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SIANALY — 기업 분석</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#111827;font-family:Arial,"Noto Sans KR",sans-serif}
-header{height:70px;background:#fff;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;padding:0 7%}
-.logo{font-size:25px;font-weight:800}.logo span{color:#2563eb}a{text-decoration:none;color:#6b7280}
-main{max-width:1080px;margin:auto;padding:45px 20px 80px}.hero{background:#111827;color:#fff;border-radius:24px;padding:35px}
-.tag{color:#93c5fd;font-size:13px;font-weight:800}.hero h1{font-size:42px;margin:10px 0}.hero p{color:#d1d5db;line-height:1.6}
-.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.num{background:#ffffff12;padding:16px;border-radius:13px}.num small{color:#cbd5e1}.num strong{display:block;font-size:23px;margin:5px 0}
-section{background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:28px;margin-top:18px}
-.blue{color:#2563eb;font-size:13px;font-weight:800}.title{font-size:26px;font-weight:800;margin:7px 0}.desc{color:#6b7280;line-height:1.6;margin-bottom:20px}
-.take{display:flex;gap:14px;background:#f8fafc;padding:14px;border-radius:12px;margin:8px 0}.take b{color:#2563eb}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.box{background:#f8fafc;padding:18px;border-radius:13px}.box h3{margin:0 0 8px}.box p{margin:0;color:#6b7280;line-height:1.5}
-table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px solid #e5e7eb;text-align:right}th:first-child,td:first-child{text-align:left}
-.valuation-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.vcard{background:#f8fafc;border-radius:13px;padding:15px}.vcard span{font-size:12px;color:#6b7280;font-weight:700}.vcard strong{display:block;font-size:22px;margin:5px 0}.vcard small{font-size:11px;color:#9ca3af}.note{font-size:11px;color:#9ca3af;margin:12px 0 0}
-.chart{margin-top:18px}.chart-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:12px}.chart-head strong{font-size:15px}.chart-unit{font-size:11px;color:#9ca3af}
-.bars{height:240px;display:flex;align-items:flex-end;gap:16px;border-bottom:1px solid #d1d5db;padding:0 10px 0}.bar-col{height:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:45px}.bar-value{font-size:11px;color:#374151;margin-bottom:5px;white-space:nowrap}.bar{width:58%;max-width:62px;background:#2563eb;border-radius:7px 7px 0 0;min-height:3px}.bar.op{background:#111827}.bar-label{font-size:11px;color:#6b7280;margin-top:8px;white-space:nowrap}
-.legend{display:flex;gap:18px;font-size:12px;color:#6b7280;margin-top:12px}.dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}.dot.sales{background:#2563eb}.dot.op{background:#111827}
-.source{font-size:11px;color:#9ca3af;line-height:1.6;margin-top:16px}.source b{color:#6b7280}.empty{text-align:center;color:#6b7280}
-@media(max-width:650px){.nums,.grid,.valuation-row{grid-template-columns:1fr}.hero h1{font-size:34px}.bars{gap:8px}.bar{width:70%}}
+*{box-sizing:border-box}body{margin:0;background:#f6f7f9;color:#171717;font-family:Arial,"Noto Sans KR",sans-serif}
+header{height:70px;background:#fff;border-bottom:1px solid #e8e8e8;display:flex;align-items:center;justify-content:space-between;padding:0 7%}
+.logo{font-size:23px;font-weight:800;color:#171717}a{text-decoration:none;color:#777}
+main{max-width:920px;margin:auto;padding:42px 20px 80px}.hero{padding:34px 4px 30px}.meta{font-size:13px;color:#777;font-weight:700}.hero h1{font-size:42px;letter-spacing:-1.8px;margin:10px 0 12px}.intro{font-size:17px;color:#5f6368;line-height:1.75;max-width:760px}
+.snapshot{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.stat{background:#fff;border:1px solid #e8e8e8;border-radius:14px;padding:14px 16px;min-width:150px}.stat small{display:block;color:#888;margin-bottom:5px}.stat strong{font-size:18px}
+section{background:#fff;border:1px solid #e8e8e8;border-radius:20px;padding:30px;margin-top:16px}.eyebrow{font-size:12px;font-weight:800;color:#777}.title{font-size:25px;font-weight:800;letter-spacing:-.7px;margin:7px 0 8px}.desc{color:#777;line-height:1.65;margin:0 0 22px}
+.summary{counter-reset:item}.line{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid #f0f0f0;line-height:1.65}.line:last-child{border:0}.line b{color:#999;min-width:18px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.box{background:#f7f8fa;border-radius:14px;padding:19px}.box h3{font-size:16px;margin:0 0 8px}.box p{font-size:14px;margin:0;color:#666;line-height:1.6}
+.tabs{display:flex;gap:7px;margin:18px 0 6px}.tab{border:1px solid #ddd;background:#fff;border-radius:999px;padding:8px 13px;font-size:12px;cursor:pointer}.tab.active{background:#171717;color:#fff;border-color:#171717}
+.chart{margin-top:18px}.bars{height:230px;display:flex;align-items:flex-end;gap:18px;border-bottom:1px solid #ddd;padding:0 12px}.pair{height:100%;flex:1;display:flex;align-items:flex-end;justify-content:center;gap:5px;position:relative;padding-bottom:25px}.bar{width:28px;background:#d9e5ff;border-radius:6px 6px 0 0;min-height:3px}.bar.op{background:#222}.labels{position:absolute;bottom:4px;font-size:11px;color:#777;white-space:nowrap}.values{font-size:10px;color:#666;position:absolute;bottom:calc(var(--h) + 30px);white-space:nowrap}.legend{font-size:12px;color:#777;margin-top:12px}.legend span{margin-right:15px}.dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;background:#d9e5ff}.dot.op{background:#222}
+.flow{display:grid;gap:10px}.flow-item{display:grid;grid-template-columns:180px 28px 1fr;align-items:center;background:#f7f8fa;border-radius:14px;padding:16px}.flow-item strong{font-size:15px}.arrow{text-align:center;color:#aaa}.flow-item p{margin:0;color:#666;font-size:14px;line-height:1.55}
+.source{font-size:11px;color:#999;line-height:1.7;margin-top:22px}.empty{text-align:center}
+@media(max-width:650px){main{padding-top:25px}.hero h1{font-size:34px}.grid{grid-template-columns:1fr}.stat{flex:1;min-width:130px}.flow-item{grid-template-columns:1fr}.arrow{text-align:left;transform:rotate(90deg);margin:4px 0}.bars{gap:8px;padding:0 4px}.bar{width:20px}section{padding:23px}}
 </style></head>
 <body>
-<header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><a href="index.html">← 기업 검색</a></header>
+<header><a class="logo" href="index.html">SIANALY.</a><a href="index.html">← 기업 검색</a></header>
 <main id="app"></main>
 <script src="companies.js"></script>
 <script>
-const key=new URLSearchParams(location.search).get("company"), c=companies[key];
-const app=document.getElementById("app");
+const key=new URLSearchParams(location.search).get("company"),c=companies[key],app=document.getElementById("app");
 const esc=v=>String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-function maxFor(rows,field){return Math.max(...rows.map(x=>Math.abs(x[field])),0.0001);}
 function chart(rows){
- const maxS=maxFor(rows,"sales"),maxO=maxFor(rows,"op");
- return `<div class="chart">
- <div class="chart-head"><strong>연간/분기 실적 흐름</strong><span class="chart-unit">단위: 조원</span></div>
- <div class="bars">${rows.map(x=>{
-   const sh=Math.max(3,x.sales/maxS*180), oh=Math.max(3,Math.abs(x.op)/maxO*180);
-   return `<div class="bar-col"><div class="bar-value">${x.sales.toFixed(1)}</div><div class="bar" style="height:${sh}px"></div><div class="bar-label">${esc(x.period)}</div></div>`;
- }).join("")}</div>
- <div class="legend"><span><i class="dot sales"></i>매출</span><span><i class="dot op"></i>영업이익</span></div>
- </div>`;
+ const max=Math.max(...rows.flatMap(x=>[Math.abs(x.sales),Math.abs(x.op)]),.01);
+ return '<div class="chart"><div class="bars">'+rows.map(x=>{
+  const sh=Math.max(3,Math.abs(x.sales)/max*165),oh=Math.max(3,Math.abs(x.op)/max*165);
+  return '<div class="pair"><div class="bar" style="height:'+sh+'px" title="매출 '+x.sales+'조원"></div><div class="bar op" style="height:'+oh+'px" title="영업이익 '+x.op+'조원"></div><span class="labels">'+esc(x.period)+'</span></div>';
+ }).join("")+'</div><div class="legend"><span><i class="dot"></i>매출</span><span><i class="dot op"></i>영업이익</span><span>단위: 조원 · 막대에 마우스를 올리면 수치를 볼 수 있습니다.</span></div></div>';
 }
-function twoMetricChart(rows){
- const maxS=maxFor(rows,"sales"), maxO=maxFor(rows,"op");
- return `<div class="chart">
- <div class="chart-head"><strong>기간별 매출·영업이익</strong><span class="chart-unit">단위: 조원</span></div>
- <div class="bars">${rows.flatMap(x=>{
-   const sh=Math.max(3,Math.abs(x.sales)/maxS*180), oh=Math.max(3,Math.abs(x.op)/maxO*180);
-   return [`<div class="bar-col"><div class="bar-value">${x.sales.toFixed(1)}</div><div class="bar" style="height:${sh}px"></div><div class="bar-label">${esc(x.period)}</div></div>`,
-           `<div class="bar-col"><div class="bar-value">${x.op.toFixed(1)}</div><div class="bar op" style="height:${oh}px"></div><div class="bar-label">영업익</div></div>`];
- }).join("")}</div>
- <div class="legend"><span><i class="dot sales"></i>매출</span><span><i class="dot op"></i>영업이익</span></div></div>`;
-}
-if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>';}
+if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>'}
 else{
- const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${x.sales}조원</td><td>${x.op}조원</td></tr>`).join("");
- const q=c.q2026.map(x=>`<tr><td>${esc(x.period)}</td><td>${x.sales}조원</td><td>${x.op}조원</td></tr>`).join("");
  app.innerHTML=`
- <div class="hero"><div class="tag">국내 시총 ${c.rank}위 · ${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
- <div class="nums"><div class="num"><small>${c.latestYear} 매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} 영업이익</small><strong>${c.latestOp}</strong></div><div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div></div></div>
-
- <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
- <div class="valuation-row"><div class="vcard"><span>종가</span><strong>${c.price}</strong><small>${c.marketDate} 기준</small></div>
- <div class="vcard"><span>PER</span><strong>${c.per}</strong><small>기준일 데이터</small></div>
- <div class="vcard"><span>PBR</span><strong>${c.pbr}</strong><small>기준일 데이터</small></div></div>
- <p class="note">※ PER·PBR은 데이터 제공처의 산식과 기준일에 따라 달라질 수 있습니다. SIANALY는 이를 매수·매도 판단으로 해석하지 않습니다.</p></section>
-
- <section><div class="blue">01 · 처음 보는 사람을 위한 5줄</div><div class="title">${c.name}을 한눈에</div><div class="desc">${c.summary}</div>
- ${c.takeaways.map((x,i)=>`<div class="take"><b>${i+1}</b><span>${x}</span></div>`).join("")}</section>
-
- <section><div class="blue">02 · 돈은 어디서 벌까?</div><div class="title">주요 사업</div><div class="desc">어떤 사업이 이 회사의 매출과 이익을 만드는지 봅니다.</div>
- <div class="grid">${c.business.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.name}</h3><p>${x.desc}</p></div>`).join("")}</div></section>
-
- <section><div class="blue">03 · 실적은 어떻게 변했을까?</div><div class="title">연간 실적 그래프</div><div class="desc">과거에서 최신 연간 실적으로 갈수록 매출과 영업이익이 어떻게 움직였는지 한눈에 봅니다.</div>
- ${chart(c.annual)}<table style="margin-top:24px"><thead><tr><th>기간</th><th>매출</th><th>영업이익</th></tr></thead><tbody>${annual}</tbody></table></section>
-
- <section><div class="blue">04 · 2026년 현재는?</div><div class="title">2026 분기 실적 그래프</div><div class="desc">올해 들어 실적이 어느 방향으로 움직이는지 분기별로 봅니다.</div>
- ${twoMetricChart(c.q2026)}<table style="margin-top:24px"><thead><tr><th>기간</th><th>매출</th><th>영업이익</th></tr></thead><tbody>${q}</tbody></table></section>
-
- <section><div class="blue">05 · 무엇이 실적을 움직일까?</div><div class="title">핵심 변수</div><div class="desc">실적에 영향을 주는 요소를 쉽게 연결해서 봅니다.</div>
- <div class="grid">${c.drivers.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.title}</h3><p>${x.desc}</p></div>`).join("")}</div>
- <div class="source"><b>데이터 출처</b><br>${c.sources.join(" · ")}<br>주가·시가총액·PER·PBR 기준일: ${c.marketDate}</div></section>
- `;
+ <div class="hero">
+  <div class="meta">${c.ticker} · ${c.type}</div><h1>${c.name}</h1><div class="intro">${c.summary}</div>
+  <div class="snapshot"><div class="stat"><small>${c.latestYear} 매출</small><strong>${c.latestSales}</strong></div><div class="stat"><small>${c.latestYear} 영업이익</small><strong>${c.latestOp}</strong></div><div class="stat"><small>시가총액</small><strong>${c.marketCap}</strong></div></div>
+ </div>
+ <section><div class="eyebrow">01 · 한눈에 이해하기</div><div class="title">${c.name}을 5줄로</div><div class="summary">${c.takeaways.map((x,i)=>'<div class="line"><b>0'+(i+1)+'</b><span>'+esc(x)+'</span></div>').join("")}</div></section>
+ <section><div class="eyebrow">02 · 이 회사는 어떻게 돈을 벌까?</div><div class="title">사업 구조</div><p class="desc">복잡한 사업보고서 대신, 돈을 버는 주요 사업부터 쉽게 봅니다.</p><div class="grid">${c.business.map(x=>'<div class="box"><h3>'+esc(x.name)+'</h3><p>'+esc(x.desc)+'</p></div>').join("")}</div></section>
+ <section><div class="eyebrow">03 · 실적은 어떻게 변했을까?</div><div class="title">매출과 영업이익 흐름</div><p class="desc">숫자를 전부 외울 필요 없이, 실적의 방향이 좋아지는지 나빠지는지 먼저 확인합니다.</p>
+  <div class="tabs"><button class="tab active" data-chart="annual">연간</button><button class="tab" data-chart="quarter">2026 분기</button></div><div id="chart">${chart(c.annual)}</div>
+ </section>
+ <section><div class="eyebrow">04 · 무엇이 실적을 움직일까?</div><div class="title">핵심 변수</div><p class="desc">이 회사의 실적이 왜 움직이는지 원인과 영향을 연결해서 봅니다.</p>
+  <div class="flow">${c.drivers.map(x=>'<div class="flow-item"><strong>'+esc(x.title)+'</strong><div class="arrow">→</div><p>'+esc(x.desc)+'</p></div>').join("")}</div>
+  <div class="source"><b>출처</b> · ${c.sources.map(esc).join(" · ")}<br>시장 데이터 기준일: ${esc(c.marketDate)}<br>SIANALY는 기업 정보와 분석을 제공하며 특정 금융상품의 매수·매도를 권유하지 않습니다.</div>
+ </section>`;
+ document.querySelectorAll(".tab").forEach(btn=>btn.onclick=()=>{
+   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));btn.classList.add("active");
+   document.getElementById("chart").innerHTML=chart(btn.dataset.chart==="annual"?c.annual:c.q2026);
+ });
 }
 </script></body></html>
