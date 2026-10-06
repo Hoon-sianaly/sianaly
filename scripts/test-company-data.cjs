@@ -40,6 +40,15 @@ function context(key, transform, failed = false) {
    assert.ok(out.includes("333.6조원") && out.includes("45.2조원") && out.includes("133.87조원"));
    assert.ok(!out.includes("<div class=\"blue\">01"));
   }
+  if (entry.key === "hynix") {
+   assert.equal((out.match(/metric-panel/g)||[]).length,4);
+   assert.ok(out.includes("97.1조원") && out.includes("47.2조원"));
+   assert.ok(out.includes("97.1467조원") && out.includes("79.3187조원"));
+   assert.ok(out.includes("SK하이닉스 공식 연간 실적 자료"));
+   assert.ok(!out.includes("삼성전자 공식 연간 실적 자료"));
+   assert.ok(!out.includes("주가와 밸류에이션"));
+   assert.ok(!out.includes("<div class=\"blue\">01"));
+  }
  }
  const preferred = context("samsungpref");
  const rows = await vm.runInContext("loadCompanyData('samsungpref')",preferred.ctx);
@@ -53,7 +62,7 @@ function context(key, transform, failed = false) {
  });
  const future = await vm.runInContext("loadCompanyData('samsung')",yearState.ctx);
  assert.equal(future.latestYear,"2099");
- assert.equal(future.latestSales,"123조원");
+ assert.equal(future.latestSales,"123.0조원");
  assert.equal(future.quarterlyYear,2099);
  assert.equal(future.quarterly.length,1);
  assert.equal(future.latestNet,null);

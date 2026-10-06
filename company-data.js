@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261006-data-1";
+const COMPANY_DATA_VERSION = "20261006-hynix-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -32,7 +32,7 @@ async function loadCompanyRecord(key, ancestors = []) {
 
 function formatFinancialHighlight(value, style) {
  if (value == null) return "-";
- if (style !== "mixed") return `${value}조원`;
+ if (style !== "mixed") return `${value.toFixed(1)}조원`;
  const amount = Math.round(Math.abs(value)*10000), trillions = Math.floor(amount/10000), remainder = amount%10000;
  return `${value < 0 ? "-" : ""}${trillions ? `${trillions}조` : ""}${trillions && remainder ? " " : ""}${remainder ? `${remainder.toLocaleString("ko-KR")}억` : ""}원`;
 }
@@ -54,7 +54,7 @@ function companyPageData(record) {
   latestYear:String(latest?.year || ""),
   latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),
   latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),
-  latestNet:latest?.net == null ? null : `${latest.net}조원`,
+  latestNet:latest?.net == null ? null : `${latest.net.toFixed(1)}조원`,
   financialBasis:financials.basis === "consolidated" ? "K-IFRS 연결 기준" : "K-IFRS 별도 기준",
   verifiedAt:financials.verification.verifiedAt,
   sourceLinks, sources:record.sources.map(source => source.label),

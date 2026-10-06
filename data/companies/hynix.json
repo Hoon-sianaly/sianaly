@@ -9,48 +9,48 @@
   },
   "overview": {
     "short": "DRAM·NAND·HBM을 중심으로 하는 메모리 반도체 기업",
-    "summary": "DRAM·NAND·HBM 등 메모리 반도체를 중심으로 하며 AI 데이터센터 투자와 고대역폭메모리 수요의 영향을 크게 받는 기업입니다.",
+    "summary": "컴퓨터·스마트폰·AI 서버에서 데이터를 저장하고 빠르게 꺼내 쓰는 메모리 반도체를 만드는 회사입니다.",
     "takeaways": [
-      "메모리 반도체가 핵심인 기업입니다.",
-      "AI 데이터센터 확대가 HBM 수요를 끌어올리는 중요한 요인입니다.",
-      "2025년 매출은 97.1조원, 영업이익은 47.2조원이었습니다.",
-      "2026년 2분기 매출 79.3조원, 영업이익 60.5조원의 분기 최대 실적을 기록했습니다.",
-      "앞으로는 HBM 수요와 메모리 가격 흐름이 중요합니다."
+      "SK하이닉스는 데이터를 저장하는 메모리 반도체를 개발·생산해 전 세계 고객에게 판매하는 회사입니다.",
+      "주요 제품은 작업 중인 데이터를 빠르게 처리하는 DRAM과 전원이 꺼져도 데이터를 보관하는 NAND입니다.",
+      "HBM은 여러 층의 DRAM을 쌓아 많은 데이터를 빠르게 주고받는 제품으로, AI 연산 장치에 쓰입니다.",
+      "메모리 칩뿐 아니라 서버용 메모리 모듈과 기업용 SSD 같은 저장장치도 공급합니다.",
+      "AI 서버 투자와 메모리 가격, 고성능 제품의 판매 비중과 생산 능력이 실적을 이해하는 핵심 변수입니다."
     ],
     "business": [
       {
-        "name": "DRAM",
-        "desc": "서버·PC·모바일 등에 사용되는 대표적인 메모리 반도체입니다."
+        "name": "DRAM · 작업용 메모리",
+        "desc": "서버·PC·스마트폰에서 실행 중인 프로그램과 데이터를 빠르게 처리하는 메모리를 공급합니다. HBM도 DRAM 제품군에 속합니다."
       },
       {
-        "name": "HBM",
-        "desc": "AI 가속기와 데이터센터에 사용되는 고대역폭 메모리입니다."
+        "name": "HBM · AI용 고성능 DRAM",
+        "desc": "여러 층의 DRAM을 쌓아 AI 연산 장치와 많은 데이터를 빠르게 주고받도록 만든 제품입니다. AI 서버 수요와 고객에게 공급할 수 있는 물량이 중요합니다."
       },
       {
-        "name": "NAND",
-        "desc": "SSD와 저장장치 등에 사용되는 비휘발성 메모리입니다."
+        "name": "NAND · 데이터를 보관하는 메모리",
+        "desc": "전원이 꺼져도 데이터가 남는 메모리를 생산합니다. 스마트폰 저장공간과 SSD 등에 사용됩니다."
       },
       {
-        "name": "솔루션",
-        "desc": "메모리 제품을 고객 시스템에 맞게 제공하는 사업입니다."
+        "name": "SSD · 메모리를 활용한 저장장치",
+        "desc": "NAND와 제어 기술을 결합한 저장장치를 공급합니다. 기업용 SSD는 데이터센터에서 대량의 데이터를 저장하고 읽는 데 쓰입니다."
       }
     ],
     "drivers": [
       {
-        "title": "메모리 가격",
-        "desc": "DRAM·NAND 가격이 수익성에 직접적인 영향을 줍니다."
+        "title": "메모리 판매 가격",
+        "desc": "DRAM·NAND의 판매 가격이 오르거나 내려가면 매출과 이익이 달라집니다. 고객 수요뿐 아니라 업계 전체의 공급량도 함께 봅니다."
       },
       {
-        "title": "HBM 수요",
-        "desc": "AI 가속기용 HBM 공급과 수요가 핵심 변수입니다."
+        "title": "AI 서버와 HBM 수요",
+        "desc": "AI 서버 투자가 늘면 HBM과 서버용 메모리·SSD 수요가 커질 수 있습니다. 고객의 실제 주문과 제품 공급 능력이 중요합니다."
       },
       {
-        "title": "AI 데이터센터",
-        "desc": "글로벌 AI 인프라 투자가 메모리 수요를 좌우합니다."
+        "title": "고성능 제품의 판매 비중",
+        "desc": "HBM·고용량 서버용 DRAM·기업용 SSD 등 제품별 판매 비중이 바뀌면 전체 수익성도 달라질 수 있습니다."
       },
       {
-        "title": "생산능력·수율",
-        "desc": "선단공정 전환과 생산능력 확대, 수율 개선이 중요합니다."
+        "title": "생산 능력과 수율",
+        "desc": "공장 확장과 공정 개선은 공급량에 영향을 줍니다. 같은 생산 과정에서 정상 제품을 얼마나 만드는지도 원가와 이익에 중요합니다."
       }
     ]
   },
@@ -65,21 +65,27 @@
     "unit": "KRW_trillion",
     "basis": "consolidated",
     "verification": {
-      "status": "unverified",
-      "verifiedAt": null
+      "status": "verified",
+      "verifiedAt": "2026.10.06"
     },
     "annual": [
       {
         "year": 2024,
-        "sales": 66.2,
-        "op": 23.5,
-        "sourceIds": []
+        "sales": 66.193,
+        "op": 23.4673,
+        "net": 19.7969,
+        "sourceIds": [
+          "annual2024"
+        ]
       },
       {
         "year": 2025,
-        "sales": 97.1,
-        "op": 47.2,
-        "sourceIds": []
+        "sales": 97.1467,
+        "op": 47.2063,
+        "net": 42.9479,
+        "sourceIds": [
+          "annual2025"
+        ]
       }
     ],
     "quarterly": [
@@ -88,38 +94,93 @@
         "quarter": 1,
         "sales": 52.5763,
         "op": 37.6103,
-        "sourceIds": []
+        "sourceIds": [
+          "q1"
+        ]
       },
       {
         "year": 2026,
         "quarter": 2,
         "sales": 79.3187,
         "op": 60.5426,
-        "sourceIds": []
+        "sourceIds": [
+          "q2"
+        ]
       }
     ],
     "highlightFormat": "trillion"
   },
   "sources": [
     {
-      "id": "legacy-1",
-      "label": "SK하이닉스 2026년 2분기 경영실적",
-      "url": null,
-      "published": null,
-      "verifiedAt": null
+      "id": "annual2024",
+      "label": "2024년 연간 경영실적 발표",
+      "url": "https://news.skhynix.com/en/sk-hynix-announces-4q24-financial-results/",
+      "published": "2025.01.23",
+      "verifiedAt": "2026.10.06"
     },
     {
-      "id": "legacy-2",
-      "label": "FnGuide 기업모니터 2026.10.02",
-      "url": null,
-      "published": null,
-      "verifiedAt": null
+      "id": "annual2025",
+      "label": "2025년 연간 경영실적 발표",
+      "url": "https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/",
+      "published": "2026.01.28",
+      "verifiedAt": "2026.10.06"
+    },
+    {
+      "id": "q1",
+      "label": "2026년 1분기 경영실적 발표",
+      "url": "https://news.skhynix.com/en/q1-2026-business-results/",
+      "published": "2026.04.23",
+      "verifiedAt": "2026.10.06"
+    },
+    {
+      "id": "q2",
+      "label": "2026년 2분기 경영실적 발표",
+      "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+      "published": "2026.07.29",
+      "verifiedAt": "2026.10.06"
     }
   ],
-  "sectionSourceIds": {},
-  "glossary": null,
+  "sectionSourceIds": {
+    "business": [
+      "annual2025"
+    ],
+    "drivers": [
+      "q1",
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "매출",
+      "desc": "제품과 서비스를 팔아 얻은 전체 금액입니다."
+    },
+    {
+      "name": "영업이익",
+      "desc": "매출에서 제품을 만드는 비용과 판매·관리 비용 등을 뺀 본업의 이익입니다."
+    },
+    {
+      "name": "DRAM · NAND",
+      "desc": "DRAM은 작업 중인 데이터를, NAND는 전원이 꺼져도 남아야 하는 데이터를 저장합니다."
+    },
+    {
+      "name": "HBM",
+      "desc": "여러 층의 DRAM을 쌓아 많은 데이터를 빠르게 주고받는 메모리입니다. AI 연산에 쓰입니다."
+    },
+    {
+      "name": "SSD · 기업용 SSD",
+      "desc": "NAND 등을 이용한 저장장치입니다. 기업용 SSD는 데이터센터의 성능·내구성 요구에 맞춰 만듭니다."
+    },
+    {
+      "name": "수율",
+      "desc": "생산한 제품 가운데 정상적으로 작동하는 제품의 비율입니다. 높아지면 같은 생산량에서 더 많은 제품을 판매할 수 있습니다."
+    },
+    {
+      "name": "연결 기준",
+      "desc": "SK하이닉스와 종속회사를 하나의 기업처럼 합쳐 계산하고 내부 거래는 제거한 기준입니다."
+    }
+  ],
   "presentation": {
-    "compact": false,
-    "chartStyle": "legacy"
+    "compact": true,
+    "chartStyle": "comparison"
   }
 }

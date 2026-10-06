@@ -27,7 +27,7 @@ table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px s
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><a href="index.html">← 기업 검색</a></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
-<script src="company-data.js?v=20261006-data-1"></script>
+<script src="company-data.js?v=20261006-hynix-1"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company");
 const app=document.getElementById("app");
@@ -99,7 +99,7 @@ else{
  const q=c.quarterly.map(x=>`<tr><td>${esc(compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${x.sales}조원</td><td>${x.op}조원</td></tr>`).join("");
  app.innerHTML=`
  <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
- <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}영업이익</small><strong>${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">삼성전자 공식 연간 실적 자료</a></div>`:""}</div>
+ <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}매출</small><strong>${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}영업이익</small><strong>${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
 
  ${compact?"":` <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
  <div class="valuation-row"><div class="vcard"><span>종가</span><strong>${c.price}</strong><small>${c.marketDate} 기준</small></div>
