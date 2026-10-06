@@ -1,6 +1,6 @@
 # 기업 데이터 관리
 
-화면 디자인은 `company.html`, 데이터 로딩은 `companies.js`, 기업 내용은 `data/companies/*.json`에서 관리합니다. 기존 홈페이지 `index.html`은 변경하지 않았습니다.
+화면 디자인은 `company.html`, 데이터 로딩은 `company-data.js`, 기업 내용은 `data/companies/*.json`에서 관리합니다. 기존 홈페이지 `index.html`은 변경하지 않았습니다.
 
 ## 파일 구성
 
@@ -27,9 +27,11 @@
 1. 기존 기업 JSON 구조를 참고해 새 파일을 만들고 공식 자료로 내용을 채웁니다. 금융회사 등 업종별 설명 방식은 별도로 검토합니다.
 2. 기업 목록에 고유한 키·종목코드와 파일을 등록합니다.
 3. `node scripts/validate-data.cjs`와 `node scripts/test-company-data.cjs`를 실행합니다.
-4. 데이터 파일을 바꿨다면 `companies.js`의 `COMPANY_DATA_VERSION`과 `company.html`의 스크립트 버전을 함께 올립니다. 캐시로 서로 다른 버전이 섞이는 것을 방지합니다.
+4. 데이터 파일을 바꿨다면 `company-data.js`의 `COMPANY_DATA_VERSION`과 `company.html`의 스크립트 버전을 함께 올립니다. 캐시로 서로 다른 버전이 섞이는 것을 방지합니다.
 5. 개발 사이트에서 화면·검색 연결·최근 본 기업·모바일 표시를 확인합니다.
 
 ## 배포
 
 현재 Cloudflare Pages의 `sianaly` 프로젝트는 `main` 브랜치를 자동 배포하며 연결된 도메인은 `dev.sianaly.com`입니다. `sianaly.com`은 운영용입니다. 운영 사이트 반영은 사용자가 별도로 요청한 경우에만 진행합니다.
+
+기존 `companies.js`는 캐시된 이전 화면을 위한 호환 파일입니다. 새 데이터의 원본은 JSON 파일이며 이 호환 파일에는 새 기업을 추가하지 않습니다.

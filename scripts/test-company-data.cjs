@@ -3,7 +3,7 @@ const path = require("node:path");
 const vm = require("node:vm");
 const assert = require("node:assert/strict");
 const root = path.resolve(__dirname, "..");
-const loader = fs.readFileSync(path.join(root, "companies.js"), "utf8");
+const loader = fs.readFileSync(path.join(root, "company-data.js"), "utf8");
 const html = fs.readFileSync(path.join(root, "company.html"), "utf8");
 const script = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(match => match[1]).join("\n");
 function context(key, transform, failed = false) {
