@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hhi",
+    "rank": 15,
+    "name": "HD현대중공업",
+    "ticker": "329180",
+    "type": "조선·엔진 기업"
+  },
+  "overview": {
+    "short": "상선·함정·해양 설비와 선박 엔진을 만드는 회사",
+    "summary": "상선·함정·해양 설비와 선박 엔진을 만드는 회사입니다. 과거에 수주한 선박의 가격과 실제 건조 진행률이 현재 실적을 결정합니다.",
+    "takeaways": [
+      "상선·함정·해양 설비와 선박 엔진을 만드는 회사입니다.",
+      "조선: LNG·LPG 운반선, 컨테이너선과 탱커 등 선박을 건조합니다. 합병 후 중형 선박 사업도 포함됩니다.",
+      "해양·특수선: 해양 설비와 함정 등 프로젝트를 수행합니다. 프로젝트별 공정과 설계·원가 위험이 중요합니다.",
+      "엔진·기계: 선박용 엔진과 관련 기계를 공급합니다. 친환경 연료 대응 엔진과 외부 고객 납품이 실적에 반영됩니다.",
+      "과거에 수주한 선박의 가격과 실제 건조 진행률이 현재 실적을 결정합니다."
+    ],
+    "business": [
+      {
+        "name": "조선",
+        "desc": "LNG·LPG 운반선, 컨테이너선과 탱커 등 선박을 건조합니다. 합병 후 중형 선박 사업도 포함됩니다."
+      },
+      {
+        "name": "해양·특수선",
+        "desc": "해양 설비와 함정 등 프로젝트를 수행합니다. 프로젝트별 공정과 설계·원가 위험이 중요합니다."
+      },
+      {
+        "name": "엔진·기계",
+        "desc": "선박용 엔진과 관련 기계를 공급합니다. 친환경 연료 대응 엔진과 외부 고객 납품이 실적에 반영됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "수주 선가와 공정",
+        "desc": "과거에 수주한 선박의 가격과 실제 건조 진행률이 현재 실적을 결정합니다."
+      },
+      {
+        "title": "선종·엔진 구성",
+        "desc": "고부가가치 선종과 엔진의 판매 구성에 따라 이익이 달라집니다."
+      },
+      {
+        "title": "생산 비용",
+        "desc": "강재·외주·인건비와 생산 효율이 프로젝트 수익성을 움직입니다."
+      },
+      {
+        "title": "합병·환율",
+        "desc": "HD현대미포 합병으로 비교 범위가 달라졌으며 외화 수주와 환율도 영향을 줍니다."
+      }
+    ],
+    "financialNote": "2025년 12월 HD현대미포 합병 효과가 반영됩니다. 2024년과 연결 범위가 달라 과거 대비 증가분 모두를 기존 사업 성장으로 해석할 수 없습니다."
+  },
+  "market": {
+    "price": "426,000원",
+    "marketCap": "44.7조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 14.4865,
+        "op": 0.7052,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 17.5806,
+        "op": 2.0375,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 5.9163,
+        "op": 0.9054,
+        "sourceIds": [
+          "quarter"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 6.3322,
+        "op": 1.0399,
+        "sourceIds": [
+          "quarter"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "매출",
+        "help": "제품과 서비스를 팔아 얻은 전체 금액"
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://hd-hhi.com/common/fileDownload?folderName=irDataEarningsRelease&fileName=50723_1_131babd4-9dbf-4b5b-842f-355131c8fc18.pdf&originalFileName=results.pdf",
+      "label": "2025년 연간 및 4분기 경영실적",
+      "asOf": "2025년 연간 및 4분기 경영실적",
+      "published": "2026.02.09",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://hd-hhi.com/common/fileDownload?folderName=irDataEarningsRelease&fileName=50883_1_03dc8e8a-b6ee-4e13-9d80-d32c56c9859d.pdf&originalFileName=results.pdf",
+      "label": "2026년 2분기 경영실적",
+      "asOf": "2026년 2분기 경영실적",
+      "published": "2026.07.29",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "선가",
+      "desc": "선박을 계약할 때 정한 판매 가격입니다."
+    },
+    {
+      "name": "LNG 운반선",
+      "desc": "액화천연가스를 운송하도록 설계한 선박입니다."
+    },
+    {
+      "name": "이중연료 엔진",
+      "desc": "두 종류의 연료를 사용할 수 있는 엔진입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

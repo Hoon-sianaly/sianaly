@@ -8,7 +8,7 @@
 header{height:72px;border-bottom:1px solid #e8e8e8;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 7%}
 .logo{font-weight:800;font-size:23px}.nav{color:#777;font-size:14px}
 .hero{max-width:900px;margin:100px auto 55px;text-align:center;padding:0 20px}.hero h1{font-size:48px;letter-spacing:-2.5px;margin:0 0 18px}.hero p{font-size:18px;color:#777;line-height:1.7}
-.search{position:relative;max-width:680px;margin:36px auto 0}.search input{width:100%;height:64px;border:1px solid #ddd;border-radius:16px;padding:0 24px;font-size:17px;outline:none;background:#fff}.results{position:absolute;top:72px;left:0;right:0;background:#fff;border:1px solid #ddd;border-radius:14px;text-align:left;overflow:hidden;z-index:10;box-shadow:0 12px 35px #00000012}.hidden{display:none}
+.search{position:relative;max-width:680px;margin:36px auto 0}.search input{width:100%;height:64px;border:1px solid #ddd;border-radius:16px;padding:0 24px;font-size:17px;outline:none;background:#fff}.results{position:absolute;top:72px;left:0;right:0;background:#fff;border:1px solid #ddd;border-radius:14px;text-align:left;overflow:auto;max-height:420px;z-index:10;box-shadow:0 12px 35px #00000012}.hidden{display:none}
 .result{padding:16px 20px;border-bottom:1px solid #eee;cursor:pointer}.result:hover{background:#f7f7f7}.result b{display:block}.result span{font-size:13px;color:#888}
 .section{max-width:1050px;margin:70px auto;padding:0 20px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #eee;border-radius:18px;padding:25px;min-height:155px}.card p{color:#777;line-height:1.6;font-size:14px}
 .notice{max-width:1050px;margin:80px auto 40px;padding:0 20px;color:#999;font-size:12px;line-height:1.7}@media(max-width:700px){.hero{margin-top:65px}.hero h1{font-size:35px}.cards{grid-template-columns:1fr}}
@@ -26,23 +26,21 @@ header{height:72px;border-bottom:1px solid #e8e8e8;background:#fff;display:flex;
 <div class="card"><h3>산업과 경쟁</h3><p>산업 구조와 주요 경쟁기업, 앞으로 볼 요소를 정리합니다.</p></div>
 </div></section>
 <div class="notice">SIANALY는 기업 및 산업에 관한 정보와 분석을 제공하는 서비스입니다. 특정 금융상품의 매수·매도 또는 투자 여부를 권유하는 서비스가 아닙니다.</div>
+<script src="company-data.js?v=20261007-kospi25-1"></script>
 <script>
-const companies=[
-{name:"삼성전자",ticker:"005930",market:"KOSPI",key:"samsung"},
-{name:"SK하이닉스",ticker:"000660",market:"KOSPI",key:"hynix"},
-{name:"삼성전자우",ticker:"005935",market:"KOSPI",key:"samsungpref",alias:"삼성전자우선주"},
-{name:"SK스퀘어",ticker:"402340",market:"KOSPI",key:"sksquare"},
-{name:"삼성전기",ticker:"009150",market:"KOSPI",key:"samsungel"}
-];
+let companies=[], catalogState="loading";
 const q=document.getElementById("q"),r=document.getElementById("r");
-function matches(c,s){return c.name.toLowerCase().includes(s)||c.ticker.toLowerCase().includes(s)||(c.alias||"").toLowerCase().includes(s)}
+const normalize=v=>v.toLowerCase().replace(/\s+/g,"");
+function matches(c,s){return [c.name,c.ticker,c.alias||""].some(v=>normalize(v).includes(normalize(s)))}
+loadCompanyCatalog().then(catalog=>{companies=catalog.companies;catalogState="ready";render(q.value)}).catch(error=>{console.error(error);catalogState="error";render(q.value)});
 function render(v){let s=v.trim().toLowerCase();if(!s){r.className="results hidden";return}
+if(catalogState!=="ready"){r.innerHTML=`<div class="result" role="status"><b>${catalogState==="loading"?"기업 목록을 불러오는 중입니다.":"기업 목록을 불러오지 못했습니다."}</b><span>${catalogState==="loading"?"잠시만 기다려 주세요.":"페이지를 새로고침해 다시 시도해 주세요."}</span></div>`;r.className="results";return}
 let m=companies.filter(c=>matches(c,s));
 r.innerHTML=m.length?m.map(c=>`<div class="result" data-key="${c.key}"><b>${c.name}</b><span>${c.ticker} · ${c.market}</span></div>`).join(""):`<div class="result"><b>검색 결과가 없습니다.</b><span>현재 등록된 기업만 검색할 수 있습니다.</span></div>`;
 r.className="results";}
 function go(c){location.href=`company.html?company=${encodeURIComponent(c.key)}`}
 q.addEventListener("input",e=>render(e.target.value));
-q.addEventListener("keydown",e=>{if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
+q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
 </script></body></html>

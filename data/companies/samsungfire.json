@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samsungfire",
+    "rank": 25,
+    "name": "삼성화재",
+    "ticker": "000810",
+    "type": "손해보험 기업"
+  },
+  "overview": {
+    "short": "장기·자동차·일반보험을 제공하고 보험 자산을 운용하는 회사",
+    "summary": "장기·자동차·일반보험을 제공하고 보험 자산을 운용하는 회사입니다. 사고·의료비·재해로 보험금이 늘면 보험 손익이 악화될 수 있습니다.",
+    "takeaways": [
+      "장기·자동차·일반보험을 제공하고 보험 자산을 운용하는 회사입니다.",
+      "장기보험: 건강·상해 등 장기 보장 보험을 판매·관리합니다. 신계약 CSM과 실제 보험금 지급이 손익에 영향을 줍니다.",
+      "자동차·일반보험: 자동차 사고와 기업·재산·배상 위험 등을 보장합니다. 보험료율·사고율·재해가 수익성을 움직입니다.",
+      "자산 운용: 보험 자산을 채권·주식 등에 투자합니다. 보험손익과 투자손익을 함께 반영해 영업이익을 공표합니다.",
+      "사고·의료비·재해로 보험금이 늘면 보험 손익이 악화될 수 있습니다."
+    ],
+    "business": [
+      {
+        "name": "장기보험",
+        "desc": "건강·상해 등 장기 보장 보험을 판매·관리합니다. 신계약 CSM과 실제 보험금 지급이 손익에 영향을 줍니다."
+      },
+      {
+        "name": "자동차·일반보험",
+        "desc": "자동차 사고와 기업·재산·배상 위험 등을 보장합니다. 보험료율·사고율·재해가 수익성을 움직입니다."
+      },
+      {
+        "name": "자산 운용",
+        "desc": "보험 자산을 채권·주식 등에 투자합니다. 보험손익과 투자손익을 함께 반영해 영업이익을 공표합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "보험금과 손해율",
+        "desc": "사고·의료비·재해로 보험금이 늘면 보험 손익이 악화될 수 있습니다."
+      },
+      {
+        "title": "신계약 수익성",
+        "desc": "판매량뿐 아니라 새 보험 계약의 예상 이익과 유지율이 중요합니다."
+      },
+      {
+        "title": "금리·투자 이익",
+        "desc": "금리와 시장 가격, 자산 운용에 따라 투자손익과 자본이 달라집니다."
+      },
+      {
+        "title": "지급여력",
+        "desc": "K-ICS 비율과 민감도를 통해 위험에 대응할 자본과 사업·환원 여력을 확인합니다."
+      }
+    ],
+    "financialNote": "보험수익은 고객에게 받은 보험료 전체나 투자영업수익을 포함한 총매출이 아닙니다. 영업이익에는 투자손익도 포함돼 보험수익만으로 이익률을 계산하면 다른 업종과 비교하기 어렵습니다. 연결 기준입니다."
+  },
+  "market": {
+    "price": "626,000원",
+    "marketCap": "27.9조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 17.3035,
+        "op": 2.7345,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 18.6567,
+        "op": 2.7731,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 4.786,
+        "op": 0.914,
+        "sourceIds": [
+          "quarter"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 4.889,
+        "op": 0.989,
+        "sourceIds": [
+          "quarter"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "보험수익",
+        "help": "IFRS17에 따라 해당 기간에 제공한 보험 서비스를 수익으로 인식한 금액"
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "보험손익과 투자손익 등을 합한 영업 이익"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/N9XQSF22H_K_SEHTR24HETRWG4WBSS_GY_WE202622011421.pdf",
+      "label": "2025년 연간 회사 IR 자료",
+      "asOf": "2025년 연간 회사 IR 자료",
+      "published": "2026.02.20",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/JQBM583MD25BE84XZXSQNCUZ95TC_JDVZ202681394328.pdf",
+      "label": "2026년 상반기 회사 IR 자료",
+      "asOf": "2026년 상반기 회사 IR 자료",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "보험수익",
+      "desc": "해당 기간에 제공한 보험 서비스에 대해 회계상 인식한 수익입니다. 수취 보험료 전체와 다릅니다."
+    },
+    {
+      "name": "손해율",
+      "desc": "보험료 등에 비해 지급 보험금이 어느 정도인지 나타내는 비율입니다."
+    },
+    {
+      "name": "CSM",
+      "desc": "보험 계약에서 앞으로 인식할 것으로 예상하는 서비스 이익입니다."
+    },
+    {
+      "name": "K-ICS",
+      "desc": "보험 위험 대비 지급여력을 측정하는 제도입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "doosan",
+    "rank": 13,
+    "name": "두산에너빌리티",
+    "ticker": "034020",
+    "type": "에너지 설비 기업"
+  },
+  "overview": {
+    "short": "원전·가스터빈 등 에너지 설비와 연결 기계 사업을 운영하는 회사",
+    "summary": "원전·가스터빈 등 에너지 설비와 연결 기계 사업을 운영하는 회사입니다. 신규 발전 투자와 원전 프로젝트가 장기 수주를 만들며 매출 반영에는 시간이 걸립니다.",
+    "takeaways": [
+      "원전·가스터빈 등 에너지 설비와 연결 기계 사업을 운영하는 회사입니다.",
+      "원자력·가스터빈: 원전 주기기와 SMR 관련 설비, 발전용 가스터빈을 제작합니다. 장기 프로젝트 수주와 실제 제작 진행이 중요합니다.",
+      "플랜트·서비스: 발전 플랜트 건설과 기자재 공급, 정비·서비스를 수행합니다. 프로젝트 원가와 공정이 수익성에 영향을 줍니다.",
+      "연결 자회사: 두산밥캣의 소형 건설기계와 두산퓨얼셀 등도 연결 실적에 포함됩니다. 에너지 사업만의 관리 실적과 구분합니다.",
+      "신규 발전 투자와 원전 프로젝트가 장기 수주를 만들며 매출 반영에는 시간이 걸립니다."
+    ],
+    "business": [
+      {
+        "name": "원자력·가스터빈",
+        "desc": "원전 주기기와 SMR 관련 설비, 발전용 가스터빈을 제작합니다. 장기 프로젝트 수주와 실제 제작 진행이 중요합니다."
+      },
+      {
+        "name": "플랜트·서비스",
+        "desc": "발전 플랜트 건설과 기자재 공급, 정비·서비스를 수행합니다. 프로젝트 원가와 공정이 수익성에 영향을 줍니다."
+      },
+      {
+        "name": "연결 자회사",
+        "desc": "두산밥캣의 소형 건설기계와 두산퓨얼셀 등도 연결 실적에 포함됩니다. 에너지 사업만의 관리 실적과 구분합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "원전·발전 수주",
+        "desc": "신규 발전 투자와 원전 프로젝트가 장기 수주를 만들며 매출 반영에는 시간이 걸립니다."
+      },
+      {
+        "title": "프로젝트 수익성",
+        "desc": "공정 지연과 원자재 가격, 계약 조건에 따라 매출과 이익이 달라집니다."
+      },
+      {
+        "title": "서비스 확대",
+        "desc": "설비 운전 이후 정비·부품 서비스 수요가 장기 수익원에 영향을 줍니다."
+      },
+      {
+        "title": "건설기계 경기",
+        "desc": "밥캣의 장비 수요와 관세·재고 조정이 연결 실적을 움직입니다."
+      }
+    ],
+    "financialNote": "두산밥캣·두산퓨얼셀 등을 포함한 IFRS 연결 기준입니다. 에너지 사업만의 관리 연결 실적이나 별도 실적과 구분해야 합니다. 회사 IR의 십억원 단위 수치를 조원으로 환산했습니다."
+  },
+  "market": {
+    "price": "81,100원",
+    "marketCap": "52.0조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 16.233,
+        "op": 1.018,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 17.058,
+        "op": 0.763,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 4.261,
+        "op": 0.234,
+        "sourceIds": [
+          "quarter"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 4.725,
+        "op": 0.314,
+        "sourceIds": [
+          "quarter"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "매출",
+        "help": "제품과 서비스를 팔아 얻은 전체 금액"
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://www.doosanenerbility.com/en/investment/ir/down/501",
+      "label": "2025년 연결 연간 실적",
+      "asOf": "2025년 연결 연간 실적",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://www.doosanenerbility.com/en/investment/ir/down/538",
+      "label": "2026년 2분기 연결 실적",
+      "asOf": "2026년 2분기 연결 실적",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "SMR",
+      "desc": "출력과 크기를 줄여 모듈 형태로 건설하는 소형 원자로입니다."
+    },
+    {
+      "name": "EPC",
+      "desc": "설계·조달·시공을 묶어 수행하는 플랜트 계약 방식입니다."
+    },
+    {
+      "name": "가스터빈",
+      "desc": "연료를 연소해 생긴 고온 가스로 회전력을 얻는 발전 설비입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

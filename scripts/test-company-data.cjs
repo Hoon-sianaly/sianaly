@@ -41,6 +41,14 @@ function context(key, transform, failed = false) {
   assert.equal(JSON.parse(state.storage.get("sianalyRecent"))[0].key,entry.key);
   assert.ok(!out.includes("주가와 밸류에이션"),entry.key);
   assert.ok(out.includes("공식 자료") && !out.includes("발표 null"),entry.key);
+  const record=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8"));
+  if(record.financials.metrics){
+   for(const metric of Object.values(record.financials.metrics)) {
+    assert.ok(out.includes(`<figcaption>${metric.label}</figcaption>`),`${entry.key}: chart metric`);
+    assert.ok(out.includes(`<th scope="col">${metric.label}</th>`),`${entry.key}: table metric`);
+    assert.ok(out.includes(metric.help),`${entry.key}: metric explanation`);
+   }
+  }
   if (entry.key === "sksquare") {
    assert.ok(out.includes("지분법 이익이 포함") && out.includes("재작성 수치"));
    assert.ok(out.includes("1.6</td>") && out.includes("19.2</td>"));
@@ -98,5 +106,5 @@ function context(key, transform, failed = false) {
  await vm.runInContext(script,loss.ctx);
  assert.ok(loss.nodes.app.innerHTML.includes('fill="#dc2626"'));
  assert.ok(loss.nodes.app.innerHTML.includes("영업손실은 0선 아래"));
- console.log("Passed: all 5 pages, shared financials, future periods, invalid keys, load failure and circular references.");
+ console.log(`Passed: all ${catalog.companies.length} pages, sector metrics, shared financials, future periods, invalid keys, load failure and circular references.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});

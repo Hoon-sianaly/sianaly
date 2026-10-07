@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hyundai",
+    "rank": 7,
+    "name": "현대차",
+    "ticker": "005380",
+    "type": "완성차 기업"
+  },
+  "overview": {
+    "short": "현대·제네시스 차량을 만들고 금융 서비스를 제공하는 회사",
+    "summary": "현대·제네시스 차량을 만들고 금융 서비스를 제공하는 회사입니다. 판매대수뿐 아니라 제네시스·SUV·하이브리드 등 차종별 가격과 이익의 차이가 중요합니다.",
+    "takeaways": [
+      "현대·제네시스 차량을 만들고 금융 서비스를 제공하는 회사입니다.",
+      "자동차: 현대·제네시스 브랜드의 승용차와 SUV, 상용차를 생산·판매합니다. 내연기관·하이브리드·전기차를 함께 운영합니다.",
+      "금융: 차량 할부·리스 등 금융 서비스를 제공합니다. 연결 실적에는 자동차 제조 외에 금융 부문도 포함됩니다.",
+      "부품·기타: 차량 관련 부품과 기타 사업이 있습니다. 그룹의 모든 계열사 매출이 현대차 연결 실적에 들어가는 것은 아닙니다.",
+      "판매대수뿐 아니라 제네시스·SUV·하이브리드 등 차종별 가격과 이익의 차이가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "자동차",
+        "desc": "현대·제네시스 브랜드의 승용차와 SUV, 상용차를 생산·판매합니다. 내연기관·하이브리드·전기차를 함께 운영합니다."
+      },
+      {
+        "name": "금융",
+        "desc": "차량 할부·리스 등 금융 서비스를 제공합니다. 연결 실적에는 자동차 제조 외에 금융 부문도 포함됩니다."
+      },
+      {
+        "name": "부품·기타",
+        "desc": "차량 관련 부품과 기타 사업이 있습니다. 그룹의 모든 계열사 매출이 현대차 연결 실적에 들어가는 것은 아닙니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "판매 구성",
+        "desc": "판매대수뿐 아니라 제네시스·SUV·하이브리드 등 차종별 가격과 이익의 차이가 중요합니다."
+      },
+      {
+        "title": "관세와 현지 생산",
+        "desc": "수입 관세와 생산 지역 변화가 차량 원가·판매 가격·이익을 바꿉니다."
+      },
+      {
+        "title": "환율과 인센티브",
+        "desc": "수출 환율과 판매 장려금이 매출·이익에 서로 다른 영향을 줍니다."
+      },
+      {
+        "title": "금융·품질 비용",
+        "desc": "금융 조달 비용과 대손, 판매보증 충당금은 자동차 판매가 늘어도 이익을 낮출 수 있습니다."
+      }
+    ],
+    "quarterlyNote": "회사 공표 연결 잠정실적입니다. 금융 부문도 포함하며, 차량 판매대수와 매출은 같은 지표가 아닙니다."
+  },
+  "market": {
+    "price": "346,500원",
+    "marketCap": "70.5조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 175.2312,
+        "op": 14.2396,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 186.2545,
+        "op": 11.4679,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 45.938886,
+        "op": 2.514686,
+        "sourceIds": [
+          "quarter"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 49.215328,
+        "op": 2.850888,
+        "sourceIds": [
+          "quarter"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "매출",
+        "help": "제품과 서비스를 팔아 얻은 전체 금액"
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001116",
+      "label": "2025년 연간 및 2024년 비교 실적",
+      "asOf": "2025년 연간 및 2024년 비교 실적",
+      "published": "2026.01.29",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://www.hyundai.com/worldwide/en/company/ir/notices/view-0000000373-en-10-1-",
+      "label": "2026년 2분기 연결 잠정실적",
+      "asOf": "2026년 2분기 연결 잠정실적",
+      "published": "2026.07.23",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "HEV",
+      "desc": "엔진과 전기모터를 함께 사용하는 하이브리드 차량입니다."
+    },
+    {
+      "name": "ASP",
+      "desc": "판매된 제품 한 대당 평균 판매가격입니다."
+    },
+    {
+      "name": "판매보증충당금",
+      "desc": "향후 차량 보증 수리에 쓸 것으로 예상해 미리 반영하는 비용입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

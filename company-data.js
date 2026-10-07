@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261006-three-1";
+const COMPANY_DATA_VERSION = "20261007-kospi25-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -54,6 +54,10 @@ function companyPageData(record) {
   latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),
   latestNet:latest?.net == null ? null : `${latest.net.toFixed(1)}조원`,
   financialBasis:financials.basis === "consolidated" ? "K-IFRS 연결 기준" : "K-IFRS 별도 기준",
+  financialMetrics:financials.metrics || {
+   sales:{label:"매출",help:"제품과 서비스를 팔아 얻은 전체 금액"},
+   op:{label:"영업이익",help:"매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"}
+  },
   verifiedAt:financials.verification.verifiedAt,
   sourceLinks, sources:record.sources.map(source => source.label),
   annualSourceIds:[...new Set(annual.flatMap(row => row.sourceIds))],

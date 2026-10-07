@@ -41,6 +41,10 @@ function validateFinancials(record, seen = []) {
   return validateFinancials(records.get(financials.companyRef), [...seen, key]);
  }
  assert.equal(financials.unit, "KRW_trillion");
+ if(financials.metrics) for(const field of ["sales","op"]){
+  assert.ok(financials.metrics[field]?.label?.trim(),`Missing metric label: ${key}/${field}`);
+  assert.ok(financials.metrics[field]?.help?.trim(),`Missing metric explanation: ${key}/${field}`);
+ }
  assert.ok(["consolidated", "separate"].includes(financials.basis));
  assert.ok(["verified", "unverified"].includes(financials.verification.status));
  const verified = financials.verification.status === "verified";

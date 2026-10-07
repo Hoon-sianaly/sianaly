@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "shinhan",
+    "rank": 14,
+    "name": "신한지주",
+    "ticker": "055550",
+    "type": "금융지주"
+  },
+  "overview": {
+    "short": "신한은행·카드·증권·보험 등 금융사를 보유한 금융지주",
+    "summary": "신한은행·카드·증권·보험 등 금융사를 보유한 금융지주입니다. 대출·예금 금리와 자산 구성에 따라 순이자이익이 달라집니다.",
+    "takeaways": [
+      "신한은행·카드·증권·보험 등 금융사를 보유한 금융지주입니다.",
+      "은행: 개인·기업의 예금과 대출, 외환 등 금융 서비스를 제공합니다. 순이자이익과 대출 자산의 건전성이 중요합니다.",
+      "카드·증권: 결제·할부 금융과 주식 중개, 자산관리·기업금융 등을 제공합니다. 거래와 소비 환경에 영향을 받습니다.",
+      "보험·기타: 생명보험과 자산운용 등 비은행 금융 사업을 운영합니다. 여러 사업의 손익을 연결해 그룹 실적을 공표합니다.",
+      "대출·예금 금리와 자산 구성에 따라 순이자이익이 달라집니다."
+    ],
+    "business": [
+      {
+        "name": "은행",
+        "desc": "개인·기업의 예금과 대출, 외환 등 금융 서비스를 제공합니다. 순이자이익과 대출 자산의 건전성이 중요합니다."
+      },
+      {
+        "name": "카드·증권",
+        "desc": "결제·할부 금융과 주식 중개, 자산관리·기업금융 등을 제공합니다. 거래와 소비 환경에 영향을 받습니다."
+      },
+      {
+        "name": "보험·기타",
+        "desc": "생명보험과 자산운용 등 비은행 금융 사업을 운영합니다. 여러 사업의 손익을 연결해 그룹 실적을 공표합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "이자마진",
+        "desc": "대출·예금 금리와 자산 구성에 따라 순이자이익이 달라집니다."
+      },
+      {
+        "title": "비이자이익",
+        "desc": "증권 거래·금융상품·카드 수수료 등은 금융시장과 소비 환경의 영향을 받습니다."
+      },
+      {
+        "title": "신용 비용",
+        "desc": "대출·투자 자산의 부실 가능성에 따라 충당금이 늘면 순이익이 감소할 수 있습니다."
+      },
+      {
+        "title": "자본과 환원",
+        "desc": "CET1과 위험가중자산의 변화는 성장·배당·자사주 정책 여력에 영향을 줍니다."
+      }
+    ],
+    "financialNote": "첫 지표는 회사 IR의 Operating Income before Expenses(경비 차감 전 영업이익)입니다. 제조업 매출과 다릅니다. 두 번째 지표는 지배주주 연결순이익이며, 충당금 차감 전 영업이익을 표시한 것이 아닙니다."
+  },
+  "market": {
+    "price": "104,800원",
+    "marketCap": "49.2조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 14.6743,
+        "op": 4.4502,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 15.4386,
+        "op": 4.9716,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 4.2124,
+        "op": 1.6226,
+        "sourceIds": [
+          "quarter"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 4.5843,
+        "op": 1.8201,
+        "sourceIds": [
+          "quarter"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "경비 차감 전 영업이익",
+        "help": "순이자이익과 비이자이익을 합한 금액으로 관리비·신용손실 등을 차감하기 전의 이익"
+      },
+      "op": {
+        "label": "지배주주 순이익",
+        "help": "경비·신용손실·세금 등을 반영한 연결 이익 중 지배주주에게 귀속되는 금액"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://www.shinhangroup.com/main/downloadAttach?attachNo=02219fd716f54ac8b02a792555486022&seq=1",
+      "label": "2025년 연간 경영실적",
+      "asOf": "2025년 연간 경영실적",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://www.shinhangroup.com/main/downloadAttach?attachNo=1023a0d5f63847a38abb472d6a1ed6be&seq=1",
+      "label": "2026년 상반기 경영실적",
+      "asOf": "2026년 상반기 경영실적",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "비이자이익",
+      "desc": "이자 외에 수수료·매매평가손익 등에서 발생하는 이익입니다."
+    },
+    {
+      "name": "CET1",
+      "desc": "위험가중자산 대비 보통주자본 비율입니다."
+    },
+    {
+      "name": "지배주주 순이익",
+      "desc": "연결 전체 이익 중 상장 지주의 주주에게 귀속되는 이익입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lges",
+    "rank": 6,
+    "name": "LG에너지솔루션",
+    "ticker": "373220",
+    "type": "배터리 기업"
+  },
+  "overview": {
+    "short": "전기차와 에너지저장장치에 쓰는 배터리를 만드는 회사",
+    "summary": "전기차와 에너지저장장치에 쓰는 배터리를 만드는 회사입니다. 고객사의 재고 조정과 전기차 판매가 배터리 출하량·가동률을 움직입니다.",
+    "takeaways": [
+      "전기차와 에너지저장장치에 쓰는 배터리를 만드는 회사입니다.",
+      "전기차 배터리: 완성차 기업에 파우치형·원통형 배터리와 팩을 공급합니다. 고객의 차량 생산 일정과 지역별 수요가 판매량에 영향을 줍니다.",
+      "ESS 배터리: 전력망과 데이터센터 등에 전기를 저장하는 배터리를 공급합니다. LFP 제품과 현지 생산 능력을 확대하고 있습니다.",
+      "생산·솔루션: 글로벌 공장과 합작법인에서 생산하며 배터리 관리와 ESS 시스템 통합 솔루션도 제공합니다.",
+      "고객사의 재고 조정과 전기차 판매가 배터리 출하량·가동률을 움직입니다."
+    ],
+    "business": [
+      {
+        "name": "전기차 배터리",
+        "desc": "완성차 기업에 파우치형·원통형 배터리와 팩을 공급합니다. 고객의 차량 생산 일정과 지역별 수요가 판매량에 영향을 줍니다."
+      },
+      {
+        "name": "ESS 배터리",
+        "desc": "전력망과 데이터센터 등에 전기를 저장하는 배터리를 공급합니다. LFP 제품과 현지 생산 능력을 확대하고 있습니다."
+      },
+      {
+        "name": "생산·솔루션",
+        "desc": "글로벌 공장과 합작법인에서 생산하며 배터리 관리와 ESS 시스템 통합 솔루션도 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전기차 수요",
+        "desc": "고객사의 재고 조정과 전기차 판매가 배터리 출하량·가동률을 움직입니다."
+      },
+      {
+        "title": "ESS 설치",
+        "desc": "전력망 안정화와 데이터센터 투자로 ESS 주문이 달라집니다. 주문은 실제 납품 시점에 실적으로 반영됩니다."
+      },
+      {
+        "title": "공장 가동률",
+        "desc": "신규 공장의 초기 비용과 생산 수율은 판매 증가와 별개로 이익에 영향을 줍니다."
+      },
+      {
+        "title": "원재료·정책",
+        "desc": "리튬 등 원재료 가격, 관세와 현지 생산 인센티브의 회계 반영을 함께 확인해야 합니다."
+      }
+    ],
+    "financialNote": "보도자료가 공표한 반올림 수치를 사용했습니다. 북미 생산 인센티브의 반영 위치가 연도별로 다를 수 있어, 인센티브를 제외한 영업 실적도 원문과 함께 확인해야 합니다."
+  },
+  "market": {
+    "price": "371,000원",
+    "marketCap": "86.8조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 25.6,
+        "op": 0.5754,
+        "sourceIds": [
+          "prior"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 23.7,
+        "op": 1.3,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 6.6,
+        "op": -0.2078,
+        "sourceIds": [
+          "q1"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 7.6,
+        "op": 0.1133,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "매출",
+        "help": "제품과 서비스를 팔아 얻은 전체 금액"
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "prior",
+      "url": "https://inside.lgensol.com/en/2025/01/lg-energy-solution-releases-2024-financial-results/",
+      "label": "2024년 연간 실적",
+      "asOf": "2024년 연간 실적",
+      "published": "2025.01.24",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "annual",
+      "url": "https://inside.lgensol.com/en/2026/01/lg-energy-solution-releases-2025-financial-results/",
+      "label": "2025년 연간 실적",
+      "asOf": "2025년 연간 실적",
+      "published": "2026.01.29",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q1",
+      "url": "https://inside.lgensol.com/en/2026/04/lg-energy-solution-releases-2026-first-quarter-financial-results/",
+      "label": "2026년 1분기 실적",
+      "asOf": "2026년 1분기 실적",
+      "published": "2026.04.30",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "url": "https://inside.lgensol.com/en/2026/07/lg-energy-solution-releases-2026-second-quarter-financial-results/",
+      "label": "2026년 2분기 실적",
+      "asOf": "2026년 2분기 실적",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "ESS",
+      "desc": "전기를 저장했다가 필요할 때 공급하는 에너지저장장치입니다."
+    },
+    {
+      "name": "LFP",
+      "desc": "리튬·철·인산을 사용하는 배터리 양극재 계열입니다."
+    },
+    {
+      "name": "GWh",
+      "desc": "배터리 에너지 용량 단위로, 출하량이나 생산 능력을 표시합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

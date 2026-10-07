@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samsungbio",
+    "rank": 8,
+    "name": "삼성바이오로직스",
+    "ticker": "207940",
+    "type": "바이오 CDMO 기업"
+  },
+  "overview": {
+    "short": "제약사가 개발한 바이오의약품의 개발과 생산을 맡는 회사",
+    "summary": "제약사가 개발한 바이오의약품의 개발과 생산을 맡는 회사입니다. 새 공장을 완공해도 고객 제품이 실제 생산돼야 매출이 생깁니다. 가동률 상승은 고정비 부담을 줄입니다.",
+    "takeaways": [
+      "제약사가 개발한 바이오의약품의 개발과 생산을 맡는 회사입니다.",
+      "위탁생산: 제약사와 계약을 맺고 항체 등 바이오의약품을 생산합니다. 공장 생산능력과 계약 물량이 중요합니다.",
+      "위탁개발: 세포주·공정 개발과 분석 등 의약품 생산 준비를 지원합니다. 개발 단계 고객을 상업 생산으로 연결합니다.",
+      "생산 서비스 확대: 충전·완제 및 ADC 등 서비스 범위를 넓힙니다. 새로운 설비의 검증과 안정적 가동이 필요합니다.",
+      "새 공장을 완공해도 고객 제품이 실제 생산돼야 매출이 생깁니다. 가동률 상승은 고정비 부담을 줄입니다."
+    ],
+    "business": [
+      {
+        "name": "위탁생산",
+        "desc": "제약사와 계약을 맺고 항체 등 바이오의약품을 생산합니다. 공장 생산능력과 계약 물량이 중요합니다."
+      },
+      {
+        "name": "위탁개발",
+        "desc": "세포주·공정 개발과 분석 등 의약품 생산 준비를 지원합니다. 개발 단계 고객을 상업 생산으로 연결합니다."
+      },
+      {
+        "name": "생산 서비스 확대",
+        "desc": "충전·완제 및 ADC 등 서비스 범위를 넓힙니다. 새로운 설비의 검증과 안정적 가동이 필요합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "공장 가동률",
+        "desc": "새 공장을 완공해도 고객 제품이 실제 생산돼야 매출이 생깁니다. 가동률 상승은 고정비 부담을 줄입니다."
+      },
+      {
+        "title": "수주와 일정",
+        "desc": "장기 계약의 규모와 생산 시작 시점이 중요하며 수주액 전체가 즉시 매출이 되지는 않습니다."
+      },
+      {
+        "title": "품질·규제",
+        "desc": "고객·규제기관의 품질 요건을 충족해야 생산과 납품을 이어갈 수 있습니다."
+      },
+      {
+        "title": "환율·사업 범위",
+        "desc": "외화 계약의 환산 효과와 분할 이후 비교 기준을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "삼성바이오에피스 분할 이후 계속사업인 CDMO 기준으로 비교합니다. 2024년은 회사가 다시 제시한 비교 수치이며, 분할 전 연결 수치와 다릅니다.",
+    "quarterlyNote": "1분기는 공표된 상반기 누적액에서 2분기 3개월 실적을 차감했습니다(매출 2.5780−1.3209, 영업이익 1.1672−0.5864조원)."
+  },
+  "market": {
+    "price": "1,354,000원",
+    "marketCap": "62.7조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.4971,
+        "op": 1.3214,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 4.557,
+        "op": 2.0692,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.2571,
+        "op": 0.5808,
+        "sourceIds": [
+          "quarter"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.3209,
+        "op": 0.5864,
+        "sourceIds": [
+          "quarter"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "매출",
+        "help": "제품과 서비스를 팔아 얻은 전체 금액"
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://samsungbiologics.com/media/company-news/samsung-biologics-reports-fourth-quarter-and-fiscal-year-2025-financial-results",
+      "label": "2025년 연간 실적과 재작성 비교 수치",
+      "asOf": "2025년 연간 실적과 재작성 비교 수치",
+      "published": "2026.01.21",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://samsungbiologics.com/kr/media/company-news/samsung-biologics-reports-second-quarter-2026-financial-results",
+      "label": "2026년 2분기 및 상반기 실적",
+      "asOf": "2026년 2분기 및 상반기 실적",
+      "published": "2026.07.23",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "CDMO",
+      "desc": "의약품 개발과 생산을 고객사 대신 맡는 사업입니다."
+    },
+    {
+      "name": "ADC",
+      "desc": "항체에 약물을 결합해 특정 세포를 겨냥하는 의약품입니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "설비가 가진 생산 능력 중 실제로 사용하는 비율입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

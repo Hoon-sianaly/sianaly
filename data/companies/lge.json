@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lge",
+    "rank": 20,
+    "name": "LG전자",
+    "ticker": "066570",
+    "type": "가전·전장 기업"
+  },
+  "overview": {
+    "short": "생활가전·TV·차량 전자장치와 냉난방 솔루션을 만드는 회사",
+    "summary": "생활가전·TV·차량 전자장치와 냉난방 솔루션을 만드는 회사입니다. 소비 여력과 프리미엄 제품 비중, 스포츠 행사 등 계절 수요가 판매에 영향을 줍니다.",
+    "takeaways": [
+      "생활가전·TV·차량 전자장치와 냉난방 솔루션을 만드는 회사입니다.",
+      "생활가전·구독: 냉장고·세탁기 등 가전과 관리 서비스를 제공합니다. 제품 판매뿐 아니라 구독 서비스도 운영합니다.",
+      "미디어·전장: TV와 webOS 플랫폼, 차량 인포테인먼트·전자장치 등을 제공합니다. 소비재와 기업 고객 사업의 수요가 다릅니다.",
+      "냉난방·연결 사업: 냉난방과 상업용 솔루션을 공급합니다. 연결 전체 실적에는 LG이노텍도 포함됩니다.",
+      "소비 여력과 프리미엄 제품 비중, 스포츠 행사 등 계절 수요가 판매에 영향을 줍니다."
+    ],
+    "business": [
+      {
+        "name": "생활가전·구독",
+        "desc": "냉장고·세탁기 등 가전과 관리 서비스를 제공합니다. 제품 판매뿐 아니라 구독 서비스도 운영합니다."
+      },
+      {
+        "name": "미디어·전장",
+        "desc": "TV와 webOS 플랫폼, 차량 인포테인먼트·전자장치 등을 제공합니다. 소비재와 기업 고객 사업의 수요가 다릅니다."
+      },
+      {
+        "name": "냉난방·연결 사업",
+        "desc": "냉난방과 상업용 솔루션을 공급합니다. 연결 전체 실적에는 LG이노텍도 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "가전·TV 소비",
+        "desc": "소비 여력과 프리미엄 제품 비중, 스포츠 행사 등 계절 수요가 판매에 영향을 줍니다."
+      },
+      {
+        "title": "B2B·구독",
+        "desc": "차량 전장 수주와 가전 구독, 냉난방·데이터센터 냉각 사업이 수익 구성을 바꿉니다."
+      },
+      {
+        "title": "원가와 관세",
+        "desc": "물류·원재료 비용, 관세와 환급 등의 일회성 효과가 이익에 반영됩니다."
+      },
+      {
+        "title": "플랫폼·연결 자회사",
+        "desc": "webOS 서비스 수익과 LG이노텍 실적도 전체 이익에 영향을 줍니다."
+      }
+    ],
+    "financialNote": "LG이노텍을 포함한 연결 실적입니다. 연간 수치는 공식 재무정보의 십억원 단위 금액을 환산했으며, 2분기는 공식 보도자료의 반올림 수치입니다."
+  },
+  "market": {
+    "price": "216,000원",
+    "marketCap": "35.2조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 82.263,
+        "op": 3.653,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2024,
+        "sales": 87.728,
+        "op": 3.42,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 89.201,
+        "op": 2.478,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 23.7272,
+        "op": 1.6737,
+        "sourceIds": [
+          "q1"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 23.83,
+        "op": 1.58,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "매출",
+        "help": "제품과 서비스를 팔아 얻은 전체 금액"
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://www.lg.com/global/investor-relations/financial-information/",
+      "label": "2023–2025년 연결 재무정보",
+      "asOf": "2023–2025년 연결 재무정보",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q1",
+      "url": "https://www.lg.com/content/dam/channel/wcms/global/ir/05-ir-events/2026/2026_Q1_Earnings_Release_of_LGE_EN.pdf",
+      "label": "2026년 1분기 경영실적",
+      "asOf": "2026년 1분기 경영실적",
+      "published": "2026.04.29",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "url": "https://www.lg.com/global/newsroom/news/corporate/lg-electronics-releases-second-quarter-2026-financial-results/",
+      "label": "2026년 2분기 경영실적",
+      "asOf": "2026년 2분기 경영실적",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "전장",
+      "desc": "차량에 들어가는 전자 장치와 부품을 뜻합니다."
+    },
+    {
+      "name": "webOS",
+      "desc": "LG의 스마트 TV 운영체제이자 콘텐츠·광고 서비스 플랫폼입니다."
+    },
+    {
+      "name": "HVAC",
+      "desc": "난방·환기·공조를 묶어 부르는 냉난방 시스템입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

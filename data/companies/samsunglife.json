@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samsunglife",
+    "rank": 10,
+    "name": "삼성생명",
+    "ticker": "032830",
+    "type": "생명보험 기업"
+  },
+  "overview": {
+    "short": "생명·건강·연금보험을 제공하고 보험 자산을 운용하는 회사",
+    "summary": "생명·건강·연금보험을 제공하고 보험 자산을 운용하는 회사입니다. 새 계약의 예상 이익과 기존 계약에서 기간별로 인식하는 이익이 중요합니다. CSM 잔액이 바로 현금이나 당기 이익은 아닙니다.",
+    "takeaways": [
+      "생명·건강·연금보험을 제공하고 보험 자산을 운용하는 회사입니다.",
+      "보장성 보험: 사망·질병 등 위험을 보장하는 보험을 판매하고 관리합니다. 신계약의 수익성과 실제 보험금 지급이 중요합니다.",
+      "저축·연금: 장기 저축과 노후 소득을 위한 보험·연금을 제공합니다. 금리와 계약 유지율이 수익성에 영향을 줍니다.",
+      "자산 운용·연결 효과: 채권·주식 등 보험 자산을 운용하며 연결·지분법 손익도 순이익에 반영됩니다. 보험서비스손익과 투자손익을 구분해서 봅니다.",
+      "새 계약의 예상 이익과 기존 계약에서 기간별로 인식하는 이익이 중요합니다. CSM 잔액이 바로 현금이나 당기 이익은 아닙니다."
+    ],
+    "business": [
+      {
+        "name": "보장성 보험",
+        "desc": "사망·질병 등 위험을 보장하는 보험을 판매하고 관리합니다. 신계약의 수익성과 실제 보험금 지급이 중요합니다."
+      },
+      {
+        "name": "저축·연금",
+        "desc": "장기 저축과 노후 소득을 위한 보험·연금을 제공합니다. 금리와 계약 유지율이 수익성에 영향을 줍니다."
+      },
+      {
+        "name": "자산 운용·연결 효과",
+        "desc": "채권·주식 등 보험 자산을 운용하며 연결·지분법 손익도 순이익에 반영됩니다. 보험서비스손익과 투자손익을 구분해서 봅니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "신계약 CSM",
+        "desc": "새 계약의 예상 이익과 기존 계약에서 기간별로 인식하는 이익이 중요합니다. CSM 잔액이 바로 현금이나 당기 이익은 아닙니다."
+      },
+      {
+        "title": "보험금과 유지율",
+        "desc": "예상보다 많은 보험금 지급이나 계약 해지는 보험 손익에 영향을 줍니다."
+      },
+      {
+        "title": "시장 금리·주가",
+        "desc": "채권 운용 수익과 자산·부채 평가가 바뀌며 보유 주식의 가격도 자본에 영향을 줍니다."
+      },
+      {
+        "title": "지급여력",
+        "desc": "K-ICS 비율과 금리 민감도를 통해 보험 위험에 대응할 자본을 확인합니다."
+      }
+    ],
+    "financialNote": "보험서비스손익과 지배주주 연결순이익을 표시합니다. 두 지표는 매출·영업이익과 다릅니다. 순이익에는 투자손익 및 연결·지분법 효과도 포함됩니다. 회사 IR 자료의 십억원 단위 반올림 수치입니다."
+  },
+  "market": {
+    "price": "289,000원",
+    "marketCap": "57.8조원",
+    "per": "-",
+    "pbr": "-",
+    "date": "2026.10.02"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.542,
+        "op": 2.107,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.975,
+        "op": 2.303,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.257,
+        "op": 1.204,
+        "sourceIds": [
+          "quarter"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.277,
+        "op": 0.69,
+        "sourceIds": [
+          "quarter"
+        ]
+      }
+    ],
+    "highlightFormat": "mixed",
+    "metrics": {
+      "sales": {
+        "label": "보험서비스손익",
+        "help": "보험 서비스를 제공하며 인식한 수익에서 관련 비용 등을 차감한 손익"
+      },
+      "op": {
+        "label": "지배주주 순이익",
+        "help": "투자·연결 손익과 세금 등을 반영한 이익 중 지배주주에게 귀속되는 금액"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/K_GCGGBB5FS77FZ6T2QUKP4VVM83V7TC3202622015939.pdf",
+      "label": "2025년 연간 회사 IR 자료",
+      "asOf": "2025년 연간 회사 IR 자료",
+      "published": "2026.02.20",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/E9V5S_KA8AKQUASPGWGC9JWDJWF2YZBAZ2026813171657.pdf",
+      "label": "2026년 상반기 회사 IR 자료",
+      "asOf": "2026년 상반기 회사 IR 자료",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "IFRS17",
+      "desc": "보험 서비스를 제공하는 기간에 맞춰 수익과 이익을 인식하는 보험 회계기준입니다."
+    },
+    {
+      "name": "CSM",
+      "desc": "보험 계약에서 앞으로 인식할 것으로 예상하는 서비스 이익입니다."
+    },
+    {
+      "name": "K-ICS",
+      "desc": "보험사의 위험 대비 지급여력 자본을 측정하는 제도입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

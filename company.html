@@ -29,7 +29,7 @@ html{scroll-behavior:smooth}.section-toc{position:sticky;top:10px;z-index:10;bac
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><a href="index.html">← 기업 검색</a></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
-<script src="company-data.js?v=20261006-decimal-1"></script>
+<script src="company-data.js?v=20261007-kospi25-1"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company");
 const app=document.getElementById("app");
@@ -59,13 +59,14 @@ function updateRecent(){
  recentList.innerHTML=items.length?items.map(x=>`<a class="recent-item" href="company.html?company=${encodeURIComponent(x.key)}"><b>${esc(x.name)}</b><span>${esc(x.ticker)}</span></a>`).join(""):'<div class="recent-empty">아직 본 기업이 없습니다.</div>';
 }
 const esc=v=>String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const salesLabel=c?esc(c.financialMetrics.sales.label):"매출",opLabel=c?esc(c.financialMetrics.op.label):"영업이익";
 function sourceLinks(ids){
  ids=ids.filter(id=>c.sourceLinks[id]);
  if(!ids.length)return "";
  return `<div class="source-links"><b>공식 자료</b><ul>${ids.map(id=>{const s=c.sourceLinks[id];return `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>${s.published?` · 발표 ${esc(s.published)}`:s.asOf?` · 자료 기준 ${esc(s.asOf)}`:""}</li>`}).join("")}</ul><span>확인일: ${esc(c.verifiedAt)}</span></div>`;
 }
 function comparisonChart(rows){
- const metrics=[{field:"sales",title:"매출",help:"제품과 서비스를 팔아 얻은 전체 금액",color:"#2563eb"},{field:"op",title:"영업이익",help:"제품을 만드는 비용과 판매·관리 비용 등을 뺀 본업의 이익",color:"#111827"}];
+ const metrics=[{field:"sales",title:c.financialMetrics.sales.label,help:c.financialMetrics.sales.help,color:"#2563eb"},{field:"op",title:c.financialMetrics.op.label,help:c.financialMetrics.op.help,color:"#111827"}];
  return `<div class="metric-charts">${metrics.map(m=>{
   const values=rows.map(r=>r[m.field]), highest=Math.max(...values,0), lowest=Math.min(...values,0);
   const magnitude=Math.pow(10,Math.floor(Math.log10(Math.max(highest,Math.abs(lowest),0.1)))), step=magnitude/2;
@@ -74,12 +75,12 @@ function comparisonChart(rows){
   const ticks=[...new Set([upper,upper/2,0,...(lower<0?[lower]:[])])];
   const slots=(right-left)/Math.max(rows.length,1), width=Math.min(48,slots*0.5);
   const labels=rows.map(r=>`${r.quarter?r.quarter+"분기":r.period}: ${r[m.field]}조원`).join(", ");
-  return `<figure class="metric-panel"><figcaption>${m.title}</figcaption><svg class="vertical-chart" viewBox="0 0 370 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
+  return `<figure class="metric-panel"><figcaption>${esc(m.title)}</figcaption><p class="desc">${esc(m.help)}</p><svg class="vertical-chart" viewBox="0 0 370 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
   ${ticks.map(value=>`<line x1="${left}" y1="${y(value)}" x2="${right}" y2="${y(value)}" stroke="${value===0?"#94a3b8":"#e2e8f0"}"/><text x="${left-8}" y="${y(value)+4}" text-anchor="end" class="axis-label">${value.toFixed(1)}</text>`).join("")}
   <text x="${left}" y="12" class="axis-label">단위: 조원</text>
   ${rows.map((r,i)=>{const value=r[m.field],x=left+slots*(i+0.5),pos=y(value);return `<rect x="${x-width/2}" y="${Math.min(pos,zero)}" width="${width}" height="${Math.abs(zero-pos)}" rx="3" fill="${value<0?"#dc2626":m.color}"/><text x="${x}" y="${value<0?pos+15:pos-8}" text-anchor="middle" class="value-label">${value.toFixed(1)}</text><text x="${x}" y="238" text-anchor="middle" class="axis-label">${esc(r.quarter?r.quarter+"분기":r.period)}</text>`}).join("")}
   </svg></figure>`;
- }).join("")}</div><p class="chart-reading">매출과 영업이익은 눈금이 다르므로 같은 그래프 안에서 기간별 변화를 비교해 주세요. 그래프와 표의 표시값은 소수점 첫째 자리에서 반올림했습니다.${rows.some(r=>r.op<0)?" 영업손실은 0선 아래에 표시합니다.":""}</p>`;
+ }).join("")}</div><p class="chart-reading">${salesLabel}과 ${opLabel}은 눈금이 다르므로 같은 그래프 안에서 기간별 변화를 비교해 주세요. 그래프와 표의 표시값은 소수점 첫째 자리에서 반올림했습니다.${rows.some(r=>r.op<0)?(c.financialMetrics.op.label==="영업이익"?" 영업손실은 0선 아래에 표시합니다.":" 손실은 0선 아래에 표시합니다."):""}</p>`;
 }
 function chart(rows){return comparisonChart(rows)}
 function twoMetricChart(rows){return comparisonChart(rows)}
@@ -92,7 +93,7 @@ else{
  app.innerHTML=`
  <nav class="section-toc" aria-label="기업 분석 목차"><strong>목차</strong><div class="toc-links"><a href="#company-intro">기업 소개</a><a href="#company-business">주요 사업</a><a href="#company-annual">연간 실적</a><a href="#company-quarterly">분기 실적</a><a href="#company-drivers">핵심 변수</a><a href="#company-glossary">용어 설명</a></div></nav>
  <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
- <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}매출</small><strong>약 ${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}영업이익</small><strong>약 ${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
+ <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}${salesLabel}</small><strong>약 ${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}${opLabel}</small><strong>약 ${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
 
  ${compact?"":` <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
  <div class="valuation-row"><div class="vcard"><span>종가</span><strong>${c.price}</strong><small>${c.marketDate} 기준</small></div>
@@ -106,11 +107,11 @@ else{
  <section id="company-business">${compact?"":`<div class="blue">02 · 돈은 어디서 벌까?</div>`}<div class="title">주요 사업</div><div class="desc">어떤 사업이 이 회사의 매출과 이익을 만드는지 봅니다.</div>
  <div class="grid">${c.business.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.name}</h3><p>${x.desc}</p></div>`).join("")}</div>${sourceLinks(c.sectionSourceIds.business || [])}</section>
 
- <section id="company-annual">${compact?"":`<div class="blue">03 · 실적은 어떻게 변했을까?</div>`}<div class="title">연간 실적 그래프</div><div class="desc">과거에서 최신 연간 실적으로 갈수록 매출과 영업이익이 어떻게 움직였는지 한눈에 봅니다.</div>
- ${c.financialNote?`<p class="financial-basis">${esc(c.financialNote)}</p>`:""}${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 연도 1–12월</div>${comparison?comparisonChart(c.annual):chart(c.annual)}`:chart(c.annual)}<table style="margin-top:24px" aria-label="연간 매출과 영업이익"><thead><tr><th scope="col">기간</th><th scope="col">매출</th><th scope="col">영업이익</th></tr></thead><tbody>${annual}</tbody></table>${compact?`${c.latestNet?`<p class="financial-basis">${c.latestYear}년 당기순이익: ${esc(c.latestNet)} · 본업의 이익에 금융손익·세금 등을 반영한 최종 이익입니다.</p>`:""}${c.annualNote?`<p class="financial-basis">${esc(c.annualNote)}</p>`:""}${sourceLinks(c.annualSourceIds)}`:""}</section>
+ <section id="company-annual">${compact?"":`<div class="blue">03 · 실적은 어떻게 변했을까?</div>`}<div class="title">연간 실적 그래프</div><div class="desc">과거에서 최신 연간 실적으로 갈수록 ${salesLabel}과 ${opLabel}이 어떻게 움직였는지 한눈에 봅니다.</div>
+ ${c.financialNote?`<p class="financial-basis">${esc(c.financialNote)}</p>`:""}${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 연도 1–12월</div>${comparison?comparisonChart(c.annual):chart(c.annual)}`:chart(c.annual)}<table style="margin-top:24px" aria-label="연간 ${salesLabel}과 ${opLabel}"><thead><tr><th scope="col">기간</th><th scope="col">${salesLabel}</th><th scope="col">${opLabel}</th></tr></thead><tbody>${annual}</tbody></table>${compact?`${c.latestNet?`<p class="financial-basis">${c.latestYear}년 당기순이익: ${esc(c.latestNet)} · 본업의 이익에 금융손익·세금 등을 반영한 최종 이익입니다.</p>`:""}${c.annualNote?`<p class="financial-basis">${esc(c.annualNote)}</p>`:""}${sourceLinks(c.annualSourceIds)}`:""}</section>
 
  <section id="company-quarterly">${compact?"":`<div class="blue">04 · ${c.quarterlyYear}년 현재는?</div>`}<div class="title">${c.quarterlyYear} 분기 실적 그래프</div><div class="desc">최근 분기 실적이 어느 방향으로 움직이는지 봅니다.</div>
- ${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 분기 3개월 실적(누적 아님)</div>${comparison?comparisonChart(c.quarterly):twoMetricChart(c.quarterly)}`:twoMetricChart(c.quarterly)}<table style="margin-top:24px" aria-label="분기 매출과 영업이익"><thead><tr><th scope="col">기간</th><th scope="col">매출</th><th scope="col">영업이익</th></tr></thead><tbody>${q}</tbody></table>${compact?`<p class="financial-basis">1분기: 1–3월 · 2분기: 4–6월<br>공식 자료에서 확인한 ${c.latestQuarter.year}년 ${c.latestQuarter.quarter}분기까지 표시합니다. ${esc(c.quarterlyNote || "신제품 출시와 계절적 수요도 분기 실적에 영향을 줍니다.")}</p>${sourceLinks(c.quarterlySourceIds)}`:""}</section>
+ ${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 분기 3개월 실적(누적 아님)</div>${comparison?comparisonChart(c.quarterly):twoMetricChart(c.quarterly)}`:twoMetricChart(c.quarterly)}<table style="margin-top:24px" aria-label="분기 ${salesLabel}과 ${opLabel}"><thead><tr><th scope="col">기간</th><th scope="col">${salesLabel}</th><th scope="col">${opLabel}</th></tr></thead><tbody>${q}</tbody></table>${compact?`<p class="financial-basis">1분기: 1–3월 · 2분기: 4–6월<br>공식 자료에서 확인한 ${c.latestQuarter.year}년 ${c.latestQuarter.quarter}분기까지 표시합니다. ${esc(c.quarterlyNote || "신제품 출시와 계절적 수요도 분기 실적에 영향을 줍니다.")}</p>${sourceLinks(c.quarterlySourceIds)}`:""}</section>
 
  <section id="company-drivers">${compact?"":`<div class="blue">05 · 무엇이 실적을 움직일까?</div>`}<div class="title">핵심 변수</div><div class="desc">실적에 영향을 주는 요소를 쉽게 연결해서 봅니다.</div>
  <div class="grid">${c.drivers.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.title}</h3><p>${x.desc}</p></div>`).join("")}</div>
