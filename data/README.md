@@ -20,14 +20,14 @@
 - `financials.metrics`는 차트·표·상단에 표시할 지표 이름과 설명입니다. 은행은 금융 비용을 상계한 IR 지표, 생명보험은 보험서비스손익·지배주주 순이익, 손해보험은 보험수익·영업이익을 사용합니다. 제조업 매출과 같은 지표로 해석하지 않도록 화면에 설명합니다.
 - 확인되지 않은 숫자를 추정해서 넣지 않습니다. 새 기업의 실적과 설명을 준비하고 검증한 뒤 검색 목록에 등록합니다.
 - 상단 연간 실적은 가장 최근 연간 행에서 자동으로 계산합니다. 분기 영역은 저장된 분기 중 가장 최근 연도의 실적을 표시합니다. 지난 연도 행도 JSON에는 보관할 수 있습니다.
-- `highlightFormat`은 `trillion`(조원) 또는 `mixed`(조·억원)입니다. 숫자 원본은 항상 조원으로 저장합니다.
+- 화면의 금액은 절댓값 1조원 이상이면 조원(소수 둘째 자리까지), 1억원 이상이면 억원, 1만원 이상이면 만원, 그 이하면 원으로 표시합니다. 억원 이하 단위는 정수로 반올림하며 음수 부호를 유지합니다. 표와 요약·그래프 막대에는 금액마다 단위를 표시합니다. 각 그래프의 눈금은 해당 지표의 최대 절댓값으로 단위를 정하고 그 단위를 명시합니다. 숫자 원본은 항상 조원으로 저장합니다. 기존 `highlightFormat`·`tableNumbersOnly` 설정과 관계없이 동일한 금액 표시 규칙을 사용합니다.
 - `presentation`은 기존 화면 유지용 설정입니다. 기존 삼성전자 화면은 `compact: true`, `chartStyle: "comparison"`을 사용합니다.
 
 ## 기업 추가·업데이트
 
 1. 기존 기업 JSON 구조를 참고해 새 파일을 만들고 공식 자료로 내용을 채웁니다. 금융회사 등 업종별 설명 방식은 별도로 검토합니다.
 2. 기업 목록에 고유한 키·종목코드와 파일을 등록합니다.
-3. `node scripts/validate-data.cjs`, `node scripts/test-company-data.cjs`, `node scripts/test-search.cjs`, `node scripts/test-insights.cjs`를 실행합니다.
+3. `node scripts/validate-data.cjs`, `node scripts/test-company-data.cjs`, `node scripts/test-search.cjs`, `node scripts/test-insights.cjs`, `node scripts/test-financial-format.cjs`를 실행합니다.
 4. 데이터 파일을 바꿨다면 `company-data.js`의 `COMPANY_DATA_VERSION`과 `company.html`·`index.html`의 스크립트 버전을 함께 올립니다. 캐시로 서로 다른 버전이 섞이는 것을 방지합니다.
 5. 개발 사이트에서 화면·검색 연결·최근 본 기업·모바일 표시를 확인합니다.
 

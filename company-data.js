@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261007-kospi100-1";
+const COMPANY_DATA_VERSION = "20261007-adaptive-units-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -30,9 +30,23 @@ async function loadCompanyRecord(key, ancestors = []) {
  return {...record, financials:parent.financials, financialSources:parent.sources};
 }
 
-function formatFinancialHighlight(value, style) {
- if (value == null) return "-";
- return `${value.toFixed(1)}조원`;
+function financialDisplayUnit(value) {
+ const magnitude=Math.abs(value);
+ if (magnitude >= 1) return {label:"조원",factor:1};
+ if (magnitude >= 0.0001) return {label:"억원",factor:10000};
+ if (magnitude >= 0.00000001) return {label:"만원",factor:100000000};
+ return {label:"원",factor:1000000000000};
+}
+
+function formatFinancialNumber(value, maximumFractionDigits=2) {
+ return Number(value).toLocaleString("ko-KR",{maximumFractionDigits});
+}
+
+function formatFinancialHighlight(value) {
+ if (value == null || !Number.isFinite(value)) return "-";
+ const unit=financialDisplayUnit(value);
+ if (value !== 0 && Math.abs(value*unit.factor)<1) return (value*unit.factor).toLocaleString("ko-KR",{maximumSignificantDigits:3})+unit.label;
+ return formatFinancialNumber(value*unit.factor,unit.label==="조원"?2:0)+unit.label;
 }
 
 function companyPageData(record) {
@@ -53,7 +67,7 @@ function companyPageData(record) {
   latestYear:String(latest?.year || ""),
   latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),
   latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),
-  latestNet:latest?.net == null ? null : `${latest.net.toFixed(1)}조원`,
+  latestNet:latest?.net == null ? null : formatFinancialHighlight(latest.net),
   financialBasis:financials.basis === "consolidated" ? "K-IFRS 연결 기준" : "K-IFRS 별도 기준",
   financialMetrics:financials.metrics || {
    sales:{label:"매출",help:"제품과 서비스를 팔아 얻은 전체 금액"},
