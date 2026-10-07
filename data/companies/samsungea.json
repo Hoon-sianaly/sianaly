@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samsungea",
+    "rank": 68,
+    "name": "삼성E&A",
+    "ticker": "028050",
+    "type": "플랜트 엔지니어링 기업"
+  },
+  "overview": {
+    "short": "산업·에너지 플랜트의 설계·구매·시공을 수행하는 회사",
+    "summary": "산업·에너지 플랜트의 설계·구매·시공을 수행하는 회사입니다. 신규 수주와 기존 공사의 공정률이 매출을 좌우합니다.",
+    "takeaways": [
+      "산업·에너지 플랜트의 설계·구매·시공을 수행하는 회사입니다.",
+      "화공: 정유·석유화학·가스 등 플랜트를 설계·시공합니다.",
+      "비화공: 산업 생산시설과 환경·인프라 프로젝트를 수행합니다.",
+      "기술·수행: 설계·구매·시공을 통합해 프로젝트를 관리합니다.",
+      "신규 수주와 기존 공사의 공정률이 매출을 좌우합니다."
+    ],
+    "business": [
+      {
+        "name": "화공",
+        "desc": "정유·석유화학·가스 등 플랜트를 설계·시공합니다."
+      },
+      {
+        "name": "비화공",
+        "desc": "산업 생산시설과 환경·인프라 프로젝트를 수행합니다."
+      },
+      {
+        "name": "기술·수행",
+        "desc": "설계·구매·시공을 통합해 프로젝트를 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "수주·공정",
+        "desc": "신규 수주와 기존 공사의 공정률이 매출을 좌우합니다."
+      },
+      {
+        "title": "원가·변경",
+        "desc": "예정원가와 설계 변경·추가 계약이 이익을 바꿉니다."
+      },
+      {
+        "title": "현금 회수",
+        "desc": "대금 회수와 발주처·국가별 리스크를 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "48,650원",
+    "marketCap": "9.5조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 9.966551344477,
+        "op": 0.971611686017,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 9.02876908365,
+        "op": 0.792078846892,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 2.097955167196,
+        "op": 0.157303530634,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 2.178022750175,
+        "op": 0.180856635847,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 2.267382739826,
+        "op": 0.188193584998,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 2.609330842772,
+        "op": 0.273087546436,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "삼성E&A 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003927",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "삼성E&A 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003428",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

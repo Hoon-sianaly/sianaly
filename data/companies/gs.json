@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "gs",
+    "rank": 63,
+    "name": "GS",
+    "ticker": "078930",
+    "type": "에너지·유통 지주회사"
+  },
+  "overview": {
+    "short": "에너지·발전·유통 자회사를 보유하고 관리하는 지주회사",
+    "summary": "에너지·발전·유통 자회사를 보유하고 관리하는 지주회사입니다. 정제마진과 발전 연료비·전력 판매가격이 손익을 바꿉니다.",
+    "takeaways": [
+      "에너지·발전·유통 자회사를 보유하고 관리하는 지주회사입니다.",
+      "에너지: 정유·화학·에너지 관련 회사의 지분을 보유합니다.",
+      "발전: 연결 자회사를 통해 전력 생산·공급 사업을 운영합니다.",
+      "유통: GS리테일 등 유통 사업 회사에 투자합니다.",
+      "정제마진과 발전 연료비·전력 판매가격이 손익을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "에너지",
+        "desc": "정유·화학·에너지 관련 회사의 지분을 보유합니다."
+      },
+      {
+        "name": "발전",
+        "desc": "연결 자회사를 통해 전력 생산·공급 사업을 운영합니다."
+      },
+      {
+        "name": "유통",
+        "desc": "GS리테일 등 유통 사업 회사에 투자합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "정유·발전",
+        "desc": "정제마진과 발전 연료비·전력 판매가격이 손익을 바꿉니다."
+      },
+      {
+        "title": "자회사 손익",
+        "desc": "연결·지분법 자회사의 실적 반영 방식을 구분해야 합니다."
+      },
+      {
+        "title": "재무·투자",
+        "desc": "배당 수입과 신규 투자·차입 부담을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "GS 그룹 연결 기준입니다. GS칼텍스 등 지분법 회사의 매출을 전부 합산한 수치가 아니며, 상장 자회사 실적과도 중복될 수 있습니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "109,400원",
+    "marketCap": "10.2조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 25.249976,
+        "op": 3.077185,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 25.184127,
+        "op": 2.936061,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 6.227279,
+        "op": 0.803306,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 5.933638,
+        "op": 0.485985,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 6.842343,
+        "op": 1.258574,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 7.413135,
+        "op": 1.7174,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "GS 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000836",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "GS 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003779",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -480,6 +480,86 @@
       "file": "rotem.json",
       "market": "KOSPI",
       "alias": "Hyundai Rotem 로템"
+    },
+    {
+      "key": "koreanair",
+      "name": "대한항공",
+      "ticker": "003490",
+      "file": "koreanair.json",
+      "market": "KOSPI",
+      "alias": "Korean Air 대한항공주식회사"
+    },
+    {
+      "key": "autoever",
+      "name": "현대오토에버",
+      "ticker": "307950",
+      "file": "autoever.json",
+      "market": "KOSPI",
+      "alias": "Hyundai AutoEver 오토에버"
+    },
+    {
+      "key": "gs",
+      "name": "GS",
+      "ticker": "078930",
+      "file": "gs.json",
+      "market": "KOSPI",
+      "alias": "GS Holdings 지에스 GS홀딩스"
+    },
+    {
+      "key": "poscoint",
+      "name": "포스코인터내셔널",
+      "ticker": "047050",
+      "file": "poscoint.json",
+      "market": "KOSPI",
+      "alias": "POSCO International 포스코인터 포스코인터내셔널"
+    },
+    {
+      "key": "marinesolution",
+      "name": "HD현대마린솔루션",
+      "ticker": "443060",
+      "file": "marinesolution.json",
+      "market": "KOSPI",
+      "alias": "HD Hyundai Marine Solution 현대마린솔루션"
+    },
+    {
+      "key": "nhsecurities",
+      "name": "NH투자증권",
+      "ticker": "005940",
+      "file": "nhsecurities.json",
+      "market": "KOSPI",
+      "alias": "NH Investment Securities 엔에이치투자증권"
+    },
+    {
+      "key": "koreafinancial",
+      "name": "한국금융지주",
+      "ticker": "071050",
+      "file": "koreafinancial.json",
+      "market": "KOSPI",
+      "alias": "Korea Investment Holdings 한국투자금융지주 한투"
+    },
+    {
+      "key": "samsungea",
+      "name": "삼성E&A",
+      "ticker": "028050",
+      "file": "samsungea.json",
+      "market": "KOSPI",
+      "alias": "Samsung E&A 삼성엔지니어링 삼성EA"
+    },
+    {
+      "key": "kakaobank",
+      "name": "카카오뱅크",
+      "ticker": "323410",
+      "file": "kakaobank.json",
+      "market": "KOSPI",
+      "alias": "KakaoBank 카뱅"
+    },
+    {
+      "key": "gaon",
+      "name": "가온전선",
+      "ticker": "000500",
+      "file": "gaon.json",
+      "market": "KOSPI",
+      "alias": "Gaon Cable 가온"
     }
   ],
   "rankingSnapshot": {
@@ -488,6 +568,6 @@
     "verifiedAt": "2026.10.07",
     "source": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100",
     "additionalSource": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100",
-    "note": "2026.10.07 19:25 KST 조회 시점의 코스피 시가총액 상위 60개 주식 종목입니다. ETF·ETN 등 펀드를 제외하고 우선주는 별도 종목으로 계산합니다. 확정 종가나 실시간 순위가 아닙니다."
+    "note": "2026.10.07 19:25 KST 조회 시점의 코스피 시가총액 상위 70개 주식 종목입니다. ETF·ETN 등 펀드를 제외하고 우선주는 별도 종목으로 계산합니다. 확정 종가나 실시간 순위가 아닙니다."
   }
 }

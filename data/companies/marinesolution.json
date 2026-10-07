@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "marinesolution",
+    "rank": 65,
+    "name": "HD현대마린솔루션",
+    "ticker": "443060",
+    "type": "선박 서비스 기업"
+  },
+  "overview": {
+    "short": "선박 인도 이후 유지보수·부품·친환경 개조 서비스를 제공하는 회사",
+    "summary": "선박 인도 이후 유지보수·부품·친환경 개조 서비스를 제공하는 회사입니다. 선박 운항량과 정비 주기가 서비스 수요를 바꿉니다.",
+    "takeaways": [
+      "선박 인도 이후 유지보수·부품·친환경 개조 서비스를 제공하는 회사입니다.",
+      "유지·부품: 선박과 엔진의 부품 공급·정비를 수행합니다.",
+      "친환경 개조: 선박의 효율과 환경 규제 대응을 위한 개조를 수행합니다.",
+      "연료·디지털: 선박 연료 공급과 디지털 운영 솔루션을 제공합니다.",
+      "선박 운항량과 정비 주기가 서비스 수요를 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "유지·부품",
+        "desc": "선박과 엔진의 부품 공급·정비를 수행합니다."
+      },
+      {
+        "name": "친환경 개조",
+        "desc": "선박의 효율과 환경 규제 대응을 위한 개조를 수행합니다."
+      },
+      {
+        "name": "연료·디지털",
+        "desc": "선박 연료 공급과 디지털 운영 솔루션을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "운항·정비",
+        "desc": "선박 운항량과 정비 주기가 서비스 수요를 바꿉니다."
+      },
+      {
+        "title": "개조 수요",
+        "desc": "환경 규제와 선주의 투자 계획이 개조 수요를 좌우합니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "연료 공급과 서비스 매출 비중에 따라 이익률이 달라집니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "219,500원",
+    "marketCap": "9.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.745458578779,
+        "op": 0.2717299515,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 1.982700659426,
+        "op": 0.350141338776,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.485597828422,
+        "op": 0.083006827218,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.467721569416,
+        "op": 0.083009935293,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.574608683128,
+        "op": 0.093393577021,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.580413871847,
+        "op": 0.097625286579,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "HD현대마린솔루션 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001512",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "HD현대마린솔루션 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001752",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

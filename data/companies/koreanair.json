@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreanair",
+    "rank": 61,
+    "name": "대한항공",
+    "ticker": "003490",
+    "type": "항공 운송 기업"
+  },
+  "overview": {
+    "short": "여객·화물 항공 운송과 항공우주 관련 사업을 운영하는 회사",
+    "summary": "여객·화물 항공 운송과 항공우주 관련 사업을 운영하는 회사입니다. 여객 수요와 좌석 공급·운임이 수익성을 바꿉니다.",
+    "takeaways": [
+      "여객·화물 항공 운송과 항공우주 관련 사업을 운영하는 회사입니다.",
+      "여객: 국내외 노선에서 승객을 운송합니다.",
+      "화물: 항공기를 이용한 국제 화물 운송 서비스를 제공합니다.",
+      "항공우주: 항공기 구조물 제작·정비 등 항공우주 사업을 수행합니다.",
+      "여객 수요와 좌석 공급·운임이 수익성을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "여객",
+        "desc": "국내외 노선에서 승객을 운송합니다."
+      },
+      {
+        "name": "화물",
+        "desc": "항공기를 이용한 국제 화물 운송 서비스를 제공합니다."
+      },
+      {
+        "name": "항공우주",
+        "desc": "항공기 구조물 제작·정비 등 항공우주 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "운임·탑승",
+        "desc": "여객 수요와 좌석 공급·운임이 수익성을 바꿉니다."
+      },
+      {
+        "title": "유가·환율",
+        "desc": "항공유 가격과 환율이 운항 비용에 영향을 줍니다."
+      },
+      {
+        "title": "통합·비용",
+        "desc": "항공사 통합에 따른 연결 범위·비용과 운영 효율을 봐야 합니다."
+      }
+    ],
+    "financialNote": "아시아나항공 등 종속회사를 포함한 연결 기준입니다. 회사가 별도로 발표하는 대한항공 단독 실적과 다르며 인수·통합에 따른 비교 범위 차이를 확인해야 합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "30,650원",
+    "marketCap": "11.3조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 17.870718495804,
+        "op": 2.110200077994,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 25.225542379502,
+        "op": 1.113589428051,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 6.4918619872,
+        "op": 0.431046202741,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 6.210705839436,
+        "op": 0.370083817468,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 6.658062171688,
+        "op": 0.517384321919,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 7.230055624254,
+        "op": -0.20711088999,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "대한항공 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001125",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "대한항공 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814002803",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

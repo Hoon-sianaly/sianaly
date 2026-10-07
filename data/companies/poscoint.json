@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "poscoint",
+    "rank": 64,
+    "name": "포스코인터내셔널",
+    "ticker": "047050",
+    "type": "무역·에너지 기업"
+  },
+  "overview": {
+    "short": "철강·소재 무역과 가스 개발·LNG·발전 사업을 운영하는 회사",
+    "summary": "철강·소재 무역과 가스 개발·LNG·발전 사업을 운영하는 회사입니다. 철강 등 상품 가격과 거래 물량이 매출을 바꿉니다.",
+    "takeaways": [
+      "철강·소재 무역과 가스 개발·LNG·발전 사업을 운영하는 회사입니다.",
+      "소재 무역: 철강·원료·식량 등 상품을 글로벌 시장에 공급합니다.",
+      "가스·발전: 가스전 개발과 LNG·발전 사업을 운영합니다.",
+      "제조·투자: 구동모터코아·팜오일 등 제조·자원 사업을 수행합니다.",
+      "철강 등 상품 가격과 거래 물량이 매출을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "소재 무역",
+        "desc": "철강·원료·식량 등 상품을 글로벌 시장에 공급합니다."
+      },
+      {
+        "name": "가스·발전",
+        "desc": "가스전 개발과 LNG·발전 사업을 운영합니다."
+      },
+      {
+        "name": "제조·투자",
+        "desc": "구동모터코아·팜오일 등 제조·자원 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "상품·물량",
+        "desc": "철강 등 상품 가격과 거래 물량이 매출을 바꿉니다."
+      },
+      {
+        "title": "가스·전력",
+        "desc": "가스 생산량과 에너지 가격·발전 수익성을 봐야 합니다."
+      },
+      {
+        "title": "투자·환율",
+        "desc": "에너지·제조 설비 투자와 환율 영향을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "57,000원",
+    "marketCap": "10.0조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 32.260990294,
+        "op": 1.157835223,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 32.373603908,
+        "op": 1.165316105,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 8.137402009,
+        "op": 0.275298131,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 8.128828591,
+        "op": 0.338101093,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 8.410420833,
+        "op": 0.357511917,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 9.623165241,
+        "op": 0.429005844,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "포스코인터내셔널 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001030",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "포스코인터내셔널 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001968",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

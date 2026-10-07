@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "gaon",
+    "rank": 70,
+    "name": "가온전선",
+    "ticker": "000500",
+    "type": "전력·통신 케이블 기업"
+  },
+  "overview": {
+    "short": "전력·통신·특수 케이블을 제조하고 판매하는 회사",
+    "summary": "전력·통신·특수 케이블을 제조하고 판매하는 회사입니다. 전력망·데이터센터·건설 투자가 제품 수요를 바꿉니다.",
+    "takeaways": [
+      "전력·통신·특수 케이블을 제조하고 판매하는 회사입니다.",
+      "전력 케이블: 전력망·건물 등에 쓰이는 전선을 공급합니다.",
+      "통신·특수: 통신용과 산업용 특수 케이블을 공급합니다.",
+      "해외 공급: 해외 자회사를 통해 전력 케이블 등을 공급합니다.",
+      "전력망·데이터센터·건설 투자가 제품 수요를 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "전력 케이블",
+        "desc": "전력망·건물 등에 쓰이는 전선을 공급합니다."
+      },
+      {
+        "name": "통신·특수",
+        "desc": "통신용과 산업용 특수 케이블을 공급합니다."
+      },
+      {
+        "name": "해외 공급",
+        "desc": "해외 자회사를 통해 전력 케이블 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전력 투자",
+        "desc": "전력망·데이터센터·건설 투자가 제품 수요를 바꿉니다."
+      },
+      {
+        "title": "구리·구성",
+        "desc": "구리 가격과 고부가 제품 비중이 매출·이익을 좌우합니다."
+      },
+      {
+        "title": "해외·가동",
+        "desc": "해외 자회사 편입과 생산 가동률을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "해외 케이블 자회사 등을 포함한 연결 기준입니다. 자회사 편입에 따른 연결 범위 확대와 금속 가격 효과를 구분해야 합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "308,000원",
+    "marketCap": "9.2조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.72710368,
+        "op": 0.045011778,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 2.545698074,
+        "op": 0.079191591,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.639297449,
+        "op": 0.021884131,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.64328951,
+        "op": 0.023232978,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.763576373,
+        "op": 0.027834588,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.869390198,
+        "op": 0.036131796,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "가온전선 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000969",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "가온전선 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000919",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
