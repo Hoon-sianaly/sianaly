@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanwhasolution",
+    "rank": 77,
+    "name": "한화솔루션",
+    "ticker": "009830",
+    "type": "태양광·화학 기업"
+  },
+  "overview": {
+    "short": "태양광 제품·발전 사업과 화학·첨단 소재를 운영하는 회사",
+    "summary": "태양광 제품·발전 사업과 화학·첨단 소재를 운영하는 회사입니다. 태양광 판매가격과 설치 수요·공급 경쟁이 손익을 바꿉니다.",
+    "takeaways": [
+      "태양광 제품·발전 사업과 화학·첨단 소재를 운영하는 회사입니다.",
+      "태양광: 큐셀 등을 통해 태양광 제품과 발전 사업을 운영합니다.",
+      "기초소재: 석유화학 제품과 산업용 소재를 생산합니다.",
+      "가공소재: 자동차·산업용 복합 소재 등을 공급합니다.",
+      "태양광 판매가격과 설치 수요·공급 경쟁이 손익을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "태양광",
+        "desc": "큐셀 등을 통해 태양광 제품과 발전 사업을 운영합니다."
+      },
+      {
+        "name": "기초소재",
+        "desc": "석유화학 제품과 산업용 소재를 생산합니다."
+      },
+      {
+        "name": "가공소재",
+        "desc": "자동차·산업용 복합 소재 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "태양광 시장",
+        "desc": "태양광 판매가격과 설치 수요·공급 경쟁이 손익을 바꿉니다."
+      },
+      {
+        "title": "정책·가동",
+        "desc": "미국 생산 지원제도와 공장 가동·재고를 함께 봐야 합니다."
+      },
+      {
+        "title": "화학 수익성",
+        "desc": "원료 가격과 화학제품 가격 차이가 수익성을 좌우합니다."
+      }
+    ],
+    "financialNote": "태양광·화학 등을 포함한 연결 기준입니다. 생산 지원금·사업 매각 등 항목의 효과와 제품 판매로 발생한 손익을 구분해야 합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "36,050원",
+    "marketCap": "8.1조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 12.394024,
+        "op": -0.300238,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 13.333055,
+        "op": -0.364759,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 3.094476,
+        "op": 0.030314,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 3.117265,
+        "op": 0.102067,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 3.881952,
+        "op": 0.09261,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 4.582655,
+        "op": 0.306534,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한화솔루션 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000955",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "한화솔루션 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003076",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

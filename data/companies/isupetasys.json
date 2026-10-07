@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "isupetasys",
+    "rank": 74,
+    "name": "이수페타시스",
+    "ticker": "007660",
+    "type": "인쇄회로기판 기업"
+  },
+  "overview": {
+    "short": "서버·통신장비 등에 쓰이는 고다층 인쇄회로기판을 만드는 회사",
+    "summary": "서버·통신장비 등에 쓰이는 고다층 인쇄회로기판을 만드는 회사입니다. 고객의 데이터센터·네트워크 장비 투자가 수요를 바꿉니다.",
+    "takeaways": [
+      "서버·통신장비 등에 쓰이는 고다층 인쇄회로기판을 만드는 회사입니다.",
+      "고다층 기판: 서버·네트워크 장비 등의 고다층 PCB를 생산합니다.",
+      "해외 생산: 해외 공장에서 기판을 제조·공급합니다.",
+      "고객 대응: 고객 장비에 맞춘 기판 설계·제조·품질 관리를 수행합니다.",
+      "고객의 데이터센터·네트워크 장비 투자가 수요를 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "고다층 기판",
+        "desc": "서버·네트워크 장비 등의 고다층 PCB를 생산합니다."
+      },
+      {
+        "name": "해외 생산",
+        "desc": "해외 공장에서 기판을 제조·공급합니다."
+      },
+      {
+        "name": "고객 대응",
+        "desc": "고객 장비에 맞춘 기판 설계·제조·품질 관리를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "서버·통신",
+        "desc": "고객의 데이터센터·네트워크 장비 투자가 수요를 바꿉니다."
+      },
+      {
+        "title": "수율·구성",
+        "desc": "고다층 제품 비중과 생산 수율이 이익을 좌우합니다."
+      },
+      {
+        "title": "증설·고객",
+        "desc": "증설 가동과 주요 고객 매출 집중도를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "121,600원",
+    "marketCap": "8.9조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.836866961285,
+        "op": 0.101878836049,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 1.088025119176,
+        "op": 0.204724531402,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.252489862715,
+        "op": 0.04768412142,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.241419469661,
+        "op": 0.042070313737,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.340281879464,
+        "op": 0.067221356999,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.379888407878,
+        "op": 0.077063854985,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "이수페타시스 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000847",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "이수페타시스 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002283",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

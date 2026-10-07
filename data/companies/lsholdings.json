@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lsholdings",
+    "rank": 76,
+    "name": "LS",
+    "ticker": "006260",
+    "type": "전력·소재 지주회사"
+  },
+  "overview": {
+    "short": "전선·전력기기·금속·산업기계 자회사를 보유한 지주회사",
+    "summary": "전선·전력기기·금속·산업기계 자회사를 보유한 지주회사입니다. 전력망과 산업 설비 투자 수요가 자회사 실적을 바꿉니다.",
+    "takeaways": [
+      "전선·전력기기·금속·산업기계 자회사를 보유한 지주회사입니다.",
+      "전선·전력: 자회사를 통해 케이블·전력기기 사업을 운영합니다.",
+      "금속·소재: 구리 제련 등 금속·소재 사업을 운영합니다.",
+      "산업기계: 트랙터·산업 부품 등 기계 사업을 운영합니다.",
+      "전력망과 산업 설비 투자 수요가 자회사 실적을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "전선·전력",
+        "desc": "자회사를 통해 케이블·전력기기 사업을 운영합니다."
+      },
+      {
+        "name": "금속·소재",
+        "desc": "구리 제련 등 금속·소재 사업을 운영합니다."
+      },
+      {
+        "name": "산업기계",
+        "desc": "트랙터·산업 부품 등 기계 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전력 투자",
+        "desc": "전력망과 산업 설비 투자 수요가 자회사 실적을 바꿉니다."
+      },
+      {
+        "title": "금속 가격",
+        "desc": "구리 가격과 제련·제품 수익성을 함께 봐야 합니다."
+      },
+      {
+        "title": "그룹 투자",
+        "desc": "해외 공장·자회사 투자와 차입 부담을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "LS 그룹 연결 기준입니다. LS ELECTRIC·가온전선 등 상장 자회사와 실적 범위가 중첩될 수 있으므로 합산하지 않습니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "278,500원",
+    "marketCap": "8.7조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 27.544663,
+        "op": 1.072943,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 31.870031,
+        "op": 1.052554,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 6.913573,
+        "op": 0.304505,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 7.854425,
+        "op": 0.23564,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 9.504447,
+        "op": 0.47609,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 11.023562,
+        "op": 0.595567,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "LS 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001427",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "LS 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001888",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

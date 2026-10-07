@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanjinkal",
+    "rank": 75,
+    "name": "한진칼",
+    "ticker": "180640",
+    "type": "항공 지주회사"
+  },
+  "overview": {
+    "short": "대한항공 등 항공·여행·호텔 관련 회사의 지분을 보유한 지주회사",
+    "summary": "대한항공 등 항공·여행·호텔 관련 회사의 지분을 보유한 지주회사입니다. 항공사 투자에 따른 배당과 지분법손익을 구분해서 봐야 합니다.",
+    "takeaways": [
+      "대한항공 등 항공·여행·호텔 관련 회사의 지분을 보유한 지주회사입니다.",
+      "항공 투자: 대한항공 등 항공 관련 기업의 지분을 보유합니다.",
+      "호텔·여행: 연결 자회사를 통해 호텔·여행 관련 사업을 운영합니다.",
+      "지주 사업: 자회사 관리와 배당·브랜드 관련 수입을 얻습니다.",
+      "항공사 투자에 따른 배당과 지분법손익을 구분해서 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "항공 투자",
+        "desc": "대한항공 등 항공 관련 기업의 지분을 보유합니다."
+      },
+      {
+        "name": "호텔·여행",
+        "desc": "연결 자회사를 통해 호텔·여행 관련 사업을 운영합니다."
+      },
+      {
+        "name": "지주 사업",
+        "desc": "자회사 관리와 배당·브랜드 관련 수입을 얻습니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "항공 손익",
+        "desc": "항공사 투자에 따른 배당과 지분법손익을 구분해서 봐야 합니다."
+      },
+      {
+        "title": "호텔·여행",
+        "desc": "관광 수요와 자회사 영업 실적이 연결 매출을 바꿉니다."
+      },
+      {
+        "title": "자본 배분",
+        "desc": "투자·차입과 지분 구조 변화가 중요합니다."
+      }
+    ],
+    "financialNote": "한진칼 연결 매출·영업이익입니다. 대한항공의 전체 매출을 합산한 수치가 아니며, 항공사 관련 지분법손익은 영업이익과 구분합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "132,300원",
+    "marketCap": "8.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.292157342,
+        "op": 0.049192742,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.298362106,
+        "op": -0.007523512,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.062668004,
+        "op": 0.006753069,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.070664384,
+        "op": 0.009891118,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.06959476,
+        "op": 0.01301194,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.071461541,
+        "op": 0.016776673,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한진칼 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001143",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "한진칼 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002907",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

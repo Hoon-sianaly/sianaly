@@ -11,7 +11,7 @@ for (const entry of catalog.companies) {
  assert.match(entry.key, /^[a-z][a-z0-9-]*$/);
  assert.equal(entry.file, `${entry.key}.json`);
  assert.ok(!records.has(entry.key), `Duplicate key: ${entry.key}`);
- assert.match(entry.ticker, /^\d{6}$/);
+ assert.match(entry.ticker, /^[0-9A-Z]{6}$/);
  assert.ok(!tickers.has(entry.ticker), `Duplicate ticker: ${entry.ticker}`);
  tickers.add(entry.ticker);
  const record = JSON.parse(fs.readFileSync(path.join(root, "data/companies", entry.file), "utf8"));
