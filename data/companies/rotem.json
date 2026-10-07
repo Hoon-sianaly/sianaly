@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "rotem",
+    "rank": 60,
+    "name": "현대로템",
+    "ticker": "064350",
+    "type": "철도·방산 기업"
+  },
+  "overview": {
+    "short": "철도차량·전차와 산업 생산 설비를 만드는 회사",
+    "summary": "철도차량·전차와 산업 생산 설비를 만드는 회사입니다. 전차 수출 계약과 철도차량 납품 일정이 매출을 바꿉니다.",
+    "takeaways": [
+      "철도차량·전차와 산업 생산 설비를 만드는 회사입니다.",
+      "방산: K2 전차·장갑차 등 지상무기체계를 공급합니다.",
+      "철도: 철도차량·시스템과 유지보수 서비스를 제공합니다.",
+      "산업 설비: 자동차·철강 생산 설비 등 산업용 장비를 공급합니다.",
+      "전차 수출 계약과 철도차량 납품 일정이 매출을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "방산",
+        "desc": "K2 전차·장갑차 등 지상무기체계를 공급합니다."
+      },
+      {
+        "name": "철도",
+        "desc": "철도차량·시스템과 유지보수 서비스를 제공합니다."
+      },
+      {
+        "name": "산업 설비",
+        "desc": "자동차·철강 생산 설비 등 산업용 장비를 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "수출·납품",
+        "desc": "전차 수출 계약과 철도차량 납품 일정이 매출을 바꿉니다."
+      },
+      {
+        "title": "제품 구성",
+        "desc": "방산·철도 사업 비중과 원가가 수익성을 좌우합니다."
+      },
+      {
+        "title": "생산·공정",
+        "desc": "증설과 공급망·공정 지연 여부를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "107,900원",
+    "marketCap": "11.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 4.376597857,
+        "op": 0.456565534,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 5.839031553,
+        "op": 1.005640509,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 1.176141098,
+        "op": 0.202852668,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.417634367,
+        "op": 0.257586859,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.457453208,
+        "op": 0.224201046,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.606050504,
+        "op": 0.232382857,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "현대로템 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001275",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "현대로템 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002977",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

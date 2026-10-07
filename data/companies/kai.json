@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kai",
+    "rank": 59,
+    "name": "한국항공우주",
+    "ticker": "047810",
+    "type": "항공우주·방산 기업"
+  },
+  "overview": {
+    "short": "군용 항공기와 항공기 구조물·우주 장비를 개발하고 생산하는 회사",
+    "summary": "군용 항공기와 항공기 구조물·우주 장비를 개발하고 생산하는 회사입니다. 완제기 납품과 개발 사업 일정이 분기 실적을 바꿉니다.",
+    "takeaways": [
+      "군용 항공기와 항공기 구조물·우주 장비를 개발하고 생산하는 회사입니다.",
+      "군용 항공기: 훈련기·전투기·헬기 등을 개발·양산합니다.",
+      "기체 구조물: 민항기 제작사 등에 항공기 구조물을 공급합니다.",
+      "우주·후속지원: 위성 관련 사업과 항공기 정비·성능개량을 수행합니다.",
+      "완제기 납품과 개발 사업 일정이 분기 실적을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "군용 항공기",
+        "desc": "훈련기·전투기·헬기 등을 개발·양산합니다."
+      },
+      {
+        "name": "기체 구조물",
+        "desc": "민항기 제작사 등에 항공기 구조물을 공급합니다."
+      },
+      {
+        "name": "우주·후속지원",
+        "desc": "위성 관련 사업과 항공기 정비·성능개량을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "납품 일정",
+        "desc": "완제기 납품과 개발 사업 일정이 분기 실적을 바꿉니다."
+      },
+      {
+        "title": "개발·원가",
+        "desc": "연구개발 부담과 생산 원가·충당금을 함께 봐야 합니다."
+      },
+      {
+        "title": "수출 계약",
+        "desc": "수출 계약의 조건·대금 회수와 생산능력이 중요합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "121,800원",
+    "marketCap": "11.9조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.63374210584,
+        "op": 0.2407183104,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 3.696379351601,
+        "op": 0.26919019666,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.69925659226,
+        "op": 0.046812915045,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.828336336027,
+        "op": 0.085215939637,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.09268741822,
+        "op": 0.067143247058,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.16789385594,
+        "op": 0.048441878616,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한국항공우주 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001461",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "한국항공우주 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003309",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

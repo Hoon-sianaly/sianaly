@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dbinsurance",
+    "rank": 58,
+    "name": "DB손해보험",
+    "ticker": "005830",
+    "type": "손해보험 기업"
+  },
+  "overview": {
+    "short": "자동차·장기·일반 보험을 판매하고 보험 자산을 운용하는 회사",
+    "summary": "자동차·장기·일반 보험을 판매하고 보험 자산을 운용하는 회사입니다. 보험금 지급과 손해율 변화가 보험 손익을 바꿉니다.",
+    "takeaways": [
+      "자동차·장기·일반 보험을 판매하고 보험 자산을 운용하는 회사입니다.",
+      "장기보험: 질병·상해 등 장기 보장성 보험을 제공합니다.",
+      "자동차·일반: 자동차보험과 화재·배상 등 일반보험을 운영합니다.",
+      "자산 운용: 보험 계약으로 확보한 자금을 금융자산 등에 투자합니다.",
+      "보험금 지급과 손해율 변화가 보험 손익을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "장기보험",
+        "desc": "질병·상해 등 장기 보장성 보험을 제공합니다."
+      },
+      {
+        "name": "자동차·일반",
+        "desc": "자동차보험과 화재·배상 등 일반보험을 운영합니다."
+      },
+      {
+        "name": "자산 운용",
+        "desc": "보험 계약으로 확보한 자금을 금융자산 등에 투자합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "보험 손해",
+        "desc": "보험금 지급과 손해율 변화가 보험 손익을 바꿉니다."
+      },
+      {
+        "title": "계약·가정",
+        "desc": "신계약과 보험 계약 평가 가정의 변화를 확인해야 합니다."
+      },
+      {
+        "title": "투자·금리",
+        "desc": "금리·자산 운용 성과와 자본 적정성을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "IFRS 17 연결 보험수익·영업이익입니다. 보험수익은 수입보험료와 다르며 보험금 지급과 투자 손익을 함께 봐야 합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "186,500원",
+    "marketCap": "12.2조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 15.701111,
+        "op": 2.424926,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 16.43258,
+        "op": 2.38395,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 4.050681,
+        "op": 0.619785,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 4.055716,
+        "op": 0.798485,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 4.213472,
+        "op": 0.413034,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 4.270096,
+        "op": 1.173878,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion",
+    "metrics": {
+      "sales": {
+        "label": "보험수익",
+        "help": "보험계약 서비스를 제공하며 인식한 IFRS 17 보험수익으로 수입보험료와 다릅니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "같은 회계 범위의 영업이익입니다. 순이익과 구분합니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "DB손해보험 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260331003904",
+      "published": "2026.03.31",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "DB손해보험 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814003682",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

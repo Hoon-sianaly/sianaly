@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lig",
+    "rank": 51,
+    "name": "LIG디펜스앤에어로스페이스",
+    "ticker": "079550",
+    "type": "방산·항공우주 기업"
+  },
+  "overview": {
+    "short": "유도무기·레이더·통신·전자전 장비를 개발하고 공급하는 회사",
+    "summary": "유도무기·레이더·통신·전자전 장비를 개발하고 공급하는 회사입니다. 국방 예산과 수출 계약의 인도 일정이 실적을 바꿉니다.",
+    "takeaways": [
+      "유도무기·레이더·통신·전자전 장비를 개발하고 공급하는 회사입니다.",
+      "유도무기: 정밀유도무기와 관련 체계를 개발·양산합니다.",
+      "감시·전자전: 레이더·항공전자·전자전 장비를 공급합니다.",
+      "통신·후속지원: 지휘통제·통신 장비와 운용 지원을 제공합니다.",
+      "국방 예산과 수출 계약의 인도 일정이 실적을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "유도무기",
+        "desc": "정밀유도무기와 관련 체계를 개발·양산합니다."
+      },
+      {
+        "name": "감시·전자전",
+        "desc": "레이더·항공전자·전자전 장비를 공급합니다."
+      },
+      {
+        "name": "통신·후속지원",
+        "desc": "지휘통제·통신 장비와 운용 지원을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "수주·인도",
+        "desc": "국방 예산과 수출 계약의 인도 일정이 실적을 바꿉니다."
+      },
+      {
+        "title": "개발·양산",
+        "desc": "개발 사업이 양산으로 전환되는 시점과 원가를 봐야 합니다."
+      },
+      {
+        "title": "수출·생산",
+        "desc": "해외 고객의 계약 조건과 생산능력 확대가 중요합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "665,000원",
+    "marketCap": "14.6조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.276339508425,
+        "op": 0.223389060873,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 4.306936127418,
+        "op": 0.31944230679,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.907622648219,
+        "op": 0.109587042334,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.945351323737,
+        "op": 0.081589312015,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.167856701275,
+        "op": 0.171095328645,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.110094315474,
+        "op": 0.105657237903,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "LIG디펜스앤에어로스페이스 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001211",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "LIG디펜스앤에어로스페이스 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001318",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

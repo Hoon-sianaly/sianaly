@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "apr",
+    "rank": 53,
+    "name": "에이피알",
+    "ticker": "278470",
+    "type": "뷰티·소비재 기업"
+  },
+  "overview": {
+    "short": "메디큐브 등 화장품과 가정용 뷰티 기기를 판매하는 회사",
+    "summary": "메디큐브 등 화장품과 가정용 뷰티 기기를 판매하는 회사입니다. 해외 고객 수요와 유통 채널 확대가 매출을 좌우합니다.",
+    "takeaways": [
+      "메디큐브 등 화장품과 가정용 뷰티 기기를 판매하는 회사입니다.",
+      "화장품: 메디큐브·에이프릴스킨·포맨트 등 브랜드 제품을 판매합니다.",
+      "뷰티 기기: 메디큐브 에이지알의 가정용 뷰티 기기를 개발·판매합니다.",
+      "해외 판매: 온라인 채널과 해외 유통망을 통해 제품을 공급합니다.",
+      "해외 고객 수요와 유통 채널 확대가 매출을 좌우합니다."
+    ],
+    "business": [
+      {
+        "name": "화장품",
+        "desc": "메디큐브·에이프릴스킨·포맨트 등 브랜드 제품을 판매합니다."
+      },
+      {
+        "name": "뷰티 기기",
+        "desc": "메디큐브 에이지알의 가정용 뷰티 기기를 개발·판매합니다."
+      },
+      {
+        "name": "해외 판매",
+        "desc": "온라인 채널과 해외 유통망을 통해 제품을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "해외 수요",
+        "desc": "해외 고객 수요와 유통 채널 확대가 매출을 좌우합니다."
+      },
+      {
+        "title": "제품 구성",
+        "desc": "화장품과 기기의 판매 비중·신제품 성과가 이익을 바꿉니다."
+      },
+      {
+        "title": "마케팅·재고",
+        "desc": "광고비 효율과 생산·재고 관리가 중요합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "380,500원",
+    "marketCap": "14.2조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.722753862301,
+        "op": 0.122705544449,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 1.527344973381,
+        "op": 0.365520628934,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.266032725955,
+        "op": 0.055627277068,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.327734894608,
+        "op": 0.081257513114,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.593355595556,
+        "op": 0.152271694994,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.767533293305,
+        "op": 0.190553013038,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "에이피알 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001257",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "에이피알 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002503",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

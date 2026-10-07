@@ -226,20 +226,20 @@
       "alias": "Woori Financial 우리금융"
     },
     {
-      "key": "posco",
-      "name": "POSCO홀딩스",
-      "ticker": "005490",
-      "file": "posco.json",
-      "market": "KOSPI",
-      "alias": "포스코홀딩스 POSCO Holdings 포스코"
-    },
-    {
       "key": "hyosung",
       "name": "효성중공업",
       "ticker": "298040",
       "file": "hyosung.json",
       "market": "KOSPI",
       "alias": "Hyosung Heavy Industries"
+    },
+    {
+      "key": "posco",
+      "name": "POSCO홀딩스",
+      "ticker": "005490",
+      "file": "posco.json",
+      "market": "KOSPI",
+      "alias": "포스코홀딩스 POSCO Holdings 포스코"
     },
     {
       "key": "ocean",
@@ -370,20 +370,20 @@
       "alias": "Mirae Asset Securities"
     },
     {
-      "key": "sds",
-      "name": "삼성에스디에스",
-      "ticker": "018260",
-      "file": "sds.json",
-      "market": "KOSPI",
-      "alias": "Samsung SDS 삼성SDS 삼성에스디에스"
-    },
-    {
       "key": "ibk",
       "name": "기업은행",
       "ticker": "024110",
       "file": "ibk.json",
       "market": "KOSPI",
       "alias": "IBK Industrial Bank of Korea IBK기업은행"
+    },
+    {
+      "key": "sds",
+      "name": "삼성에스디에스",
+      "ticker": "018260",
+      "file": "sds.json",
+      "market": "KOSPI",
+      "alias": "Samsung SDS 삼성SDS 삼성에스디에스"
     },
     {
       "key": "hdhyundai",
@@ -400,13 +400,94 @@
       "file": "hanwhasystems.json",
       "market": "KOSPI",
       "alias": "Hanwha Systems"
+    },
+    {
+      "key": "lig",
+      "name": "LIG디펜스앤에어로스페이스",
+      "ticker": "079550",
+      "file": "lig.json",
+      "market": "KOSPI",
+      "alias": "LIG Defense Aerospace LIG넥스원 엘아이지넥스원"
+    },
+    {
+      "key": "kakao",
+      "name": "카카오",
+      "ticker": "035720",
+      "file": "kakao.json",
+      "market": "KOSPI",
+      "alias": "Kakao 카카오톡"
+    },
+    {
+      "key": "apr",
+      "name": "에이피알",
+      "ticker": "278470",
+      "file": "apr.json",
+      "market": "KOSPI",
+      "alias": "APR 메디큐브 에이지알"
+    },
+    {
+      "key": "glovis",
+      "name": "현대글로비스",
+      "ticker": "086280",
+      "file": "glovis.json",
+      "market": "KOSPI",
+      "alias": "Hyundai Glovis 글로비스"
+    },
+    {
+      "key": "lginnotek",
+      "name": "LG이노텍",
+      "ticker": "011070",
+      "file": "lginnotek.json",
+      "market": "KOSPI",
+      "alias": "LG Innotek 엘지이노텍"
+    },
+    {
+      "key": "kt",
+      "name": "KT",
+      "ticker": "030200",
+      "file": "kt.json",
+      "market": "KOSPI",
+      "alias": "KT 케이티"
+    },
+    {
+      "key": "hyundaiec",
+      "name": "현대건설",
+      "ticker": "000720",
+      "file": "hyundaiec.json",
+      "market": "KOSPI",
+      "alias": "Hyundai Engineering Construction 현대건설주식회사"
+    },
+    {
+      "key": "dbinsurance",
+      "name": "DB손해보험",
+      "ticker": "005830",
+      "file": "dbinsurance.json",
+      "market": "KOSPI",
+      "alias": "DB Insurance 디비손해보험 동부화재"
+    },
+    {
+      "key": "kai",
+      "name": "한국항공우주",
+      "ticker": "047810",
+      "file": "kai.json",
+      "market": "KOSPI",
+      "alias": "KAI Korea Aerospace 한국항공우주산업"
+    },
+    {
+      "key": "rotem",
+      "name": "현대로템",
+      "ticker": "064350",
+      "file": "rotem.json",
+      "market": "KOSPI",
+      "alias": "Hyundai Rotem 로템"
     }
   ],
   "rankingSnapshot": {
     "asOf": "2026.10.07",
-    "capturedAt": "2026-10-07T07:40:37.581Z",
+    "capturedAt": "2026-10-07T10:25:47.595Z",
     "verifiedAt": "2026.10.07",
     "source": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100",
-    "note": "2026.10.07 16:40 KST 조회 시점의 코스피 시가총액 상위 50개 주식 종목입니다. ETF·ETN 등 펀드 상품을 제외하고 우선주는 별도 종목으로 계산합니다. 실시간 순위나 확정 종가를 의미하지 않습니다."
+    "additionalSource": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100",
+    "note": "2026.10.07 19:25 KST 조회 시점의 코스피 시가총액 상위 60개 주식 종목입니다. ETF·ETN 등 펀드를 제외하고 우선주는 별도 종목으로 계산합니다. 확정 종가나 실시간 순위가 아닙니다."
   }
 }

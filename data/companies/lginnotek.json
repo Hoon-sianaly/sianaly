@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lginnotek",
+    "rank": 55,
+    "name": "LG이노텍",
+    "ticker": "011070",
+    "type": "전자부품 기업"
+  },
+  "overview": {
+    "short": "카메라 모듈·반도체 기판과 차량용 전자부품을 만드는 회사",
+    "summary": "카메라 모듈·반도체 기판과 차량용 전자부품을 만드는 회사입니다. 주요 고객의 신제품 출시와 판매량이 분기 실적을 바꿉니다.",
+    "takeaways": [
+      "카메라 모듈·반도체 기판과 차량용 전자부품을 만드는 회사입니다.",
+      "광학솔루션: 스마트폰 등에 쓰이는 카메라 모듈을 공급합니다.",
+      "기판소재: 반도체 패키지 기판 등 전자 소재·부품을 제조합니다.",
+      "전장부품: 차량용 통신·센싱·전원 관련 부품을 공급합니다.",
+      "주요 고객의 신제품 출시와 판매량이 분기 실적을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "광학솔루션",
+        "desc": "스마트폰 등에 쓰이는 카메라 모듈을 공급합니다."
+      },
+      {
+        "name": "기판소재",
+        "desc": "반도체 패키지 기판 등 전자 소재·부품을 제조합니다."
+      },
+      {
+        "name": "전장부품",
+        "desc": "차량용 통신·센싱·전원 관련 부품을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "신제품 수요",
+        "desc": "주요 고객의 신제품 출시와 판매량이 분기 실적을 바꿉니다."
+      },
+      {
+        "title": "제품·수율",
+        "desc": "고사양 부품 비중과 생산 수율이 수익성을 좌우합니다."
+      },
+      {
+        "title": "설비·환율",
+        "desc": "설비 투자·가동률과 환율을 함께 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "591,000원",
+    "marketCap": "14.0조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 21.200755,
+        "op": 0.706043,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 21.896603,
+        "op": 0.665007,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 4.98284,
+        "op": 0.125116,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 3.934575,
+        "op": 0.011392,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 5.534836,
+        "op": 0.295319,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 5.527241,
+        "op": 0.245754,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "LG이노텍 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001270",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "LG이노텍 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001879",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

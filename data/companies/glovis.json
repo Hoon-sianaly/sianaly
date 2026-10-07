@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "glovis",
+    "rank": 54,
+    "name": "현대글로비스",
+    "ticker": "086280",
+    "type": "물류·유통 기업"
+  },
+  "overview": {
+    "short": "자동차 물류·해운과 자동차 부품 유통 등을 수행하는 회사",
+    "summary": "자동차 물류·해운과 자동차 부품 유통 등을 수행하는 회사입니다. 고객사의 생산·판매량과 해외 공장 가동이 물동량을 바꿉니다.",
+    "takeaways": [
+      "자동차 물류·해운과 자동차 부품 유통 등을 수행하는 회사입니다.",
+      "물류: 완성차와 자동차 부품 등의 운송·보관 서비스를 제공합니다.",
+      "해운: 자동차 운반선 등을 통한 해상운송 사업을 운영합니다.",
+      "유통: 해외 생산용 자동차 부품과 중고차 등 유통 사업을 합니다.",
+      "고객사의 생산·판매량과 해외 공장 가동이 물동량을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "물류",
+        "desc": "완성차와 자동차 부품 등의 운송·보관 서비스를 제공합니다."
+      },
+      {
+        "name": "해운",
+        "desc": "자동차 운반선 등을 통한 해상운송 사업을 운영합니다."
+      },
+      {
+        "name": "유통",
+        "desc": "해외 생산용 자동차 부품과 중고차 등 유통 사업을 합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "자동차 생산",
+        "desc": "고객사의 생산·판매량과 해외 공장 가동이 물동량을 바꿉니다."
+      },
+      {
+        "title": "운임·연료",
+        "desc": "해운 운임과 연료비·선박 운영비가 수익성을 좌우합니다."
+      },
+      {
+        "title": "환율·투자",
+        "desc": "환율과 선대 확충 비용을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "188,700원",
+    "marketCap": "14.2조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 28.407374301315,
+        "op": 1.752867442226,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 29.566409336616,
+        "op": 2.07300754591,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 7.223390117785,
+        "op": 0.501884038866,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 7.515967179642,
+        "op": 0.538878486559,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 7.812730333569,
+        "op": 0.52145498215,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 8.705366003397,
+        "op": 0.495063379908,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "현대글로비스 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001205",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "현대글로비스 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002854",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
