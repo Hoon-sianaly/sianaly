@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daeduck",
+    "rank": 81,
+    "name": "대덕전자",
+    "ticker": "353200",
+    "type": "전자기판 기업"
+  },
+  "overview": {
+    "short": "반도체 패키지와 통신장비에 쓰이는 인쇄회로기판을 만드는 회사",
+    "summary": "반도체 패키지와 통신장비에 쓰이는 인쇄회로기판을 만드는 회사입니다. 고객의 반도체 생산과 고사양 기판 수요가 매출을 바꿉니다.",
+    "takeaways": [
+      "반도체 패키지와 통신장비에 쓰이는 인쇄회로기판을 만드는 회사입니다.",
+      "반도체 기판: 반도체 패키지에 쓰이는 기판을 공급합니다.",
+      "통신 기판: 통신·네트워크 등 장비용 PCB를 제조합니다.",
+      "생산·개발: 제품 설계·공정 기술과 생산 설비를 운영합니다.",
+      "고객의 반도체 생산과 고사양 기판 수요가 매출을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "반도체 기판",
+        "desc": "반도체 패키지에 쓰이는 기판을 공급합니다."
+      },
+      {
+        "name": "통신 기판",
+        "desc": "통신·네트워크 등 장비용 PCB를 제조합니다."
+      },
+      {
+        "name": "생산·개발",
+        "desc": "제품 설계·공정 기술과 생산 설비를 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "반도체 수요",
+        "desc": "고객의 반도체 생산과 고사양 기판 수요가 매출을 바꿉니다."
+      },
+      {
+        "title": "수율·가동",
+        "desc": "생산 수율과 공장 가동률이 이익을 좌우합니다."
+      },
+      {
+        "title": "증설·구성",
+        "desc": "투자 비용과 고부가 제품 비중을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "149,100원",
+    "marketCap": "7.4조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.892135903752,
+        "op": 0.011259489061,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 1.065294559811,
+        "op": 0.049061483387,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.215375771235,
+        "op": -0.006201501633,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.245857719982,
+        "op": 0.001866095223,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.34631416369,
+        "op": 0.05129810885,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.400975252509,
+        "op": 0.07027640796,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "대덕전자 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001514",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "대덕전자 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001620",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

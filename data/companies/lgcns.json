@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lgcns",
+    "rank": 87,
+    "name": "LG씨엔에스",
+    "ticker": "064400",
+    "type": "기업 IT·클라우드 기업"
+  },
+  "overview": {
+    "short": "기업 IT 시스템·클라우드·스마트팩토리 등 서비스를 제공하는 회사",
+    "summary": "기업 IT 시스템·클라우드·스마트팩토리 등 서비스를 제공하는 회사입니다. 고객의 IT·디지털 전환 투자와 프로젝트 일정이 매출을 바꿉니다.",
+    "takeaways": [
+      "기업 IT 시스템·클라우드·스마트팩토리 등 서비스를 제공하는 회사입니다.",
+      "IT 서비스: 기업의 업무 시스템을 구축·운영합니다.",
+      "클라우드·AI: 클라우드 전환과 AI 기반 업무 서비스를 제공합니다.",
+      "스마트 산업: 공장·물류 시스템의 디지털 전환을 수행합니다.",
+      "고객의 IT·디지털 전환 투자와 프로젝트 일정이 매출을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "IT 서비스",
+        "desc": "기업의 업무 시스템을 구축·운영합니다."
+      },
+      {
+        "name": "클라우드·AI",
+        "desc": "클라우드 전환과 AI 기반 업무 서비스를 제공합니다."
+      },
+      {
+        "name": "스마트 산업",
+        "desc": "공장·물류 시스템의 디지털 전환을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "기업 투자",
+        "desc": "고객의 IT·디지털 전환 투자와 프로젝트 일정이 매출을 바꿉니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "클라우드·AI·운영 서비스 비중과 수익성을 봐야 합니다."
+      },
+      {
+        "title": "수행 비용",
+        "desc": "개발 인력과 프로젝트 원가·납기 관리가 중요합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "69,400원",
+    "marketCap": "6.7조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 5.982627063,
+        "op": 0.512864077,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 6.129542718,
+        "op": 0.551828295,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 1.211380726,
+        "op": 0.078895171,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.460159054,
+        "op": 0.140789544,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.314997598,
+        "op": 0.094196997,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.520827734,
+        "op": 0.127880084,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "LG씨엔에스 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000832",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "LG씨엔에스 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814002448",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

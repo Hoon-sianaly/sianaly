@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanmipharm",
+    "rank": 86,
+    "name": "한미약품",
+    "ticker": "128940",
+    "type": "제약 기업"
+  },
+  "overview": {
+    "short": "전문의약품과 원료의약품을 개발·생산·판매하는 회사",
+    "summary": "전문의약품과 원료의약품을 개발·생산·판매하는 회사입니다. 주력 의약품의 처방과 해외 판매가 매출을 바꿉니다.",
+    "takeaways": [
+      "전문의약품과 원료의약품을 개발·생산·판매하는 회사입니다.",
+      "전문의약품: 질환 치료용 전문의약품을 국내외에 판매합니다.",
+      "원료·생산: 원료의약품과 의약품 위탁개발·생산 사업을 수행합니다.",
+      "신약·해외: 신약 연구와 해외 제약 사업을 운영합니다.",
+      "주력 의약품의 처방과 해외 판매가 매출을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "전문의약품",
+        "desc": "질환 치료용 전문의약품을 국내외에 판매합니다."
+      },
+      {
+        "name": "원료·생산",
+        "desc": "원료의약품과 의약품 위탁개발·생산 사업을 수행합니다."
+      },
+      {
+        "name": "신약·해외",
+        "desc": "신약 연구와 해외 제약 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매",
+        "desc": "주력 의약품의 처방과 해외 판매가 매출을 바꿉니다."
+      },
+      {
+        "title": "연구·계약",
+        "desc": "임상 개발 비용과 기술이전 계약 수익을 구분해야 합니다."
+      },
+      {
+        "title": "품질·허가",
+        "desc": "의약품 품질·허가와 생산 관리가 중요합니다."
+      }
+    ],
+    "financialNote": "북경한미약품 등 종속회사를 포함한 연결 기준입니다. 기술이전 계약금·단계별 수입은 의약품 판매와 성격이 다릅니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "534,000원",
+    "marketCap": "6.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.495501575568,
+        "op": 0.216186188006,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 1.547531098763,
+        "op": 0.257799090185,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.390948100805,
+        "op": 0.059019660622,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.361277145258,
+        "op": 0.060438495646,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.39292558704,
+        "op": 0.05364860368,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.467247088089,
+        "op": 0.131093421067,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한미약품 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001130",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "한미약품 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004181",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

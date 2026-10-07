@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hybe",
+    "rank": 82,
+    "name": "하이브",
+    "ticker": "352820",
+    "type": "음악·엔터테인먼트 기업"
+  },
+  "overview": {
+    "short": "아티스트 음악·공연·콘텐츠와 팬 플랫폼을 운영하는 회사",
+    "summary": "아티스트 음악·공연·콘텐츠와 팬 플랫폼을 운영하는 회사입니다. 음반 발매와 공연 일정이 분기 매출을 크게 바꿉니다.",
+    "takeaways": [
+      "아티스트 음악·공연·콘텐츠와 팬 플랫폼을 운영하는 회사입니다.",
+      "음악·공연: 레이블을 통해 음반·음원과 공연 사업을 운영합니다.",
+      "콘텐츠·상품: 아티스트 IP를 활용한 콘텐츠와 상품을 판매합니다.",
+      "플랫폼: 위버스 등 팬 커뮤니티·서비스 사업을 운영합니다.",
+      "음반 발매와 공연 일정이 분기 매출을 크게 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "음악·공연",
+        "desc": "레이블을 통해 음반·음원과 공연 사업을 운영합니다."
+      },
+      {
+        "name": "콘텐츠·상품",
+        "desc": "아티스트 IP를 활용한 콘텐츠와 상품을 판매합니다."
+      },
+      {
+        "name": "플랫폼",
+        "desc": "위버스 등 팬 커뮤니티·서비스 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "아티스트 활동",
+        "desc": "음반 발매와 공연 일정이 분기 매출을 크게 바꿉니다."
+      },
+      {
+        "title": "투자·비용",
+        "desc": "신인 육성과 해외 레이블·신규 사업 비용을 봐야 합니다."
+      },
+      {
+        "title": "팬 수익화",
+        "desc": "팬 플랫폼 이용과 콘텐츠·상품 판매가 중요합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "167,100원",
+    "marketCap": "7.2조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.255648536,
+        "op": 0.184045287,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 2.649870246,
+        "op": 0.049318276,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.500613448,
+        "op": 0.021622539,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.705649177,
+        "op": 0.065918974,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.698348369,
+        "op": -0.196574553,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.449997504,
+        "op": 0.170924507,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "하이브 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000802",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "하이브 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004127",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sanil",
+    "rank": 85,
+    "name": "산일전기",
+    "ticker": "062040",
+    "type": "변압기·전력기기 기업"
+  },
+  "overview": {
+    "short": "전력망·산업·신재생에너지용 변압기를 만드는 회사",
+    "summary": "전력망·산업·신재생에너지용 변압기를 만드는 회사입니다. 전력망·신재생에너지 투자가 주문과 인도량을 바꿉니다.",
+    "takeaways": [
+      "전력망·산업·신재생에너지용 변압기를 만드는 회사입니다.",
+      "변압기: 전력 계통과 산업 설비용 변압기를 생산합니다.",
+      "해외 공급: 해외 고객의 전력·에너지 프로젝트에 제품을 공급합니다.",
+      "제품 개발: 고객 사양에 맞는 특수 변압기를 개발·제조합니다.",
+      "전력망·신재생에너지 투자가 주문과 인도량을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "변압기",
+        "desc": "전력 계통과 산업 설비용 변압기를 생산합니다."
+      },
+      {
+        "name": "해외 공급",
+        "desc": "해외 고객의 전력·에너지 프로젝트에 제품을 공급합니다."
+      },
+      {
+        "name": "제품 개발",
+        "desc": "고객 사양에 맞는 특수 변압기를 개발·제조합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전력 투자",
+        "desc": "전력망·신재생에너지 투자가 주문과 인도량을 바꿉니다."
+      },
+      {
+        "title": "원가·제품",
+        "desc": "구리·철강 가격과 제품 구성·판매가격을 봐야 합니다."
+      },
+      {
+        "title": "생산·환율",
+        "desc": "공장 증설·가동률과 수출 환율이 중요합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "229,000원",
+    "marketCap": "7.0조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.333996550771,
+        "op": 0.109231906505,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.50194622088,
+        "op": 0.178634181593,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.098829448704,
+        "op": 0.037521340907,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.128255019954,
+        "op": 0.046190173936,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.150322981077,
+        "op": 0.055480882863,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.164178798154,
+        "op": 0.06203513696,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "산일전기 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000834",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "산일전기 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003544",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

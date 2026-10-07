@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "coway",
+    "rank": 83,
+    "name": "코웨이",
+    "ticker": "021240",
+    "type": "생활가전·렌털 기업"
+  },
+  "overview": {
+    "short": "정수기·공기청정기 등 생활가전을 판매·렌털하고 관리하는 회사",
+    "summary": "정수기·공기청정기 등 생활가전을 판매·렌털하고 관리하는 회사입니다. 렌털 고객 수와 계약 유지율이 반복 수입을 좌우합니다.",
+    "takeaways": [
+      "정수기·공기청정기 등 생활가전을 판매·렌털하고 관리하는 회사입니다.",
+      "환경가전: 정수기·공기청정기 등 제품을 공급합니다.",
+      "렌털·관리: 정기 이용료를 받고 제품 관리·필터 교체 서비스를 제공합니다.",
+      "해외 사업: 해외 법인 등을 통해 가전과 렌털 서비스를 판매합니다.",
+      "렌털 고객 수와 계약 유지율이 반복 수입을 좌우합니다."
+    ],
+    "business": [
+      {
+        "name": "환경가전",
+        "desc": "정수기·공기청정기 등 제품을 공급합니다."
+      },
+      {
+        "name": "렌털·관리",
+        "desc": "정기 이용료를 받고 제품 관리·필터 교체 서비스를 제공합니다."
+      },
+      {
+        "name": "해외 사업",
+        "desc": "해외 법인 등을 통해 가전과 렌털 서비스를 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "계정·유지",
+        "desc": "렌털 고객 수와 계약 유지율이 반복 수입을 좌우합니다."
+      },
+      {
+        "title": "제품·지역",
+        "desc": "제품 구성과 해외 시장 성과를 함께 봐야 합니다."
+      },
+      {
+        "title": "관리·원가",
+        "desc": "서비스 인력·물류·제품 원가가 수익성을 바꿉니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "101,100원",
+    "marketCap": "7.2조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 4.310141694596,
+        "op": 0.795373861343,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 4.963566073111,
+        "op": 0.878651769382,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 1.174919203981,
+        "op": 0.211244773596,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.258874709586,
+        "op": 0.24272114268,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.3297354791,
+        "op": 0.250934549708,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.442206990724,
+        "op": 0.253206002831,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "코웨이 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000924",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "코웨이 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002001",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

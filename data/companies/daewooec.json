@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daewooec",
+    "rank": 84,
+    "name": "대우건설",
+    "ticker": "047040",
+    "type": "건설 기업"
+  },
+  "overview": {
+    "short": "주택·건축·토목과 국내외 플랜트 공사를 수행하는 회사",
+    "summary": "주택·건축·토목과 국내외 플랜트 공사를 수행하는 회사입니다. 공사 진행과 주택 분양 성과가 매출·현금흐름을 바꿉니다.",
+    "takeaways": [
+      "주택·건축·토목과 국내외 플랜트 공사를 수행하는 회사입니다.",
+      "주택·건축: 주택과 일반 건축물을 시공합니다.",
+      "토목: 도로·철도·항만 등 사회기반시설을 건설합니다.",
+      "플랜트: 국내외 발전·산업 플랜트 프로젝트를 수행합니다.",
+      "공사 진행과 주택 분양 성과가 매출·현금흐름을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "주택·건축",
+        "desc": "주택과 일반 건축물을 시공합니다."
+      },
+      {
+        "name": "토목",
+        "desc": "도로·철도·항만 등 사회기반시설을 건설합니다."
+      },
+      {
+        "name": "플랜트",
+        "desc": "국내외 발전·산업 플랜트 프로젝트를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "공정·분양",
+        "desc": "공사 진행과 주택 분양 성과가 매출·현금흐름을 바꿉니다."
+      },
+      {
+        "title": "예정원가",
+        "desc": "공사 원가 재평가와 충당금이 이익에 큰 영향을 줍니다."
+      },
+      {
+        "title": "대금·보증",
+        "desc": "미수금 회수와 프로젝트 금융·보증 부담을 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 공사 예정원가 재평가와 충당금 등으로 연간·분기 이익의 변동이 클 수 있습니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "17,270원",
+    "marketCap": "7.1조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 10.503609086034,
+        "op": 0.403125613881,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 8.054627137857,
+        "op": -0.815431279791,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 2.076668652788,
+        "op": 0.151326026275,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 2.273320646524,
+        "op": 0.082191159199,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.951410038476,
+        "op": 0.255631837181,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 2.043498816098,
+        "op": 0.232239458495,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "대우건설 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001029",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "대우건설 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002161",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

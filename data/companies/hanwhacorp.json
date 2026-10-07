@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanwhacorp",
+    "rank": 89,
+    "name": "한화",
+    "ticker": "000880",
+    "type": "복합·지주 기업"
+  },
+  "overview": {
+    "short": "자체 산업 사업과 방산·금융·에너지 등 자회사를 보유한 회사",
+    "summary": "자체 산업 사업과 방산·금융·에너지 등 자회사를 보유한 회사입니다. 방산·조선·보험 등 서로 다른 사업의 손익을 구분해야 합니다.",
+    "takeaways": [
+      "자체 산업 사업과 방산·금융·에너지 등 자회사를 보유한 회사입니다.",
+      "자체 사업: 산업용 제품·소재 등 자체 사업을 운영합니다.",
+      "산업 자회사: 방산·조선·에너지 등 연결 산업 사업을 포함합니다.",
+      "금융 자회사: 보험 등 금융 자회사 사업을 포함합니다.",
+      "방산·조선·보험 등 서로 다른 사업의 손익을 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "자체 사업",
+        "desc": "산업용 제품·소재 등 자체 사업을 운영합니다."
+      },
+      {
+        "name": "산업 자회사",
+        "desc": "방산·조선·에너지 등 연결 산업 사업을 포함합니다."
+      },
+      {
+        "name": "금융 자회사",
+        "desc": "보험 등 금융 자회사 사업을 포함합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "자회사 실적",
+        "desc": "방산·조선·보험 등 서로 다른 사업의 손익을 구분해야 합니다."
+      },
+      {
+        "title": "그룹 투자",
+        "desc": "사업 재편·인수와 설비 투자·차입 부담을 봐야 합니다."
+      },
+      {
+        "title": "회계 범위",
+        "desc": "연결·지분법 적용과 일회성 손익을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "㈜한화 그룹 연결 기준으로 방산·조선·보험 등 자회사 실적이 포함됩니다. 한화에어로스페이스·한화오션 등 상장 자회사와 연결 범위가 겹칠 수 있어 단순 합산하지 않습니다. 보험·산업 사업이 혼합돼 매출 대비 이익률만으로 업황을 판단하지 않습니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "118,700원",
+    "marketCap": "6.3조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 55.646829,
+        "op": 2.416109,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 74.78544,
+        "op": 4.146883,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 16.64259,
+        "op": 1.042795,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 19.242237,
+        "op": 1.332736,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 21.45141,
+        "op": 1.266711,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 28.637845,
+        "op": 2.408503,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한화 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001426",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "한화 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814003062",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
