@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lg",
+    "rank": 45,
+    "name": "LG",
+    "ticker": "003550",
+    "type": "지주회사"
+  },
+  "overview": {
+    "short": "전자·화학·통신 계열사 지분과 IT서비스 등 연결 자회사를 보유한 지주회사",
+    "summary": "전자·화학·통신 계열사 지분과 IT서비스 등 연결 자회사를 보유한 지주회사입니다. 지분법손익과 배당 여력이 계열사 실적에 따라 달라집니다.",
+    "takeaways": [
+      "전자·화학·통신 계열사 지분과 IT서비스 등 연결 자회사를 보유한 지주회사입니다.",
+      "지분 보유: LG전자·LG화학·LG유플러스 등 계열사 지분을 보유합니다.",
+      "연결 자회사: LG CNS·D&O 등의 사업이 연결 실적에 포함됩니다.",
+      "상표·임대: 상표권 사용료와 임대·배당 등 수입이 발생합니다.",
+      "지분법손익과 배당 여력이 계열사 실적에 따라 달라집니다."
+    ],
+    "business": [
+      {
+        "name": "지분 보유",
+        "desc": "LG전자·LG화학·LG유플러스 등 계열사 지분을 보유합니다."
+      },
+      {
+        "name": "연결 자회사",
+        "desc": "LG CNS·D&O 등의 사업이 연결 실적에 포함됩니다."
+      },
+      {
+        "name": "상표·임대",
+        "desc": "상표권 사용료와 임대·배당 등 수입이 발생합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "계열사 성과",
+        "desc": "지분법손익과 배당 여력이 계열사 실적에 따라 달라집니다."
+      },
+      {
+        "title": "현금·투자",
+        "desc": "보유 현금의 투자·환원 방향이 중요합니다."
+      },
+      {
+        "title": "평가 차이",
+        "desc": "지주회사 가치와 보유 자산 가치의 차이를 살펴야 합니다."
+      }
+    ],
+    "financialNote": "㈜LG 연결 기준입니다. LG CNS 등 연결 종속회사의 매출과 상표권·임대 수익·지분법손익이 포함됩니다. LG전자·LG화학의 매출을 모두 합산한 그룹 총매출과 다릅니다."
+  },
+  "market": {
+    "price": "110,800원",
+    "marketCap": "16.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 7.175505,
+        "op": 0.966842,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 7.252547,
+        "op": 0.912174,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.797748,
+        "op": 0.276889,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.800623,
+        "op": 0.41383,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 2.139622,
+        "op": 0.532978,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "LG, 25년 4분기 및 연간 경영실적 설명 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/YURTYC_SBT6K_HUC_J6E38X3G9749H27C8Y20262517390.pdf",
+      "published": "2026.02.05",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "LG, 2026년 2분기 경영실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/D2J6K_H5F9CDV9JC_G_V929HP4JQE_V7XPPC2026813171832.pdf",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "지분법손익",
+      "desc": "보유 지분 비율에 따라 반영하는 관계기업의 이익·손실."
+    },
+    {
+      "name": "지주 할인",
+      "desc": "지주회사 시가총액이 보유 자산 평가액보다 낮은 현상."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -22,15 +22,15 @@ header{height:72px;border-bottom:1px solid #e8e8e8;background:#fff;display:flex;
 <div class="search"><input id="q" aria-label="기업명 또는 종목코드 검색" placeholder="기업명 또는 종목코드를 검색해보세요" autocomplete="off"><div id="r" class="results hidden"></div></div>
 </section>
 <section class="section" id="homeRecent"><div class="discovery-head"><h2>최근 본 기업</h2></div><p class="discovery-sub">이 브라우저에서 보던 기업을 이어서 확인하세요.</p><div id="homeRecentList" class="recent-home-list"><p class="discovery-empty">기업분석을 열면 여기에 최근 본 기업이 표시됩니다.</p></div></section>
-<section class="section" id="companyDiscovery"><div class="discovery-head"><h2>분석 가능한 기업</h2><span id="companyCount" class="company-count" role="status"></span></div><p class="discovery-sub">기업을 바로 선택하거나 업종별로 둘러보세요.</p><div id="industryFilters" class="industry-filters" role="group" aria-label="업종 필터"></div><div id="companyGrid" class="company-grid" aria-label="분석 가능한 기업 목록"><p class="discovery-empty" role="status">기업 목록을 불러오는 중입니다.</p></div></section>
+<section class="section" id="companyDiscovery"><div class="discovery-head"><h2>분석 가능한 기업</h2><span id="companyCount" class="company-count" role="status"></span></div><p class="discovery-sub">코스피 시가총액 상위 50개 종목을 바로 선택하거나 업종별로 둘러보세요. <span id="rankingAsOf"></span></p><div id="industryFilters" class="industry-filters" role="group" aria-label="업종 필터"></div><div id="companyGrid" class="company-grid" aria-label="분석 가능한 기업 목록"><p class="discovery-empty" role="status">기업 목록을 불러오는 중입니다.</p></div></section>
 <section class="section"><h2>SIANALY가 정리하는 것</h2><div class="cards">
 <div class="card"><h3>기업과 사업</h3><p>무엇을 팔고, 어디에서 매출이 발생하는지 쉽게 정리합니다.</p></div>
 <div class="card"><h3>실적과 숫자</h3><p>매출·영업이익·이익률 등 핵심 재무 흐름을 확인합니다.</p></div>
 <div class="card"><h3>산업과 경쟁</h3><p>산업 구조와 주요 경쟁기업, 앞으로 볼 요소를 정리합니다.</p></div>
 </div></section>
 <div class="notice">SIANALY는 기업 및 산업에 관한 정보와 분석을 제공하는 서비스입니다. 특정 금융상품의 매수·매도 또는 투자 여부를 권유하는 서비스가 아닙니다.</div>
-<script src="company-data.js?v=20261007-insights-1"></script>
-<script src="home-discovery.js?v=20261007-discovery-1"></script>
+<script src="company-data.js?v=20261007-kospi50-1"></script>
+<script src="home-discovery.js?v=20261007-kospi50-1"></script>
 <script>
 let companies=[], catalogState="loading";
 const q=document.getElementById("q"),r=document.getElementById("r");

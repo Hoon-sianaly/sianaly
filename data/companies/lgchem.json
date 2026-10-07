@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lgchem",
+    "rank": 38,
+    "name": "LG화학",
+    "ticker": "051910",
+    "type": "화학·첨단소재 기업"
+  },
+  "overview": {
+    "short": "석유화학·첨단소재·생명과학 사업과 배터리 자회사 지분을 보유한 회사",
+    "summary": "석유화학·첨단소재·생명과학 사업과 배터리 자회사 지분을 보유한 회사입니다. 제품 공급과 원료 가격의 차이가 화학 이익을 좌우합니다.",
+    "takeaways": [
+      "석유화학·첨단소재·생명과학 사업과 배터리 자회사 지분을 보유한 회사입니다.",
+      "석유화학: 합성수지와 기초 화학 제품을 제조합니다.",
+      "첨단소재·생명과학: 양극재·전자소재와 의약품을 공급합니다.",
+      "배터리 자회사: LG에너지솔루션 실적이 연결 수치에 포함됩니다.",
+      "제품 공급과 원료 가격의 차이가 화학 이익을 좌우합니다."
+    ],
+    "business": [
+      {
+        "name": "석유화학",
+        "desc": "합성수지와 기초 화학 제품을 제조합니다."
+      },
+      {
+        "name": "첨단소재·생명과학",
+        "desc": "양극재·전자소재와 의약품을 공급합니다."
+      },
+      {
+        "name": "배터리 자회사",
+        "desc": "LG에너지솔루션 실적이 연결 수치에 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "화학 업황",
+        "desc": "제품 공급과 원료 가격의 차이가 화학 이익을 좌우합니다."
+      },
+      {
+        "title": "전지 소재",
+        "desc": "전기차 수요·금속 가격·판매량이 소재 매출에 영향을 줍니다."
+      },
+      {
+        "title": "연결·투자",
+        "desc": "배터리 보조금과 사업 매각·대규모 투자 효과를 구분해야 합니다."
+      }
+    ],
+    "financialNote": "LG에너지솔루션을 포함한 그룹 연결 기준입니다. 2026년 2분기 IR의 동일 기준 재작성 수치로, 북미 생산 보조금을 매출에 포함하고 매각 결정 사업을 소급 반영했습니다. 과거 보도자료의 매출과 차이가 있을 수 있습니다. 원자료 십억원 단위로 표시합니다."
+  },
+  "market": {
+    "price": "276,500원",
+    "marketCap": "19.5조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 50.18,
+        "op": 0.875,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 47.579,
+        "op": 1.181,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 11.908,
+        "op": 0.477,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 12.247,
+        "op": -0.05,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 14.176,
+        "op": 0.6,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "LG화학, 2025년 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/AK7DJPRG6WZ465YRRUN_H_D8QTPK_G87K_SR202612917190.pdf",
+      "published": "2026.01.29",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "LG화학, 2026년 2분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/9N3KERBD5Y_WA56VWRVJPDAMYJN35QJF2202673117946.pdf",
+      "published": "2026.07.31",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "양극재",
+      "desc": "배터리의 용량·전압에 영향을 주는 양극 소재."
+    },
+    {
+      "name": "연결 기준",
+      "desc": "지배 자회사 실적까지 포함한 회계 기준."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

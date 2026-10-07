@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hdhyundai",
+    "rank": 49,
+    "name": "HD현대",
+    "ticker": "267250",
+    "type": "산업 복합 지주회사"
+  },
+  "overview": {
+    "short": "조선·정유·전력기기·건설기계 등 산업 자회사를 보유한 회사",
+    "summary": "조선·정유·전력기기·건설기계 등 산업 자회사를 보유한 회사입니다. 고선가 물량과 건조 생산성이 연결 이익을 바꿉니다.",
+    "takeaways": [
+      "조선·정유·전력기기·건설기계 등 산업 자회사를 보유한 회사입니다.",
+      "조선·해양: HD한국조선해양과 관련 자회사들의 사업을 보유합니다.",
+      "에너지: HD현대오일뱅크 등 정유·화학 사업을 운영합니다.",
+      "산업기기: 전력기기·건설기계·서비스 등 산업 사업을 보유합니다.",
+      "고선가 물량과 건조 생산성이 연결 이익을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "조선·해양",
+        "desc": "HD한국조선해양과 관련 자회사들의 사업을 보유합니다."
+      },
+      {
+        "name": "에너지",
+        "desc": "HD현대오일뱅크 등 정유·화학 사업을 운영합니다."
+      },
+      {
+        "name": "산업기기",
+        "desc": "전력기기·건설기계·서비스 등 산업 사업을 보유합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "조선 사이클",
+        "desc": "고선가 물량과 건조 생산성이 연결 이익을 바꿉니다."
+      },
+      {
+        "title": "유가·전력",
+        "desc": "정제마진과 전력망 투자 수요가 함께 영향을 줍니다."
+      },
+      {
+        "title": "자본 배분",
+        "desc": "그룹 투자와 차입·배당 구조를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "조선·정유·전력기기·건설기계 등 연결 자회사를 포함한 HD현대 그룹 연결 기준입니다. 상장 자회사 실적과 중복될 수 있어 단순 합산해서는 안 됩니다."
+  },
+  "market": {
+    "price": "189,200원",
+    "marketCap": "14.9조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 67.7656,
+        "op": 2.9832,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 71.2594,
+        "op": 6.0996,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 17.2111,
+        "op": 1.1389,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 19.6019,
+        "op": 2.8348,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 22.4094,
+        "op": 4.1246,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "HD현대, 2025년 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/9JREA3_SV5VK553JRQS8HC7ATEXHMNKP82026212164536.pdf",
+      "published": "2026.02.12",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "HD현대, 2026년 2분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/UPW8XXPJPZRXQ7QJAWD_BXBFM2UE9Q98W2026731171411.pdf",
+      "published": "2026.07.31",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 조정",
+      "desc": "그룹 내부 거래·중복을 제거하는 회계 처리."
+    },
+    {
+      "name": "지주회사",
+      "desc": "계열사 지분과 그룹 자본을 관리하는 회사."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "skt",
+    "rank": 41,
+    "name": "SK텔레콤",
+    "ticker": "017670",
+    "type": "통신·AI 서비스 기업"
+  },
+  "overview": {
+    "short": "이동통신과 SK브로드밴드·AI 인프라 사업을 운영하는 회사",
+    "summary": "이동통신과 SK브로드밴드·AI 인프라 사업을 운영하는 회사입니다. 가입자 수와 요금제 구성이 통신 수익을 바꿉니다.",
+    "takeaways": [
+      "이동통신과 SK브로드밴드·AI 인프라 사업을 운영하는 회사입니다.",
+      "이동통신: 개인·기업에 모바일 통신 서비스를 제공합니다.",
+      "유선·미디어: SK브로드밴드의 인터넷·IPTV 등을 운영합니다.",
+      "AI·데이터센터: AI 서비스와 데이터센터·기업 솔루션에 투자합니다.",
+      "가입자 수와 요금제 구성이 통신 수익을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "이동통신",
+        "desc": "개인·기업에 모바일 통신 서비스를 제공합니다."
+      },
+      {
+        "name": "유선·미디어",
+        "desc": "SK브로드밴드의 인터넷·IPTV 등을 운영합니다."
+      },
+      {
+        "name": "AI·데이터센터",
+        "desc": "AI 서비스와 데이터센터·기업 솔루션에 투자합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "가입자·단가",
+        "desc": "가입자 수와 요금제 구성이 통신 수익을 바꿉니다."
+      },
+      {
+        "title": "비용·신뢰",
+        "desc": "마케팅·유심 교체 등 비용과 고객 유지가 중요합니다."
+      },
+      {
+        "title": "AI 투자",
+        "desc": "데이터센터 투자 규모와 실제 매출·현금흐름을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "SK브로드밴드 등을 포함한 연결 기준입니다. 영업수익을 매출로 표시합니다. 유심 교체 비용 등 일회성 비용과 전년 기저 효과를 확인해야 합니다."
+  },
+  "market": {
+    "price": "87,300원",
+    "marketCap": "18.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 17.9406,
+        "op": 1.8234,
+        "sourceIds": [
+          "prior"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 17.0992,
+        "op": 1.0732,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 4.3388,
+        "op": 0.3383,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 4.3923,
+        "op": 0.5376,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 4.3591,
+        "op": 0.566,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "SK텔레콤, 2025년 연간 및 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/6E8MS6MY2R2B2XZYNNQRA3R2W2CQEXSJ202625173927.pdf",
+      "published": "2026.02.05",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "prior",
+      "url": "https://news.sktelecom.com/209780",
+      "published": "2025.02.12",
+      "label": "SK텔레콤 2024년 연결 실적 공식 보도자료",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "SK텔레콤, 2026년 2분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/G72XHUV9BHVNCQUAXEH3K_TJCNRMZHRXD20268517113.pdf",
+      "published": "2026.08.05",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "ARPU",
+      "desc": "가입자 한 명당 평균 매출."
+    },
+    {
+      "name": "CAPEX",
+      "desc": "설비와 시설에 쓰는 투자 지출."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

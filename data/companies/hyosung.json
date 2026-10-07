@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hyosung",
+    "rank": 30,
+    "name": "효성중공업",
+    "ticker": "298040",
+    "type": "전력기기·건설 기업"
+  },
+  "overview": {
+    "short": "초고압 변압기·차단기 등 전력기기를 만들고 건설 사업도 운영하는 회사",
+    "summary": "초고압 변압기·차단기 등 전력기기를 만들고 건설 사업도 운영하는 회사입니다. 전력 수요와 노후 설비 교체가 신규 수주를 만듭니다.",
+    "takeaways": [
+      "초고압 변압기·차단기 등 전력기기를 만들고 건설 사업도 운영하는 회사입니다.",
+      "중공업: 송전·변전용 변압기·차단기와 산업용 전기기기를 공급합니다.",
+      "해외 전력기기: 미국·유럽 등 전력망 시장에 설비를 납품합니다.",
+      "건설: 주택·상업시설 등 건설 프로젝트를 수행합니다.",
+      "전력 수요와 노후 설비 교체가 신규 수주를 만듭니다."
+    ],
+    "business": [
+      {
+        "name": "중공업",
+        "desc": "송전·변전용 변압기·차단기와 산업용 전기기기를 공급합니다."
+      },
+      {
+        "name": "해외 전력기기",
+        "desc": "미국·유럽 등 전력망 시장에 설비를 납품합니다."
+      },
+      {
+        "name": "건설",
+        "desc": "주택·상업시설 등 건설 프로젝트를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전력망 투자",
+        "desc": "전력 수요와 노후 설비 교체가 신규 수주를 만듭니다."
+      },
+      {
+        "title": "수주 구성",
+        "desc": "지역과 제품 구성·납기·환율이 수익성에 영향을 줍니다."
+      },
+      {
+        "title": "건설 비용",
+        "desc": "공사 원가와 프로젝트 위험이 중공업 이익을 상쇄할 수 있습니다."
+      }
+    ],
+    "financialNote": "회사 작성 IR의 연결 기준 발표 수치입니다. 원자료의 반올림 정밀도를 유지했으며 잠정 수치는 이후 감사·공시에서 변경될 수 있습니다. 분기는 누적이 아닌 3개월 실적입니다."
+  },
+  "market": {
+    "price": "2,621,000원",
+    "marketCap": "24.4조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 4.895,
+        "op": 0.3625,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 5.9685,
+        "op": 0.747,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.5253,
+        "op": 0.1642,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.3582,
+        "op": 0.1523,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.687,
+        "op": 0.2643,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "효성중공업, 2025년 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/PUD2WPFCH67RJC6D53U6S_GWF2J74N5H9202622173219.pdf",
+      "published": "2026.02.02",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "효성중공업, 2026년 2분기 경영실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/3HRQPZMCWUJEX2H3HR7U6695TWC47UDV202683172242.pdf",
+      "published": "2026.08.03",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "초고압 변압기",
+      "desc": "전기를 멀리 보내거나 공급할 때 전압을 바꾸는 설비."
+    },
+    {
+      "name": "수주잔고",
+      "desc": "아직 매출로 인식하지 않은 계약 잔액."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

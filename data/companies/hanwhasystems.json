@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanwhasystems",
+    "rank": 50,
+    "name": "한화시스템",
+    "ticker": "272210",
+    "type": "방산·ICT 기업"
+  },
+  "overview": {
+    "short": "방산 전자장비와 기업 IT서비스·해외 조선소 사업을 운영하는 회사",
+    "summary": "방산 전자장비와 기업 IT서비스·해외 조선소 사업을 운영하는 회사입니다. 수출 계약과 국내 양산 사업의 납품 시점이 중요합니다.",
+    "takeaways": [
+      "방산 전자장비와 기업 IT서비스·해외 조선소 사업을 운영하는 회사입니다.",
+      "방산 전자: 레이더·항전·통신·감시 장비를 공급합니다.",
+      "ICT: 그룹과 기업의 IT 시스템 구축·운영을 수행합니다.",
+      "신사업·해외: 위성 관련 사업과 해외 조선소 등 연결 사업에 투자합니다.",
+      "수출 계약과 국내 양산 사업의 납품 시점이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "방산 전자",
+        "desc": "레이더·항전·통신·감시 장비를 공급합니다."
+      },
+      {
+        "name": "ICT",
+        "desc": "그룹과 기업의 IT 시스템 구축·운영을 수행합니다."
+      },
+      {
+        "name": "신사업·해외",
+        "desc": "위성 관련 사업과 해외 조선소 등 연결 사업에 투자합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "방산 수출",
+        "desc": "수출 계약과 국내 양산 사업의 납품 시점이 중요합니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "방산·ICT 비중과 프로젝트 원가가 수익성을 바꿉니다."
+      },
+      {
+        "title": "초기 비용",
+        "desc": "해외 조선소와 신사업의 투자·손실이 연결 이익에 반영됩니다."
+      }
+    ],
+    "financialNote": "방산·ICT와 한화필리조선소 등을 포함한 연결 기준입니다. 방산 수출 실적과 해외 조선소 편입 초기 비용을 함께 확인해야 합니다."
+  },
+  "market": {
+    "price": "78,300원",
+    "marketCap": "14.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.8037,
+        "op": 0.2193,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 3.6641,
+        "op": 0.1235,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.7682,
+        "op": 0.0325,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.8071,
+        "op": 0.0343,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.1176,
+        "op": 0.1037,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한화시스템, 2025년 4분기 사업 설명 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/FMJV6KRCBXDK_B5C8WU2ZJ94AAGG4XDC62026223141855.pdf",
+      "published": "2026.02.23",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "한화시스템, 2026년 2분기 경영실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/WSE7E4AES49XSA8JDZWB2EYMJZ26R35820267281676.pdf",
+      "published": "2026.07.28",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "AESA 레이더",
+      "desc": "전자적으로 빔 방향을 바꾸는 능동위상배열 레이더."
+    },
+    {
+      "name": "항전장비",
+      "desc": "항공기에 탑재되는 전자·통신·제어 장비."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

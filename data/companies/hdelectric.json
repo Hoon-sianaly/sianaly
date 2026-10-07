@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hdelectric",
+    "rank": 32,
+    "name": "HD현대일렉트릭",
+    "ticker": "267260",
+    "type": "전력기기 기업"
+  },
+  "overview": {
+    "short": "변압기·차단기·배전 설비와 회전기기를 만드는 회사",
+    "summary": "변압기·차단기·배전 설비와 회전기기를 만드는 회사입니다. 데이터센터와 전력망 교체 투자가 수주 기반입니다.",
+    "takeaways": [
+      "변압기·차단기·배전 설비와 회전기기를 만드는 회사입니다.",
+      "전력기기: 발전소·송전망용 변압기와 차단기를 공급합니다.",
+      "배전·회전기기: 전력 배분 설비와 산업용 모터·발전기를 판매합니다.",
+      "해외 시장: 북미·중동 등 전력 인프라 시장에 설비를 납품합니다.",
+      "데이터센터와 전력망 교체 투자가 수주 기반입니다."
+    ],
+    "business": [
+      {
+        "name": "전력기기",
+        "desc": "발전소·송전망용 변압기와 차단기를 공급합니다."
+      },
+      {
+        "name": "배전·회전기기",
+        "desc": "전력 배분 설비와 산업용 모터·발전기를 판매합니다."
+      },
+      {
+        "name": "해외 시장",
+        "desc": "북미·중동 등 전력 인프라 시장에 설비를 납품합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전력망 수요",
+        "desc": "데이터센터와 전력망 교체 투자가 수주 기반입니다."
+      },
+      {
+        "title": "납품 구성",
+        "desc": "고수익 제품·지역 구성과 납기가 이익률을 바꿉니다."
+      },
+      {
+        "title": "생산 능력",
+        "desc": "증설 속도와 생산성·원재료·환율을 함께 확인해야 합니다."
+      }
+    ],
+    "financialNote": "회사 작성 IR의 연결 기준 발표 수치입니다. 원자료의 반올림 정밀도를 유지했으며 잠정 수치는 이후 감사·공시에서 변경될 수 있습니다. 분기는 누적이 아닌 3개월 실적입니다.",
+    "annualNote": "2024년 매출은 연간 IR의 사업별 매출 합계(15,889+8,677+5,371+3,286억원)입니다."
+  },
+  "market": {
+    "price": "633,000원",
+    "marketCap": "22.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.3223,
+        "op": 0.669,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 4.0795,
+        "op": 0.9953,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.9062,
+        "op": 0.2091,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.0365,
+        "op": 0.2583,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.1418,
+        "op": 0.287,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "HD현대일렉트릭, 2025년 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/YBM4BM4ZUN_F_TUUEFFJ483Y5HFHUR4Q3U202626172130.pdf",
+      "published": "2026.02.06",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "HD현대일렉트릭, 2026년 2분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/822D_X8TD4CU44JTRQ9GHCPJT34J5G3F62026728161555.pdf",
+      "published": "2026.07.28",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "배전",
+      "desc": "송전된 전기를 최종 사용처로 나누어 공급하는 단계."
+    },
+    {
+      "name": "수주잔고",
+      "desc": "계약했지만 아직 납품·매출 인식하지 않은 잔액."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

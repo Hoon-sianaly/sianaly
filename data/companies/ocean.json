@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ocean",
+    "rank": 31,
+    "name": "한화오션",
+    "ticker": "042660",
+    "type": "조선·해양 기업"
+  },
+  "overview": {
+    "short": "상선·군함·잠수함과 해양·에너지 설비를 건조하는 회사",
+    "summary": "상선·군함·잠수함과 해양·에너지 설비를 건조하는 회사입니다. 과거 계약 가격과 현재 공정 진행이 매출·이익으로 이어집니다.",
+    "takeaways": [
+      "상선·군함·잠수함과 해양·에너지 설비를 건조하는 회사입니다.",
+      "상선: LNG 운반선과 컨테이너선 등 상업용 선박을 건조합니다.",
+      "특수선: 함정과 잠수함 등 방산 선박 사업을 수행합니다.",
+      "해양·에너지: 해양 설비와 에너지 프로젝트 및 연결 자회사를 운영합니다.",
+      "과거 계약 가격과 현재 공정 진행이 매출·이익으로 이어집니다."
+    ],
+    "business": [
+      {
+        "name": "상선",
+        "desc": "LNG 운반선과 컨테이너선 등 상업용 선박을 건조합니다."
+      },
+      {
+        "name": "특수선",
+        "desc": "함정과 잠수함 등 방산 선박 사업을 수행합니다."
+      },
+      {
+        "name": "해양·에너지",
+        "desc": "해양 설비와 에너지 프로젝트 및 연결 자회사를 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "선가·공정률",
+        "desc": "과거 계약 가격과 현재 공정 진행이 매출·이익으로 이어집니다."
+      },
+      {
+        "title": "예정원가",
+        "desc": "자재·인건비 상승과 원가 추정 변경이 이익을 크게 바꿀 수 있습니다."
+      },
+      {
+        "title": "해외·방산",
+        "desc": "특수선 수주와 해외 거점 확장에 초기 비용이 발생합니다."
+      }
+    ],
+    "financialNote": "상선·특수선·EPU와 연결 자회사를 포함합니다. 2026년 2분기 IR에서 사업부별 귀속이 재분류됐지만 연결 총매출과 영업이익은 변동이 없습니다. 공정률·예정원가 변경에 따라 분기 실적이 달라질 수 있습니다."
+  },
+  "market": {
+    "price": "74,500원",
+    "marketCap": "22.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 10.776,
+        "op": 0.2379,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 12.6884,
+        "op": 1.1091,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 3.2941,
+        "op": 0.3717,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 3.2099,
+        "op": 0.4411,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 5.4432,
+        "op": 0.7361,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한화오션,2025년 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/Y42SPK6VUEUGUMT4FBHV3RJ6TFWM27UX202624171643.pdf",
+      "published": "2026.02.04",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "한화오션, 2026년 2분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/N376VPN5H_DZVH_KYH4ANARQQKZK_DVGA2Q202672717455.pdf",
+      "published": "2026.07.27",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "공정률",
+      "desc": "전체 건조 작업 중 완료한 작업의 비율."
+    },
+    {
+      "name": "LNG선",
+      "desc": "액화천연가스를 운반하는 선박."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kepco",
+    "rank": 39,
+    "name": "한국전력",
+    "ticker": "015760",
+    "type": "전력 공기업"
+  },
+  "overview": {
+    "short": "전력의 송전·배전·판매와 발전 자회사 등을 운영하는 회사",
+    "summary": "전력의 송전·배전·판매와 발전 자회사 등을 운영하는 회사입니다. 판매 단가와 정책 결정이 수입에 직접 영향을 줍니다.",
+    "takeaways": [
+      "전력의 송전·배전·판매와 발전 자회사 등을 운영하는 회사입니다.",
+      "전력 판매: 기업과 가정 등에 전기를 공급하고 요금을 받습니다.",
+      "전력망: 송전·배전망을 구축하고 유지합니다.",
+      "발전·해외: 발전 자회사와 해외 전력 사업을 운영합니다.",
+      "판매 단가와 정책 결정이 수입에 직접 영향을 줍니다."
+    ],
+    "business": [
+      {
+        "name": "전력 판매",
+        "desc": "기업과 가정 등에 전기를 공급하고 요금을 받습니다."
+      },
+      {
+        "name": "전력망",
+        "desc": "송전·배전망을 구축하고 유지합니다."
+      },
+      {
+        "name": "발전·해외",
+        "desc": "발전 자회사와 해외 전력 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전기요금",
+        "desc": "판매 단가와 정책 결정이 수입에 직접 영향을 줍니다."
+      },
+      {
+        "title": "연료·전력 비용",
+        "desc": "유가·가스·석탄 가격과 구입전력비가 비용을 바꿉니다."
+      },
+      {
+        "title": "차입·설비투자",
+        "desc": "전력망 투자와 차입금 이자 부담을 함께 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 현재 검증한 3개월 분기 실적은 2026년 1분기까지입니다. 반기 누적 수치를 2분기 단독 실적으로 표시하지 않습니다. 전기요금과 연료비·구입전력비가 수익성을 바꿉니다."
+  },
+  "market": {
+    "price": "30,000원",
+    "marketCap": "19.3조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 93.399,
+        "op": 8.365,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 97.435,
+        "op": 13.525,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 24.224,
+        "op": 3.754,
+        "sourceIds": [
+          "q1"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 24.398,
+        "op": 3.784,
+        "sourceIds": [
+          "q1"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "한국전력공사, 2025년 결산실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/FEN54VMHBRFUBYEFXP48J36H7SC9EBGN202622792725.pdf",
+      "published": "2026.02.27",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q1",
+      "label": "한국전력공사, 2026년 1분기 결산실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/J377PPDPEDZWEKYHZAPANPQK_TK5E_GHWQ202651411336.pdf",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q1"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "구입전력비",
+      "desc": "외부 발전사 등에서 전기를 구매하는 비용."
+    },
+    {
+      "name": "SMP",
+      "desc": "전력시장에서 적용되는 계통한계가격."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

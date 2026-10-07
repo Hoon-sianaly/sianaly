@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "futurem",
+    "rank": 44,
+    "name": "포스코퓨처엠",
+    "ticker": "003670",
+    "type": "이차전지·기초소재 기업"
+  },
+  "overview": {
+    "short": "배터리 양극재·음극재와 내화물·라임 등 기초소재를 만드는 회사",
+    "summary": "배터리 양극재·음극재와 내화물·라임 등 기초소재를 만드는 회사입니다. 고객사의 배터리 생산과 재고 조정이 판매량을 바꿉니다.",
+    "takeaways": [
+      "배터리 양극재·음극재와 내화물·라임 등 기초소재를 만드는 회사입니다.",
+      "양극재: 배터리의 주요 소재인 양극재를 제조합니다.",
+      "음극재: 천연·인조 흑연 등 음극 소재를 공급합니다.",
+      "기초소재: 철강 공정에 쓰는 내화물·라임 등을 공급합니다.",
+      "고객사의 배터리 생산과 재고 조정이 판매량을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "양극재",
+        "desc": "배터리의 주요 소재인 양극재를 제조합니다."
+      },
+      {
+        "name": "음극재",
+        "desc": "천연·인조 흑연 등 음극 소재를 공급합니다."
+      },
+      {
+        "name": "기초소재",
+        "desc": "철강 공정에 쓰는 내화물·라임 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전기차 수요",
+        "desc": "고객사의 배터리 생산과 재고 조정이 판매량을 바꿉니다."
+      },
+      {
+        "title": "메탈 가격",
+        "desc": "리튬·니켈 가격이 판매 단가와 재고 손익에 영향을 줍니다."
+      },
+      {
+        "title": "가동률",
+        "desc": "신규 공장의 생산 안정화·수율·고정비 부담이 중요합니다."
+      }
+    ],
+    "financialNote": "회사 작성 IR의 연결 기준 발표 수치입니다. 원자료의 반올림 정밀도를 유지했으며 잠정 수치는 이후 감사·공시에서 변경될 수 있습니다. 분기는 누적이 아닌 3개월 실적입니다."
+  },
+  "market": {
+    "price": "192,200원",
+    "marketCap": "17.1조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.6999,
+        "op": 0.0007,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 2.9387,
+        "op": 0.0328,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.6609,
+        "op": 0.0008,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.7575,
+        "op": 0.0177,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.6795,
+        "op": 0.0267,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "포스코퓨처엠, 2025년 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/H52G7XD8DFV7D_NUUYCH_M_MRKWAU5YXK9Y2026129135632.pdf",
+      "published": "2026.01.29",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "포스코퓨처엠, 2026년 2분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/S3Z25AQ9NDURNK_TD8AG6VQJF97FZY78J202673017483.pdf",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "수율",
+      "desc": "투입한 원료 중 정상 제품으로 생산된 비율."
+    },
+    {
+      "name": "음극재",
+      "desc": "충전 시 리튬이온을 저장하는 배터리 소재."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

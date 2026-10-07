@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "posco",
+    "rank": 29,
+    "name": "POSCO홀딩스",
+    "ticker": "005490",
+    "type": "철강·소재 지주회사"
+  },
+  "overview": {
+    "short": "철강·이차전지 소재·에너지·인프라 사업을 보유한 지주회사",
+    "summary": "철강·이차전지 소재·에너지·인프라 사업을 보유한 지주회사입니다. 철강 판매 가격과 철광석·원료탄 비용의 차이가 핵심입니다.",
+    "takeaways": [
+      "철강·이차전지 소재·에너지·인프라 사업을 보유한 지주회사입니다.",
+      "철강: 포스코 및 해외 철강 사업을 통해 철강 제품을 공급합니다.",
+      "이차전지 소재: 리튬·니켈과 양극재·음극재 공급망에 투자합니다.",
+      "인프라·에너지: 무역·LNG·건설 등 사업을 운영합니다.",
+      "철강 판매 가격과 철광석·원료탄 비용의 차이가 핵심입니다."
+    ],
+    "business": [
+      {
+        "name": "철강",
+        "desc": "포스코 및 해외 철강 사업을 통해 철강 제품을 공급합니다."
+      },
+      {
+        "name": "이차전지 소재",
+        "desc": "리튬·니켈과 양극재·음극재 공급망에 투자합니다."
+      },
+      {
+        "name": "인프라·에너지",
+        "desc": "무역·LNG·건설 등 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "철강 스프레드",
+        "desc": "철강 판매 가격과 철광석·원료탄 비용의 차이가 핵심입니다."
+      },
+      {
+        "title": "소재 투자",
+        "desc": "리튬 가격과 신규 공장 가동률에 따라 이익이 달라집니다."
+      },
+      {
+        "title": "사업 재편",
+        "desc": "건설 손실·자산 처분·비핵심 사업 정리가 연결 실적에 반영됩니다."
+      }
+    ],
+    "financialNote": "POSCO홀딩스 그룹 연결 기준이며 철강 자회사 포스코의 별도 실적과 다릅니다. 원자료 십억원 단위로 표시합니다."
+  },
+  "market": {
+    "price": "309,000원",
+    "marketCap": "24.5조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 72.688,
+        "op": 2.174,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 69.095,
+        "op": 1.827,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 17.556,
+        "op": 0.607,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 17.876,
+        "op": 0.707,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 19.259,
+        "op": 0.819,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://files-scs.pstatic.net/2026/01/29/azl7HR2GZP/260129_%ED%8F%AC%EC%8A%A4%EC%BD%94%ED%99%80%EB%94%A9%EC%8A%A4_2025%EB%85%84%EB%8F%84%20%EC%8B%A4%EC%A0%81%EB%B0%9C%ED%91%9C%20PT.pdf",
+      "published": "2026.01.29",
+      "label": "POSCO홀딩스 2025년 경영실적 발표 — 회사 작성 자료",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "POSCO홀딩스, 2026년 2분기 영업실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/EH_DWQZ9KAU7MA269WRU2J6WBUWZB7YJG2026730175937.pdf",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "지주회사",
+      "desc": "다른 회사의 지분을 보유해 사업과 자본을 관리하는 회사."
+    },
+    {
+      "name": "스프레드",
+      "desc": "판매 가격과 주요 원재료 가격의 차이."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

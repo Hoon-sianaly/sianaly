@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanmi",
+    "rank": 27,
+    "name": "한미반도체",
+    "ticker": "042700",
+    "type": "반도체 장비 기업"
+  },
+  "overview": {
+    "short": "HBM 적층과 반도체 패키징에 필요한 제조·검사 장비를 만드는 회사",
+    "summary": "HBM 적층과 반도체 패키징에 필요한 제조·검사 장비를 만드는 회사입니다. HBM 생산라인의 증설 시점이 장비 주문과 매출을 좌우합니다.",
+    "takeaways": [
+      "HBM 적층과 반도체 패키징에 필요한 제조·검사 장비를 만드는 회사입니다.",
+      "TC 본더: 열과 압력을 이용해 메모리 칩을 정밀하게 붙이는 장비를 공급합니다.",
+      "패키징·검사: 패키지 절단·검사와 전자파 차폐 관련 장비를 판매합니다.",
+      "부품·서비스: 장비 업그레이드와 전환 부품을 공급합니다.",
+      "HBM 생산라인의 증설 시점이 장비 주문과 매출을 좌우합니다."
+    ],
+    "business": [
+      {
+        "name": "TC 본더",
+        "desc": "열과 압력을 이용해 메모리 칩을 정밀하게 붙이는 장비를 공급합니다."
+      },
+      {
+        "name": "패키징·검사",
+        "desc": "패키지 절단·검사와 전자파 차폐 관련 장비를 판매합니다."
+      },
+      {
+        "name": "부품·서비스",
+        "desc": "장비 업그레이드와 전환 부품을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 투자",
+        "desc": "HBM 생산라인의 증설 시점이 장비 주문과 매출을 좌우합니다."
+      },
+      {
+        "title": "기술 변화",
+        "desc": "칩 적층 방식과 고객의 장비 인증이 경쟁력을 결정합니다."
+      },
+      {
+        "title": "납품 시점",
+        "desc": "수주와 매출 인식 시점이 달라 분기 실적 변동이 큽니다."
+      }
+    ],
+    "financialNote": "연결 사업보고서와 분기보고서의 원 단위 수치를 조원으로 환산했습니다. 현재 이 페이지에서 검증한 분기 실적은 2026년 1분기까지이며, 2분기 수치는 추가 확인 전까지 표시하지 않습니다."
+  },
+  "market": {
+    "price": "266,500원",
+    "marketCap": "25.4조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.558917191547,
+        "op": 0.255391604854,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.576684619527,
+        "op": 0.251390142142,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.147391786483,
+        "op": 0.069632218786,
+        "sourceIds": [
+          "q1"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.05090207657,
+        "op": 0.008456257107,
+        "sourceIds": [
+          "q1"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://kind.krx.co.kr/external/2026/03/12/002053/20260312004659/11011.htm",
+      "published": "2026.03.12",
+      "label": "한미반도체 2025년 연결 사업보고서",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q1",
+      "url": "https://kind.krx.co.kr/external/2026/05/15/001759/20260515003902/11013.htm",
+      "published": "2026.05.15",
+      "label": "한미반도체 2026년 1분기 연결 분기보고서",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q1"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "HBM",
+      "desc": "여러 메모리 칩을 쌓아 넓은 데이터 통로를 확보한 고대역폭 메모리."
+    },
+    {
+      "name": "본딩",
+      "desc": "칩을 정밀하게 접합하는 공정."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

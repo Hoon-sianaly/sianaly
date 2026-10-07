@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "meritz",
+    "rank": 35,
+    "name": "메리츠금융지주",
+    "ticker": "138040",
+    "type": "보험·증권 금융지주"
+  },
+  "overview": {
+    "short": "메리츠화재·메리츠증권·메리츠캐피탈 등을 보유한 금융지주회사",
+    "summary": "메리츠화재·메리츠증권·메리츠캐피탈 등을 보유한 금융지주회사입니다. 보험금과 손해율·계약서비스마진 상각이 이익에 영향을 줍니다.",
+    "takeaways": [
+      "메리츠화재·메리츠증권·메리츠캐피탈 등을 보유한 금융지주회사입니다.",
+      "보험: 메리츠화재를 통해 장기보험과 손해보험을 운영합니다.",
+      "증권: 중개·운용·기업금융 사업을 수행합니다.",
+      "캐피탈·지주: 대출·리스 등 금융과 그룹 자본 배분을 관리합니다.",
+      "보험금과 손해율·계약서비스마진 상각이 이익에 영향을 줍니다."
+    ],
+    "business": [
+      {
+        "name": "보험",
+        "desc": "메리츠화재를 통해 장기보험과 손해보험을 운영합니다."
+      },
+      {
+        "name": "증권",
+        "desc": "중개·운용·기업금융 사업을 수행합니다."
+      },
+      {
+        "name": "캐피탈·지주",
+        "desc": "대출·리스 등 금융과 그룹 자본 배분을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "보험 손익",
+        "desc": "보험금과 손해율·계약서비스마진 상각이 이익에 영향을 줍니다."
+      },
+      {
+        "title": "투자·금리",
+        "desc": "금리와 금융상품 평가·운용 성과가 변동 요인입니다."
+      },
+      {
+        "title": "신용·환원",
+        "desc": "부동산 등 대출 위험과 자사주 매입에 필요한 자본을 봐야 합니다."
+      }
+    ],
+    "financialNote": "순영업수익은 IR에 제시된 보험손익·순이자손익·수수료손익·기타손익의 합계로 계산했습니다. 영업이익은 그룹 연결 기준입니다. 원자료 반올림 때문에 영업이익과 판매관리비를 더한 값과 1억원 내외의 차이가 있을 수 있습니다. 금융상품 매매 총액을 제조업 매출처럼 표시하지 않습니다."
+  },
+  "market": {
+    "price": "130,100원",
+    "marketCap": "21.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 16:40 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.9318,
+        "op": 3.1889,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 3.8766,
+        "op": 2.8727,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.1992,
+        "op": 0.9498,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.15,
+        "op": 0.8548,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.2852,
+        "op": 0.9676,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion",
+    "metrics": {
+      "sales": {
+        "label": "순영업수익",
+        "help": "수익에서 관련 비용을 차감한 금융업 지표로 일반 기업의 매출과 다릅니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "제시한 회계 범위의 영업이익으로 지배주주순이익과 다릅니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "메리츠금융지주, 2025년 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/7BWMRF9C2NQB3UPYNJCRAXE2VCZ3JWPE202621118416.pdf",
+      "published": "2026.02.11",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "메리츠금융지주, 2026년 2분기 경영실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/WJY2JX5WSVTRS3_SDC_SF5Z7HEPUVNCVHG202681217458.pdf",
+      "published": "2026.08.12",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "CSM",
+      "desc": "보험 계약에서 앞으로 인식할 미실현 이익."
+    },
+    {
+      "name": "손해율",
+      "desc": "보험료에 비해 보험금이 얼마나 발생했는지 나타내는 비율."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
