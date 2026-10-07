@@ -30,11 +30,12 @@ header{position:sticky;top:0;z-index:30;gap:24px}.company-search{position:relati
 main{max-width:1580px}.layout{grid-template-columns:minmax(0,1fr) 240px;gap:20px}.layout.no-side{grid-template-columns:minmax(0,1fr);max-width:1320px}.content{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;align-items:start}.company-body{min-width:0}.content>.empty{grid-column:1/-1}.section-toc{top:90px;margin:0;padding:16px 12px;align-self:start;box-shadow:none}.section-toc summary{cursor:pointer;font-size:13px;font-weight:700;color:#4b5563;list-style:none}.section-toc summary::-webkit-details-marker{display:none}.section-toc summary::after{content:"−";float:right;color:#9ca3af}.section-toc:not([open]) summary::after{content:"+"}.toc-links{flex-direction:column;gap:6px;margin-top:12px}.toc-links a{font-size:13px;padding:10px}.side{top:90px}.content section[id]{scroll-margin-top:90px}
 @media(max-width:1150px){.layout,.layout.no-side{grid-template-columns:minmax(0,1fr)}.side{display:none}}
 @media(max-width:700px){.content{grid-template-columns:minmax(0,1fr);gap:16px}.section-toc{position:static;padding:12px 14px}.toc-links{flex-direction:row;flex-wrap:wrap}.toc-links a{padding:7px 10px}.content section[id]{scroll-margin-top:132px}}
+.toc-links a[aria-current="location"]{background:#dbeafe;color:#1d4ed8;font-weight:700;box-shadow:inset 3px 0 #2563eb}.data-freshness{display:flex;flex-wrap:wrap;gap:7px 18px;font-size:12px;line-height:1.7;color:#cbd5e1;margin-top:12px}.insight-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0}.insight-card{background:#f1f5f9;border-radius:12px;padding:16px;min-width:0}.insight-card span{display:block;color:#4b5563;font-size:12px;line-height:1.5}.insight-card strong{display:block;font-size:21px;margin:8px 0;overflow-wrap:anywhere}.insight-card small{color:#6b7280;font-size:11px;line-height:1.6;display:block}.insight-note{font-size:12px;color:#6b7280;line-height:1.7;margin:0 0 18px}@media(max-width:650px){.insight-grid{grid-template-columns:minmax(0,1fr)}.insight-card{padding:14px}.insight-card strong{font-size:20px}}
 </style></head>
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
-<script src="company-data.js?v=20261007-kospi25-1"></script>
+<script src="company-data.js?v=20261007-insights-1"></script>
 <script src="company-search.js?v=20261007-detail-search-1"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company");
@@ -42,6 +43,7 @@ const app=document.getElementById("app");
 (async function initCompanyPage(){
 app.innerHTML='<section class="empty" role="status">기업 정보를 불러오는 중입니다.</section>';
 const c=await loadCompanyData(key);
+const recentCatalog=(await loadCompanyCatalog()).companies;
 const compact=c?.presentation.compact === true;
 const comparison=c?.presentation.chartStyle === "comparison";
 if(compact)document.body.classList.add("samsung-page");
@@ -59,8 +61,8 @@ sideOpen.addEventListener("click",()=>{recentEnabled=true;localStorage.setItem("
 renderRecentState();
 function updateRecent(){
  if(!c)return;
- let items=[];try{items=JSON.parse(localStorage.getItem("sianalyRecent")||"[]")}catch(e){}
- items=items.filter(x=>x.key!==key);items.unshift({key,name:c.name,ticker:c.ticker});items=items.slice(0,5);
+ let items=[];try{const stored=JSON.parse(localStorage.getItem("sianalyRecent")||"[]");if(Array.isArray(stored))items=stored;}catch(e){}
+ const seen=new Set([key]);items=items.flatMap(item=>{const entry=recentCatalog.find(entry=>entry.key===item?.key);if(!entry||seen.has(entry.key))return [];seen.add(entry.key);return [{key:entry.key,name:entry.name,ticker:entry.ticker}];});items.unshift({key,name:c.name,ticker:c.ticker});items=items.slice(0,5);
  try{localStorage.setItem("sianalyRecent",JSON.stringify(items))}catch(e){}
  recentList.innerHTML=items.length?items.map(x=>`<a class="recent-item" href="company.html?company=${encodeURIComponent(x.key)}"><b>${esc(x.name)}</b><span>${esc(x.ticker)}</span></a>`).join(""):'<div class="recent-empty">아직 본 기업이 없습니다.</div>';
 }
@@ -90,8 +92,35 @@ function comparisonChart(rows){
 }
 function chart(rows){return comparisonChart(rows)}
 function twoMetricChart(rows){return comparisonChart(rows)}
+function metricChange(current,previous,profit=false){
+ if(!Number.isFinite(current)||!Number.isFinite(previous))return '비교 자료 없음';
+ if(profit){
+  if(previous<0&&current>0)return '흑자 전환';
+  if(previous>0&&current<0)return '적자 전환';
+  if(previous<0&&current<0)return current>previous?'적자 축소':current<previous?'적자 확대':'적자 동일';
+  if(previous<0&&current===0)return '손익분기';
+ }
+ if(previous===0)return current===0?'변화 없음':'비교 기준 0';
+ const change=(current-previous)/Math.abs(previous)*100;
+ const rounded=Math.round(change*10)/10;
+ return `${rounded>0?'+':''}${rounded.toFixed(1)}%`;
+}
+function financialInsights(row,previous,basis){
+ if(!row)return '';
+ const profitMetric=/이익|손익/.test(c.financialMetrics.op.label);
+ const cards=[{label:`${salesLabel} 증감`,value:metricChange(row.sales,previous?.sales),help:previous?basis:'비교할 이전 기간 자료가 없습니다.'},{label:`${opLabel} 증감`,value:metricChange(row.op,previous?.op,profitMetric),help:previous?basis:'비교할 이전 기간 자료가 없습니다.'}];
+ const ordinary=c.financialMetrics.sales.label==='매출'&&c.financialMetrics.op.label==='영업이익';
+ if(ordinary)cards.push({label:'영업이익률',value:row.sales>0?`${(row.op/row.sales*100).toFixed(1)}%`:'산출 불가',help:'영업이익 ÷ 매출 × 100'});
+ return `<div class="insight-grid">${cards.map(card=>`<div class="insight-card"><span>${card.label}</span><strong>${card.value}</strong><small>${card.help}</small></div>`).join('')}</div><p class="insight-note">${row.year}년${row.quarter?` ${row.quarter}분기`:''} 실적 기준 · 증감률은 표시값으로 반올림하기 전 수치로 계산합니다.${ordinary?'':' 이 기업은 일반 매출·영업이익과 지표 구성이 달라 영업이익률을 표시하지 않습니다.'}</p>`;
+}
 if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>';}
 else{
+ const latestAnnual=c.annual.at(-1),previousAnnual=c.annual.find(row=>row.year===latestAnnual.year-1);
+ const latestQuarter=c.latestQuarter;
+ const priorYearQuarter=c.allQuarters.find(row=>row.year===latestQuarter?.year-1&&row.quarter===latestQuarter?.quarter);
+ const priorQuarter=c.allQuarters.find(row=>row.year*4+row.quarter===(latestQuarter?.year*4+latestQuarter?.quarter)-1);
+ const quarterComparison=priorYearQuarter||priorQuarter;
+ const quarterBasis=priorYearQuarter?`전년 동기 대비 · ${priorYearQuarter.year}년 ${priorYearQuarter.quarter}분기`:`직전 분기 대비${priorQuarter?` · ${priorQuarter.year}년 ${priorQuarter.quarter}분기`:''}`;
  const tableUnit=c.presentation.tableNumbersOnly?"":"조원";
  const displayNumber=value=>`${Number(value).toFixed(1)}${tableUnit}`;
  const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
@@ -99,7 +128,7 @@ else{
  app.innerHTML=`
  <details class="section-toc" id="companyToc" open><summary>목차</summary><nav class="toc-links" aria-label="기업 분석 목차"><a href="#company-intro">기업 소개</a><a href="#company-business">주요 사업</a><a href="#company-annual">연간 실적</a><a href="#company-quarterly">분기 실적</a><a href="#company-drivers">핵심 변수</a><a href="#company-glossary">용어 설명</a></nav></details>
  <div class="company-body">
- <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
+ <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><div class="data-freshness"><span>최신 실적: ${latestQuarter?`${latestQuarter.year}년 ${latestQuarter.quarter}분기`:`${c.latestYear}년 연간`}</span><span>자료 확인일: ${esc(c.verifiedAt)}</span></div><p>${c.summary}</p>
  <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}${salesLabel}</small><strong>약 ${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}${opLabel}</small><strong>약 ${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
 
  ${compact?"":` <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
@@ -115,9 +144,11 @@ else{
  <div class="grid">${c.business.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.name}</h3><p>${x.desc}</p></div>`).join("")}</div>${sourceLinks(c.sectionSourceIds.business || [])}</section>
 
  <section id="company-annual">${compact?"":`<div class="blue">03 · 실적은 어떻게 변했을까?</div>`}<div class="title">연간 실적 그래프</div><div class="desc">과거에서 최신 연간 실적으로 갈수록 ${salesLabel}과 ${opLabel}이 어떻게 움직였는지 한눈에 봅니다.</div>
+ ${financialInsights(latestAnnual,previousAnnual,`전년 대비 · ${previousAnnual?.year}년`)}
  ${c.financialNote?`<p class="financial-basis">${esc(c.financialNote)}</p>`:""}${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 연도 1–12월</div>${comparison?comparisonChart(c.annual):chart(c.annual)}`:chart(c.annual)}<table style="margin-top:24px" aria-label="연간 ${salesLabel}과 ${opLabel}"><thead><tr><th scope="col">기간</th><th scope="col">${salesLabel}</th><th scope="col">${opLabel}</th></tr></thead><tbody>${annual}</tbody></table>${compact?`${c.latestNet?`<p class="financial-basis">${c.latestYear}년 당기순이익: ${esc(c.latestNet)} · 본업의 이익에 금융손익·세금 등을 반영한 최종 이익입니다.</p>`:""}${c.annualNote?`<p class="financial-basis">${esc(c.annualNote)}</p>`:""}${sourceLinks(c.annualSourceIds)}`:""}</section>
 
  <section id="company-quarterly">${compact?"":`<div class="blue">04 · ${c.quarterlyYear}년 현재는?</div>`}<div class="title">${c.quarterlyYear} 분기 실적 그래프</div><div class="desc">최근 분기 실적이 어느 방향으로 움직이는지 봅니다.</div>
+ ${financialInsights(latestQuarter,quarterComparison,quarterBasis)}
  ${compact?`<div class="financial-basis">단위: 조원 · ${esc(c.financialBasis)} · 각 분기 3개월 실적(누적 아님)</div>${comparison?comparisonChart(c.quarterly):twoMetricChart(c.quarterly)}`:twoMetricChart(c.quarterly)}<table style="margin-top:24px" aria-label="분기 ${salesLabel}과 ${opLabel}"><thead><tr><th scope="col">기간</th><th scope="col">${salesLabel}</th><th scope="col">${opLabel}</th></tr></thead><tbody>${q}</tbody></table>${compact?`<p class="financial-basis">1분기: 1–3월 · 2분기: 4–6월<br>공식 자료에서 확인한 ${c.latestQuarter.year}년 ${c.latestQuarter.quarter}분기까지 표시합니다. ${esc(c.quarterlyNote || "신제품 출시와 계절적 수요도 분기 실적에 영향을 줍니다.")}</p>${sourceLinks(c.quarterlySourceIds)}`:""}</section>
 
  <section id="company-drivers">${compact?"":`<div class="blue">05 · 무엇이 실적을 움직일까?</div>`}<div class="title">핵심 변수</div><div class="desc">실적에 영향을 주는 요소를 쉽게 연결해서 봅니다.</div>
@@ -139,6 +170,19 @@ else{
   toc.open=!smallScreen.matches;
   smallScreen.addEventListener("change",event=>{toc.open=!event.matches;});
   toc.addEventListener("click",event=>{if(smallScreen.matches && event.target.closest("a"))toc.open=false;});
+ }
+ if(typeof window!=='undefined'){
+  const links=[...toc.querySelectorAll('.toc-links a')],sections=links.map(link=>document.querySelector(link.getAttribute('href')));
+  let scheduled=false;
+  function highlightSection(){
+   scheduled=false;const line=document.querySelector('header').getBoundingClientRect().bottom+45;
+   let current=0;sections.forEach((section,index)=>{if(section.getBoundingClientRect().top<=line)current=index;});
+   if(window.scrollY+window.innerHeight>=document.documentElement.scrollHeight-4)current=sections.length-1;
+   links.forEach((link,index)=>{if(index===current)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+   toc.querySelector('summary').textContent=matchMedia('(max-width:700px)').matches?`목차 · ${links[current].textContent}`:'목차';
+  }
+  function queueHighlight(){if(!scheduled){scheduled=true;requestAnimationFrame(highlightSection);}}
+  window.addEventListener('scroll',queueHighlight,{passive:true});window.addEventListener('resize',queueHighlight);highlightSection();
  }
  updateRecent();
 }

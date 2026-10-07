@@ -48,6 +48,7 @@ function companyPageData(record) {
   marketDate:record.market.date,
   annual:annual.map(row => ({...row,period:String(row.year)})),
   quarterly:quarterly.map(row => ({...row,period:`${row.quarter}Q ${row.year}`})),
+  allQuarters,
   latestQuarter, quarterlyYear:latestQuarter?.year || "",
   latestYear:String(latest?.year || ""),
   latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),

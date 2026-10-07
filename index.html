@@ -12,21 +12,25 @@ header{height:72px;border-bottom:1px solid #e8e8e8;background:#fff;display:flex;
 .result{padding:16px 20px;border-bottom:1px solid #eee;cursor:pointer}.result:hover{background:#f7f7f7}.result b{display:block}.result span{font-size:13px;color:#888}
 .section{max-width:1050px;margin:70px auto;padding:0 20px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #eee;border-radius:18px;padding:25px;min-height:155px}.card p{color:#777;line-height:1.6;font-size:14px}
 .notice{max-width:1050px;margin:80px auto 40px;padding:0 20px;color:#999;font-size:12px;line-height:1.7}@media(max-width:700px){.hero{margin-top:65px}.hero h1{font-size:35px}.cards{grid-template-columns:1fr}}
+.hero{margin-top:70px;margin-bottom:35px}.section{margin:45px auto}.discovery-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.discovery-head h2{margin:0}.discovery-sub{font-size:14px;color:#6b7280;line-height:1.6}.industry-filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.industry-filter{border:1px solid #e5e7eb;border-radius:20px;padding:9px 15px;background:#fff;color:#4b5563;font:inherit;font-size:13px;cursor:pointer}.industry-filter[aria-pressed="true"]{background:#2563eb;border-color:#2563eb;color:#fff}.company-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.company-card{display:block;padding:20px;background:#fff;border:1px solid #e5e7eb;border-radius:14px;text-decoration:none;color:#111827}.company-card:hover,.company-card:focus-visible{border-color:#2563eb;background:#eff6ff}.company-card b{display:block;font-size:16px;line-height:1.5}.company-card span{display:block;color:#6b7280;font-size:12px;margin-top:7px}.company-card .industry-label{color:#2563eb}.recent-home-list{display:flex;gap:10px;flex-wrap:wrap}.recent-home-list .company-card{min-width:155px;padding:14px 18px}.discovery-empty{color:#6b7280;font-size:14px;line-height:1.7}.discovery-retry{padding:8px 12px;cursor:pointer}.company-count{font-size:13px;color:#6b7280}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #2563eb;outline-offset:3px}@media(max-width:850px){.company-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){.hero{margin-top:45px}.hero p{font-size:15px}.company-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.company-card{padding:15px 12px}.company-card b{font-size:14px}.section{margin:35px auto}.recent-home-list .company-card{min-width:0;flex:1 1 130px}.industry-filter{padding:8px 12px}}
 </style></head>
 <body>
 <header><div class="logo">SIANALY.</div><div class="nav">AI Company Analysis</div></header>
 <section class="hero">
 <h1>투자하기 전에,<br>이 회사부터 알아보세요.</h1>
 <p>기업이 무엇으로 돈을 벌고 있는지, 실적은 어떻게 변하고 있는지,<br>산업과 경쟁환경은 어떤지 한눈에 정리합니다.</p>
-<div class="search"><input id="q" placeholder="기업명 또는 종목코드를 검색해보세요" autocomplete="off"><div id="r" class="results hidden"></div></div>
+<div class="search"><input id="q" aria-label="기업명 또는 종목코드 검색" placeholder="기업명 또는 종목코드를 검색해보세요" autocomplete="off"><div id="r" class="results hidden"></div></div>
 </section>
+<section class="section" id="homeRecent"><div class="discovery-head"><h2>최근 본 기업</h2></div><p class="discovery-sub">이 브라우저에서 보던 기업을 이어서 확인하세요.</p><div id="homeRecentList" class="recent-home-list"><p class="discovery-empty">기업분석을 열면 여기에 최근 본 기업이 표시됩니다.</p></div></section>
+<section class="section" id="companyDiscovery"><div class="discovery-head"><h2>분석 가능한 기업</h2><span id="companyCount" class="company-count" role="status"></span></div><p class="discovery-sub">기업을 바로 선택하거나 업종별로 둘러보세요.</p><div id="industryFilters" class="industry-filters" role="group" aria-label="업종 필터"></div><div id="companyGrid" class="company-grid" aria-label="분석 가능한 기업 목록"><p class="discovery-empty" role="status">기업 목록을 불러오는 중입니다.</p></div></section>
 <section class="section"><h2>SIANALY가 정리하는 것</h2><div class="cards">
 <div class="card"><h3>기업과 사업</h3><p>무엇을 팔고, 어디에서 매출이 발생하는지 쉽게 정리합니다.</p></div>
 <div class="card"><h3>실적과 숫자</h3><p>매출·영업이익·이익률 등 핵심 재무 흐름을 확인합니다.</p></div>
 <div class="card"><h3>산업과 경쟁</h3><p>산업 구조와 주요 경쟁기업, 앞으로 볼 요소를 정리합니다.</p></div>
 </div></section>
 <div class="notice">SIANALY는 기업 및 산업에 관한 정보와 분석을 제공하는 서비스입니다. 특정 금융상품의 매수·매도 또는 투자 여부를 권유하는 서비스가 아닙니다.</div>
-<script src="company-data.js?v=20261007-kospi25-1"></script>
+<script src="company-data.js?v=20261007-insights-1"></script>
+<script src="home-discovery.js?v=20261007-discovery-1"></script>
 <script>
 let companies=[], catalogState="loading";
 const q=document.getElementById("q"),r=document.getElementById("r");
