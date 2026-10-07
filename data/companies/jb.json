@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "jb",
+    "rank": 100,
+    "name": "JB금융지주",
+    "ticker": "175330",
+    "type": "은행 금융지주"
+  },
+  "overview": {
+    "short": "전북은행·광주은행 등 금융 자회사를 보유한 금융지주 회사",
+    "summary": "전북은행·광주은행 등 금융 자회사를 보유한 금융지주 회사입니다. 대출·예금 규모와 금리 차이가 순이자이익을 바꿉니다.",
+    "takeaways": [
+      "전북은행·광주은행 등 금융 자회사를 보유한 금융지주 회사입니다.",
+      "은행: 전북은행·광주은행을 통해 예금·대출 서비스를 제공합니다.",
+      "여신금융: 캐피탈 등 자회사가 금융 서비스를 제공합니다.",
+      "금융 관리: 그룹 자본·위험과 금융 자회사 사업을 관리합니다.",
+      "대출·예금 규모와 금리 차이가 순이자이익을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "은행",
+        "desc": "전북은행·광주은행을 통해 예금·대출 서비스를 제공합니다."
+      },
+      {
+        "name": "여신금융",
+        "desc": "캐피탈 등 자회사가 금융 서비스를 제공합니다."
+      },
+      {
+        "name": "금융 관리",
+        "desc": "그룹 자본·위험과 금융 자회사 사업을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "이자 수익",
+        "desc": "대출·예금 규모와 금리 차이가 순이자이익을 바꿉니다."
+      },
+      {
+        "title": "대손 비용",
+        "desc": "차주 건전성과 충당금·연체율을 확인해야 합니다."
+      },
+      {
+        "title": "자본·배당",
+        "desc": "자본비율과 배당·주주환원 정책을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 순이자이익을 사용합니다. 제조업 매출과 구분하며 비이자 손익과 대손 비용을 함께 봐야 합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "28,250원",
+    "marketCap": "5.3조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.975972,
+        "op": 0.906079,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 2.044932,
+        "op": 0.952314,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.49138,
+        "op": 0.217472,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.50164,
+        "op": 0.266896,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.533213,
+        "op": 0.22131,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.554707,
+        "op": 0.305602,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion",
+    "metrics": {
+      "sales": {
+        "label": "순이자이익",
+        "help": "보고서 순이자손익으로 이자수익에서 이자비용을 차감한 값입니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "같은 회계 범위의 영업이익입니다. 순이익과 구분합니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "JB금융지주 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260318001225",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "JB금융지주 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814002218",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

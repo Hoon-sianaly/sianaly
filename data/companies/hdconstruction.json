@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hdconstruction",
+    "rank": 96,
+    "name": "HD건설기계",
+    "ticker": "267270",
+    "type": "건설기계·엔진 기업"
+  },
+  "overview": {
+    "short": "현대·디벨론 건설기계와 엔진을 제조·판매하는 회사",
+    "summary": "현대·디벨론 건설기계와 엔진을 제조·판매하는 회사입니다. 지역별 건설·인프라 투자와 딜러 재고를 봐야 합니다.",
+    "takeaways": [
+      "현대·디벨론 건설기계와 엔진을 제조·판매하는 회사입니다.",
+      "건설기계: 굴착기·휠로더 등 건설기계를 생산·판매합니다.",
+      "엔진: 산업·차량 등에 쓰이는 엔진을 공급합니다.",
+      "부품·서비스: 장비 부품과 판매·정비 서비스를 제공합니다.",
+      "지역별 건설·인프라 투자와 딜러 재고를 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "건설기계",
+        "desc": "굴착기·휠로더 등 건설기계를 생산·판매합니다."
+      },
+      {
+        "name": "엔진",
+        "desc": "산업·차량 등에 쓰이는 엔진을 공급합니다."
+      },
+      {
+        "name": "부품·서비스",
+        "desc": "장비 부품과 판매·정비 서비스를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "장비 수요",
+        "desc": "지역별 건설·인프라 투자와 딜러 재고를 봐야 합니다."
+      },
+      {
+        "title": "통합 효과",
+        "desc": "합병 이후 생산·판매망 통합과 비용 변화를 확인해야 합니다."
+      },
+      {
+        "title": "엔진·환율",
+        "desc": "엔진 판매와 수출 환율·원가가 이익을 바꿉니다."
+      }
+    ],
+    "financialNote": "2026년 1월 합병으로 연결 범위가 확대됐습니다. 2025년 연간은 합병 전 HD현대건설기계 기준으로, 2026년 수치와 단순 성장률 비교에 주의해야 합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "113,700원",
+    "marketCap": "5.4조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.438062302,
+        "op": 0.190421614,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 3.776524012,
+        "op": 0.170883006,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.906839913,
+        "op": 0.041650647,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.967707502,
+        "op": 0.040043555,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 2.304866321,
+        "op": 0.190698553,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 2.434171286,
+        "op": 0.248883827,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "HD건설기계 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260318001192",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "HD건설기계 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814004300",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "taihan",
+    "rank": 93,
+    "name": "대한전선",
+    "ticker": "001440",
+    "type": "전선·전력 인프라 기업"
+  },
+  "overview": {
+    "short": "전력 케이블과 관련 설비를 제조·공급하는 회사",
+    "summary": "전력 케이블과 관련 설비를 제조·공급하는 회사입니다. 전력망 투자와 대형 프로젝트 수주·인도가 중요합니다.",
+    "takeaways": [
+      "전력 케이블과 관련 설비를 제조·공급하는 회사입니다.",
+      "전력 케이블: 초고압·배전용 등 전력 케이블을 생산합니다.",
+      "프로젝트: 국내외 전력망 구축 사업에 제품·설치 서비스를 제공합니다.",
+      "소재·제품: 전선 소재와 산업용 케이블 등을 공급합니다.",
+      "전력망 투자와 대형 프로젝트 수주·인도가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "전력 케이블",
+        "desc": "초고압·배전용 등 전력 케이블을 생산합니다."
+      },
+      {
+        "name": "프로젝트",
+        "desc": "국내외 전력망 구축 사업에 제품·설치 서비스를 제공합니다."
+      },
+      {
+        "name": "소재·제품",
+        "desc": "전선 소재와 산업용 케이블 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "전력 투자",
+        "desc": "전력망 투자와 대형 프로젝트 수주·인도가 중요합니다."
+      },
+      {
+        "title": "구리·원가",
+        "desc": "구리 가격과 계약 가격 조정·원가를 함께 봐야 합니다."
+      },
+      {
+        "title": "투자·현금",
+        "desc": "설비 투자와 공사 대금 회수·운전자본 부담을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "29,800원",
+    "marketCap": "5.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.291299374607,
+        "op": 0.115169757365,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 3.636018215712,
+        "op": 0.128613046536,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.855455851533,
+        "op": 0.027104884981,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.916356132633,
+        "op": 0.028563173202,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.083362142421,
+        "op": 0.06041105145,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.198666607432,
+        "op": 0.06084244196,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "대한전선 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260318001418",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "대한전선 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814003722",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -720,6 +720,86 @@
       "file": "lguplus.json",
       "market": "KOSPI",
       "alias": "LG Uplus 엘지유플러스 LG유플"
+    },
+    {
+      "key": "hyundaipref",
+      "name": "현대차2우B",
+      "ticker": "005387",
+      "file": "hyundaipref.json",
+      "market": "KOSPI",
+      "alias": "현대자동차2우B Hyundai preferred 현대차우선주"
+    },
+    {
+      "key": "skbiopharm",
+      "name": "SK바이오팜",
+      "ticker": "326030",
+      "file": "skbiopharm.json",
+      "market": "KOSPI",
+      "alias": "SK Biopharmaceuticals 엑스코프리 세노바메이트"
+    },
+    {
+      "key": "taihan",
+      "name": "대한전선",
+      "ticker": "001440",
+      "file": "taihan.json",
+      "market": "KOSPI",
+      "alias": "Taihan Cable Solution 대한케이블"
+    },
+    {
+      "key": "dbhitek",
+      "name": "DB하이텍",
+      "ticker": "000990",
+      "file": "dbhitek.json",
+      "market": "KOSPI",
+      "alias": "DB HiTek 동부하이텍"
+    },
+    {
+      "key": "yuhan",
+      "name": "유한양행",
+      "ticker": "000100",
+      "file": "yuhan.json",
+      "market": "KOSPI",
+      "alias": "Yuhan 유한 렉라자"
+    },
+    {
+      "key": "hdconstruction",
+      "name": "HD건설기계",
+      "ticker": "267270",
+      "file": "hdconstruction.json",
+      "market": "KOSPI",
+      "alias": "HD Construction Equipment HD현대건설기계 현대인프라코어 디벨론 DEVELON"
+    },
+    {
+      "key": "skc",
+      "name": "SKC",
+      "ticker": "011790",
+      "file": "skc.json",
+      "market": "KOSPI",
+      "alias": "SKC 에스케이씨 동박"
+    },
+    {
+      "key": "kakaopay",
+      "name": "카카오페이",
+      "ticker": "377300",
+      "file": "kakaopay.json",
+      "market": "KOSPI",
+      "alias": "Kakao Pay 카페 카카오페이증권"
+    },
+    {
+      "key": "bobcat",
+      "name": "두산밥캣",
+      "ticker": "241560",
+      "file": "bobcat.json",
+      "market": "KOSPI",
+      "alias": "Doosan Bobcat 두산 보브캣"
+    },
+    {
+      "key": "jb",
+      "name": "JB금융지주",
+      "ticker": "175330",
+      "file": "jb.json",
+      "market": "KOSPI",
+      "alias": "JB Financial Group 제이비금융 전북은행 광주은행"
     }
   ],
   "rankingSnapshot": {
@@ -728,6 +808,6 @@
     "verifiedAt": "2026.10.07",
     "source": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100",
     "additionalSource": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100",
-    "note": "2026.10.07 19:25 KST 조회 시점의 코스피 시가총액 상위 90개 주식 종목입니다. ETF·ETN 등 펀드를 제외하고 우선주는 별도 종목으로 계산합니다. 확정 종가나 실시간 순위가 아닙니다."
+    "note": "2026.10.07 19:25 KST 조회 시점의 코스피 시가총액 상위 100개 주식 종목입니다. ETF·ETN 등 펀드를 제외하고 우선주는 별도 종목으로 계산합니다. 확정 종가나 실시간 순위가 아닙니다."
   }
 }

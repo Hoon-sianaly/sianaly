@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "yuhan",
+    "rank": 95,
+    "name": "유한양행",
+    "ticker": "000100",
+    "type": "제약 기업"
+  },
+  "overview": {
+    "short": "의약품과 원료의약품을 판매하고 신약을 개발하는 회사",
+    "summary": "의약품과 원료의약품을 판매하고 신약을 개발하는 회사입니다. 처방·판매 규모와 제품 구성 변화가 중요합니다.",
+    "takeaways": [
+      "의약품과 원료의약품을 판매하고 신약을 개발하는 회사입니다.",
+      "의약품: 전문·일반 의약품을 판매합니다.",
+      "원료·해외: 원료의약품 등 제품을 국내외에 공급합니다.",
+      "신약 개발: 신약 연구와 기술이전 사업을 수행합니다.",
+      "처방·판매 규모와 제품 구성 변화가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "의약품",
+        "desc": "전문·일반 의약품을 판매합니다."
+      },
+      {
+        "name": "원료·해외",
+        "desc": "원료의약품 등 제품을 국내외에 공급합니다."
+      },
+      {
+        "name": "신약 개발",
+        "desc": "신약 연구와 기술이전 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매",
+        "desc": "처방·판매 규모와 제품 구성 변화가 중요합니다."
+      },
+      {
+        "title": "기술이전",
+        "desc": "계약금·단계별 수입과 판매 연계 수익을 구분해야 합니다."
+      },
+      {
+        "title": "연구·원가",
+        "desc": "연구개발 비용과 의약품 생산·판매 비용을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "75,200원",
+    "marketCap": "5.5조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.067791451854,
+        "op": 0.054880319609,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 2.186637586358,
+        "op": 0.104374493823,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.491563987277,
+        "op": 0.00641967196,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.578987017426,
+        "op": 0.04986101571,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.526779877219,
+        "op": 0.008815193577,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.63945169831,
+        "op": 0.066869135267,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "유한양행 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260312001236",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "유한양행 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814002038",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

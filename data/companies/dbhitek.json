@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dbhitek",
+    "rank": 94,
+    "name": "DB하이텍",
+    "ticker": "000990",
+    "type": "반도체 위탁생산 기업"
+  },
+  "overview": {
+    "short": "아날로그·전력 등 시스템 반도체를 위탁생산하는 회사",
+    "summary": "아날로그·전력 등 시스템 반도체를 위탁생산하는 회사입니다. 고객 주문과 공장 가동률이 수익성을 좌우합니다.",
+    "takeaways": [
+      "아날로그·전력 등 시스템 반도체를 위탁생산하는 회사입니다.",
+      "파운드리: 고객이 설계한 시스템 반도체를 생산합니다.",
+      "특화 공정: 전력·아날로그 등 분야의 반도체 공정을 제공합니다.",
+      "생산 운영: 반도체 제조 시설과 공정 기술을 운영합니다.",
+      "고객 주문과 공장 가동률이 수익성을 좌우합니다."
+    ],
+    "business": [
+      {
+        "name": "파운드리",
+        "desc": "고객이 설계한 시스템 반도체를 생산합니다."
+      },
+      {
+        "name": "특화 공정",
+        "desc": "전력·아날로그 등 분야의 반도체 공정을 제공합니다."
+      },
+      {
+        "name": "생산 운영",
+        "desc": "반도체 제조 시설과 공정 기술을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "가동률",
+        "desc": "고객 주문과 공장 가동률이 수익성을 좌우합니다."
+      },
+      {
+        "title": "제품 구성",
+        "desc": "특화 공정의 가격과 제품 구성 변화가 중요합니다."
+      },
+      {
+        "title": "설비 비용",
+        "desc": "설비 투자·감가상각과 제조 원가를 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "133,100원",
+    "marketCap": "5.8조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.131167709804,
+        "op": 0.190838683363,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 1.397233307039,
+        "op": 0.277294561174,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.297380601926,
+        "op": 0.052501423092,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.337406491433,
+        "op": 0.073842437551,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.359599568769,
+        "op": 0.066909018375,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.414450390729,
+        "op": 0.105233009884,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "DB하이텍 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260316001250",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "DB하이텍 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814003091",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "skbiopharm",
+    "rank": 92,
+    "name": "SK바이오팜",
+    "ticker": "326030",
+    "type": "신약 개발·판매 기업"
+  },
+  "overview": {
+    "short": "뇌전증 등 중추신경계 질환 치료제를 개발·판매하는 회사",
+    "summary": "뇌전증 등 중추신경계 질환 치료제를 개발·판매하는 회사입니다. 미국 주력 제품의 처방·판매 성장이 중요합니다.",
+    "takeaways": [
+      "뇌전증 등 중추신경계 질환 치료제를 개발·판매하는 회사입니다.",
+      "의약품 판매: 미국 등에서 뇌전증 치료제 세노바메이트를 판매합니다.",
+      "해외 계약: 해외 제약사와 개발·판매 관련 계약을 맺습니다.",
+      "연구개발: 새로운 치료제와 적응증을 연구합니다.",
+      "미국 주력 제품의 처방·판매 성장이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "의약품 판매",
+        "desc": "미국 등에서 뇌전증 치료제 세노바메이트를 판매합니다."
+      },
+      {
+        "name": "해외 계약",
+        "desc": "해외 제약사와 개발·판매 관련 계약을 맺습니다."
+      },
+      {
+        "name": "연구개발",
+        "desc": "새로운 치료제와 적응증을 연구합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "처방 성장",
+        "desc": "미국 주력 제품의 처방·판매 성장이 중요합니다."
+      },
+      {
+        "title": "연구 비용",
+        "desc": "임상 개발과 판매 조직의 비용을 함께 봐야 합니다."
+      },
+      {
+        "title": "계약 수입",
+        "desc": "계약금·단계별 수익과 반복 제품 매출을 구분해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "75,600원",
+    "marketCap": "5.9조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.547596283214,
+        "op": 0.096339659521,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.706740960308,
+        "op": 0.203938471064,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.144377256058,
+        "op": 0.02567183412,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.176276907902,
+        "op": 0.061882853308,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.227886034403,
+        "op": 0.089768206582,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.247367133314,
+        "op": 0.097064127685,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "SK바이오팜 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260318000773",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "SK바이오팜 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814002274",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

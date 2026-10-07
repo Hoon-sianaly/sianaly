@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "skc",
+    "rank": 97,
+    "name": "SKC",
+    "ticker": "011790",
+    "type": "소재 기업"
+  },
+  "overview": {
+    "short": "배터리 동박과 반도체·산업 소재 사업을 운영하는 회사",
+    "summary": "배터리 동박과 반도체·산업 소재 사업을 운영하는 회사입니다. 전기차·배터리 수요와 동박 공장 가동률을 봐야 합니다.",
+    "takeaways": [
+      "배터리 동박과 반도체·산업 소재 사업을 운영하는 회사입니다.",
+      "배터리 소재: 이차전지에 쓰이는 동박 등을 생산합니다.",
+      "반도체 소재: 테스트 소켓·글라스 기판 등 반도체 소재 사업을 운영합니다.",
+      "산업 소재: 화학 등 산업 소재와 관련 사업을 운영합니다.",
+      "전기차·배터리 수요와 동박 공장 가동률을 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "배터리 소재",
+        "desc": "이차전지에 쓰이는 동박 등을 생산합니다."
+      },
+      {
+        "name": "반도체 소재",
+        "desc": "테스트 소켓·글라스 기판 등 반도체 소재 사업을 운영합니다."
+      },
+      {
+        "name": "산업 소재",
+        "desc": "화학 등 산업 소재와 관련 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "배터리 수요",
+        "desc": "전기차·배터리 수요와 동박 공장 가동률을 봐야 합니다."
+      },
+      {
+        "title": "신사업 투자",
+        "desc": "신규 제품 양산·고객 확보와 투자 비용이 중요합니다."
+      },
+      {
+        "title": "원가·손익",
+        "desc": "제품 가격·원가와 사업 재편 손익을 구분해야 합니다."
+      }
+    ],
+    "financialNote": "영업이익을 사용합니다. EBITDA와 영업이익을 혼동하지 않도록 감가상각·신사업 비용을 함께 봐야 합니다. 연결 기준입니다. 연간은 2025년 사업보고서, 분기는 2026년 반기보고서 수치를 사용합니다. 분기는 누적이 아닌 각 3개월 실적입니다.",
+    "quarterlyNote": "2분기는 반기보고서의 3개월 실적입니다. 1분기는 같은 보고서의 반기 누적에서 2분기를 차감해 비교 기준을 맞췄습니다."
+  },
+  "market": {
+    "price": "108,200원",
+    "marketCap": "5.4조원",
+    "date": "2026.10.07",
+    "asOf": "2026.10.07 19:25 KST"
+  },
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.07"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.717923737959,
+        "op": -0.275759101678,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 1.840036441822,
+        "op": -0.305025449873,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.437896381844,
+        "op": -0.074008651896,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.466842050857,
+        "op": -0.068519892967,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.496640108452,
+        "op": -0.028734348988,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.645384981103,
+        "op": -0.014424072141,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "highlightFormat": "trillion"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "SKC 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260318001180",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "SKC 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814003336",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
