@@ -27,6 +27,9 @@ html{scroll-behavior:smooth}.section-toc{position:sticky;top:10px;z-index:10;bac
 .metric-panel{display:flex;flex-direction:column}.metric-panel .vertical-chart{margin-top:auto;flex-shrink:0}
 header{position:sticky;top:0;z-index:30;gap:24px}.company-search{position:relative;width:min(520px,60%)}.company-search input{width:100%;height:42px;padding:0 15px;border:1px solid #d1d5db;border-radius:10px;background:#f8fafc;font:inherit;font-size:14px;outline:none}.company-search input:focus{border-color:#2563eb;box-shadow:0 0 0 3px #2563eb15}.company-search-results{position:absolute;top:50px;left:0;right:0;max-height:min(360px,60vh);overflow:auto;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 12px 32px #00000015}.company-search-results[hidden]{display:none}.company-search-result{display:block;padding:13px 16px;border-bottom:1px solid #f0f1f3;color:#111827}.company-search-result:last-child{border-bottom:0}.company-search-result:hover,.company-search-result[aria-selected="true"],.company-search-result:focus-visible{background:#eff6ff}.company-search-result b{display:block;font-size:14px}.company-search-result span,.company-search-status{font-size:12px;color:#6b7280}.company-search-status{padding:16px;line-height:1.6}.section-toc{top:80px}.content section[id]{scroll-margin-top:205px}
 @media(max-width:650px){header{height:auto;min-height:112px;flex-wrap:wrap;gap:10px;padding:12px 16px}.logo{font-size:21px}.company-search{width:100%}.company-search input{font-size:16px}.section-toc{top:122px}.content section[id]{scroll-margin-top:290px}}
+main{max-width:1580px}.layout{grid-template-columns:minmax(0,1fr) 240px;gap:20px}.layout.no-side{grid-template-columns:minmax(0,1fr);max-width:1320px}.content{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;align-items:start}.company-body{min-width:0}.content>.empty{grid-column:1/-1}.section-toc{top:90px;margin:0;padding:16px 12px;align-self:start;box-shadow:none}.section-toc summary{cursor:pointer;font-size:13px;font-weight:700;color:#4b5563;list-style:none}.section-toc summary::-webkit-details-marker{display:none}.section-toc summary::after{content:"−";float:right;color:#9ca3af}.section-toc:not([open]) summary::after{content:"+"}.toc-links{flex-direction:column;gap:6px;margin-top:12px}.toc-links a{font-size:13px;padding:10px}.side{top:90px}.content section[id]{scroll-margin-top:90px}
+@media(max-width:1150px){.layout,.layout.no-side{grid-template-columns:minmax(0,1fr)}.side{display:none}}
+@media(max-width:700px){.content{grid-template-columns:minmax(0,1fr);gap:16px}.section-toc{position:static;padding:12px 14px}.toc-links{flex-direction:row;flex-wrap:wrap}.toc-links a{padding:7px 10px}.content section[id]{scroll-margin-top:132px}}
 </style></head>
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div></header>
@@ -94,7 +97,8 @@ else{
  const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
  const q=c.quarterly.map(x=>`<tr><td>${esc(c.presentation.tableNumbersOnly?`${x.quarter}분기`:compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
  app.innerHTML=`
- <nav class="section-toc" aria-label="기업 분석 목차"><strong>목차</strong><div class="toc-links"><a href="#company-intro">기업 소개</a><a href="#company-business">주요 사업</a><a href="#company-annual">연간 실적</a><a href="#company-quarterly">분기 실적</a><a href="#company-drivers">핵심 변수</a><a href="#company-glossary">용어 설명</a></div></nav>
+ <details class="section-toc" id="companyToc" open><summary>목차</summary><nav class="toc-links" aria-label="기업 분석 목차"><a href="#company-intro">기업 소개</a><a href="#company-business">주요 사업</a><a href="#company-annual">연간 실적</a><a href="#company-quarterly">분기 실적</a><a href="#company-drivers">핵심 변수</a><a href="#company-glossary">용어 설명</a></nav></details>
+ <div class="company-body">
  <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><p>${c.summary}</p>
  <div class="nums"><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}${salesLabel}</small><strong>약 ${c.latestSales}</strong></div><div class="num"><small>${c.latestYear} ${compact?"연간 ":""}${opLabel}</small><strong>약 ${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${c.latestYear}년 1–12월<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} 공식 연간 실적 자료</a></div>`:""}</div>
 
@@ -128,7 +132,14 @@ else{
   <div class="term"><b>DRAM</b><span>PC·스마트폰·서버 등에서 작업 중인 데이터를 빠르게 저장하고 꺼내 쓰는 메모리입니다.</span></div>
   <div class="term"><b>NAND</b><span>전원이 꺼져도 데이터가 남는 메모리로, SSD와 스마트폰 저장장치 등에 사용됩니다.</span></div>
  `}</div></section>
- `;
+ </div>`;
+ const toc=document.getElementById("companyToc");
+ if(typeof matchMedia==="function"){
+  const smallScreen=matchMedia("(max-width:700px)");
+  toc.open=!smallScreen.matches;
+  smallScreen.addEventListener("change",event=>{toc.open=!event.matches;});
+  toc.addEventListener("click",event=>{if(smallScreen.matches && event.target.closest("a"))toc.open=false;});
+ }
  updateRecent();
 }
 })().catch(error=>{
