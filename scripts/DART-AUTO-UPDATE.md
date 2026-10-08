@@ -15,12 +15,18 @@
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\dart-portfolio.ps1 -Mode update -BaseSha <main SHA>
 ```
 
-매일 실행에는 -UseCache를 사용하지 않습니다. 이 옵션은 오늘 수집한 원자료의 검증/재현용입니다. 최근 연간, 올해 종료된 1~3분기, 사이트가 보관 중인 전년도 분기를 재확인합니다. 없는 과거 분기를 무작정 추가하거나 4분기를 역산하지 않습니다. 동시 작업은 3개이며 최대 약 700회 재무 요청입니다.
+매일 실행은 새 공시 검색 방식입니다. OpenDART list.json에서 정기공시(A), 정정 포함(last_reprt_at=N)을 조회하고 페이지를 끝까지 읽습니다. 마지막 성공 조회일에서 3일 겹쳐 조회하며 장기간 실행 공백은 30일 구간으로 나눠 처리합니다. 98개 기업의 고유번호로 걸러 사업/반기/분기보고서의 실제 대상 연도·보고서만 재무 조회합니다. 새 공시와 미완료 작업이 없으면 재무 API를 호출하지 않습니다. 잠정실적이나 다른 공시 유형으로 재무 값을 추정하지 않습니다.
+
+조회 진행은 dart-output/disclosure-state.json에 보관합니다. 목록 조회가 모두 성공해야 조회일을 진행시키고 발견 작업은 재무 조회 전에 저장합니다. 재무 API가 미제공(013)이거나 접수번호가 새 공시보다 오래됐으면 다음 실행의 대기열에 남깁니다. 검토 기업과 보류 기간은 수치를 유지하고 검토 대기열에 남깁니다. 같은 공시를 중복 처리하지 않습니다. 파일 업로드가 끝나기 전에 갱신 작업을 완료 처리하지 않습니다. 동시 실행은 잠금 파일로 차단하며, 비정상 종료로 잠금이 남으면 다른 실행이 없는지 확인한 뒤 해당 잠금 파일 하나만 제거합니다.
+
+전체 재무 재대조는 필요할 때 -Mode reconcile로 수동 실행합니다. -UseCache는 수동 재현용이며 매일 실행에서는 금지합니다.
 
 3. 명령이 성공하고 dart-output/portfolio-update.json이 status=validated, baseSha=확인한 SHA일 때만 files를 처리합니다. 성공한 기업만 files에 포함되며 error 기업의 기존 값은 유지됩니다. review 기업과 held 기간은 검토 대상으로 남습니다. API 013은 미제공 기간으로 건너뛰고 기존 값을 삭제하지 않습니다.
-4. test-dart-core.cjs, test-dart-portfolio.cjs, test-dart-samsung.cjs, test-dart-update.cjs를 실행합니다. files가 등록 기업의 data/companies/<key>.json만 포함하는지 검사합니다. 공유 우선주나 review 기업 파일은 금지합니다. 변경 없으면 커밋하지 않습니다.
+4. test-dart-disclosures.cjs, test-dart-core.cjs, test-dart-portfolio.cjs, test-dart-samsung.cjs, test-dart-update.cjs를 실행합니다. files가 등록 기업의 data/companies/<key>.json만 포함하는지 검사합니다. 공유 우선주나 review 기업 파일은 금지합니다. 변경 없으면 커밋하지 않습니다.
 5. main이 baseSha와 같은지 재확인하고 GitHub 커넥터 create_tree/create_commit/update_ref로 후보 files만 커밋합니다. 정확한 Git tree SHA를 기준으로 하며 expected_sha=baseSha, force:false를 사용합니다. main이 바뀌면 재수집합니다. 다른 작업 파일을 섞지 않습니다.
 6. Cloudflare 배포 후 dev.sianaly.com/data/companies/<key>.json을 새 캐시 쿼리로 읽어 변경된 모든 회사의 값과 접수번호를 대조합니다. 변경이 없어도 이전 배포 실패가 없는지 main과 라이브를 확인합니다. 생산 사이트 sianaly.com의 별도 배포는 포함하지 않습니다.
+
+7. 데이터 변경 커밋과 라이브 반영을 확인한 뒤 -Mode acknowledge -BaseSha <데이터 반영 후 main SHA>를 실행합니다. 이 명령은 후보와 실제 GitHub 재무 값이 같아야 완료 작업을 대기열에서 지웁니다. 배포/확인 실패면 완료 처리하지 않아 다음 실행에서 다시 시도합니다. acknowledgment 전에 신규 update를 중복 실행해 후보를 덮어쓰지 않습니다.
 
 ## 지표와 안전장치
 

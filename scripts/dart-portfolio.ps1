@@ -1,4 +1,4 @@
-param([ValidateSet('registry','audit','update')][string]$Mode='audit',[string]$BaseSha,[switch]$UseCache)
+param([ValidateSet('registry','audit','update','acknowledge','reconcile')][string]$Mode='audit',[string]$BaseSha,[switch]$UseCache)
 $ErrorActionPreference='Stop'
 Import-Module Microsoft.PowerShell.Security
 $taskRoot=Split-Path -Parent $PSScriptRoot

@@ -1,5 +1,6 @@
 const fs=require('node:fs'),path=require('node:path');
 const core=require('./dart-core.cjs');
+const disclosures=require('./dart-disclosures.cjs');
 const {periods,koreanDate}=require('./update-dart-samsung.cjs');
 const catalog=require('../data/company-index.json');
 const readRecords=()=>Object.fromEntries(catalog.companies.map(c=>[c.key,JSON.parse(fs.readFileSync(path.join(core.root,'data/companies',c.file),'utf8'))]));
@@ -64,7 +65,7 @@ async function audit(useCache){
  write('registry-validated.json',registry);
  console.log(`Audit complete: ${results.filter(r=>r.mode==='automatic').length} automatic issuers, ${results.filter(r=>r.mode==='review').length} review issuers, 2 shared stocks.`);
 }
-async function update(baseSha,useCache=false){
+async function fullUpdate(baseSha,useCache=false){
  if(!/^[a-f0-9]{40}$/.test(baseSha||''))throw Error('Verified main SHA is required');
  const asOf=koreanDate(),files=[],results=[];
  write('portfolio-update.json',{status:'running',baseSha,asOf});
@@ -104,11 +105,77 @@ async function update(baseSha,useCache=false){
  write('portfolio-update.json',{schemaVersion:1,status:'validated',baseSha,asOf,checkedAt:new Date().toISOString(),results,files});
  console.log(`Portfolio complete: ${files.length} changed files; ${results.filter(r=>r.status==='error').length} errors; ${results.filter(r=>r.status==='review').length} review issuers.`);
 }
+async function remoteJSON(baseSha,relative){
+ const response=await fetch(`https://raw.githubusercontent.com/Hoon-sianaly/sianaly/${baseSha}/${relative}`,{signal:AbortSignal.timeout(30000)});
+ if(!response.ok)throw Error('GitHub baseline unavailable');return response.json();
+}
+async function update(baseSha){
+ if(!/^[a-f0-9]{40}$/.test(baseSha||''))throw Error('Verified main SHA is required');
+ const asOf=koreanDate(),statePath=file('disclosure-state.json'),files=[],results=[],ready=[];
+ write('portfolio-update.json',{status:'running',baseSha,asOf});
+ const registry=await remoteJSON(baseSha,'data/dart-companies.json');
+ if(registry.schemaVersion!==2||registry.companies?.length!==100)throw Error('Unvalidated portfolio configuration');
+ const discovery=await disclosures.discover(registry,disclosures.loadState(registry,asOf,statePath),asOf),state=discovery.state;
+ // Persist all discovered jobs before fetching financials; an interrupted run can resume.
+ disclosures.saveState(state,statePath);
+ const byKey=new Map(registry.companies.filter(c=>c.corpCode).map(c=>[c.key,c])),groups=new Map();
+ for(const job of state.pending){
+  if(!byKey.has(job.key)||job.id!==`${job.key}/${job.year}/${job.report}`||!/^\d{14}$/.test(job.receipt)||!['11011','11012','11013','11014'].includes(job.report))throw Error('Invalid pending disclosure job');
+  if(!groups.has(job.key))groups.set(job.key,[]);groups.get(job.key).push(job);
+ }
+ let financialRequests=0;
+ await pooled([...groups],async([key,jobs])=>{
+  const c=byKey.get(key),automatic=jobs.filter(j=>c.mode==='automatic'&&!c.blockedPeriods?.some(b=>b.year===j.year&&b.report===j.report)),held=jobs.filter(j=>!automatic.includes(j));
+  for(const job of held){if(!state.reviewQueue.some(q=>q.receipt===job.receipt))state.reviewQueue.push({...job,reason:c.mode==='review'?'Metric/currency mapping requires review':'Existing period is held for reporting-scope review'});}
+  disclosures.complete(state,held);
+  if(!automatic.length){results.push({key,status:'review',receipts:held,reason:'New report retained for review; existing values preserved'});return;}
+  try{
+   const baseline=await remoteJSON(baseSha,`data/companies/${key}.json`),rows=[],completed=[],pending=[];
+   for(const job of automatic){
+    financialRequests++;const payload=await core.financial(c,job);
+    if(payload.status==='013'){pending.push({...job,reason:'Financial API not ready'});continue;}
+    const row=core.normalize(payload,c,job),old=(row.quarter?baseline.financials.quarterly:baseline.financials.annual).find(r=>r.year===row.year&&r.quarter===row.quarter);
+    if(row.receipt<job.receipt||old?.dart?.receipt>row.receipt){pending.push({...job,reason:'Financial API receipt is older than the filing or published data'});continue;}
+    rows.push(row);completed.push(job);
+   }
+   const applied=applyRows(baseline,rows,c,asOf);
+   if(applied.changes.length){files.push({path:`data/companies/${key}.json`,content:JSON.stringify(applied.record,null,2)+'\n'});ready.push(...completed);}
+   else disclosures.complete(state,completed);
+   results.push({key,status:applied.changes.length?'changed':pending.length?'pending':'unchanged',changes:applied.changes,pending,held});
+  }catch(e){results.push({key,status:'error',reason:e.message});}
+ });
+ disclosures.saveState(state,statePath);
+ files.sort((a,b)=>a.path.localeCompare(b.path));
+ write('portfolio-update.json',{schemaVersion:1,status:'validated',baseSha,asOf,checkedAt:new Date().toISOString(),strategy:'new-disclosures',stats:{listRequests:discovery.listRequests,listedFilings:discovery.filings,targetIssuers:groups.size,financialRequests,pendingJobs:state.pending.length,reviewItems:state.reviewQueue.length},results,ready,files});
+ console.log(`Disclosure update: ${discovery.listRequests} list requests, ${groups.size} target issuers, ${financialRequests} financial requests, ${files.length} changed files, ${state.pending.length} pending jobs.`);
+}
+async function acknowledge(baseSha){
+ if(!/^[a-f0-9]{40}$/.test(baseSha||''))throw Error('Verified published main SHA required');
+ const candidate=JSON.parse(fs.readFileSync(file('portfolio-update.json'),'utf8'));
+ if(candidate.status!=='validated'||candidate.strategy!=='new-disclosures')throw Error('Validated disclosure candidate required');
+ for(const f of candidate.files){
+  if(!/^data\/companies\/[a-z][a-z0-9-]*\.json$/.test(f.path))throw Error('Invalid candidate file path');
+  const live=await remoteJSON(baseSha,f.path),expected=JSON.parse(f.content);
+  if(JSON.stringify(live.financials)!==JSON.stringify(expected.financials))throw Error('Published financials do not match; pending jobs retained');
+ }
+ const statePath=file('disclosure-state.json'),state=JSON.parse(fs.readFileSync(statePath,'utf8'));
+ disclosures.complete(state,candidate.ready||[]);disclosures.saveState(state,statePath);
+ console.log('Published disclosure jobs acknowledged.');
+}
 async function main(){
  const args=process.argv.slice(2),mode=args[args.indexOf('--mode')+1];
  if(mode==='registry')return registry();
  if(mode==='audit')return audit(args.includes('--cache'));
- if(mode==='update')return update(args[args.indexOf('--base-sha')+1],args.includes('--cache'));
+ if(['update','acknowledge','reconcile'].includes(mode)){
+  fs.mkdirSync(core.out,{recursive:true});const lock=file('disclosure-run.lock');let handle;
+  try{handle=fs.openSync(lock,'wx');}catch{throw Error('Another run or stale disclosure lock exists; do not run concurrently');}
+  try{
+   const sha=args[args.indexOf('--base-sha')+1];
+   if(mode==='update'){if(args.includes('--cache'))throw Error('Disclosure updates must use fresh API data');return await update(sha);}
+   if(mode==='acknowledge')return await acknowledge(sha);
+   return await fullUpdate(sha,args.includes('--cache'));
+  }finally{fs.closeSync(handle);fs.unlinkSync(lock);}
+ }
  throw Error('Invalid portfolio mode');
 }
 module.exports={pooled,applyRows};if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1;});
