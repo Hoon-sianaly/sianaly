@@ -9692,6 +9692,338 @@
       "ticker": "00680K",
       "companyRef": "mirae",
       "mode": "shared"
+    },
+    {
+      "key": "lgepref",
+      "ticker": "066575",
+      "companyRef": "lge",
+      "mode": "shared"
+    },
+    {
+      "key": "sknetworks",
+      "ticker": "001740",
+      "corpCode": "00131780",
+      "corpName": "SK네트웍스",
+      "modified": "20260312",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001112"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001439"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002753"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318000975"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003724"
+          }
+        ]
+      }
+    },
+    {
+      "key": "kbif",
+      "ticker": "415640",
+      "corpCode": "01880801",
+      "corpName": "KB발해인프라",
+      "modified": "20241129",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "운용수익 (회계상)",
+      "opLabel": "당기순이익 (회계상)",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-08",
+        "reasons": [
+          "DART 표준 재무 API 미제공(013); 회계상 공식 IR 수동 확인·갱신, 세무상 분배 지표와 구분"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "skdiscovery",
+      "ticker": "006120",
+      "corpCode": "00131832",
+      "corpName": "SK디스커버리",
+      "modified": "20250327",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000867"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002242"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001756"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001277"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001603"
+          }
+        ]
+      }
+    },
+    {
+      "key": "doubleugames",
+      "ticker": "192080",
+      "corpCode": "01010110",
+      "corpName": "더블유게임즈",
+      "modified": "20260319",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260724000595"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002276"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003909"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001413"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002355"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hyosungtnc",
+      "ticker": "298020",
+      "corpCode": "01316227",
+      "corpName": "효성티앤씨",
+      "modified": "20260324",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260311004548"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001431"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001535"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312000116"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003463"
+          }
+        ]
+      }
+    },
+    {
+      "key": "lottereit",
+      "ticker": "330590",
+      "corpCode": "01363818",
+      "corpName": "롯데리츠",
+      "modified": "20230704",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-08",
+        "reasons": [
+          "6개월 결산 및 실제 3개월 기간 매핑 수동 검토; 사업보고서를 12개월 연간 수치로 처리하지 않음"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "hanilcement",
+      "ticker": "300720",
+      "corpCode": "01319808",
+      "corpName": "한일시멘트",
+      "modified": "20260312",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000863"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002910"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003685"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250317000951"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001372"
+          }
+        ]
+      }
+    },
+    {
+      "key": "di",
+      "ticker": "003160",
+      "corpCode": "00118275",
+      "corpName": "디아이",
+      "modified": "20221205",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312001121"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000626"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001182"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313001050"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004452"
+          }
+        ]
+      }
+    },
+    {
+      "key": "samsungfirepref",
+      "ticker": "000815",
+      "companyRef": "samsungfire",
+      "mode": "shared"
     }
   ]
 }

@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "di",
+    "rank": 219,
+    "name": "디아이",
+    "ticker": "003160",
+    "type": "반도체 검사장비 기업"
+  },
+  "overview": {
+    "short": "반도체 검사장비·검사 부품과 전자 제품을 공급하는 회사",
+    "summary": "반도체 검사장비·검사 부품과 전자 제품을 공급하는 회사입니다. 메모리 고객의 설비 투자와 납품 일정이 중요합니다.",
+    "takeaways": [
+      "반도체 검사장비·검사 부품과 전자 제품을 공급하는 회사입니다.",
+      "검사장비: 반도체 칩·웨이퍼의 검사 장비를 만듭니다.",
+      "검사 부품: 번인보드 등 검사에 사용하는 부품을 공급합니다.",
+      "기타 제품: 전자파 차폐 부품과 음향·영상기기 등을 공급합니다.",
+      "메모리 고객의 설비 투자와 납품 일정이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "검사장비",
+        "desc": "반도체 칩·웨이퍼의 검사 장비를 만듭니다."
+      },
+      {
+        "name": "검사 부품",
+        "desc": "번인보드 등 검사에 사용하는 부품을 공급합니다."
+      },
+      {
+        "name": "기타 제품",
+        "desc": "전자파 차폐 부품과 음향·영상기기 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 투자",
+        "desc": "메모리 고객의 설비 투자와 납품 일정이 중요합니다."
+      },
+      {
+        "title": "제품 개발",
+        "desc": "HBM·새 메모리 검사장비의 개발·평가를 봐야 합니다."
+      },
+      {
+        "title": "원가·구성",
+        "desc": "장비와 부품의 매출 구성·개발 비용이 이익을 바꿉니다."
+      }
+    ],
+    "financialNote": "장비 수주와 실제 납품·수익 인식 시점은 다를 수 있습니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.213957402579,
+        "op": 0.003081395875,
+        "net": 0.002771028466,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250313001050",
+          "rawKRW": {
+            "sales": "213957402579",
+            "op": "3081395875",
+            "net": "2771028466"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.432293560547,
+        "op": 0.036508298757,
+        "net": 0.013517288709,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260312001121",
+          "rawKRW": {
+            "sales": "432293560547",
+            "op": "36508298757",
+            "net": "13517288709"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.119269899032,
+        "op": 0.012249705307,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004452",
+          "rawKRW": {
+            "sales": "119269899032",
+            "op": "12249705307",
+            "net": "8841828300"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.10570128178,
+        "op": 0.01887201335,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000626",
+          "rawKRW": {
+            "sales": "105701281780",
+            "op": "18872013350",
+            "net": "14964022867"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.168631873359,
+        "op": 0.039589999867,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001182",
+          "rawKRW": {
+            "sales": "168631873359",
+            "op": "39589999867",
+            "net": "31839433080"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001121",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000626",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001182",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001050",
+      "published": "2025.03.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004452",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "디아이 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001182",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "번인보드",
+      "desc": "반도체를 일정 온도·전압 조건에서 검사할 때 칩을 연결하는 기판입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

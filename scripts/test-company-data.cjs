@@ -61,6 +61,15 @@ function context(key, transform, failed = false) {
    assert.ok(out.includes("지분법 이익이 포함") && out.includes("재작성 수치"));
    for(const row of record.financials.annual)for(const field of ["sales","op"])assert.ok(out.includes(vm.runInContext(`formatFinancialHighlight(${row[field]})`,state.ctx)+"</td>"));
   }
+  if (record.financials.annualTerm === "6개월 결산") {
+   assert.ok(out.includes("6개월 결산 실적 그래프"),entry.key);
+   assert.ok(!out.includes("연간 실적 그래프")&&!out.includes("연간 보고 기간"),entry.key);
+   assert.ok(out.includes(record.financials.annual.at(-1).reportPeriod),entry.key);
+  }
+  if (entry.key === "kbif") {
+   assert.ok(out.includes("운용수익 (회계상)")&&out.includes("당기순이익 (회계상)"));
+   assert.ok(!out.includes("<span>영업이익률</span>"));
+  }
   if (entry.key === "samsungel") {
    assert.ok(out.includes("자료 기준 2025년 연간까지"));
    assert.ok(out.includes("억원</td>"));

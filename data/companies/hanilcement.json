@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanilcement",
+    "rank": 218,
+    "name": "한일시멘트",
+    "ticker": "300720",
+    "type": "건설 소재 기업"
+  },
+  "overview": {
+    "short": "시멘트·레미탈·레미콘을 생산하고 건설 사업을 운영하는 회사",
+    "summary": "시멘트·레미탈·레미콘을 생산하고 건설 사업을 운영하는 회사입니다. 국내 건설·토목 수요와 판매량이 중요합니다.",
+    "takeaways": [
+      "시멘트·레미탈·레미콘을 생산하고 건설 사업을 운영하는 회사입니다.",
+      "시멘트: 건설 현장용 시멘트를 생산·공급합니다.",
+      "건설 제품: 레미탈·레미콘 등 시멘트 기반 제품을 만듭니다.",
+      "관련 사업: 연결 자회사를 통해 건설 등 사업을 운영합니다.",
+      "국내 건설·토목 수요와 판매량이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "시멘트",
+        "desc": "건설 현장용 시멘트를 생산·공급합니다."
+      },
+      {
+        "name": "건설 제품",
+        "desc": "레미탈·레미콘 등 시멘트 기반 제품을 만듭니다."
+      },
+      {
+        "name": "관련 사업",
+        "desc": "연결 자회사를 통해 건설 등 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 수요",
+        "desc": "국내 건설·토목 수요와 판매량이 중요합니다."
+      },
+      {
+        "title": "원료·에너지",
+        "desc": "연료와 전력·물류 비용을 봐야 합니다."
+      },
+      {
+        "title": "가격·투자",
+        "desc": "판매가격과 공장 가동률·설비 투자가 이익을 바꿉니다."
+      }
+    ],
+    "financialNote": "한일홀딩스와 별도 상장된 사업회사입니다. 연결 건설 사업도 포함합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.741671258107,
+        "op": 0.271389512685,
+        "net": 0.199016257703,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000951",
+          "rawKRW": {
+            "sales": "1741671258107",
+            "op": "271389512685",
+            "net": "199016257703"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.423859619115,
+        "op": 0.132739217663,
+        "net": 0.081141916163,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260317000863",
+          "rawKRW": {
+            "sales": "1423859619115",
+            "op": "132739217663",
+            "net": "81141916163"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.407647906673,
+        "op": 0.047495853427,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001372",
+          "rawKRW": {
+            "sales": "407647906673",
+            "op": "47495853427",
+            "net": "24007408533"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.293028396374,
+        "op": 0.017028128309,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002910",
+          "rawKRW": {
+            "sales": "293028396374",
+            "op": "17028128309",
+            "net": "9393694725"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.37095076834,
+        "op": 0.06156211784,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003685",
+          "rawKRW": {
+            "sales": "370950768340",
+            "op": "61562117840",
+            "net": "48363667344"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000863",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002910",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003685",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000951",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001372",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "한일시멘트 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003685",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "레미탈",
+      "desc": "시멘트·모래 등을 미리 배합해 물을 넣어 사용하는 건설용 혼합 재료입니다."
+    },
+    {
+      "name": "레미콘",
+      "desc": "공장에서 미리 배합해 건설 현장에 운반하는 콘크리트입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

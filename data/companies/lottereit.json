@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lottereit",
+    "rank": 217,
+    "name": "롯데리츠",
+    "ticker": "330590",
+    "type": "부동산 투자회사"
+  },
+  "overview": {
+    "short": "유통·호텔·물류시설 등 부동산에 투자하는 리츠",
+    "summary": "유통·호텔·물류시설 등 부동산에 투자하는 리츠입니다. 임대료와 임차인·계약 조건이 중요합니다.",
+    "takeaways": [
+      "유통·호텔·물류시설 등 부동산에 투자하는 리츠입니다.",
+      "부동산 투자: 상업용 부동산과 관련 지분을 보유합니다.",
+      "임대: 임대료와 관리 관련 수익을 얻습니다.",
+      "자산 관리: 임대 계약·차입과 자산 편입을 관리합니다.",
+      "임대료와 임차인·계약 조건이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "부동산 투자",
+        "desc": "상업용 부동산과 관련 지분을 보유합니다."
+      },
+      {
+        "name": "임대",
+        "desc": "임대료와 관리 관련 수익을 얻습니다."
+      },
+      {
+        "name": "자산 관리",
+        "desc": "임대 계약·차입과 자산 편입을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임대 조건",
+        "desc": "임대료와 임차인·계약 조건이 중요합니다."
+      },
+      {
+        "title": "금융 비용",
+        "desc": "차입 금리와 차환 조건을 봐야 합니다."
+      },
+      {
+        "title": "투자·분배",
+        "desc": "신규 자산 투자와 이익·현금 배당을 구분해야 합니다."
+      }
+    ],
+    "financialNote": "6개월 결산 회사입니다. 6개월 사업보고서를 12개월 연간 실적으로 표시하지 않습니다. 영업이익과 금융비용 차감 후 이익·배당을 구분합니다. 별도 기준입니다. 분기 수치는 각 3개월의 실적입니다. 별도 기준입니다. 결산 그래프는 같은 시기에 종료되는 6개월 실적끼리 비교하며 12개월 합계가 아닙니다.",
+    "quarterlyNote": "공식 손익표의 3개월 실적입니다. 6개월 결산의 뒤쪽 3개월은 원 단위 결산 합계에서 앞쪽 3개월을 차감했습니다. 기간별 자산 편입 차이도 확인해야 합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.060007701472,
+        "op": 0.037586118451,
+        "reportedKRW": {
+          "sales": "60007701472",
+          "op": "37586118451"
+        },
+        "periodLabel": "2024.01–06",
+        "reportPeriod": "2024.01–06",
+        "sourceIds": [
+          "report-20250911000374"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.069954407452,
+        "op": 0.045224008715,
+        "reportedKRW": {
+          "sales": "69954407452",
+          "op": "45224008715"
+        },
+        "periodLabel": "2025.01–06",
+        "reportPeriod": "2025.01–06",
+        "sourceIds": [
+          "report-20260921000222"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.082109520073,
+        "op": 0.055652468317,
+        "reportedKRW": {
+          "sales": "82109520073",
+          "op": "55652468317"
+        },
+        "periodLabel": "2026.01–06",
+        "reportPeriod": "2026.01–06",
+        "sourceIds": [
+          "report-20260921000222"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.035203514807,
+        "op": 0.022629566987,
+        "reportedKRW": {
+          "sales": "35203514807",
+          "op": "22629566987"
+        },
+        "periodLabel": "2025년 1분기",
+        "reportPeriod": "2025.01–03",
+        "sourceIds": [
+          "report-20250514000917"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.034750892645,
+        "op": 0.022594441728,
+        "reportedKRW": {
+          "sales": "34750892645",
+          "op": "22594441728"
+        },
+        "periodLabel": "2025년 2분기",
+        "reportPeriod": "2025.04–06",
+        "sourceIds": [
+          "report-20260921000222",
+          "report-20250514000917"
+        ],
+        "derivation": "six-month-minus-first-three-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.038933859236,
+        "op": 0.02606313,
+        "reportedKRW": {
+          "sales": "38933859236",
+          "op": "26063130000"
+        },
+        "periodLabel": "2026년 1분기",
+        "reportPeriod": "2026.01–03",
+        "sourceIds": [
+          "report-20260514000609"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.043175660837,
+        "op": 0.029589338317,
+        "reportedKRW": {
+          "sales": "43175660837",
+          "op": "29589338317"
+        },
+        "periodLabel": "2026년 2분기",
+        "reportPeriod": "2026.04–06",
+        "sourceIds": [
+          "report-20260921000222",
+          "report-20260514000609"
+        ],
+        "derivation": "six-month-minus-first-three-month"
+      }
+    ],
+    "quarterlyCalendarNote": "6개월 결산 회사 · 1분기 1–3월, 2분기 4–6월 · 2분기는 6개월 결산에서 1분기를 차감",
+    "annualTerm": "6개월 결산",
+    "annualSourceLabel": "공식 6개월 결산 손익계산서",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (임대 등)",
+        "help": "부동산 임대료와 관리 등 수익입니다. 제조업 매출과 구분합니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "임대 관련 수익에서 영업비용을 차감한 이익입니다. 금융비용 차감 후 이익·현금 배당과 다릅니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20250911000374",
+      "label": "롯데리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250911000374",
+      "published": "2025.09.11",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "report-20260921000222",
+      "label": "롯데리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260921000222",
+      "published": "2026.09.21",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "report-20250514000917",
+      "label": "롯데리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250514000917",
+      "published": "2025.05.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "report-20260514000609",
+      "label": "롯데리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000609",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "report-20260921000222"
+    ],
+    "drivers": [
+      "report-20260921000222"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "차환",
+      "desc": "만기가 돌아오는 차입금을 새로 빌린 돈 등으로 상환하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
