@@ -72,7 +72,7 @@ async function fullUpdate(baseSha,useCache=false){
  const configuration=await fetch(`https://raw.githubusercontent.com/Hoon-sianaly/sianaly/${baseSha}/data/dart-companies.json`,{signal:AbortSignal.timeout(30000)});
  if(!configuration.ok)throw Error('Portfolio configuration unavailable');
  const registry=await configuration.json();
- if(registry.schemaVersion!==2||registry.companies?.length!==100||new Set(registry.companies.map(c=>c.key)).size!==100)throw Error('Portfolio configuration has not been validated');
+ if(registry.schemaVersion!==2||registry.companies?.length!==catalog.companies.length||new Set(registry.companies.map(c=>c.key)).size!==catalog.companies.length)throw Error('Portfolio configuration has not been validated');
  let done=0;
  await pooled(registry.companies.filter(c=>!c.companyRef),async c=>{
   let result;
@@ -98,7 +98,7 @@ async function fullUpdate(baseSha,useCache=false){
     result={key:c.key,status:applied.changes.length?'changed':'unchanged',changes:applied.changes,missing,held:c.blockedPeriods?.map(b=>({...b,currentReceipt:receipts.find(r=>r.year===b.year&&r.report===b.report)?.receipt||null}))||[]};
    }
   }catch(e){result={key:c.key,status:'error',reason:e.message};}
-  results.push(result);console.log(`${++done}/98 ${c.key}: ${result.status}`);
+  results.push(result);console.log(`${++done}/${registry.companies.filter(c=>!c.companyRef).length} ${c.key}: ${result.status}`);
  });
  // Only successfully validated issuers can produce files; failures stay isolated.
  files.sort((a,b)=>a.path.localeCompare(b.path));results.sort((a,b)=>a.key.localeCompare(b.key));
@@ -114,7 +114,7 @@ async function update(baseSha){
  const asOf=koreanDate(),statePath=file('disclosure-state.json'),files=[],results=[],ready=[];
  write('portfolio-update.json',{status:'running',baseSha,asOf});
  const registry=await remoteJSON(baseSha,'data/dart-companies.json');
- if(registry.schemaVersion!==2||registry.companies?.length!==100)throw Error('Unvalidated portfolio configuration');
+ if(registry.schemaVersion!==2||registry.companies?.length!==catalog.companies.length||registry.companies.some(c=>!catalog.companies.some(e=>e.key===c.key&&e.ticker===c.ticker))||new Set(registry.companies.map(c=>c.key)).size!==catalog.companies.length)throw Error('Unvalidated portfolio configuration');
  const discovery=await disclosures.discover(registry,disclosures.loadState(registry,asOf,statePath),asOf),state=discovery.state;
  // Persist all discovered jobs before fetching financials; an interrupted run can resume.
  disclosures.saveState(state,statePath);

@@ -800,14 +800,97 @@
       "file": "jb.json",
       "market": "KOSPI",
       "alias": "JB Financial Group 제이비금융 전북은행 광주은행"
+    },
+    {
+      "key": "samsungcard",
+      "name": "삼성카드",
+      "ticker": "029780",
+      "file": "samsungcard.json",
+      "market": "KOSPI",
+      "alias": "Samsung Card 삼성 카드"
+    },
+    {
+      "key": "nc",
+      "name": "NC",
+      "ticker": "036570",
+      "file": "nc.json",
+      "market": "KOSPI",
+      "alias": "엔씨소프트 엔씨 NCSoft NCSOFT"
+    },
+    {
+      "key": "landf",
+      "name": "엘앤에프",
+      "ticker": "066970",
+      "file": "landf.json",
+      "market": "KOSPI",
+      "alias": "L&F 엘엔에프 양극재"
+    },
+    {
+      "key": "bnk",
+      "name": "BNK금융지주",
+      "ticker": "138930",
+      "file": "bnk.json",
+      "market": "KOSPI",
+      "alias": "BNK 부산은행 경남은행"
+    },
+    {
+      "key": "mkif",
+      "name": "맥쿼리인프라",
+      "ticker": "088980",
+      "file": "mkif.json",
+      "market": "KOSPI",
+      "alias": "Macquarie MKIF 맥쿼리한국인프라투융자회사"
+    },
+    {
+      "key": "kepcotech",
+      "name": "한전기술",
+      "ticker": "052690",
+      "file": "kepcotech.json",
+      "market": "KOSPI",
+      "alias": "KEPCO E&C 한국전력기술"
+    },
+    {
+      "key": "doosanrobotics",
+      "name": "두산로보틱스",
+      "ticker": "454910",
+      "file": "doosanrobotics.json",
+      "market": "KOSPI",
+      "alias": "Doosan Robotics 두산 로봇"
+    },
+    {
+      "key": "hanwhalife",
+      "name": "한화생명",
+      "ticker": "088350",
+      "file": "hanwhalife.json",
+      "market": "KOSPI",
+      "alias": "Hanwha Life 대한생명"
+    },
+    {
+      "key": "ociholdings",
+      "name": "OCI홀딩스",
+      "ticker": "010060",
+      "file": "ociholdings.json",
+      "market": "KOSPI",
+      "alias": "OCI Holdings 오씨아이홀딩스"
+    },
+    {
+      "key": "orion",
+      "name": "오리온",
+      "ticker": "271560",
+      "file": "orion.json",
+      "market": "KOSPI",
+      "alias": "Orion 초코파이"
     }
   ],
   "rankingSnapshot": {
-    "asOf": "2026.10.07",
-    "capturedAt": "2026-10-07T10:25:47.595Z",
-    "verifiedAt": "2026.10.07",
+    "asOf": "2026.10.08",
+    "capturedAt": "2026-10-08T07:50:44.378Z",
+    "verifiedAt": "2026.10.08",
     "source": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100",
-    "additionalSource": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100",
-    "note": "2026.10.07 19:25 KST 조회 시점의 코스피 시가총액 상위 100개 주식 종목입니다. ETF·ETN 등 펀드를 제외하고 우선주는 별도 종목으로 계산합니다. 확정 종가나 실시간 순위가 아닙니다."
+    "additionalSource": [
+      "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100",
+      "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=3&pageSize=100"
+    ],
+    "note": "2026.10.08 조회 시점 코스피 시가총액 상위 110개 주식 종목입니다. 우선주는 별도 종목이며 ETF·ETN을 제외합니다. 회사형 인프라 펀드인 맥쿼리인프라는 포함하며 일반 기업과 지표를 구분합니다. 실시간 순위나 확정 종가 목록이 아닙니다."
   }
 }

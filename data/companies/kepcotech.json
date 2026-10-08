@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kepcotech",
+    "rank": 106,
+    "name": "한전기술",
+    "ticker": "052690",
+    "type": "발전 설계·엔지니어링 기업"
+  },
+  "overview": {
+    "short": "원자력·화력 발전소 설계와 기술 서비스를 제공하는 회사",
+    "summary": "원자력·화력 발전소 설계와 기술 서비스를 제공하는 회사입니다. 발전소 사업 승인·수주와 설계 진행 일정이 중요합니다.",
+    "takeaways": [
+      "원자력·화력 발전소 설계와 기술 서비스를 제공하는 회사입니다.",
+      "원전 설계: 원자력발전소 종합설계와 원자로계통 설계를 수행합니다.",
+      "발전 기술: 화력·재생에너지 등 발전 관련 설계·용역을 제공합니다.",
+      "운영·신기술: 발전소 유지관리와 SMR 등 기술 개발을 수행합니다.",
+      "발전소 사업 승인·수주와 설계 진행 일정이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "원전 설계",
+        "desc": "원자력발전소 종합설계와 원자로계통 설계를 수행합니다."
+      },
+      {
+        "name": "발전 기술",
+        "desc": "화력·재생에너지 등 발전 관련 설계·용역을 제공합니다."
+      },
+      {
+        "name": "운영·신기술",
+        "desc": "발전소 유지관리와 SMR 등 기술 개발을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "수주 일정",
+        "desc": "발전소 사업 승인·수주와 설계 진행 일정이 중요합니다."
+      },
+      {
+        "title": "인력 비용",
+        "desc": "설계 인력의 투입과 인건비를 함께 봐야 합니다."
+      },
+      {
+        "title": "해외 프로젝트",
+        "desc": "해외 원전 계약의 범위·수익 인식 시점을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.553362978026,
+        "op": 0.054806059056,
+        "net": 0.0585121284,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814001076",
+          "rawKRW": {
+            "sales": "553362978026",
+            "op": "54806059056",
+            "net": "58512128400"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.518767621092,
+        "op": 0.035452646024,
+        "net": 0.085367742275,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260326001003",
+          "rawKRW": {
+            "sales": "518767621092",
+            "op": "35452646024",
+            "net": "85367742275"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.102267262792,
+        "op": -0.004427718119,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001442",
+          "rawKRW": {
+            "sales": "102267262792",
+            "op": "-4427718119",
+            "net": "326182118"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.11333398907,
+        "op": 0.014063114315,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002159",
+          "rawKRW": {
+            "sales": "113333989070",
+            "op": "14063114315",
+            "net": "14101904168"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.103284018907,
+        "op": 0.002992588463,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001293",
+          "rawKRW": {
+            "sales": "103284018907",
+            "op": "2992588463",
+            "net": "2726990456"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326001003",
+      "published": "2026.03.26",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002159",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001293",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001076",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001442",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "한전기술 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001293",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

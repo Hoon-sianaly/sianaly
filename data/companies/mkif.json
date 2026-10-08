@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "mkif",
+    "rank": 105,
+    "name": "맥쿼리인프라",
+    "ticker": "088980",
+    "type": "상장 인프라 펀드"
+  },
+  "overview": {
+    "short": "도로·항만·도시가스 등 인프라 사업에 투자하는 회사형 펀드",
+    "summary": "도로·항만·도시가스 등 인프라 사업에 투자하는 회사형 펀드입니다. 통행량·물동량과 투자법인의 배당 여력을 봐야 합니다.",
+    "takeaways": [
+      "도로·항만·도시가스 등 인프라 사업에 투자하는 회사형 펀드입니다.",
+      "인프라 투자: 사업시행법인의 주식과 대출채권 등에 투자합니다.",
+      "운용수익: 투자법인에서 이자와 배당을 받습니다.",
+      "분배금: 투자수익과 비용·자금 상황에 따라 분배금을 지급합니다.",
+      "통행량·물동량과 투자법인의 배당 여력을 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "인프라 투자",
+        "desc": "사업시행법인의 주식과 대출채권 등에 투자합니다."
+      },
+      {
+        "name": "운용수익",
+        "desc": "투자법인에서 이자와 배당을 받습니다."
+      },
+      {
+        "name": "분배금",
+        "desc": "투자수익과 비용·자금 상황에 따라 분배금을 지급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "자산 현금흐름",
+        "desc": "통행량·물동량과 투자법인의 배당 여력을 봐야 합니다."
+      },
+      {
+        "title": "운영 기간",
+        "desc": "자산별 운영권 만료와 신규 투자 조건이 중요합니다."
+      },
+      {
+        "title": "조달·평가",
+        "desc": "차입 비용과 현금 수익·평가손익을 구분해야 합니다."
+      }
+    ],
+    "financialNote": "일반 제조기업이 아닌 상장 인프라 펀드입니다. 개별 기준 운용수익과 당기순이익을 표시하며, 연간은 평가손익을 제외한 공식 IR 지표입니다. 2025년 평가이익을 포함한 법정 수치와는 다릅니다. 반기 보고서의 누적 수치를 2분기 실적으로 사용하지 않습니다. 별도 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "공식 개별 실적입니다. 2026년 2분기는 4~6월 운용수익·순이익이고 1분기는 반기 누적에서 2분기를 차감한 값입니다. 백만원 단위 원자료 정밀도를 유지했습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.422111,
+        "op": 0.348078,
+        "sourceIds": [
+          "annual"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.435358,
+        "op": 0.365367,
+        "sourceIds": [
+          "annual"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.199165,
+        "op": 0.182651,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.07774,
+        "op": 0.060887,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.189344,
+        "op": 0.171757,
+        "sourceIds": [
+          "q2"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.070677,
+        "op": 0.053293,
+        "sourceIds": [
+          "q2"
+        ]
+      }
+    ],
+    "metrics": {
+      "sales": {
+        "label": "운용수익 (평가손익 제외)",
+        "help": "투자법인에서 받는 이자·배당 등 수익입니다. 자산 평가손익을 제외한 회사 IR 지표로 제조업 매출과 다릅니다."
+      },
+      "op": {
+        "label": "순이익 (평가손익 제외)",
+        "help": "운용수익에서 운용비용을 뺀 공식 IR 당기순이익입니다. 영업이익이 아니며, 2025년 자산 평가이익을 제외했습니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "MKIF 2025년 연간 실적 발표 · 18쪽 (평가손익 제외)",
+      "url": "https://www.mkif.com/assets/mkif/ko-kr/investor-centre/public-filings-and-reports/2026/2601-ir-general-presentation-4q-2025-kor.pdf",
+      "published": "2026.01.30",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "q2",
+      "label": "MKIF 2026년 반기 실적 · 5쪽 (누적 및 3개월 구분)",
+      "url": "https://www.mkif.com/assets/mkif/ko-kr/investor-centre/public-filings-and-reports/2026/ir-release-2607-1h-2026-financial-traffic-results-kor.pdf",
+      "published": "2026.07.29",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "MKIF 공식 투자자정보 · 회사형 인프라 펀드",
+      "url": "https://www.mkif.com/ko.html",
+      "asOf": "2026.10.08",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
