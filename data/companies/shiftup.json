@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "shiftup",
+    "rank": 182,
+    "name": "시프트업",
+    "ticker": "462870",
+    "type": "게임 개발 기업"
+  },
+  "overview": {
+    "short": "니케·스텔라 블레이드 등 게임을 개발하는 회사",
+    "summary": "니케·스텔라 블레이드 등 게임을 개발하는 회사입니다. 이용자 활동과 콘텐츠 판매·출시 성과가 중요합니다.",
+    "takeaways": [
+      "니케·스텔라 블레이드 등 게임을 개발하는 회사입니다.",
+      "모바일·PC: 승리의 여신 니케 등 게임 콘텐츠를 개발합니다.",
+      "콘솔 게임: 스텔라 블레이드 등 게임을 개발·공급합니다.",
+      "신규 IP: 신작 개발과 게임 IP 관련 사업을 추진합니다.",
+      "이용자 활동과 콘텐츠 판매·출시 성과가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "모바일·PC",
+        "desc": "승리의 여신 니케 등 게임 콘텐츠를 개발합니다."
+      },
+      {
+        "name": "콘솔 게임",
+        "desc": "스텔라 블레이드 등 게임을 개발·공급합니다."
+      },
+      {
+        "name": "신규 IP",
+        "desc": "신작 개발과 게임 IP 관련 사업을 추진합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "게임 이용",
+        "desc": "이용자 활동과 콘텐츠 판매·출시 성과가 중요합니다."
+      },
+      {
+        "title": "계약·플랫폼",
+        "desc": "퍼블리싱 계약과 판매 플랫폼 구성을 봐야 합니다."
+      },
+      {
+        "title": "개발 비용",
+        "desc": "신작 개발·인력 비용과 수익 집중도를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "파트너 퍼블리셔를 통한 판매와 회사가 인식하는 수익을 구분합니다. API 미제공 비교 기간은 추정하지 않습니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.294545937439,
+        "op": 0.181417657557,
+        "net": 0.191430447697,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001672",
+          "rawKRW": {
+            "sales": "294545937439",
+            "op": "181417657557",
+            "net": "191430447697"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.047309371906,
+        "op": 0.021505889993,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001484",
+          "rawKRW": {
+            "sales": "47309371906",
+            "op": "21505889993",
+            "net": "37796183307"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.055723749282,
+        "op": 0.028117514579,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004160",
+          "rawKRW": {
+            "sales": "55723749282",
+            "op": "28117514579",
+            "net": "41735620721"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001672",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001484",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004160",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "시프트업 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004160",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "퍼블리싱",
+      "desc": "게임 출시·유통·마케팅과 운영을 맡아 이용자에게 제공하는 사업입니다."
+    },
+    {
+      "name": "IP",
+      "desc": "지식재산입니다. 이 페이지에서는 아티스트·콘텐츠·캐릭터 등의 권리를 활용하는 사업을 뜻합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

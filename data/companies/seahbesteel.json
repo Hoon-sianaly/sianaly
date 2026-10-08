@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "seahbesteel",
+    "rank": 187,
+    "name": "세아베스틸지주",
+    "ticker": "001430",
+    "type": "특수강 지주회사"
+  },
+  "overview": {
+    "short": "특수강·스테인리스 등 소재 자회사를 보유한 지주회사",
+    "summary": "특수강·스테인리스 등 소재 자회사를 보유한 지주회사입니다. 자동차·산업·에너지 고객의 소재 주문이 중요합니다.",
+    "takeaways": [
+      "특수강·스테인리스 등 소재 자회사를 보유한 지주회사입니다.",
+      "특수강: 세아베스틸 등을 통해 탄소합금강 소재를 생산합니다.",
+      "스테인리스: 세아창원특수강 등을 통해 관련 금속 소재를 공급합니다.",
+      "신소재·투자: 항공·방산 소재 등 자회사 투자와 경영을 관리합니다.",
+      "자동차·산업·에너지 고객의 소재 주문이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "특수강",
+        "desc": "세아베스틸 등을 통해 탄소합금강 소재를 생산합니다."
+      },
+      {
+        "name": "스테인리스",
+        "desc": "세아창원특수강 등을 통해 관련 금속 소재를 공급합니다."
+      },
+      {
+        "name": "신소재·투자",
+        "desc": "항공·방산 소재 등 자회사 투자와 경영을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 수요",
+        "desc": "자동차·산업·에너지 고객의 소재 주문이 중요합니다."
+      },
+      {
+        "title": "가격·원가",
+        "desc": "금속 원료·에너지 비용과 판매가격을 봐야 합니다."
+      },
+      {
+        "title": "제품·투자",
+        "desc": "고부가 소재 비중과 설비·해외 투자 비용을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "분할 후 지주회사와 자회사의 연결 기준입니다. 그룹 내 다른 상장사와 실적을 단순 합산하지 않습니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.636063257694,
+        "op": 0.05233216635,
+        "net": 0.020273054942,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000465",
+          "rawKRW": {
+            "sales": "3636063257694",
+            "op": "52332166350",
+            "net": "20273054942"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 3.651585276954,
+        "op": 0.098411992401,
+        "net": 0.05613630997,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316001503",
+          "rawKRW": {
+            "sales": "3651585276954",
+            "op": "98411992401",
+            "net": "56136309970"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.964508023158,
+        "op": 0.044495774299,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003583",
+          "rawKRW": {
+            "sales": "964508023158",
+            "op": "44495774299",
+            "net": "18183692026"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.967600159045,
+        "op": 0.031091813341,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002787",
+          "rawKRW": {
+            "sales": "967600159045",
+            "op": "31091813341",
+            "net": "21896210934"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.135709521548,
+        "op": 0.05983977482,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003802",
+          "rawKRW": {
+            "sales": "1135709521548",
+            "op": "59839774820",
+            "net": "35167437387"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001503",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002787",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003802",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000465",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003583",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "세아베스틸지주 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003802",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "방산",
+      "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    },
+    {
+      "name": "리스",
+      "desc": "자산을 일정 기간 사용할 권리를 제공하고 이용료를 받는 계약입니다."
+    },
+    {
+      "name": "특수강",
+      "desc": "강도·내열성·내식성 등의 특성을 높이기 위해 성분과 제조 방식을 조절한 강철입니다."
+    },
+    {
+      "name": "스테인리스",
+      "desc": "크롬 등을 포함해 부식에 잘 견디도록 만든 강철입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
