@@ -81,7 +81,7 @@ function comparisonChart(rows){
   const values=rawValues.map(value=>value*unit.factor), highest=Math.max(...values,0), lowest=Math.min(...values,0);
   const magnitude=Math.pow(10,Math.floor(Math.log10(Math.max(highest,Math.abs(lowest),0.1)))), step=magnitude/2;
   const upper=Math.max(step,Math.ceil(highest/step)*step), lower=lowest<0?Math.floor(lowest/step)*step:0;
-  const left=65, right=350, top=28, bottom=208, y=value=>bottom-(value-lower)/(upper-lower)*(bottom-top), zero=y(0);
+  const left=75, right=350, top=28, bottom=208, y=value=>bottom-(value-lower)/(upper-lower)*(bottom-top), zero=y(0);
   const ticks=[...new Set([upper,upper/2,0,...(lower<0?[lower]:[])])];
   const slots=(right-left)/Math.max(rows.length,1), width=Math.min(48,slots*0.5);
   const labels=rows.map(r=>`${r.periodLabel || (r.quarter?r.quarter+"분기":r.period)}: ${formatFinancialHighlight(r[m.field])}`).join(", ");
