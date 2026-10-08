@@ -34,6 +34,10 @@ function context(key, transform, failed = false) {
   assert.equal(state.errors.length,0,entry.key);
   assert.ok(out.includes(entry.name),entry.key);
   for (const id of ["intro","business","annual","quarterly","drivers","glossary"]) {
+   const record=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8"));
+   if(id==='glossary'&&record.presentation.compact&&!record.glossary.length){
+    assert.ok(!out.includes('href="#company-glossary"')&&!out.includes('id="company-glossary"'),entry.key+'/empty glossary');continue;
+   }
    assert.ok(out.includes(`href="#company-${id}"`) && out.includes(`id="company-${id}"`),`${entry.key}/${id}`);
   }
   assert.equal((out.match(/class="vertical-chart"/g)||[]).length,4);
