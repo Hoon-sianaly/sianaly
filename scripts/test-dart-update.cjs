@@ -1,0 +1,21 @@
+const assert=require('node:assert/strict');
+const {periods,applyRows,koreanDate}=require('./update-dart-samsung.cjs');
+const base=require('../data/companies/samsung.json');
+const original=JSON.stringify(base);
+function candidate(quarter){return {year:2026,...(quarter?{quarter}:{}),sales:100,op:-.05,...(!quarter?{net:1}:{}),rawKRW:{sales:'100000000000000',op:'-50000000000',...(!quarter?{net:'1000000000000'}:{})},currency:'KRW',basis:'consolidated',receipt:'20261008000001',sourceUrl:'https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261008000001',periodBasis:quarter?'three-month':'annual'};}
+assert.equal(koreanDate(new Date('2026-10-07T16:00:00Z')),'2026-10-08');
+assert.equal(periods('2026-10-08').length,7);
+assert.ok(!periods('2026-10-08').some(p=>p.year===2026&&p.report==='11011'));
+const q=candidate(3),result=applyRows(base,[q],'2026-10-08');
+assert.equal(result.record.financials.quarterly.at(-1).op,-.05);
+assert.ok(result.record.sources.some(s=>s.id==='dart-2026-q3'));
+assert.deepEqual(result.record.overview,base.overview);
+assert.deepEqual(result.record.market,base.market);
+assert.equal(applyRows(result.record,[q],'2026-10-09').changes.length,0);
+const corrected={...q,receipt:'20261009000001',sourceUrl:'https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261009000001'};
+assert.equal(applyRows(result.record,[corrected],'2026-10-09').changes.length,1);
+assert.equal(applyRows(base,[],'2026-10-08').changes.length,0);
+for(const mutated of [{...q,currency:'USD'},{...q,sales:101},{...q,periodBasis:'cumulative'},{...q,quarter:4},{...q,sourceUrl:'https://example.com'}])assert.throws(()=>applyRows(base,[mutated],'2026-10-08'));
+const annual=candidate();delete annual.net;assert.throws(()=>applyRows(base,[annual],'2027-01-02'),/missing/);
+assert.equal(JSON.stringify(base),original);
+console.log('PASS: automatic update is idempotent, applies corrections, preserves company text, rejects invalid data and never turns missing data into zero.');

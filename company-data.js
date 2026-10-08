@@ -1,10 +1,10 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261007-adaptive-units-1";
+const COMPANY_DATA_VERSION = "20261008-dart-auto-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
 async function readCompanyJSON(path) {
- const response = await fetch(`${path}?v=${COMPANY_DATA_VERSION}`);
+ const response = await fetch(`${path}?v=${COMPANY_DATA_VERSION}`, {cache:'no-cache'});
  if (!response.ok) throw new Error(`기업 데이터를 불러오지 못했습니다 (${response.status}).`);
  const data = await response.json();
  if (data.schemaVersion !== 1) throw new Error("지원하지 않는 기업 데이터 형식입니다.");

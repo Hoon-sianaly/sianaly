@@ -1,2 +1,7 @@
 # Public source documents and local verification screenshots.
 /tmp/
+# Local credentials and API collection output must never be committed.
+/.secrets/
+/.env
+/.env.*
+/dart-output/
