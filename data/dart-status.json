@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-10-08",
-  "stocks": 200,
-  "issuers": 195,
-  "automaticIssuers": 184,
-  "fullyValidatedIssuers": 162,
+  "stocks": 210,
+  "issuers": 204,
+  "automaticIssuers": 193,
+  "fullyValidatedIssuers": 171,
   "partiallyValidatedIssuers": 22,
   "reviewIssuers": 11,
-  "sharedStocks": 5,
+  "sharedStocks": 6,
   "companies": [
     {
       "key": "samsung",
@@ -8013,6 +8013,390 @@
       "ticker": "009155",
       "mode": "shared",
       "companyRef": "samsungel"
+    },
+    {
+      "key": "gc",
+      "ticker": "006280",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001316"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002618"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003840"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001288"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003655"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hdmarineengine",
+      "ticker": "071970",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001327"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260519000171"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002726"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250317000801"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003227"
+          }
+        ]
+      }
+    },
+    {
+      "key": "iparkdevelopment",
+      "ticker": "294870",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001249"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001249"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260818000088"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250812000514"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250812000523"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hdc",
+      "ticker": "012630",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001262"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001441"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260818000287"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250812000713"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250812000736"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hyundaiwia",
+      "ticker": "011210",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000785"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001049"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002618"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313000158"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813000942"
+          }
+        ]
+      }
+    },
+    {
+      "key": "orionholdings",
+      "ticker": "001800",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000838"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000608"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000993"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318000980"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814000965"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hjheavy",
+      "ticker": "097230",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000606"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001384"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260812000297"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250813000454"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002299"
+          }
+        ]
+      }
+    },
+    {
+      "key": "daewoongpharma",
+      "ticker": "069620",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001528"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001560"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002515"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814004375"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004456"
+          }
+        ]
+      }
+    },
+    {
+      "key": "ottogi",
+      "ticker": "007310",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-08",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000621"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001174"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001966"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318000979"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001938"
+          }
+        ]
+      }
+    },
+    {
+      "key": "miraepref2",
+      "ticker": "00680K",
+      "mode": "shared",
+      "companyRef": "mirae"
     }
   ]
 }

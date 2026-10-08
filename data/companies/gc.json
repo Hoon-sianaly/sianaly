@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "gc",
+    "rank": 201,
+    "name": "녹십자",
+    "ticker": "006280",
+    "type": "제약·바이오 기업"
+  },
+  "overview": {
+    "short": "혈액제제·백신과 의약품을 제조하고 진단 서비스를 제공하는 회사",
+    "summary": "혈액제제·백신과 의약품을 제조하고 진단 서비스를 제공하는 회사입니다. 혈액제제와 백신의 국내외 판매가 중요합니다.",
+    "takeaways": [
+      "혈액제제·백신과 의약품을 제조하고 진단 서비스를 제공하는 회사입니다.",
+      "혈액제제: 혈액에서 유효 성분을 분리해 치료제를 만듭니다.",
+      "백신·의약품: 예방 백신과 전문·일반 의약품을 공급합니다.",
+      "진단 서비스: 자회사를 통해 검체 검사와 유전자 분석 등을 제공합니다.",
+      "혈액제제와 백신의 국내외 판매가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "혈액제제",
+        "desc": "혈액에서 유효 성분을 분리해 치료제를 만듭니다."
+      },
+      {
+        "name": "백신·의약품",
+        "desc": "예방 백신과 전문·일반 의약품을 공급합니다."
+      },
+      {
+        "name": "진단 서비스",
+        "desc": "자회사를 통해 검체 검사와 유전자 분석 등을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매",
+        "desc": "혈액제제와 백신의 국내외 판매가 중요합니다."
+      },
+      {
+        "title": "생산·원료",
+        "desc": "혈장 확보와 공장 가동률·품질 관리가 원가를 바꿉니다."
+      },
+      {
+        "title": "개발·해외",
+        "desc": "신제품 개발비와 해외 판매망 확대 비용을 봐야 합니다."
+      }
+    ],
+    "financialNote": "녹십자홀딩스와 별도 상장된 사업회사입니다. 해외 판매와 연결 자회사 실적을 포함합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.679891941477,
+        "op": 0.032107347889,
+        "net": -0.042637064523,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318001288",
+          "rawKRW": {
+            "sales": "1679891941477",
+            "op": "32107347889",
+            "net": "-42637064523"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.991279093821,
+        "op": 0.069149857151,
+        "net": -0.029685159445,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001316",
+          "rawKRW": {
+            "sales": "1991279093821",
+            "op": "69149857151",
+            "net": "-29685159445"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.500259622106,
+        "op": 0.027371547637,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003655",
+          "rawKRW": {
+            "sales": "500259622106",
+            "op": "27371547637",
+            "net": "32682569868"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.43553183046,
+        "op": 0.011729720249,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002618",
+          "rawKRW": {
+            "sales": "435531830460",
+            "op": "11729720249",
+            "net": "20142230307"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.421179665231,
+        "op": 0.001729683175,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003840",
+          "rawKRW": {
+            "sales": "421179665231",
+            "op": "1729683175",
+            "net": "1050149572"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001316",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002618",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003840",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001288",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003655",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "녹십자 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003840",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "혈액제제",
+      "desc": "사람의 혈액에서 특정 성분을 분리·정제해 만든 치료용 의약품입니다."
+    },
+    {
+      "name": "혈장",
+      "desc": "혈액에서 혈구를 제외한 액체 성분으로, 혈액제제의 원료 등에 쓰입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

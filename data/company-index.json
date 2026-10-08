@@ -1600,17 +1600,98 @@
       "file": "samsungelpref.json",
       "market": "KOSPI",
       "alias": "Samsung Electro Mechanics Preferred 삼성전기우선주"
+    },
+    {
+      "key": "gc",
+      "name": "녹십자",
+      "ticker": "006280",
+      "file": "gc.json",
+      "market": "KOSPI",
+      "alias": "GC Green Cross 지씨 녹십자"
+    },
+    {
+      "key": "hdmarineengine",
+      "name": "HD현대마린엔진",
+      "ticker": "071970",
+      "file": "hdmarineengine.json",
+      "market": "KOSPI",
+      "alias": "HD Hyundai Marine Engine STX중공업"
+    },
+    {
+      "key": "iparkdevelopment",
+      "name": "IPARK현대산업개발",
+      "ticker": "294870",
+      "file": "iparkdevelopment.json",
+      "market": "KOSPI",
+      "alias": "HDC Hyundai Development 현대산업개발 아이파크현대산업개발 IPARK"
+    },
+    {
+      "key": "hdc",
+      "name": "HDC",
+      "ticker": "012630",
+      "file": "hdc.json",
+      "market": "KOSPI",
+      "alias": "HDC Holdings 에이치디씨 현대산업개발지주"
+    },
+    {
+      "key": "hyundaiwia",
+      "name": "현대위아",
+      "ticker": "011210",
+      "file": "hyundaiwia.json",
+      "market": "KOSPI",
+      "alias": "Hyundai Wia 현대 위아"
+    },
+    {
+      "key": "orionholdings",
+      "name": "오리온홀딩스",
+      "ticker": "001800",
+      "file": "orionholdings.json",
+      "market": "KOSPI",
+      "alias": "Orion Holdings 오리온 홀딩스"
+    },
+    {
+      "key": "hjheavy",
+      "name": "HJ중공업",
+      "ticker": "097230",
+      "file": "hjheavy.json",
+      "market": "KOSPI",
+      "alias": "HJ Heavy Industries 한진중공업"
+    },
+    {
+      "key": "daewoongpharma",
+      "name": "대웅제약",
+      "ticker": "069620",
+      "file": "daewoongpharma.json",
+      "market": "KOSPI",
+      "alias": "Daewoong Pharmaceutical 대웅 제약"
+    },
+    {
+      "key": "ottogi",
+      "name": "오뚜기",
+      "ticker": "007310",
+      "file": "ottogi.json",
+      "market": "KOSPI",
+      "alias": "Ottogi Otoki 오뚜기주식회사"
+    },
+    {
+      "key": "miraepref2",
+      "name": "미래에셋증권2우B",
+      "ticker": "00680K",
+      "file": "miraepref2.json",
+      "market": "KOSPI",
+      "alias": "Mirae Asset Securities Preferred 미래에셋증권 2우B"
     }
   ],
   "rankingSnapshot": {
     "asOf": "2026.10.08",
-    "capturedAt": "2026-10-08T12:47:33.933Z",
+    "capturedAt": "2026-10-08T14:20:53.284Z",
     "verifiedAt": "2026.10.08",
     "source": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100",
     "additionalSource": [
       "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100",
-      "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=3&pageSize=100"
+      "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=3&pageSize=100",
+      "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=4&pageSize=100"
     ],
-    "note": "2026.10.08 조회 시점 코스피 시가총액 상위 200개 주식 종목입니다. 우선주는 별도 종목이며 ETF·ETN을 제외합니다. 회사형 인프라 펀드인 맥쿼리인프라는 포함하며 일반 기업과 지표를 구분합니다. 실시간 순위나 확정 종가 목록이 아닙니다."
+    "note": "2026.10.08 조회 시점 코스피 시가총액 상위 210개 주식 종목입니다. 우선주는 별도 종목이며 ETF·ETN을 제외합니다. 회사형 인프라 펀드인 맥쿼리인프라는 포함하며 일반 기업과 지표를 구분합니다. 실시간 순위나 확정 종가 목록이 아닙니다."
   }
 }
