@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hyundaipref1",
+    "rank": 117,
+    "name": "현대차우",
+    "ticker": "005385",
+    "type": "완성차 우선주"
+  },
+  "overview": {
+    "short": "현대자동차의 사업 실적을 공유하는 우선주",
+    "summary": "현대자동차의 사업 실적을 공유하는 우선주입니다. 사업과 실적은 현대자동차 전체 기준이고 주식의 권리는 별도로 확인해야 합니다.",
+    "takeaways": [
+      "현대자동차의 사업 실적을 공유하는 우선주입니다.",
+      "자동차: 현대자동차가 차량을 생산·판매합니다.",
+      "금융: 현대자동차 연결 범위의 금융 사업을 공유합니다.",
+      "우선주: 보통주와 배당·의결권 조건이 다릅니다.",
+      "현대자동차 전체 실적을 함께 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "자동차",
+        "desc": "현대자동차가 차량을 생산·판매합니다."
+      },
+      {
+        "name": "금융",
+        "desc": "현대자동차 연결 범위의 금융 사업을 공유합니다."
+      },
+      {
+        "name": "우선주",
+        "desc": "보통주와 배당·의결권 조건이 다릅니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "본주 실적",
+        "desc": "현대자동차 전체 실적을 함께 확인해야 합니다."
+      },
+      {
+        "title": "배당 조건",
+        "desc": "종류주식의 배당 권리와 조건을 확인해야 합니다."
+      },
+      {
+        "title": "유동성",
+        "desc": "보통주와 가격·거래량이 다를 수 있습니다."
+      }
+    ],
+    "financialNote": "현대자동차 전체의 연결 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "현대자동차"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "hyundai"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001116",
+      "label": "2025년 연간 및 2024년 비교 실적",
+      "asOf": "2025년 연간 및 2024년 비교 실적",
+      "published": "2026.01.29",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://www.hyundai.com/worldwide/en/company/ir/notices/view-0000000373-en-10-1-",
+      "label": "2026년 2분기 연결 잠정실적",
+      "asOf": "2026년 2분기 연결 잠정실적",
+      "published": "2026.07.23",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002418",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "quarter"
+    ],
+    "drivers": [
+      "quarter"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "HEV",
+      "desc": "엔진과 전기모터를 함께 사용하는 하이브리드 차량입니다."
+    },
+    {
+      "name": "ASP",
+      "desc": "판매된 제품 한 대당 평균 판매가격입니다."
+    },
+    {
+      "name": "판매보증충당금",
+      "desc": "향후 차량 보증 수리에 쓸 것으로 예상해 미리 반영하는 비용입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

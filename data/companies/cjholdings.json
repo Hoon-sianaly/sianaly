@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "cjholdings",
+    "rank": 118,
+    "name": "CJ",
+    "ticker": "001040",
+    "type": "생활문화 지주회사"
+  },
+  "overview": {
+    "short": "식품·물류·미디어 등 계열사를 보유한 지주회사",
+    "summary": "식품·물류·미디어 등 계열사를 보유한 지주회사입니다. 주요 자회사의 사업별 실적을 구분해서 봐야 합니다.",
+    "takeaways": [
+      "식품·물류·미디어 등 계열사를 보유한 지주회사입니다.",
+      "식품·바이오: 식품·식품서비스·바이오 계열 사업을 운영합니다.",
+      "물류·유통: 물류와 유통 관련 계열 사업을 보유합니다.",
+      "미디어·관리: 엔터테인먼트·미디어와 그룹 관리 사업을 운영합니다.",
+      "주요 자회사의 사업별 실적을 구분해서 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "식품·바이오",
+        "desc": "식품·식품서비스·바이오 계열 사업을 운영합니다."
+      },
+      {
+        "name": "물류·유통",
+        "desc": "물류와 유통 관련 계열 사업을 보유합니다."
+      },
+      {
+        "name": "미디어·관리",
+        "desc": "엔터테인먼트·미디어와 그룹 관리 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "계열사 손익",
+        "desc": "주요 자회사의 사업별 실적을 구분해서 봐야 합니다."
+      },
+      {
+        "title": "투자·재무",
+        "desc": "자회사 투자·차입과 현금흐름이 중요합니다."
+      },
+      {
+        "title": "연결 범위",
+        "desc": "상장 자회사와 연결 실적의 중복을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "CJ제일제당 등 자회사 실적이 연결 범위에 포함됩니다. 지주회사와 자회사의 매출을 단순 합산하지 않습니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 43.64665609,
+        "op": 2.547483645,
+        "net": 0.151195776,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250325000721",
+          "rawKRW": {
+            "sales": "43646656090000",
+            "op": "2547483645000",
+            "net": "151195776000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 45.018829227,
+        "op": 2.527738458,
+        "net": 0.142631457,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001509",
+          "rawKRW": {
+            "sales": "45018829227000",
+            "op": "2527738458000",
+            "net": "142631457000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 11.119028491,
+        "op": 0.618771596,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001942",
+          "rawKRW": {
+            "sales": "11119028491000",
+            "op": "618771596000",
+            "net": "363269578000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 11.45116691,
+        "op": 0.460684834,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001949",
+          "rawKRW": {
+            "sales": "11451166910000",
+            "op": "460684834000",
+            "net": "174329561000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 11.528095125,
+        "op": 0.531755302,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002852",
+          "rawKRW": {
+            "sales": "11528095125000",
+            "op": "531755302000",
+            "net": "155627641000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001509",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001949",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002852",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250325000721",
+      "published": "2025.03.25",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001942",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "CJ 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002852",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
