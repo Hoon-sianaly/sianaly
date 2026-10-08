@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ecopromaterials",
+    "rank": 146,
+    "name": "에코프로머티",
+    "ticker": "450080",
+    "type": "배터리 전구체 기업"
+  },
+  "overview": {
+    "short": "이차전지 양극재용 전구체와 금속 원료를 생산하는 회사",
+    "summary": "이차전지 양극재용 전구체와 금속 원료를 생산하는 회사입니다. 양극재 고객의 주문과 재고 조정이 중요합니다.",
+    "takeaways": [
+      "이차전지 양극재용 전구체와 금속 원료를 생산하는 회사입니다.",
+      "전구체: 배터리 양극재 제조에 쓰이는 전구체를 생산합니다.",
+      "원료 제련: 니켈 등 핵심 금속 원료를 제련합니다.",
+      "고객 공급: 배터리 소재 고객에 제품을 공급하고 품질을 관리합니다.",
+      "양극재 고객의 주문과 재고 조정이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "전구체",
+        "desc": "배터리 양극재 제조에 쓰이는 전구체를 생산합니다."
+      },
+      {
+        "name": "원료 제련",
+        "desc": "니켈 등 핵심 금속 원료를 제련합니다."
+      },
+      {
+        "name": "고객 공급",
+        "desc": "배터리 소재 고객에 제품을 공급하고 품질을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "배터리 수요",
+        "desc": "양극재 고객의 주문과 재고 조정이 중요합니다."
+      },
+      {
+        "title": "금속·재고",
+        "desc": "니켈·코발트 가격과 재고 평가를 확인해야 합니다."
+      },
+      {
+        "title": "설비 효율",
+        "desc": "가동률·수율과 신규 투자 부담을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "현재 확인된 재무제표는 별도 기준입니다. 에코프로 그룹 전체의 연결 실적과 구분합니다. 별도 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.299846484651,
+        "op": -0.064719926202,
+        "net": -0.042686351369,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250402002504",
+          "rawKRW": {
+            "sales": "299846484651",
+            "op": "-64719926202",
+            "net": "-42686351369"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.392506172705,
+        "op": -0.065369476119,
+        "net": 0.024103738371,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320000475",
+          "rawKRW": {
+            "sales": "392506172705",
+            "op": "-65369476119",
+            "net": "24103738371"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.078068573064,
+        "op": -0.028789921739,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003723",
+          "rawKRW": {
+            "sales": "78068573064",
+            "op": "-28789921739",
+            "net": "-33501838342"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.099029327769,
+        "op": 0.002325479774,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002122",
+          "rawKRW": {
+            "sales": "99029327769",
+            "op": "2325479774",
+            "net": "12633958819"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.11691325222,
+        "op": -0.009973303312,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001623",
+          "rawKRW": {
+            "sales": "116913252220",
+            "op": "-9973303312",
+            "net": "1261009066"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000475",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002122",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001623",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402002504",
+      "published": "2025.04.02",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003723",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "에코프로머티 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001623",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

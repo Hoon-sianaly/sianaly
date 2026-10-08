@@ -8,6 +8,8 @@ on:
     paths:
       - '.github/workflows/dart-update.yml'
       - 'scripts/dart-actions.cjs'
+      - 'scripts/dart-portfolio.cjs'
+      - 'data/dart-companies.json'
 permissions:
   contents: write
 concurrency:
@@ -33,6 +35,10 @@ jobs:
           node scripts/test-dart-update.cjs
           node scripts/test-dart-actions.cjs
           node scripts/validate-data.cjs
+          node scripts/test-company-data.cjs
+          node scripts/test-search.cjs
+          node scripts/test-insights.cjs
+          node scripts/test-financial-format.cjs
       - name: Collect, publish and verify new disclosures
         env:
           OPENDART_API_KEY: ${{ secrets.OPENDART_API_KEY }}

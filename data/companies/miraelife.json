@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "miraelife",
+    "rank": 144,
+    "name": "미래에셋생명",
+    "ticker": "085620",
+    "type": "생명보험 기업"
+  },
+  "overview": {
+    "short": "생명보험 상품과 보험자산 운용을 수행하는 회사",
+    "summary": "생명보험 상품과 보험자산 운용을 수행하는 회사입니다. 신계약의 수익성과 보험계약서비스마진이 중요합니다.",
+    "takeaways": [
+      "생명보험 상품과 보험자산 운용을 수행하는 회사입니다.",
+      "생명보험: 보장성·저축성 등 생명보험을 제공합니다.",
+      "변액·연금: 변액보험·연금 등 장기 금융 상품을 운영합니다.",
+      "자산운용: 보험계약 관련 자산을 운용합니다.",
+      "신계약의 수익성과 보험계약서비스마진이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "생명보험",
+        "desc": "보장성·저축성 등 생명보험을 제공합니다."
+      },
+      {
+        "name": "변액·연금",
+        "desc": "변액보험·연금 등 장기 금융 상품을 운영합니다."
+      },
+      {
+        "name": "자산운용",
+        "desc": "보험계약 관련 자산을 운용합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "계약 수익성",
+        "desc": "신계약의 수익성과 보험계약서비스마진이 중요합니다."
+      },
+      {
+        "title": "시장 변동",
+        "desc": "금리·금융시장 변화와 운용 손익을 봐야 합니다."
+      },
+      {
+        "title": "자본 관리",
+        "desc": "지급여력과 계약 가정·비용 변화를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 보험수익·영업이익 기준입니다. 수입보험료·변액보험 적립금과 보험수익을 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.963967420192,
+        "op": 0.122130494168,
+        "net": 0.136114870311,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814003144",
+          "rawKRW": {
+            "sales": "963967420192",
+            "op": "122130494168",
+            "net": "136114870311"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.080411547554,
+        "op": 0.194511640633,
+        "net": 0.13077643154,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260721001043",
+          "rawKRW": {
+            "sales": "1080411547554",
+            "op": "194511640633",
+            "net": "130776431540"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.261692153137,
+        "op": 0.065038991669,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250829002124",
+          "rawKRW": {
+            "sales": "261692153137",
+            "op": "65038991669",
+            "net": "50692164966"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.288066697379,
+        "op": 0.068388520759,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260529001897",
+          "rawKRW": {
+            "sales": "288066697379",
+            "op": "68388520759",
+            "net": "53392139983"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.30631147476,
+        "op": 0.023649548586,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260831001303",
+          "rawKRW": {
+            "sales": "306311474760",
+            "op": "23649548586",
+            "net": "17970234609"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    },
+    "metrics": {
+      "sales": {
+        "label": "보험수익",
+        "help": "IFRS 17 보험계약 서비스를 제공하며 인식한 보험수익입니다. 수입보험료와 구분합니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "동일한 연결 범위의 영업이익입니다. 투자·보험·비은행 손익을 포함할 수 있으며 순이익과 다릅니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721001043",
+      "published": "2026.07.21",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260529001897",
+      "published": "2026.05.29",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001303",
+      "published": "2026.08.31",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003144",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250829002124",
+      "published": "2025.08.29",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "미래에셋생명 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001303",
+      "published": "2026.08.31",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

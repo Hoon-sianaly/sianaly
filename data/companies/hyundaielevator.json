@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hyundaielevator",
+    "rank": 143,
+    "name": "현대엘리베이터",
+    "ticker": "017800",
+    "type": "승강기 기업"
+  },
+  "overview": {
+    "short": "엘리베이터·에스컬레이터와 유지보수 서비스를 제공하는 회사",
+    "summary": "엘리베이터·에스컬레이터와 유지보수 서비스를 제공하는 회사입니다. 신규 건물 착공과 승강기 설치 수주가 중요합니다.",
+    "takeaways": [
+      "엘리베이터·에스컬레이터와 유지보수 서비스를 제공하는 회사입니다.",
+      "승강기 제조: 엘리베이터·에스컬레이터·무빙워크를 생산합니다.",
+      "설치: 건물과 시설에 승강기를 설치합니다.",
+      "유지보수: 설치된 승강기의 점검·정비·교체 서비스를 제공합니다.",
+      "신규 건물 착공과 승강기 설치 수주가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "승강기 제조",
+        "desc": "엘리베이터·에스컬레이터·무빙워크를 생산합니다."
+      },
+      {
+        "name": "설치",
+        "desc": "건물과 시설에 승강기를 설치합니다."
+      },
+      {
+        "name": "유지보수",
+        "desc": "설치된 승강기의 점검·정비·교체 서비스를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 수요",
+        "desc": "신규 건물 착공과 승강기 설치 수주가 중요합니다."
+      },
+      {
+        "title": "서비스 기반",
+        "desc": "유지보수 계약과 교체 수요를 확인해야 합니다."
+      },
+      {
+        "title": "원가·납기",
+        "desc": "자재·설치 인력 비용과 공정 일정을 함께 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.885296849309,
+        "op": 0.225738463277,
+        "net": 0.193928194856,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000920",
+          "rawKRW": {
+            "sales": "2885296849309",
+            "op": "225738463277",
+            "net": "193928194856"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 2.467378018763,
+        "op": 0.209221822358,
+        "net": 0.269282572016,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001372",
+          "rawKRW": {
+            "sales": "2467378018763",
+            "op": "209221822358",
+            "net": "269282572016"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.637507149931,
+        "op": 0.055453737223,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001633",
+          "rawKRW": {
+            "sales": "637507149931",
+            "op": "55453737223",
+            "net": "52546148796"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.545847163885,
+        "op": 0.040486466882,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002809",
+          "rawKRW": {
+            "sales": "545847163885",
+            "op": "40486466882",
+            "net": "27068395335"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.692843740386,
+        "op": 0.084478649452,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003691",
+          "rawKRW": {
+            "sales": "692843740386",
+            "op": "84478649452",
+            "net": "166912467858"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001372",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002809",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003691",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000920",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001633",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "현대엘리베이터 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003691",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
