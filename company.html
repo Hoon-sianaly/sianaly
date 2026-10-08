@@ -86,10 +86,10 @@ function comparisonChart(rows){
   const slots=(right-left)/Math.max(rows.length,1), width=Math.min(48,slots*0.5);
   const labels=rows.map(r=>`${r.periodLabel || (r.quarter?r.quarter+"분기":r.period)}: ${formatFinancialHighlight(r[m.field])}`).join(", ");
   return `<figure class="metric-panel"><figcaption>${esc(m.title)}</figcaption><svg class="vertical-chart" viewBox="0 0 370 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
-  ${ticks.map(value=>`<line x1="${left}" y1="${y(value)}" x2="${right}" y2="${y(value)}" stroke="${value===0?"#94a3b8":"#e2e8f0"}"/><text x="${left-8}" y="${y(value)+4}" text-anchor="end" class="axis-label">${formatFinancialNumber(value)}${value===0?"":unit.label.replace(/원$/,"")||"원"}</text>`).join("")}
+  ${ticks.map(value=>`<line x1="${left}" y1="${y(value)}" x2="${right}" y2="${y(value)}" stroke="${value===0?"#94a3b8":"#e2e8f0"}"/><text x="${left-8}" y="${y(value)+4}" text-anchor="end" class="axis-label">${formatFinancialNumber(value)}</text>`).join("")}
   ${rows.map((r,i)=>{const value=r[m.field]*unit.factor,x=left+slots*(i+0.5),pos=y(value);return `<rect x="${x-width/2}" y="${Math.min(pos,zero)}" width="${width}" height="${Math.abs(zero-pos)}" rx="3" fill="${value<0?"#dc2626":m.color}"/><text x="${x}" y="${value<0?pos+15:pos-8}" text-anchor="middle" class="value-label">${formatFinancialHighlight(r[m.field])}</text><text x="${x}" y="238" text-anchor="middle" class="axis-label">${esc(r.periodLabel || (r.quarter?r.quarter+"분기":r.period))}</text>`}).join("")}
   </svg></figure>`;
- }).join("")}</div><p class="chart-reading">${salesLabel}과 ${opLabel}은 눈금이 다르므로 같은 그래프 안에서 기간별 변화를 비교해 주세요. 금액은 규모에 따라 조원·억원·만원·원으로 표시하며, 단위는 막대 위 금액과 왼쪽 눈금에 함께 표시합니다. 조원은 소수점 둘째 자리까지, 그보다 작은 단위는 정수로 반올림합니다.${rows.some(r=>r.op<0)?(c.financialMetrics.op.label==="영업이익"?" 영업손실은 0선 아래에 표시합니다.":" 손실은 0선 아래에 표시합니다."):""}</p>`;
+ }).join("")}</div><p class="chart-reading">${salesLabel}과 ${opLabel}은 눈금이 다르므로 같은 그래프 안에서 기간별 변화를 비교해 주세요. 금액은 규모에 따라 조원·억원·만원·원으로 표시하며, 단위는 막대 위 금액에 표시합니다. 조원은 소수점 둘째 자리까지, 그보다 작은 단위는 정수로 반올림합니다.${rows.some(r=>r.op<0)?(c.financialMetrics.op.label==="영업이익"?" 영업손실은 0선 아래에 표시합니다.":" 손실은 0선 아래에 표시합니다."):""}</p>`;
 }
 function chart(rows){return comparisonChart(rows)}
 function twoMetricChart(rows){return comparisonChart(rows)}

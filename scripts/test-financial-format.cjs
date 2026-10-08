@@ -6,7 +6,7 @@ const html=fs.readFileSync(path.join(root,'company.html'),'utf8');ctx.c={financi
 vm.runInContext(html.slice(html.indexOf('function comparisonChart('),html.indexOf('function chart(')),ctx);
 const rows=[{period:'2024',sales:1.23,op:.05},{period:'2025',sales:2,op:-.00004}],chart=ctx.comparisonChart(rows);
 assert(!chart.includes('단위:'));
-assert(chart.includes('조</text>')&&chart.includes('억</text>'));
+assert(!chart.includes('조</text>')&&!chart.includes('억</text>'));
 assert(chart.includes('500억원')&&chart.includes('-4,000만원')&&chart.includes('fill="#dc2626"'));
 assert(!chart.includes('>0.0</text>'));
 // Even with a trillion-scale comparison, small profits keep their own readable label.
