@@ -84,6 +84,16 @@ function validateFinancials(record, seen = []) {
   }
   assert.deepEqual([...new Set(quarters.flatMap(row=>row.sourceIds))].sort(),[...annual.sourceIds].sort(),`Annual sum source mismatch: ${key}`);
  }
+ for(const row of financials.quarterly.filter(row=>row.derivation==='six-month-minus-first-three-month')){
+  const total=financials.annual.find(r=>r.year===row.year),first=financials.quarterly.find(r=>r.year===row.year&&r.quarter===1);
+  assert.equal(financials.annualTerm,'6개월 결산');
+  assert.equal(row.quarter,2);assert.ok(total&&first,`Missing subtraction periods: ${key}`);
+  for(const field of ['sales','op']){
+   for(const item of [row,total,first]){assert.match(item.reportedKRW?.[field]||'',/^-?\d+$/);assert.equal(item[field],Number(item.reportedKRW[field])/1e12);}
+   assert.equal(row.reportedKRW[field],String(BigInt(total.reportedKRW[field])-BigInt(first.reportedKRW[field])),`Three-month subtraction mismatch: ${key}/${row.year}/${field}`);
+  }
+  assert.deepEqual([...row.sourceIds].sort(),[...new Set([...total.sourceIds,...first.sourceIds])].sort(),`Subtraction source mismatch: ${key}`);
+ }
 }
 for (const record of records.values()) validateFinancials(record);
 for (const record of records.values()) {

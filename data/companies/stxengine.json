@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "stxengine",
+    "rank": 250,
+    "name": "STX엔진",
+    "ticker": "077970",
+    "type": "엔진·방산 기업"
+  },
+  "overview": {
+    "short": "선박·산업·방산 엔진과 전자통신 장비를 만드는 회사",
+    "summary": "선박·산업·방산 엔진과 전자통신 장비를 만드는 회사입니다. 조선·방산 고객의 발주와 납품 일정이 중요합니다.",
+    "takeaways": [
+      "선박·산업·방산 엔진과 전자통신 장비를 만드는 회사입니다.",
+      "민수 엔진: 선박·발전·산업용 디젤엔진과 부품을 공급합니다.",
+      "방산 엔진: 전차·자주포·함정용 엔진을 공급합니다.",
+      "전자통신: 수중음향·전파탐지 등 방산 장비를 만듭니다.",
+      "조선·방산 고객의 발주와 납품 일정이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "민수 엔진",
+        "desc": "선박·발전·산업용 디젤엔진과 부품을 공급합니다."
+      },
+      {
+        "name": "방산 엔진",
+        "desc": "전차·자주포·함정용 엔진을 공급합니다."
+      },
+      {
+        "name": "전자통신",
+        "desc": "수중음향·전파탐지 등 방산 장비를 만듭니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "수주·납품",
+        "desc": "조선·방산 고객의 발주와 납품 일정이 중요합니다."
+      },
+      {
+        "title": "제품·서비스",
+        "desc": "엔진·부품·정비와 전자 장비 구성을 봐야 합니다."
+      },
+      {
+        "title": "원가·개발",
+        "desc": "개발·부품 조달·생산 비용이 이익을 바꿉니다."
+      }
+    ],
+    "financialNote": "HD현대마린엔진과 다른 상장회사입니다. 민수·특수 엔진과 전자통신의 연결 실적입니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.724609807886,
+        "op": 0.042236835042,
+        "net": 0.027215787172,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321000939",
+          "rawKRW": {
+            "sales": "724609807886",
+            "op": "42236835042",
+            "net": "27215787172"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.789341914687,
+        "op": 0.069592939476,
+        "net": 0.068948215486,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000690",
+          "rawKRW": {
+            "sales": "789341914687",
+            "op": "69592939476",
+            "net": "68948215486"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.213655135457,
+        "op": 0.033347615287,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001270",
+          "rawKRW": {
+            "sales": "213655135457",
+            "op": "33347615287",
+            "net": "29714152571"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.189010554706,
+        "op": 0.017503518774,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000757",
+          "rawKRW": {
+            "sales": "189010554706",
+            "op": "17503518774",
+            "net": "16667605198"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.212989808009,
+        "op": 0.024960663726,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001988",
+          "rawKRW": {
+            "sales": "212989808009",
+            "op": "24960663726",
+            "net": "22156309088"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000690",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000757",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001988",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321000939",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001270",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "STX엔진 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001988",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "방산",
+      "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
