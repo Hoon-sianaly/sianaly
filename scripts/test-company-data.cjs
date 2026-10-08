@@ -42,6 +42,10 @@ function context(key, transform, failed = false) {
   }
   assert.equal((out.match(/class="vertical-chart"/g)||[]).length,4);
   assert.ok(!out.includes("undefined") && !out.includes("NaN"),entry.key);
+  if(entry.key==='shinyoung'){
+   assert.ok(out.includes('2025.04–2026.03')&&out.includes('2026.04–06 (회계 1분기)'), 'Actual fiscal reporting dates must be visible');
+   assert.ok(!out.includes('1분기: 1–3월'), 'Fiscal quarter must not use calendar-month guidance');
+  }
   assert.equal(JSON.parse(state.storage.get("sianalyRecent"))[0].key,entry.key);
   assert.ok(!out.includes("주가와 밸류에이션"),entry.key);
   assert.ok(out.includes("공식 자료") && !out.includes("발표 null"),entry.key);

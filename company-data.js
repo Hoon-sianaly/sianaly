@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261008-kospi160-1";
+const COMPANY_DATA_VERSION = "20261008-kospi170-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -60,11 +60,13 @@ function companyPageData(record) {
  return {
   ...record.profile, ...record.overview, ...record.market,
   marketDate:record.market.date,
-  annual:annual.map(row => ({...row,period:String(row.year)})),
-  quarterly:quarterly.map(row => ({...row,period:`${row.quarter}Q ${row.year}`})),
+  annual:annual.map(row => ({...row,period:row.periodLabel || String(row.year)})),
+  quarterly:quarterly.map(row => ({...row,period:row.periodLabel || `${row.quarter}Q ${row.year}`})),
   allQuarters,
   latestQuarter, quarterlyYear:latestQuarter?.year || "",
   latestYear:String(latest?.year || ""),
+  annualPeriodLabel:latest?.reportPeriod || "",
+  quarterlyCalendarNote:financials.quarterlyCalendarNote || "",
   latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),
   latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),
   latestNet:latest?.net == null ? null : formatFinancialHighlight(latest.net),
