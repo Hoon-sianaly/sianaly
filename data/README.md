@@ -28,8 +28,11 @@
 ## 기업 추가·업데이트
 
 1. 기존 기업 JSON 구조를 참고해 새 파일을 만들고 공식 자료로 내용을 채웁니다. 금융회사 등 업종별 설명 방식은 별도로 검토합니다.
+   - 삼성전자와 동일하게 5줄 소개·주요 사업·핵심 변수·실적·출처·용어 설명을 한 묶음으로 검토합니다. 용어 설명을 후순위로 미루지 않습니다.
+   - 본문·재무 기준·지표 도움말에 나오는 어려운 용어를 쉬운 한국어로 설명하고 `glossary`에 저장합니다. 본문에 없는 용어를 채우기 위해 넣지 않습니다. 실제로 설명할 용어가 없을 때만 빈 배열을 허용하며 화면과 목차에서 숨깁니다.
+   - `scripts/glossary-rules.cjs`는 알려진 전문용어의 누락을 검사합니다. 새로운 업종·기술 용어는 수동으로 본문을 읽어 확인하고 규칙에 추가합니다. 이 검사 통과만으로 전체 설명 검토를 대신하지 않습니다.
 2. 기업 목록에 고유한 키·종목코드와 파일을 등록합니다.
-3. `node scripts/validate-data.cjs`, `node scripts/test-company-data.cjs`, `node scripts/test-search.cjs`, `node scripts/test-insights.cjs`, `node scripts/test-financial-format.cjs`를 실행합니다.
+3. `node scripts/validate-data.cjs`, `node scripts/test-glossary.cjs`, `node scripts/test-company-data.cjs`, `node scripts/test-search.cjs`, `node scripts/test-insights.cjs`, `node scripts/test-financial-format.cjs`를 실행합니다.
 4. 데이터 파일을 바꿨다면 `company-data.js`의 `COMPANY_DATA_VERSION`과 `company.html`·`index.html`의 스크립트 버전을 함께 올립니다. 캐시로 서로 다른 버전이 섞이는 것을 방지합니다.
 5. 개발 사이트에서 화면·검색 연결·최근 본 기업·모바일 표시를 확인합니다.
 

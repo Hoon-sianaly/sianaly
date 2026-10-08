@@ -1,6 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const assert = require("node:assert/strict");
+const { requiredTerms, hasExplanation } = require("./glossary-rules.cjs");
 const root = path.resolve(__dirname, "..");
 const catalog = JSON.parse(fs.readFileSync(path.join(root, "data/company-index.json"), "utf8"));
 const records = new Map();
@@ -72,4 +73,17 @@ function validateFinancials(record, seen = []) {
  }
 }
 for (const record of records.values()) validateFinancials(record);
+for (const record of records.values()) {
+ assert.ok(Array.isArray(record.glossary), `Missing glossary review: ${record.profile.key}`);
+ const names = new Set();
+ for (const term of record.glossary) {
+  assert.ok(term.name?.trim() && term.desc?.trim(), `Empty glossary explanation: ${record.profile.key}`);
+  assert.ok(!names.has(term.name), `Duplicate glossary term: ${record.profile.key}/${term.name}`);
+  names.add(term.name);
+ }
+ const financials = record.financials.companyRef ? records.get(record.financials.companyRef).financials : record.financials;
+ for (const [name] of requiredTerms(record, financials)) {
+  assert.ok(hasExplanation(record.glossary, name), `Missing glossary explanation: ${record.profile.key}/${name}`);
+ }
+}
 console.log(`Data validation passed: ${records.size} companies. Unverified existing records retain their unverified status.`);
