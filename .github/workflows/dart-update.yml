@@ -1,0 +1,40 @@
+name: DART disclosure updates
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/dart-update.yml'
+      - 'scripts/dart-actions.cjs'
+permissions:
+  contents: write
+concurrency:
+  group: dart-disclosure-updates
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify financial pipeline
+        run: |
+          node scripts/test-dart-disclosures.cjs
+          node scripts/test-dart-core.cjs
+          node scripts/test-dart-portfolio.cjs
+          node scripts/test-dart-samsung.cjs
+          node scripts/test-dart-update.cjs
+          node scripts/test-dart-actions.cjs
+          node scripts/validate-data.cjs
+      - name: Collect, publish and verify new disclosures
+        env:
+          OPENDART_API_KEY: ${{ secrets.OPENDART_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/dart-actions.cjs
