@@ -77,11 +77,33 @@
       },
       {
         "year": 2025,
-        "sales": 186.2545,
-        "op": 11.4679,
+        "sales": 186.254472,
+        "op": 11.467851,
         "sourceIds": [
-          "annual"
-        ]
+          "dart-2025-annual"
+        ],
+        "net": 10.364775,
+        "dart": {
+          "receipt": "20260318001394",
+          "rawKRW": {
+            "sales": "186254472000000",
+            "op": "11467851000000",
+            "net": "10364775000000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "quarterly": [
@@ -91,8 +113,29 @@
         "sales": 45.938886,
         "op": 2.514686,
         "sourceIds": [
-          "quarter"
-        ]
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002418",
+          "rawKRW": {
+            "sales": "45938886000000",
+            "op": "2514686000000",
+            "net": "2584926000000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       },
       {
         "year": 2026,
@@ -100,8 +143,29 @@
         "sales": 49.215328,
         "op": 2.850888,
         "sourceIds": [
-          "quarter"
-        ]
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003521",
+          "rawKRW": {
+            "sales": "49215328000000",
+            "op": "2850888000000",
+            "net": "2887962000000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "highlightFormat": "mixed",
@@ -114,6 +178,11 @@
         "label": "영업이익",
         "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
       }
+    },
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
     }
   },
   "sources": [
@@ -132,6 +201,27 @@
       "asOf": "2026년 2분기 연결 잠정실적",
       "published": "2026.07.23",
       "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002418",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
     }
   ],
   "sectionSourceIds": {

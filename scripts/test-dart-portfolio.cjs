@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict');
+const {applyRows}=require('./dart-portfolio.cjs'),{normalize}=require('./dart-core.cjs');
+const company={key:'sample',ticker:'123456',corpCode:'00123456',currency:'KRW',fsDiv:'OFS',salesLabel:'매출',opLabel:'영업이익'};
+const p={year:2026,report:'11012'},r={corp_code:'00123456',bsns_year:'2026',reprt_code:'11012',sj_div:'IS',currency:'KRW',fs_div:'OFS',rcept_no:'20260814000001'};
+const payload={status:'000',list:[{...r,account_id:'ifrs-full_Revenue',thstrm_amount:'1000000000000'},{...r,account_id:'dart_OperatingIncomeLoss',thstrm_amount:'-50000000000'}]};
+const row=normalize(payload,company,p),base={profile:{key:'sample',ticker:'123456'},overview:{summary:'Keep text'},financials:{basis:'separate',unit:'KRW_trillion',annual:[],quarterly:[{year:2026,quarter:2,sales:1,op:-.05,sourceIds:['old']}]},sources:[{id:'old',url:'https://example.com'}]};
+const original=JSON.stringify(base),result=applyRows(base,[row],company,'2026-10-08');
+assert.equal(result.changes.length,1);assert.equal(JSON.stringify(base),original);assert.deepEqual(result.record.overview,base.overview);assert.equal(result.record.sources.at(-1).label,'2026년 2분기 별도 재무제표 · DART');
+assert.equal(applyRows(result.record,[row],company,'2026-10-09').changes.length,0);
+assert.throws(()=>applyRows(base,[{...row,sales:2,rawKRW:{...row.rawKRW,sales:'2000000000000'}}],company,'2026-10-08'),/Uncalibrated/);
+assert.throws(()=>applyRows(base,[{...row,sales:2}],company,'2026-10-08'),/amount/);
+assert.throws(()=>applyRows(base,[row],{...company,fsDiv:'CFS'},'2026-10-08'),/basis/);
+assert.throws(()=>applyRows(base,[{...row,year:2027}],company,'2026-10-08'),/period/);
+const corrected={...row,op:-.06,rawKRW:{...row.rawKRW,op:'-60000000000'},receipt:'20261008000001'};assert.equal(applyRows(result.record,[corrected],company,'2026-10-08').changes.length,1);
+console.log('PASS: portfolio isolation, original-value gates, separate statements, idempotence, corrections and preservation of company content.');

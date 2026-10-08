@@ -1,18 +1,20 @@
 {
-  "schemaVersion": 2,
-  "source": "https://opendart.fss.or.kr/api/corpCode.xml",
+  "schemaVersion": 1,
+  "asOf": "2026-10-08",
+  "stocks": 100,
+  "issuers": 98,
+  "automaticIssuers": 90,
+  "fullyValidatedIssuers": 68,
+  "partiallyValidatedIssuers": 22,
+  "reviewIssuers": 8,
+  "sharedStocks": 2,
   "companies": [
     {
       "key": "samsung",
       "ticker": "005930",
-      "corpCode": "00126380",
-      "corpName": "삼성전자",
-      "modified": "20251201",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -58,14 +60,9 @@
     {
       "key": "hynix",
       "ticker": "000660",
-      "corpCode": "00164779",
-      "corpName": "SK하이닉스",
-      "modified": "20240328",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -93,20 +90,15 @@
     {
       "key": "samsungpref",
       "ticker": "005935",
-      "companyRef": "samsung",
-      "mode": "shared"
+      "mode": "shared",
+      "companyRef": "samsung"
     },
     {
       "key": "sksquare",
       "ticker": "402340",
-      "corpCode": "01596425",
-      "corpName": "SK스퀘어",
-      "modified": "20260326",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -134,14 +126,9 @@
     {
       "key": "samsungel",
       "ticker": "009150",
-      "corpCode": "00126371",
-      "corpName": "삼성전기",
-      "modified": "20230102",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -169,14 +156,9 @@
     {
       "key": "lges",
       "ticker": "373220",
-      "corpCode": "01515323",
-      "corpName": "LG에너지솔루션",
-      "modified": "20250812",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -204,14 +186,9 @@
     {
       "key": "hyundai",
       "ticker": "005380",
-      "corpCode": "00164742",
-      "corpName": "현대자동차",
-      "modified": "20260331",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -239,14 +216,16 @@
     {
       "key": "kb",
       "ticker": "105560",
-      "corpCode": "00688996",
-      "corpName": "KB금융",
-      "modified": "20250108",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "총영업이익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260619000667",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -272,27 +251,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260619000667",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "samsungbio",
       "ticker": "207940",
-      "corpCode": "00877059",
-      "corpName": "삼성바이오로직스",
-      "modified": "20240701",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -320,14 +286,9 @@
     {
       "key": "samsunglife",
       "ticker": "032830",
-      "corpCode": "00126256",
-      "corpName": "삼성생명",
-      "modified": "20240322",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "보험서비스손익",
-      "opLabel": "지배주주 순이익",
       "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -360,14 +321,9 @@
     {
       "key": "samsungcnt",
       "ticker": "028260",
-      "corpCode": "00149655",
-      "corpName": "삼성물산",
-      "modified": "20260323",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -395,14 +351,9 @@
     {
       "key": "doosan",
       "ticker": "034020",
-      "corpCode": "00159616",
-      "corpName": "두산에너빌리티",
-      "modified": "20260320",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -430,14 +381,9 @@
     {
       "key": "hanwhaaero",
       "ticker": "012450",
-      "corpCode": "00126566",
-      "corpName": "한화에어로스페이스",
-      "modified": "20260921",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -465,14 +411,9 @@
     {
       "key": "shinhan",
       "ticker": "055550",
-      "corpCode": "00382199",
-      "corpName": "신한지주",
-      "modified": "20250908",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "경비 차감 전 영업이익",
-      "opLabel": "지배주주 순이익",
       "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -502,14 +443,9 @@
     {
       "key": "sdi",
       "ticker": "006400",
-      "corpCode": "00126362",
-      "corpName": "삼성SDI",
-      "modified": "20260306",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -537,14 +473,9 @@
     {
       "key": "kia",
       "ticker": "000270",
-      "corpCode": "00106641",
-      "corpName": "기아",
-      "modified": "20260709",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -567,36 +498,14 @@
             "receipt": "20260916000427"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2026,
-          "quarter": 2,
-          "receipt": "20260916000427",
-          "values": {
-            "sales": "33037055000000",
-            "op": "2628559000000",
-            "net": "2327742000000"
-          },
-          "previous": {
-            "sales": 33.037,
-            "op": 2.6285
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "celltrion",
       "ticker": "068270",
-      "corpCode": "00413046",
-      "corpName": "셀트리온",
-      "modified": "20260325",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -624,14 +533,9 @@
     {
       "key": "hhi",
       "ticker": "329180",
-      "corpCode": "01390344",
-      "corpName": "HD현대중공업",
-      "modified": "20260401",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -659,14 +563,9 @@
     {
       "key": "sk",
       "ticker": "034730",
-      "corpCode": "00181712",
-      "corpName": "SK",
-      "modified": "20240328",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -694,14 +593,9 @@
     {
       "key": "hana",
       "ticker": "086790",
-      "corpCode": "00547583",
-      "corpName": "하나금융지주",
-      "modified": "20260930",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "일반영업이익",
-      "opLabel": "영업이익",
       "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -731,14 +625,9 @@
     {
       "key": "lge",
       "ticker": "066570",
-      "corpCode": "00401731",
-      "corpName": "LG전자",
-      "modified": "20260324",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -766,14 +655,9 @@
     {
       "key": "mobis",
       "ticker": "012330",
-      "corpCode": "00164788",
-      "corpName": "현대모비스",
-      "modified": "20250312",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -801,14 +685,16 @@
     {
       "key": "lselectric",
       "ticker": "010120",
-      "corpCode": "00105855",
-      "corpName": "엘에스일렉트릭",
-      "modified": "20250326",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260318001243",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -834,27 +720,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260318001243",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "naver",
       "ticker": "035420",
-      "corpCode": "00266961",
-      "corpName": "NAVER",
-      "modified": "20240311",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -882,14 +755,9 @@
     {
       "key": "samsungfire",
       "ticker": "000810",
-      "corpCode": "00139214",
-      "corpName": "삼성화재해상보험",
-      "modified": "20240321",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "보험수익",
-      "opLabel": "영업이익",
       "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -922,14 +790,22 @@
     {
       "key": "skinnovation",
       "ticker": "096770",
-      "corpCode": "00631518",
-      "corpName": "SK이노베이션",
-      "modified": "20260609",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260316000827",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260515001455",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -956,33 +832,14 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260316000827",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        },
-        {
-          "year": 2026,
-          "report": "11013",
-          "receipt": "20260515001455",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "hanmi",
       "ticker": "042700",
-      "corpCode": "00161383",
-      "corpName": "한미반도체",
-      "modified": "20240328",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1022,14 +879,9 @@
     {
       "key": "woori",
       "ticker": "316140",
-      "corpCode": "01350869",
-      "corpName": "우리금융지주",
-      "modified": "20230327",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "순이자이익",
-      "opLabel": "지배주주순이익",
       "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1069,14 +921,9 @@
     {
       "key": "hyosung",
       "ticker": "298040",
-      "corpCode": "01316245",
-      "corpName": "효성중공업",
-      "modified": "20240326",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1105,36 +952,14 @@
             "receipt": "20250814003328"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2025,
-          "quarter": 2,
-          "receipt": "20250814003328",
-          "values": {
-            "sales": "1525284991620",
-            "op": "164261404691",
-            "net": "87348730741"
-          },
-          "previous": {
-            "sales": 1.5253,
-            "op": 0.1642
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "posco",
       "ticker": "005490",
-      "corpCode": "00155319",
-      "corpName": "POSCO홀딩스",
-      "modified": "20250321",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1168,14 +993,16 @@
     {
       "key": "ocean",
       "ticker": "042660",
-      "corpCode": "00111704",
-      "corpName": "한화오션",
-      "modified": "20260306",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260317000644",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1207,27 +1034,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260317000644",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "hdelectric",
       "ticker": "267260",
-      "corpCode": "01205851",
-      "corpName": "HD현대일렉트릭",
-      "modified": "20250326",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1261,14 +1075,22 @@
     {
       "key": "doosancorp",
       "ticker": "000150",
-      "corpCode": "00117212",
-      "corpName": "두산",
-      "modified": "20260506",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260515001456",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814003955",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1301,33 +1123,21 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2026,
-          "report": "11013",
-          "receipt": "20260515001456",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        },
-        {
-          "year": 2025,
-          "report": "11012",
-          "receipt": "20250814003955",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "zinc",
       "ticker": "010130",
-      "corpCode": "00102858",
-      "corpName": "고려아연",
-      "modified": "20260326",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260813001726",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1359,27 +1169,21 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260813001726",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "meritz",
       "ticker": "138040",
-      "corpCode": "00860332",
-      "corpName": "메리츠금융지주",
-      "modified": "20230105",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "순영업수익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250829002051",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1411,44 +1215,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2025,
-          "quarter": null,
-          "receipt": "20260331004202",
-          "values": {
-            "sales": "3876691075281",
-            "op": "2872733957980",
-            "net": "2350134643625"
-          },
-          "previous": {
-            "sales": 3.8766,
-            "op": 2.8727
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ],
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11012",
-          "receipt": "20250829002051",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "ksoe",
       "ticker": "009540",
-      "corpCode": "00164830",
-      "corpName": "HD한국조선해양",
-      "modified": "20260401",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1482,14 +1256,9 @@
     {
       "key": "hmm",
       "ticker": "011200",
-      "corpCode": "00164645",
-      "corpName": "HMM",
-      "modified": "20260526",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1517,14 +1286,22 @@
     {
       "key": "lgchem",
       "ticker": "051910",
-      "corpCode": "00356361",
-      "corpName": "LG화학",
-      "modified": "20260401",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260313001195",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814003066",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1557,33 +1334,21 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260313001195",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        },
-        {
-          "year": 2025,
-          "report": "11012",
-          "receipt": "20250814003066",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "kepco",
       "ticker": "015760",
-      "corpCode": "00159193",
-      "corpName": "한국전력공사",
-      "modified": "20240416",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260317000686",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1621,27 +1386,21 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260317000686",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "soil",
       "ticker": "010950",
-      "corpCode": "00138279",
-      "corpName": "S-Oil",
-      "modified": "20230510",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260320000559",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1673,27 +1432,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260320000559",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "skt",
       "ticker": "017670",
-      "corpCode": "00159023",
-      "corpName": "SK텔레콤",
-      "modified": "20260327",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1727,14 +1473,16 @@
     {
       "key": "ktng",
       "ticker": "033780",
-      "corpCode": "00244455",
-      "corpName": "케이티앤지",
-      "modified": "20250917",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260318001422",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1760,27 +1508,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11011",
-          "receipt": "20260318001422",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "shi",
       "ticker": "010140",
-      "corpCode": "00126478",
-      "corpName": "삼성중공업",
-      "modified": "20240322",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1814,14 +1549,9 @@
     {
       "key": "futurem",
       "ticker": "003670",
-      "corpCode": "00155276",
-      "corpName": "포스코퓨처엠",
-      "modified": "20250325",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1855,14 +1585,9 @@
     {
       "key": "lg",
       "ticker": "003550",
-      "corpCode": "00120021",
-      "corpName": "LG",
-      "modified": "20221220",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1896,14 +1621,9 @@
     {
       "key": "mirae",
       "ticker": "006800",
-      "corpCode": "00111722",
-      "corpName": "미래에셋증권",
-      "modified": "20231207",
-      "fsDiv": "OFS",
-      "currency": "KRW",
-      "salesLabel": "순영업수익",
-      "opLabel": "영업이익",
       "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1939,14 +1659,9 @@
     {
       "key": "ibk",
       "ticker": "024110",
-      "corpCode": "00149646",
-      "corpName": "기업은행",
-      "modified": "20260303",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "순영업수익",
-      "opLabel": "영업이익",
       "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -1976,14 +1691,9 @@
     {
       "key": "sds",
       "ticker": "018260",
-      "corpCode": "00126186",
-      "corpName": "삼성에스디에스",
-      "modified": "20250320",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2017,14 +1727,9 @@
     {
       "key": "hdhyundai",
       "ticker": "267250",
-      "corpCode": "01205709",
-      "corpName": "HD현대",
-      "modified": "20260401",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2053,51 +1758,27 @@
             "receipt": "20250814003383"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2026,
-          "quarter": 2,
-          "receipt": "20260814003420",
-          "values": {
-            "sales": "22409332760000",
-            "op": "4124621020000",
-            "net": "3173128471000"
-          },
-          "previous": {
-            "sales": 22.4094,
-            "op": 4.1246
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        },
-        {
-          "year": 2025,
-          "quarter": 2,
-          "receipt": "20250814003383",
-          "values": {
-            "sales": "17211008448000",
-            "op": "1138886949000",
-            "net": "487975447000"
-          },
-          "previous": {
-            "sales": 17.2111,
-            "op": 1.1389
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "hanwhasystems",
       "ticker": "272210",
-      "corpCode": "00339391",
-      "corpName": "한화시스템",
-      "modified": "20260921",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11011",
+          "receipt": "20260513000644",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814002266",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2130,33 +1811,27 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
+      }
+    },
+    {
+      "key": "lig",
+      "ticker": "079550",
+      "mode": "automatic",
+      "basis": "consolidated",
       "blockedPeriods": [
         {
           "year": 2025,
-          "report": "11011",
-          "receipt": "20260513000644",
+          "report": "11013",
+          "receipt": "20250515000678",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         },
         {
           "year": 2025,
           "report": "11012",
-          "receipt": "20250814002266",
+          "receipt": "20250814002202",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         }
-      ]
-    },
-    {
-      "key": "lig",
-      "ticker": "079550",
-      "corpCode": "00503668",
-      "corpName": "LIG디펜스앤에어로스페이스",
-      "modified": "20260415",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
-      "mode": "automatic",
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2195,33 +1870,27 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
+      }
+    },
+    {
+      "key": "kakao",
+      "ticker": "035720",
+      "mode": "automatic",
+      "basis": "consolidated",
       "blockedPeriods": [
         {
           "year": 2025,
           "report": "11013",
-          "receipt": "20250515000678",
+          "receipt": "20250514001239",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         },
         {
           "year": 2025,
           "report": "11012",
-          "receipt": "20250814002202",
+          "receipt": "20250814003953",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         }
-      ]
-    },
-    {
-      "key": "kakao",
-      "ticker": "035720",
-      "corpCode": "00258801",
-      "corpName": "카카오",
-      "modified": "20240329",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
-      "mode": "automatic",
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2260,33 +1929,27 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
+      }
+    },
+    {
+      "key": "apr",
+      "ticker": "278470",
+      "mode": "automatic",
+      "basis": "consolidated",
       "blockedPeriods": [
         {
           "year": 2025,
           "report": "11013",
-          "receipt": "20250514001239",
+          "receipt": "20250515001164",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         },
         {
           "year": 2025,
           "report": "11012",
-          "receipt": "20250814003953",
+          "receipt": "20250814001828",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         }
-      ]
-    },
-    {
-      "key": "apr",
-      "ticker": "278470",
-      "corpCode": "01190568",
-      "corpName": "에이피알",
-      "modified": "20240924",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
-      "mode": "automatic",
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2325,33 +1988,14 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11013",
-          "receipt": "20250515001164",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        },
-        {
-          "year": 2025,
-          "report": "11012",
-          "receipt": "20250814001828",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "glovis",
       "ticker": "086280",
-      "corpCode": "00360595",
-      "corpName": "현대글로비스",
-      "modified": "20240108",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2391,14 +2035,9 @@
     {
       "key": "lginnotek",
       "ticker": "011070",
-      "corpCode": "00105961",
-      "corpName": "LG이노텍",
-      "modified": "20240322",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2433,51 +2072,14 @@
             "receipt": "20250813001577"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2026,
-          "quarter": 1,
-          "receipt": "20260514001513",
-          "values": {
-            "sales": "5534835000000",
-            "op": "295320000000",
-            "net": "229143000000"
-          },
-          "previous": {
-            "sales": 5.534836,
-            "op": 0.295319
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        },
-        {
-          "year": 2025,
-          "quarter": 1,
-          "receipt": "20250515000050",
-          "values": {
-            "sales": "4982840000000",
-            "op": "125117000000",
-            "net": "85613000000"
-          },
-          "previous": {
-            "sales": 4.98284,
-            "op": 0.125116
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "kt",
       "ticker": "030200",
-      "corpCode": "00190321",
-      "corpName": "케이티",
-      "modified": "20260401",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2517,14 +2119,9 @@
     {
       "key": "hyundaiec",
       "ticker": "000720",
-      "corpCode": "00164478",
-      "corpName": "현대건설",
-      "modified": "20260309",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2564,14 +2161,9 @@
     {
       "key": "dbinsurance",
       "ticker": "005830",
-      "corpCode": "00159102",
-      "corpName": "DB손해보험",
-      "modified": "20230110",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "보험수익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2606,66 +2198,14 @@
             "receipt": "20250814004289"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2026,
-          "quarter": 1,
-          "receipt": "20260515002382",
-          "values": {
-            "sales": "4213472000000",
-            "op": "413033000000",
-            "net": "239580000000"
-          },
-          "previous": {
-            "sales": 4.213472,
-            "op": 0.413034
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        },
-        {
-          "year": 2025,
-          "quarter": 1,
-          "receipt": "20250515002214",
-          "values": {
-            "sales": "4050681099925",
-            "op": "619784265768",
-            "net": "431363891266"
-          },
-          "previous": {
-            "sales": 4.050681,
-            "op": 0.619785
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        },
-        {
-          "year": 2025,
-          "quarter": 2,
-          "receipt": "20250814004289",
-          "values": {
-            "sales": "4055716000000",
-            "op": "798484000000",
-            "net": "652305000000"
-          },
-          "previous": {
-            "sales": 4.055716,
-            "op": 0.798485
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "kai",
       "ticker": "047810",
-      "corpCode": "00309503",
-      "corpName": "한국항공우주",
-      "modified": "20260319",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2705,14 +2245,9 @@
     {
       "key": "rotem",
       "ticker": "064350",
-      "corpCode": "00302926",
-      "corpName": "현대로템",
-      "modified": "20260504",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2752,14 +2287,9 @@
     {
       "key": "koreanair",
       "ticker": "003490",
-      "corpCode": "00113526",
-      "corpName": "대한항공",
-      "modified": "20260316",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2799,14 +2329,9 @@
     {
       "key": "autoever",
       "ticker": "307950",
-      "corpCode": "00362441",
-      "corpName": "현대오토에버",
-      "modified": "20260102",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2846,14 +2371,22 @@
     {
       "key": "gs",
       "ticker": "078930",
-      "corpCode": "00500254",
-      "corpName": "GS",
-      "modified": "20221227",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20250515001578",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814002852",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2892,33 +2425,27 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
+      }
+    },
+    {
+      "key": "poscoint",
+      "ticker": "047050",
+      "mode": "automatic",
+      "basis": "consolidated",
       "blockedPeriods": [
         {
           "year": 2025,
           "report": "11013",
-          "receipt": "20250515001578",
+          "receipt": "20250515001138",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         },
         {
           "year": 2025,
           "report": "11012",
-          "receipt": "20250814002852",
+          "receipt": "20250814001757",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
         }
-      ]
-    },
-    {
-      "key": "poscoint",
-      "ticker": "047050",
-      "corpCode": "00124504",
-      "corpName": "포스코인터내셔널",
-      "modified": "20241002",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
-      "mode": "automatic",
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -2957,33 +2484,14 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11013",
-          "receipt": "20250515001138",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        },
-        {
-          "year": 2025,
-          "report": "11012",
-          "receipt": "20250814001757",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "marinesolution",
       "ticker": "443060",
-      "corpCode": "01194689",
-      "corpName": "HD현대마린솔루션",
-      "modified": "20260325",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3023,14 +2531,9 @@
     {
       "key": "nhsecurities",
       "ticker": "005940",
-      "corpCode": "00120182",
-      "corpName": "NH투자증권",
-      "modified": "20260701",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "판관비 차감 전 영업손익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3065,51 +2568,14 @@
             "receipt": "20250814002305"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2026,
-          "quarter": 1,
-          "receipt": "20260514000887",
-          "values": {
-            "sales": "1051089000000",
-            "op": "636689000000",
-            "net": "475686000000"
-          },
-          "previous": {
-            "sales": 1.051086,
-            "op": 0.636687
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        },
-        {
-          "year": 2025,
-          "quarter": 1,
-          "receipt": "20250514000707",
-          "values": {
-            "sales": "556666000000",
-            "op": "289044000000",
-            "net": "208172000000"
-          },
-          "previous": {
-            "sales": 0.556665,
-            "op": 0.289044
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "koreafinancial",
       "ticker": "071050",
-      "corpCode": "00432102",
-      "corpName": "한국금융지주",
-      "modified": "20221228",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "판관비 차감 전 영업손익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3144,36 +2610,14 @@
             "receipt": "20250814002462"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2026,
-          "quarter": 1,
-          "receipt": "20260515002256",
-          "values": {
-            "sales": "1569230000000",
-            "op": "1106314000000",
-            "net": "916654000000"
-          },
-          "previous": {
-            "sales": 1.569232,
-            "op": 1.106315
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "samsungea",
       "ticker": "028050",
-      "corpCode": "00126308",
-      "corpName": "삼성E&amp;A",
-      "modified": "20260319",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3213,14 +2657,9 @@
     {
       "key": "kakaobank",
       "ticker": "323410",
-      "corpCode": "01133217",
-      "corpName": "카카오뱅크",
-      "modified": "20260313",
-      "fsDiv": "OFS",
-      "currency": "KRW",
-      "salesLabel": "순이자이익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3260,14 +2699,9 @@
     {
       "key": "gaon",
       "ticker": "000500",
-      "corpCode": "00104768",
-      "corpName": "가온전선",
-      "modified": "20230324",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3307,14 +2741,9 @@
     {
       "key": "krafton",
       "ticker": "259960",
-      "corpCode": "00760971",
-      "corpName": "크래프톤",
-      "modified": "20260720",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3354,14 +2783,9 @@
     {
       "key": "samyangfoods",
       "ticker": "003230",
-      "corpCode": "00126955",
-      "corpName": "삼양식품",
-      "modified": "20260126",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3401,14 +2825,9 @@
     {
       "key": "episholdings",
       "ticker": "0126Z0",
-      "corpCode": "01965324",
-      "corpName": "삼성에피스홀딩스",
-      "modified": "20260108",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3436,14 +2855,9 @@
     {
       "key": "isupetasys",
       "ticker": "007660",
-      "corpCode": "00107613",
-      "corpName": "이수페타시스",
-      "modified": "20260309",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3483,14 +2897,9 @@
     {
       "key": "hanjinkal",
       "ticker": "180640",
-      "corpCode": "00983040",
-      "corpName": "한진칼",
-      "modified": "20240502",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3530,14 +2939,9 @@
     {
       "key": "lsholdings",
       "ticker": "006260",
-      "corpCode": "00105952",
-      "corpName": "LS",
-      "modified": "20230106",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3577,14 +2981,9 @@
     {
       "key": "hanwhasolution",
       "ticker": "009830",
-      "corpCode": "00162461",
-      "corpName": "한화솔루션",
-      "modified": "20250725",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3624,14 +3023,9 @@
     {
       "key": "amore",
       "ticker": "090430",
-      "corpCode": "00583424",
-      "corpName": "아모레퍼시픽",
-      "modified": "20240102",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3671,14 +3065,9 @@
     {
       "key": "samsungsecurities",
       "ticker": "016360",
-      "corpCode": "00104856",
-      "corpName": "삼성증권",
-      "modified": "20240322",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "순영업손익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3718,14 +3107,9 @@
     {
       "key": "hankooktire",
       "ticker": "161390",
-      "corpCode": "00937324",
-      "corpName": "한국타이어앤테크놀로지",
-      "modified": "20250327",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3765,14 +3149,9 @@
     {
       "key": "daeduck",
       "ticker": "353200",
-      "corpCode": "01478712",
-      "corpName": "대덕전자",
-      "modified": "20230216",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3812,14 +3191,9 @@
     {
       "key": "hybe",
       "ticker": "352820",
-      "corpCode": "01204056",
-      "corpName": "하이브",
-      "modified": "20240913",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3854,51 +3228,14 @@
             "receipt": "20260107000712"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2026,
-          "quarter": 1,
-          "receipt": "20260515001930",
-          "values": {
-            "sales": "698348369000",
-            "op": "-196574552000",
-            "net": "-156669837000"
-          },
-          "previous": {
-            "sales": 0.698348369,
-            "op": -0.196574553
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        },
-        {
-          "year": 2025,
-          "quarter": 1,
-          "receipt": "20250616000263",
-          "values": {
-            "sales": "500613449000",
-            "op": "21622540000",
-            "net": "54390181000"
-          },
-          "previous": {
-            "sales": 0.500613448,
-            "op": 0.021622539
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "coway",
       "ticker": "021240",
-      "corpCode": "00170558",
-      "corpName": "코웨이",
-      "modified": "20230103",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3938,14 +3275,9 @@
     {
       "key": "daewooec",
       "ticker": "047040",
-      "corpCode": "00124540",
-      "corpName": "대우건설",
-      "modified": "20261006",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -3985,14 +3317,15 @@
     {
       "key": "sanil",
       "ticker": "062040",
-      "corpCode": "00366438",
-      "corpName": "산일전기",
-      "modified": "20250507",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11013",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4029,26 +3362,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11013",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "hanmipharm",
       "ticker": "128940",
-      "corpCode": "00828497",
-      "corpName": "한미약품",
-      "modified": "20260908",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4088,14 +3409,9 @@
     {
       "key": "lgcns",
       "ticker": "064400",
-      "corpCode": "00139834",
-      "corpName": "LG씨엔에스",
-      "modified": "20251222",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4135,14 +3451,16 @@
     {
       "key": "kiwoom",
       "ticker": "039490",
-      "corpCode": "00296290",
-      "corpName": "키움증권",
-      "modified": "20260317",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "판관비 차감 전 영업손익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20250514000978",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4180,27 +3498,27 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11013",
-          "receipt": "20250514000978",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "hanwhacorp",
       "ticker": "000880",
-      "corpCode": "00160588",
-      "corpName": "한화",
-      "modified": "20251217",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20250530002227",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250828001133",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4239,33 +3557,14 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11013",
-          "receipt": "20250530002227",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        },
-        {
-          "year": 2025,
-          "report": "11012",
-          "receipt": "20250828001133",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "lguplus",
       "ticker": "032640",
-      "corpCode": "00231363",
-      "corpName": "LG유플러스",
-      "modified": "20250326",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4305,20 +3604,15 @@
     {
       "key": "hyundaipref",
       "ticker": "005387",
-      "companyRef": "hyundai",
-      "mode": "shared"
+      "mode": "shared",
+      "companyRef": "hyundai"
     },
     {
       "key": "skbiopharm",
       "ticker": "326030",
-      "corpCode": "00878696",
-      "corpName": "에스케이바이오팜",
-      "modified": "20230329",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4358,14 +3652,9 @@
     {
       "key": "taihan",
       "ticker": "001440",
-      "corpCode": "00113207",
-      "corpName": "대한전선",
-      "modified": "20250926",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4405,14 +3694,16 @@
     {
       "key": "dbhitek",
       "ticker": "000990",
-      "corpCode": "00160843",
-      "corpName": "DB하이텍",
-      "modified": "20260304",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260515001650",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4450,27 +3741,14 @@
         "reasons": [
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2026,
-          "report": "11013",
-          "receipt": "20260515001650",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "yuhan",
       "ticker": "000100",
-      "corpCode": "00145109",
-      "corpName": "유한양행",
-      "modified": "20230208",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4510,14 +3788,9 @@
     {
       "key": "hdconstruction",
       "ticker": "267270",
-      "corpCode": "01205842",
-      "corpName": "HD건설기계",
-      "modified": "20260327",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4552,36 +3825,27 @@
             "receipt": "20250814002454"
           }
         ]
-      },
-      "reconciliations": [
-        {
-          "year": 2025,
-          "quarter": 1,
-          "receipt": "20250515001603",
-          "values": {
-            "sales": "906839913000",
-            "op": "41650646000",
-            "net": "25651621000"
-          },
-          "previous": {
-            "sales": 0.906839913,
-            "op": 0.041650647
-          },
-          "reason": "Exact receipt reconciliation of IR precision or rounded cumulative subtraction; do not reuse for other receipts"
-        }
-      ]
+      }
     },
     {
       "key": "skc",
       "ticker": "011790",
-      "corpCode": "00139889",
-      "corpName": "SKC",
-      "modified": "20260327",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20250515002688",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814004369",
+          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        }
+      ],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4620,33 +3884,14 @@
           "Existing IR values and statutory statement differ",
           "Existing IR values and statutory statement differ"
         ]
-      },
-      "blockedPeriods": [
-        {
-          "year": 2025,
-          "report": "11013",
-          "receipt": "20250515002688",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        },
-        {
-          "year": 2025,
-          "report": "11012",
-          "receipt": "20250814004369",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
-        }
-      ]
+      }
     },
     {
       "key": "kakaopay",
       "ticker": "377300",
-      "corpCode": "01244601",
-      "corpName": "카카오페이",
-      "modified": "20260308",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4686,14 +3931,9 @@
     {
       "key": "bobcat",
       "ticker": "241560",
-      "corpCode": "01032486",
-      "corpName": "두산밥캣",
-      "modified": "20221229",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "매출",
-      "opLabel": "영업이익",
       "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [
@@ -4729,14 +3969,9 @@
     {
       "key": "jb",
       "ticker": "175330",
-      "corpCode": "00980122",
-      "corpName": "JB금융지주",
-      "modified": "20260902",
-      "fsDiv": "CFS",
-      "currency": "KRW",
-      "salesLabel": "순이자이익",
-      "opLabel": "영업이익",
       "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
       "validation": {
         "asOf": "2026-10-08",
         "periods": [

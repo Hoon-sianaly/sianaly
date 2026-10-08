@@ -83,14 +83,39 @@
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 29.1572,
-        "op": 3.4873,
+        "sales": 29.157205316,
+        "op": 3.487296471,
         "sourceIds": [
-          "q2"
-        ]
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002500",
+          "rawKRW": {
+            "sales": "29157205316000",
+            "op": "3487296471000",
+            "net": "73463246000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
-    "highlightFormat": "trillion"
+    "highlightFormat": "trillion",
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
   },
   "sources": [
     {
@@ -106,6 +131,13 @@
       "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/CEKKP45G8REB8XD_XUN3QG24ZTYV8RHCW202673110346.pdf",
       "published": "2026.07.31",
       "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002500",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
     }
   ],
   "sectionSourceIds": {

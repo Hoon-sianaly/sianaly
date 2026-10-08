@@ -88,20 +88,60 @@
       {
         "year": 2026,
         "quarter": 1,
-        "sales": 1.3766,
-        "op": 0.1266,
+        "sales": 1.376552257987,
+        "op": 0.126567079934,
         "sourceIds": [
-          "quarter"
-        ]
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000847",
+          "rawKRW": {
+            "sales": "1376552257987",
+            "op": "126567079934",
+            "net": "118980033015"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       },
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 1.577,
-        "op": 0.1785,
+        "sales": 1.576997715527,
+        "op": 0.178520071669,
         "sourceIds": [
-          "quarter"
-        ]
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003088",
+          "rawKRW": {
+            "sales": "1576997715527",
+            "op": "178520071669",
+            "net": "115838049789"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "highlightFormat": "mixed",
@@ -114,6 +154,11 @@
         "label": "영업이익",
         "help": "매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"
       }
+    },
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
     }
   },
   "sources": [
@@ -132,6 +177,20 @@
       "asOf": "2026년 2분기 IR 잠정실적",
       "published": null,
       "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000847",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003088",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
     }
   ],
   "sectionSourceIds": {

@@ -1,31 +1,43 @@
-# 삼성전자 자동 업데이트
+# 100개 종목 DART 자동 업데이트
 
-대상은 삼성전자(005930, DART 00126380)의 원화 연결 정기보고서입니다. 우선주 삼성전자우는 기존 companyRef를 통해 같은 실적을 사용합니다. 기업 설명, 사업 전망, 주가, 시총은 이 자동화에서 변경하지 않습니다.
+공식 corpCode.xml로 100개 종목을 98개 기업과 실적 공유 우선주 2개에 연결했습니다. 구성은 data/dart-companies.json, 검증 상태는 data/dart-status.json과 data/DART-STATUS.md에 있습니다.
 
-이 채팅의 Codex 예약 실행을 매일 오후 6시(Asia/Seoul)에 설정합니다. 현재 방식은 컴퓨터가 켜져 있고 Codex 앱이 실행 중이며 프로젝트와 암호화 키에 접근할 수 있어야 합니다. 컴퓨터가 꺼져 있어도 실행되는 서버 자동화는 별도 서버 비밀 저장소 설정이 필요합니다.
+90개 기업은 자동 갱신 대상입니다. 68개는 비교 기간 전체 검증을 통과했고, 22개는 IR와 정기보고서의 차이가 있는 특정 기간만 보류합니다. 나머지 8개는 공시를 감시하되 수치는 자동으로 덮어쓰지 않습니다. 금융회사의 지표 차이와 두산밥캣의 달러 보고를 제조업 매출이나 원화로 임의 변환하지 않습니다.
 
-## 실행과 배포
+## 매일 실행과 배포
 
-1. GitHub 커넥터로 Hoon-sianaly/sianaly main의 최신 커밋 SHA를 읽습니다.
-2. 이 프로젝트에서 아래 명령을 실행합니다. Windows DPAPI 때문에 실제 Windows 사용자로 실행해야 하며, 샌드박스에서 암호화 파일을 복호화할 수 없다면 승인된 require_escalated 실행을 사용합니다.
+한국시간 매일 오후 6시에 이 채팅의 기존 예약 한 개로 실행합니다. 컴퓨터와 Codex 앱이 켜져 있고 Windows 암호화 키에 접근할 수 있어야 합니다. 서버 예약은 아직 이전하지 않았습니다.
+
+1. GitHub 커넥터로 Hoon-sianaly/sianaly main의 최신 SHA를 읽습니다.
+2. 아래 명령을 실제 Windows 사용자로 실행합니다. DPAPI/네트워크 접근이 필요하면 승인된 require_escalated를 사용합니다.
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\update-dart-samsung.ps1 -BaseSha <main의 커밋 SHA>
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\dart-portfolio.ps1 -Mode update -BaseSha <main SHA>
 ```
 
-3. 명령이 성공했고 dart-output/auto-update.json의 status가 validated이며 baseSha가 같을 때만 files를 배포합니다. files가 비어 있으면 변경 없이 종료합니다. 인증/통신/데이터 오류가 있으면 배포하지 않습니다. API 013은 아직 제공되지 않은 기간으로 건너뛰며 기존 값을 삭제하지 않습니다.
-4. scripts/test-dart-samsung.cjs와 scripts/test-dart-update.cjs를 실행합니다. 후보 파일의 기업번호·기간·단위·출처가 검증됐는지 확인합니다. 파일 경로는 data/companies/samsung.json 하나만 허용합니다.
-5. GitHub의 현재 main이 baseSha와 같을 때 커넥터로 트리와 커밋을 만들고 expected_sha를 지정해 main을 갱신합니다. 다른 변경이 생겼다면 최신 main을 기준으로 다시 수집합니다. force push는 하지 않습니다.
-6. Cloudflare Pages 배포 후 https://dev.sianaly.com/data/companies/samsung.json 을 새 캐시 쿼리로 조회해 후보의 실적/접수번호와 비교합니다. 반영 확인에 실패하면 실패를 알리고 다음 실행에서 기존 main과 라이브 사이트를 대조합니다. 생산 사이트 sianaly.com의 별도 배포는 포함하지 않습니다.
+매일 실행에는 -UseCache를 사용하지 않습니다. 이 옵션은 오늘 수집한 원자료의 검증/재현용입니다. 최근 연간, 올해 종료된 1~3분기, 사이트가 보관 중인 전년도 분기를 재확인합니다. 없는 과거 분기를 무작정 추가하거나 4분기를 역산하지 않습니다. 동시 작업은 3개이며 최대 약 700회 재무 요청입니다.
 
-## 데이터 범위와 안전장치
+3. 명령이 성공하고 dart-output/portfolio-update.json이 status=validated, baseSha=확인한 SHA일 때만 files를 처리합니다. 성공한 기업만 files에 포함되며 error 기업의 기존 값은 유지됩니다. review 기업과 held 기간은 검토 대상으로 남습니다. API 013은 미제공 기간으로 건너뛰고 기존 값을 삭제하지 않습니다.
+4. test-dart-core.cjs, test-dart-portfolio.cjs, test-dart-samsung.cjs, test-dart-update.cjs를 실행합니다. files가 등록 기업의 data/companies/<key>.json만 포함하는지 검사합니다. 공유 우선주나 review 기업 파일은 금지합니다. 변경 없으면 커밋하지 않습니다.
+5. main이 baseSha와 같은지 재확인하고 GitHub 커넥터 create_tree/create_commit/update_ref로 후보 files만 커밋합니다. 정확한 Git tree SHA를 기준으로 하며 expected_sha=baseSha, force:false를 사용합니다. main이 바뀌면 재수집합니다. 다른 작업 파일을 섞지 않습니다.
+6. Cloudflare 배포 후 dev.sianaly.com/data/companies/<key>.json을 새 캐시 쿼리로 읽어 변경된 모든 회사의 값과 접수번호를 대조합니다. 변경이 없어도 이전 배포 실패가 없는지 main과 라이브를 확인합니다. 생산 사이트 sianaly.com의 별도 배포는 포함하지 않습니다.
 
-매일 전년도 사업/분기/반기보고서와 올해 종료된 1~3분기를 확인합니다. API 요청은 하루 최대 8개입니다. 전년도 보고서 정정도 다시 확인합니다. 이전 연도의 오래된 정정은 수동 재검토 대상입니다. 4분기 숫자를 연간에서 역산하지 않습니다. 잠정실적 발표는 이번 자동화에 포함하지 않습니다.
+## 지표와 안전장치
 
-분기 매출·영업이익은 thstrm_amount의 3개월 값이며 누적값을 쓰지 않습니다. 연간 매출·영업이익·당기순이익은 검증된 표준 계정에서 읽습니다. 원화 정수 원본과 접수번호를 각 행의 dart 필드에 저장합니다. 계정 중복 충돌, 단위/기간/기업 불일치, 누락 금액은 중단 사유입니다. 오류를 0으로 처리하지 않습니다.
+기업 번호·기간·보고서·연결/별도·KRW·접수번호·계정 중복을 검증합니다. 분기 thstrm_amount의 3개월 값을 쓰며 누적 thstrm_add_amount를 분기 값으로 쓰지 않습니다. 원화 정수와 접수번호를 저장하고 누락을 0으로 처리하지 않습니다. 연간 당기순이익이 원래 있으면 해당 계정이 없을 때 덮어쓰지 않습니다.
 
-같은 숫자와 같은 접수번호면 새 커밋을 만들지 않습니다. 새로운 접수번호의 정정은 숫자가 같아도 출처를 갱신합니다. 전체 수집이 성공한 경우에만 후보를 내보내며 실패하면 이전 후보를 무효화합니다.
+금융회사는 기존 metrics를 유지합니다. 카카오뱅크 순이자이익은 이자수익−이자비용, KB 총영업이익은 영업이익+일반관리비+신용손실, 증권사의 판관비 차감 전 손익은 영업이익+판관비로 대조했습니다. 메리츠는 보고서별 판관비 비용 부호를 고려합니다. 현재 세 기간과 저장된 전년 동기로 검증했고 기준이 안 맞는 값은 보류했습니다.
 
-인증키는 .secrets/opendart-key.dpapi에서 자식 프로세스 환경으로만 전달합니다. 키/요청 URL/환경변수를 로그로 출력하지 않습니다. .secrets, .env, dart-output, tmp는 Git과 Cloudflare 배포에서 제외합니다. 예약 실행은 파일 변경과 배포에 사용자 승인을 이미 받은 범위 내에서 수행하며, 오류 또는 실제 변경이 있을 때만 알립니다.
+IR 정밀도/반올림한 누적값 차감의 작은 차이는 특정 접수번호·원화 원본·기존 값이 정확히 일치할 때만 한 번 대조했습니다. reconciliation은 다른 접수번호에 적용되지 않습니다. 큰 차이는 자동 허용하지 않습니다. DART 원본으로 전환된 행은 이후 공식 정정을 갱신하고, 같은 값과 같은 접수번호면 새 커밋을 만들지 않습니다.
 
-공식 API 문서: https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS003&apiId=2019020
+기업 설명·주가·시총·잠정실적은 변경하지 않습니다. 회계 범위·분할·합병·통화/금융 지표 변경, 오래된 정정은 별도 검토합니다. 계정 오류는 해당 기업만 차단합니다.
+
+## 검토와 알림
+
+results의 review·held·error와 접수번호를 dart-output/notification-state.json 등 배포 제외된 상태 파일에 기록합니다. 새 공시나 새로운 오류가 있을 때만 알리고 기존 예외를 매일 반복 통지하지 않습니다. 정상 무변경 실행은 조용히 종료합니다.
+
+보류 해제는 원문과 지표·보고 범위·통화를 대조한 뒤 검증해야 합니다. build-dart-plan.cjs는 최초 연결 계획 생성 도구이며 매일 실행하지 않습니다. 현재 DART 전환 데이터로 계획을 임의 재생성해 보류를 없애지 않습니다.
+
+인증키는 .secrets/opendart-key.dpapi에서 자식 환경으로만 전달합니다. 내용·환경변수·키 포함 URL을 출력하거나 업로드하지 않습니다. .secrets, .env, dart-output, tmp는 Git/Cloudflare 배포 제외 대상입니다.
+
+공식 API: https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS003&apiId=2019020
