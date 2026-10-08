@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "poongsan",
+    "rank": 178,
+    "name": "풍산",
+    "ticker": "103140",
+    "type": "금속·방산 기업"
+  },
+  "overview": {
+    "short": "구리·구리합금 소재와 군용·스포츠용 탄약을 만드는 회사",
+    "summary": "구리·구리합금 소재와 군용·스포츠용 탄약을 만드는 회사입니다. 고객 산업의 주문과 구리 가격이 매출을 바꿉니다.",
+    "takeaways": [
+      "구리·구리합금 소재와 군용·스포츠용 탄약을 만드는 회사입니다.",
+      "금속 소재: 구리·구리합금 판재·봉·선 등을 생산합니다.",
+      "탄약: 군용·스포츠용 탄약과 관련 부품을 공급합니다.",
+      "해외 사업: 해외 생산·판매 법인을 통해 제품을 공급합니다.",
+      "고객 산업의 주문과 구리 가격이 매출을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "금속 소재",
+        "desc": "구리·구리합금 판재·봉·선 등을 생산합니다."
+      },
+      {
+        "name": "탄약",
+        "desc": "군용·스포츠용 탄약과 관련 부품을 공급합니다."
+      },
+      {
+        "name": "해외 사업",
+        "desc": "해외 생산·판매 법인을 통해 제품을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "금속 수요",
+        "desc": "고객 산업의 주문과 구리 가격이 매출을 바꿉니다."
+      },
+      {
+        "title": "방산 납품",
+        "desc": "탄약 계약과 납품 일정·제품 구성을 봐야 합니다."
+      },
+      {
+        "title": "가격·재고",
+        "desc": "원료·재고 가격과 환율·위험 관리가 중요합니다."
+      }
+    ],
+    "financialNote": "구리 가격 변화가 금속 매출에 포함됩니다. 금속과 방산 사업 수익성을 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 4.554411454633,
+        "op": 0.323768893078,
+        "net": 0.23604598279,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250313001378",
+          "rawKRW": {
+            "sales": "4554411454633",
+            "op": "323768893078",
+            "net": "236045982790"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 5.048580386639,
+        "op": 0.29742746313,
+        "net": 0.147164434318,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260312001327",
+          "rawKRW": {
+            "sales": "5048580386639",
+            "op": "297427463130",
+            "net": "147164434318"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.293963022374,
+        "op": 0.093593429513,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003844",
+          "rawKRW": {
+            "sales": "1293963022374",
+            "op": "93593429513",
+            "net": "64199650879"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 1.270895673812,
+        "op": 0.090173037096,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515003044",
+          "rawKRW": {
+            "sales": "1270895673812",
+            "op": "90173037096",
+            "net": "78000220300"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.470322219175,
+        "op": 0.125210909269,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004203",
+          "rawKRW": {
+            "sales": "1470322219175",
+            "op": "125210909269",
+            "net": "82479885721"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001327",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515003044",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004203",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001378",
+      "published": "2025.03.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003844",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "풍산 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004203",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "방산",
+      "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

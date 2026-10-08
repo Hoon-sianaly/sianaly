@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lotterental",
+    "rank": 177,
+    "name": "롯데렌탈",
+    "ticker": "089860",
+    "type": "차량·장비 렌탈 기업"
+  },
+  "overview": {
+    "short": "차량·장비를 빌려주고 중고차·차량 금융 사업을 운영하는 회사",
+    "summary": "차량·장비를 빌려주고 중고차·차량 금융 사업을 운영하는 회사입니다. 렌탈 계약과 차량 이용률이 반복 수입을 바꿉니다.",
+    "takeaways": [
+      "차량·장비를 빌려주고 중고차·차량 금융 사업을 운영하는 회사입니다.",
+      "차량 렌탈: 장단기 차량 대여와 카셰어링 서비스를 제공합니다.",
+      "중고차·장비: 렌탈 반납 차량을 판매하고 기업용 장비를 대여합니다.",
+      "차량 금융: 연결 자회사를 통해 리스·할부금융을 제공합니다.",
+      "렌탈 계약과 차량 이용률이 반복 수입을 바꿉니다."
+    ],
+    "business": [
+      {
+        "name": "차량 렌탈",
+        "desc": "장단기 차량 대여와 카셰어링 서비스를 제공합니다."
+      },
+      {
+        "name": "중고차·장비",
+        "desc": "렌탈 반납 차량을 판매하고 기업용 장비를 대여합니다."
+      },
+      {
+        "name": "차량 금융",
+        "desc": "연결 자회사를 통해 리스·할부금융을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "계약·가동",
+        "desc": "렌탈 계약과 차량 이용률이 반복 수입을 바꿉니다."
+      },
+      {
+        "title": "잔존가치",
+        "desc": "차량 매입 가격·중고차 판매가격과 감가상각을 봐야 합니다."
+      },
+      {
+        "title": "금융·차입",
+        "desc": "자금 조달 비용과 차량 투자 부담을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "차량 대여 수익과 중고차 매각 수익·금융 손익을 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.792395464171,
+        "op": 0.284811996731,
+        "net": 0.102710507301,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250314001522",
+          "rawKRW": {
+            "sales": "2792395464171",
+            "op": "284811996731",
+            "net": "102710507301"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 2.918751542343,
+        "op": 0.312502750438,
+        "net": 0.126714957828,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316000884",
+          "rawKRW": {
+            "sales": "2918751542343",
+            "op": "312502750438",
+            "net": "126714957828"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.748755427747,
+        "op": 0.077211597817,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002529",
+          "rawKRW": {
+            "sales": "748755427747",
+            "op": "77211597817",
+            "net": "30064678180"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.730924604457,
+        "op": 0.08362643952,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001157",
+          "rawKRW": {
+            "sales": "730924604457",
+            "op": "83626439520",
+            "net": "30312460271"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.765763505344,
+        "op": 0.084637726226,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001915",
+          "rawKRW": {
+            "sales": "765763505344",
+            "op": "84637726226",
+            "net": "18291248624"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000884",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001157",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001915",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001522",
+      "published": "2025.03.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002529",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "롯데렌탈 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001915",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "감가상각",
+      "desc": "건물·설비 같은 자산의 취득 비용을 사용 기간에 걸쳐 나누어 비용으로 반영하는 것입니다."
+    },
+    {
+      "name": "렌털",
+      "desc": "제품을 구매하는 대신 일정 기간 이용료를 내고 빌려 사용하는 방식입니다."
+    },
+    {
+      "name": "카셰어링",
+      "desc": "필요한 시간 동안 차량을 공유해 빌려 쓰는 서비스입니다."
+    },
+    {
+      "name": "잔존가치",
+      "desc": "차량·설비 등을 사용한 뒤 남아 있을 것으로 예상하는 가치입니다."
+    },
+    {
+      "name": "리스",
+      "desc": "자산을 일정 기간 사용할 권리를 제공하고 이용료를 받는 계약입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
