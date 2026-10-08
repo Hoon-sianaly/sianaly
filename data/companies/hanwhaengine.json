@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanwhaengine",
+    "rank": 122,
+    "name": "한화엔진",
+    "ticker": "082740",
+    "type": "선박 엔진 기업"
+  },
+  "overview": {
+    "short": "대형 선박용 엔진과 부품·서비스를 공급하는 회사",
+    "summary": "대형 선박용 엔진과 부품·서비스를 공급하는 회사입니다. 조선사의 선박 수주와 엔진 인도 일정이 중요합니다.",
+    "takeaways": [
+      "대형 선박용 엔진과 부품·서비스를 공급하는 회사입니다.",
+      "선박 엔진: 대형 선박용 저속 엔진을 제작합니다.",
+      "부품·서비스: 엔진 부품과 유지보수 서비스를 제공합니다.",
+      "친환경 시스템: 탈질 설비·발전엔진과 전동화 사업을 운영합니다.",
+      "조선사의 선박 수주와 엔진 인도 일정이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "선박 엔진",
+        "desc": "대형 선박용 저속 엔진을 제작합니다."
+      },
+      {
+        "name": "부품·서비스",
+        "desc": "엔진 부품과 유지보수 서비스를 제공합니다."
+      },
+      {
+        "name": "친환경 시스템",
+        "desc": "탈질 설비·발전엔진과 전동화 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "조선 수주",
+        "desc": "조선사의 선박 수주와 엔진 인도 일정이 중요합니다."
+      },
+      {
+        "title": "제품 구성",
+        "desc": "이중연료 엔진과 서비스 매출 구성을 봐야 합니다."
+      },
+      {
+        "title": "원가·납기",
+        "desc": "부품 조달·제조 원가와 납기를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "확인되지 않은 전년 비교 기간은 추정해서 채우지 않았습니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 1.371057336146,
+        "op": 0.1300662961,
+        "net": 0.173753426631,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000939",
+          "rawKRW": {
+            "sales": "1371057336146",
+            "op": "130066296100",
+            "net": "173753426631"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.3452394244,
+        "op": 0.051378938345,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001038",
+          "rawKRW": {
+            "sales": "345239424400",
+            "op": "51378938345",
+            "net": "52853335685"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.36221989836,
+        "op": 0.037910716266,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002747",
+          "rawKRW": {
+            "sales": "362219898360",
+            "op": "37910716266",
+            "net": "33199840617"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000939",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001038",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002747",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "한화엔진 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002747",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

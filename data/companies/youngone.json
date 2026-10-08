@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "youngone",
+    "rank": 128,
+    "name": "영원무역",
+    "ticker": "111770",
+    "type": "의류 OEM·스포츠 기업"
+  },
+  "overview": {
+    "short": "아웃도어 의류 OEM과 스포츠용품 사업을 운영하는 회사",
+    "summary": "아웃도어 의류 OEM과 스포츠용품 사업을 운영하는 회사입니다. 글로벌 브랜드 주문과 유통 재고가 중요합니다.",
+    "takeaways": [
+      "아웃도어 의류 OEM과 스포츠용품 사업을 운영하는 회사입니다.",
+      "의류 OEM: 고객 브랜드의 의류·신발·가방을 생산·수출합니다.",
+      "스포츠 사업: SCOTT 등 스포츠용품 사업을 운영합니다.",
+      "생산 기반: 해외 생산·원재료 조달망을 관리합니다.",
+      "글로벌 브랜드 주문과 유통 재고가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "의류 OEM",
+        "desc": "고객 브랜드의 의류·신발·가방을 생산·수출합니다."
+      },
+      {
+        "name": "스포츠 사업",
+        "desc": "SCOTT 등 스포츠용품 사업을 운영합니다."
+      },
+      {
+        "name": "생산 기반",
+        "desc": "해외 생산·원재료 조달망을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 주문",
+        "desc": "글로벌 브랜드 주문과 유통 재고가 중요합니다."
+      },
+      {
+        "title": "환율·원가",
+        "desc": "수출 환율과 인건비·원재료를 봐야 합니다."
+      },
+      {
+        "title": "스포츠 손익",
+        "desc": "SCOTT의 재고·차입과 수익성을 별도로 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 3.517837283293,
+        "op": 0.31558058331,
+        "net": 0.294535556555,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001998",
+          "rawKRW": {
+            "sales": "3517837283293",
+            "op": "315580583310",
+            "net": "294535556555"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 4.063584122639,
+        "op": 0.514438778298,
+        "net": 0.426250682029,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001279",
+          "rawKRW": {
+            "sales": "4063584122639",
+            "op": "514438778298",
+            "net": "426250682029"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.038208547635,
+        "op": 0.145719620317,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004241",
+          "rawKRW": {
+            "sales": "1038208547635",
+            "op": "145719620317",
+            "net": "100117531160"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.895795359601,
+        "op": 0.120402536595,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001455",
+          "rawKRW": {
+            "sales": "895795359601",
+            "op": "120402536595",
+            "net": "149716026700"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 1.231731565513,
+        "op": 0.175571491637,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003968",
+          "rawKRW": {
+            "sales": "1231731565513",
+            "op": "175571491637",
+            "net": "155284298783"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001279",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001455",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003968",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001998",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004241",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "영원무역 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003968",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
