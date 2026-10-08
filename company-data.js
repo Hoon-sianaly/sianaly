@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261008-kospi190-1";
+const COMPANY_DATA_VERSION = "20261008-kospi200-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -66,6 +66,7 @@ function companyPageData(record) {
   latestQuarter, quarterlyYear:latestQuarter?.year || "",
   latestYear:String(latest?.year || ""),
   annualPeriodLabel:latest?.reportPeriod || "",
+  annualSourceLabel:financials.annualSourceLabel || "공식 연간 실적 자료",
   quarterlyCalendarNote:financials.quarterlyCalendarNote || "",
   latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),
   latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),

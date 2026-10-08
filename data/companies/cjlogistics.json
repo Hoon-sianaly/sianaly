@@ -1,51 +1,51 @@
 {
   "schemaVersion": 1,
   "profile": {
-    "key": "fnf",
-    "rank": 139,
-    "name": "F&F",
-    "ticker": "383220",
-    "type": "패션 브랜드 기업"
+    "key": "cjlogistics",
+    "rank": 192,
+    "name": "CJ대한통운",
+    "ticker": "000120",
+    "type": "물류 기업"
   },
   "overview": {
-    "short": "MLB·DISCOVERY 등 패션 브랜드를 운영하는 회사",
-    "summary": "MLB·DISCOVERY 등 패션 브랜드를 운영하는 회사입니다. 브랜드별 판매와 소비 경기·유행이 중요합니다.",
+    "short": "택배·계약물류와 국제 물류·건설 사업을 운영하는 회사",
+    "summary": "택배·계약물류와 국제 물류·건설 사업을 운영하는 회사입니다. 택배·기업 물류의 처리량과 운임이 중요합니다.",
     "takeaways": [
-      "MLB·DISCOVERY 등 패션 브랜드를 운영하는 회사입니다.",
-      "브랜드 판매: 의류·신발·패션용품을 제조·판매합니다.",
-      "해외 유통: 중국 등 해외 시장의 판매·유통망을 운영합니다.",
-      "라이선스: 브랜드 권리와 관련 사업을 관리합니다.",
-      "브랜드별 판매와 소비 경기·유행이 중요합니다."
+      "택배·계약물류와 국제 물류·건설 사업을 운영하는 회사입니다.",
+      "택배: 온라인 주문 등 택배 배송 서비스를 제공합니다.",
+      "계약물류: 고객의 창고·운송·항만 등 물류를 수행합니다.",
+      "글로벌·건설: 해외 운송·물류와 건설 등 연결 사업을 운영합니다.",
+      "택배·기업 물류의 처리량과 운임이 중요합니다."
     ],
     "business": [
       {
-        "name": "브랜드 판매",
-        "desc": "의류·신발·패션용품을 제조·판매합니다."
+        "name": "택배",
+        "desc": "온라인 주문 등 택배 배송 서비스를 제공합니다."
       },
       {
-        "name": "해외 유통",
-        "desc": "중국 등 해외 시장의 판매·유통망을 운영합니다."
+        "name": "계약물류",
+        "desc": "고객의 창고·운송·항만 등 물류를 수행합니다."
       },
       {
-        "name": "라이선스",
-        "desc": "브랜드 권리와 관련 사업을 관리합니다."
+        "name": "글로벌·건설",
+        "desc": "해외 운송·물류와 건설 등 연결 사업을 운영합니다."
       }
     ],
     "drivers": [
       {
-        "title": "브랜드 수요",
-        "desc": "브랜드별 판매와 소비 경기·유행이 중요합니다."
+        "title": "물동량·요금",
+        "desc": "택배·기업 물류의 처리량과 운임이 중요합니다."
       },
       {
-        "title": "해외 판매",
-        "desc": "중국 등 해외 채널 확장과 매장 효율을 봐야 합니다."
+        "title": "운영 효율",
+        "desc": "인건비·운송비와 자동화·가동 효율을 봐야 합니다."
       },
       {
-        "title": "재고·비용",
-        "desc": "재고 회전·할인 판매와 마케팅 비용을 확인해야 합니다."
+        "title": "해외·투자",
+        "desc": "해외 계약과 물류 설비·건설 사업 손익을 확인해야 합니다."
       }
     ],
-    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "financialNote": "택배·계약물류·글로벌 물류와 건설의 사업 구성을 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
     "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
   },
   "market": {},
@@ -59,18 +59,18 @@
     "annual": [
       {
         "year": 2024,
-        "sales": 1.896009590086,
-        "op": 0.450737459737,
-        "net": 0.355959818501,
+        "sales": 12.11676114716,
+        "op": 0.530663067133,
+        "net": 0.268320297629,
         "sourceIds": [
           "dart-2024-annual"
         ],
         "dart": {
-          "receipt": "20250318001144",
+          "receipt": "20250317000953",
           "rawKRW": {
-            "sales": "1896009590086",
-            "op": "450737459737",
-            "net": "355959818501"
+            "sales": "12116761147160",
+            "op": "530663067133",
+            "net": "268320297629"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -81,6 +81,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -88,18 +89,18 @@
       },
       {
         "year": 2025,
-        "sales": 1.933995926896,
-        "op": 0.468574150329,
-        "net": 0.400686468976,
+        "sales": 12.28465247128,
+        "op": 0.508080820628,
+        "net": 0.258742959823,
         "sourceIds": [
           "dart-2025-annual"
         ],
         "dart": {
-          "receipt": "20260318001512",
+          "receipt": "20260316001417",
           "rawKRW": {
-            "sales": "1933995926896",
-            "op": "468574150329",
-            "net": "400686468976"
+            "sales": "12284652471280",
+            "op": "508080820628",
+            "net": "258742959823"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -110,6 +111,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -120,17 +122,17 @@
       {
         "year": 2025,
         "quarter": 2,
-        "sales": 0.378870814153,
-        "op": 0.084029901879,
+        "sales": 3.048408107265,
+        "op": 0.115243326538,
         "sourceIds": [
           "dart-2025-q2"
         ],
         "dart": {
-          "receipt": "20250814002516",
+          "receipt": "20250814004310",
           "rawKRW": {
-            "sales": "378870814153",
-            "op": "84029901879",
-            "net": "62638678575"
+            "sales": "3048408107265",
+            "op": "115243326538",
+            "net": "58185410405"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -141,6 +143,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -149,17 +152,17 @@
       {
         "year": 2026,
         "quarter": 1,
-        "sales": 0.560898180961,
-        "op": 0.153481999734,
+        "sales": 3.214545850775,
+        "op": 0.092105347826,
         "sourceIds": [
           "dart-2026-q1"
         ],
         "dart": {
-          "receipt": "20260515002764",
+          "receipt": "20260515002802",
           "rawKRW": {
-            "sales": "560898180961",
-            "op": "153481999734",
-            "net": "197556497674"
+            "sales": "3214545850775",
+            "op": "92105347826",
+            "net": "37943224687"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -170,6 +173,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -178,17 +182,17 @@
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 0.399621629202,
-        "op": 0.086499071634,
+        "sales": 3.379978742005,
+        "op": 0.101566441444,
         "sourceIds": [
           "dart-2026-q2"
         ],
         "dart": {
-          "receipt": "20260814004123",
+          "receipt": "20260814003838",
           "rawKRW": {
-            "sales": "399621629202",
-            "op": "86499071634",
-            "net": "72987676491"
+            "sales": "3379978742005",
+            "op": "101566441444",
+            "net": "36766682558"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -199,6 +203,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -215,42 +220,42 @@
     {
       "id": "dart-2025-annual",
       "label": "2025년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001512",
-      "published": "2026.03.18",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001417",
+      "published": "2026.03.16",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2026-q1",
       "label": "2026년 1분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002764",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002802",
       "published": "2026.05.15",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2026-q2",
       "label": "2026년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004123",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003838",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2024-annual",
       "label": "2024년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001144",
-      "published": "2025.03.18",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000953",
+      "published": "2025.03.17",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2025-q2",
       "label": "2025년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002516",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004310",
       "published": "2025.08.14",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "business",
-      "label": "F&F 2026년 반기보고서 · 사업의 내용",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004123",
+      "label": "CJ대한통운 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003838",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
     }
@@ -269,8 +274,16 @@
       "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
     },
     {
-      "name": "라이선스",
-      "desc": "다른 회사의 브랜드나 기술 등을 정해진 조건으로 사용할 수 있는 권리·계약입니다."
+      "name": "물동량",
+      "desc": "일정 기간에 운송하거나 처리한 화물의 양입니다."
+    },
+    {
+      "name": "운임",
+      "desc": "사람이나 화물을 운송하는 대가로 받는 요금입니다."
+    },
+    {
+      "name": "계약물류",
+      "desc": "고객과 계약을 맺고 운송·보관 등 물류 업무를 대신 수행하는 사업입니다."
     }
   ],
   "presentation": {

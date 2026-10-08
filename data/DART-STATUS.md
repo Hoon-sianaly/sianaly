@@ -1,7 +1,7 @@
-# 190개 종목 DART 연결 상태
+# 200개 종목 DART 연결 상태
 
-기준일 2026-10-08. 190개 종목, 186개 발행사, 실적 공유 우선주 4개.
-자동 176개 (검증된 표시 기간 전체 154, 일부 기간 보류 22), 공식 자료 수동 확인 10개.
+기준일 2026-10-08. 200개 종목, 195개 발행사, 실적 공유 우선주 5개.
+자동 184개 (검증된 표시 기간 전체 162, 일부 기간 보류 22), 공식 자료 수동 확인 11개.
 
 GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확인합니다. 컴퓨터를 꺼도 실행되며 일부 시작 지연이 있을 수 있습니다.
 
@@ -197,3 +197,13 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 코오롱인더 | 자동 |  |
 | HD현대에너지솔루션 | 자동 |  |
 | 삼화콘덴서 | 자동 |  |
+| 후성 | 자동 |  |
+| CJ대한통운 | 자동 |  |
+| SK리츠 | 공시 감시 · 수치 수동 검토 | Three-month fiscal periods; annual display sums four calendar quarters from official reports and revised comparisons. Nonstandard OpenDART report keys require manual numeric review. |
+| 다우기술 | 자동 |  |
+| SK이터닉스 | 자동 |  |
+| 코스모신소재 | 자동 |  |
+| 동원산업 | 자동 |  |
+| 호텔신라 | 자동 |  |
+| SK아이이테크놀로지 | 자동 |  |
+| 삼성전기우 | 본주 실적 공유 | samsungel |

@@ -71,6 +71,19 @@ function validateFinancials(record, seen = []) {
    }
   }
  }
+ for(const annual of financials.annual){
+  if(!annual.calculation)continue;
+  assert.equal(annual.calculation.method,'sum-calendar-quarters');
+  const quarters=financials.quarterly.filter(row=>row.year===annual.year);
+  assert.deepEqual(quarters.map(row=>row.quarter).sort(),[1,2,3,4],`Annual sum needs four quarters: ${key}`);
+  for(const field of ['sales','op']){
+   for(const row of quarters){assert.match(row.reportedKRW?.[field]||'',/^-?\d+$/);assert.equal(row[field],Number(row.reportedKRW[field])/1e12);}
+   const total=quarters.reduce((sum,row)=>sum+BigInt(row.reportedKRW[field]),0n).toString();
+   assert.equal(annual.calculation.rawKRW[field],total,`Calendar annual sum mismatch: ${key}/${field}`);
+   assert.equal(annual[field],Number(total)/1e12);
+  }
+  assert.deepEqual([...new Set(quarters.flatMap(row=>row.sourceIds))].sort(),[...annual.sourceIds].sort(),`Annual sum source mismatch: ${key}`);
+ }
 }
 for (const record of records.values()) validateFinancials(record);
 for (const record of records.values()) {

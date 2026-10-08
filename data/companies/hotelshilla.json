@@ -1,51 +1,51 @@
 {
   "schemaVersion": 1,
   "profile": {
-    "key": "fnf",
-    "rank": 139,
-    "name": "F&F",
-    "ticker": "383220",
-    "type": "패션 브랜드 기업"
+    "key": "hotelshilla",
+    "rank": 198,
+    "name": "호텔신라",
+    "ticker": "008770",
+    "type": "면세·호텔 기업"
   },
   "overview": {
-    "short": "MLB·DISCOVERY 등 패션 브랜드를 운영하는 회사",
-    "summary": "MLB·DISCOVERY 등 패션 브랜드를 운영하는 회사입니다. 브랜드별 판매와 소비 경기·유행이 중요합니다.",
+    "short": "면세점과 호텔·레저 서비스를 운영하는 회사",
+    "summary": "면세점과 호텔·레저 서비스를 운영하는 회사입니다. 관광객·출국객과 면세 고객의 지출이 중요합니다.",
     "takeaways": [
-      "MLB·DISCOVERY 등 패션 브랜드를 운영하는 회사입니다.",
-      "브랜드 판매: 의류·신발·패션용품을 제조·판매합니다.",
-      "해외 유통: 중국 등 해외 시장의 판매·유통망을 운영합니다.",
-      "라이선스: 브랜드 권리와 관련 사업을 관리합니다.",
-      "브랜드별 판매와 소비 경기·유행이 중요합니다."
+      "면세점과 호텔·레저 서비스를 운영하는 회사입니다.",
+      "면세: 공항·시내 등에서 면세 상품을 판매합니다.",
+      "호텔: 숙박·식음·연회 등 호텔 서비스를 제공합니다.",
+      "레저·여행: 기업 체육시설과 출장 예약 등 서비스를 운영합니다.",
+      "관광객·출국객과 면세 고객의 지출이 중요합니다."
     ],
     "business": [
       {
-        "name": "브랜드 판매",
-        "desc": "의류·신발·패션용품을 제조·판매합니다."
+        "name": "면세",
+        "desc": "공항·시내 등에서 면세 상품을 판매합니다."
       },
       {
-        "name": "해외 유통",
-        "desc": "중국 등 해외 시장의 판매·유통망을 운영합니다."
+        "name": "호텔",
+        "desc": "숙박·식음·연회 등 호텔 서비스를 제공합니다."
       },
       {
-        "name": "라이선스",
-        "desc": "브랜드 권리와 관련 사업을 관리합니다."
+        "name": "레저·여행",
+        "desc": "기업 체육시설과 출장 예약 등 서비스를 운영합니다."
       }
     ],
     "drivers": [
       {
-        "title": "브랜드 수요",
-        "desc": "브랜드별 판매와 소비 경기·유행이 중요합니다."
+        "title": "관광·방문",
+        "desc": "관광객·출국객과 면세 고객의 지출이 중요합니다."
       },
       {
-        "title": "해외 판매",
-        "desc": "중국 등 해외 채널 확장과 매장 효율을 봐야 합니다."
+        "title": "상품·비용",
+        "desc": "상품 원가·판촉비와 공항 임차료를 봐야 합니다."
       },
       {
-        "title": "재고·비용",
-        "desc": "재고 회전·할인 판매와 마케팅 비용을 확인해야 합니다."
+        "title": "호텔·재편",
+        "desc": "호텔 객실 수요와 점포 재편·환율 영향을 확인해야 합니다."
       }
     ],
-    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "financialNote": "면세와 호텔·레저 사업의 손익을 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
     "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
   },
   "market": {},
@@ -59,18 +59,18 @@
     "annual": [
       {
         "year": 2024,
-        "sales": 1.896009590086,
-        "op": 0.450737459737,
-        "net": 0.355959818501,
+        "sales": 3.947552203343,
+        "op": -0.005184329302,
+        "net": -0.061501483516,
         "sourceIds": [
           "dart-2024-annual"
         ],
         "dart": {
-          "receipt": "20250318001144",
+          "receipt": "20250515002269",
           "rawKRW": {
-            "sales": "1896009590086",
-            "op": "450737459737",
-            "net": "355959818501"
+            "sales": "3947552203343",
+            "op": "-5184329302",
+            "net": "-61501483516"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -81,6 +81,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -88,18 +89,18 @@
       },
       {
         "year": 2025,
-        "sales": 1.933995926896,
-        "op": 0.468574150329,
-        "net": 0.400686468976,
+        "sales": 4.068306491409,
+        "op": 0.013512516028,
+        "net": -0.172848550007,
         "sourceIds": [
           "dart-2025-annual"
         ],
         "dart": {
-          "receipt": "20260318001512",
+          "receipt": "20260311004398",
           "rawKRW": {
-            "sales": "1933995926896",
-            "op": "468574150329",
-            "net": "400686468976"
+            "sales": "4068306491409",
+            "op": "13512516028",
+            "net": "-172848550007"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -110,6 +111,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -120,17 +122,17 @@
       {
         "year": 2025,
         "quarter": 2,
-        "sales": 0.378870814153,
-        "op": 0.084029901879,
+        "sales": 1.02544704684,
+        "op": 0.008660336755,
         "sourceIds": [
           "dart-2025-q2"
         ],
         "dart": {
-          "receipt": "20250814002516",
+          "receipt": "20250814003355",
           "rawKRW": {
-            "sales": "378870814153",
-            "op": "84029901879",
-            "net": "62638678575"
+            "sales": "1025447046840",
+            "op": "8660336755",
+            "net": "-882809656"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -141,6 +143,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -149,17 +152,17 @@
       {
         "year": 2026,
         "quarter": 1,
-        "sales": 0.560898180961,
-        "op": 0.153481999734,
+        "sales": 1.053491831261,
+        "op": 0.020415282258,
         "sourceIds": [
           "dart-2026-q1"
         ],
         "dart": {
-          "receipt": "20260515002764",
+          "receipt": "20260515002154",
           "rawKRW": {
-            "sales": "560898180961",
-            "op": "153481999734",
-            "net": "197556497674"
+            "sales": "1053491831261",
+            "op": "20415282258",
+            "net": "5997988546"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -170,6 +173,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -178,17 +182,17 @@
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 0.399621629202,
-        "op": 0.086499071634,
+        "sales": 0.971829934657,
+        "op": 0.061141705055,
         "sourceIds": [
           "dart-2026-q2"
         ],
         "dart": {
-          "receipt": "20260814004123",
+          "receipt": "20260814001955",
           "rawKRW": {
-            "sales": "399621629202",
-            "op": "86499071634",
-            "net": "72987676491"
+            "sales": "971829934657",
+            "op": "61141705055",
+            "net": "21449047787"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -199,6 +203,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -215,42 +220,42 @@
     {
       "id": "dart-2025-annual",
       "label": "2025년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001512",
-      "published": "2026.03.18",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004398",
+      "published": "2026.03.11",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2026-q1",
       "label": "2026년 1분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002764",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002154",
       "published": "2026.05.15",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2026-q2",
       "label": "2026년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004123",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001955",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2024-annual",
       "label": "2024년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001144",
-      "published": "2025.03.18",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515002269",
+      "published": "2025.05.15",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "dart-2025-q2",
       "label": "2025년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002516",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003355",
       "published": "2025.08.14",
       "verifiedAt": "2026.10.08"
     },
     {
       "id": "business",
-      "label": "F&F 2026년 반기보고서 · 사업의 내용",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004123",
+      "label": "호텔신라 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001955",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
     }
@@ -269,8 +274,8 @@
       "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
     },
     {
-      "name": "라이선스",
-      "desc": "다른 회사의 브랜드나 기술 등을 정해진 조건으로 사용할 수 있는 권리·계약입니다."
+      "name": "임차료",
+      "desc": "건물·시설 등을 빌려 사용하는 대가로 지급하는 돈입니다."
     }
   ],
   "presentation": {

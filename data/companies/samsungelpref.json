@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samsungelpref",
+    "rank": 200,
+    "name": "삼성전기우",
+    "ticker": "009155",
+    "type": "삼성전기 우선주"
+  },
+  "overview": {
+    "short": "삼성전기가 발행한 우선주로 회사 실적은 삼성전기와 공유",
+    "summary": "삼성전기가 발행한 우선주로 회사 실적은 삼성전기와 공유입니다. 사업과 실적은 본주 회사 전체 기준이고 주식의 권리는 별도로 확인해야 합니다.",
+    "takeaways": [
+      "삼성전기가 발행한 우선주로 회사 실적은 삼성전기와 공유입니다.",
+      "전자 부품: 삼성전기의 MLCC 등 전자 부품 사업을 기반으로 합니다.",
+      "기판·모듈: 삼성전기의 기판과 카메라 모듈 사업을 포함합니다.",
+      "주식 권리: 우선주의 배당·의결권 조건을 확인합니다.",
+      "전자기기·자동차·반도체 고객의 수요를 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "전자 부품",
+        "desc": "삼성전기의 MLCC 등 전자 부품 사업을 기반으로 합니다."
+      },
+      {
+        "name": "기판·모듈",
+        "desc": "삼성전기의 기판과 카메라 모듈 사업을 포함합니다."
+      },
+      {
+        "name": "주식 권리",
+        "desc": "우선주의 배당·의결권 조건을 확인합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "부품 수요",
+        "desc": "전자기기·자동차·반도체 고객의 수요를 봐야 합니다."
+      },
+      {
+        "title": "제품·가동",
+        "desc": "고사양 제품 구성과 수율·가동률이 중요합니다."
+      },
+      {
+        "title": "주식 조건",
+        "desc": "배당 정책과 의결권 등 발행 조건을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "삼성전기 전체의 연결 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "삼성전기"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "samsungel"
+  },
+  "sources": [
+    {
+      "id": "financial",
+      "label": "2023–2025년 연결 재무정보",
+      "url": "https://www.samsungsem.com/kr/about-us/investor-relations/financial-information.do",
+      "published": null,
+      "verifiedAt": "2026.10.06",
+      "asOf": "2025년 연간까지"
+    },
+    {
+      "id": "q1",
+      "label": "2026년 1분기 경영실적",
+      "url": "https://samsungsem.com/kr/newsroom/news/view.do?id=10265",
+      "published": "2026.04.30",
+      "verifiedAt": "2026.10.06"
+    },
+    {
+      "id": "q2",
+      "label": "2026년 2분기 경영실적",
+      "url": "https://samsungsem.com/kr/newsroom/news/view.do?id=10461",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.06"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310003071",
+      "published": "2026.03.10",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002842",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003805",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "MLCC",
+      "desc": "전기를 일시 저장하고 전자회로의 전압을 안정시키는 작은 부품입니다."
+    },
+    {
+      "name": "패키지 기판",
+      "desc": "반도체 칩을 보호하고 다른 회로와 전기적으로 연결하는 기판입니다."
+    },
+    {
+      "name": "FCBGA",
+      "desc": "서버 CPU·AI 가속기 등에 쓰이는 고성능 반도체 패키지 기판의 한 종류입니다."
+    },
+    {
+      "name": "카메라모듈",
+      "desc": "렌즈와 이미지 센서 등을 조립해 만든 카메라 부품입니다."
+    },
+    {
+      "name": "전장",
+      "desc": "자동차에 들어가는 전자부품과 전자장치를 뜻합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "생산한 제품 중 정상적으로 사용할 수 있는 제품의 비율입니다."
+    },
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "AI",
+      "desc": "인공지능입니다. 데이터를 바탕으로 학습해 분류·예측·콘텐츠 생성 등의 작업을 수행하는 기술입니다."
+    },
+    {
+      "name": "반도체 패키지",
+      "desc": "반도체 칩을 보호하고 외부 회로와 연결할 수 있도록 만든 구조입니다."
+    },
+    {
+      "name": "데이터센터",
+      "desc": "서버·저장장치·네트워크 장비와 이를 운영할 전력·냉각 설비를 모아 놓은 시설입니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}
