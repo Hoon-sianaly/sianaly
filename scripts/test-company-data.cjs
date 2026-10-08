@@ -54,7 +54,7 @@ function context(key, transform, failed = false) {
    for(const metric of Object.values(record.financials.metrics)) {
     assert.ok(out.includes(`<figcaption>${metric.label}</figcaption>`),`${entry.key}: chart metric`);
     assert.ok(out.includes(`<th scope="col">${metric.label}</th>`),`${entry.key}: table metric`);
-    assert.ok(out.includes(metric.help),`${entry.key}: metric explanation`);
+    assert.ok(!out.includes(`<figcaption>${metric.label}</figcaption><p class="desc">`),`${entry.key}: chart has no definition paragraph`);
    }
   }
   if (entry.key === "sksquare") {
