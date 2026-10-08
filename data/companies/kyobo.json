@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kyobo",
+    "rank": 225,
+    "name": "교보증권",
+    "ticker": "030610",
+    "type": "증권 기업"
+  },
+  "overview": {
+    "short": "증권 중개·투자 운용과 기업 자금조달 서비스를 제공하는 회사",
+    "summary": "증권 중개·투자 운용과 기업 자금조달 서비스를 제공하는 회사입니다. 거래와 금융상품 판매·수수료 수입이 중요합니다.",
+    "takeaways": [
+      "증권 중개·투자 운용과 기업 자금조달 서비스를 제공하는 회사입니다.",
+      "증권 중개: 주식·채권 거래와 고객 자산관리를 지원합니다.",
+      "투자 운용: 자기자본과 파생상품 등 금융자산을 운용합니다.",
+      "기업금융: 기업의 증권 발행과 자금조달을 지원합니다.",
+      "거래와 금융상품 판매·수수료 수입이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "증권 중개",
+        "desc": "주식·채권 거래와 고객 자산관리를 지원합니다."
+      },
+      {
+        "name": "투자 운용",
+        "desc": "자기자본과 파생상품 등 금융자산을 운용합니다."
+      },
+      {
+        "name": "기업금융",
+        "desc": "기업의 증권 발행과 자금조달을 지원합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객·시장",
+        "desc": "거래와 금융상품 판매·수수료 수입이 중요합니다."
+      },
+      {
+        "title": "운용·신용",
+        "desc": "금리·시장가격과 투자·신용 위험을 봐야 합니다."
+      },
+      {
+        "title": "자본·비용",
+        "desc": "차입·충당금과 자본 부담을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "판관비 차감 전 영업손익은 영업이익에 판매관리비를 더한 계산 지표입니다. 금융상품 매매 총액을 포함한 영업수익과 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.361729987879,
+        "op": 0.1139261204,
+        "net": 0.117678416308,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250313000901",
+          "rawKRW": {
+            "sales": "361729987879",
+            "op": "113926120400",
+            "net": "117678416308"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_ProfitLossFromOperatingActivities",
+              "ifrs-full_SellingGeneralAndAdministrativeExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.451671922,
+        "op": 0.190443426,
+        "net": 0.142910816,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260317000550",
+          "rawKRW": {
+            "sales": "451671922000",
+            "op": "190443426000",
+            "net": "142910816000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_ProfitLossFromOperatingActivities",
+              "ifrs-full_SellingGeneralAndAdministrativeExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.141076917,
+        "op": 0.07051842,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002459",
+          "rawKRW": {
+            "sales": "141076917000",
+            "op": "70518420000",
+            "net": "54332516000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_ProfitLossFromOperatingActivities",
+              "ifrs-full_SellingGeneralAndAdministrativeExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.181158923,
+        "op": 0.095907271,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001221",
+          "rawKRW": {
+            "sales": "181158923000",
+            "op": "95907271000",
+            "net": "68411373000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_ProfitLossFromOperatingActivities",
+              "ifrs-full_SellingGeneralAndAdministrativeExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.211858028,
+        "op": 0.11597166,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003361",
+          "rawKRW": {
+            "sales": "211858028000",
+            "op": "115971660000",
+            "net": "90110538000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_ProfitLossFromOperatingActivities",
+              "ifrs-full_SellingGeneralAndAdministrativeExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    },
+    "metrics": {
+      "sales": {
+        "label": "판관비 차감 전 영업손익",
+        "help": "영업이익에 판매비와 관리비를 더한 계산 지표입니다. 금융상품 거래 총액을 포함한 영업수익이나 제조업 매출과 구분합니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "동일한 회계 범위의 영업이익입니다. 투자·보험·비은행 손익을 포함할 수 있으며 순이익과 다릅니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000550",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001221",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003361",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313000901",
+      "published": "2025.03.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002459",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "교보증권 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003361",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "충당금",
+      "desc": "미래에 발생할 것으로 예상되는 손실이나 지급 의무를 미리 회계에 반영한 금액입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "기업금융",
+      "desc": "기업의 자금조달·투자·인수합병 등에 필요한 금융 서비스를 제공하는 사업입니다."
+    },
+    {
+      "name": "파생상품",
+      "desc": "주식·금리·환율 등의 가격이나 지표에 따라 가치가 달라지는 금융상품입니다."
+    },
+    {
+      "name": "판관비",
+      "desc": "판매비와 관리비입니다. 제품 판매와 회사 운영에 드는 비용을 뜻합니다."
+    },
+    {
+      "name": "판관비 차감 전 영업손익",
+      "desc": "영업이익에 판매비와 관리비를 더한 계산 지표입니다. 금융상품 매매 총액을 포함한 영업수익이나 제조업 매출과 구분합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
