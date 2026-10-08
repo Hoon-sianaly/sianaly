@@ -1200,17 +1200,97 @@
       "file": "lottechem.json",
       "market": "KOSPI",
       "alias": "Lotte Chemical 롯데 케미칼 호남석유"
+    },
+    {
+      "key": "skgas",
+      "name": "SK가스",
+      "ticker": "018670",
+      "file": "skgas.json",
+      "market": "KOSPI",
+      "alias": "SK Gas 에스케이가스"
+    },
+    {
+      "key": "hankookcompany",
+      "name": "한국앤컴퍼니",
+      "ticker": "000240",
+      "file": "hankookcompany.json",
+      "market": "KOSPI",
+      "alias": "Hankook Company 한국테크놀로지그룹"
+    },
+    {
+      "key": "hyosungholdings",
+      "name": "효성",
+      "ticker": "004800",
+      "file": "hyosungholdings.json",
+      "market": "KOSPI",
+      "alias": "Hyosung 효성지주"
+    },
+    {
+      "key": "hanwhavision",
+      "name": "한화비전",
+      "ticker": "489790",
+      "file": "hanwhavision.json",
+      "market": "KOSPI",
+      "alias": "Hanwha Vision 한화인더스트리얼솔루션즈"
+    },
+    {
+      "key": "kctech",
+      "name": "케이씨텍",
+      "ticker": "281820",
+      "file": "kctech.json",
+      "market": "KOSPI",
+      "alias": "KC Tech 케이씨테크"
+    },
+    {
+      "key": "isuspecialty",
+      "name": "이수스페셜티케미컬",
+      "ticker": "457190",
+      "file": "isuspecialty.json",
+      "market": "KOSPI",
+      "alias": "ISU Specialty Chemical 이수스페셜티"
+    },
+    {
+      "key": "nongshim",
+      "name": "농심",
+      "ticker": "004370",
+      "file": "nongshim.json",
+      "market": "KOSPI",
+      "alias": "Nongshim"
+    },
+    {
+      "key": "hyundaigf",
+      "name": "현대지에프홀딩스",
+      "ticker": "005440",
+      "file": "hyundaigf.json",
+      "market": "KOSPI",
+      "alias": "Hyundai GF 현대그린푸드지주"
+    },
+    {
+      "key": "cswind",
+      "name": "씨에스윈드",
+      "ticker": "112610",
+      "file": "cswind.json",
+      "market": "KOSPI",
+      "alias": "CS Wind 씨에스 윈드"
+    },
+    {
+      "key": "sl",
+      "name": "에스엘",
+      "ticker": "005850",
+      "file": "sl.json",
+      "market": "KOSPI",
+      "alias": "SL 에스엘주식회사"
     }
   ],
   "rankingSnapshot": {
     "asOf": "2026.10.08",
-    "capturedAt": "2026-10-08T07:50:44.378Z",
+    "capturedAt": "2026-10-08T12:47:33.933Z",
     "verifiedAt": "2026.10.08",
     "source": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100",
     "additionalSource": [
       "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100",
       "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=3&pageSize=100"
     ],
-    "note": "2026.10.08 조회 시점 코스피 시가총액 상위 150개 주식 종목입니다. 우선주는 별도 종목이며 ETF·ETN을 제외합니다. 회사형 인프라 펀드인 맥쿼리인프라는 포함하며 일반 기업과 지표를 구분합니다. 실시간 순위나 확정 종가 목록이 아닙니다."
+    "note": "2026.10.08 조회 시점 코스피 시가총액 상위 160개 주식 종목입니다. 우선주는 별도 종목이며 ETF·ETN을 제외합니다. 회사형 인프라 펀드인 맥쿼리인프라는 포함하며 일반 기업과 지표를 구분합니다. 실시간 순위나 확정 종가 목록이 아닙니다."
   }
 }

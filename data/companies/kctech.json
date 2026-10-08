@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kctech",
+    "rank": 155,
+    "name": "케이씨텍",
+    "ticker": "281820",
+    "type": "반도체 장비·소재 기업"
+  },
+  "overview": {
+    "short": "반도체·디스플레이 장비와 공정 소재를 공급하는 회사",
+    "summary": "반도체·디스플레이 장비와 공정 소재를 공급하는 회사입니다. 반도체 고객의 설비 투자와 장비 납품 시점이 중요합니다.",
+    "takeaways": [
+      "반도체·디스플레이 장비와 공정 소재를 공급하는 회사입니다.",
+      "반도체 장비: 반도체 세정·CMP 등 생산 장비를 공급합니다.",
+      "디스플레이 장비: 디스플레이 생산용 공정 장비를 공급합니다.",
+      "공정 소재: 반도체 공정에 사용하는 연마 소재 등을 공급합니다.",
+      "반도체 고객의 설비 투자와 장비 납품 시점이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "반도체 장비",
+        "desc": "반도체 세정·CMP 등 생산 장비를 공급합니다."
+      },
+      {
+        "name": "디스플레이 장비",
+        "desc": "디스플레이 생산용 공정 장비를 공급합니다."
+      },
+      {
+        "name": "공정 소재",
+        "desc": "반도체 공정에 사용하는 연마 소재 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "설비 투자",
+        "desc": "반도체 고객의 설비 투자와 장비 납품 시점이 중요합니다."
+      },
+      {
+        "title": "소재 사용",
+        "desc": "고객 공장 가동률과 공정 소재 수요를 봐야 합니다."
+      },
+      {
+        "title": "개발·원가",
+        "desc": "신제품 개발 비용과 장비·소재 원가가 이익을 바꿉니다."
+      }
+    ],
+    "financialNote": "공식 API에서 제공되는 비교 기간만 표시합니다. 누락된 과거 실적을 추정하지 않습니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.382856574357,
+        "op": 0.059965538593,
+        "net": 0.053392149112,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260313001174",
+          "rawKRW": {
+            "sales": "382856574357",
+            "op": "59965538593",
+            "net": "53392149112"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.097529632802,
+        "op": 0.015557553762,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001321",
+          "rawKRW": {
+            "sales": "97529632802",
+            "op": "15557553762",
+            "net": "11007621744"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.156114880339,
+        "op": 0.034810833489,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260513000773",
+          "rawKRW": {
+            "sales": "156114880339",
+            "op": "34810833489",
+            "net": "31610488267"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.112688832955,
+        "op": 0.023521741082,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001393",
+          "rawKRW": {
+            "sales": "112688832955",
+            "op": "23521741082",
+            "net": "21110597036"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001174",
+      "published": "2026.03.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000773",
+      "published": "2026.05.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001393",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001321",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "케이씨텍 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001393",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "CMP",
+      "desc": "반도체 표면을 화학 작용과 기계적 연마로 평탄하게 만드는 공정입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

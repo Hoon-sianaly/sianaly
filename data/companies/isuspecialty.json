@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "isuspecialty",
+    "rank": 156,
+    "name": "이수스페셜티케미컬",
+    "ticker": "457190",
+    "type": "정밀화학·소재 기업"
+  },
+  "overview": {
+    "short": "정밀화학 제품과 배터리용 황화리튬 등을 제조하는 회사",
+    "summary": "정밀화학 제품과 배터리용 황화리튬 등을 제조하는 회사입니다. 제품 판매가격과 원료 가격의 차이를 봐야 합니다.",
+    "takeaways": [
+      "정밀화학 제품과 배터리용 황화리튬 등을 제조하는 회사입니다.",
+      "정밀화학: 석유화학 공정 등에 쓰이는 정밀화학 제품을 생산합니다.",
+      "소재 개발: 전고체 배터리 관련 황화리튬 등 소재 사업을 추진합니다.",
+      "제품 공급: 국내외 고객에게 화학 제품과 소재를 공급합니다.",
+      "제품 판매가격과 원료 가격의 차이를 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "정밀화학",
+        "desc": "석유화학 공정 등에 쓰이는 정밀화학 제품을 생산합니다."
+      },
+      {
+        "name": "소재 개발",
+        "desc": "전고체 배터리 관련 황화리튬 등 소재 사업을 추진합니다."
+      },
+      {
+        "name": "제품 공급",
+        "desc": "국내외 고객에게 화학 제품과 소재를 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 가격",
+        "desc": "제품 판매가격과 원료 가격의 차이를 봐야 합니다."
+      },
+      {
+        "title": "신소재 투자",
+        "desc": "황화리튬 고객 확보·양산과 투자 비용이 중요합니다."
+      },
+      {
+        "title": "가동·현금",
+        "desc": "공장 가동률과 투자·운전자본 부담을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "신규 소재 사업의 개발·투자 단계와 기존 정밀화학 사업 손익을 구분합니다. 공식 API 미제공 비교 기간은 생략합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.411470361,
+        "op": 0.001615256,
+        "net": 0.000769523,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001027",
+          "rawKRW": {
+            "sales": "411470361000",
+            "op": "1615256000",
+            "net": "769523000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.10857166,
+        "op": 0.003480707,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001513",
+          "rawKRW": {
+            "sales": "108571660000",
+            "op": "3480707000",
+            "net": "1884047000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.108029149,
+        "op": 0.007737005,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002108",
+          "rawKRW": {
+            "sales": "108029149000",
+            "op": "7737005000",
+            "net": "3627145000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.08"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001027",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001513",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002108",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "이수스페셜티케미컬 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002108",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "양산",
+      "desc": "개발과 시험을 마친 제품을 판매·공급하기 위해 대량으로 생산하는 단계입니다."
+    },
+    {
+      "name": "운전자본",
+      "desc": "재고·매출채권·매입채무 등 일상적인 영업 과정에 필요한 자금과 관련된 항목입니다."
+    },
+    {
+      "name": "황화리튬",
+      "desc": "리튬과 황으로 이루어진 물질로 황화물계 전고체 배터리 전해질의 원료 등에 사용됩니다."
+    },
+    {
+      "name": "전고체 배터리",
+      "desc": "액체 대신 고체 전해질을 사용하는 배터리입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
