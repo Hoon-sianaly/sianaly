@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanwhareit",
+    "rank": 232,
+    "name": "한화리츠",
+    "ticker": "451800",
+    "type": "부동산 투자회사"
+  },
+  "overview": {
+    "short": "업무시설 등에 투자해 임대수익을 얻는 리츠",
+    "summary": "업무시설 등에 투자해 임대수익을 얻는 리츠입니다. 임차인과 임대료·계약 조건이 중요합니다.",
+    "takeaways": [
+      "업무시설 등에 투자해 임대수익을 얻는 리츠입니다.",
+      "부동산 투자: 업무시설 등 상업용 부동산을 보유합니다.",
+      "임대: 임대료와 관리 관련 수익을 얻습니다.",
+      "자산 관리: 임대 계약과 자산 편입·차입을 관리합니다.",
+      "임차인과 임대료·계약 조건이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "부동산 투자",
+        "desc": "업무시설 등 상업용 부동산을 보유합니다."
+      },
+      {
+        "name": "임대",
+        "desc": "임대료와 관리 관련 수익을 얻습니다."
+      },
+      {
+        "name": "자산 관리",
+        "desc": "임대 계약과 자산 편입·차입을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임대 조건",
+        "desc": "임차인과 임대료·계약 조건이 중요합니다."
+      },
+      {
+        "title": "금융 비용",
+        "desc": "차입 금리와 차환 조건을 봐야 합니다."
+      },
+      {
+        "title": "자산·분배",
+        "desc": "투자 확대와 금융비용 차감 후 이익·배당을 구분해야 합니다."
+      }
+    ],
+    "financialNote": "4월·10월에 끝나는 6개월 결산 회사입니다. 결산 실적과 3개월 실적의 실제 기간을 표시하며 달력 분기와 구분합니다. 별도 기준입니다. 분기 수치는 각 3개월의 실적입니다. 별도 기준입니다. 결산 그래프는 같은 시기에 종료되는 6개월 실적끼리 비교하며 12개월 합계가 아닙니다.",
+    "quarterlyNote": "공식 손익표의 3개월 실적입니다. 6개월 결산의 뒤쪽 3개월은 원 단위 결산 합계에서 앞쪽 3개월을 차감했습니다. 기간별 자산 편입 차이도 확인해야 합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.08"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.022808550198,
+        "op": 0.012995941226,
+        "reportedKRW": {
+          "sales": "22808550198",
+          "op": "12995941226"
+        },
+        "periodLabel": "2024.04 종료",
+        "reportPeriod": "2023.11–2024.04",
+        "sourceIds": [
+          "report-20250716000194"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.05044987419,
+        "op": 0.030925408783,
+        "reportedKRW": {
+          "sales": "50449874190",
+          "op": "30925408783"
+        },
+        "periodLabel": "2025.04 종료",
+        "reportPeriod": "2024.11–2025.04",
+        "sourceIds": [
+          "report-20260713000432"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.05425283946,
+        "op": 0.034265021058,
+        "reportedKRW": {
+          "sales": "54252839460",
+          "op": "34265021058"
+        },
+        "periodLabel": "2026.04 종료",
+        "reportPeriod": "2025.11–2026.04",
+        "sourceIds": [
+          "report-20260713000432"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.026175902096,
+        "op": 0.015458004721,
+        "reportedKRW": {
+          "sales": "26175902096",
+          "op": "15458004721"
+        },
+        "periodLabel": "2025.05–07",
+        "reportPeriod": "2025.05–07",
+        "sourceIds": [
+          "report-20250915000131"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.02716608992,
+        "op": 0.017399128688,
+        "reportedKRW": {
+          "sales": "27166089920",
+          "op": "17399128688"
+        },
+        "periodLabel": "2025.11–2026.01",
+        "reportPeriod": "2025.11–2026.01",
+        "sourceIds": [
+          "report-20260914000320"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.02708674954,
+        "op": 0.01686589237,
+        "reportedKRW": {
+          "sales": "27086749540",
+          "op": "16865892370"
+        },
+        "periodLabel": "2026.02–04",
+        "reportPeriod": "2026.02–04",
+        "sourceIds": [
+          "report-20260713000432",
+          "report-20260914000320"
+        ],
+        "derivation": "six-month-minus-first-three-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.031439803546,
+        "op": 0.019457578714,
+        "reportedKRW": {
+          "sales": "31439803546",
+          "op": "19457578714"
+        },
+        "periodLabel": "2026.05–07",
+        "reportPeriod": "2026.05–07",
+        "sourceIds": [
+          "report-20260914000320"
+        ]
+      }
+    ],
+    "quarterlyCalendarNote": "4월·10월 6개월 결산 회사 · 각 3개월 구간의 실제 날짜 표시 · 달력 분기와 다름",
+    "annualTerm": "6개월 결산",
+    "annualSourceLabel": "공식 6개월 결산 손익계산서",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (임대 등)",
+        "help": "부동산 임대료와 관리 등 수익입니다. 제조업 매출과 구분합니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "임대 관련 수익에서 영업비용을 차감한 이익입니다. 금융비용 차감 후 이익·현금 배당과 다릅니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20250716000194",
+      "label": "한화리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250716000194",
+      "published": "2025.07.16",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "report-20260713000432",
+      "label": "한화리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260713000432",
+      "published": "2026.07.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "report-20250915000131",
+      "label": "한화리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250915000131",
+      "published": "2025.09.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "report-20260914000320",
+      "label": "한화리츠 공식 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260914000320",
+      "published": "2026.09.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "report-20260914000320"
+    ],
+    "drivers": [
+      "report-20260914000320"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "차환",
+      "desc": "만기가 돌아오는 차입금을 새로 빌린 돈 등으로 상환하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
