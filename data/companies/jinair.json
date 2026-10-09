@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "jinair",
+    "name": "진에어",
+    "ticker": "272450",
+    "rank": 406,
+    "type": "항공 운송"
+  },
+  "overview": {
+    "short": "진에어는 국내·국제 노선에서 승객과 화물을 운송하는 항공사",
+    "summary": "진에어는 국내·국제 노선에서 승객과 화물을 운송하는 항공사입니다. 항공권 판매가 주력이며 부가 서비스와 화물 운송 수입도 있습니다.",
+    "takeaways": [
+      "진에어는 국내·국제 노선에서 승객과 화물을 운송하는 항공사입니다.",
+      "항공권 판매가 주력이며 부가 서비스와 화물 운송 수입도 있습니다.",
+      "항공기는 리스 등을 통해 확보하고 운항·정비·안전 관리에 비용을 투입합니다.",
+      "승객 수뿐 아니라 좌석 판매가격과 노선별 비용을 함께 봐야 합니다.",
+      "항공유·환율·임차료와 운항 안정성이 실적에 영향을 줍니다."
+    ],
+    "business": [
+      {
+        "name": "여객 노선 운항",
+        "desc": "국내·국제 노선의 항공권을 판매하고 항공기·좌석을 운영해 승객을 운송합니다."
+      },
+      {
+        "name": "화물·부가 서비스",
+        "desc": "항공 화물과 운송 관련 부가 서비스를 제공해 항공권 외의 수입을 얻습니다."
+      },
+      {
+        "name": "항공기 운영",
+        "desc": "항공기를 확보·운항하고 정비·안전 관리와 예약·판매 체계를 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "노선 수요와 운임",
+        "desc": "승객 수·좌석 이용과 항공권 가격이 함께 바뀌므로 노선별 판매를 구분합니다."
+      },
+      {
+        "title": "연료·외화 비용",
+        "desc": "항공유와 환율, 항공기 리스료 등 외화 비용이 운항 원가에 영향을 줍니다."
+      },
+      {
+        "title": "운항·정비 효율",
+        "desc": "항공기 가동과 정비·안전 비용, 운항 차질을 매출 성장과 함께 확인합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.461262722147,
+        "op": 0.163113835297,
+        "net": 0.095712668498,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000022",
+          "rawKRW": {
+            "sales": "1461262722147",
+            "op": "163113835297",
+            "net": "95712668498"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.381080693148,
+        "op": -0.019157673281,
+        "net": -0.009755171166,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000946",
+          "rawKRW": {
+            "sales": "1381080693148",
+            "op": "-19157673281",
+            "net": "-9755171166"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.306073367543,
+        "op": -0.042286120579,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003750",
+          "rawKRW": {
+            "sales": "306073367543",
+            "op": "-42286120579",
+            "net": "-15718261352"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.422976071549,
+        "op": 0.057613481142,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002097",
+          "rawKRW": {
+            "sales": "422976071549",
+            "op": "57613481142",
+            "net": "21672249415"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.360297536785,
+        "op": -0.07310333043,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002710",
+          "rawKRW": {
+            "sales": "360297536785",
+            "op": "-73103330430",
+            "net": "-67543910596"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000946",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002097",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002710",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000022",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003750",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "진에어 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002710",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "운임",
+      "desc": "사람이나 화물을 운송하는 대가로 받는 요금입니다."
+    },
+    {
+      "name": "리스",
+      "desc": "자산을 일정 기간 사용할 권리를 제공하고 이용료를 받는 계약입니다."
+    },
+    {
+      "name": "임차료",
+      "desc": "건물·시설 등을 빌려 사용하는 대가로 지급하는 돈입니다."
+    },
+    {
+      "name": "항공유",
+      "desc": "항공기 엔진에 사용하는 연료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

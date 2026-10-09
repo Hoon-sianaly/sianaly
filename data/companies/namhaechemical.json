@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "namhaechemical",
+    "name": "남해화학",
+    "ticker": "025860",
+    "rank": 413,
+    "type": "비료·유류"
+  },
+  "overview": {
+    "short": "남해화학은 농업용 비료와 화학제품을 제조하고 유류제품을 유통하는 회사",
+    "summary": "남해화학은 농업용 비료와 화학제품을 제조하고 유류제품을 유통하는 회사입니다. 복합비료 등 비료를 국내 농업 시장과 해외 고객에게 공급합니다.",
+    "takeaways": [
+      "남해화학은 농업용 비료와 화학제품을 제조하고 유류제품을 유통하는 회사입니다.",
+      "복합비료 등 비료를 국내 농업 시장과 해외 고객에게 공급합니다.",
+      "암모니아·황산 등 화학제품과 유류 판매도 사업에 포함됩니다.",
+      "비료 제조와 유류 유통은 매출 규모·이익률·원가 구조가 다릅니다.",
+      "농업 수요뿐 아니라 원료 국제가격, 환율과 수출 판매 조건을 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "비료 제조·판매",
+        "desc": "복합비료 등 농업용 비료를 생산해 국내 농업 유통망과 해외 시장에 공급합니다."
+      },
+      {
+        "name": "화학제품",
+        "desc": "암모니아·황산 등 관련 화학제품을 생산·판매하며 원료 수급과 공장 운영을 관리합니다."
+      },
+      {
+        "name": "유류 유통",
+        "desc": "유류제품을 매입·판매하는 유통 사업으로 제조 사업과 다른 이익 구조를 가집니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "원료·판매가격",
+        "desc": "비료 원료의 국제가격과 제품 판매가격 차이가 제조 이익에 중요합니다."
+      },
+      {
+        "title": "농업·수출 수요",
+        "desc": "국내 비료 사용 시기와 해외 주문, 환율에 따라 판매 규모가 달라집니다."
+      },
+      {
+        "title": "유통 사업 비중",
+        "desc": "유류 가격·판매량 변화가 전체 매출을 움직여도 제조 수익성과는 차이가 날 수 있습니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.519109111887,
+        "op": 0.036263869903,
+        "net": 0.021521559735,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001346",
+          "rawKRW": {
+            "sales": "1519109111887",
+            "op": "36263869903",
+            "net": "21521559735"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.604420884203,
+        "op": 0.043128612586,
+        "net": 0.026925742554,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000635",
+          "rawKRW": {
+            "sales": "1604420884203",
+            "op": "43128612586",
+            "net": "26925742554"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.426192850901,
+        "op": 0.014154118354,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001478",
+          "rawKRW": {
+            "sales": "426192850901",
+            "op": "14154118354",
+            "net": "9398489198"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.492954552649,
+        "op": -0.000120803093,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000080",
+          "rawKRW": {
+            "sales": "492954552649",
+            "op": "-120803093",
+            "net": "-2508876804"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.504927562927,
+        "op": 0.012919837127,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001191",
+          "rawKRW": {
+            "sales": "504927562927",
+            "op": "12919837127",
+            "net": "8337343032"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000635",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000080",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001191",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001346",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001478",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "남해화학 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001191",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "이익률",
+      "desc": "매출 등 수익에 비해 이익이 얼마나 남는지 나타내는 비율입니다. 어떤 이익을 사용했는지 구분해야 합니다."
+    },
+    {
+      "name": "복합비료",
+      "desc": "질소·인산·칼륨 등 여러 비료 성분을 함께 포함한 비료입니다."
+    },
+    {
+      "name": "암모니아",
+      "desc": "질소와 수소로 이루어진 화합물로, 비료 원료 등 여러 산업에서 사용합니다."
+    },
+    {
+      "name": "황산",
+      "desc": "비료·화학제품 제조 등 산업에 쓰이는 강한 산성 화학물질입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "jwholdings",
+    "name": "JW홀딩스",
+    "ticker": "096760",
+    "rank": 402,
+    "type": "의약품·계열 관리"
+  },
+  "overview": {
+    "short": "JW홀딩스는 의약품 해외 사업과 계열사 투자·관리를 수행하는 회사",
+    "summary": "JW홀딩스는 의약품 해외 사업과 계열사 투자·관리를 수행하는 회사입니다. 원료·완제의약품과 의료기기 등을 해외에 공급하고 관계사 관리 업무를 합니다.",
+    "takeaways": [
+      "JW홀딩스는 의약품 해외 사업과 계열사 투자·관리를 수행하는 회사입니다.",
+      "원료·완제의약품과 의료기기 등을 해외에 공급하고 관계사 관리 업무를 합니다.",
+      "계열사 지분·브랜드 사용과 관리 서비스에서도 수익을 얻습니다.",
+      "공시에서 공정거래법상 지주회사 제외를 밝힌 것과 실제 계열 관리 사업은 구분해야 합니다.",
+      "JW중외제약 등 다른 상장 계열사의 전체 매출을 단순 합산하지 않고 연결 범위를 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "의약품 해외 사업",
+        "desc": "계열사 등이 생산하는 원료·완제의약품과 의료기기 등을 해외 고객에게 공급합니다."
+      },
+      {
+        "name": "계열 투자·관리",
+        "desc": "계열사 지분을 보유하고 관리 업무를 수행하며 배당·브랜드 사용·관리 서비스 등 수익을 얻습니다."
+      },
+      {
+        "name": "연결 의약 사업",
+        "desc": "연결 대상 제약·의료 관련 계열사의 제조·판매 성과를 함께 반영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품·해외 수요",
+        "desc": "제품별 수출 주문과 판매 조건, 해외 거래의 환율·대금 회수를 확인합니다."
+      },
+      {
+        "title": "제조·개발 비용",
+        "desc": "연결 의약 사업의 제조·판매와 연구개발 비용을 해외 거래 수익과 구분해 봅니다."
+      },
+      {
+        "title": "회사 범위",
+        "desc": "본체 관리·해외 사업과 연결 계열사 실적의 차이를 보고 개별 계열사 매출을 중복 계산하지 않습니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.887710032227,
+        "op": 0.146522860164,
+        "net": 0.122787792044,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318001204",
+          "rawKRW": {
+            "sales": "887710032227",
+            "op": "146522860164",
+            "net": "122787792044"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.969565285593,
+        "op": 0.167899328921,
+        "net": 0.11548781399,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001363",
+          "rawKRW": {
+            "sales": "969565285593",
+            "op": "167899328921",
+            "net": "115487813990"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.228383480454,
+        "op": 0.041026589276,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001806",
+          "rawKRW": {
+            "sales": "228383480454",
+            "op": "41026589276",
+            "net": "10126579525"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.243220859466,
+        "op": 0.051483739831,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002225",
+          "rawKRW": {
+            "sales": "243220859466",
+            "op": "51483739831",
+            "net": "39802363018"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.266470257393,
+        "op": 0.053782284609,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003915",
+          "rawKRW": {
+            "sales": "266470257393",
+            "op": "53782284609",
+            "net": "40994054120"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001363",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002225",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003915",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001204",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001806",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "JW홀딩스 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003915",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "대금 회수",
+      "desc": "상품이나 서비스를 제공한 뒤 고객에게 받을 돈을 실제로 받는 것입니다."
+    },
+    {
+      "name": "지주회사",
+      "desc": "다른 회사의 주식을 보유해 계열사를 지배·관리하는 회사입니다. 자체 사업을 함께 운영하기도 합니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "완제의약품",
+      "desc": "환자에게 투여할 수 있도록 제형·포장 등을 마친 최종 의약품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

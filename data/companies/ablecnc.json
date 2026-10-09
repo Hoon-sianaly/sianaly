@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ablecnc",
+    "name": "에이블씨엔씨",
+    "ticker": "078520",
+    "rank": 417,
+    "type": "화장품"
+  },
+  "overview": {
+    "short": "에이블씨엔씨는 미샤·어퓨 등을 운영하는 화장품 회사",
+    "summary": "에이블씨엔씨는 미샤·어퓨 등을 운영하는 화장품 회사입니다. 기초·색조 화장품을 개발하고 브랜드별 유통망을 통해 판매합니다.",
+    "takeaways": [
+      "에이블씨엔씨는 미샤·어퓨 등을 운영하는 화장품 회사입니다.",
+      "기초·색조 화장품을 개발하고 브랜드별 유통망을 통해 판매합니다.",
+      "국내 매장·온라인과 해외 판매가 서로 다른 고객·비용 구조를 가집니다.",
+      "브랜드 경쟁력과 국가·채널별 판매 구성, 판촉비가 수익성에 중요합니다.",
+      "과거 비교 실적이 최신 공시에서 달라진 기간은 같은 회계 범위의 비교값을 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "화장품 브랜드",
+        "desc": "미샤·어퓨 등 브랜드의 기초·색조 제품을 개발·판매합니다."
+      },
+      {
+        "name": "국내 판매",
+        "desc": "온라인과 오프라인 채널의 제품 구성·재고·판촉을 관리합니다."
+      },
+      {
+        "name": "해외 판매",
+        "desc": "해외 유통·현지 사업을 통해 제품을 공급하며 지역별 수요와 비용을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "브랜드·제품 경쟁",
+        "desc": "주력 제품과 신제품의 판매 지속성이 브랜드 매출에 영향을 줍니다."
+      },
+      {
+        "title": "해외·채널 구성",
+        "desc": "국가별 판매와 직영·온라인·유통 채널 비중에 따라 이익률이 달라집니다."
+      },
+      {
+        "title": "판매 비용·비교 범위",
+        "desc": "광고·할인 비용과 최신 공시의 과거 비교 수치를 함께 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다. 최신 공시에서 달라진 과거 비교값은 공시 원문과 대조하여 반영했습니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.239243264624,
+        "op": 0.018194383211,
+        "net": 0.014545940972,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260320000406",
+          "rawKRW": {
+            "sales": "239243264624",
+            "op": "18194383211",
+            "net": "14545940972"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparativeBasis": "latest-official-comparative"
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.242001742092,
+        "op": 0.017952804266,
+        "net": 0.014126439364,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320000406",
+          "rawKRW": {
+            "sales": "242001742092",
+            "op": "17952804266",
+            "net": "14126439364"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.062154544517,
+        "op": 0.006826620967,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001673",
+          "rawKRW": {
+            "sales": "62154544517",
+            "op": "6826620967",
+            "net": "3943790634"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparativeBasis": "latest-official-comparative"
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.061367665992,
+        "op": 0.009423882559,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260513000739",
+          "rawKRW": {
+            "sales": "61367665992",
+            "op": "9423882559",
+            "net": "8920668890"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.065238290817,
+        "op": 0.010407609702,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001673",
+          "rawKRW": {
+            "sales": "65238290817",
+            "op": "10407609702",
+            "net": "9240011216"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000406",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000739",
+      "published": "2026.05.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001673",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART · 최신 공시 비교값",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000406",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART · 최신 공시 비교값",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001673",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "에이블씨엔씨 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001673",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "유통 채널",
+      "desc": "제품이나 서비스를 고객에게 판매하는 경로입니다. 온라인몰·매장·도매·판매 대리점 등이 포함됩니다."
+    },
+    {
+      "name": "색조 화장품",
+      "desc": "피부·입술 등에 색이나 외관 효과를 더하는 화장품입니다."
+    },
+    {
+      "name": "이익률",
+      "desc": "매출 등 수익에 비해 이익이 얼마나 남는지 나타내는 비율입니다. 어떤 이익을 사용했는지 구분해야 합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

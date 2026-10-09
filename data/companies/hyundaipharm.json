@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hyundaipharm",
+    "name": "현대약품",
+    "ticker": "004310",
+    "rank": 448,
+    "type": "의약품·음료"
+  },
+  "overview": {
+    "short": "현대약품은 의약품과 음료 등 제품을 제조·판매하는 회사",
+    "summary": "현대약품은 의약품과 음료 등 제품을 제조·판매하는 회사입니다. 처방·일반의약품과 미녹실·버물리 등 제품을 공급합니다.",
+    "takeaways": [
+      "현대약품은 의약품과 음료 등 제품을 제조·판매하는 회사입니다.",
+      "처방·일반의약품과 미녹실·버물리 등 제품을 공급합니다.",
+      "미에로화이바 등 음료와 관련 소비 제품 사업도 수행합니다.",
+      "11월 결산 회사이므로 회계 1분기는 12~2월, 2분기는 3~5월입니다.",
+      "표시된 실적은 실제 기간을 기준으로 비교하며 일반 기업의 1~3월·4~6월과 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "의약품",
+        "desc": "전문·일반의약품을 제조해 의료기관·약국 등 유통망에 판매합니다."
+      },
+      {
+        "name": "음료·소비 제품",
+        "desc": "미에로화이바 등 음료와 관련 소비 제품을 판매합니다."
+      },
+      {
+        "name": "연구·생산",
+        "desc": "의약품 연구개발과 품질·허가·생산 관리를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매·채널",
+        "desc": "의약품과 음료의 판매·유통 경로가 다르므로 제품별 성과를 확인합니다."
+      },
+      {
+        "title": "개발·원가 비용",
+        "desc": "원료·생산·판매와 연구개발 비용을 함께 봅니다."
+      },
+      {
+        "title": "11월 결산 비교",
+        "desc": "실제 12개월·3개월 기간과 계절을 맞춰 전년 동기 실적을 비교합니다."
+      }
+    ],
+    "financialNote": "별도 기준 · 11월 결산 12개월 실적입니다. 회계 분기와 실제 달력 기간을 함께 표시합니다.",
+    "quarterlyNote": "회계 1분기는 12~2월, 2분기는 3~5월의 실제 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.175735499255,
+        "op": 0.000180885917,
+        "net": -0.000574887516,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250219001662",
+          "rawKRW": {
+            "sales": "175735499255",
+            "op": "180885917",
+            "net": "-574887516"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2024.11 종료",
+        "reportPeriod": "2023.12–2024.11"
+      },
+      {
+        "year": 2025,
+        "sales": 0.191790079025,
+        "op": 0.004160910933,
+        "net": 0.002516256242,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260213002543",
+          "rawKRW": {
+            "sales": "191790079025",
+            "op": "4160910933",
+            "net": "2516256242"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.11 종료",
+        "reportPeriod": "2024.12–2025.11"
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.048413959779,
+        "op": 0.001077665605,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250714000328",
+          "rawKRW": {
+            "sales": "48413959779",
+            "op": "1077665605",
+            "net": "956456846"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.03–05",
+        "reportPeriod": "2025.03–05"
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.046454406369,
+        "op": 0.002521352563,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260414002254",
+          "rawKRW": {
+            "sales": "46454406369",
+            "op": "2521352563",
+            "net": "419998128"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.12–2026.02",
+        "reportPeriod": "2025.12–2026.02"
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.055585357882,
+        "op": 0.000976252404,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260715000511",
+          "rawKRW": {
+            "sales": "55585357882",
+            "op": "976252404",
+            "net": "1211880916"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2026.03–05",
+        "reportPeriod": "2026.03–05"
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    },
+    "quarterlyCalendarNote": "11월 결산 · 회계 1분기 12~2월, 2분기 3~5월"
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "현대약품 2024.12–2025.11 별도 실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213002543",
+      "published": "2026.02.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "현대약품 2025.12–2026.02 별도 실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414002254",
+      "published": "2026.04.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "현대약품 2026.03–05 별도 실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000511",
+      "published": "2026.07.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "현대약품 2023.12–2024.11 별도 실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250219001662",
+      "published": "2025.02.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "현대약품 2025.03–05 별도 실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250714000328",
+      "published": "2025.07.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "현대약품 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000511",
+      "published": "2026.07.15",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "일반의약품",
+      "desc": "정해진 판매 조건 아래 처방전 없이 구입할 수 있는 의약품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

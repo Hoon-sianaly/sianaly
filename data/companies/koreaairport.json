@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreaairport",
+    "name": "한국공항",
+    "ticker": "005430",
+    "rank": 405,
+    "type": "항공 지상 서비스"
+  },
+  "overview": {
+    "short": "한국공항은 항공기의 지상조업·급유와 항공화물 취급 등을 하는 서비스 회사",
+    "summary": "한국공항은 항공기의 지상조업·급유와 항공화물 취급 등을 하는 서비스 회사입니다. 항공사가 여객을 운송하기 전후에 필요한 공항 현장 업무를 지원합니다.",
+    "takeaways": [
+      "한국공항은 항공기의 지상조업·급유와 항공화물 취급 등을 하는 서비스 회사입니다.",
+      "항공사가 여객을 운송하기 전후에 필요한 공항 현장 업무를 지원합니다.",
+      "항공기 정비와 지게차 대여 등 관련 운영 사업도 있습니다.",
+      "생수·축산·제주민속촌 등 지상조업 외의 사업도 연결 범위에 포함됩니다.",
+      "공항 이용·항공기 운항 물량과 인력·장비 운영, 안전 관리가 수익성에 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "항공 지상조업",
+        "desc": "항공기의 지상 작업·급유와 항공화물 취급 등 항공 운항을 지원하는 서비스를 제공합니다."
+      },
+      {
+        "name": "장비·정비 서비스",
+        "desc": "항공기 정비와 지게차 대여·관련 플랫폼 등 장비 운영 사업을 수행합니다."
+      },
+      {
+        "name": "비조업 사업",
+        "desc": "생수·축산과 제주민속촌 등 항공 지상 서비스 외의 사업도 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "항공 운항 물량",
+        "desc": "고객 항공사의 운항과 공항 화물 물량이 조업 서비스 수요에 영향을 줍니다."
+      },
+      {
+        "title": "인력·장비 비용",
+        "desc": "인건비와 장비 유지·정비, 안전·품질 관리 비용을 서비스 계약 조건과 함께 봅니다."
+      },
+      {
+        "title": "사업별 수익성",
+        "desc": "주력 지상조업과 관광·제품·대여 사업을 나눠 보면 연결 실적 변화의 원인을 이해할 수 있습니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.626537271117,
+        "op": 0.045009646028,
+        "net": 0.040605939549,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000741",
+          "rawKRW": {
+            "sales": "626537271117",
+            "op": "45009646028",
+            "net": "40605939549"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.663192785932,
+        "op": 0.047014830454,
+        "net": 0.040545958975,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000066",
+          "rawKRW": {
+            "sales": "663192785932",
+            "op": "47014830454",
+            "net": "40545958975"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.16029684237,
+        "op": 0.011469468996,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004346",
+          "rawKRW": {
+            "sales": "160296842370",
+            "op": "11469468996",
+            "net": "9473658943"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.177975729252,
+        "op": 0.019686235015,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002187",
+          "rawKRW": {
+            "sales": "177975729252",
+            "op": "19686235015",
+            "net": "15912292097"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.173873700024,
+        "op": 0.012924050317,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003106",
+          "rawKRW": {
+            "sales": "173873700024",
+            "op": "12924050317",
+            "net": "10333016571"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000066",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002187",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003106",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000741",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004346",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "한국공항 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003106",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "플랫폼",
+      "desc": "여러 제품·기술을 개발하거나 서비스를 제공하는 데 활용하는 공통 기반입니다. 여기서는 약물 전달 등 기술 기반을 뜻합니다."
+    },
+    {
+      "name": "지상조업",
+      "desc": "항공기의 지상 이동·수하물·화물 처리 등 공항에서 운항을 지원하는 업무입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

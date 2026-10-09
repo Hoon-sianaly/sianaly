@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kgmobilityplatform",
+    "name": "KG모빌리티플랫폼",
+    "ticker": "381970",
+    "rank": 403,
+    "type": "중고차·렌터카"
+  },
+  "overview": {
+    "short": "KG모빌리티플랫폼은 케이카로 알려진 직영 중고차 매매 사업을 운영하는 회사",
+    "summary": "KG모빌리티플랫폼은 케이카로 알려진 직영 중고차 매매 사업을 운영하는 회사입니다. 차량을 직접 매입해 소비자에게 판매하므로 단순 거래 중개와 수익 구조가 다릅니다.",
+    "takeaways": [
+      "KG모빌리티플랫폼은 케이카로 알려진 직영 중고차 매매 사업을 운영하는 회사입니다.",
+      "차량을 직접 매입해 소비자에게 판매하므로 단순 거래 중개와 수익 구조가 다릅니다.",
+      "온라인 홈서비스와 오프라인 지점, 경매 등의 경로로 차량을 유통합니다.",
+      "장·단기 렌터카 사업도 있어 차량 운영과 반납 차량의 처분을 함께 봐야 합니다.",
+      "차량 매입 가격과 판매가격의 차이, 재고 회전과 보증·운영 비용이 이익에 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "직영 중고차 판매",
+        "desc": "차량을 직접 매입·상품화해 온라인 홈서비스와 지점에서 소비자에게 판매합니다."
+      },
+      {
+        "name": "경매·차량 유통",
+        "desc": "소매 판매 외에 경매 등을 통해 차량을 유통하며 매입·판매 과정의 효율을 관리합니다."
+      },
+      {
+        "name": "렌터카",
+        "desc": "차량의 장·단기 대여와 운영을 수행하고 반납 차량의 매각 등 관련 수익을 얻습니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "매입과 판매 마진",
+        "desc": "차량 매입 가격과 실제 판매가격의 차이에서 상품화·보증·판매 비용을 얼마나 남기는지 봅니다."
+      },
+      {
+        "title": "재고 회전",
+        "desc": "차량이 오래 재고로 남으면 가격 조정과 자금 부담이 커질 수 있어 판매 속도를 확인합니다."
+      },
+      {
+        "title": "대여·반납 차량",
+        "desc": "렌터카 이용과 운영 비용, 반납 차량 처분을 중고차 소매 판매와 구분합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.301530094719,
+        "op": 0.068109299938,
+        "net": 0.043965329854,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000964",
+          "rawKRW": {
+            "sales": "2301530094719",
+            "op": "68109299938",
+            "net": "43965329854"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 2.438838573193,
+        "op": 0.075973592094,
+        "net": 0.050886254374,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000506",
+          "rawKRW": {
+            "sales": "2438838573193",
+            "op": "75973592094",
+            "net": "50886254374"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.608868718148,
+        "op": 0.018121020059,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250822000377",
+          "rawKRW": {
+            "sales": "608868718148",
+            "op": "18121020059",
+            "net": "12011910854"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.572134860054,
+        "op": 0.014207968986,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001013",
+          "rawKRW": {
+            "sales": "572134860054",
+            "op": "14207968986",
+            "net": "10232337929"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.439157235896,
+        "op": -0.033635105615,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002373",
+          "rawKRW": {
+            "sales": "439157235896",
+            "op": "-33635105615",
+            "net": "-27103154684"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000506",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001013",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002373",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000964",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250822000377",
+      "published": "2025.08.22",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "KG모빌리티플랫폼 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002373",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "모빌리티",
+      "desc": "사람이나 물건의 이동과 관련된 기술·제품·서비스·사업입니다. 차량과 이동 서비스를 포함합니다."
+    },
+    {
+      "name": "플랫폼",
+      "desc": "여러 제품·기술을 개발하거나 서비스를 제공하는 데 활용하는 공통 기반입니다. 여기서는 약물 전달 등 기술 기반을 뜻합니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "isuchemical",
+    "name": "이수화학",
+    "ticker": "005950",
+    "rank": 410,
+    "type": "화학·연결 사업"
+  },
+  "overview": {
+    "short": "이수화학은 세제 원료 등 석유화학 사업과 건설·의약 계열 사업을 연결하는 회사",
+    "summary": "이수화학은 세제 원료 등 석유화학 사업과 건설·의약 계열 사업을 연결하는 회사입니다. LAB·NP·LAS 등 합성세제 관련 화학제품을 제조·판매합니다.",
+    "takeaways": [
+      "이수화학은 세제 원료 등 석유화학 사업과 건설·의약 계열 사업을 연결하는 회사입니다.",
+      "LAB·NP·LAS 등 합성세제 관련 화학제품을 제조·판매합니다.",
+      "이수건설의 건설 사업과 이수앱지스의 바이오의약품 사업도 연결에 포함됩니다.",
+      "화학제품의 원료·판매가격과 건설 프로젝트, 의약품 연구는 실적 발생 방식이 다릅니다.",
+      "분할된 이수스페셜티케미컬과는 다른 종목이므로 사업·회계 범위를 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "세제 원료·화학",
+        "desc": "합성세제 원료와 관련 석유화학제품을 제조·판매하고 스마트팜 등 관련 사업도 운영합니다."
+      },
+      {
+        "name": "건설 계열 사업",
+        "desc": "이수건설 등의 주택·공공건축물·플랜트 등 건설 프로젝트 손익을 연결합니다."
+      },
+      {
+        "name": "바이오의약품",
+        "desc": "이수앱지스 등 계열사의 바이오의약품 개발·판매 성과를 반영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "화학 가격 차이",
+        "desc": "원료비와 화학제품 판매가격의 차이, 고객 주문·공장 가동을 확인합니다."
+      },
+      {
+        "title": "공사 진행·회수",
+        "desc": "건설 프로젝트의 공사 원가·진행과 분양·대금 회수를 제조 사업과 구분합니다."
+      },
+      {
+        "title": "의약·연결 범위",
+        "desc": "의약품 판매·개발 비용과 분할 후 회사 범위를 함께 봐야 전체 손익을 이해할 수 있습니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.916230887,
+        "op": -0.051445078,
+        "net": -0.038208992,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814003414",
+          "rawKRW": {
+            "sales": "1916230887000",
+            "op": "-51445078000",
+            "net": "-38208992000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.659477477,
+        "op": 0.006884026,
+        "net": -0.040522797,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001212",
+          "rawKRW": {
+            "sales": "1659477477000",
+            "op": "6884026000",
+            "net": "-40522797000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.339854268,
+        "op": 0.003908943,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003571",
+          "rawKRW": {
+            "sales": "339854268000",
+            "op": "3908943000",
+            "net": "-4690058000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.63585986,
+        "op": 0.0254278,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000486",
+          "rawKRW": {
+            "sales": "635859860000",
+            "op": "25427800000",
+            "net": "20847226000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.743435315,
+        "op": 0.09655925,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002941",
+          "rawKRW": {
+            "sales": "743435315000",
+            "op": "96559250000",
+            "net": "77841970000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001212",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000486",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002941",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003414",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003571",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "이수화학 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002941",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "플랜트",
+      "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
+    },
+    {
+      "name": "대금 회수",
+      "desc": "상품이나 서비스를 제공한 뒤 고객에게 받을 돈을 실제로 받는 것입니다."
+    },
+    {
+      "name": "바이오의약품",
+      "desc": "생물 유래 물질이나 생명공학 기술 등을 이용해 만드는 의약품입니다."
+    },
+    {
+      "name": "LAB",
+      "desc": "합성세제 원료인 선형 알킬벤젠입니다."
+    },
+    {
+      "name": "NP",
+      "desc": "노말 파라핀입니다. 세제 원료 등을 만드는 데 사용하는 탄화수소 소재입니다."
+    },
+    {
+      "name": "LAS",
+      "desc": "선형 알킬벤젠 설폰산염 계열의 세제 성분입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
