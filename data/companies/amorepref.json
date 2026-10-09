@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "amorepref",
+    "rank": 347,
+    "name": "아모레퍼시픽우",
+    "ticker": "090435",
+    "type": "화장품 우선주"
+  },
+  "overview": {
+    "short": "아모레퍼시픽 회사 실적을 공유하는 우선주",
+    "summary": "아모레퍼시픽 회사 실적을 공유하는 우선주입니다. 사업과 실적은 본주 회사 전체 기준이고 주식의 권리는 별도로 확인해야 합니다.",
+    "takeaways": [
+      "아모레퍼시픽 회사 실적을 공유하는 우선주입니다.",
+      "화장품: 아모레퍼시픽의 화장품 사업을 회사 전체 기준으로 봅니다.",
+      "해외 판매: 해외 브랜드 판매와 현지 운영 성과가 반영됩니다.",
+      "생활·관련 사업: 회사 연결 범위에 포함된 관련 사업을 함께 봅니다.",
+      "우선주만의 별도 매출이나 영업이익이 아닙니다."
+    ],
+    "business": [
+      {
+        "name": "화장품",
+        "desc": "아모레퍼시픽의 화장품 사업을 회사 전체 기준으로 봅니다."
+      },
+      {
+        "name": "해외 판매",
+        "desc": "해외 브랜드 판매와 현지 운영 성과가 반영됩니다."
+      },
+      {
+        "name": "생활·관련 사업",
+        "desc": "회사 연결 범위에 포함된 관련 사업을 함께 봅니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "회사 실적",
+        "desc": "우선주만의 별도 매출이나 영업이익이 아닙니다."
+      },
+      {
+        "title": "주식 권리",
+        "desc": "배당과 의결권 등 우선주 조건을 별도로 확인합니다."
+      },
+      {
+        "title": "실적 중복",
+        "desc": "본주와 우선주 또는 그룹 회사의 실적을 단순 합산하지 않습니다."
+      }
+    ],
+    "financialNote": "본주 회사 전체의 연결 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "아모레퍼시픽"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "amore"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "아모레퍼시픽 2025년 사업보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000785",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "아모레퍼시픽 2026년 반기보고서 — 연결 손익계산서",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002449",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000785",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515001510",
+      "published": "2025.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001993",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001182",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002449",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

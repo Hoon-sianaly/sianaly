@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daishinpref",
+    "rank": 321,
+    "name": "대신증권우",
+    "ticker": "003545",
+    "type": "증권 우선주"
+  },
+  "overview": {
+    "short": "대신증권 회사 실적을 공유하는 우선주",
+    "summary": "대신증권 회사 실적을 공유하는 우선주입니다. 사업과 실적은 본주 회사 전체 기준이고 주식의 권리는 별도로 확인해야 합니다.",
+    "takeaways": [
+      "대신증권 회사 실적을 공유하는 우선주입니다.",
+      "증권 사업: 대신증권의 거래 중개와 금융상품 사업을 회사 전체 기준으로 봅니다.",
+      "금융 계열사: 금융 계열사의 성과가 연결 실적에 반영됩니다.",
+      "부동산 사업: 연결 범위에 포함된 부동산 등 관련 사업을 함께 봅니다.",
+      "우선주만의 매출이나 영업이익이 따로 있는 것은 아닙니다."
+    ],
+    "business": [
+      {
+        "name": "증권 사업",
+        "desc": "대신증권의 거래 중개와 금융상품 사업을 회사 전체 기준으로 봅니다."
+      },
+      {
+        "name": "금융 계열사",
+        "desc": "금융 계열사의 성과가 연결 실적에 반영됩니다."
+      },
+      {
+        "name": "부동산 사업",
+        "desc": "연결 범위에 포함된 부동산 등 관련 사업을 함께 봅니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "회사 실적",
+        "desc": "우선주만의 매출이나 영업이익이 따로 있는 것은 아닙니다."
+      },
+      {
+        "title": "주식 권리",
+        "desc": "배당과 의결권 등 우선주의 조건을 별도로 확인해야 합니다."
+      },
+      {
+        "title": "연결 범위",
+        "desc": "본주와 우선주 또는 계열사 실적을 단순 합산하지 않습니다."
+      }
+    ],
+    "financialNote": "본주 회사 전체의 연결 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "대신증권"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "daishin"
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000718",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001304",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000363",
+      "published": "2026.10.07",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001479",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001396",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business",
+      "label": "대신증권 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000363",
+      "published": "2026.10.07",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "충당금",
+      "desc": "미래에 발생할 것으로 예상되는 손실이나 지급 의무를 미리 회계에 반영한 금액입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "기업금융",
+      "desc": "기업의 자금조달·투자·인수합병 등에 필요한 금융 서비스를 제공하는 사업입니다."
+    },
+    {
+      "name": "순영업손익",
+      "desc": "금융회사의 영업수익에서 관련 영업비용을 상계해 표시하는 지표입니다. 일반 제조업 매출이나 최종 영업이익과 구분합니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

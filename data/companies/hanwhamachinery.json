@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanwhamachinery",
+    "rank": 312,
+    "name": "한화머시너리앤서비스홀딩스",
+    "ticker": "0220W0",
+    "type": "복합 지주회사"
+  },
+  "overview": {
+    "short": "산업 장비와 서비스 계열사를 관리하는 회사",
+    "summary": "산업 장비와 서비스 계열사를 관리하는 회사입니다. 분할 이후 회사에 포함된 사업을 먼저 확인해야 합니다.",
+    "takeaways": [
+      "산업 장비와 서비스 계열사를 관리하는 회사입니다.",
+      "산업·영상 장비: 제조 장비와 영상 보안 등 산업 계열 사업을 관리합니다.",
+      "유통·숙박: 백화점과 호텔·리조트 등 서비스 계열 사업을 관리합니다.",
+      "식음·그룹 투자: 식음 서비스 등 계열사와 그룹 투자·관리를 수행합니다.",
+      "분할 이후 회사에 포함된 사업을 먼저 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "산업·영상 장비",
+        "desc": "제조 장비와 영상 보안 등 산업 계열 사업을 관리합니다."
+      },
+      {
+        "name": "유통·숙박",
+        "desc": "백화점과 호텔·리조트 등 서비스 계열 사업을 관리합니다."
+      },
+      {
+        "name": "식음·그룹 투자",
+        "desc": "식음 서비스 등 계열사와 그룹 투자·관리를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "사업 범위",
+        "desc": "분할 이후 회사에 포함된 사업을 먼저 확인해야 합니다."
+      },
+      {
+        "title": "계열사 성과",
+        "desc": "장비 수요와 소비·관광 수요가 서로 다르게 움직일 수 있습니다."
+      },
+      {
+        "title": "첫 실적 확인",
+        "desc": "회사 전체의 첫 정기 실적 공시를 확인한 뒤 수익성을 판단합니다."
+      }
+    ],
+    "financialNote": "분할 전 한화 실적을 신설회사 전체의 실적으로 옮겨 표시하지 않습니다.",
+    "quarterlyNote": "첫 정기 실적 공시를 확인한 뒤 실제 보고 기간에 맞춰 표시합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "unverified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [],
+    "quarterly": [],
+    "availability": {
+      "status": "awaiting-first-report",
+      "reason": "분할 이후 회사 전체의 첫 정기 손익 자료를 확인한 뒤 표시합니다. 분할 전 자료와 사업 범위가 다릅니다.",
+      "sourceIds": [
+        "business",
+        "split"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "business",
+      "label": "한화머시너리앤서비스홀딩스 공식 회사 소개",
+      "url": "https://hanwhamachinerynserviceholdings.co.kr/page/company.html",
+      "asOf": "2026.10.09",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "split",
+      "label": "한화 인적분할 결정 공시 · 신설회사 사업 범위",
+      "url": "https://kind.krx.co.kr/external/2026/01/14/000116/20260114000398/11345.htm",
+      "published": "2026.01.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "cuckoohomesys",
+    "rank": 301,
+    "name": "쿠쿠홈시스",
+    "ticker": "284740",
+    "type": "생활가전·렌털"
+  },
+  "overview": {
+    "short": "정수기와 생활가전을 판매하고 빌려주는 회사",
+    "summary": "정수기와 생활가전을 판매하고 빌려주는 회사입니다. 신규 계약과 해약, 기존 고객 유지가 반복 수익에 영향을 줍니다.",
+    "takeaways": [
+      "정수기와 생활가전을 판매하고 빌려주는 회사입니다.",
+      "렌털: 정수기·비데·공기청정기 등을 빌려주고 정기 관리 서비스를 제공합니다.",
+      "가전 판매: 생활가전을 국내외 고객에게 판매합니다.",
+      "해외 사업: 해외 법인을 통해 렌털 고객과 판매망을 넓힙니다.",
+      "신규 계약과 해약, 기존 고객 유지가 반복 수익에 영향을 줍니다."
+    ],
+    "business": [
+      {
+        "name": "렌털",
+        "desc": "정수기·비데·공기청정기 등을 빌려주고 정기 관리 서비스를 제공합니다."
+      },
+      {
+        "name": "가전 판매",
+        "desc": "생활가전을 국내외 고객에게 판매합니다."
+      },
+      {
+        "name": "해외 사업",
+        "desc": "해외 법인을 통해 렌털 고객과 판매망을 넓힙니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "렌털 고객",
+        "desc": "신규 계약과 해약, 기존 고객 유지가 반복 수익에 영향을 줍니다."
+      },
+      {
+        "title": "서비스 비용",
+        "desc": "방문 관리와 제품 설치·회수 비용을 함께 봐야 합니다."
+      },
+      {
+        "title": "해외 수익성",
+        "desc": "해외 고객 확대가 현지 비용과 환율 부담을 넘어서는지 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 2024년 연간 수치는 최신 공시의 재작성 비교 값입니다. 2025년 2분기 수치는 최신 공시의 재작성 비교 값입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.057208774499,
+        "op": 0.169980712798,
+        "net": 0.139906213287,
+        "sourceIds": [
+          "comparative-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001337",
+          "rawKRW": {
+            "sales": "1057208774499",
+            "op": "169980712798",
+            "net": "139906213287"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparative": true
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.121342626136,
+        "op": 0.169362970577,
+        "net": 0.134319541308,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001337",
+          "rawKRW": {
+            "sales": "1121342626136",
+            "op": "169362970577",
+            "net": "134319541308"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.294039702349,
+        "op": 0.043666500668,
+        "sourceIds": [
+          "comparative-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003412",
+          "rawKRW": {
+            "sales": "294039702349",
+            "op": "43666500668",
+            "net": "27124344288"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparative": true
+        },
+        "net": 0.027124344288
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.273041051425,
+        "op": 0.041252475061,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002749",
+          "rawKRW": {
+            "sales": "273041051425",
+            "op": "41252475061",
+            "net": "37986185574"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.318271750679,
+        "op": 0.054024014768,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003412",
+          "rawKRW": {
+            "sales": "318271750679",
+            "op": "54024014768",
+            "net": "42770892680"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002749",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003412",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250331004301",
+      "published": "2025.03.31",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002744",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "쿠쿠홈시스 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003412",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "comparative-2024-annual",
+      "label": "2024년 연간 최신 공식 공시 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001337",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "comparative-2025-q2",
+      "label": "2025년 2분기 최신 공식 공시 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003412",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "렌털",
+      "desc": "제품을 구매하는 대신 일정 기간 이용료를 내고 빌려 사용하는 방식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

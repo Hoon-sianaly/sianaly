@@ -49,9 +49,17 @@ function validateFinancials(record, seen = []) {
  assert.ok(["consolidated", "separate"].includes(financials.basis));
  assert.ok(["verified", "unverified"].includes(financials.verification.status));
  const verified = financials.verification.status === "verified";
+ const awaiting=financials.availability?.status === "awaiting-first-report";
+ if(awaiting){
+  assert.equal(verified,false,`Awaiting record cannot claim verified financials: ${key}`);
+  assert.ok(financials.availability.reason?.trim());
+  assert.ok(financials.availability.sourceIds?.length);
+  for(const id of financials.availability.sourceIds) assert.ok(record.sources.some(s=>s.id===id&&s.url),`Missing availability source: ${key}`);
+  assert.deepEqual(financials.annual,[]);assert.deepEqual(financials.quarterly,[]);
+ }
  if (verified) assert.match(financials.verification.verifiedAt, /^\d{4}\.\d{2}\.\d{2}$/);
  for (const field of ["annual", "quarterly"]) {
-  assert.ok(Array.isArray(financials[field]) && financials[field].length, `No ${field} rows: ${key}`);
+  assert.ok(Array.isArray(financials[field]) && (financials[field].length || awaiting), `No ${field} rows: ${key}`);
   const periods = new Set();
   for (const row of financials[field]) {
    assert.ok(Number.isInteger(row.year) && row.year >= 1900 && row.year <= 2200);
