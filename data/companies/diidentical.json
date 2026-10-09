@@ -1,51 +1,51 @@
 {
   "schemaVersion": 1,
   "profile": {
-    "key": "e1",
-    "rank": 282,
-    "name": "E1",
-    "ticker": "017940",
-    "type": "LPG 유통 기업"
+    "key": "diidentical",
+    "rank": 297,
+    "name": "DI동일",
+    "ticker": "001530",
+    "type": "섬유·소재 기업"
   },
   "overview": {
-    "short": "LPG를 수입해 국내외에 판매하는 에너지 회사",
-    "summary": "LPG를 수입해 국내외에 판매하는 에너지 회사입니다. LPG 수요와 국제 가격·매매 조건이 중요합니다.",
+    "short": "섬유·알루미늄과 환경 설비 사업을 운영하는 회사",
+    "summary": "섬유·알루미늄과 환경 설비 사업을 운영하는 회사입니다. 섬유제품 수요와 가격·재고가 중요합니다.",
     "takeaways": [
-      "LPG를 수입해 국내외에 판매하는 에너지 회사입니다.",
-      "LPG 수입: 해외에서 액화석유가스를 구매합니다.",
-      "국내·해외 판매: 가정·산업·운송용 고객과 해외 거래처에 공급합니다.",
-      "연관 사업: 연결 자회사와 에너지 관련 사업을 운영합니다.",
-      "LPG 수요와 국제 가격·매매 조건이 중요합니다."
+      "섬유·알루미늄과 환경 설비 사업을 운영하는 회사입니다.",
+      "섬유 소재: 원사 등 섬유제품을 생산·공급합니다.",
+      "알루미늄: 알루미늄 제품과 열교환기 사업을 포함합니다.",
+      "환경·기타: 환경 설비와 가구·화장품 등 사업을 운영합니다.",
+      "섬유제품 수요와 가격·재고가 중요합니다."
     ],
     "business": [
       {
-        "name": "LPG 수입",
-        "desc": "해외에서 액화석유가스를 구매합니다."
+        "name": "섬유 소재",
+        "desc": "원사 등 섬유제품을 생산·공급합니다."
       },
       {
-        "name": "국내·해외 판매",
-        "desc": "가정·산업·운송용 고객과 해외 거래처에 공급합니다."
+        "name": "알루미늄",
+        "desc": "알루미늄 제품과 열교환기 사업을 포함합니다."
       },
       {
-        "name": "연관 사업",
-        "desc": "연결 자회사와 에너지 관련 사업을 운영합니다."
+        "name": "환경·기타",
+        "desc": "환경 설비와 가구·화장품 등 사업을 운영합니다."
       }
     ],
     "drivers": [
       {
-        "title": "판매·가격",
-        "desc": "LPG 수요와 국제 가격·매매 조건이 중요합니다."
+        "title": "섬유 수요",
+        "desc": "섬유제품 수요와 가격·재고가 중요합니다."
       },
       {
-        "title": "환율·물류",
-        "desc": "수입 환율과 운송·저장 비용을 봐야 합니다."
+        "title": "소재·설비",
+        "desc": "알루미늄과 환경 설비 판매·원가를 봐야 합니다."
       },
       {
-        "title": "사업 구성",
-        "desc": "관련 자회사 실적과 상품 거래 손익을 구분해야 합니다."
+        "title": "사업 범위",
+        "desc": "사업 재편과 연결 자회사 손익을 구분해야 합니다."
       }
     ],
-    "financialNote": "LPG 거래 매출의 크기와 판매 마진을 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 2024년 연간 수치는 최신 공시의 재작성 비교 값입니다. 2025년 2분기 수치는 최신 공시의 재작성 비교 값입니다.",
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
     "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
   },
   "market": {},
@@ -59,18 +59,18 @@
     "annual": [
       {
         "year": 2024,
-        "sales": 11.192411812013,
-        "op": 0.223443150352,
-        "net": 0.075658532271,
+        "sales": 0.651725598894,
+        "op": 0.007810548526,
+        "net": 0.00250288401,
         "sourceIds": [
-          "comparative-2024-annual"
+          "dart-2024-annual"
         ],
         "dart": {
-          "receipt": "20260319001298",
+          "receipt": "20250331004012",
           "rawKRW": {
-            "sales": "11192411812013",
-            "op": "223443150352",
-            "net": "75658532271"
+            "sales": "651725598894",
+            "op": "7810548526",
+            "net": "2502884010"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -81,26 +81,26 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
-          },
-          "comparative": true
+          }
         }
       },
       {
         "year": 2025,
-        "sales": 10.392522604756,
-        "op": 0.324063026338,
-        "net": 0.114200487289,
+        "sales": 0.601351665454,
+        "op": -0.001544756113,
+        "net": -0.009968597538,
         "sourceIds": [
           "dart-2025-annual"
         ],
         "dart": {
-          "receipt": "20260319001298",
+          "receipt": "20260318001468",
           "rawKRW": {
-            "sales": "10392522604756",
-            "op": "324063026338",
-            "net": "114200487289"
+            "sales": "601351665454",
+            "op": "-1544756113",
+            "net": "-9968597538"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -111,6 +111,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -121,17 +122,17 @@
       {
         "year": 2025,
         "quarter": 2,
-        "sales": 2.265591351666,
-        "op": 0.102177276771,
+        "sales": 0.155325169552,
+        "op": 0.000325815956,
         "sourceIds": [
-          "comparative-2025-q2"
+          "dart-2025-q2"
         ],
         "dart": {
-          "receipt": "20260814004295",
+          "receipt": "20250814004261",
           "rawKRW": {
-            "sales": "2265591351666",
-            "op": "102177276771",
-            "net": "30161609099"
+            "sales": "155325169552",
+            "op": "325815956",
+            "net": "-5877656469"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -142,27 +143,26 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
-          },
-          "comparative": true
-        },
-        "net": 0.030161609099
+          }
+        }
       },
       {
         "year": 2026,
         "quarter": 1,
-        "sales": 3.585260140713,
-        "op": -0.15618870362,
+        "sales": 0.169789885584,
+        "op": 0.00067218912,
         "sourceIds": [
           "dart-2026-q1"
         ],
         "dart": {
-          "receipt": "20260515002595",
+          "receipt": "20260515002361",
           "rawKRW": {
-            "sales": "3585260140713",
-            "op": "-156188703620",
-            "net": "81665085104"
+            "sales": "169789885584",
+            "op": "672189120",
+            "net": "2793440694"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -173,6 +173,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -181,17 +182,17 @@
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 4.40280753661,
-        "op": 0.117898702208,
+        "sales": 0.180226705067,
+        "op": 0.003346400675,
         "sourceIds": [
           "dart-2026-q2"
         ],
         "dart": {
-          "receipt": "20260814004295",
+          "receipt": "20260814003957",
           "rawKRW": {
-            "sales": "4402807536610",
-            "op": "117898702208",
-            "net": "99298166768"
+            "sales": "180226705067",
+            "op": "3346400675",
+            "net": "6149202148"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -202,6 +203,7 @@
               "dart_OperatingIncomeLoss"
             ],
             "net": [
+              "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
           }
@@ -218,56 +220,42 @@
     {
       "id": "dart-2025-annual",
       "label": "2025년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001298",
-      "published": "2026.03.19",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001468",
+      "published": "2026.03.18",
       "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2026-q1",
       "label": "2026년 1분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002595",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002361",
       "published": "2026.05.15",
       "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2026-q2",
       "label": "2026년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004295",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003957",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2024-annual",
       "label": "2024년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000491",
-      "published": "2025.08.14",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250331004012",
+      "published": "2025.03.31",
       "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2025-q2",
       "label": "2025년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003025",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004261",
       "published": "2025.08.14",
       "verifiedAt": "2026.10.09"
     },
     {
       "id": "business",
-      "label": "E1 2026년 반기보고서 · 사업의 내용",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004295",
-      "published": "2026.08.14",
-      "verifiedAt": "2026.10.09"
-    },
-    {
-      "id": "comparative-2024-annual",
-      "label": "2024년 연간 최신 공식 공시 비교 수치",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001298",
-      "published": "2026.03.19",
-      "verifiedAt": "2026.10.09"
-    },
-    {
-      "id": "comparative-2025-q2",
-      "label": "2025년 2분기 최신 공식 공시 비교 수치",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004295",
+      "label": "DI동일 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003957",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
     }
@@ -286,8 +274,8 @@
       "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
     },
     {
-      "name": "LPG",
-      "desc": "액화석유가스입니다. 프로판·부탄 등을 압력이나 냉각으로 액화해 저장·운송하는 연료입니다."
+      "name": "열교환기",
+      "desc": "서로 다른 유체 사이에 열을 전달하여 가열하거나 냉각하는 설비입니다."
     }
   ],
   "presentation": {

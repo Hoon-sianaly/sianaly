@@ -11838,7 +11838,7 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "held",
             "receipt": "20250311001121"
           },
           {
@@ -12770,17 +12770,34 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "held",
             "receipt": "20250814000491"
           },
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "held",
             "receipt": "20250814003025"
           }
+        ],
+        "reasons": [
+          "과거 비교 수치·재작성 기간을 수동 검증하고 원 공시 API 기간 보류"
         ]
-      }
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319001298",
+          "reason": "최신 공시의 재작성 비교 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814004295",
+          "reason": "최신 공시의 재작성 비교 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        }
+      ]
     },
     {
       "key": "hansoltechnics",
@@ -12865,8 +12882,25 @@
         "notes": [
           "2024/11011: No statement; unavailable comparison period omitted",
           "2025/11012: No statement; unavailable comparison period omitted"
+        ],
+        "reasons": [
+          "과거 비교 수치·재작성 기간을 수동 검증하고 원 공시 API 기간 보류"
         ]
-      }
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260325001031",
+          "reason": "원 공시 API 미조회 기간을 최신 공식 보고서에서 복원한 비교 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000745",
+          "reason": "원 공시 API 미조회 기간을 최신 공식 보고서에서 복원한 비교 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        }
+      ]
     },
     {
       "key": "hyundaigreenfood",
@@ -12938,7 +12972,7 @@
           {
             "year": 2026,
             "report": "11013",
-            "status": "validated",
+            "status": "held",
             "receipt": "20260515002737"
           },
           {
@@ -12959,8 +12993,19 @@
             "status": "validated",
             "receipt": "20250814001976"
           }
+        ],
+        "reasons": [
+          "과거 비교 수치·재작성 기간을 수동 검증하고 원 공시 API 기간 보류"
         ]
-      }
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001564",
+          "reason": "최신 반기 누적에서 2분기를 차감한 재작성 3개월 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        }
+      ]
     },
     {
       "key": "lxholdings",
@@ -13144,8 +13189,517 @@
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "held",
             "receipt": "20250814002325"
+          }
+        ],
+        "reasons": [
+          "과거 비교 수치·재작성 기간을 수동 검증하고 원 공시 API 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260911000415",
+          "reason": "최신 공시의 재작성 비교 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        }
+      ]
+    },
+    {
+      "key": "solusadvanced",
+      "ticker": "336370",
+      "corpCode": "01412822",
+      "corpName": "솔루스첨단소재",
+      "modified": "20260316",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000659"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "held",
+            "receipt": "20260514000924"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004134"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20251121000498"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "held",
+            "receipt": "20250814003348"
+          }
+        ],
+        "reasons": [
+          "과거 비교 수치·재작성 기간을 수동 검증하고 원 공시 API 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814004134",
+          "reason": "최신 공시의 재작성 비교 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814004134",
+          "reason": "최신 반기 누적에서 2분기를 차감한 재작성 3개월 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        }
+      ]
+    },
+    {
+      "key": "piadvanced",
+      "ticker": "178920",
+      "corpCode": "00767460",
+      "corpName": "PI첨단소재",
+      "modified": "20230324",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312000098"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000164"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000420"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "held",
+            "receipt": "20250313000132"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814000490"
+          }
+        ],
+        "reasons": [
+          "과거 비교 수치·재작성 기간을 수동 검증하고 원 공시 API 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260312000098",
+          "reason": "최신 공시의 재작성 비교 값; 해당 연도 원 공시 API 값으로 되돌리지 않음"
+        }
+      ]
+    },
+    {
+      "key": "dreamtech",
+      "ticker": "192650",
+      "corpCode": "00415646",
+      "corpName": "드림텍",
+      "modified": "20260804",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001215"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002436"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004101"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250328002249"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003870"
+          }
+        ]
+      }
+    },
+    {
+      "key": "koreapetrochemical",
+      "ticker": "006650",
+      "corpCode": "00260383",
+      "corpName": "대한유화",
+      "modified": "20221215",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260305001191"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002047"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003256"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250306000568"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003222"
+          }
+        ]
+      }
+    },
+    {
+      "key": "jahwa",
+      "ticker": "033240",
+      "corpCode": "00146861",
+      "corpName": "자화전자",
+      "modified": "20250225",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000870"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260513000698"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261007000214"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001727"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002094"
+          }
+        ]
+      }
+    },
+    {
+      "key": "nexentire",
+      "ticker": "002350",
+      "corpCode": "00173874",
+      "corpName": "넥센타이어",
+      "modified": "20260327",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001435"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001713"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003268"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001449"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003665"
+          }
+        ]
+      }
+    },
+    {
+      "key": "diidentical",
+      "ticker": "001530",
+      "corpCode": "00118345",
+      "corpName": "디아이동일",
+      "modified": "20260327",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001468"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002361"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003957"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250331004012"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004261"
+          }
+        ]
+      }
+    },
+    {
+      "key": "junjin",
+      "ticker": "079900",
+      "corpCode": "00372129",
+      "corpName": "전진건설로봇",
+      "modified": "20250901",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000902"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001726"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001268"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250317000567"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001502"
+          }
+        ]
+      }
+    },
+    {
+      "key": "kgsteel",
+      "ticker": "016380",
+      "corpCode": "00115676",
+      "corpName": "KG스틸",
+      "modified": "20260325",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001588"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002539"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004122"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001327"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003930"
+          }
+        ]
+      }
+    },
+    {
+      "key": "ket",
+      "ticker": "025540",
+      "corpCode": "00157070",
+      "corpName": "한국단자공업",
+      "modified": "20230217",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312000938"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001641"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002398"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000091"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002271"
           }
         ]
       }

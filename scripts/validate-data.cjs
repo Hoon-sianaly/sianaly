@@ -56,6 +56,12 @@ function validateFinancials(record, seen = []) {
   for (const row of financials[field]) {
    assert.ok(Number.isInteger(row.year) && row.year >= 1900 && row.year <= 2200);
    if (field === "quarterly") assert.ok(Number.isInteger(row.quarter) && row.quarter >= 1 && row.quarter <= 4);
+   if (row.durationMonths !== undefined) {
+    assert.equal(field,'quarterly',`Duration override belongs to period graph: ${key}`);
+    assert.equal(row.durationMonths,6,`Unsupported duration override: ${key}`);
+    assert.ok(financials.quarterlyTerm && financials.quarterlyBasisLabel.includes('6개월'),`Six-month graph must identify its duration: ${key}`);
+    assert.ok(row.reportPeriod && row.periodLabel,`Six-month row must show actual dates: ${key}`);
+   }
    const period = `${row.year}/${row.quarter || 0}`;
    assert.ok(!periods.has(period), `Duplicate period: ${key}/${period}`);
    periods.add(period);

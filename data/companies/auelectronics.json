@@ -45,7 +45,7 @@
         "desc": "공장 가동률과 재료·개발 비용이 이익을 바꿉니다."
       }
     ],
-    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 2026년 1분기 수치는 최신 반기 누적에서 2분기를 차감한 재작성 3개월 값입니다.",
     "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
   },
   "market": {},
@@ -150,15 +150,15 @@
         "year": 2026,
         "quarter": 1,
         "sales": 0.034472331202,
-        "op": 0.000674692723,
+        "op": 0.00069729247,
         "sourceIds": [
-          "dart-2026-q1"
+          "comparative-2026-q1"
         ],
         "dart": {
-          "receipt": "20260515002737",
+          "receipt": "20260814001564",
           "rawKRW": {
             "sales": "34472331202",
-            "op": "674692723",
+            "op": "697292470",
             "net": "4130497111"
           },
           "periodBasis": "three-month",
@@ -172,7 +172,8 @@
             "net": [
               "ifrs-full_ProfitLoss"
             ]
-          }
+          },
+          "comparative": true
         }
       },
       {
@@ -250,6 +251,13 @@
     {
       "id": "business",
       "label": "광전자 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001564",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "comparative-2026-q1",
+      "label": "2026년 1분기 최신 공식 공시 비교 수치",
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001564",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"

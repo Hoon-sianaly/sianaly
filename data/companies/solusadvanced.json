@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "solusadvanced",
+    "rank": 291,
+    "name": "솔루스첨단소재",
+    "ticker": "336370",
+    "type": "배터리·전자 소재 기업"
+  },
+  "overview": {
+    "short": "배터리용 전지박과 디스플레이 소재를 만드는 회사",
+    "summary": "배터리용 전지박과 디스플레이 소재를 만드는 회사입니다. 고객의 생산과 전지박 채택이 중요합니다.",
+    "takeaways": [
+      "배터리용 전지박과 디스플레이 소재를 만드는 회사입니다.",
+      "전지박: 배터리에 사용하는 구리 집전체 소재를 공급합니다.",
+      "OLED 소재: 디스플레이용 발광·기능성 소재를 개발·판매합니다.",
+      "첨단 소재: 금속 재료 등 첨단소재 사업을 운영합니다.",
+      "고객의 생산과 전지박 채택이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "전지박",
+        "desc": "배터리에 사용하는 구리 집전체 소재를 공급합니다."
+      },
+      {
+        "name": "OLED 소재",
+        "desc": "디스플레이용 발광·기능성 소재를 개발·판매합니다."
+      },
+      {
+        "name": "첨단 소재",
+        "desc": "금속 재료 등 첨단소재 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "배터리 수요",
+        "desc": "고객의 생산과 전지박 채택이 중요합니다."
+      },
+      {
+        "title": "신규 공장",
+        "desc": "해외 공장 증설과 가동률·초기 비용을 봐야 합니다."
+      },
+      {
+        "title": "제품·원가",
+        "desc": "전자소재 제품 구성과 원료·개발 비용을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 2025년 2분기 수치는 최신 공시의 재작성 비교 값입니다. 2026년 1분기 수치는 최신 반기 누적에서 2분기를 차감한 재작성 3개월 값입니다. 연간은 2025년 사업보고서의 사업 범위이며 최신 분기는 2026년 반기보고서의 계속사업 범위입니다. CFL 매각에 따른 중단사업 재분류로 두 범위를 직접 비교하지 않습니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.570949198601,
+        "op": -0.054418745322,
+        "net": -0.042689618619,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20251121000498",
+          "rawKRW": {
+            "sales": "570949198601",
+            "op": "-54418745322",
+            "net": "-42689618619"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.616083220023,
+        "op": -0.073336006541,
+        "net": -0.138394465215,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000659",
+          "rawKRW": {
+            "sales": "616083220023",
+            "op": "-73336006541",
+            "net": "-138394465215"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.07776874067,
+        "op": -0.020837021196,
+        "sourceIds": [
+          "comparative-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004134",
+          "rawKRW": {
+            "sales": "77768740670",
+            "op": "-20837021196",
+            "net": "-52301803583"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparative": true
+        },
+        "net": -0.052301803583
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.088063049409,
+        "op": -0.032001689707,
+        "sourceIds": [
+          "comparative-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814004134",
+          "rawKRW": {
+            "sales": "88063049409",
+            "op": "-32001689707",
+            "net": "-2899563177"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparative": true
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.101870141988,
+        "op": -0.021675841067,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004134",
+          "rawKRW": {
+            "sales": "101870141988",
+            "op": "-21675841067",
+            "net": "59273096014"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000659",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000924",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004134",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251121000498",
+      "published": "2025.11.21",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003348",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "솔루스첨단소재 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004134",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "comparative-2025-q2",
+      "label": "2025년 2분기 최신 공식 공시 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004134",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "comparative-2026-q1",
+      "label": "2026년 1분기 최신 공식 공시 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004134",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "OLED",
+      "desc": "소자가 스스로 빛을 내는 유기발광다이오드 디스플레이 기술입니다."
+    },
+    {
+      "name": "전지박",
+      "desc": "배터리에서 전류를 모으는 데 쓰는 매우 얇은 금속박으로, 여기서는 구리박을 뜻합니다."
+    },
+    {
+      "name": "집전체",
+      "desc": "배터리 전극에서 전자를 모아 외부 회로와 연결하는 금속 소재입니다."
+    },
+    {
+      "name": "계속사업",
+      "desc": "회사가 중단하기로 분류한 사업을 제외하고 계속 운영하는 사업입니다."
+    },
+    {
+      "name": "중단사업",
+      "desc": "매각하거나 종료하는 등 회계기준상 별도로 구분하는 사업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
