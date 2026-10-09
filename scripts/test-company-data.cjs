@@ -70,6 +70,14 @@ function context(key, transform, failed = false) {
    assert.ok(out.includes("운용수익 (회계상)")&&out.includes("당기순이익 (회계상)"));
    assert.ok(!out.includes("<span>영업이익률</span>"));
   }
+  if (entry.key === "mapsrealty") {
+   assert.ok(out.includes('2026 상반기 결산 실적 그래프'));
+   assert.ok(out.includes('6개월 실적 · 2026.01–06'));
+   assert.ok(!out.includes('각 분기 3개월 실적(누적 아님)'));
+   assert.ok(!out.includes('<span>영업이익률</span>'));
+   assert.equal(record.financials.quarterly[0].durationMonths,6);
+   assert.deepEqual(record.financials.annual.map(r=>r.year),[2024,2025]);
+  }
   if (entry.key === "samsungel") {
    assert.ok(out.includes("자료 기준 2025년 연간까지"));
    assert.ok(out.includes("억원</td>"));

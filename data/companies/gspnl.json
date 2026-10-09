@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "gspnl",
+    "rank": 261,
+    "name": "GS피앤엘",
+    "ticker": "499790",
+    "type": "관광·레저 지주회사"
+  },
+  "overview": {
+    "short": "호텔·임대·식육 사업 계열사를 관리하는 지주회사",
+    "summary": "호텔·임대·식육 사업 계열사를 관리하는 지주회사입니다. 객실 이용과 여행·레저 수요가 중요합니다.",
+    "takeaways": [
+      "호텔·임대·식육 사업 계열사를 관리하는 지주회사입니다.",
+      "호텔: 계열사의 호텔 운영과 숙박·식음 서비스를 포함합니다.",
+      "임대·식육: 오피스·쇼핑몰 임대와 식육제품 사업을 포함합니다.",
+      "투자 관리: 계열사 지분과 브랜드·경영 지원을 관리합니다.",
+      "객실 이용과 여행·레저 수요가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "호텔",
+        "desc": "계열사의 호텔 운영과 숙박·식음 서비스를 포함합니다."
+      },
+      {
+        "name": "임대·식육",
+        "desc": "오피스·쇼핑몰 임대와 식육제품 사업을 포함합니다."
+      },
+      {
+        "name": "투자 관리",
+        "desc": "계열사 지분과 브랜드·경영 지원을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "이용 수요",
+        "desc": "객실 이용과 여행·레저 수요가 중요합니다."
+      },
+      {
+        "title": "운영 비용",
+        "desc": "인건비·시설 유지와 식음 원가를 봐야 합니다."
+      },
+      {
+        "title": "투자·범위",
+        "desc": "사업 재편과 연결 자회사 범위를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "분할 전후의 사업 범위와 비교기간을 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 2024년은 설립 후 12월 한 달 실적이어서 연간 비교에서 제외했습니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.481682588524,
+        "op": 0.078022623652,
+        "net": 0.029943929968,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260311003399",
+          "rawKRW": {
+            "sales": "481682588524",
+            "op": "78022623652",
+            "net": "29943929968"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.112145167893,
+        "op": 0.011563712655,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001088",
+          "rawKRW": {
+            "sales": "112145167893",
+            "op": "11563712655",
+            "net": "6013604380"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.13036573148,
+        "op": 0.024162422637,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000398",
+          "rawKRW": {
+            "sales": "130365731480",
+            "op": "24162422637",
+            "net": "14063593524"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.158960998737,
+        "op": 0.029360307067,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000634",
+          "rawKRW": {
+            "sales": "158960998737",
+            "op": "29360307067",
+            "net": "19221773187"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003399",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000398",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000634",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001088",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "GS피앤엘 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000634",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
