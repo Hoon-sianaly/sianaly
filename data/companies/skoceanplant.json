@@ -1,48 +1,48 @@
 {
   "schemaVersion": 1,
   "profile": {
-    "key": "hyundaisteel",
-    "rank": 119,
-    "name": "현대제철",
-    "ticker": "004020",
-    "type": "철강 기업"
+    "key": "skoceanplant",
+    "rank": 258,
+    "name": "SK오션플랜트",
+    "ticker": "100090",
+    "type": "해상풍력·조선 기업"
   },
   "overview": {
-    "short": "자동차·건설·조선용 철강재를 생산하는 회사",
-    "summary": "자동차·건설·조선용 철강재를 생산하는 회사입니다. 자동차·건설·조선의 수요와 철강 가격이 중요합니다.",
+    "short": "해상풍력 하부구조물과 선박·강관을 제조하는 회사",
+    "summary": "해상풍력 하부구조물과 선박·강관을 제조하는 회사입니다. 해상풍력·선박 수주와 제작 진행이 중요합니다.",
     "takeaways": [
-      "자동차·건설·조선용 철강재를 생산하는 회사입니다.",
-      "판재: 열연·냉연·후판 등 철강재를 공급합니다.",
-      "봉형강: 철근·형강 등 건설·산업용 제품을 생산합니다.",
-      "모빌리티: 자동차용 철강과 관련 부품 사업을 운영합니다.",
-      "자동차·건설·조선의 수요와 철강 가격이 중요합니다."
+      "해상풍력 하부구조물과 선박·강관을 제조하는 회사입니다.",
+      "해상풍력: 바다에 설치하는 풍력발전 설비의 하부구조물을 만듭니다.",
+      "선박·플랜트: 특수선과 해양플랜트·선박 수리 사업을 수행합니다.",
+      "강관: 두꺼운 강판으로 대형 강관을 제조합니다.",
+      "해상풍력·선박 수주와 제작 진행이 중요합니다."
     ],
     "business": [
       {
-        "name": "판재",
-        "desc": "열연·냉연·후판 등 철강재를 공급합니다."
+        "name": "해상풍력",
+        "desc": "바다에 설치하는 풍력발전 설비의 하부구조물을 만듭니다."
       },
       {
-        "name": "봉형강",
-        "desc": "철근·형강 등 건설·산업용 제품을 생산합니다."
+        "name": "선박·플랜트",
+        "desc": "특수선과 해양플랜트·선박 수리 사업을 수행합니다."
       },
       {
-        "name": "모빌리티",
-        "desc": "자동차용 철강과 관련 부품 사업을 운영합니다."
+        "name": "강관",
+        "desc": "두꺼운 강판으로 대형 강관을 제조합니다."
       }
     ],
     "drivers": [
       {
-        "title": "철강 수요",
-        "desc": "자동차·건설·조선의 수요와 철강 가격이 중요합니다."
+        "title": "수주·공정",
+        "desc": "해상풍력·선박 수주와 제작 진행이 중요합니다."
       },
       {
-        "title": "원료·에너지",
-        "desc": "철광석·석탄·철스크랩과 에너지 비용을 봐야 합니다."
+        "title": "생산 투자",
+        "desc": "생산시설 확장과 가동률·납품 일정을 봐야 합니다."
       },
       {
-        "title": "설비 전환",
-        "desc": "생산 가동률과 저탄소 설비 투자를 확인해야 합니다."
+        "title": "원가·계약",
+        "desc": "강재 원가와 프로젝트 계약 조건이 이익을 바꿉니다."
       }
     ],
     "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
@@ -54,23 +54,23 @@
     "basis": "consolidated",
     "verification": {
       "status": "verified",
-      "verifiedAt": "2026.10.08"
+      "verifiedAt": "2026.10.09"
     },
     "annual": [
       {
         "year": 2024,
-        "sales": 23.226141091217,
-        "op": 0.15949200858,
-        "net": 0.008814214272,
+        "sales": 0.662615726791,
+        "op": 0.041797283162,
+        "net": 0.016871459149,
         "sourceIds": [
           "dart-2024-annual"
         ],
         "dart": {
-          "receipt": "20250317000668",
+          "receipt": "20250814001175",
           "rawKRW": {
-            "sales": "23226141091217",
-            "op": "159492008580",
-            "net": "8814214272"
+            "sales": "662615726791",
+            "op": "41797283162",
+            "net": "16871459149"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -88,18 +88,18 @@
       },
       {
         "year": 2025,
-        "sales": 22.733237259727,
-        "op": 0.21923515623,
-        "net": 0.001389012026,
+        "sales": 0.965388430763,
+        "op": 0.059509493978,
+        "net": 0.037510843066,
         "sourceIds": [
           "dart-2025-annual"
         ],
         "dart": {
-          "receipt": "20260318001506",
+          "receipt": "20260323000486",
           "rawKRW": {
-            "sales": "22733237259727",
-            "op": "219235156230",
-            "net": "1389012026"
+            "sales": "965388430763",
+            "op": "59509493978",
+            "net": "37510843066"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -120,17 +120,17 @@
       {
         "year": 2025,
         "quarter": 2,
-        "sales": 5.945554952398,
-        "op": 0.101768116766,
+        "sales": 0.240624810043,
+        "op": 0.015550811204,
         "sourceIds": [
           "dart-2025-q2"
         ],
         "dart": {
-          "receipt": "20250814002944",
+          "receipt": "20250814001114",
           "rawKRW": {
-            "sales": "5945554952398",
-            "op": "101768116766",
-            "net": "37399297230"
+            "sales": "240624810043",
+            "op": "15550811204",
+            "net": "8499642777"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -149,17 +149,17 @@
       {
         "year": 2026,
         "quarter": 1,
-        "sales": 5.739684986139,
-        "op": 0.015689403201,
+        "sales": 0.174656154986,
+        "op": 0.016858004481,
         "sourceIds": [
           "dart-2026-q1"
         ],
         "dart": {
-          "receipt": "20260515002588",
+          "receipt": "20260515000719",
           "rawKRW": {
-            "sales": "5739684986139",
-            "op": "15689403201",
-            "net": "-39319323342"
+            "sales": "174656154986",
+            "op": "16858004481",
+            "net": "9855849164"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -178,17 +178,17 @@
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 6.107304725269,
-        "op": 0.057719153088,
+        "sales": 0.170484462293,
+        "op": 0.01934427735,
         "sourceIds": [
           "dart-2026-q2"
         ],
         "dart": {
-          "receipt": "20260814003379",
+          "receipt": "20260814000534",
           "rawKRW": {
-            "sales": "6107304725269",
-            "op": "57719153088",
-            "net": "12115290920"
+            "sales": "170484462293",
+            "op": "19344277350",
+            "net": "13789266672"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -208,51 +208,51 @@
     "automaticUpdate": {
       "provider": "OpenDART",
       "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.08"
+      "updatedAt": "2026.10.09"
     }
   },
   "sources": [
     {
       "id": "dart-2025-annual",
       "label": "2025년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001506",
-      "published": "2026.03.18",
-      "verifiedAt": "2026.10.08"
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000486",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2026-q1",
       "label": "2026년 1분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002588",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000719",
       "published": "2026.05.15",
-      "verifiedAt": "2026.10.08"
+      "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2026-q2",
       "label": "2026년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003379",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000534",
       "published": "2026.08.14",
-      "verifiedAt": "2026.10.08"
+      "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2024-annual",
       "label": "2024년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000668",
-      "published": "2025.03.17",
-      "verifiedAt": "2026.10.08"
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001175",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
     },
     {
       "id": "dart-2025-q2",
       "label": "2025년 2분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002944",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001114",
       "published": "2025.08.14",
-      "verifiedAt": "2026.10.08"
+      "verifiedAt": "2026.10.09"
     },
     {
       "id": "business",
-      "label": "현대제철 2026년 반기보고서 · 사업의 내용",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003379",
+      "label": "SK오션플랜트 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000534",
       "published": "2026.08.14",
-      "verifiedAt": "2026.10.08"
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
@@ -273,20 +273,12 @@
       "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
     },
     {
-      "name": "철스크랩",
-      "desc": "철강을 다시 만들 때 원료로 사용하는 고철입니다."
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
     },
     {
-      "name": "후판",
-      "desc": "선박·산업 설비 등에 사용하는 두꺼운 철강 판재입니다."
-    },
-    {
-      "name": "모빌리티",
-      "desc": "사람이나 물건의 이동과 관련된 기술·제품·서비스·사업입니다. 차량과 이동 서비스를 포함합니다."
-    },
-    {
-      "name": "냉연",
-      "desc": "금속을 상온에 가까운 상태에서 압연해 두께·표면 등을 가공하는 공정입니다."
+      "name": "플랜트",
+      "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
     }
   ],
   "presentation": {

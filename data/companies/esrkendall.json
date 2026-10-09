@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "esrkendall",
+    "rank": 257,
+    "name": "ESR켄달스퀘어리츠",
+    "ticker": "365550",
+    "type": "물류 부동산 리츠"
+  },
+  "overview": {
+    "short": "물류센터에 투자해 임대수익을 얻는 부동산투자회사",
+    "summary": "물류센터에 투자해 임대수익을 얻는 부동산투자회사입니다. 공실과 임대료·계약 갱신이 중요합니다.",
+    "takeaways": [
+      "물류센터에 투자해 임대수익을 얻는 부동산투자회사입니다.",
+      "물류센터: 물류시설과 관련 부동산에 투자합니다.",
+      "임대 운영: 입주 기업으로부터 임대료와 관련 수익을 얻습니다.",
+      "자산 관리: 자산 편입과 차입·운영 관리를 수행합니다.",
+      "공실과 임대료·계약 갱신이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "물류센터",
+        "desc": "물류시설과 관련 부동산에 투자합니다."
+      },
+      {
+        "name": "임대 운영",
+        "desc": "입주 기업으로부터 임대료와 관련 수익을 얻습니다."
+      },
+      {
+        "name": "자산 관리",
+        "desc": "자산 편입과 차입·운영 관리를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임대 계약",
+        "desc": "공실과 임대료·계약 갱신이 중요합니다."
+      },
+      {
+        "title": "금융비용",
+        "desc": "차입금과 금리·만기 구조를 확인해야 합니다."
+      },
+      {
+        "title": "자산 편입",
+        "desc": "신규 자산 투자와 비용·분배 여력을 봐야 합니다."
+      }
+    ],
+    "financialNote": "5월·11월 종료 6개월 결산 회사입니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 연결 기준입니다. 같은 시기에 종료되는 6개월 실적끼리 비교하며 12개월 합계가 아닙니다.",
+    "quarterlyNote": "공식 손익표의 실제 3개월 실적입니다. 결산의 뒤쪽 3개월은 원 단위 6개월 합계에서 앞쪽 3개월을 차감했습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.055878154102,
+        "op": 0.028807156078,
+        "reportedKRW": {
+          "sales": "55878154102",
+          "op": "28807156078"
+        },
+        "periodLabel": "2024.05 종료",
+        "reportPeriod": "2023.12–2024.05",
+        "sourceIds": [
+          "report-20250819000256"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.058696665274,
+        "op": 0.028703973058,
+        "reportedKRW": {
+          "sales": "58696665274",
+          "op": "28703973058"
+        },
+        "periodLabel": "2025.05 종료",
+        "reportPeriod": "2024.12–2025.05",
+        "sourceIds": [
+          "report-20260814004149"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.065606300402,
+        "op": 0.034147048183,
+        "reportedKRW": {
+          "sales": "65606300402",
+          "op": "34147048183"
+        },
+        "periodLabel": "2026.05 종료",
+        "reportPeriod": "2025.12–2026.05",
+        "sourceIds": [
+          "report-20260814004149"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.029323382647,
+        "op": 0.015803692746,
+        "reportedKRW": {
+          "sales": "29323382647",
+          "op": "15803692746"
+        },
+        "periodLabel": "2024.12–2025.02",
+        "reportPeriod": "2024.12–2025.02",
+        "sourceIds": [
+          "report-20250414001513"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.029373282627,
+        "op": 0.012900280312,
+        "reportedKRW": {
+          "sales": "29373282627",
+          "op": "12900280312"
+        },
+        "periodLabel": "2025.03–05",
+        "reportPeriod": "2025.03–05",
+        "sourceIds": [
+          "report-20260814004149",
+          "report-20250414001513"
+        ],
+        "derivation": "six-month-minus-first-three-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.032463673068,
+        "op": 0.016899720908,
+        "reportedKRW": {
+          "sales": "32463673068",
+          "op": "16899720908"
+        },
+        "periodLabel": "2025.12–2026.02",
+        "reportPeriod": "2025.12–2026.02",
+        "sourceIds": [
+          "report-20260414001470"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.033142627334,
+        "op": 0.017247327275,
+        "reportedKRW": {
+          "sales": "33142627334",
+          "op": "17247327275"
+        },
+        "periodLabel": "2026.03–05",
+        "reportPeriod": "2026.03–05",
+        "sourceIds": [
+          "report-20260814004149",
+          "report-20260414001470"
+        ],
+        "derivation": "six-month-minus-first-three-month"
+      }
+    ],
+    "quarterlyCalendarNote": "5월·11월 6개월 결산 회사 · 각 3개월의 실제 기간 표시 · 달력 분기와 다름",
+    "annualTerm": "6개월 결산",
+    "annualSourceLabel": "공식 6개월 결산 연결 손익계산서",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (임대 등)",
+        "help": "부동산 임대료와 관리 등 수익입니다. 제조업 매출과 구분합니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "임대 관련 수익에서 영업비용을 차감한 이익입니다. 금융비용 차감 후 이익·현금 배당과 다릅니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20250819000256",
+      "label": "ESR켄달스퀘어리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250819000256",
+      "published": "2025.08.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20260814004149",
+      "label": "ESR켄달스퀘어리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004149",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20250414001513",
+      "label": "ESR켄달스퀘어리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250414001513",
+      "published": "2025.04.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20260414001470",
+      "label": "ESR켄달스퀘어리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001470",
+      "published": "2026.04.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "report-20260814004149"
+    ],
+    "drivers": [
+      "report-20260814004149"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "공실",
+      "desc": "임차인이 없어 사용되지 않는 임대 공간입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
