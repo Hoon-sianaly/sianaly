@@ -274,14 +274,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002803",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "대한항공 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002803",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -292,6 +300,10 @@
     {
       "name": "운임",
       "desc": "사람이나 화물을 운송하는 대가로 받는 요금입니다."
+    },
+    {
+      "name": "항공유",
+      "desc": "항공기 엔진에 사용하는 연료입니다."
     }
   ],
   "presentation": {

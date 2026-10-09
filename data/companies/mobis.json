@@ -230,14 +230,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004065",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "현대모비스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004065",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "quarter"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "quarter"
+      "quarter",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -272,6 +280,14 @@
     {
       "name": "조향",
       "desc": "차량이 움직이는 방향을 바꾸는 기능입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "섀시",
+      "desc": "차량의 하부 구조와 주행을 지지하는 부품·장치입니다."
     }
   ],
   "presentation": {

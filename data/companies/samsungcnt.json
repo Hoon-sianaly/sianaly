@@ -219,14 +219,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002969",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "삼성물산 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002969",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "quarter"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "quarter"
+      "quarter",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -253,6 +261,10 @@
     {
       "name": "플랜트",
       "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
     }
   ],
   "presentation": {

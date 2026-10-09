@@ -261,14 +261,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001767",
       "published": "2026.08.13",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "키움증권 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001767",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -291,6 +299,14 @@
     {
       "name": "판관비 차감 전 영업손익",
       "desc": "영업이익에 판매비와 관리비를 더한 계산 지표입니다. 금융상품 매매 총액을 포함한 영업수익이나 제조업 매출과 구분합니다."
+    },
+    {
+      "name": "신용 위험",
+      "desc": "거래 상대가 약정한 돈을 지급하지 못해 손실이 생길 수 있는 위험입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
     }
   ],
   "presentation": {

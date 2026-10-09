@@ -132,14 +132,22 @@
       "asOf": "2026년 상반기 회사 IR 자료",
       "published": "2026.08.13",
       "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "삼성화재 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003992",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "quarter"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "quarter"
+      "quarter",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -170,6 +178,10 @@
     {
       "name": "IFRS 17",
       "desc": "보험계약의 수익·비용·부채를 인식하고 측정하는 국제회계기준입니다. 받은 보험료 전액을 곧바로 보험수익으로 잡는 방식과 구분합니다."
+    },
+    {
+      "name": "이익률",
+      "desc": "매출 등 수익에 비해 이익이 얼마나 남는지 나타내는 비율입니다. 어떤 이익을 사용했는지 구분해야 합니다."
     }
   ],
   "presentation": {

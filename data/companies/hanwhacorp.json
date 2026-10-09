@@ -220,14 +220,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001249",
       "published": "2026.08.31",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "한화 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001249",
+      "published": "2026.08.31",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -250,6 +258,10 @@
     {
       "name": "방산",
       "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    },
+    {
+      "name": "이익률",
+      "desc": "매출 등 수익에 비해 이익이 얼마나 남는지 나타내는 비율입니다. 어떤 이익을 사용했는지 구분해야 합니다."
     }
   ],
   "presentation": {

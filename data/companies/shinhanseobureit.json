@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "shinhanseobureit",
+    "name": "신한서부티엔디리츠",
+    "ticker": "404990",
+    "rank": 458,
+    "type": "상업용 부동산 투자"
+  },
+  "overview": {
+    "short": "신한서부티엔디리츠는 상업시설·호텔·오피스 등에 투자하는 상장 리츠",
+    "summary": "신한서부티엔디리츠는 상업시설·호텔·오피스 등에 투자하는 상장 리츠입니다. 인천 스퀘어원과 호텔·오피스 등 자산의 임대·운용 성과를 반영합니다.",
+    "takeaways": [
+      "신한서부티엔디리츠는 상업시설·호텔·오피스 등에 투자하는 상장 리츠입니다.",
+      "인천 스퀘어원과 호텔·오피스 등 자산의 임대·운용 성과를 반영합니다.",
+      "자회사 등 투자 구조와 임차 계약, 자금 조달 조건이 중요합니다.",
+      "6월·12월의 6개월 결산과 실제 3개월 실적을 나눠 표시합니다.",
+      "자산 편입·처분에 따른 이익과 반복 임대수익, 현금 배당을 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "상업시설·호텔",
+        "desc": "상업시설과 호텔 등 투자 부동산에서 임대·자산 운용 성과를 얻습니다."
+      },
+      {
+        "name": "오피스·연결 투자",
+        "desc": "오피스 등 연결 투자 자산의 수익과 비용을 반영합니다."
+      },
+      {
+        "name": "운용·자금 조달",
+        "desc": "임차 계약·운용 비용과 차입·분배 관련 업무를 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임대·투자 구성",
+        "desc": "임대 조건과 신규 편입·처분 등 투자 구성 변화가 실적에 영향을 줍니다."
+      },
+      {
+        "title": "금리·비반복 손익",
+        "desc": "이자 비용과 자산 평가·처분 손익을 반복 임대 영업과 분리합니다."
+      },
+      {
+        "title": "기간·현금 분배",
+        "desc": "6개월 결산과 실제 3개월 비교를 맞추고 회계이익과 배당을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 6월 종료 6개월 결산을 같은 기간끼리 비교합니다. 일반 기업의 12개월 연간 실적과 다릅니다.",
+    "quarterlyNote": "1~3월은 실제 3개월 공시이며 4~6월은 원 단위 6개월 결산에서 앞선 3개월을 차감했습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.026944754268,
+        "op": 0.015780880498,
+        "net": -0.000593415071,
+        "reportedKRW": {
+          "sales": "26944754268",
+          "op": "15780880498",
+          "net": "-593415071"
+        },
+        "periodLabel": "2025.06 종료",
+        "reportPeriod": "2025.01–06",
+        "sourceIds": [
+          "report-20260831001328"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.057199784666,
+        "op": 0.042946303272,
+        "net": 0.027773692049,
+        "reportedKRW": {
+          "sales": "57199784666",
+          "op": "42946303272",
+          "net": "27773692049"
+        },
+        "periodLabel": "2026.06 종료",
+        "reportPeriod": "2026.01–06",
+        "sourceIds": [
+          "report-20260831001328"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.012610289466,
+        "op": 0.008724731375,
+        "reportedKRW": {
+          "sales": "12610289466",
+          "op": "8724731375"
+        },
+        "periodLabel": "2025.01–03",
+        "reportPeriod": "2025.01–03",
+        "sourceIds": [
+          "report-20250514001251"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.014334464802,
+        "op": 0.007056149123,
+        "reportedKRW": {
+          "sales": "14334464802",
+          "op": "7056149123"
+        },
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06",
+        "derivation": "six-month-minus-first-three-month",
+        "sourceIds": [
+          "report-20260831001328",
+          "report-20250514001251"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.015531917798,
+        "op": 0.011333940971,
+        "reportedKRW": {
+          "sales": "15531917798",
+          "op": "11333940971"
+        },
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03",
+        "sourceIds": [
+          "report-20260515001057"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.041667866868,
+        "op": 0.031612362301,
+        "reportedKRW": {
+          "sales": "41667866868",
+          "op": "31612362301"
+        },
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06",
+        "derivation": "six-month-minus-first-three-month",
+        "sourceIds": [
+          "report-20260831001328",
+          "report-20260515001057"
+        ]
+      }
+    ],
+    "annualTerm": "6개월 결산",
+    "annualSourceLabel": "공식 6월 종료 6개월 결산",
+    "quarterlyCalendarNote": "6월·12월 결산 · 4~6월은 6개월 합계에서 1~3월을 원 단위로 차감",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (부동산·투자 등)",
+        "help": "임대·투자 관련 영업수익입니다. 회계이익과 현금 배당 가능 재원은 다릅니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "동일한 연결 범위의 부동산 영업비용을 차감한 이익입니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20260831001328",
+      "label": "신한서부티엔디리츠 공식 손익계산서 · 실제 기간·통화 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001328",
+      "published": "2026.08.31",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20250514001251",
+      "label": "신한서부티엔디리츠 공식 손익계산서 · 실제 기간·통화 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250514001251",
+      "published": "2025.05.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20260515001057",
+      "label": "신한서부티엔디리츠 공식 손익계산서 · 실제 기간·통화 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001057",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "신한서부티엔디리츠 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831001328",
+      "published": "2026.08.31",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "처분 손익",
+      "desc": "자산 등을 매각·처분하면서 인식하는 이익이나 손실입니다. 반복적인 영업 수익과 다를 수 있습니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

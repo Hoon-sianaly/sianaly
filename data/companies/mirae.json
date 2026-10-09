@@ -133,14 +133,22 @@
       "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/NX6HUK_G_VG8Z9HFYV46NNRJPXY_G8M9R8G2026812172313.pdf",
       "published": "2026.08.12",
       "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "미래에셋증권 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004118",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -171,6 +179,10 @@
     {
       "name": "당기순이익",
       "desc": "매출·운용수익 등에서 비용과 금융손익·세금 등을 반영한 해당 기간의 최종 이익입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
     }
   ],
   "presentation": {

@@ -220,14 +220,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002185",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "SK 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002185",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "quarter"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "quarter"
+      "quarter",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -262,6 +270,14 @@
     {
       "name": "일회성 손익",
       "desc": "매 기간 반복되기 어려운 거래나 사건에서 발생한 이익·손실입니다. 반복적인 영업 성과와 구분해서 봅니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
     }
   ],
   "presentation": {

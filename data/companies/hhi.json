@@ -219,14 +219,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002879",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "HD현대중공업 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002879",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "quarter"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "quarter"
+      "quarter",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -253,6 +261,14 @@
     {
       "name": "LPG",
       "desc": "액화석유가스입니다. 프로판·부탄 등을 압력이나 냉각으로 액화해 저장·운송하는 연료입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객의 주문·공사·납품 계약을 확보하는 것입니다. 실제 매출·이익과 발생 시점이 다를 수 있습니다."
     }
   ],
   "presentation": {

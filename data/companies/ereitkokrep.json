@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ereitkokrep",
+    "name": "이리츠코크렙",
+    "ticker": "088260",
+    "rank": 489,
+    "type": "유통시설 부동산 투자"
+  },
+  "overview": {
+    "short": "이리츠코크렙은 유통시설 등 부동산에 투자하는 상장 리츠",
+    "summary": "이리츠코크렙은 유통시설 등 부동산에 투자하는 상장 리츠입니다. NC·뉴코아 등 매장 부동산의 임대·자산 운용 성과를 얻습니다.",
+    "takeaways": [
+      "이리츠코크렙은 유통시설 등 부동산에 투자하는 상장 리츠입니다.",
+      "NC·뉴코아 등 매장 부동산의 임대·자산 운용 성과를 얻습니다.",
+      "자회사를 통한 투자도 연결에 포함됩니다.",
+      "6월·12월의 6개월 결산과 실제 3개월 실적을 구분해 표시합니다.",
+      "주요 임차인의 임대 계약과 차입금 조건, 회계이익·배당의 차이가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "유통시설 임대",
+        "desc": "매장 부동산 등 투자 자산의 임대수익을 얻습니다."
+      },
+      {
+        "name": "연결 부동산 투자",
+        "desc": "자회사 등의 부동산 투자·운용 성과를 반영합니다."
+      },
+      {
+        "name": "운용·차입 관리",
+        "desc": "시설·운용 비용과 차입·투자자 분배 업무를 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임차 계약",
+        "desc": "주요 임차인의 계약 조건·지속과 임대수익을 확인합니다."
+      },
+      {
+        "title": "금리·운용 비용",
+        "desc": "차입금 이자·만기와 자산 운용 비용이 이익에 영향을 줍니다."
+      },
+      {
+        "title": "실제 기간·분배",
+        "desc": "6개월·3개월을 같은 기간끼리 비교하고 회계이익과 현금 배당을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 6월 종료 6개월 결산을 같은 기간끼리 비교합니다. 일반 기업의 12개월 연간 실적과 다릅니다.",
+    "quarterlyNote": "1~3월은 실제 3개월 공시이며 4~6월은 원 단위 6개월 결산에서 앞선 3개월을 차감했습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.022879962369,
+        "op": 0.017831881832,
+        "net": 0.006558625488,
+        "reportedKRW": {
+          "sales": "22879962369",
+          "op": "17831881832",
+          "net": "6558625488"
+        },
+        "periodLabel": "2025.06 종료",
+        "reportPeriod": "2025.01–06",
+        "sourceIds": [
+          "report-20260908000319"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.023340504029,
+        "op": 0.018322016439,
+        "net": 0.006751516568,
+        "reportedKRW": {
+          "sales": "23340504029",
+          "op": "18322016439",
+          "net": "6751516568"
+        },
+        "periodLabel": "2026.06 종료",
+        "reportPeriod": "2026.01–06",
+        "sourceIds": [
+          "report-20260908000319"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.011437920248,
+        "op": 0.008908554003,
+        "reportedKRW": {
+          "sales": "11437920248",
+          "op": "8908554003"
+        },
+        "periodLabel": "2025.01–03",
+        "reportPeriod": "2025.01–03",
+        "sourceIds": [
+          "report-20250515000324"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.011442042121,
+        "op": 0.008923327829,
+        "reportedKRW": {
+          "sales": "11442042121",
+          "op": "8923327829"
+        },
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06",
+        "derivation": "six-month-minus-first-three-month",
+        "sourceIds": [
+          "report-20260908000319",
+          "report-20250515000324"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.011668128055,
+        "op": 0.009163005585,
+        "reportedKRW": {
+          "sales": "11668128055",
+          "op": "9163005585"
+        },
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03",
+        "sourceIds": [
+          "report-20260515001091"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.011672375974,
+        "op": 0.009159010854,
+        "reportedKRW": {
+          "sales": "11672375974",
+          "op": "9159010854"
+        },
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06",
+        "derivation": "six-month-minus-first-three-month",
+        "sourceIds": [
+          "report-20260908000319",
+          "report-20260515001091"
+        ]
+      }
+    ],
+    "annualTerm": "6개월 결산",
+    "annualSourceLabel": "공식 6월 종료 6개월 결산",
+    "quarterlyCalendarNote": "6월·12월 결산 · 4~6월은 6개월 합계에서 1~3월을 원 단위로 차감",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (부동산·투자 등)",
+        "help": "임대·투자 관련 영업수익입니다. 회계이익과 현금 배당 가능 재원은 다릅니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "동일한 연결 범위의 부동산 영업비용을 차감한 이익입니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20260908000319",
+      "label": "이리츠코크렙 공식 손익계산서 · 실제 기간·통화 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000319",
+      "published": "2026.09.08",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20250515000324",
+      "label": "이리츠코크렙 공식 손익계산서 · 실제 기간·통화 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515000324",
+      "published": "2025.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20260515001091",
+      "label": "이리츠코크렙 공식 손익계산서 · 실제 기간·통화 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001091",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "이리츠코크렙 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000319",
+      "published": "2026.09.08",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "임차인",
+      "desc": "건물·토지 등을 빌려 사용하고 임대료를 내는 사람이나 회사입니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

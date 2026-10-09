@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "skpreferred",
+    "name": "SK우",
+    "ticker": "03473K",
+    "rank": 487,
+    "type": "우선주 · 계열 사업"
+  },
+  "overview": {
+    "short": "SK우는 SK의 우선주 종목",
+    "summary": "SK우는 SK의 우선주 종목입니다. 투자·계열 관리와 IT 및 연결 사업은 SK 본주 회사와 같습니다.",
+    "takeaways": [
+      "SK우는 SK의 우선주 종목입니다.",
+      "투자·계열 관리와 IT 및 연결 사업은 SK 본주 회사와 같습니다.",
+      "표시 재무 실적은 본주 회사 전체의 실적을 공유합니다.",
+      "우선주에 별도로 발생한 매출·영업이익을 뜻하지 않습니다.",
+      "배당·의결권 등 주식 권리는 기업 사업 실적과 별도로 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "투자·포트폴리오",
+        "desc": "에너지·통신·첨단소재 등 여러 기업에 투자합니다. 자회사 연결 실적과 관계기업 지분법 이익을 구분해야 합니다."
+      },
+      {
+        "name": "IT 서비스",
+        "desc": "기업의 시스템 구축·운영과 디지털 전환 서비스를 제공합니다. SK AX 등 서비스 사업이 포함됩니다."
+      },
+      {
+        "name": "연결 자회사",
+        "desc": "에너지·배터리·통신·소재·건설 등의 실적이 연결됩니다. 지주 별도 매출과 그룹 연결 매출은 크게 다릅니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "자회사 업황",
+        "desc": "정유 마진·배터리 수요·통신·소재 경기 등 여러 사업의 변화가 연결 실적에 반영됩니다."
+      },
+      {
+        "title": "투자 회수와 재편",
+        "desc": "지분 매각·기업 인수와 연결 범위 변화는 일회성 손익과 재무 구조를 바꿀 수 있습니다."
+      },
+      {
+        "title": "IT·AI 수요",
+        "desc": "기업의 시스템 운영과 AI 전환 투자가 서비스 사업에 영향을 줍니다."
+      },
+      {
+        "title": "부채와 현금흐름",
+        "desc": "자회사 투자·차입과 배당 수취가 현금흐름에 영향을 주므로 연결 이익만으로 지주 현금을 판단할 수 없습니다."
+      },
+      {
+        "title": "우선주 권리",
+        "desc": "배당·의결권 등 주식 조건은 기업 실적과 구분해 확인합니다."
+      }
+    ],
+    "financialNote": "본주 회사 전체 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "SK"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "sk"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://www.sk-inc.com/_UPLOAD/PRES/9b83ad17-84b7-4bb8-87d4-8c6fb3497b2d.pdf",
+      "label": "2025년 연결 연간 실적",
+      "asOf": "2025년 연결 연간 실적",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "quarter",
+      "url": "https://www.sk-inc.com/_UPLOAD/PRES/d8e2ad9e-6ea3-4337-a43a-e532c6600c4e.pdf",
+      "label": "2026년 2분기 연결 실적",
+      "asOf": "2026년 2분기 연결 실적",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001157",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001990",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002185",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "SK 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002185",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business-reviewed-2026"
+    ],
+    "drivers": [
+      "quarter",
+      "business-reviewed-2026"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "지분법",
+      "desc": "관계기업의 손익 중 보유 지분에 해당하는 부분을 투자회사의 손익에 반영하는 회계 방식입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "AI",
+      "desc": "인공지능입니다. 데이터를 바탕으로 학습해 분류·예측·콘텐츠 생성 등의 작업을 수행하는 기술입니다."
+    },
+    {
+      "name": "일회성 손익",
+      "desc": "매 기간 반복되기 어려운 거래나 사건에서 발생한 이익·손실입니다. 반복적인 영업 성과와 구분해서 봅니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

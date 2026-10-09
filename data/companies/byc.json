@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "byc",
+    "name": "BYC",
+    "ticker": "001460",
+    "rank": 461,
+    "type": "의류·부동산"
+  },
+  "overview": {
+    "short": "BYC는 내의 등 의류와 건설·임대 사업을 운영하는 회사",
+    "summary": "BYC는 내의 등 의류와 건설·임대 사업을 운영하는 회사입니다. 내의·기능성 의류 등을 제조하거나 외주 생산해 판매합니다.",
+    "takeaways": [
+      "BYC는 내의 등 의류와 건설·임대 사업을 운영하는 회사입니다.",
+      "내의·기능성 의류 등을 제조하거나 외주 생산해 판매합니다.",
+      "유통망을 통한 브랜드 판매와 보유 부동산 임대 수익이 함께 발생합니다.",
+      "건축 도급·자체 분양 등 건설 사업도 실적에 포함됩니다.",
+      "의류 판매의 계절성·재고와 임대·분양·자산 처분 손익을 구분해서 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "내의·의류 판매",
+        "desc": "내의와 관련 의류를 생산·조달해 판매망에 공급합니다."
+      },
+      {
+        "name": "부동산 임대",
+        "desc": "보유 부동산을 임대하고 시설·임차 관련 업무를 관리합니다."
+      },
+      {
+        "name": "건설·분양",
+        "desc": "건축 도급과 자체 분양 등 건설 관련 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "의류 수요·재고",
+        "desc": "계절·제품별 판매와 할인·재고 비용을 확인합니다."
+      },
+      {
+        "title": "임대·개발 성과",
+        "desc": "임대수익·공실과 분양·공사 비용은 의류 사업과 발생 방식이 다릅니다."
+      },
+      {
+        "title": "반복·자산 손익",
+        "desc": "반복 영업과 부동산 처분 등 비반복 손익을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.165207568941,
+        "op": 0.023832906913,
+        "net": 0.018404839494,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001026",
+          "rawKRW": {
+            "sales": "165207568941",
+            "op": "23832906913",
+            "net": "18404839494"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.163166613171,
+        "op": 0.026573558468,
+        "net": 0.019590575123,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001175",
+          "rawKRW": {
+            "sales": "163166613171",
+            "op": "26573558468",
+            "net": "19590575123"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.039494650463,
+        "op": 0.002780619216,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003258",
+          "rawKRW": {
+            "sales": "39494650463",
+            "op": "2780619216",
+            "net": "1661125684"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.036310731694,
+        "op": 0.005587914795,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002319",
+          "rawKRW": {
+            "sales": "36310731694",
+            "op": "5587914795",
+            "net": "4284340849"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.043426502657,
+        "op": 0.002992635673,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002984",
+          "rawKRW": {
+            "sales": "43426502657",
+            "op": "2992635673",
+            "net": "3698689539"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001175",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002319",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002984",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001026",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003258",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "BYC 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002984",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공실",
+      "desc": "임차인이 없어 사용되지 않는 임대 공간입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "계절성",
+      "desc": "날씨·휴가 등 계절 요인으로 수요나 실적이 반복적으로 달라지는 특성입니다."
+    },
+    {
+      "name": "처분 손익",
+      "desc": "자산 등을 매각·처분하면서 인식하는 이익이나 손실입니다. 반복적인 영업 수익과 다를 수 있습니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

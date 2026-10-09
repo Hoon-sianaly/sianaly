@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dic",
+    "name": "디아이씨",
+    "ticker": "092200",
+    "rank": 471,
+    "type": "동력 전달 부품"
+  },
+  "overview": {
+    "short": "디아이씨는 자동차·중장비 등의 동력 전달 부품을 만드는 회사",
+    "summary": "디아이씨는 자동차·중장비 등의 동력 전달 부품을 만드는 회사입니다. 기어·축과 변속기 관련 부품을 완성차·부품 고객에 공급합니다.",
+    "takeaways": [
+      "디아이씨는 자동차·중장비 등의 동력 전달 부품을 만드는 회사입니다.",
+      "기어·축과 변속기 관련 부품을 완성차·부품 고객에 공급합니다.",
+      "전기차 감속기 등 관련 제품의 개발·생산도 수행합니다.",
+      "지게차 등 중장비용 부품과 국내외 생산 사업도 포함됩니다.",
+      "고객 생산·차종별 채택과 소재·가공·설비 비용이 수익성에 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "자동차 부품",
+        "desc": "기어·축과 변속기 등 동력 전달 부품을 제조·납품합니다."
+      },
+      {
+        "name": "전동화 부품",
+        "desc": "전기차 감속기 등 고객 차종에 필요한 제품을 개발·생산합니다."
+      },
+      {
+        "name": "중장비·해외 생산",
+        "desc": "지게차 등 중장비 부품과 국내외 생산·공급을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객·차종 생산",
+        "desc": "고객 차량 생산과 차종별 납품 품목이 판매에 영향을 줍니다."
+      },
+      {
+        "title": "소재·가공 효율",
+        "desc": "금속 소재와 가공·설비·물류 비용을 확인합니다."
+      },
+      {
+        "title": "개발·현재 공급",
+        "desc": "전동화 제품의 개발·설비 투자와 실제 납품 실적을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.719127919117,
+        "op": 0.021831913269,
+        "net": 0.016553684627,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001173",
+          "rawKRW": {
+            "sales": "719127919117",
+            "op": "21831913269",
+            "net": "16553684627"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.757310499806,
+        "op": 0.018550433161,
+        "net": -0.00477108114,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001046",
+          "rawKRW": {
+            "sales": "757310499806",
+            "op": "18550433161",
+            "net": "-4771081140"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.206591248334,
+        "op": 0.008266475746,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002550",
+          "rawKRW": {
+            "sales": "206591248334",
+            "op": "8266475746",
+            "net": "-494261368"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.165173532854,
+        "op": 0.002821230146,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000155",
+          "rawKRW": {
+            "sales": "165173532854",
+            "op": "2821230146",
+            "net": "1058198730"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.196618790364,
+        "op": 0.008729606728,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001541",
+          "rawKRW": {
+            "sales": "196618790364",
+            "op": "8729606728",
+            "net": "5428742958"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001046",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000155",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001541",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001173",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002550",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "디아이씨 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001541",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "전동화",
+      "desc": "기존 기계식 장치나 내연기관 기능을 전기·전자 장치로 전환하는 것입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "감속기",
+      "desc": "회전 속도를 낮추고 힘을 전달하는 기계 장치입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

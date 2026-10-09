@@ -237,14 +237,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002569",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "HD한국조선해양 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002569",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -259,6 +267,14 @@
     {
       "name": "연결 기준",
       "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "지주회사",
+      "desc": "다른 회사의 주식을 보유해 계열사를 지배·관리하는 회사입니다. 자체 사업을 함께 운영하기도 합니다."
+    },
+    {
+      "name": "이익률",
+      "desc": "매출 등 수익에 비해 이익이 얼마나 남는지 나타내는 비율입니다. 어떤 이익을 사용했는지 구분해야 합니다."
     }
   ],
   "presentation": {

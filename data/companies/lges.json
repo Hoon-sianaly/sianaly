@@ -238,14 +238,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000255",
       "published": "2026.08.13",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "LG에너지솔루션 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000255",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -280,6 +288,18 @@
     {
       "name": "솔루션",
       "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "재고 조정",
+      "desc": "보유 상품·원료가 많거나 적을 때 주문·생산 등을 바꿔 재고 수준을 맞추는 과정입니다."
+    },
+    {
+      "name": "전력망",
+      "desc": "발전소에서 생산한 전기를 고객에게 전달하는 송전·변전·배전 설비의 연결 체계입니다."
     }
   ],
   "presentation": {

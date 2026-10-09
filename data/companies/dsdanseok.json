@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dsdanseok",
+    "name": "DS단석",
+    "ticker": "017860",
+    "rank": 470,
+    "type": "연료·자원 재활용"
+  },
+  "overview": {
+    "short": "DS단석은 바이오연료와 배터리·플라스틱 재활용 사업을 하는 회사",
+    "summary": "DS단석은 바이오연료와 배터리·플라스틱 재활용 사업을 하는 회사입니다. 폐유지 등 자원을 활용해 차량·발전·선박용 바이오연료를 생산합니다.",
+    "takeaways": [
+      "DS단석은 바이오연료와 배터리·플라스틱 재활용 사업을 하는 회사입니다.",
+      "폐유지 등 자원을 활용해 차량·발전·선박용 바이오연료를 생산합니다.",
+      "항공 연료 관련 원료 전처리 등 사업도 수행합니다.",
+      "폐납축전지의 납 회수와 플라스틱 재활용·관련 소재 사업을 운영합니다.",
+      "연료·금속·플라스틱의 원료 조달과 판매가격, 설비 가동을 각각 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "바이오연료",
+        "desc": "바이오디젤·바이오중유·선박유와 항공 연료 관련 원료를 공급합니다."
+      },
+      {
+        "name": "배터리 재활용",
+        "desc": "폐납축전지를 수집·처리해 납 등을 회수·판매합니다."
+      },
+      {
+        "name": "플라스틱 재활용",
+        "desc": "폐플라스틱 재활용과 관련 소재 제품을 생산·판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "원료·판매가격",
+        "desc": "폐유지·폐배터리 등 조달 비용과 연료·금속 판매가격을 비교합니다."
+      },
+      {
+        "title": "가동·증설",
+        "desc": "재활용·전처리 설비의 가동과 투자·운영 비용을 확인합니다."
+      },
+      {
+        "title": "고객·제품 구성",
+        "desc": "정유·발전·산업 고객 수요와 제품별 실제 공급 성과를 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.961722369625,
+        "op": 0.01218757577,
+        "net": -0.010321573908,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001800",
+          "rawKRW": {
+            "sales": "961722369625",
+            "op": "12187575770",
+            "net": "-10321573908"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.954873741956,
+        "op": 0.007982184722,
+        "net": -0.012074239649,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000702",
+          "rawKRW": {
+            "sales": "954873741956",
+            "op": "7982184722",
+            "net": "-12074239649"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.221725308957,
+        "op": -0.001317288354,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001466",
+          "rawKRW": {
+            "sales": "221725308957",
+            "op": "-1317288354",
+            "net": "-5398949312"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.278139614522,
+        "op": 0.004395804601,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001115",
+          "rawKRW": {
+            "sales": "278139614522",
+            "op": "4395804601",
+            "net": "-1856414918"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.310076582523,
+        "op": 0.00628970873,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003776",
+          "rawKRW": {
+            "sales": "310076582523",
+            "op": "6289708730",
+            "net": "2518116226"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000702",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001115",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003776",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001800",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001466",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "DS단석 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003776",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "축전지",
+      "desc": "전기를 저장했다가 사용할 수 있는 충전식 배터리입니다."
+    },
+    {
+      "name": "바이오디젤",
+      "desc": "식물성 기름 등 바이오 원료로 만드는 디젤 대체 연료입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "바이오연료",
+      "desc": "생물에서 나온 원료 등을 이용해 만드는 연료입니다."
+    },
+    {
+      "name": "납축전지",
+      "desc": "납을 사용하는 충전 가능한 전지로, 차량 시동 등 여러 용도에 사용합니다."
+    },
+    {
+      "name": "전처리",
+      "desc": "주요 가공에 들어가기 전에 원료를 정제·분리 등 방법으로 준비하는 작업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

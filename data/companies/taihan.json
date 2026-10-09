@@ -274,14 +274,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003722",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "대한전선 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003722",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -296,6 +304,18 @@
     {
       "name": "배전",
       "desc": "송전망에서 받은 전기를 지역의 가정·공장 등 사용자에게 나눠 공급하는 과정입니다."
+    },
+    {
+      "name": "대금 회수",
+      "desc": "상품이나 서비스를 제공한 뒤 고객에게 받을 돈을 실제로 받는 것입니다."
+    },
+    {
+      "name": "전력망",
+      "desc": "발전소에서 생산한 전기를 고객에게 전달하는 송전·변전·배전 설비의 연결 체계입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객의 주문·공사·납품 계약을 확보하는 것입니다. 실제 매출·이익과 발생 시점이 다를 수 있습니다."
     }
   ],
   "presentation": {

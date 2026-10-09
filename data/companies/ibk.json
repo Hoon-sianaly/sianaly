@@ -124,14 +124,22 @@
       "asOf": "2026년 2분기",
       "label": "IBK기업은행 2026년 2분기 공식 IR Book",
       "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "기업은행 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004009",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -158,6 +166,18 @@
     {
       "name": "순영업손익",
       "desc": "금융회사의 영업수익에서 관련 영업비용을 상계해 표시하는 지표입니다. 일반 제조업 매출이나 최종 영업이익과 구분합니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
     }
   ],
   "presentation": {

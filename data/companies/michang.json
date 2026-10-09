@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "michang",
+    "name": "미창석유",
+    "ticker": "003650",
+    "rank": 484,
+    "type": "산업용 윤활유"
+  },
+  "overview": {
+    "short": "미창석유는 윤활유와 산업용 특수유를 만드는 회사",
+    "summary": "미창석유는 윤활유와 산업용 특수유를 만드는 회사입니다. 자동차·산업기계용 윤활유를 제조·판매합니다.",
+    "takeaways": [
+      "미창석유는 윤활유와 산업용 특수유를 만드는 회사입니다.",
+      "자동차·산업기계용 윤활유를 제조·판매합니다.",
+      "타이어·고무 등의 원료인 고무배합유와 변압기용 전기절연유도 공급합니다.",
+      "의약·화장품 등 원료용 유동파라핀 등 관련 제품도 생산합니다.",
+      "회사 이름만 보고 원유를 정제하는 대형 정유사와 같은 사업으로 이해하면 안 됩니다."
+    ],
+    "business": [
+      {
+        "name": "윤활유",
+        "desc": "자동차·산업기계에 쓰이는 윤활유를 제조·판매합니다."
+      },
+      {
+        "name": "고무배합유",
+        "desc": "고무·타이어 등 제품에 사용되는 원료유를 공급합니다."
+      },
+      {
+        "name": "전기절연·특수유",
+        "desc": "변압기용 절연유와 유동파라핀 등 특수 용도 제품을 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "원료·제품 가격",
+        "desc": "기초 원료유 가격과 제품 판매가격의 차이를 확인합니다."
+      },
+      {
+        "title": "산업별 주문",
+        "desc": "자동차·타이어·전력설비 등 고객 수요와 제품 구성이 매출에 영향을 줍니다."
+      },
+      {
+        "title": "영업·투자 손익",
+        "desc": "제조 영업과 보유 자산·금융 손익을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.431941622345,
+        "op": 0.045639201298,
+        "net": 0.052625419138,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001415",
+          "rawKRW": {
+            "sales": "431941622345",
+            "op": "45639201298",
+            "net": "52625419138"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.405486654859,
+        "op": 0.034552364423,
+        "net": 0.068866042367,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001114",
+          "rawKRW": {
+            "sales": "405486654859",
+            "op": "34552364423",
+            "net": "68866042367"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.104163160601,
+        "op": 0.008552877804,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001037",
+          "rawKRW": {
+            "sales": "104163160601",
+            "op": "8552877804",
+            "net": "38970040917"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.101100543797,
+        "op": 0.013724165859,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001902",
+          "rawKRW": {
+            "sales": "101100543797",
+            "op": "13724165859",
+            "net": "16942436545"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.135946149449,
+        "op": 0.008156045312,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002032",
+          "rawKRW": {
+            "sales": "135946149449",
+            "op": "8156045312",
+            "net": "79400019672"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001114",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001902",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002032",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001415",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001037",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "미창석유 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002032",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "변압기",
+      "desc": "교류 전기의 전압을 높이거나 낮추는 장치입니다."
+    },
+    {
+      "name": "윤활유",
+      "desc": "기계 부품 사이의 마찰·마모를 줄이고 냉각·보호 등에 쓰는 오일입니다."
+    },
+    {
+      "name": "고무배합유",
+      "desc": "고무의 가공·성능을 조절하기 위해 섞는 원료유입니다."
+    },
+    {
+      "name": "전기절연유",
+      "desc": "전기설비에서 절연과 냉각 등을 위해 사용하는 기름입니다."
+    },
+    {
+      "name": "유동파라핀",
+      "desc": "화장품·의약 등 여러 용도의 원료로 사용하는 정제된 광유입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -237,14 +237,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000346",
       "published": "2026.09.02",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "포스코퓨처엠 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260902000346",
+      "published": "2026.09.02",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -283,6 +291,14 @@
     {
       "name": "고정비",
       "desc": "생산·판매량이 달라져도 단기간에는 크게 변하지 않는 비용입니다."
+    },
+    {
+      "name": "재고 조정",
+      "desc": "보유 상품·원료가 많거나 적을 때 주문·생산 등을 바꿔 재고 수준을 맞추는 과정입니다."
+    },
+    {
+      "name": "내화물",
+      "desc": "고온 설비에서 열을 견디고 내부를 보호하는 소재입니다."
     }
   ],
   "presentation": {

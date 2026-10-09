@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "theborn",
+    "name": "더본코리아",
+    "ticker": "475560",
+    "rank": 486,
+    "type": "외식 가맹·유통"
+  },
+  "overview": {
+    "short": "더본코리아는 외식 브랜드의 가맹사업과 식품 유통 등을 운영하는 회사",
+    "summary": "더본코리아는 외식 브랜드의 가맹사업과 식품 유통 등을 운영하는 회사입니다. 가맹점에 브랜드·운영 체계와 식재료·제품 등을 제공합니다.",
+    "takeaways": [
+      "더본코리아는 외식 브랜드의 가맹사업과 식품 유통 등을 운영하는 회사입니다.",
+      "가맹점에 브랜드·운영 체계와 식재료·제품 등을 제공합니다.",
+      "소비자 판매용 식품 유통과 호텔·지역개발 등 관련 사업도 수행합니다.",
+      "가맹점 전체 매출이 그대로 본사의 회계상 매출이 되는 것은 아닙니다.",
+      "점포 운영·계약 유지와 식재료·물류·지원 비용을 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "외식 가맹",
+        "desc": "외식 브랜드의 가맹 계약·점포 지원과 식재료·제품 공급을 수행합니다."
+      },
+      {
+        "name": "식품 유통",
+        "desc": "유통 채널을 통해 식품·관련 제품을 공급합니다."
+      },
+      {
+        "name": "호텔·지역 사업",
+        "desc": "호텔과 지역개발 등 관련 사업의 성과도 반영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "점포·가맹 관계",
+        "desc": "점포 운영과 신규·기존 계약 유지가 본사 공급·수수료에 영향을 줍니다."
+      },
+      {
+        "title": "조달·지원 비용",
+        "desc": "식재료·물류와 가맹점 지원·판매 비용을 확인합니다."
+      },
+      {
+        "title": "거래 범위",
+        "desc": "가맹점 소비자 매출과 본사의 상품·수수료 매출을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.464151201512,
+        "op": 0.036023906701,
+        "net": 0.030992599183,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320000574",
+          "rawKRW": {
+            "sales": "464151201512",
+            "op": "36023906701",
+            "net": "30992599183"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.361238529222,
+        "op": -0.023678680069,
+        "net": -0.017393878663,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000930",
+          "rawKRW": {
+            "sales": "361238529222",
+            "op": "-23678680069",
+            "net": "-17393878663"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.074188477012,
+        "op": -0.022475420292,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002902",
+          "rawKRW": {
+            "sales": "74188477012",
+            "op": "-22475420292",
+            "net": "-23805177662"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.079605598593,
+        "op": -0.004194190471,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002760",
+          "rawKRW": {
+            "sales": "79605598593",
+            "op": "-4194190471",
+            "net": "-2257090796"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.083216576482,
+        "op": -0.005562003636,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003649",
+          "rawKRW": {
+            "sales": "83216576482",
+            "op": "-5562003636",
+            "net": "-4405558256"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000930",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002760",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003649",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000574",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002902",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "더본코리아 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003649",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "유통 채널",
+      "desc": "제품이나 서비스를 고객에게 판매하는 경로입니다. 온라인몰·매장·도매·판매 대리점 등이 포함됩니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "가맹",
+      "desc": "정해진 계약 아래 브랜드·운영 체계 등을 사용하며 사업을 운영하는 방식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

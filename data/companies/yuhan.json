@@ -274,14 +274,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002038",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "유한양행 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002038",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -296,6 +304,10 @@
     {
       "name": "원료의약품",
       "desc": "완제의약품의 약효를 내는 성분으로 사용되는 원료입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
     }
   ],
   "presentation": {

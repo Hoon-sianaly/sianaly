@@ -182,14 +182,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000123",
       "published": "2026.08.20",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "한화시스템 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000123",
+      "published": "2026.08.20",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -212,6 +220,10 @@
     {
       "name": "방산",
       "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
     }
   ],
   "presentation": {

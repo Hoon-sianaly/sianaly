@@ -253,14 +253,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002198",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "한국전력 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002198",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q1"
+      "q1",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -283,6 +291,14 @@
     {
       "name": "배전",
       "desc": "송전망에서 받은 전기를 지역의 가정·공장 등 사용자에게 나눠 공급하는 과정입니다."
+    },
+    {
+      "name": "전력망",
+      "desc": "발전소에서 생산한 전기를 고객에게 전달하는 송전·변전·배전 설비의 연결 체계입니다."
+    },
+    {
+      "name": "계절성",
+      "desc": "날씨·휴가 등 계절 요인으로 수요나 실적이 반복적으로 달라지는 특성입니다."
     }
   ],
   "presentation": {

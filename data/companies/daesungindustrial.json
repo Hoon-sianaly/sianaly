@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daesungindustrial",
+    "name": "대성산업",
+    "ticker": "128820",
+    "rank": 488,
+    "type": "에너지·기계 복합"
+  },
+  "overview": {
+    "short": "대성산업은 에너지 공급·발전과 기계·관련 제품 사업을 하는 회사",
+    "summary": "대성산업은 에너지 공급·발전과 기계·관련 제품 사업을 하는 회사입니다. 석유·가스 등 에너지 판매와 열·전력 공급을 수행합니다.",
+    "takeaways": [
+      "대성산업은 에너지 공급·발전과 기계·관련 제품 사업을 하는 회사입니다.",
+      "석유·가스 등 에너지 판매와 열·전력 공급을 수행합니다.",
+      "보일러·히트펌프 등의 에너지 제품 사업도 연결에 포함됩니다.",
+      "유공압기기·기어드모터 등 기계 사업과 기타 연결 사업도 운영합니다.",
+      "에너지 유통·발전·기계의 가격·수요·원가 구조를 각각 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "에너지·발전",
+        "desc": "석유·가스 등 판매와 열·전력 공급 사업을 운영합니다."
+      },
+      {
+        "name": "에너지 기기",
+        "desc": "보일러·히트펌프 등 관련 제품을 제조·판매합니다."
+      },
+      {
+        "name": "기계·기타",
+        "desc": "유공압기기·기어드모터 등 기계와 기타 연결 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "에너지 가격·사용량",
+        "desc": "에너지 조달·판매가격과 전력·열 수요를 확인합니다."
+      },
+      {
+        "title": "제품·지역 성과",
+        "desc": "보일러·기계 등의 주문과 해외 사업 성과를 구분합니다."
+      },
+      {
+        "title": "금융·비교 손익",
+        "desc": "자금 비용·영업 외 손익과 최신 공시의 비교값을 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월 실적입니다. 최신 공시에서 달라진 과거 비교값은 공시 원문과 대조하여 반영했습니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.476772033939,
+        "op": 0.021781127161,
+        "net": 0.008412371624,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001121",
+          "rawKRW": {
+            "sales": "1476772033939",
+            "op": "21781127161",
+            "net": "8412371624"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.565923441453,
+        "op": 0.010832731125,
+        "net": -0.061745964943,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001251",
+          "rawKRW": {
+            "sales": "1565923441453",
+            "op": "10832731125",
+            "net": "-61745964943"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.372310167423,
+        "op": -0.000763616769,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002153",
+          "rawKRW": {
+            "sales": "372310167423",
+            "op": "-763616769",
+            "net": "-15486091328"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparativeBasis": "latest-official-comparative"
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.412554373222,
+        "op": 0.021672373603,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002153",
+          "rawKRW": {
+            "sales": "412554373222",
+            "op": "21672373603"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          },
+          "comparativeBasis": "latest-half-year-cumulative-minus-second-quarter"
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.365855736192,
+        "op": 0.003012632129,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002153",
+          "rawKRW": {
+            "sales": "365855736192",
+            "op": "3012632129",
+            "net": "-2584066425"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001251",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART · 최신 공시 누적에서 산출",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002153",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002153",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001121",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART · 최신 공시 비교값",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002153",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "대성산업 최신 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002153",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "보일러",
+      "desc": "물을 가열해 증기나 온수를 만드는 설비입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "히트펌프",
+      "desc": "전기 등을 이용해 열을 옮겨 냉난방 등에 활용하는 장치입니다."
+    },
+    {
+      "name": "유공압",
+      "desc": "액체나 기체의 압력을 이용해 기계를 작동시키는 기술입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

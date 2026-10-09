@@ -20393,6 +20393,2204 @@
           }
         ]
       }
+    },
+    {
+      "key": "kpxchemical",
+      "ticker": "025000",
+      "corpCode": "00191472",
+      "corpName": "KPX케미칼",
+      "modified": "20240325",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312001374"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002244"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003139"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313001177"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003416"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260312001374",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003139",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "kbstarreit",
+      "ticker": "432320",
+      "corpCode": "01622720",
+      "corpName": "KB스타리츠",
+      "modified": "20260504",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "1월·7월 6개월 결산과 실제 2~4월 3개월 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "daolsecurities",
+      "ticker": "030210",
+      "corpCode": "00156859",
+      "corpName": "다올투자증권",
+      "modified": "20260301",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "판관비 차감 전 영업손익",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312000604"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001921"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001044"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250317000595"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001874"
+          }
+        ]
+      }
+    },
+    {
+      "key": "tscorporation",
+      "ticker": "001790",
+      "corpCode": "00113234",
+      "corpName": "대한제당",
+      "modified": "20240701",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000542"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002395"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002640"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313001084"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003233"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sajoindustries",
+      "ticker": "007160",
+      "corpCode": "00124799",
+      "corpName": "사조산업",
+      "modified": "20250502",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000986"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002239"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002156"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312000903"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001804"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sunjin",
+      "ticker": "136490",
+      "corpCode": "00855093",
+      "corpName": "선진",
+      "modified": "20240701",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320000571"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260513000811"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001556"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813000064"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320000571"
+          }
+        ],
+        "reasons": [
+          "2024 원 API 누락값을 최신 공시 비교값으로 복원·대조; 해당 기간 자동 반영 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260320000571",
+          "reason": "Original-period API has invalid amount; official latest comparative recovered and verified"
+        }
+      ]
+    },
+    {
+      "key": "namyangdairy",
+      "ticker": "003920",
+      "corpCode": "00107598",
+      "corpName": "남양유업",
+      "modified": "20251203",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001235"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002860"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003731"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250328000090"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004011"
+          }
+        ]
+      }
+    },
+    {
+      "key": "shinhanseobureit",
+      "ticker": "404990",
+      "corpCode": "01436558",
+      "corpName": "신한서부티엔디리츠",
+      "modified": "20240408",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "6개월 결산·원 단위 후반 3개월 차감·실제 기간 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "daishinvaluereit",
+      "ticker": "0030R0",
+      "corpCode": "01885222",
+      "corpName": "대신밸류리츠",
+      "modified": "20250711",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "3개월 결산·신설 첫 장기 결산 혼합 방지; 실제 기간 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "cosmaxbti",
+      "ticker": "044820",
+      "corpCode": "00219574",
+      "corpName": "코스맥스비티아이",
+      "modified": "20260911",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000869"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001234"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002427"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250319000641"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002642"
+          }
+        ]
+      }
+    },
+    {
+      "key": "byc",
+      "ticker": "001460",
+      "corpCode": "00122579",
+      "corpName": "BYC",
+      "modified": "20260902",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001175"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002319"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002984"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001026"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003258"
+          }
+        ]
+      }
+    },
+    {
+      "key": "suheung",
+      "ticker": "008490",
+      "corpCode": "00131692",
+      "corpName": "서흥",
+      "modified": "20221209",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001055"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001324"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001642"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000847"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001729"
+          }
+        ]
+      }
+    },
+    {
+      "key": "jrglobalreit",
+      "ticker": "348950",
+      "corpCode": "01415892",
+      "corpName": "제이알글로벌리츠",
+      "modified": "20220818",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "6개월 결산·원 단위 후반 3개월 차감·실제 기간 수동 대조",
+          "최신 연결 감사의견 거절·계속기업 가정 불확실성 확인"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "lsnetworks",
+      "ticker": "000680",
+      "corpCode": "00104698",
+      "corpName": "LS네트웍스",
+      "modified": "20260327",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001521"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002164"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003314"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250325000971"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002910"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001521",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003314",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "hannongchemicals",
+      "ticker": "011500",
+      "corpCode": "00160861",
+      "corpName": "한농화성",
+      "modified": "20260306",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000612"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001012"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002881"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000501"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001234"
+          }
+        ]
+      }
+    },
+    {
+      "key": "pkc",
+      "ticker": "001340",
+      "corpCode": "00122472",
+      "corpName": "PKC",
+      "modified": "20260318",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001618"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260520000268"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001764"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001326"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003003"
+          }
+        ]
+      }
+    },
+    {
+      "key": "kolonglobal",
+      "ticker": "003070",
+      "corpCode": "00152880",
+      "corpName": "코오롱글로벌",
+      "modified": "20260401",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001556"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002059"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003744"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814003343"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250909000347"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001556",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003744",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "miwonchemicals",
+      "ticker": "134380",
+      "corpCode": "00855163",
+      "corpName": "미원화학",
+      "modified": "20230322",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260309001317"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260508000059"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000187"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250310000394"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001660"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sambuto",
+      "ticker": "001470",
+      "corpCode": "00125974",
+      "corpName": "삼부토건",
+      "modified": "20250701",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260901000001"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260518000224"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004299"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814002051"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004387"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류",
+          "최신 정정·재감사와 계속기업 불확실성 검토; 자동 숫자 변경 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260901000001",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "dsdanseok",
+      "ticker": "017860",
+      "corpCode": "00108612",
+      "corpName": "DS단석",
+      "modified": "20231222",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000702"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001115"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003776"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001800"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001466"
+          }
+        ]
+      }
+    },
+    {
+      "key": "dic",
+      "ticker": "092200",
+      "corpCode": "00112165",
+      "corpName": "디아이씨",
+      "modified": "20230216",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320001046"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000155"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001541"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001173"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002550"
+          }
+        ]
+      }
+    },
+    {
+      "key": "heungkukfire",
+      "ticker": "000540",
+      "corpCode": "00103176",
+      "corpName": "흥국화재",
+      "modified": "20260330",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "보험수익",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001047"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260529001511"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260831000486"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001444"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250829001940"
+          }
+        ],
+        "reasons": [
+          "최신 2분기 API 누적값 혼입; 공시 실제 3개월 원문 수동 대조"
+        ]
+      }
+    },
+    {
+      "key": "lvmcholdings",
+      "ticker": "900140",
+      "corpCode": "00838500",
+      "corpName": "엘브이엠씨",
+      "modified": "20260408",
+      "fsDiv": "CFS",
+      "currency": "USD",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "공식 USD 재무제표 원문 수동 대조; 원화 자동 정규화와 분리"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "kyungbang",
+      "ticker": "000050",
+      "corpCode": "00101628",
+      "corpName": "경방",
+      "modified": "20221208",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000486"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000613"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001991"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001362"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002720"
+          }
+        ]
+      }
+    },
+    {
+      "key": "dongageological",
+      "ticker": "028100",
+      "corpCode": "00178754",
+      "corpName": "동아지질",
+      "modified": "20260310",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001545"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001364"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003080"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814003141"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002903"
+          }
+        ]
+      }
+    },
+    {
+      "key": "miraeindustries",
+      "ticker": "025560",
+      "corpCode": "00197759",
+      "corpName": "미래산업",
+      "modified": "20260310",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001166"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260513000253"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000782"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001105"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001007"
+          }
+        ]
+      }
+    },
+    {
+      "key": "husteel",
+      "ticker": "005010",
+      "corpCode": "00156488",
+      "corpName": "휴스틸",
+      "modified": "20250327",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260602000398"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515003026"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004246"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001178"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004277"
+          }
+        ]
+      }
+    },
+    {
+      "key": "motonic",
+      "ticker": "009680",
+      "corpCode": "00151128",
+      "corpName": "모토닉",
+      "modified": "20240726",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000984"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000961"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001080"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313000748"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001413"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sbs",
+      "ticker": "034120",
+      "corpCode": "00130772",
+      "corpName": "SBS",
+      "modified": "20251022",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001224"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001483"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003339"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001108"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003140"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hanmiglobal",
+      "ticker": "053690",
+      "corpCode": "00413523",
+      "corpName": "한미글로벌",
+      "modified": "20230223",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001377"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002916"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260828001797"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814003308"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003784"
+          }
+        ]
+      }
+    },
+    {
+      "key": "samyoung",
+      "ticker": "003720",
+      "corpCode": "00127255",
+      "corpName": "삼영",
+      "modified": "20230424",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000789"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000873"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000317"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000750"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001376"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000789",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "uniquest",
+      "ticker": "077500",
+      "corpCode": "00414601",
+      "corpName": "유니퀘스트",
+      "modified": "20221212",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000663"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001032"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001621"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001187"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002149"
+          }
+        ]
+      }
+    },
+    {
+      "key": "daedong",
+      "ticker": "000490",
+      "corpCode": "00109286",
+      "corpName": "대동",
+      "modified": "20260303",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001552"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002848"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001489"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001356"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004231"
+          }
+        ]
+      }
+    },
+    {
+      "key": "michang",
+      "ticker": "003650",
+      "corpCode": "00122056",
+      "corpName": "미창석유공업",
+      "modified": "20251208",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320001114"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001902"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002032"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001415"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001037"
+          }
+        ]
+      }
+    },
+    {
+      "key": "muhak",
+      "ticker": "033920",
+      "corpCode": "00121543",
+      "corpName": "무학",
+      "modified": "20260424",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000658"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002800"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261002000381"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250324000610"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001206"
+          }
+        ]
+      }
+    },
+    {
+      "key": "theborn",
+      "ticker": "475560",
+      "corpCode": "00968607",
+      "corpName": "더본코리아",
+      "modified": "20260323",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000930"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002760"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003649"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000574"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002902"
+          }
+        ]
+      }
+    },
+    {
+      "key": "skpreferred",
+      "ticker": "03473K",
+      "companyRef": "sk",
+      "mode": "shared"
+    },
+    {
+      "key": "daesungindustrial",
+      "ticker": "128820",
+      "corpCode": "00828789",
+      "corpName": "대성산업",
+      "modified": "20231020",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001251"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001335"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002153"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001121"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002596"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002153",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002153",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "ereitkokrep",
+      "ticker": "088260",
+      "corpCode": "00544452",
+      "corpName": "이리츠코크렙",
+      "modified": "20260320",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "6개월 결산·원 단위 후반 3개월 차감·실제 기간 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "shinsegaeinc",
+      "ticker": "035510",
+      "corpCode": "00219486",
+      "corpName": "신세계I&amp;C",
+      "modified": "20250414",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001238"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002494"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003752"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250317000967"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002651"
+          }
+        ]
+      }
+    },
+    {
+      "key": "lgpreferred",
+      "ticker": "003555",
+      "companyRef": "lg",
+      "mode": "shared"
+    },
+    {
+      "key": "baiksan",
+      "ticker": "035150",
+      "corpCode": "00122551",
+      "corpName": "백산",
+      "modified": "20250103",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000754"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260512000593"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001166"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250319000644"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001130"
+          }
+        ]
+      }
+    },
+    {
+      "key": "norooholdings",
+      "ticker": "000320",
+      "corpCode": "00113508",
+      "corpName": "노루홀딩스",
+      "modified": "20250902",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312001302"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001926"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002880"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814002541"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002645"
+          }
+        ]
+      }
+    },
+    {
+      "key": "crholdings",
+      "ticker": "000480",
+      "corpCode": "00148984",
+      "corpName": "시알홀딩스",
+      "modified": "20240930",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000043"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000731"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261006000307"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250311001197"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002898"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000043",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "sungshincement",
+      "ticker": "004980",
+      "corpCode": "00132804",
+      "corpName": "성신양회",
+      "modified": "20230116",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001369"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001315"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003208"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312000954"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002814"
+          }
+        ]
+      }
+    },
+    {
+      "key": "ygplus",
+      "ticker": "037270",
+      "corpCode": "00249247",
+      "corpName": "YG PLUS",
+      "modified": "20260810",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000816"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001527"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003232"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001394"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002228"
+          }
+        ]
+      }
+    },
+    {
+      "key": "spsamhwa",
+      "ticker": "000390",
+      "corpCode": "00129387",
+      "corpName": "SP삼화",
+      "modified": "20260430",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000462"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000874"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001499"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312000816"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001443"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hyosungchemical",
+      "ticker": "298000",
+      "corpCode": "01316236",
+      "corpName": "효성화학",
+      "modified": "20251104",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260311004423"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001458"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001695"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312001129"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001607"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260311004423",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "daesungenergy",
+      "ticker": "117580",
+      "corpCode": "00787376",
+      "corpName": "대성에너지",
+      "modified": "20260306",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001167"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001773"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003152"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001296"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002446"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001167",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ]
+    },
+    {
+      "key": "lghhpreferred",
+      "ticker": "051905",
+      "companyRef": "lghh",
+      "mode": "shared"
     }
   ]
 }

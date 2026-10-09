@@ -274,14 +274,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004181",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "한미약품 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004181",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -304,6 +312,10 @@
     {
       "name": "위탁개발",
       "desc": "다른 회사의 요청을 받아 제품·기술 개발을 대신 수행하는 사업입니다."
+    },
+    {
+      "name": "전문의약품",
+      "desc": "의사의 처방 등이 필요한 의약품입니다."
     }
   ],
   "presentation": {

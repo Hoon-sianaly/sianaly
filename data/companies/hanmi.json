@@ -281,14 +281,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003665",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "한미반도체 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003665",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q1"
+      "q1",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -307,6 +315,14 @@
     {
       "name": "패키징",
       "desc": "반도체 칩을 보호하고 외부 회로에 연결할 수 있게 조립하는 과정입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객의 주문·공사·납품 계약을 확보하는 것입니다. 실제 매출·이익과 발생 시점이 다를 수 있습니다."
     }
   ],
   "presentation": {

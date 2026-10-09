@@ -209,14 +209,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000827",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "S-Oil 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000827",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "annual"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -247,6 +255,10 @@
     {
       "name": "윤활유",
       "desc": "기계 부품 사이의 마찰·마모를 줄이고 냉각·보호 등에 쓰는 오일입니다."
+    },
+    {
+      "name": "항공유",
+      "desc": "항공기 엔진에 사용하는 연료입니다."
     }
   ],
   "presentation": {

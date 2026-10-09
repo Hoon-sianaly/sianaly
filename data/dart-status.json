@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-10-09",
-  "stocks": 450,
-  "issuers": 430,
-  "automaticIssuers": 405,
-  "fullyValidatedIssuers": 359,
-  "partiallyValidatedIssuers": 46,
-  "reviewIssuers": 25,
-  "sharedStocks": 20,
+  "stocks": 500,
+  "issuers": 477,
+  "automaticIssuers": 444,
+  "fullyValidatedIssuers": 389,
+  "partiallyValidatedIssuers": 55,
+  "reviewIssuers": 33,
+  "sharedStocks": 23,
   "companies": [
     {
       "key": "samsung",
@@ -17944,6 +17944,1959 @@
           }
         ]
       }
+    },
+    {
+      "key": "kpxchemical",
+      "ticker": "025000",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260312001374",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003139",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312001374"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002244"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003139"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313001177"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003416"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "kbstarreit",
+      "ticker": "432320",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "1월·7월 6개월 결산과 실제 2~4월 3개월 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "daolsecurities",
+      "ticker": "030210",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312000604"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001921"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001044"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250317000595"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001874"
+          }
+        ]
+      }
+    },
+    {
+      "key": "tscorporation",
+      "ticker": "001790",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000542"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002395"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002640"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313001084"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003233"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sajoindustries",
+      "ticker": "007160",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000986"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002239"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002156"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312000903"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001804"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sunjin",
+      "ticker": "136490",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260320000571",
+          "reason": "Original-period API has invalid amount; official latest comparative recovered and verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320000571"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260513000811"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001556"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813000064"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320000571"
+          }
+        ],
+        "reasons": [
+          "2024 원 API 누락값을 최신 공시 비교값으로 복원·대조; 해당 기간 자동 반영 보류"
+        ]
+      }
+    },
+    {
+      "key": "namyangdairy",
+      "ticker": "003920",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001235"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002860"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003731"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250328000090"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004011"
+          }
+        ]
+      }
+    },
+    {
+      "key": "shinhanseobureit",
+      "ticker": "404990",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "6개월 결산·원 단위 후반 3개월 차감·실제 기간 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "daishinvaluereit",
+      "ticker": "0030R0",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "3개월 결산·신설 첫 장기 결산 혼합 방지; 실제 기간 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "cosmaxbti",
+      "ticker": "044820",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000869"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001234"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002427"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250319000641"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002642"
+          }
+        ]
+      }
+    },
+    {
+      "key": "byc",
+      "ticker": "001460",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001175"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002319"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002984"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001026"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003258"
+          }
+        ]
+      }
+    },
+    {
+      "key": "suheung",
+      "ticker": "008490",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001055"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001324"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001642"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000847"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001729"
+          }
+        ]
+      }
+    },
+    {
+      "key": "jrglobalreit",
+      "ticker": "348950",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "6개월 결산·원 단위 후반 3개월 차감·실제 기간 수동 대조",
+          "최신 연결 감사의견 거절·계속기업 가정 불확실성 확인"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "lsnetworks",
+      "ticker": "000680",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001521",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003314",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001521"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002164"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003314"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250325000971"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002910"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "hannongchemicals",
+      "ticker": "011500",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000612"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001012"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002881"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000501"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001234"
+          }
+        ]
+      }
+    },
+    {
+      "key": "pkc",
+      "ticker": "001340",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001618"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260520000268"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001764"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001326"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003003"
+          }
+        ]
+      }
+    },
+    {
+      "key": "kolonglobal",
+      "ticker": "003070",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001556",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003744",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001556"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002059"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003744"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814003343"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250909000347"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "miwonchemicals",
+      "ticker": "134380",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260309001317"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260508000059"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000187"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250310000394"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001660"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sambuto",
+      "ticker": "001470",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260901000001",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260901000001"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260518000224"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004299"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814002051"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004387"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류",
+          "최신 정정·재감사와 계속기업 불확실성 검토; 자동 숫자 변경 보류"
+        ]
+      }
+    },
+    {
+      "key": "dsdanseok",
+      "ticker": "017860",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000702"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001115"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003776"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001800"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001466"
+          }
+        ]
+      }
+    },
+    {
+      "key": "dic",
+      "ticker": "092200",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320001046"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000155"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001541"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001173"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002550"
+          }
+        ]
+      }
+    },
+    {
+      "key": "heungkukfire",
+      "ticker": "000540",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001047"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260529001511"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260831000486"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001444"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250829001940"
+          }
+        ],
+        "reasons": [
+          "최신 2분기 API 누적값 혼입; 공시 실제 3개월 원문 수동 대조"
+        ]
+      }
+    },
+    {
+      "key": "lvmcholdings",
+      "ticker": "900140",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "공식 USD 재무제표 원문 수동 대조; 원화 자동 정규화와 분리"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "kyungbang",
+      "ticker": "000050",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000486"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000613"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001991"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001362"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002720"
+          }
+        ]
+      }
+    },
+    {
+      "key": "dongageological",
+      "ticker": "028100",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001545"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001364"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003080"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814003141"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002903"
+          }
+        ]
+      }
+    },
+    {
+      "key": "miraeindustries",
+      "ticker": "025560",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001166"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260513000253"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000782"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001105"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001007"
+          }
+        ]
+      }
+    },
+    {
+      "key": "husteel",
+      "ticker": "005010",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260602000398"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515003026"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004246"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001178"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004277"
+          }
+        ]
+      }
+    },
+    {
+      "key": "motonic",
+      "ticker": "009680",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000984"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000961"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001080"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250313000748"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001413"
+          }
+        ]
+      }
+    },
+    {
+      "key": "sbs",
+      "ticker": "034120",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001224"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001483"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003339"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001108"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003140"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hanmiglobal",
+      "ticker": "053690",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001377"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002916"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260828001797"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814003308"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814003784"
+          }
+        ]
+      }
+    },
+    {
+      "key": "samyoung",
+      "ticker": "003720",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000789",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000789"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000873"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000317"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000750"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001376"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "uniquest",
+      "ticker": "077500",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000663"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001032"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001621"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001187"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002149"
+          }
+        ]
+      }
+    },
+    {
+      "key": "daedong",
+      "ticker": "000490",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001552"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002848"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001489"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318001356"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814004231"
+          }
+        ]
+      }
+    },
+    {
+      "key": "michang",
+      "ticker": "003650",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320001114"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001902"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002032"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001415"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001037"
+          }
+        ]
+      }
+    },
+    {
+      "key": "muhak",
+      "ticker": "033920",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000658"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002800"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261002000381"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250324000610"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001206"
+          }
+        ]
+      }
+    },
+    {
+      "key": "theborn",
+      "ticker": "475560",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000930"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002760"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003649"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000574"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002902"
+          }
+        ]
+      }
+    },
+    {
+      "key": "skpreferred",
+      "ticker": "03473K",
+      "mode": "shared",
+      "companyRef": "sk"
+    },
+    {
+      "key": "daesungindustrial",
+      "ticker": "128820",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002153",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002153",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001251"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001335"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002153"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001121"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002596"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "ereitkokrep",
+      "ticker": "088260",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "reasons": [
+          "6개월 결산·원 단위 후반 3개월 차감·실제 기간 수동 대조"
+        ],
+        "periods": []
+      }
+    },
+    {
+      "key": "shinsegaeinc",
+      "ticker": "035510",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001238"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002494"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003752"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250317000967"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002651"
+          }
+        ]
+      }
+    },
+    {
+      "key": "lgpreferred",
+      "ticker": "003555",
+      "mode": "shared",
+      "companyRef": "lg"
+    },
+    {
+      "key": "baiksan",
+      "ticker": "035150",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000754"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260512000593"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001166"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250319000644"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001130"
+          }
+        ]
+      }
+    },
+    {
+      "key": "norooholdings",
+      "ticker": "000320",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312001302"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001926"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002880"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250814002541"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002645"
+          }
+        ]
+      }
+    },
+    {
+      "key": "crholdings",
+      "ticker": "000480",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000043",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000043"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000731"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261006000307"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250311001197"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002898"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "sungshincement",
+      "ticker": "004980",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001369"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001315"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003208"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312000954"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002814"
+          }
+        ]
+      }
+    },
+    {
+      "key": "ygplus",
+      "ticker": "037270",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000816"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001527"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003232"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001394"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002228"
+          }
+        ]
+      }
+    },
+    {
+      "key": "spsamhwa",
+      "ticker": "000390",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000462"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000874"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001499"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312000816"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001443"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hyosungchemical",
+      "ticker": "298000",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260311004423",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260311004423"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514001458"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001695"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250312001129"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001607"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "daesungenergy",
+      "ticker": "117580",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001167",
+          "reason": "Latest official statement comparative or cumulative figures differ from original period API; preserve reconciled latest scope until automatic mapping is verified"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-09",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001167"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001773"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003152"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001296"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002446"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류"
+        ]
+      }
+    },
+    {
+      "key": "lghhpreferred",
+      "ticker": "051905",
+      "mode": "shared",
+      "companyRef": "lghh"
     }
   ]
 }

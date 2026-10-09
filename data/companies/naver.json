@@ -235,14 +235,22 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002266",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "NAVER 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002266",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
     }
   ],
   "sectionSourceIds": {
     "business": [
-      "q2"
+      "business-reviewed-2026"
     ],
     "drivers": [
-      "q2"
+      "q2",
+      "business-reviewed-2026"
     ]
   },
   "glossary": [
@@ -273,6 +281,10 @@
     {
       "name": "거래액",
       "desc": "서비스를 통해 거래된 전체 금액입니다. 회사가 그중 수수료 등으로 인식하는 매출과는 다릅니다."
+    },
+    {
+      "name": "플랫폼",
+      "desc": "여러 제품·기술을 개발하거나 서비스를 제공하는 데 활용하는 공통 기반입니다. 여기서는 약물 전달 등 기술 기반을 뜻합니다."
     }
   ],
   "presentation": {
