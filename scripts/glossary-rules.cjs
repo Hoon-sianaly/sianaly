@@ -251,6 +251,7 @@ function requiredTerms(record, financials=record.financials) {
  const matches = Object.entries(terms).filter(([name])=>[name,...(aliases[name]||[])].some(alias=>{
   // Avoid matching short acronyms inside longer words (IPTV is not artist IP).
   if(alias==='방산') return text.replaceAll('전방산업','').includes(alias);
+  if(alias==='리스') return text.replaceAll('스테인리스','').replaceAll('폴리스티렌','').includes(alias);
   return /^[A-Za-z]+$/.test(alias) ? new RegExp('(^|[^A-Za-z])'+alias+'([^A-Za-z]|$)').test(text) : text.includes(alias);
  }));
  const basis=financials.basis==='consolidated'?'연결 기준':financials.basis==='separate'?'별도 기준':null;
