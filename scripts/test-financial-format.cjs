@@ -12,3 +12,5 @@ assert(!chart.includes('>0.0</text>'));
 // Even with a trillion-scale comparison, small profits keep their own readable label.
 assert(ctx.comparisonChart([{period:'2024',sales:2,op:1},{period:'2025',sales:1,op:.0001}]).includes('1억원'));
 console.log('Financial formatting passed: unit thresholds, 500억 regression, small amounts, zero, losses and per-chart scales.');
+
+assert.equal(ctx.formatFinancialHighlight(17.984761/1e6,'USD'),'1,798만달러');assert.equal(ctx.formatFinancialHighlight(-64.575387/1e6,'USD'),'-6,458만달러');assert.equal(ctx.formatFinancialHighlight(0,'USD'),'0달러');ctx.c.financialCurrency='USD';const dollars=ctx.comparisonChart([{period:'2026',sales:17.984761/1e6,op:-64.575387/1e6}]);assert(dollars.includes('만달러')&&!dollars.includes('조원·억원'));

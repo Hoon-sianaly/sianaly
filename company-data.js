@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261009-kospi350-1";
+const COMPANY_DATA_VERSION = "20261009-kospi400-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -30,7 +30,8 @@ async function loadCompanyRecord(key, ancestors = []) {
  return {...record, financials:parent.financials, financialSources:parent.sources};
 }
 
-function financialDisplayUnit(value) {
+function financialDisplayUnit(value, currency) {
+ if(currency==="USD"){const a=Math.abs(value);if(a>=0.0001)return{label:"억달러",factor:10000};if(a>=0.00000001)return{label:"만달러",factor:100000000};return{label:"달러",factor:1000000000000};}
  const magnitude=Math.abs(value);
  if (magnitude >= 1) return {label:"조원",factor:1};
  if (magnitude >= 0.0001) return {label:"억원",factor:10000};
@@ -42,9 +43,9 @@ function formatFinancialNumber(value, maximumFractionDigits=2) {
  return Number(value).toLocaleString("ko-KR",{maximumFractionDigits});
 }
 
-function formatFinancialHighlight(value) {
+function formatFinancialHighlight(value, currency) {
  if (value == null || !Number.isFinite(value)) return "-";
- const unit=financialDisplayUnit(value);
+ const unit=financialDisplayUnit(value,currency);
  if (value !== 0 && Math.abs(value*unit.factor)<1) return (value*unit.factor).toLocaleString("ko-KR",{maximumSignificantDigits:3})+unit.label;
  return formatFinancialNumber(value*unit.factor,unit.label==="조원"?2:0)+unit.label;
 }
@@ -69,12 +70,13 @@ function companyPageData(record) {
   annualTerm:financials.annualTerm || "연간",
   annualSourceLabel:financials.annualSourceLabel || "공식 연간 실적 자료",
   financialAvailability:financials.availability || null,
+  financialCurrency:financials.currency || "KRW",
   quarterlyCalendarNote:financials.quarterlyCalendarNote || "",
   quarterlyTerm:financials.quarterlyTerm || "분기",
   quarterlyBasisLabel:financials.quarterlyBasisLabel || "각 분기 3개월 실적(누적 아님)",
   latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),
   latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),
-  latestNet:latest?.net == null ? null : formatFinancialHighlight(latest.net),
+  latestNet:latest?.net == null ? null : formatFinancialHighlight(latest.net,financials.highlightFormat),
   financialBasis:financials.basis === "consolidated" ? "K-IFRS 연결 기준" : "K-IFRS 별도 기준",
   financialMetrics:financials.metrics || {
    sales:{label:"매출",help:"제품과 서비스를 팔아 얻은 전체 금액"},

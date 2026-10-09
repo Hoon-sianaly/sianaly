@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "tccsteel",
+    "rank": 369,
+    "name": "TCC스틸",
+    "ticker": "002710",
+    "type": "표면처리 강판"
+  },
+  "overview": {
+    "short": "금속 표면을 가공해 포장·배터리용 소재를 만드는 회사",
+    "summary": "금속 표면을 가공해 포장·배터리용 소재를 만드는 회사입니다. 포장과 배터리 고객의 주문을 나눠 확인합니다.",
+    "takeaways": [
+      "금속 표면을 가공해 포장·배터리용 소재를 만드는 회사입니다.",
+      "포장 강판: 주석 등을 입힌 강판을 공급합니다.",
+      "기능성 강판: 니켈도금 등 산업·배터리 관련 강판을 생산합니다.",
+      "연결 사업: 해외 유통과 임대 등 연결 관련 사업을 운영합니다.",
+      "포장과 배터리 고객의 주문을 나눠 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "포장 강판",
+        "desc": "주석 등을 입힌 강판을 공급합니다."
+      },
+      {
+        "name": "기능성 강판",
+        "desc": "니켈도금 등 산업·배터리 관련 강판을 생산합니다."
+      },
+      {
+        "name": "연결 사업",
+        "desc": "해외 유통과 임대 등 연결 관련 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품별 수요",
+        "desc": "포장과 배터리 고객의 주문을 나눠 확인합니다."
+      },
+      {
+        "title": "강판·가공 비용",
+        "desc": "원료 강판과 도금·생산 비용을 봅니다."
+      },
+      {
+        "title": "가동·수출",
+        "desc": "설비 투자 이후 가동률과 수출·환율 영향을 함께 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.582074815373,
+        "op": 0.012272472364,
+        "net": 0.020222969062,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319000643",
+          "rawKRW": {
+            "sales": "582074815373",
+            "op": "12272472364",
+            "net": "20222969062"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.611513908644,
+        "op": -0.010909334249,
+        "net": -0.007600798426,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000366",
+          "rawKRW": {
+            "sales": "611513908644",
+            "op": "-10909334249",
+            "net": "-7600798426"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.155416669306,
+        "op": -0.003369562211,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000970",
+          "rawKRW": {
+            "sales": "155416669306",
+            "op": "-3369562211",
+            "net": "2291108206"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.174653330631,
+        "op": -0.003980487942,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002376",
+          "rawKRW": {
+            "sales": "174653330631",
+            "op": "-3980487942",
+            "net": "-1536139944"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.182686709688,
+        "op": 0.001170027179,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002946",
+          "rawKRW": {
+            "sales": "182686709688",
+            "op": "1170027179",
+            "net": "-6051561934"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000366",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002376",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002946",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000643",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000970",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "TCC스틸 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002946",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장이나 설비가 생산 가능한 능력 중 실제로 사용하는 비율입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

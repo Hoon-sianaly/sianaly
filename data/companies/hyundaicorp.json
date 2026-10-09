@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hyundaicorp",
+    "rank": 396,
+    "name": "현대코퍼레이션",
+    "ticker": "011760",
+    "type": "종합 무역"
+  },
+  "overview": {
+    "short": "철강·화학·차량 등 상품을 거래하는 회사",
+    "summary": "철강·화학·차량 등 상품을 거래하는 회사입니다. 상품별 거래 규모와 고객 수요를 확인합니다.",
+    "takeaways": [
+      "철강·화학·차량 등 상품을 거래하는 회사입니다.",
+      "상품 무역: 철강과 화학제품 등 산업 상품을 거래합니다.",
+      "차량·산업 사업: 차량과 기계 등 관련 상품·프로젝트를 수행합니다.",
+      "해외·투자: 해외 네트워크와 투자·관련 사업을 운영합니다.",
+      "상품별 거래 규모와 고객 수요를 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "상품 무역",
+        "desc": "철강과 화학제품 등 산업 상품을 거래합니다."
+      },
+      {
+        "name": "차량·산업 사업",
+        "desc": "차량과 기계 등 관련 상품·프로젝트를 수행합니다."
+      },
+      {
+        "name": "해외·투자",
+        "desc": "해외 네트워크와 투자·관련 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "거래 물량",
+        "desc": "상품별 거래 규모와 고객 수요를 확인합니다."
+      },
+      {
+        "title": "마진·환율",
+        "desc": "상품 거래 마진과 환율·자금 비용을 함께 봅니다."
+      },
+      {
+        "title": "대금 회수",
+        "desc": "매출 규모와 함께 거래 상대의 신용·회수 위험을 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 6.995662947758,
+        "op": 0.133529291485,
+        "net": 0.120975062891,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250324000696",
+          "rawKRW": {
+            "sales": "6995662947758",
+            "op": "133529291485",
+            "net": "120975062891"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 7.554286077242,
+        "op": 0.140131311551,
+        "net": 0.0867848047,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001413",
+          "rawKRW": {
+            "sales": "7554286077242",
+            "op": "140131311551",
+            "net": "86784804700"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 1.918494566467,
+        "op": 0.034649290935,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001448",
+          "rawKRW": {
+            "sales": "1918494566467",
+            "op": "34649290935",
+            "net": "15818222871"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 2.072672856682,
+        "op": 0.046062769122,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001114",
+          "rawKRW": {
+            "sales": "2072672856682",
+            "op": "46062769122",
+            "net": "11058258472"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 2.816432723333,
+        "op": 0.062936540858,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001727",
+          "rawKRW": {
+            "sales": "2816432723333",
+            "op": "62936540858",
+            "net": "40296711111"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001413",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001114",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001727",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250324000696",
+      "published": "2025.03.24",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001448",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "현대코퍼레이션 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001727",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

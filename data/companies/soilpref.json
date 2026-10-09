@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "soilpref",
+    "rank": 378,
+    "name": "S-Oil우",
+    "ticker": "010955",
+    "type": "정유 우선주"
+  },
+  "overview": {
+    "short": "S-Oil 회사 실적을 공유하는 우선주",
+    "summary": "S-Oil 회사 실적을 공유하는 우선주입니다. 사업과 실적은 본주 회사 전체 기준이고 주식의 권리는 별도로 확인해야 합니다.",
+    "takeaways": [
+      "S-Oil 회사 실적을 공유하는 우선주입니다.",
+      "정유: 본주 회사의 석유제품 생산과 판매를 함께 봅니다.",
+      "석유화학: 석유화학 제품 사업을 회사 전체 기준으로 봅니다.",
+      "윤활 관련: 윤활기유 등 관련 사업이 반영됩니다.",
+      "우선주만의 별도 매출이나 영업이익이 아닙니다."
+    ],
+    "business": [
+      {
+        "name": "정유",
+        "desc": "본주 회사의 석유제품 생산과 판매를 함께 봅니다."
+      },
+      {
+        "name": "석유화학",
+        "desc": "석유화학 제품 사업을 회사 전체 기준으로 봅니다."
+      },
+      {
+        "name": "윤활 관련",
+        "desc": "윤활기유 등 관련 사업이 반영됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "회사 실적",
+        "desc": "우선주만의 별도 매출이나 영업이익이 아닙니다."
+      },
+      {
+        "title": "주식 권리",
+        "desc": "배당과 의결권 등 우선주 조건을 별도로 확인합니다."
+      },
+      {
+        "title": "중복 주의",
+        "desc": "본주와 우선주 실적을 단순 합산하지 않습니다."
+      }
+    ],
+    "financialNote": "본주 회사 전체의 연결 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "S-Oil"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "soil"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "S-Oil, 2025년 4분기 잠정실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/GQXXMB5CB2RNC8QAXXD3KCFBR8V3NFSY2026126111218.pdf",
+      "published": "2026.01.26",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "S-Oil, 2026년 2분기 잠정실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/ZZA478EJVB5UVH4FG8S85MTHB56AU85Q202683172537.pdf",
+      "published": "2026.08.03",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001011",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000478",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000827",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "OSP",
+      "desc": "산유국이 정하는 원유 공식 판매 가격."
+    },
+    {
+      "name": "윤활기유",
+      "desc": "윤활유를 만들 때 사용하는 기본 원료."
+    },
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "스프레드",
+      "desc": "두 가격의 차이입니다. 화학 업종에서는 제품 판매가격과 주요 원료가격의 차이를 주로 봅니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "정제마진",
+      "desc": "석유제품 판매가격과 원유 등 원료 비용 사이의 차이로 정유 사업의 수익성을 보는 지표입니다. 회사 전체 이익과는 다릅니다."
+    },
+    {
+      "name": "윤활유",
+      "desc": "기계 부품 사이의 마찰·마모를 줄이고 냉각·보호 등에 쓰는 오일입니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

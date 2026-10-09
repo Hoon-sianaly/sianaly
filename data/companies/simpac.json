@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "simpac",
+    "rank": 400,
+    "name": "SIMPAC",
+    "ticker": "009160",
+    "type": "합금철·산업기계"
+  },
+  "overview": {
+    "short": "합금철과 금속 가공 기계를 만드는 회사",
+    "summary": "합금철과 금속 가공 기계를 만드는 회사입니다. 철강 생산과 고객의 설비 투자가 각 사업에 영향을 줍니다.",
+    "takeaways": [
+      "합금철과 금속 가공 기계를 만드는 회사입니다.",
+      "합금철: 철강 제조에 쓰는 합금철을 공급합니다.",
+      "산업기계: 금속 성형용 프레스 등 산업 기계를 생산합니다.",
+      "관련 사업: 가공과 소재 등 연결 사업을 운영합니다.",
+      "철강 생산과 고객의 설비 투자가 각 사업에 영향을 줍니다."
+    ],
+    "business": [
+      {
+        "name": "합금철",
+        "desc": "철강 제조에 쓰는 합금철을 공급합니다."
+      },
+      {
+        "name": "산업기계",
+        "desc": "금속 성형용 프레스 등 산업 기계를 생산합니다."
+      },
+      {
+        "name": "관련 사업",
+        "desc": "가공과 소재 등 연결 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "철강·설비 수요",
+        "desc": "철강 생산과 고객의 설비 투자가 각 사업에 영향을 줍니다."
+      },
+      {
+        "title": "원료·전력",
+        "desc": "광석·금속 원료와 전력 비용을 확인합니다."
+      },
+      {
+        "title": "사업별 수익성",
+        "desc": "기계 납품과 소재 판매의 시점·마진을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 2024년 연간 수치는 최신 공시의 재작성 비교 값입니다. 2025년 2분기 수치는 최신 공시의 재작성 비교 값입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.816042318946,
+        "op": 0.019581576578,
+        "net": 0.018557797069,
+        "sourceIds": [
+          "comparative-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001274",
+          "rawKRW": {
+            "sales": "816042318946",
+            "op": "19581576578",
+            "net": "18557797069"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparative": true
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.179040874617,
+        "op": 0.04595631573,
+        "net": 0.022353244341,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001274",
+          "rawKRW": {
+            "sales": "1179040874617",
+            "op": "45956315730",
+            "net": "22353244341"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.309599704272,
+        "op": 0.00845276504,
+        "sourceIds": [
+          "comparative-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003619",
+          "rawKRW": {
+            "sales": "309599704272",
+            "op": "8452765040",
+            "net": "13702261792"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparative": true
+        },
+        "net": 0.013702261792
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.31534515218,
+        "op": 0.021629622216,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002780",
+          "rawKRW": {
+            "sales": "315345152180",
+            "op": "21629622216",
+            "net": "1745271277"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.461111549992,
+        "op": 0.026833708001,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003619",
+          "rawKRW": {
+            "sales": "461111549992",
+            "op": "26833708001",
+            "net": "17082684999"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001274",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002780",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003619",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003101",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003582",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "SIMPAC 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003619",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "comparative-2024-annual",
+      "label": "2024년 연간 최신 공식 공시 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001274",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "comparative-2025-q2",
+      "label": "2025년 2분기 최신 공식 공시 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003619",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "합금철",
+      "desc": "철강에 필요한 성질을 부여하기 위해 넣는 철과 다른 금속 등의 합금입니다."
+    },
+    {
+      "name": "프레스",
+      "desc": "금속 등에 압력을 가해 원하는 모양으로 성형하는 기계입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

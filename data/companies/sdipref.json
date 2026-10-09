@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sdipref",
+    "rank": 372,
+    "name": "삼성SDI우",
+    "ticker": "006405",
+    "type": "배터리 우선주"
+  },
+  "overview": {
+    "short": "삼성SDI 회사 실적을 공유하는 우선주",
+    "summary": "삼성SDI 회사 실적을 공유하는 우선주입니다. 사업과 실적은 본주 회사 전체 기준이고 주식의 권리는 별도로 확인해야 합니다.",
+    "takeaways": [
+      "삼성SDI 회사 실적을 공유하는 우선주입니다.",
+      "배터리: 삼성SDI의 자동차·산업·소형 배터리 사업을 함께 봅니다.",
+      "전자 소재: 전자 소재 사업을 회사 전체 기준으로 반영합니다.",
+      "해외 생산: 연결 대상 해외 공장과 판매 사업이 포함됩니다.",
+      "우선주만의 별도 매출이나 영업이익이 아닙니다."
+    ],
+    "business": [
+      {
+        "name": "배터리",
+        "desc": "삼성SDI의 자동차·산업·소형 배터리 사업을 함께 봅니다."
+      },
+      {
+        "name": "전자 소재",
+        "desc": "전자 소재 사업을 회사 전체 기준으로 반영합니다."
+      },
+      {
+        "name": "해외 생산",
+        "desc": "연결 대상 해외 공장과 판매 사업이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "회사 실적",
+        "desc": "우선주만의 별도 매출이나 영업이익이 아닙니다."
+      },
+      {
+        "title": "주식 권리",
+        "desc": "배당과 의결권 등 우선주 조건은 별도로 확인합니다."
+      },
+      {
+        "title": "중복 주의",
+        "desc": "본주와 우선주 실적을 단순 합산하지 않습니다."
+      }
+    ],
+    "financialNote": "본주 회사 전체의 연결 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "삼성SDI"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "sdi"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "url": "https://www.samsungsdi.com/upload/download/ir/2025.4Q_IR_Final_En.pdf",
+      "label": "2025년 연간 경영실적",
+      "asOf": "2025년 연간 경영실적",
+      "published": null,
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q1",
+      "url": "https://news.samsungsdi.com/global/articleView?seq=409",
+      "label": "2026년 1분기 실적",
+      "asOf": "2026년 1분기 실적",
+      "published": "2026.04.28",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "url": "https://www.samsungsdi.com/sdi-now/sdi-news/4942.html",
+      "label": "2026년 2분기 실적",
+      "asOf": "2026년 2분기 실적",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002954",
+      "published": "2026.03.10",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002408",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003578",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "q2"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "UPS",
+      "desc": "전력 공급이 끊겨도 일정 시간 전기를 공급하는 무정전 전원장치입니다."
+    },
+    {
+      "name": "BBU",
+      "desc": "서버 등의 전원 중단을 보완하는 배터리 백업 장치입니다."
+    },
+    {
+      "name": "각형 배터리",
+      "desc": "사각형 금속 케이스에 담은 배터리입니다."
+    },
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "IR",
+      "desc": "회사가 투자자에게 사업·실적 등을 설명하는 활동과 자료를 뜻합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "데이터센터",
+      "desc": "서버·저장장치·네트워크 장비와 이를 운영할 전력·냉각 설비를 모아 놓은 시설입니다."
+    },
+    {
+      "name": "ESS",
+      "desc": "에너지저장장치입니다. 전기를 저장했다가 필요할 때 사용하는 설비입니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison",
+    "tableNumbersOnly": true
+  }
+}

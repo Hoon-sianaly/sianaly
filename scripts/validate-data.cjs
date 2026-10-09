@@ -41,7 +41,8 @@ function validateFinancials(record, seen = []) {
   assert.equal(Object.keys(financials).length, 1, `Referenced financials must not duplicate rows: ${key}`);
   return validateFinancials(records.get(financials.companyRef), [...seen, key]);
  }
- assert.equal(financials.unit, "KRW_trillion");
+ assert.ok(["KRW_trillion","USD_trillion"].includes(financials.unit));
+ if(financials.unit==="USD_trillion"){assert.equal(financials.currency,"USD");assert.equal(financials.highlightFormat,"USD");for(const row of [...financials.annual,...financials.quarterly])for(const f of ["sales","op"]){assert.match(row.reportedUSD?.[f]||"",/^-?\d+$/);assert.equal(row[f],Number(row.reportedUSD[f])/1e12);assert.equal(row.reportedKRW,undefined);}}
  if(financials.metrics) for(const field of ["sales","op"]){
   assert.ok(financials.metrics[field]?.label?.trim(),`Missing metric label: ${key}/${field}`);
   assert.ok(financials.metrics[field]?.help?.trim(),`Missing metric explanation: ${key}/${field}`);

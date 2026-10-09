@@ -68,6 +68,7 @@ function context(key, transform, failed = false) {
    assert.ok(!out.includes("연간 실적 그래프")&&!out.includes("연간 보고 기간"),entry.key);
    assert.ok(out.includes(record.financials.annual.at(-1).reportPeriod),entry.key);
   }
+  if(entry.key==="prestigebiopharma"){assert.ok(out.includes("달러")&&out.includes("2026.04–06"));assert.ok(!out.includes("조원·억원")&&!out.includes("0원</td>"));}
   if (entry.key === "kbif") {
    assert.ok(out.includes("운용수익 (회계상)")&&out.includes("당기순이익 (회계상)"));
    assert.ok(!out.includes("<span>영업이익률</span>"));

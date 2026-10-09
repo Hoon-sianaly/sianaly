@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samyangbiopharm",
+    "rank": 379,
+    "name": "삼양바이오팜",
+    "ticker": "0120G0",
+    "type": "의약품·의료기기"
+  },
+  "overview": {
+    "short": "봉합사와 항암제 등 의료 제품을 만드는 회사",
+    "summary": "봉합사와 항암제 등 의료 제품을 만드는 회사입니다. 의료기기와 의약품의 주문·수익성을 나눠 봅니다.",
+    "takeaways": [
+      "봉합사와 항암제 등 의료 제품을 만드는 회사입니다.",
+      "의료기기: 생분해성 봉합사와 지혈제 등 의료 제품을 생산합니다.",
+      "의약품: 항암제와 패치 등 의약품 사업을 운영합니다.",
+      "신약 개발: 약물 전달 등 관련 기술을 연구합니다.",
+      "의료기기와 의약품의 주문·수익성을 나눠 봅니다."
+    ],
+    "business": [
+      {
+        "name": "의료기기",
+        "desc": "생분해성 봉합사와 지혈제 등 의료 제품을 생산합니다."
+      },
+      {
+        "name": "의약품",
+        "desc": "항암제와 패치 등 의약품 사업을 운영합니다."
+      },
+      {
+        "name": "신약 개발",
+        "desc": "약물 전달 등 관련 기술을 연구합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품별 판매",
+        "desc": "의료기기와 의약품의 주문·수익성을 나눠 봅니다."
+      },
+      {
+        "title": "연구 비용",
+        "desc": "신약 개발 지출과 현재 제품 판매 이익을 구분합니다."
+      },
+      {
+        "title": "설립 기간",
+        "desc": "분할 신설 후 첫 결산은 2개월이므로 1년 실적처럼 비교하지 않습니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 2025년 결산은 설립 이후 11–12월 두 달 실적이며 12개월 연간 실적이 아닙니다. 분할 전 삼양홀딩스 실적을 옮겨 넣지 않습니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.028594373504,
+        "op": 0.002691177859,
+        "net": 0.002236509935,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260313000827",
+          "rawKRW": {
+            "sales": "28594373504",
+            "op": "2691177859",
+            "net": "2236509935"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.11–12",
+        "reportPeriod": "2025.11–12"
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.031173917568,
+        "op": 0.001386436905,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001707",
+          "rawKRW": {
+            "sales": "31173917568",
+            "op": "1386436905",
+            "net": "2566559688"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.035859168673,
+        "op": 0.000746349826,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002317",
+          "rawKRW": {
+            "sales": "35859168673",
+            "op": "746349826",
+            "net": "1330448176"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    },
+    "annualTerm": "설립 후 2개월",
+    "annualSourceLabel": "공식 설립 후 2개월 결산 손익계산서"
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000827",
+      "published": "2026.03.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001707",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002317",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "삼양바이오팜 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002317",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "봉합사",
+      "desc": "수술 등에서 조직을 꿰매는 데 사용하는 의료용 실입니다."
+    },
+    {
+      "name": "지혈제",
+      "desc": "출혈을 줄이거나 멈추는 데 사용하는 의료 제품입니다."
+    },
+    {
+      "name": "약물 전달",
+      "desc": "약물이 몸 안의 목표 부위에 도달하도록 설계하는 기술·방식입니다."
+    },
+    {
+      "name": "생분해성",
+      "desc": "시간이 지나 생물학적 작용 등으로 분해되는 성질을 뜻합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

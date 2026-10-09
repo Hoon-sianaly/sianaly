@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "doosanpref2",
+    "rank": 394,
+    "name": "두산2우B",
+    "ticker": "000157",
+    "type": "복합 우선주"
+  },
+  "overview": {
+    "short": "두산 회사 실적을 공유하는 우선주",
+    "summary": "두산 회사 실적을 공유하는 우선주입니다. 사업과 실적은 본주 회사 전체 기준이고 주식의 권리는 별도로 확인해야 합니다.",
+    "takeaways": [
+      "두산 회사 실적을 공유하는 우선주입니다.",
+      "자체 사업: 두산 본체의 사업을 회사 전체 기준으로 봅니다.",
+      "연결 계열사: 산업 등 연결 계열사의 성과가 포함됩니다.",
+      "그룹 투자: 계열사 투자와 관리 사업을 함께 반영합니다.",
+      "우선주만의 별도 매출이나 영업이익이 아닙니다."
+    ],
+    "business": [
+      {
+        "name": "자체 사업",
+        "desc": "두산 본체의 사업을 회사 전체 기준으로 봅니다."
+      },
+      {
+        "name": "연결 계열사",
+        "desc": "산업 등 연결 계열사의 성과가 포함됩니다."
+      },
+      {
+        "name": "그룹 투자",
+        "desc": "계열사 투자와 관리 사업을 함께 반영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "회사 실적",
+        "desc": "우선주만의 별도 매출이나 영업이익이 아닙니다."
+      },
+      {
+        "title": "주식 권리",
+        "desc": "배당과 의결권 등 우선주 조건을 별도로 확인합니다."
+      },
+      {
+        "title": "중복 주의",
+        "desc": "본주와 다른 우선주 또는 계열사 실적을 단순 합산하지 않습니다."
+      }
+    ],
+    "financialNote": "본주 회사 전체의 연결 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "두산"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "doosancorp"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "두산, 2025년 4분기 경영실적 발표 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/72GJNE5G3CBA3JAWN9YPAP2YSBV8UTRY2026212193254.pdf",
+      "published": "2026.02.12",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "두산, 2026년 2분기 경영실적 — 회사 작성 IR 자료",
+      "url": "https://file.irgo.co.kr/data/BOARD/ATTACH_PDF/DQP9SASS82HY98GMUX6DGC7PW7HH8WPD2026727175042.pdf",
+      "published": "2026.07.27",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000945",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004047",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "annual"
+    ],
+    "drivers": [
+      "q2"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "CCL",
+      "desc": "회로기판의 바탕이 되는 동박적층판."
+    },
+    {
+      "name": "연결 실적",
+      "desc": "지배하는 자회사를 포함하고 내부거래를 제거한 실적."
+    },
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "AI",
+      "desc": "인공지능입니다. 데이터를 바탕으로 학습해 분류·예측·콘텐츠 생성 등의 작업을 수행하는 기술입니다."
+    },
+    {
+      "name": "동박",
+      "desc": "얇게 만든 구리판입니다. 배터리에서는 주로 음극의 전류를 모으는 소재로 사용합니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
