@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "shinhanalpha",
+    "rank": 271,
+    "name": "신한알파리츠",
+    "ticker": "293940",
+    "type": "업무용 부동산 리츠"
+  },
+  "overview": {
+    "short": "업무용 부동산 등에 투자해 임대수익을 얻는 리츠",
+    "summary": "업무용 부동산 등에 투자해 임대수익을 얻는 리츠입니다. 공실과 임대료·계약 갱신을 봐야 합니다.",
+    "takeaways": [
+      "업무용 부동산 등에 투자해 임대수익을 얻는 리츠입니다.",
+      "부동산 투자: 오피스 등 수익형 부동산에 투자합니다.",
+      "임대 운영: 입주 기업의 임대료와 관리 관련 수익을 얻습니다.",
+      "자산 관리: 자산 편입·차입과 운영 관리를 수행합니다.",
+      "공실과 임대료·계약 갱신을 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "부동산 투자",
+        "desc": "오피스 등 수익형 부동산에 투자합니다."
+      },
+      {
+        "name": "임대 운영",
+        "desc": "입주 기업의 임대료와 관리 관련 수익을 얻습니다."
+      },
+      {
+        "name": "자산 관리",
+        "desc": "자산 편입·차입과 운영 관리를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임대 계약",
+        "desc": "공실과 임대료·계약 갱신을 봐야 합니다."
+      },
+      {
+        "title": "금융비용",
+        "desc": "차입금 금리와 만기·재조달이 중요합니다."
+      },
+      {
+        "title": "자산 편입",
+        "desc": "자산 투자와 운영 비용·분배 여력을 확인해야 합니다."
+      }
+    ],
+    "financialNote": "3월·9월 종료 6개월 결산 회사입니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다. 연결 기준입니다. 같은 시기에 종료되는 6개월 실적끼리 비교하며 12개월 합계가 아닙니다.",
+    "quarterlyNote": "공식 손익표의 실제 3개월 실적입니다. 결산의 뒤쪽 3개월은 원 단위 6개월 합계에서 앞쪽 3개월을 차감했습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.053419536116,
+        "op": 0.032175219793,
+        "reportedKRW": {
+          "sales": "53419536116",
+          "op": "32175219793"
+        },
+        "periodLabel": "2024.03 종료",
+        "reportPeriod": "2023.10–2024.03",
+        "sourceIds": [
+          "report-20250611000550"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.068629689986,
+        "op": 0.045085207224,
+        "reportedKRW": {
+          "sales": "68629689986",
+          "op": "45085207224"
+        },
+        "periodLabel": "2025.03 종료",
+        "reportPeriod": "2024.10–2025.03",
+        "sourceIds": [
+          "report-20260528000669"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.085330922743,
+        "op": 0.056873581245,
+        "reportedKRW": {
+          "sales": "85330922743",
+          "op": "56873581245"
+        },
+        "periodLabel": "2026.03 종료",
+        "reportPeriod": "2025.10–2026.03",
+        "sourceIds": [
+          "report-20260528000669"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.030559039194,
+        "op": 0.020230479829,
+        "reportedKRW": {
+          "sales": "30559039194",
+          "op": "20230479829"
+        },
+        "periodLabel": "2024.10–12",
+        "reportPeriod": "2024.10–12",
+        "sourceIds": [
+          "report-20250214001740"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.038070650792,
+        "op": 0.024854727395,
+        "reportedKRW": {
+          "sales": "38070650792",
+          "op": "24854727395"
+        },
+        "periodLabel": "2025.01–03",
+        "reportPeriod": "2025.01–03",
+        "sourceIds": [
+          "report-20260528000669",
+          "report-20250214001740"
+        ],
+        "derivation": "six-month-minus-first-three-month"
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.038981465852,
+        "op": 0.02138511855,
+        "reportedKRW": {
+          "sales": "38981465852",
+          "op": "21385118550"
+        },
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06",
+        "sourceIds": [
+          "report-20250814002748"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.041278504851,
+        "op": 0.027332571186,
+        "reportedKRW": {
+          "sales": "41278504851",
+          "op": "27332571186"
+        },
+        "periodLabel": "2025.10–12",
+        "reportPeriod": "2025.10–12",
+        "sourceIds": [
+          "report-20260213002422"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.044052417892,
+        "op": 0.029541010059,
+        "reportedKRW": {
+          "sales": "44052417892",
+          "op": "29541010059"
+        },
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03",
+        "sourceIds": [
+          "report-20260528000669",
+          "report-20260213002422"
+        ],
+        "derivation": "six-month-minus-first-three-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.044890023021,
+        "op": 0.025268284498,
+        "reportedKRW": {
+          "sales": "44890023021",
+          "op": "25268284498"
+        },
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06",
+        "sourceIds": [
+          "report-20260814002042"
+        ]
+      }
+    ],
+    "quarterlyCalendarNote": "3월·9월 6개월 결산 회사 · 각 3개월의 실제 기간 표시 · 달력 분기와 다름",
+    "annualTerm": "6개월 결산",
+    "annualSourceLabel": "공식 6개월 결산 연결 손익계산서",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (임대 등)",
+        "help": "부동산 임대료와 관리 등 수익입니다. 제조업 매출과 구분합니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "임대 관련 수익에서 영업비용을 차감한 이익입니다. 금융비용 차감 후 이익·현금 배당과 다릅니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20250611000550",
+      "label": "신한알파리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250611000550",
+      "published": "2025.06.11",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20260528000669",
+      "label": "신한알파리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260528000669",
+      "published": "2026.05.28",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20250214001740",
+      "label": "신한알파리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250214001740",
+      "published": "2025.02.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20250814002748",
+      "label": "신한알파리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002748",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20260213002422",
+      "label": "신한알파리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213002422",
+      "published": "2026.02.13",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "report-20260814002042",
+      "label": "신한알파리츠 공식 연결 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002042",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "report-20260814002042"
+    ],
+    "drivers": [
+      "report-20260814002042"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "공실",
+      "desc": "임차인이 없어 사용되지 않는 임대 공간입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

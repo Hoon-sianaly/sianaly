@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sgcenergy",
+    "rank": 272,
+    "name": "SGC에너지",
+    "ticker": "005090",
+    "type": "발전·산업 기업"
+  },
+  "overview": {
+    "short": "열병합발전과 건설·유리 사업을 운영하는 회사",
+    "summary": "열병합발전과 건설·유리 사업을 운영하는 회사입니다. 전력·증기 판매와 연료비가 중요합니다.",
+    "takeaways": [
+      "열병합발전과 건설·유리 사업을 운영하는 회사입니다.",
+      "발전·에너지: 증기와 전기를 생산해 산업체·전력시장에 공급합니다.",
+      "건설: 연결 자회사를 통해 플랜트·건설·임대 사업을 수행합니다.",
+      "유리·기타: 유리병·생활용 유리와 물류 등 사업을 운영합니다.",
+      "전력·증기 판매와 연료비가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "발전·에너지",
+        "desc": "증기와 전기를 생산해 산업체·전력시장에 공급합니다."
+      },
+      {
+        "name": "건설",
+        "desc": "연결 자회사를 통해 플랜트·건설·임대 사업을 수행합니다."
+      },
+      {
+        "name": "유리·기타",
+        "desc": "유리병·생활용 유리와 물류 등 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "발전 판매",
+        "desc": "전력·증기 판매와 연료비가 중요합니다."
+      },
+      {
+        "title": "건설 공정",
+        "desc": "건설 수주·공정과 원가·대금 회수를 봐야 합니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "유리 등 각 사업의 가동률과 손익을 구분해야 합니다."
+      }
+    ],
+    "financialNote": "발전뿐 아니라 건설·유리 등의 연결 실적을 포함합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.",
+    "quarterlyNote": "DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.09"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.354993052127,
+        "op": 0.189611637907,
+        "net": 0.035894883016,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250312001090",
+          "rawKRW": {
+            "sales": "2354993052127",
+            "op": "189611637907",
+            "net": "35894883016"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 2.460687771156,
+        "op": 0.095820325177,
+        "net": -0.094809582864,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260312001227",
+          "rawKRW": {
+            "sales": "2460687771156",
+            "op": "95820325177",
+            "net": "-94809582864"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.618460152234,
+        "op": 0.034011337486,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002327",
+          "rawKRW": {
+            "sales": "618460152234",
+            "op": "34011337486",
+            "net": "-5175848142"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.611480718237,
+        "op": 0.035738111628,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000524",
+          "rawKRW": {
+            "sales": "611480718237",
+            "op": "35738111628",
+            "net": "6166333907"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.576959944058,
+        "op": 0.044880845872,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001158",
+          "rawKRW": {
+            "sales": "576959944058",
+            "op": "44880845872",
+            "net": "7694153016"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.09"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001227",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000524",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001158",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250312001090",
+      "published": "2025.03.12",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002327",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "business",
+      "label": "SGC에너지 2026년 반기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001158",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "플랜트",
+      "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
+    },
+    {
+      "name": "열병합발전",
+      "desc": "하나의 연료로 전기와 유용한 열을 함께 생산하는 발전 방식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
