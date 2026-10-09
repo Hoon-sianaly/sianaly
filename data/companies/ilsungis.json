@@ -54,7 +54,7 @@
     "basis": "separate",
     "verification": {
       "status": "verified",
-      "verifiedAt": "2026.10.09"
+      "verifiedAt": "2026.10.10"
     },
     "annual": [
       {
@@ -150,16 +150,15 @@
         "year": 2026,
         "quarter": 1,
         "sales": 0.016709333845,
-        "op": -0.000495763307,
+        "op": -0.000495462941,
         "sourceIds": [
-          "dart-2026-q1"
+          "numbers-verified-20260814002387"
         ],
         "dart": {
-          "receipt": "20260515001484",
+          "receipt": "20260814002387",
           "rawKRW": {
             "sales": "16709333845",
-            "op": "-495763307",
-            "net": "1577290782"
+            "op": "-495462941"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -168,11 +167,9 @@
             ],
             "op": [
               "dart_OperatingIncomeLoss"
-            ],
-            "net": [
-              "ifrs-full_ProfitLoss"
             ]
-          }
+          },
+          "derivation": "half-year cumulative minus second quarter"
         }
       },
       {
@@ -253,6 +250,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002387",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "numbers-verified-20260814002387",
+      "label": "2026년 반기보고서 · 별도 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002387",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.10"
     }
   ],
   "sectionSourceIds": {

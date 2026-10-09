@@ -54,22 +54,22 @@
     "basis": "consolidated",
     "verification": {
       "status": "verified",
-      "verifiedAt": "2026.10.08"
+      "verifiedAt": "2026.10.10"
     },
     "annual": [
       {
         "year": 2024,
-        "sales": 11.626920274913,
-        "op": 0.239104876913,
+        "sales": 11.579429708038,
+        "op": 0.256126253194,
         "net": 0.009791708542,
         "sourceIds": [
-          "dart-2024-annual"
+          "numbers-verified-20260311004487"
         ],
         "dart": {
-          "receipt": "20250312000991",
+          "receipt": "20260311004487",
           "rawKRW": {
-            "sales": "11626920274913",
-            "op": "239104876913",
+            "sales": "11579429708038",
+            "op": "256126253194",
             "net": "9791708542"
           },
           "periodBasis": "annual",
@@ -120,17 +120,16 @@
       {
         "year": 2025,
         "quarter": 2,
-        "sales": 2.980562190769,
-        "op": 0.084498851402,
+        "sales": 2.976241421697,
+        "op": 0.085836871022,
         "sourceIds": [
-          "dart-2025-q2"
+          "numbers-verified-20260814000859"
         ],
         "dart": {
-          "receipt": "20250814002204",
+          "receipt": "20260814000859",
           "rawKRW": {
-            "sales": "2980562190769",
-            "op": "84498851402",
-            "net": "14223118059"
+            "sales": "2976241421697",
+            "op": "85836871022"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -139,9 +138,6 @@
             ],
             "op": [
               "dart_OperatingIncomeLoss"
-            ],
-            "net": [
-              "ifrs-full_ProfitLoss"
             ]
           }
         }
@@ -253,6 +249,20 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000859",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "numbers-verified-20260311004487",
+      "label": "2025년 사업보고서 · 연결 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004487",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.10"
+    },
+    {
+      "id": "numbers-verified-20260814000859",
+      "label": "2026년 반기보고서 · 연결 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000859",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.10"
     }
   ],
   "sectionSourceIds": {

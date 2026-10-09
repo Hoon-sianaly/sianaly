@@ -58,53 +58,134 @@
     "basis": "consolidated",
     "verification": {
       "status": "verified",
-      "verifiedAt": "2026.10.07"
+      "verifiedAt": "2026.10.10"
     },
     "annual": [
       {
         "year": 2024,
-        "sales": 10.44,
-        "op": 3.086,
+        "sales": 8.886336,
+        "op": 3.085995,
         "sourceIds": [
-          "annual"
-        ]
+          "numbers-verified-20260313001235"
+        ],
+        "dart": {
+          "receipt": "20260313001235",
+          "rawKRW": {
+            "sales": "8886336000000",
+            "op": "3085995000000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InterestRevenueExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossAttributableToOwnersOfParent"
+            ]
+          }
+        }
       },
       {
         "year": 2025,
-        "sales": 10.957,
-        "op": 3.141,
+        "sales": 9.030769,
+        "op": 3.124346,
         "sourceIds": [
-          "annual"
-        ]
+          "numbers-verified-20260313001235"
+        ],
+        "dart": {
+          "receipt": "20260313001235",
+          "rawKRW": {
+            "sales": "9030769000000",
+            "op": "3124346000000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InterestRevenueExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossAttributableToOwnersOfParent"
+            ]
+          }
+        }
       }
     ],
     "quarterly": [
       {
         "year": 2025,
         "quarter": 2,
-        "sales": 2.789,
-        "op": 0.935,
+        "sales": 2.261817,
+        "op": 0.935328,
         "sourceIds": [
-          "q2"
-        ]
+          "numbers-verified-20260814003410"
+        ],
+        "dart": {
+          "receipt": "20260814003410",
+          "rawKRW": {
+            "sales": "2261817000000",
+            "op": "935328000000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InterestRevenueExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossAttributableToOwnersOfParent"
+            ]
+          }
+        }
       },
       {
         "year": 2026,
         "quarter": 1,
-        "sales": 2.758,
-        "op": 0.604,
+        "sales": 2.303153,
+        "op": 0.604318,
         "sourceIds": [
-          "q2"
-        ]
+          "numbers-verified-20260814003410"
+        ],
+        "dart": {
+          "receipt": "20260814003410",
+          "rawKRW": {
+            "sales": "2303153000000",
+            "op": "604318000000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InterestRevenueExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossAttributableToOwnersOfParent"
+            ]
+          },
+          "derivation": "half-year cumulative minus second quarter"
+        }
       },
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 2.965,
-        "op": 1.005,
+        "sales": 2.35657,
+        "op": 1.004578,
         "sourceIds": [
-          "q2"
-        ]
+          "numbers-verified-20260814003410"
+        ],
+        "dart": {
+          "receipt": "20260814003410",
+          "rawKRW": {
+            "sales": "2356570000000",
+            "op": "1004578000000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InterestRevenueExpense"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossAttributableToOwnersOfParent"
+            ]
+          }
+        }
       }
     ],
     "highlightFormat": "trillion",
@@ -140,6 +221,20 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003410",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "numbers-verified-20260313001235",
+      "label": "2025년 사업보고서 · 연결 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001235",
+      "published": "2026.03.13",
+      "verifiedAt": "2026.10.10"
+    },
+    {
+      "id": "numbers-verified-20260814003410",
+      "label": "2026년 반기보고서 · 연결 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003410",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.10"
     }
   ],
   "sectionSourceIds": {

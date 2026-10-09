@@ -64,7 +64,7 @@
     "basis": "consolidated",
     "verification": {
       "status": "verified",
-      "verifiedAt": "2026.10.07"
+      "verifiedAt": "2026.10.10"
     },
     "annual": [
       {
@@ -77,11 +77,27 @@
       },
       {
         "year": 2025,
-        "sales": 4.962,
-        "op": 0.427,
+        "sales": 4.96579855298,
+        "op": 0.426407143017,
         "sourceIds": [
-          "annual"
-        ]
+          "numbers-verified-20260318001243"
+        ],
+        "dart": {
+          "receipt": "20260318001243",
+          "rawKRW": {
+            "sales": "4965798552980",
+            "op": "426407143017"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          }
+        }
       }
     ],
     "quarterly": [
@@ -198,6 +214,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003088",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "numbers-verified-20260318001243",
+      "label": "2025년 사업보고서 · 연결 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001243",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.10"
     }
   ],
   "sectionSourceIds": {

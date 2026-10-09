@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-09",
+  "asOf": "2026-10-10",
   "stocks": 500,
   "issuers": 477,
   "automaticIssuers": 444,
-  "fullyValidatedIssuers": 389,
-  "partiallyValidatedIssuers": 55,
+  "fullyValidatedIssuers": 376,
+  "partiallyValidatedIssuers": 68,
   "reviewIssuers": 33,
   "sharedStocks": 23,
   "companies": [
@@ -98,9 +98,17 @@
       "ticker": "402340",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20240419000675",
+          "reason": "Newer statutory filing 20260317000830 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260317000830"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -120,6 +128,9 @@
             "status": "validated",
             "receipt": "20260814003471"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -227,7 +238,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -290,7 +301,7 @@
       "basis": "consolidated",
       "blockedPeriods": [],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -313,8 +324,8 @@
         ],
         "reasons": [
           "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ"
+          "Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained",
+          "Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained"
         ]
       }
     },
@@ -565,9 +576,24 @@
       "ticker": "034730",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250318001364",
+          "reason": "Newer statutory filing 20260318001157 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260318001157"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260515001990",
+          "reason": "Newer statutory filing 20260814002185 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814002185"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -578,7 +604,7 @@
           {
             "year": 2026,
             "report": "11013",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20260515001990"
           },
           {
@@ -587,6 +613,9 @@
             "status": "validated",
             "receipt": "20260814002185"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -696,7 +725,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -759,7 +788,7 @@
       "basis": "consolidated",
       "blockedPeriods": [],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -782,8 +811,8 @@
         ],
         "reasons": [
           "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ"
+          "Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained",
+          "Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained"
         ]
       }
     },
@@ -807,7 +836,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -883,7 +912,7 @@
       "basis": "consolidated",
       "blockedPeriods": [],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -912,9 +941,8 @@
         ],
         "reasons": [
           "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ"
+          "Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained",
+          "Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained"
         ]
       }
     },
@@ -1004,7 +1032,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1088,11 +1116,12 @@
           "year": 2025,
           "report": "11012",
           "receipt": "20250814003955",
-          "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+          "reason": "Newer statutory filing 20260814004047 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814004047"
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1121,7 +1150,7 @@
         ],
         "reasons": [
           "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ"
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -1139,7 +1168,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1185,7 +1214,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1300,10 +1329,17 @@
           "report": "11012",
           "receipt": "20250814003066",
           "reason": "Existing IR values differ from statutory DART values; preserve until reporting scope or correction is reconciled"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250731000339",
+          "reason": "Newer statutory filing 20260313001195 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260313001195"
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1332,7 +1368,7 @@
         ],
         "reasons": [
           "Existing IR values and statutory statement differ",
-          "Existing IR values and statutory statement differ"
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -1350,7 +1386,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1402,7 +1438,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1484,7 +1520,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -1780,7 +1816,7 @@
         }
       ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -4013,9 +4049,17 @@
       "ticker": "029780",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250312000920",
+          "reason": "Newer statutory filing 20260311004049 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260311004049"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -4038,7 +4082,7 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250312000920"
           },
           {
@@ -4047,6 +4091,9 @@
             "status": "validated",
             "receipt": "20250814003552"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -4195,9 +4242,24 @@
       "ticker": "052690",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250814001076",
+          "reason": "Newer statutory filing 20260326001003 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260326001003"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814001442",
+          "reason": "Newer statutory filing 20260814001293 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814001293"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -4220,15 +4282,18 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250814001076"
           },
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250814001442"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -4573,9 +4638,31 @@
       "ticker": "002380",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250313001099",
+          "reason": "Newer statutory filing 20260309001896 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260309001896"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814003033",
+          "reason": "Newer statutory filing 20260814001150 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814001150"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260515001302",
+          "reason": "Newer statutory filing 20260814001150 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814001150"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -4586,7 +4673,7 @@
           {
             "year": 2026,
             "report": "11013",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20260515001302"
           },
           {
@@ -4598,15 +4685,18 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250313001099"
           },
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250814003033"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -4663,9 +4753,17 @@
       "ticker": "001040",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250325000721",
+          "reason": "Newer statutory filing 20260318001509 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260318001509"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -4688,7 +4786,7 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250325000721"
           },
           {
@@ -4697,6 +4795,9 @@
             "status": "validated",
             "receipt": "20250814001942"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -5618,9 +5719,24 @@
       "ticker": "097950",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250321001604",
+          "reason": "Newer statutory filing 20260316001116 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260316001116"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814002788",
+          "reason": "Newer statutory filing 20260814001793 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814001793"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -5643,15 +5759,18 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250321001604"
           },
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250814002788"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -5996,9 +6115,17 @@
       "ticker": "011170",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250725000806",
+          "reason": "Newer statutory filing 20260312001296 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260312001296"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -6021,7 +6148,7 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250725000806"
           },
           {
@@ -6030,6 +6157,9 @@
             "status": "validated",
             "receipt": "20250814004370"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -6038,9 +6168,17 @@
       "ticker": "018670",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250312000964",
+          "reason": "Newer statutory filing 20260813001480 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260813001480"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -6063,7 +6201,7 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250312000964"
           },
           {
@@ -6072,6 +6210,9 @@
             "status": "validated",
             "receipt": "20250813001560"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -6164,9 +6305,24 @@
       "ticker": "489790",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250317000812",
+          "reason": "Newer statutory filing 20260316001204 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260316001204"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250813000952",
+          "reason": "Newer statutory filing 20260813001301 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260813001301"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -6189,15 +6345,18 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250317000812"
           },
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250813000952"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -6321,9 +6480,17 @@
       "ticker": "005440",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814002138",
+          "reason": "Newer statutory filing 20260814002625 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814002625"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -6352,9 +6519,12 @@
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250814002138"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -7290,9 +7460,24 @@
       "ticker": "007070",
       "mode": "automatic",
       "basis": "consolidated",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20250312000991",
+          "reason": "Newer statutory filing 20260311004487 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260311004487"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20250814002204",
+          "reason": "Newer statutory filing 20260814000859 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814000859"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-08",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -7315,15 +7500,18 @@
           {
             "year": 2024,
             "report": "11011",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250312000991"
           },
           {
             "year": 2025,
             "report": "11012",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20250814002204"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },
@@ -16265,9 +16453,17 @@
       "ticker": "003120",
       "mode": "automatic",
       "basis": "separate",
-      "blockedPeriods": [],
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260515001484",
+          "reason": "Newer statutory filing 20260814002387 supplies restated comparative amounts; hold original-period replay",
+          "verifiedReceipt": "20260814002387"
+        }
+      ],
       "validation": {
-        "asOf": "2026-10-09",
+        "asOf": "2026-10-10",
         "periods": [
           {
             "year": 2025,
@@ -16278,7 +16474,7 @@
           {
             "year": 2026,
             "report": "11013",
-            "status": "validated",
+            "status": "review-required",
             "receipt": "20260515001484"
           },
           {
@@ -16299,6 +16495,9 @@
             "status": "validated",
             "receipt": "20250814003342"
           }
+        ],
+        "reasons": [
+          "최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류"
         ]
       }
     },

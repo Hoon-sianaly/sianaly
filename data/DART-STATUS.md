@@ -1,7 +1,7 @@
 # 500개 종목 DART 연결 상태
 
-기준일 2026-10-09. 500개 종목, 477개 발행사, 실적 공유 우선주 23개.
-자동 444개 (검증된 표시 기간 전체 389, 일부 기간 보류 55), 공식 자료 수동 확인 33개.
+기준일 2026-10-10. 500개 종목, 477개 발행사, 실적 공유 우선주 23개.
+자동 444개 (검증된 표시 기간 전체 376, 일부 기간 보류 68), 공식 자료 수동 확인 33개.
 
 GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확인합니다. 컴퓨터를 꺼도 실행되며 일부 시작 지연이 있을 수 있습니다.
 
@@ -10,13 +10,13 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 삼성전자 | 자동 |  |
 | SK하이닉스 | 자동 |  |
 | 삼성전자우 | 본주 실적 공유 | samsung |
-| SK스퀘어 | 자동 |  |
+| SK스퀘어 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 삼성전기 | 자동 |  |
 | LG에너지솔루션 | 자동 |  |
 | 현대차 | 자동 |  |
 | KB금융 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ |
 | 삼성바이오로직스 | 자동 |  |
-| 삼성생명 | 공시 감시 · 수치 수동 검토 | Existing IR values and statutory statement differ; Existing IR values and statutory statement differ; Existing IR values and statutory statement differ |
+| 삼성생명 | 공시 감시 · 수치 수동 검토 | Existing IR values and statutory statement differ; Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained; Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained |
 | 삼성물산 | 자동 |  |
 | 두산에너빌리티 | 자동 |  |
 | 한화에어로스페이스 | 자동 |  |
@@ -25,26 +25,26 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 기아 | 자동 |  |
 | 셀트리온 | 자동 |  |
 | HD현대중공업 | 자동 |  |
-| SK | 자동 |  |
+| SK | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 하나금융지주 | 공시 감시 · 수치 수동 검토 | Account not found: sales; Account not found: sales; Account not found: sales |
 | LG전자 | 자동 |  |
 | 현대모비스 | 자동 |  |
 | LS ELECTRIC | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ |
 | NAVER | 자동 |  |
-| 삼성화재 | 공시 감시 · 수치 수동 검토 | Existing IR values and statutory statement differ; Existing IR values and statutory statement differ; Existing IR values and statutory statement differ |
+| 삼성화재 | 공시 감시 · 수치 수동 검토 | Existing IR values and statutory statement differ; Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained; Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained |
 | SK이노베이션 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ; Existing IR values and statutory statement differ |
 | 한미반도체 | 자동 |  |
-| 우리금융지주 | 공시 감시 · 수치 수동 검토 | Existing IR values and statutory statement differ; Existing IR values and statutory statement differ; Existing IR values and statutory statement differ; Existing IR values and statutory statement differ |
+| 우리금융지주 | 공시 감시 · 수치 수동 검토 | Existing IR values and statutory statement differ; Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained; Displayed standard metrics reconciled to statutory DART statements on 2026-10-10; manual update mode retained |
 | 효성중공업 | 자동 |  |
 | POSCO홀딩스 | 자동 |  |
 | 한화오션 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ |
 | HD현대일렉트릭 | 자동 |  |
-| 두산 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ; Existing IR values and statutory statement differ |
+| 두산 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ; 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 고려아연 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ |
 | 메리츠금융지주 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ |
 | HD한국조선해양 | 자동 |  |
 | HMM | 자동 |  |
-| LG화학 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ; Existing IR values and statutory statement differ |
+| LG화학 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ; 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 한국전력 | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ |
 | S-Oil | 자동 · 일부 기간 보류 | Existing IR values and statutory statement differ |
 | SK텔레콤 | 자동 |  |
@@ -107,12 +107,12 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 카카오페이 | 자동 |  |
 | 두산밥캣 | 공시 감시 · 수치 수동 검토 | Company, period, basis, currency or receipt mismatch; Company, period, basis, currency or receipt mismatch; Company, period, basis, currency or receipt mismatch; Company, period, basis, currency or receipt mismatch |
 | JB금융지주 | 자동 |  |
-| 삼성카드 | 자동 |  |
+| 삼성카드 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | NC | 자동 |  |
 | 엘앤에프 | 자동 |  |
 | BNK금융지주 | 자동 |  |
 | 맥쿼리인프라 | 공시 감시 · 수치 수동 검토 | Company-type infrastructure fund; standard OpenDART financial API returned 013 for all requested periods. Official MKIF IR metrics exclude fair-value gains; manual review required. |
-| 한전기술 | 자동 |  |
+| 한전기술 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 두산로보틱스 | 자동 |  |
 | 한화생명 | 자동 |  |
 | OCI홀딩스 | 자동 |  |
@@ -121,10 +121,10 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | LG디스플레이 | 자동 |  |
 | 현대해상 | 자동 |  |
 | LG생활건강 | 자동 |  |
-| KCC | 자동 |  |
+| KCC | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 일진전기 | 자동 |  |
 | 현대차우 | 본주 실적 공유 | hyundai |
-| CJ | 자동 |  |
+| CJ | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 현대제철 | 자동 |  |
 | 한미사이언스 | 자동 |  |
 | 코스맥스 | 자동 |  |
@@ -147,7 +147,7 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | F&F | 자동 |  |
 | 넷마블 | 자동 |  |
 | iM금융지주 | 자동 |  |
-| CJ제일제당 | 자동 |  |
+| CJ제일제당 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 롯데쇼핑 | 자동 |  |
 | 현대엘리베이터 | 자동 |  |
 | 미래에셋생명 | 자동 |  |
@@ -156,15 +156,15 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 동서 | 자동 |  |
 | DL이앤씨 | 자동 |  |
 | 코리안리 | 자동 |  |
-| 롯데케미칼 | 자동 |  |
-| SK가스 | 자동 |  |
+| 롯데케미칼 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
+| SK가스 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 한국앤컴퍼니 | 자동 |  |
 | 효성 | 자동 |  |
-| 한화비전 | 자동 |  |
+| 한화비전 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 케이씨텍 | 자동 |  |
 | 이수스페셜티케미컬 | 자동 |  |
 | 농심 | 자동 |  |
-| 현대지에프홀딩스 | 자동 |  |
+| 현대지에프홀딩스 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 씨에스윈드 | 자동 |  |
 | 에스엘 | 자동 |  |
 | 롯데지주 | 자동 |  |
@@ -187,7 +187,7 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 풍산 | 자동 |  |
 | 현대백화점 | 자동 |  |
 | NHN | 자동 |  |
-| GS리테일 | 자동 |  |
+| GS리테일 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 시프트업 | 자동 |  |
 | 두산우 | 본주 실적 공유 | doosancorp |
 | 대한조선 | 자동 |  |
@@ -418,7 +418,7 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 서연이화 | 자동 |  |
 | 이수화학 | 자동 |  |
 | 한국자산신탁 | 자동 |  |
-| 일성아이에스 | 자동 |  |
+| 일성아이에스 | 자동 · 일부 기간 보류 | 최신 공시 재분류·비교 수치를 대조해 반영; 원 공시 API 값으로 되돌아가지 않도록 해당 기간 보류 |
 | 남해화학 | 자동 |  |
 | 애경산업 | 자동 |  |
 | 코오롱 | 자동 · 일부 기간 보류 | 최신 공시 비교·누적값을 원문과 대조해 반영; 해당 기간은 원 공시 API 값으로 되돌아가지 않도록 보류 |

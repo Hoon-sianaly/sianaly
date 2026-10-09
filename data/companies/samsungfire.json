@@ -64,44 +64,109 @@
     "basis": "consolidated",
     "verification": {
       "status": "verified",
-      "verifiedAt": "2026.10.07"
+      "verifiedAt": "2026.10.10"
     },
     "annual": [
       {
         "year": 2024,
-        "sales": 17.3035,
-        "op": 2.7345,
+        "sales": 17.276463586462,
+        "op": 2.649596688033,
         "sourceIds": [
-          "annual"
-        ]
+          "numbers-verified-20260312001399"
+        ],
+        "dart": {
+          "receipt": "20260312001399",
+          "rawKRW": {
+            "sales": "17276463586462",
+            "op": "2649596688033"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ]
+          }
+        }
       },
       {
         "year": 2025,
-        "sales": 18.6567,
-        "op": 2.7731,
+        "sales": 18.639982044735,
+        "op": 2.659143002144,
         "sourceIds": [
-          "annual"
-        ]
+          "numbers-verified-20260312001399"
+        ],
+        "dart": {
+          "receipt": "20260312001399",
+          "rawKRW": {
+            "sales": "18639982044735",
+            "op": "2659143002144"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ]
+          }
+        }
       }
     ],
     "quarterly": [
       {
         "year": 2026,
         "quarter": 1,
-        "sales": 4.786,
-        "op": 0.914,
+        "sales": 4.773632844598,
+        "op": 0.861126626939,
         "sourceIds": [
-          "quarter"
-        ]
+          "numbers-verified-20260814003992"
+        ],
+        "dart": {
+          "receipt": "20260814003992",
+          "rawKRW": {
+            "sales": "4773632844598",
+            "op": "861126626939"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ]
+          },
+          "derivation": "half-year cumulative minus second quarter"
+        }
       },
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 4.889,
-        "op": 0.989,
+        "sales": 4.871016166215,
+        "op": 0.885332758419,
         "sourceIds": [
-          "quarter"
-        ]
+          "numbers-verified-20260814003992"
+        ],
+        "dart": {
+          "receipt": "20260814003992",
+          "rawKRW": {
+            "sales": "4871016166215",
+            "op": "885332758419"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_InsuranceRevenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ]
+          }
+        }
       }
     ],
     "highlightFormat": "mixed",
@@ -139,6 +204,20 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003992",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "numbers-verified-20260312001399",
+      "label": "2025년 사업보고서 · 연결 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001399",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.10"
+    },
+    {
+      "id": "numbers-verified-20260814003992",
+      "label": "2026년 반기보고서 · 연결 재무제표 및 비교 수치",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003992",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.10"
     }
   ],
   "sectionSourceIds": {
