@@ -41,7 +41,13 @@ function context(key, transform, failed = false) {
    assert.ok(out.includes(`href="#company-${id}"`) && out.includes(`id="company-${id}"`),`${entry.key}/${id}`);
   }
   const pending=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8")).financials.availability?.status === "awaiting-first-report";
-  assert.equal((out.match(/class="vertical-chart"/g)||[]).length,pending?0:4);
+  assert.equal((out.match(/class="vertical-chart(?: [^"]*)?"/g)||[]).length,pending?0:4);
+  if(entry.key==='samsung'){
+   assert.ok(out.indexOf('id="company-quarterly"')<out.indexOf('id="company-annual"'),'Samsung latest quarters precede annual history');
+   const latest=JSON.parse(fs.readFileSync(path.join(root,'data/companies',entry.file),'utf8')).financials.quarterly.slice().sort((a,b)=>a.year-b.year||a.quarter-b.quarter).at(-1);
+   assert.ok(out.includes(`${latest.year}년 ${latest.quarter}분기 매출</small>`),'Samsung hero shows the latest quarter');
+   assert.ok(out.includes('전년 동기</span>')&&out.includes('paired-chart'),'Samsung compares the same quarter across years');
+  }
   if(pending)assert.ok(out.includes("첫 정기 실적 공시 대기")&&!out.includes("0.0조")&&!out.includes("<span>영업이익률</span>"));
   assert.ok(!out.includes("undefined") && !out.includes("NaN"),entry.key);
   if(entry.key==='shinyoung'){

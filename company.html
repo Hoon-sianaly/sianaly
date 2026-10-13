@@ -32,11 +32,13 @@ main{max-width:1580px}.layout{grid-template-columns:minmax(0,1fr) 240px;gap:20px
 @media(max-width:700px){.content{grid-template-columns:minmax(0,1fr);gap:16px}.section-toc{position:static;padding:12px 14px}.toc-links{flex-direction:row;flex-wrap:wrap}.toc-links a{padding:7px 10px}.content section[id]{scroll-margin-top:132px}}
 @media(min-width:701px){.layout.no-side{max-width:1420px}.layout.no-side .content{grid-template-columns:clamp(100px,10vw,150px) minmax(0,1fr) clamp(100px,10vw,150px)}.layout.no-side .company-body{grid-column:2}}
 .toc-links a[aria-current="location"]{background:#dbeafe;color:#1d4ed8;font-weight:700;box-shadow:inset 3px 0 #2563eb}.data-freshness{display:flex;flex-wrap:wrap;gap:7px 18px;font-size:12px;line-height:1.7;color:#cbd5e1;margin-top:12px}.insight-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0}.insight-card{background:#f1f5f9;border-radius:12px;padding:16px;min-width:0}.insight-card span{display:block;color:#4b5563;font-size:12px;line-height:1.5}.insight-card strong{display:block;font-size:21px;margin:8px 0;overflow-wrap:anywhere}.insight-card small{color:#6b7280;font-size:11px;line-height:1.6;display:block}.insight-note{font-size:12px;color:#6b7280;line-height:1.7;margin:0 0 18px}@media(max-width:650px){.insight-grid{grid-template-columns:minmax(0,1fr)}.insight-card{padding:14px}.insight-card strong{font-size:20px}}
+.latest-charts .metric-panel{background:#f8fafc;border:1px solid #e2e8f0}.pair-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:#64748b;margin:9px 0 12px}.pair-legend span{display:flex;align-items:center;gap:6px}.pair-legend i{width:9px;height:9px;border-radius:3px}.paired-chart .pair-heading{font-size:16px;font-weight:700;fill:#0f172a}.paired-chart .pair-period{font-size:14px;fill:#64748b}.paired-chart .value-label{font-size:17px}.latest-charts .paired-chart{margin-top:0}
+@media(max-width:650px){.latest-charts .paired-chart .pair-heading{font-size:24px}.latest-charts .paired-chart .pair-period{font-size:22px}.latest-charts .paired-chart .value-label{font-size:23px}.latest-financials .company-body table{font-size:12px}.latest-financials .company-body th,.latest-financials .company-body td{padding:11px 6px;white-space:nowrap}.latest-financials .insight-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.latest-financials .insight-card{padding:12px}.latest-financials .insight-card strong{font-size:18px}.latest-financials .insight-card:last-child{grid-column:1/-1}.latest-financials .insight-card:last-child strong{display:inline-block;margin:5px 0}}
 </style></head>
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
-<script src="company-data.js?v=20261013-kospi650-1"></script>
+<script src="company-data.js?v=20261013-samsung-latest-1"></script>
 <script src="company-search.js?v=20261007-detail-search-1"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company");
@@ -47,6 +49,8 @@ const c=await loadCompanyData(key);
 const recentCatalog=(await loadCompanyCatalog()).companies;
 const compact=c?.presentation.compact === true;
 const comparison=c?.presentation.chartStyle === "comparison";
+const latestFirst=key==="samsung" && c?.presentation.latestFirst === true;
+if(latestFirst)document.body.classList.add('latest-financials');
 if(compact)document.body.classList.add("samsung-page");
 const recentList=document.getElementById("recentList");
 const recentBox=document.getElementById("recentBox"),recentToggle=document.getElementById("recentToggle");
@@ -74,7 +78,30 @@ function sourceLinks(ids){
  if(!ids.length)return "";
  return `<div class="source-links"><b>공식 자료</b><ul>${ids.map(id=>{const s=c.sourceLinks[id];return `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>${s.published?` · 발표 ${esc(s.published)}`:s.asOf?` · 자료 기준 ${esc(s.asOf)}`:""}</li>`}).join("")}</ul><span>확인일: ${esc(c.verifiedAt)}</span></div>`;
 }
+function latestComparisonChart(rows){
+ const ordered=[...rows].sort((a,b)=>b.year-a.year||(b.quarter||0)-(a.quarter||0));
+ const quarterly=ordered.some(row=>row.quarter);
+ const groups=ordered.map(row=>({row,previous:quarterly?c.allQuarters.find(p=>p.year===row.year-1&&p.quarter===row.quarter):null}));
+ const metrics=[{field:'sales',title:c.financialMetrics.sales.label},{field:'op',title:c.financialMetrics.op.label}];
+ return `<div class="metric-charts latest-charts">${metrics.map(m=>{
+  const points=groups.flatMap(g=>[g.row,...(g.previous?[g.previous]:[])]),values=points.map(r=>r[m.field]);
+  const low=Math.min(0,...values),high=Math.max(0,...values),range=high-low||1,left=16,right=350,x=v=>left+(v-low)/range*(right-left),zero=x(0);
+  let cursor=12;
+  const marks=groups.map((g,i)=>{
+   const heading=quarterly?`${g.row.year}년 ${g.row.quarter}분기`: `${g.row.year}년${i===0?' · 최근 연간':''}`;
+   let out=`<text x="16" y="${cursor+14}" class="pair-heading">${esc(heading)}</text>`;cursor+=48;
+   for(const [j,r] of [g.row,...(g.previous?[g.previous]:[])].entries()){
+    const current=quarterly?j===0:i===0,color=r[m.field]<0?'#dc2626':current?'#2563eb':'#94a3b8',end=x(r[m.field]);
+    out+=`<text x="16" y="${cursor}" class="pair-period">${esc(quarterly?`${r.year}년`:'연간')}</text><text x="350" y="${cursor}" text-anchor="end" class="value-label" fill="${current?'#1d4ed8':'#475569'}">${formatFinancialHighlight(r[m.field],c.financialCurrency)}</text><rect x="16" y="${cursor+9}" width="334" height="12" rx="5" fill="#e2e8f0"/><rect x="${Math.min(zero,end)}" y="${cursor+9}" width="${Math.abs(end-zero)}" height="12" rx="5" fill="${color}"/>`;cursor+=43;
+   }
+   cursor+=18;return out;
+  }).join('');
+  const description=points.map(r=>`${r.year}년${r.quarter?` ${r.quarter}분기`:''}: ${formatFinancialHighlight(r[m.field],c.financialCurrency)}`).join(', ');
+  return `<figure class="metric-panel"><figcaption>${esc(m.title)}</figcaption><div class="pair-legend"><span><i style="background:#2563eb"></i>최근 실적</span><span><i style="background:#94a3b8"></i>${quarterly?'전년 동기':'이전 연간'}</span></div><svg class="vertical-chart paired-chart" viewBox="0 0 370 ${cursor}" role="img" aria-label="${esc(m.title+': '+description)}"><title>${esc(m.title+': '+description)}</title>${marks}</svg></figure>`;
+ }).join('')}</div><p class="chart-reading">${quarterly?'최신 분기부터 표시합니다. 파란색은 해당 분기, 회색은 전년 같은 분기입니다. 각 분기 3개월 실적이며 누적값이 아닙니다.':'최근 연도부터 표시합니다. 2026년 분기 실적과 12개월 연간 실적은 직접 비교하지 않습니다.'} 매출과 영업이익은 각각 같은 그래프 안에서 막대 길이를 비교해 주세요.</p>`;
+}
 function comparisonChart(rows){
+ if(latestFirst)return latestComparisonChart(rows);
  const metrics=[{field:"sales",title:c.financialMetrics.sales.label,help:c.financialMetrics.sales.help,color:"#2563eb"},{field:"op",title:c.financialMetrics.op.label,help:c.financialMetrics.op.help,color:"#111827"}];
  return `<div class="metric-charts">${metrics.map(m=>{
   const rawValues=rows.map(r=>r[m.field]), unit=financialDisplayUnit(Math.max(...rawValues.map(Math.abs),0),c.financialCurrency);
@@ -125,13 +152,16 @@ else{
  const quarterComparison=priorYearQuarter||priorQuarter;
  const quarterBasis=priorYearQuarter?`전년 동기 대비 · ${esc(priorYearQuarter.periodLabel || `${priorYearQuarter.year}년 ${priorYearQuarter.quarter}분기`)}`:`직전 분기 대비${priorQuarter?` · ${esc(priorQuarter.periodLabel || `${priorQuarter.year}년 ${priorQuarter.quarter}분기`)}`:''}`;
  const displayNumber=value=>formatFinancialHighlight(value,c.financialCurrency);
- const annual=c.annual.map(x=>`<tr><td>${esc(x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
- const q=c.quarterly.map(x=>`<tr><td>${esc(c.presentation.tableNumbersOnly?`${x.quarter}분기`:compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
+ const annual=(latestFirst?[...c.annual].reverse():c.annual).map(x=>`<tr><td>${esc(x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
+ const q=(latestFirst?[...c.quarterly].reverse():c.quarterly).map(x=>`<tr><td>${esc(c.presentation.tableNumbersOnly?`${x.quarter}분기`:compact?x.period.replace(/([1-4])Q (\d{4})/,"$2 $1분기"):x.period)}</td><td>${displayNumber(x.sales)}</td><td>${displayNumber(x.op)}</td></tr>`).join("");
+ const heroPeriod=latestFirst?`${latestQuarter.year}년 ${latestQuarter.quarter}분기`:c.annualPeriodLabel||c.latestYear;
+ const heroSales=latestFirst?displayNumber(latestQuarter.sales):c.latestSales,heroOp=latestFirst?displayNumber(latestQuarter.op):c.latestOp;
+ const heroSource=latestFirst?latestQuarter.sourceIds[0]:c.latestAnnualSourceId;
  app.innerHTML=`
  <details class="section-toc" id="companyToc" open><summary>목차</summary><nav class="toc-links" aria-label="기업 분석 목차"><a href="#company-intro">기업 소개</a><a href="#company-business">주요 사업</a><a href="#company-annual">${esc(c.annualTerm || "연간")} 실적</a><a href="#company-quarterly">${esc(c.quarterlyTerm || "분기")} 실적</a><a href="#company-drivers">핵심 변수</a>${(!compact||c.glossary.length)?'<a href="#company-glossary">용어 설명</a>':""}</nav></details>
  <div class="company-body">
  <div class="hero"><div class="tag">${compact?"":`국내 시총 ${c.rank}위 · `}${c.ticker} · ${c.type}</div><h1>${c.name}</h1><div class="data-freshness"><span>최신 실적: ${awaiting?"첫 정기 실적 공시 대기":latestQuarter?esc(latestQuarter.periodLabel || `${latestQuarter.year}년 ${latestQuarter.quarter}분기`):`${c.latestYear}년 연간`}</span><span>자료 확인일: ${esc(c.verifiedAt)}</span></div><p>${c.summary}</p>
- ${awaiting?`<p class="financial-basis">${esc(c.financialAvailability.reason)}</p>`:` <div class="nums"><div class="num"><small>${esc(c.annualPeriodLabel || c.latestYear)} ${compact?esc(c.annualTerm || "연간")+" ":""}${salesLabel}</small><strong>약 ${c.latestSales}</strong></div><div class="num"><small>${esc(c.annualPeriodLabel || c.latestYear)} ${compact?esc(c.annualTerm || "연간")+" ":""}${opLabel}</small><strong>약 ${c.latestOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${esc(c.annualPeriodLabel || `${c.latestYear}년`)} ${esc(c.annualTerm || "연간")} 보고 기간<br><a href="${esc(c.sourceLinks[c.latestAnnualSourceId].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} ${esc(c.annualSourceLabel)}</a></div>`:""}`}</div>
+ ${awaiting?`<p class="financial-basis">${esc(c.financialAvailability.reason)}</p>`:` <div class="nums"><div class="num"><small>${esc(heroPeriod)} ${latestFirst?"":compact?esc(c.annualTerm || "연간")+" ":""}${salesLabel}</small><strong>약 ${heroSales}</strong></div><div class="num"><small>${esc(heroPeriod)} ${latestFirst?"":compact?esc(c.annualTerm || "연간")+" ":""}${opLabel}</small><strong>약 ${heroOp}</strong></div>${compact?"":`<div class="num"><small>시가총액</small><strong>${c.marketCap}</strong><small>${c.marketDate} 기준</small></div>`}</div>${compact?`<div class="source-links">${esc(c.financialBasis)} · ${esc(heroPeriod)} ${latestFirst?"각 3개월 실적 · 누적 아님":esc(c.annualTerm || "연간")+" 보고 기간"}<br><a href="${esc(c.sourceLinks[heroSource].url)}" target="_blank" rel="noopener noreferrer">${esc(c.financialCompanyName || c.name)} ${esc(latestFirst?"공식 분기 실적 자료":c.annualSourceLabel)}</a></div>`:""}`}</div>
 
  ${compact?"":` <section><div class="blue">MARKET SNAPSHOT</div><div class="title">주가와 밸류에이션</div>
  <div class="valuation-row"><div class="vcard"><span>종가</span><strong>${c.price}</strong><small>${c.marketDate} 기준</small></div>
@@ -145,11 +175,11 @@ else{
  <section id="company-business">${compact?"":`<div class="blue">02 · 돈은 어디서 벌까?</div>`}<div class="title">주요 사업</div><div class="desc">어떤 사업이 이 회사의 매출과 이익을 만드는지 봅니다.</div>
  <div class="grid">${c.business.map((x,i)=>`<div class="box"><h3>${i+1}. ${x.name}</h3><p>${x.desc}</p></div>`).join("")}</div>${sourceLinks(c.sectionSourceIds.business || [])}</section>
 
- ${awaiting?`<section id="company-annual"><div class="title">연간 실적</div><p class="financial-basis">첫 정기 실적 공시 대기</p><p>${esc(c.financialAvailability.reason)}</p>${sourceLinks(c.financialAvailability.sourceIds || [])}</section>`:` <section id="company-annual">${compact?"":`<div class="blue">03 · 실적은 어떻게 변했을까?</div>`}<div class="title">${esc(c.annualTerm || "연간")} 실적 그래프</div><div class="desc">과거에서 최신 ${esc(c.annualTerm || "연간")} 실적으로 갈수록 ${salesLabel}과 ${opLabel}이 어떻게 움직였는지 한눈에 봅니다.</div>
+ ${awaiting?`<section id="company-annual"><div class="title">연간 실적</div><p class="financial-basis">첫 정기 실적 공시 대기</p><p>${esc(c.financialAvailability.reason)}</p>${sourceLinks(c.financialAvailability.sourceIds || [])}</section>`:` <section id="company-annual">${compact?"":`<div class="blue">03 · 실적은 어떻게 변했을까?</div>`}<div class="title">${esc(c.annualTerm || "연간")} 실적 그래프</div><div class="desc">${latestFirst?"최근 연도부터 연간 실적을 비교합니다.":`과거에서 최신 ${esc(c.annualTerm || "연간")} 실적으로 갈수록 ${salesLabel}과 ${opLabel}이 어떻게 움직였는지 한눈에 봅니다.`}</div>
  ${financialInsights(latestAnnual,previousAnnual,`전년 대비 · ${previousAnnual?.year}년`)}
  ${c.financialNote?`<p class="financial-basis">${esc(c.financialNote)}</p>`:""}${compact?`<div class="financial-basis">금액별 자동 단위 · ${esc(c.financialBasis)} · ${esc(c.annualTerm || "연간")} 보고 기간</div>${comparison?comparisonChart(c.annual):chart(c.annual)}`:chart(c.annual)}<table style="margin-top:24px" aria-label="${esc(c.annualTerm || "연간")} ${salesLabel}과 ${opLabel}"><thead><tr><th scope="col">기간</th><th scope="col">${salesLabel}</th><th scope="col">${opLabel}</th></tr></thead><tbody>${annual}</tbody></table>${compact?`${c.latestNet?`<p class="financial-basis">${esc(c.annualPeriodLabel || `${c.latestYear}년`)} 당기순이익: ${esc(c.latestNet)} · 본업의 이익에 금융손익·세금 등을 반영한 최종 이익입니다.</p>`:""}${c.annualNote?`<p class="financial-basis">${esc(c.annualNote)}</p>`:""}${sourceLinks(c.annualSourceIds)}`:""}</section>`}
 
- ${awaiting?`<section id="company-quarterly"><div class="title">분기 실적</div><p class="financial-basis">첫 정기 실적 공시 대기</p><p>${esc(c.financialAvailability.reason)}</p>${sourceLinks(c.financialAvailability.sourceIds || [])}</section>`:` <section id="company-quarterly">${compact?"":`<div class="blue">04 · ${c.quarterlyYear}년 현재는?</div>`}<div class="title">${c.quarterlyYear} ${esc(c.quarterlyTerm || "분기")} 실적 그래프</div><div class="desc">최근 ${esc(c.quarterlyTerm || "분기")} 실적이 어느 방향으로 움직이는지 봅니다.</div>
+ ${awaiting?`<section id="company-quarterly"><div class="title">분기 실적</div><p class="financial-basis">첫 정기 실적 공시 대기</p><p>${esc(c.financialAvailability.reason)}</p>${sourceLinks(c.financialAvailability.sourceIds || [])}</section>`:` <section id="company-quarterly">${compact?"":`<div class="blue">04 · ${c.quarterlyYear}년 현재는?</div>`}<div class="title">${c.quarterlyYear} ${esc(c.quarterlyTerm || "분기")} 실적 그래프</div><div class="desc">${latestFirst?"최신 분기부터, 전년 같은 분기와 바로 비교합니다.":`최근 ${esc(c.quarterlyTerm || "분기")} 실적이 어느 방향으로 움직이는지 봅니다.`}</div>
  ${financialInsights(latestQuarter,quarterComparison,quarterBasis)}
  ${compact?`<div class="financial-basis">금액별 자동 단위 · ${esc(c.financialBasis)} · ${esc(c.quarterlyBasisLabel || "각 분기 3개월 실적(누적 아님)")}</div>${comparison?comparisonChart(c.quarterly):twoMetricChart(c.quarterly)}`:twoMetricChart(c.quarterly)}<table style="margin-top:24px" aria-label="${esc(c.quarterlyTerm || "분기")} ${salesLabel}과 ${opLabel}"><thead><tr><th scope="col">기간</th><th scope="col">${salesLabel}</th><th scope="col">${opLabel}</th></tr></thead><tbody>${q}</tbody></table>${compact?`<p class="financial-basis">${esc(c.quarterlyCalendarNote || "1분기: 1–3월 · 2분기: 4–6월")}<br>공식 자료에서 확인한 ${esc(c.latestQuarter.periodLabel || `${c.latestQuarter.year}년 ${c.latestQuarter.quarter}분기`)}까지 표시합니다. ${esc(c.quarterlyNote || "신제품 출시와 계절적 수요도 분기 실적에 영향을 줍니다.")}</p>${sourceLinks(c.quarterlySourceIds)}`:""}</section>`}
 
@@ -166,6 +196,10 @@ else{
   <div class="term"><b>NAND</b><span>전원이 꺼져도 데이터가 남는 메모리로, SSD와 스마트폰 저장장치 등에 사용됩니다.</span></div>
  `}</div></section>`:""}
  </div>`;
+ if(latestFirst){
+  const markup=app.innerHTML,a=markup.indexOf('<section id="company-annual">'),q=markup.indexOf('<section id="company-quarterly">'),d=markup.indexOf('<section id="company-drivers">');
+  if(a>=0&&a<q&&q<d)app.innerHTML=(markup.slice(0,a)+markup.slice(q,d)+markup.slice(a,q)+markup.slice(d)).replace(/(<a href="#company-annual">[\s\S]*?<\/a>)(<a href="#company-quarterly">[\s\S]*?<\/a>)/,'$2$1');
+ }
  const toc=document.getElementById("companyToc");
 
  if(typeof matchMedia==="function"){
