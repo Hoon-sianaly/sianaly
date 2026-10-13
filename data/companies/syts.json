@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "syts",
+    "name": "SYTS",
+    "ticker": "002170",
+    "rank": 540,
+    "type": "자동차·가구용 가죽"
+  },
+  "overview": {
+    "short": "SYTS는 자동차 시트와 가구 등에 쓰는 가죽 원단을 만드는 회사",
+    "summary": "SYTS는 자동차 시트와 가구 등에 쓰는 가죽 원단을 만드는 회사입니다. 원피를 가공해 고객이 사용하는 피혁 소재로 공급합니다.",
+    "takeaways": [
+      "SYTS는 자동차 시트와 가구 등에 쓰는 가죽 원단을 만드는 회사입니다.",
+      "원피를 가공해 고객이 사용하는 피혁 소재로 공급합니다.",
+      "자동차 시트용 가죽과 고부가 제품 개발에 주력합니다.",
+      "해외 현지법인과 임대 관련 사업도 함께 운영합니다.",
+      "원피 가격과 고객 주문, 달러 환율·가공비가 실적에 영향을 줍니다."
+    ],
+    "business": [
+      {
+        "name": "가죽 원단",
+        "desc": "원피를 가공해 자동차·가구 등 고객용 가죽 소재를 생산합니다."
+      },
+      {
+        "name": "해외 생산",
+        "desc": "현지법인을 통해 고객 수요에 맞춘 가죽 가공·공급을 수행합니다."
+      },
+      {
+        "name": "임대·기타",
+        "desc": "보유 자산 임대 등 기타 수입이 발생합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 주문",
+        "desc": "자동차·가구 고객의 생산과 제품 사양별 주문을 확인합니다."
+      },
+      {
+        "title": "원피·약품",
+        "desc": "수입 원피와 가공 약품·안료 가격을 봅니다."
+      },
+      {
+        "title": "환율·품질",
+        "desc": "달러 거래 환율과 가공 수율, 품질 관련 비용을 함께 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.191310493294,
+        "op": 0.019991855072,
+        "net": 0.01100846858,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001357",
+          "rawKRW": {
+            "sales": "191310493294",
+            "op": "19991855072",
+            "net": "11008468580"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.174685073701,
+        "op": 0.01844227504,
+        "net": 0.023951444926,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000873",
+          "rawKRW": {
+            "sales": "174685073701",
+            "op": "18442275040",
+            "net": "23951444926"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.045899013683,
+        "op": 0.00491698385,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003706",
+          "rawKRW": {
+            "sales": "45899013683",
+            "op": "4916983850",
+            "net": "5203145938"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.041251065038,
+        "op": 0.002149206239,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002851",
+          "rawKRW": {
+            "sales": "41251065038",
+            "op": "2149206239",
+            "net": "3126544753"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.035341736029,
+        "op": 0.001613039042,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003890",
+          "rawKRW": {
+            "sales": "35341736029",
+            "op": "1613039042",
+            "net": "6482148350"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000873",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002851",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003890",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001357",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003706",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "SYTS 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003890",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "생산한 제품 중 정상적으로 판매할 수 있는 양품의 비율입니다."
+    },
+    {
+      "name": "피혁",
+      "desc": "동물의 가죽을 가공해 만든 소재입니다."
+    },
+    {
+      "name": "원피",
+      "desc": "가공하기 전의 동물 가죽으로, 피혁 제품의 원재료입니다."
+    },
+    {
+      "name": "원단",
+      "desc": "옷 등을 만들기 전 단계의 천으로, 의류 제조에 사용하는 재료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

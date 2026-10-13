@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "skylife",
+    "name": "스카이라이프",
+    "ticker": "053210",
+    "rank": 499,
+    "type": "유료방송·콘텐츠"
+  },
+  "overview": {
+    "short": "스카이라이프는 위성방송과 통신 결합 서비스를 제공하는 기업",
+    "summary": "스카이라이프는 위성방송과 통신 결합 서비스를 제공하는 기업입니다. 위성방송에 인터넷·알뜰폰을 결합한 상품을 판매합니다.",
+    "takeaways": [
+      "스카이라이프는 위성방송과 통신 결합 서비스를 제공하는 기업입니다.",
+      "위성방송에 인터넷·알뜰폰을 결합한 상품을 판매합니다.",
+      "연결 자회사 HCN은 케이블방송과 인터넷 사업을 운영합니다.",
+      "콘텐츠 제작·채널 사업도 그룹 실적에 포함됩니다.",
+      "가입자 유지와 이용료, 콘텐츠 비용·통신 재판매 비용이 핵심 변수입니다."
+    ],
+    "business": [
+      {
+        "name": "위성방송·결합",
+        "desc": "위성방송 가입 서비스와 인터넷·알뜰폰 결합 상품을 제공합니다."
+      },
+      {
+        "name": "유선방송",
+        "desc": "HCN이 지역 케이블TV와 인터넷 서비스를 운영합니다."
+      },
+      {
+        "name": "방송 콘텐츠",
+        "desc": "방송 채널과 프로그램 제작·유통 관련 연결 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "가입자 변화",
+        "desc": "방송 가입자 이탈과 결합상품 유입, 고객당 매출을 확인합니다."
+      },
+      {
+        "title": "콘텐츠 비용",
+        "desc": "프로그램 사용료와 제작비가 이용료 수입 대비 얼마나 드는지 봅니다."
+      },
+      {
+        "title": "결합 수익성",
+        "desc": "통신 재판매 원가와 가입자 유치·유지 비용을 함께 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.022927312705,
+        "op": -0.001075800064,
+        "net": -0.156078783566,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318001057",
+          "rawKRW": {
+            "sales": "1022927312705",
+            "op": "-1075800064",
+            "net": "-156078783566"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_GrossProfit"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.984216356687,
+        "op": 0.022980467279,
+        "net": 0.001466653903,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001593",
+          "rawKRW": {
+            "sales": "984216356687",
+            "op": "22980467279",
+            "net": "1466653903"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.247210302682,
+        "op": 0.012958425414,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001860",
+          "rawKRW": {
+            "sales": "247210302682",
+            "op": "12958425414",
+            "net": "10935578764"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.238970776584,
+        "op": 0.005935925999,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000601",
+          "rawKRW": {
+            "sales": "238970776584",
+            "op": "5935925999",
+            "net": "366858262"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_GrossProfit"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.249926108841,
+        "op": 0.011100581291,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001849",
+          "rawKRW": {
+            "sales": "249926108841",
+            "op": "11100581291",
+            "net": "10427966753"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001593",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000601",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001849",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001057",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001860",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "스카이라이프 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001849",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

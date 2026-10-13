@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kyungnong",
+    "name": "경농",
+    "ticker": "002100",
+    "rank": 517,
+    "type": "작물보호·농자재"
+  },
+  "overview": {
+    "short": "경농은 농작물을 보호하는 약제와 농자재를 공급하는 회사",
+    "summary": "경농은 농작물을 보호하는 약제와 농자재를 공급하는 회사입니다. 살균·살충·제초 등 작물보호제 사업이 핵심입니다.",
+    "takeaways": [
+      "경농은 농작물을 보호하는 약제와 농자재를 공급하는 회사입니다.",
+      "살균·살충·제초 등 작물보호제 사업이 핵심입니다.",
+      "비료와 스마트팜·종자 등 연결 사업도 함께 운영합니다.",
+      "농사 시기와 날씨에 따라 판매가 계절적으로 달라집니다.",
+      "병해충 발생과 농가 수요, 원료 조달가격을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "작물보호제",
+        "desc": "농작물의 병해충과 잡초를 관리하는 약제를 제조·판매합니다."
+      },
+      {
+        "name": "비료·종자",
+        "desc": "연결 사업을 통해 비료와 종자 등 농업용 자재를 공급합니다."
+      },
+      {
+        "name": "스마트팜",
+        "desc": "재배 환경 관리와 농업 시설·시스템 관련 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "농업 계절",
+        "desc": "작물 재배 일정과 병해충 발생, 날씨가 주문 시기를 바꿉니다."
+      },
+      {
+        "title": "원료 조달",
+        "desc": "수입 원제·비료 원료가격과 환율을 확인합니다."
+      },
+      {
+        "title": "농자재 구성",
+        "desc": "작물보호제와 비료·시설 사업의 매출·이익을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.325185752782,
+        "op": 0.026720336645,
+        "net": 0.017736543706,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000859",
+          "rawKRW": {
+            "sales": "325185752782",
+            "op": "26720336645",
+            "net": "17736543706"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.339236756604,
+        "op": 0.028697544624,
+        "net": 0.019590877957,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001176",
+          "rawKRW": {
+            "sales": "339236756604",
+            "op": "28697544624",
+            "net": "19590877957"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.114292314203,
+        "op": 0.014481621693,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004266",
+          "rawKRW": {
+            "sales": "114292314203",
+            "op": "14481621693",
+            "net": "11553804830"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.15346616299,
+        "op": 0.032339602029,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002763",
+          "rawKRW": {
+            "sales": "153466162990",
+            "op": "32339602029",
+            "net": "24588775555"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.121952525576,
+        "op": 0.013536273717,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003124",
+          "rawKRW": {
+            "sales": "121952525576",
+            "op": "13536273717",
+            "net": "9905856648"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001176",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002763",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003124",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000859",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004266",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "경농 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003124",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "작물보호제",
+      "desc": "농작물의 병해충·잡초 등을 관리하기 위한 약제입니다."
+    },
+    {
+      "name": "스마트팜",
+      "desc": "센서·제어 기술 등으로 작물 재배 환경을 관리하는 농업 방식이나 시설입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

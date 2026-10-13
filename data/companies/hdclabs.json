@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hdclabs",
+    "name": "HDC랩스",
+    "ticker": "039570",
+    "rank": 500,
+    "type": "건물 기술·관리"
+  },
+  "overview": {
+    "short": "HDC랩스는 건물의 스마트홈 시스템과 시설관리 서비스를 제공하는 회사",
+    "summary": "HDC랩스는 건물의 스마트홈 시스템과 시설관리 서비스를 제공하는 회사입니다. 홈네트워크와 주거시설 유지보수 사업을 운영합니다.",
+    "takeaways": [
+      "HDC랩스는 건물의 스마트홈 시스템과 시설관리 서비스를 제공하는 회사입니다.",
+      "홈네트워크와 주거시설 유지보수 사업을 운영합니다.",
+      "스마트빌딩·소방·기계설비 등 건설 관련 시스템도 구축합니다.",
+      "준공 뒤 건물 시설·미화·보안·임대 운영을 관리합니다.",
+      "신규 건축물 수주와 관리계약 유지, 인건비·공사원가가 실적을 좌우합니다."
+    ],
+    "business": [
+      {
+        "name": "홈 사업",
+        "desc": "BESTIN 홈네트워크와 주거시설 유지보수 서비스를 제공합니다."
+      },
+      {
+        "name": "건설 시스템",
+        "desc": "스마트빌딩·소방·기계설비·인테리어 등 건물 시스템을 구축합니다."
+      },
+      {
+        "name": "부동산 관리",
+        "desc": "건물 시설·미화·보안과 임대차·자산 운영 관리를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 수주",
+        "desc": "신규 건축물 착공·준공과 관련 시스템 발주를 확인합니다."
+      },
+      {
+        "title": "관리계약",
+        "desc": "반복되는 시설관리 계약의 신규 수주와 갱신이 매출 기반입니다."
+      },
+      {
+        "title": "비용·공정",
+        "desc": "현장 인건비와 공사원가, 일정 지연 여부를 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.628807776981,
+        "op": 0.006401720348,
+        "net": 0.018975535063,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250812000577",
+          "rawKRW": {
+            "sales": "628807776981",
+            "op": "6401720348",
+            "net": "18975535063"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.645728085876,
+        "op": 0.010637118275,
+        "net": 0.012262930001,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001288",
+          "rawKRW": {
+            "sales": "645728085876",
+            "op": "10637118275",
+            "net": "12262930001"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.169401960299,
+        "op": 0.003677548224,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250812000642",
+          "rawKRW": {
+            "sales": "169401960299",
+            "op": "3677548224",
+            "net": "4188093264"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.148120845338,
+        "op": 0.007189946103,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002251",
+          "rawKRW": {
+            "sales": "148120845338",
+            "op": "7189946103",
+            "net": "6767527568"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.153732976512,
+        "op": 0.005705679455,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004044",
+          "rawKRW": {
+            "sales": "153732976512",
+            "op": "5705679455",
+            "net": "6914560139"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001288",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002251",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004044",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250812000577",
+      "published": "2025.08.12",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250812000642",
+      "published": "2025.08.12",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "HDC랩스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004044",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "스마트홈",
+      "desc": "가정의 기기·설비를 통신망으로 연결해 제어·관리하는 시스템입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객의 주문·공사·납품 계약을 확보하는 것입니다. 실제 매출·이익과 발생 시점이 다를 수 있습니다."
+    },
+    {
+      "name": "홈네트워크",
+      "desc": "가정 안의 조명·보안·냉난방 등 기기를 연결해 제어하는 시스템입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

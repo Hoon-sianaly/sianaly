@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "haitaiconfectionery",
+    "name": "해태제과식품",
+    "ticker": "101530",
+    "rank": 535,
+    "type": "과자·냉동식품"
+  },
+  "overview": {
+    "short": "해태제과식품은 과자와 냉동식품 등을 제조·판매하는 식품회사",
+    "summary": "해태제과식품은 과자와 냉동식품 등을 제조·판매하는 식품회사입니다. 홈런볼·오예스·맛동산 등 과자 브랜드를 운영합니다.",
+    "takeaways": [
+      "해태제과식품은 과자와 냉동식품 등을 제조·판매하는 식품회사입니다.",
+      "홈런볼·오예스·맛동산 등 과자 브랜드를 운영합니다.",
+      "고향만두 등 냉동식품과 관련 상품도 판매합니다.",
+      "자체 제품 생산과 외부 상품·위탁판매를 함께 운영합니다.",
+      "제품 판매량과 가격, 곡물·유지류 원가·유통비가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "과자류",
+        "desc": "비스킷·스낵·초콜릿·껌 등 여러 과자 브랜드를 생산·판매합니다."
+      },
+      {
+        "name": "냉동식품·상품",
+        "desc": "냉동식품과 외부 매입 상품을 판매합니다."
+      },
+      {
+        "name": "생산·유통",
+        "desc": "국내 생산시설과 판매 조직을 운영하며 위탁판매 용역도 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "브랜드 수요",
+        "desc": "주력 제품 판매량과 신제품·유통채널별 수요를 확인합니다."
+      },
+      {
+        "title": "원재료·환율",
+        "desc": "곡물·유지류·초콜릿 관련 원료와 포장재 비용을 봅니다."
+      },
+      {
+        "title": "가격·효율",
+        "desc": "판매가격 변화와 공장 가동·판촉·물류 비용을 함께 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.62919632851,
+        "op": 0.049071903987,
+        "net": 0.031839983214,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319000894",
+          "rawKRW": {
+            "sales": "629196328510",
+            "op": "49071903987",
+            "net": "31839983214"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.641386567732,
+        "op": 0.04232808798,
+        "net": 0.023396241441,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001023",
+          "rawKRW": {
+            "sales": "641386567732",
+            "op": "42328087980",
+            "net": "23396241441"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.163725441643,
+        "op": 0.010298071087,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003082",
+          "rawKRW": {
+            "sales": "163725441643",
+            "op": "10298071087",
+            "net": "5188852178"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.157727230807,
+        "op": 0.010683260076,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002085",
+          "rawKRW": {
+            "sales": "157727230807",
+            "op": "10683260076",
+            "net": "6733335053"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.160091672558,
+        "op": 0.009290178031,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003005",
+          "rawKRW": {
+            "sales": "160091672558",
+            "op": "9290178031",
+            "net": "4502125675"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001023",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002085",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003005",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000894",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003082",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "해태제과식품 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003005",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

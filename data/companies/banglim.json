@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "banglim",
+    "name": "방림",
+    "ticker": "003610",
+    "rank": 525,
+    "type": "섬유·염색가공"
+  },
+  "overview": {
+    "short": "방림은 실과 직물을 만들고 염색·날염 가공하는 섬유회사",
+    "summary": "방림은 실과 직물을 만들고 염색·날염 가공하는 섬유회사입니다. 가공직물은 의류와 침구 등 섬유제품의 소재로 사용됩니다.",
+    "takeaways": [
+      "방림은 실과 직물을 만들고 염색·날염 가공하는 섬유회사입니다.",
+      "가공직물은 의류와 침구 등 섬유제품의 소재로 사용됩니다.",
+      "국내 가공공장과 베트남 생산법인을 운영합니다.",
+      "원면과 실·직물의 수입가격 및 환율에 영향을 받습니다.",
+      "9월 결산 기업이므로 회계 분기와 실제 달력 기간을 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "직물 가공",
+        "desc": "의류·침구용 직물의 염색·날염·표백 등 가공을 수행합니다."
+      },
+      {
+        "name": "방적·직포",
+        "desc": "베트남 법인 등을 통해 실과 직물의 생산 사업을 운영합니다."
+      },
+      {
+        "name": "원면·기타",
+        "desc": "원면 등 상품 판매와 임대 관련 수입도 발생합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "섬유 주문",
+        "desc": "의류·침구 고객의 주문량과 제품 단가를 확인합니다."
+      },
+      {
+        "title": "원면·환율",
+        "desc": "수입 원면·실·직물 가격과 환율이 제조원가를 바꿉니다."
+      },
+      {
+        "title": "가동·결산",
+        "desc": "국내외 설비 가동과 9월 결산에 따른 실제 실적 기간을 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 9월 종료 12개월 결산입니다. 회계 분기와 실제 달력 기간을 함께 표시합니다.",
+    "quarterlyNote": "최신 회계 3분기는 2026년 4~6월입니다. 각 3개월 수치를 사용합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.110595886622,
+        "op": -0.003270147637,
+        "net": 0.000617138946,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20241219000406",
+          "rawKRW": {
+            "sales": "110595886622",
+            "op": "-3270147637",
+            "net": "617138946"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2024.09 종료",
+        "reportPeriod": "2023.10–2024.09"
+      },
+      {
+        "year": 2025,
+        "sales": 0.122527094021,
+        "op": 0.00112130759,
+        "net": 0.006511313189,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20251222000124",
+          "rawKRW": {
+            "sales": "122527094021",
+            "op": "1121307590",
+            "net": "6511313189"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.09 종료",
+        "reportPeriod": "2024.10–2025.09"
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.030400147259,
+        "op": -0.00012901915,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250514000489",
+          "rawKRW": {
+            "sales": "30400147259",
+            "op": "-129019150",
+            "net": "735219598"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.01–03",
+        "reportPeriod": "2025.01–03"
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.029565427952,
+        "op": 0.001011550296,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20260814000394",
+          "rawKRW": {
+            "sales": "29565427952",
+            "op": "1011550296",
+            "net": "-1465243902"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06"
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.031198702389,
+        "op": 0.000169110976,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000761",
+          "rawKRW": {
+            "sales": "31198702389",
+            "op": "169110976"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2025.10–12",
+        "reportPeriod": "2025.10–12"
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.031293423958,
+        "op": -0.000894746527,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260515000761",
+          "rawKRW": {
+            "sales": "31293423958",
+            "op": "-894746527",
+            "net": "2818463018"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03"
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.031527782273,
+        "op": 0.00158207106,
+        "sourceIds": [
+          "dart-2026-q3"
+        ],
+        "dart": {
+          "receipt": "20260814000394",
+          "rawKRW": {
+            "sales": "31527782273",
+            "op": "1582071060",
+            "net": "5462288424"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        },
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06"
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    },
+    "quarterlyCalendarNote": "9월 결산 · 회계 1분기 10~12월, 2분기 1~3월, 3분기 4~6월"
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251222000124",
+      "published": "2025.12.22",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000761",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20241219000406",
+      "published": "2024.12.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250514000489",
+      "published": "2025.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q3",
+      "label": "2026년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000394",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000761",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000394",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "방림 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000394",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "원면",
+      "desc": "실로 가공하기 전의 면섬유 원료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

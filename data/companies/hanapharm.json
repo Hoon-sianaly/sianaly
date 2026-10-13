@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanapharm",
+    "name": "하나제약",
+    "ticker": "293480",
+    "rank": 547,
+    "type": "마취·전문의약품"
+  },
+  "overview": {
+    "short": "하나제약은 마취제·진통제 등을 제조·판매하는 제약회사",
+    "summary": "하나제약은 마취제·진통제 등을 제조·판매하는 제약회사입니다. 수술·처치에 쓰이는 마취·마약성진통제 분야를 운영합니다.",
+    "takeaways": [
+      "하나제약은 마취제·진통제 등을 제조·판매하는 제약회사입니다.",
+      "수술·처치에 쓰이는 마취·마약성진통제 분야를 운영합니다.",
+      "순환기·소화기·신경과 등 다양한 전문의약품도 공급합니다.",
+      "병원·의원에 주사제와 먹는 의약품을 판매합니다.",
+      "병원 채택·처방과 보험약가, 생산시설·연구개발 비용이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "마취·진통제",
+        "desc": "수술과 중증 통증 관리 등에 쓰이는 전문의약품을 공급합니다."
+      },
+      {
+        "name": "기타 치료제",
+        "desc": "순환기·소화기·신경과 등 여러 영역의 의약품을 판매합니다."
+      },
+      {
+        "name": "제조·개발",
+        "desc": "주사제·정제 생산시설과 연구조직을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "병원 채택",
+        "desc": "의료기관 제품 채택과 처방·수술 수요를 확인합니다."
+      },
+      {
+        "title": "가격·품목",
+        "desc": "보험약가 변화와 신제품·주력 제품 매출 구성을 봅니다."
+      },
+      {
+        "title": "생산·개발비",
+        "desc": "공장 가동·품질관리와 연구개발 지출을 함께 비교합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.225339838199,
+        "op": 0.025154206032,
+        "net": 0.021250044508,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250314001348",
+          "rawKRW": {
+            "sales": "225339838199",
+            "op": "25154206032",
+            "net": "21250044508"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.239503892657,
+        "op": 0.025815826289,
+        "net": 0.008778007699,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001014",
+          "rawKRW": {
+            "sales": "239503892657",
+            "op": "25815826289",
+            "net": "8778007699"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.057878608755,
+        "op": 0.006021732854,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002802",
+          "rawKRW": {
+            "sales": "57878608755",
+            "op": "6021732854",
+            "net": "5527590292"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.062263809597,
+        "op": 0.007105247364,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002747",
+          "rawKRW": {
+            "sales": "62263809597",
+            "op": "7105247364",
+            "net": "10004762332"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.060903578032,
+        "op": 0.007285591658,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001371",
+          "rawKRW": {
+            "sales": "60903578032",
+            "op": "7285591658",
+            "net": "8449874807"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001014",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002747",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001371",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001348",
+      "published": "2025.03.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002802",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "하나제약 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001371",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "전문의약품",
+      "desc": "의사의 처방 등이 필요한 의약품입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "보험약가",
+      "desc": "건강보험 급여가 적용되는 의약품에 정해진 가격 기준입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

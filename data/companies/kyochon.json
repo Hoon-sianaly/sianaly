@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kyochon",
+    "name": "교촌에프앤비",
+    "ticker": "339770",
+    "rank": 496,
+    "type": "치킨 프랜차이즈"
+  },
+  "overview": {
+    "short": "교촌에프앤비는 교촌치킨 가맹사업을 운영하는 외식 기업",
+    "summary": "교촌에프앤비는 교촌치킨 가맹사업을 운영하는 외식 기업입니다. 국내 가맹점에 닭고기·소스·전용유 등 원부자재를 공급합니다.",
+    "takeaways": [
+      "교촌에프앤비는 교촌치킨 가맹사업을 운영하는 외식 기업입니다.",
+      "국내 가맹점에 닭고기·소스·전용유 등 원부자재를 공급합니다.",
+      "가맹점 전체의 소비자 판매액과 회사 매출은 서로 다릅니다.",
+      "해외 직영·프랜차이즈와 소스 제조·판매 사업도 운영합니다.",
+      "가맹점 판매량과 원재료비, 해외 사업의 수익성을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "국내 가맹사업",
+        "desc": "교촌치킨 브랜드를 운영하며 가맹점에 원부자재를 공급합니다."
+      },
+      {
+        "name": "해외 사업",
+        "desc": "현지 직영점과 마스터프랜차이즈를 통해 브랜드를 전개합니다."
+      },
+      {
+        "name": "소스·신사업",
+        "desc": "소스와 치킨무를 제조하고 외부 판매·신규 브랜드 사업을 진행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "가맹점 판매",
+        "desc": "점포 판매량과 제품 구성이 본사의 공급 매출에 영향을 줍니다."
+      },
+      {
+        "title": "원재료·물류",
+        "desc": "닭고기·유지류 가격과 물류비, 판매가격 전가 여부를 확인합니다."
+      },
+      {
+        "title": "해외 확장",
+        "desc": "해외 점포 증가와 로열티 수입을 현지 운영비용과 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.480810378812,
+        "op": 0.015437454339,
+        "net": 0.000833040786,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250324000180",
+          "rawKRW": {
+            "sales": "480810378812",
+            "op": "15437454339",
+            "net": "833040786"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.517353492006,
+        "op": 0.03503800291,
+        "net": 0.017221254343,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000879",
+          "rawKRW": {
+            "sales": "517353492006",
+            "op": "35038002910",
+            "net": "17221254343"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.126104497331,
+        "op": 0.009305824409,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001128",
+          "rawKRW": {
+            "sales": "126104497331",
+            "op": "9305824409",
+            "net": "4584244390"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.123355716532,
+        "op": 0.005290695728,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001182",
+          "rawKRW": {
+            "sales": "123355716532",
+            "op": "5290695728",
+            "net": "3379359529"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.132272708199,
+        "op": 0.007847786369,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003264",
+          "rawKRW": {
+            "sales": "132272708199",
+            "op": "7847786369",
+            "net": "5193492457"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000879",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001182",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003264",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250324000180",
+      "published": "2025.03.24",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001128",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "교촌에프앤비 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003264",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가맹",
+      "desc": "정해진 계약 아래 브랜드·운영 체계 등을 사용하며 사업을 운영하는 방식입니다."
+    },
+    {
+      "name": "마스터프랜차이즈",
+      "desc": "특정 국가·지역에서 브랜드 가맹점을 모집·운영할 권리를 현지 사업자에게 주는 방식입니다."
+    },
+    {
+      "name": "로열티",
+      "desc": "브랜드·기술·저작물 등을 사용하는 대가로 지급하는 사용료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

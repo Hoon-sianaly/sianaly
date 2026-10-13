@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "nhallwonreit",
+    "name": "NH올원리츠",
+    "ticker": "400760",
+    "rank": 541,
+    "type": "오피스·물류 리츠"
+  },
+  "overview": {
+    "short": "NH올원리츠는 오피스와 물류 부동산 등에 투자하는 리츠",
+    "summary": "NH올원리츠는 오피스와 물류 부동산 등에 투자하는 리츠입니다. 분당스퀘어와 오피스·물류 관련 리츠 지분 등을 보유합니다.",
+    "takeaways": [
+      "NH올원리츠는 오피스와 물류 부동산 등에 투자하는 리츠입니다.",
+      "분당스퀘어와 오피스·물류 관련 리츠 지분 등을 보유합니다.",
+      "직접 임대 수입과 투자 대상에서 받는 배당이 수익의 기반입니다.",
+      "연결 임대 실적과 주주에게 분배할 현금은 서로 다를 수 있습니다.",
+      "6개월 결산 기간과 차입금 이자, 임차인·공실 상태를 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "오피스 투자",
+        "desc": "분당스퀘어와 에이원타워 등 관련 오피스 자산에 투자합니다."
+      },
+      {
+        "name": "물류·간접투자",
+        "desc": "물류센터 등 기초자산을 가진 리츠 지분과 수익증권을 보유합니다."
+      },
+      {
+        "name": "자산 운용",
+        "desc": "임대·배당 수입을 기반으로 운용비·이자를 부담하고 주주 배당을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임대 계약",
+        "desc": "핵심 임차인과 임대차 만기·공실, 임대료 변화를 확인합니다."
+      },
+      {
+        "title": "차입 조건",
+        "desc": "대출 만기와 금리, 자산 취득에 따른 차입 부담을 봅니다."
+      },
+      {
+        "title": "배당재원",
+        "desc": "회계 순이익과 현금흐름·배당재원의 차이를 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 실제 6개월 결산을 같은 기간끼리 비교합니다. 일반 기업의 12개월 연간 실적과 다르며 회계 순이익과 배당재원을 구분합니다.",
+    "quarterlyNote": "실제 달력 기준 3개월 실적입니다. 결산 누적값과 직전 회계 반기를 전년 동기로 잘못 비교하지 않습니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.021835605195,
+        "op": 0.011823284183,
+        "net": -0.000728583625,
+        "reportedKRW": {
+          "sales": "21835605195",
+          "op": "11823284183",
+          "net": "-728583625"
+        },
+        "periodLabel": "2025.01–06",
+        "reportPeriod": "2025.01–06",
+        "sourceIds": [
+          "report-20260911000433"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.026641640054,
+        "op": 0.014975995269,
+        "net": -0.001830557072,
+        "reportedKRW": {
+          "sales": "26641640054",
+          "op": "14975995269",
+          "net": "-1830557072"
+        },
+        "periodLabel": "2026.01–06",
+        "reportPeriod": "2026.01–06",
+        "sourceIds": [
+          "report-20260911000433"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.009935475143,
+        "op": 0.00578982436,
+        "reportedKRW": {
+          "sales": "9935475143",
+          "op": "5789824360"
+        },
+        "periodLabel": "2025.01–03",
+        "reportPeriod": "2025.01–03",
+        "sourceIds": [
+          "report-20250515002517"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.011900130052,
+        "op": 0.006033459823,
+        "reportedKRW": {
+          "sales": "11900130052",
+          "op": "6033459823"
+        },
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06",
+        "derivation": "six-month-minus-first-three-month",
+        "sourceIds": [
+          "report-20260911000433",
+          "report-20250515002517"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.01279824212,
+        "op": 0.008404704674,
+        "reportedKRW": {
+          "sales": "12798242120",
+          "op": "8404704674"
+        },
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03",
+        "sourceIds": [
+          "report-20260515002840"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.013843397934,
+        "op": 0.006571290595,
+        "reportedKRW": {
+          "sales": "13843397934",
+          "op": "6571290595"
+        },
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06",
+        "derivation": "six-month-minus-first-three-month",
+        "sourceIds": [
+          "report-20260911000433",
+          "report-20260515002840"
+        ]
+      }
+    ],
+    "annualSourceLabel": "공식 6월 종료 6개월 결산",
+    "quarterlyCalendarNote": "6월·12월 결산 · 4~6월은 1~6월 결산에서 1~3월 실적을 원 단위로 차감",
+    "annualTerm": "6개월 결산",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "실제 달력 기준 각 3개월 실적",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (부동산·투자 등)",
+        "help": "임대·투자 관련 영업수익입니다. 제조업 매출과 구분합니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "동일한 연결 범위의 부동산 영업비용을 차감한 이익입니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20260911000433",
+      "label": "NH올원리츠 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000433",
+      "published": "2026.09.11",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20250515002517",
+      "label": "NH올원리츠 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515002517",
+      "published": "2025.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260515002840",
+      "label": "NH올원리츠 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002840",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "NH올원리츠 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260911000433",
+      "published": "2026.09.11",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "공실",
+      "desc": "임차인이 없어 사용되지 않는 임대 공간입니다."
+    },
+    {
+      "name": "임차인",
+      "desc": "건물·토지 등을 빌려 사용하고 임대료를 내는 사람이나 회사입니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "임대 수입",
+      "desc": "보유 자산을 다른 사람이나 회사가 사용하도록 빌려주고 받는 대가입니다."
+    },
+    {
+      "name": "배당재원",
+      "desc": "회사가 배당에 사용할 수 있는 이익·현금 등의 기반입니다. 회계 순이익과 같지 않을 수 있습니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
