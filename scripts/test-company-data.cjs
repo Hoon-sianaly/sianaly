@@ -42,10 +42,9 @@ function context(key, transform, failed = false) {
   }
   const pending=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8")).financials.availability?.status === "awaiting-first-report";
   assert.equal((out.match(/class="vertical-chart(?: [^"]*)?"/g)||[]).length,pending?0:4);
-  if(entry.key==='samsung'){
-   assert.ok(out.indexOf('id="company-quarterly"')<out.indexOf('id="company-annual"'),'Samsung latest quarters precede annual history');
-   assert.ok(!out.includes('paired-chart'),'Samsung keeps the original vertical charts');
-  }
+  assert.ok(out.indexOf('id="company-quarterly"')<out.indexOf('id="company-annual"'),entry.key+' latest quarters precede annual history');
+  assert.ok(out.indexOf('href="#company-quarterly"')<out.indexOf('href="#company-annual"'),entry.key+' navigation follows section order');
+  assert.ok(!out.includes('paired-chart'),entry.key+' keeps the original vertical charts');
   if(pending)assert.ok(out.includes("첫 정기 실적 공시 대기")&&!out.includes("0.0조")&&!out.includes("<span>영업이익률</span>"));
   assert.ok(!out.includes("undefined") && !out.includes("NaN"),entry.key);
   if(entry.key==='shinyoung'){

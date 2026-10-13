@@ -47,7 +47,7 @@ const c=await loadCompanyData(key);
 const recentCatalog=(await loadCompanyCatalog()).companies;
 const compact=c?.presentation.compact === true;
 const comparison=c?.presentation.chartStyle === "comparison";
-const latestFirst=key==="samsung" && c?.presentation.latestFirst === true;
+const latestFirst=Boolean(c);
 if(compact)document.body.classList.add("samsung-page");
 const recentList=document.getElementById("recentList");
 const recentBox=document.getElementById("recentBox"),recentToggle=document.getElementById("recentToggle");
