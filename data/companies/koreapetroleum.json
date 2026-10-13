@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreapetroleum",
+    "name": "한국석유",
+    "ticker": "004090",
+    "rank": 553,
+    "type": "아스팔트·화학 유통"
+  },
+  "overview": {
+    "short": "한국석유는 아스팔트와 산업용 화학제품 등을 공급하는 회사",
+    "summary": "한국석유는 아스팔트와 산업용 화학제품 등을 공급하는 회사입니다. 건축·토목용 아스팔트와 방수시트 등을 제조·판매합니다.",
+    "takeaways": [
+      "한국석유는 아스팔트와 산업용 화학제품 등을 공급하는 회사입니다.",
+      "건축·토목용 아스팔트와 방수시트 등을 제조·판매합니다.",
+      "연결 회사가 합성수지·플라스틱 가공품과 화학상품을 취급합니다.",
+      "폐 유기용제 재활용 등 관련 사업도 운영합니다.",
+      "석유화학 원료가격과 건설 수요, 상품 유통마진을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "아스팔트·건자재",
+        "desc": "아스팔트와 방수시트 등 건축·토목 자재를 공급합니다."
+      },
+      {
+        "name": "수지·화학상품",
+        "desc": "합성수지·플라스틱 제품과 석유화학상품을 유통합니다."
+      },
+      {
+        "name": "재활용·기타",
+        "desc": "폐 유기용제 재활용과 임대 등 관련 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 수요",
+        "desc": "도로·건축 공사와 산업 고객의 자재 수요를 확인합니다."
+      },
+      {
+        "title": "원료·가격",
+        "desc": "석유화학 원료가격과 판매단가 사이의 차이를 봅니다."
+      },
+      {
+        "title": "유통·자금",
+        "desc": "상품 재고·매출채권과 유통마진, 차입 이자를 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.726195804425,
+        "op": 0.018774769252,
+        "net": 0.01289079382,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001351",
+          "rawKRW": {
+            "sales": "726195804425",
+            "op": "18774769252",
+            "net": "12890793820"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.696926234873,
+        "op": 0.011844186456,
+        "net": 0.005072886019,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001351",
+          "rawKRW": {
+            "sales": "696926234873",
+            "op": "11844186456",
+            "net": "5072886019"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.193119424613,
+        "op": 0.004303031909,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002961",
+          "rawKRW": {
+            "sales": "193119424613",
+            "op": "4303031909",
+            "net": "4195800888"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.171246023843,
+        "op": 0.004142943174,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002727",
+          "rawKRW": {
+            "sales": "171246023843",
+            "op": "4142943174",
+            "net": "1527304740"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.231630791282,
+        "op": 0.013790541369,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002961",
+          "rawKRW": {
+            "sales": "231630791282",
+            "op": "13790541369",
+            "net": "12035890833"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001351",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002727",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002961",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001351",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002961",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "한국석유 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002961",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "용제",
+      "desc": "다른 물질을 녹이거나 섞는 데 사용하는 액체로, 도료·세정 등 산업 공정에 사용합니다."
+    },
+    {
+      "name": "수지",
+      "desc": "플라스틱·접착제·도료 등을 만드는 고분자 재료를 뜻합니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
+    },
+    {
+      "name": "합성수지",
+      "desc": "화학적으로 합성한 고분자 소재로 플라스틱 제품의 원료로 쓰입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hansolholdings",
+    "name": "한솔홀딩스",
+    "ticker": "004150",
+    "rank": 558,
+    "type": "제지·전자·물류 지주"
+  },
+  "overview": {
+    "short": "한솔홀딩스는 제지·전자·물류 등 계열사를 관리하는 지주회사",
+    "summary": "한솔홀딩스는 제지·전자·물류 등 계열사를 관리하는 지주회사입니다. 골판지와 지류 유통·IT 서비스가 연결 사업에 포함됩니다.",
+    "takeaways": [
+      "한솔홀딩스는 제지·전자·물류 등 계열사를 관리하는 지주회사입니다.",
+      "골판지와 지류 유통·IT 서비스가 연결 사업에 포함됩니다.",
+      "전자부품·제조 서비스와 종합물류 사업도 운영합니다.",
+      "한솔제지 등 보유 회사의 연결·지분법 범위는 서로 다릅니다.",
+      "계열사 업황과 지주 배당·브랜드 수입을 구분해서 봅니다."
+    ],
+    "business": [
+      {
+        "name": "지류·IT",
+        "desc": "골판지 제조와 지류 유통, IT시스템 구축·유지보수 사업이 포함됩니다."
+      },
+      {
+        "name": "전자·물류",
+        "desc": "전자부품·제조 서비스와 종합물류 연결 사업을 운영합니다."
+      },
+      {
+        "name": "지주·투자",
+        "desc": "자회사 지분 관리와 브랜드·자문·배당 관련 수입을 반영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "계열사 수요",
+        "desc": "전자 고객 주문과 종이·물류 수요를 사업별로 확인합니다."
+      },
+      {
+        "title": "원가·운임",
+        "desc": "원재료·생산 비용과 물류 운임·환율의 영향을 나눠 봅니다."
+      },
+      {
+        "title": "회계·배당",
+        "desc": "연결과 관계기업 지분법, 지주회사 현금 수입을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.791639938,
+        "op": 0.007479492,
+        "net": 0.001583567,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250702000575",
+          "rawKRW": {
+            "sales": "791639938000",
+            "op": "7479492000",
+            "net": "1583567000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.098306886,
+        "op": 0.022608692,
+        "net": 0.008896778,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001586",
+          "rawKRW": {
+            "sales": "1098306886000",
+            "op": "22608692000",
+            "net": "8896778000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.278565743,
+        "op": 0.007397959,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001262",
+          "rawKRW": {
+            "sales": "278565743000",
+            "op": "7397959000",
+            "net": "16637239000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.26957079,
+        "op": 0.007939575,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001253",
+          "rawKRW": {
+            "sales": "269570790000",
+            "op": "7939575000",
+            "net": "11633652000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.416705254,
+        "op": 0.019853056,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001738",
+          "rawKRW": {
+            "sales": "416705254000",
+            "op": "19853056000",
+            "net": "55266716000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001586",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001253",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001738",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250702000575",
+      "published": "2025.07.02",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001262",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "한솔홀딩스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001738",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "지분법",
+      "desc": "관계기업의 손익 중 보유 지분에 해당하는 부분을 투자회사의 손익에 반영하는 회계 방식입니다."
+    },
+    {
+      "name": "운임",
+      "desc": "사람이나 화물을 운송하는 대가로 받는 요금입니다."
+    },
+    {
+      "name": "지주회사",
+      "desc": "다른 회사의 주식을 보유해 계열사를 지배·관리하는 회사입니다. 자체 사업을 함께 운영하기도 합니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

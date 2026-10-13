@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lottehimart",
+    "name": "롯데하이마트",
+    "ticker": "071840",
+    "rank": 563,
+    "type": "가전제품 유통"
+  },
+  "overview": {
+    "short": "롯데하이마트는 다양한 브랜드의 가전제품을 판매하는 전문 유통회사",
+    "summary": "롯데하이마트는 다양한 브랜드의 가전제품을 판매하는 전문 유통회사입니다. 전국 매장과 온라인몰에서 생활·주방·영상·IT 가전을 판매합니다.",
+    "takeaways": [
+      "롯데하이마트는 다양한 브랜드의 가전제품을 판매하는 전문 유통회사입니다.",
+      "전국 매장과 온라인몰에서 생활·주방·영상·IT 가전을 판매합니다.",
+      "상품 설치·관리 등 가전 관련 서비스를 운영합니다.",
+      "자체 브랜드와 체험형 매장 등 판매 방식을 확대하고 있습니다.",
+      "소비심리와 구매 주기, 상품 마진·점포 비용이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "생활·주방가전",
+        "desc": "냉장고·세탁기·에어컨 등 여러 브랜드의 가전을 판매합니다."
+      },
+      {
+        "name": "영상·IT가전",
+        "desc": "TV·PC·휴대폰 등 전자제품을 매장·온라인에서 판매합니다."
+      },
+      {
+        "name": "서비스·자체 브랜드",
+        "desc": "가전 관련 서비스와 자체 브랜드 상품 등을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "소비·계절",
+        "desc": "가전 교체 수요와 이사·날씨 등 계절 요인을 확인합니다."
+      },
+      {
+        "title": "상품 마진",
+        "desc": "제품 구성과 할인·판촉, 재고 처리 비용을 봅니다."
+      },
+      {
+        "title": "점포 효율",
+        "desc": "점포 운영비·임차료와 온라인 판매 수익성을 비교합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.35665653988,
+        "op": 0.00172085784,
+        "net": -0.305369003097,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250312001113",
+          "rawKRW": {
+            "sales": "2356656539880",
+            "op": "1720857840",
+            "net": "-305369003097"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 2.300095883091,
+        "op": 0.009639450324,
+        "net": -0.002442674088,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260311004061",
+          "rawKRW": {
+            "sales": "2300095883091",
+            "op": "9639450324",
+            "net": "-2442674088"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.59420267852,
+        "op": 0.010491113346,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002061",
+          "rawKRW": {
+            "sales": "594202678520",
+            "op": "10491113346",
+            "net": "11117246436"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.496907681752,
+        "op": -0.014779658626,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002021",
+          "rawKRW": {
+            "sales": "496907681752",
+            "op": "-14779658626",
+            "net": "-20402714746"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.591095945181,
+        "op": 0.000917831194,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002927",
+          "rawKRW": {
+            "sales": "591095945181",
+            "op": "917831194",
+            "net": "-4469675405"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004061",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002021",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002927",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250312001113",
+      "published": "2025.03.12",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002061",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "롯데하이마트 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002927",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "임차료",
+      "desc": "건물·시설 등을 빌려 사용하는 대가로 지급하는 돈입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

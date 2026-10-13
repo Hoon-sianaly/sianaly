@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hdchyundaiep",
+    "name": "HDC현대EP",
+    "ticker": "089470",
+    "rank": 587,
+    "type": "플라스틱 소재·배관"
+  },
+  "overview": {
+    "short": "HDC현대EP는 산업용 플라스틱 소재와 건축용 배관을 만드는 회사",
+    "summary": "HDC현대EP는 산업용 플라스틱 소재와 건축용 배관을 만드는 회사입니다. 자동차·전자제품 등에 쓰이는 합성수지 복합소재를 공급합니다.",
+    "takeaways": [
+      "HDC현대EP는 산업용 플라스틱 소재와 건축용 배관을 만드는 회사입니다.",
+      "자동차·전자제품 등에 쓰이는 합성수지 복합소재를 공급합니다.",
+      "전자제품·포장·단열 등에 쓰이는 수지 제품도 생산합니다.",
+      "급수·급탕과 소방용 배관 등 건축자재를 판매합니다.",
+      "고객 생산량과 원재료 가격, 제품 구성을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "복합소재",
+        "desc": "자동차·전자제품용 합성수지 복합소재를 개발·생산합니다."
+      },
+      {
+        "name": "수지 제품",
+        "desc": "전자제품·포장·단열재 등에 쓰이는 수지를 공급합니다."
+      },
+      {
+        "name": "배관·건축자재",
+        "desc": "급수·급탕·소방용 배관 등 건축자재를 제조합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 생산",
+        "desc": "자동차·전자 고객의 생산과 소재 주문을 확인합니다."
+      },
+      {
+        "title": "원재료 차이",
+        "desc": "석유화학 원료가격과 판매가격 간 차이를 봅니다."
+      },
+      {
+        "title": "제품 구성",
+        "desc": "고부가 소재·건축자재 비중과 해외 사업 환율을 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.990565997299,
+        "op": 0.032675739823,
+        "net": 0.015897923103,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250812000160",
+          "rawKRW": {
+            "sales": "990565997299",
+            "op": "32675739823",
+            "net": "15897923103"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.9926618453,
+        "op": 0.049689342099,
+        "net": 0.030235610832,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260814001252",
+          "rawKRW": {
+            "sales": "992661845300",
+            "op": "49689342099",
+            "net": "30235610832"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.258580210926,
+        "op": 0.013446634018,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250812000673",
+          "rawKRW": {
+            "sales": "258580210926",
+            "op": "13446634018",
+            "net": "6572825911"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.254869521921,
+        "op": 0.007762334748,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002651",
+          "rawKRW": {
+            "sales": "254869521921",
+            "op": "7762334748",
+            "net": "4558746888"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.301411989753,
+        "op": 0.012833261166,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003843",
+          "rawKRW": {
+            "sales": "301411989753",
+            "op": "12833261166",
+            "net": "8053857608"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001252",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002651",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003843",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250812000160",
+      "published": "2025.08.12",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250812000673",
+      "published": "2025.08.12",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "HDC현대EP 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003843",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "복합소재",
+      "desc": "서로 다른 소재를 결합해 강도·무게·내열성 등의 특성을 개선한 재료입니다."
+    },
+    {
+      "name": "수지",
+      "desc": "플라스틱·접착제·도료 등을 만드는 고분자 재료를 뜻합니다."
+    },
+    {
+      "name": "합성수지",
+      "desc": "화학적으로 합성한 고분자 소재로 플라스틱 제품의 원료로 쓰입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

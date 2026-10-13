@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dkme",
+    "name": "DKME",
+    "ticker": "015590",
+    "rank": 598,
+    "type": "화공 플랜트 기기"
+  },
+  "overview": {
+    "short": "DKME는 화학 플랜트에 쓰이는 설비를 제작하는 회사",
+    "summary": "DKME는 화학 플랜트에 쓰이는 설비를 제작하는 회사입니다. 열교환기·압력용기·탑류 등을 주문 생산합니다.",
+    "takeaways": [
+      "DKME는 화학 플랜트에 쓰이는 설비를 제작하는 회사입니다.",
+      "열교환기·압력용기·탑류 등을 주문 생산합니다.",
+      "국내외 석유화학 고객의 설비 투자와 연관됩니다.",
+      "프로젝트 진행에 따라 공사·제품 매출을 인식합니다.",
+      "수주·원가와 함께 감사 강조사항·내부통제를 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "열교환기",
+        "desc": "플랜트 유체를 가열·냉각하는 설비를 제작합니다."
+      },
+      {
+        "name": "압력용기·탑류",
+        "desc": "고압 공정과 분리·추출 등에 쓰이는 설비를 공급합니다."
+      },
+      {
+        "name": "프로젝트 제작",
+        "desc": "고객 규격에 맞춰 설계·제작하고 국내외 현장에 납품합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "플랜트 발주",
+        "desc": "석유화학 고객의 투자와 신규 수주를 확인합니다."
+      },
+      {
+        "title": "제작 원가",
+        "desc": "강판·강관·인건비와 프로젝트 진행률을 비교합니다."
+      },
+      {
+        "title": "감사·내부통제",
+        "desc": "2025년 재무제표 감사는 적정이나 상장폐지 사유·개선기간 등이 강조됐고 내부회계관리제도 감사는 부적정이므로 관련 공시를 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.136623566311,
+        "op": 0.009474538202,
+        "net": 0.00234109426,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260528000864",
+          "rawKRW": {
+            "sales": "136623566311",
+            "op": "9474538202",
+            "net": "2341094260"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.133411972702,
+        "op": 0.010025825849,
+        "net": -0.002877621783,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260528000864",
+          "rawKRW": {
+            "sales": "133411972702",
+            "op": "10025825849",
+            "net": "-2877621783"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.035639784386,
+        "op": 0.004903253467,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003857",
+          "rawKRW": {
+            "sales": "35639784386",
+            "op": "4903253467",
+            "net": "-719373452"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.020362722576,
+        "op": 0.001234563844,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001723",
+          "rawKRW": {
+            "sales": "20362722576",
+            "op": "1234563844",
+            "net": "4597984190"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.01647641127,
+        "op": -0.00548345753,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20261007000316",
+          "rawKRW": {
+            "sales": "16476411270",
+            "op": "-5483457530",
+            "net": "-5810109449"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260528000864",
+      "published": "2026.05.28",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001723",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000316",
+      "published": "2026.10.07",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260528000864",
+      "published": "2026.05.28",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003857",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "DKME 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000316",
+      "published": "2026.10.07",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "audit-context",
+      "label": "DKME 최신 보고서 · 회계감사인의 의견 및 강조사항",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000316",
+      "published": "2026.10.07",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business",
+      "audit-context"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "플랜트",
+      "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
+    },
+    {
+      "name": "열교환기",
+      "desc": "서로 다른 유체 사이에 열을 전달하여 가열하거나 냉각하는 설비입니다."
+    },
+    {
+      "name": "강관",
+      "desc": "철강으로 만든 관입니다. 물·가스 등을 운반하는 배관이나 구조물을 지탱하는 재료로 사용합니다."
+    },
+    {
+      "name": "강판",
+      "desc": "철강을 판 모양으로 가공한 소재입니다. 강관·자동차 부품 등 여러 제품의 원료로 사용합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "폐지",
+      "desc": "사용 후 회수한 종이로, 제지업의 재활용 원료로 사용합니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "내부회계관리제도",
+      "desc": "재무정보를 신뢰할 수 있게 작성하기 위한 회사의 절차와 통제 체계입니다. 제도에 대한 감사의견과 재무제표 감사의견은 서로 다릅니다."
+    },
+    {
+      "name": "적정",
+      "desc": "감사인이 재무제표가 회계기준에 따라 중요하게 왜곡되지 않았다고 판단한 의견입니다. 투자 안전이나 미래 이익을 보증하는 뜻은 아닙니다."
+    },
+    {
+      "name": "부적정",
+      "desc": "감사 대상에 중요한 문제가 광범위하게 있다고 판단한 의견입니다. 이 페이지에서는 재무제표와 내부회계관리제도 중 어느 대상인지 함께 표시합니다."
+    },
+    {
+      "name": "감사 강조사항",
+      "desc": "감사인이 이용자의 주의를 끌기 위해 따로 설명한 사항입니다. 재무제표 감사의견 변경과 같은 뜻은 아닙니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

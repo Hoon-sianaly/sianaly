@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kec",
+    "name": "KEC",
+    "ticker": "092220",
+    "rank": 599,
+    "type": "전력·개별 반도체"
+  },
+  "overview": {
+    "short": "KEC는 전력·개별 반도체 제품을 제조하는 회사",
+    "summary": "KEC는 전력·개별 반도체 제품을 제조하는 회사입니다. 가전·자동차·전자기기 등에 쓰이는 반도체를 공급합니다.",
+    "takeaways": [
+      "KEC는 전력·개별 반도체 제품을 제조하는 회사입니다.",
+      "가전·자동차·전자기기 등에 쓰이는 반도체를 공급합니다.",
+      "트랜지스터와 집적회로 등 여러 제품을 판매합니다.",
+      "국내외 생산·영업 거점을 통해 고객에게 납품합니다.",
+      "전자제품 수요와 제품 구성, 공장 가동·개발 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "개별 반도체",
+        "desc": "전자기기의 신호·전력을 제어하는 소자를 생산합니다."
+      },
+      {
+        "name": "전력·집적회로",
+        "desc": "가전·자동차 등에 쓰이는 전력 반도체와 회로 제품을 공급합니다."
+      },
+      {
+        "name": "글로벌 생산·판매",
+        "desc": "국내외 생산시설과 영업망을 통해 제품을 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 수요",
+        "desc": "가전·자동차·전자 고객의 주문과 재고를 확인합니다."
+      },
+      {
+        "title": "제품 경쟁력",
+        "desc": "신규 제품 개발·고객 인증과 제품 구성을 봅니다."
+      },
+      {
+        "title": "가동·비용",
+        "desc": "생산 가동률과 설비·개발 지출·환율을 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.243169932842,
+        "op": -0.013271186259,
+        "net": -0.011002616347,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319000838",
+          "rawKRW": {
+            "sales": "243169932842",
+            "op": "-13271186259",
+            "net": "-11002616347"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.229616634285,
+        "op": -0.021762491386,
+        "net": -0.026570653402,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000580",
+          "rawKRW": {
+            "sales": "229616634285",
+            "op": "-21762491386",
+            "net": "-26570653402"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.059781486115,
+        "op": -0.00512803686,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001812",
+          "rawKRW": {
+            "sales": "59781486115",
+            "op": "-5128036860",
+            "net": "-3715165585"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.064330416788,
+        "op": -0.00483927686,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000602",
+          "rawKRW": {
+            "sales": "64330416788",
+            "op": "-4839276860",
+            "net": "-5050965652"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.067823572941,
+        "op": -0.003272334038,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260820000422",
+          "rawKRW": {
+            "sales": "67823572941",
+            "op": "-3272334038",
+            "net": "-2785577740"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000580",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000602",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000422",
+      "published": "2026.08.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000838",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001812",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "KEC 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260820000422",
+      "published": "2026.08.20",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장이나 설비가 생산 가능한 능력 중 실제로 사용하는 비율입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

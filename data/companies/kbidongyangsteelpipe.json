@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kbidongyangsteelpipe",
+    "name": "KBI동양철관",
+    "ticker": "008970",
+    "rank": 571,
+    "type": "강관·동합금"
+  },
+  "overview": {
+    "short": "KBI동양철관은 에너지·수도·건설용 강관을 제조하는 회사",
+    "summary": "KBI동양철관은 에너지·수도·건설용 강관을 제조하는 회사입니다. 가스관·송유관·상수도관과 구조용 강관 등을 공급합니다.",
+    "takeaways": [
+      "KBI동양철관은 에너지·수도·건설용 강관을 제조하는 회사입니다.",
+      "가스관·송유관·상수도관과 구조용 강관 등을 공급합니다.",
+      "풍력 하부구조물과 강관말뚝 등에도 제품이 사용됩니다.",
+      "연결 자회사의 동합금 관련 사업도 포함됩니다.",
+      "프로젝트 수주와 후판 등 원료비, 수출 납품 일정을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "에너지·수도 강관",
+        "desc": "가스·석유 수송과 상수도에 쓰는 강관을 생산합니다."
+      },
+      {
+        "name": "구조용 강관",
+        "desc": "건설·풍력·토목용 구조물과 강관말뚝 등을 공급합니다."
+      },
+      {
+        "name": "연결 소재",
+        "desc": "동합금 등 종속회사의 소재 사업이 함께 반영됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "프로젝트 수주",
+        "desc": "국내 인프라와 해외 에너지·건설 발주를 확인합니다."
+      },
+      {
+        "title": "원료·단가",
+        "desc": "강판 등 원재료 가격과 계약 판매가격 차이를 봅니다."
+      },
+      {
+        "title": "수출·회수",
+        "desc": "납품 일정과 환율, 프로젝트 대금 회수를 함께 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.25029748519,
+        "op": 0.006676989307,
+        "net": -0.019644237286,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000788",
+          "rawKRW": {
+            "sales": "250297485190",
+            "op": "6676989307",
+            "net": "-19644237286"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.234784294346,
+        "op": -0.001621771745,
+        "net": -0.003098551358,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001380",
+          "rawKRW": {
+            "sales": "234784294346",
+            "op": "-1621771745",
+            "net": "-3098551358"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.054854901549,
+        "op": -0.000166322035,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003515",
+          "rawKRW": {
+            "sales": "54854901549",
+            "op": "-166322035",
+            "net": "1902375638"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.067030082489,
+        "op": 0.004185427237,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000665",
+          "rawKRW": {
+            "sales": "67030082489",
+            "op": "4185427237",
+            "net": "1708073950"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.060304860128,
+        "op": -0.000082673199,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260930000528",
+          "rawKRW": {
+            "sales": "60304860128",
+            "op": "-82673199",
+            "net": "-2305687156"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001380",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000665",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000528",
+      "published": "2026.09.30",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000788",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003515",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "KBI동양철관 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000528",
+      "published": "2026.09.30",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "후판",
+      "desc": "두께가 두꺼운 강판으로, 선박과 산업 설비 등에 쓰입니다."
+    },
+    {
+      "name": "강관",
+      "desc": "철강으로 만든 관입니다. 물·가스 등을 운반하는 배관이나 구조물을 지탱하는 재료로 사용합니다."
+    },
+    {
+      "name": "강판",
+      "desc": "철강을 판 모양으로 가공한 소재입니다. 강관·자동차 부품 등 여러 제품의 원료로 사용합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "대금 회수",
+      "desc": "상품이나 서비스를 제공한 뒤 고객에게 받을 돈을 실제로 받는 것입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "송유관",
+      "desc": "석유 등을 운반하는 배관에 사용하는 관입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
