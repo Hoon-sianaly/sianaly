@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "shinhanglobalreit",
+    "name": "신한글로벌액티브리츠",
+    "ticker": "481850",
+    "rank": 800,
+    "type": "해외 부동산펀드 리츠"
+  },
+  "overview": {
+    "short": "신한글로벌액티브리츠는 해외 부동산펀드에 투자합니다.",
+    "summary": "신한글로벌액티브리츠는 해외 부동산펀드에 투자합니다. 자리츠를 통해 미국 부동산 관련 펀드 지분을 보유합니다.",
+    "takeaways": [
+      "신한글로벌액티브리츠는 해외 부동산펀드에 투자합니다.",
+      "자리츠를 통해 미국 부동산 관련 펀드 지분을 보유합니다.",
+      "배당·투자 수익을 바탕으로 자산을 운용합니다.",
+      "회계 평가손익·환헤지와 실제 배당 재원을 구분합니다.",
+      "2월·8월 6개월 결산과 같은 실제 3개월을 비교합니다."
+    ],
+    "business": [
+      {
+        "name": "해외 펀드",
+        "desc": "미국 정부청사·코어 부동산 관련 펀드 등에 투자합니다."
+      },
+      {
+        "name": "자리츠 구조",
+        "desc": "종속 리츠를 통해 펀드 지분을 보유합니다."
+      },
+      {
+        "name": "운용·배당",
+        "desc": "투자 배당·비용·환위험과 배당 재원을 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "투자 수익",
+        "desc": "펀드 배당·분배와 기초자산 운용을 확인합니다."
+      },
+      {
+        "title": "평가·환율",
+        "desc": "펀드 평가손익·환헤지·금융비용을 구분합니다."
+      },
+      {
+        "title": "결산·현금",
+        "desc": "6개월 결산과 같은 실제 기간을 비교하고 회계 이익과 현금 배당을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 연간 영역은 2월 종료 6개월 결산 · 12개월 연간 아님입니다. 회계상 이익·투자 평가손익과 실제 현금 배당 재원을 구분합니다.",
+    "quarterlyNote": "표시한 실제 기간의 각 3개월을 비교합니다. 최근 비교기간은 2026년 3~5월과 2025년 3~5월이며 달력상의 4~6월 분기와 다릅니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.003330184885,
+        "op": 0.002273075527,
+        "net": -0.00479745782,
+        "periodLabel": "2024.09–2025.02",
+        "reportPeriod": "2024.09–2025.02",
+        "reportedKRW": {
+          "sales": "3330184885",
+          "op": "2273075527",
+          "net": "-4797457820"
+        },
+        "sourceIds": [
+          "report-20260513000783"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.002254978556,
+        "op": 0.001437203692,
+        "net": -0.001471464538,
+        "periodLabel": "2025.09–2026.02",
+        "reportPeriod": "2025.09–2026.02",
+        "reportedKRW": {
+          "sales": "2254978556",
+          "op": "1437203692",
+          "net": "-1471464538"
+        },
+        "sourceIds": [
+          "report-20260513000783"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.001649342842,
+        "op": 0.001387408308,
+        "periodLabel": "2024.12–2025.02",
+        "reportPeriod": "2024.12–2025.02",
+        "reportedKRW": {
+          "sales": "1649342842",
+          "op": "1387408308"
+        },
+        "sourceIds": [
+          "report-20260513000783",
+          "report-20250114000252"
+        ],
+        "derivation": "six-month-minus-reported-three-month"
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.001748480078,
+        "op": 0.000980727061,
+        "periodLabel": "2025.03–05",
+        "reportPeriod": "2025.03–05",
+        "reportedKRW": {
+          "sales": "1748480078",
+          "op": "980727061"
+        },
+        "sourceIds": [
+          "report-20260114000393"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.001204727548,
+        "op": 0.000873923948,
+        "periodLabel": "2025.12–2026.02",
+        "reportPeriod": "2025.12–2026.02",
+        "reportedKRW": {
+          "sales": "1204727548",
+          "op": "873923948"
+        },
+        "sourceIds": [
+          "report-20260513000783",
+          "report-20260114000393"
+        ],
+        "derivation": "six-month-minus-reported-three-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.001300336057,
+        "op": 0.001153580988,
+        "periodLabel": "2026.03–05",
+        "reportPeriod": "2026.03–05",
+        "reportedKRW": {
+          "sales": "1300336057",
+          "op": "1153580988"
+        },
+        "sourceIds": [
+          "report-20260715000507"
+        ]
+      }
+    ],
+    "annualTerm": "6개월 결산",
+    "annualSourceLabel": "공식 2월 종료 6개월 결산 · 12개월 연간 아님",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "quarterlyCalendarNote": "2월·8월 6개월 결산 · 표시한 실제 12~2월 및 3~5월끼리 비교",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (배당·투자 등)",
+        "help": "자리츠·해외 부동산펀드 등에서 발생한 배당·투자 관련 영업수익입니다. 전체 펀드 자산이나 직접 임대료만의 매출과 다릅니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "같은 재무 범위의 영업비용을 차감한 이익입니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20260513000783",
+      "label": "신한글로벌액티브리츠 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000783",
+      "published": "2026.05.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20250114000252",
+      "label": "신한글로벌액티브리츠 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250114000252",
+      "published": "2025.01.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260114000393",
+      "label": "신한글로벌액티브리츠 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260114000393",
+      "published": "2026.01.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260715000507",
+      "label": "신한글로벌액티브리츠 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000507",
+      "published": "2026.07.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "신한글로벌액티브리츠 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000507",
+      "published": "2026.07.15",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "평가손익",
+      "desc": "자산·부채 등의 평가금액이 변하면서 인식한 이익이나 손실로, 실제 현금 유입·유출과 다를 수 있습니다."
+    },
+    {
+      "name": "리츠",
+      "desc": "여러 투자자의 자금을 모아 부동산 등에 투자하고 관련 수익을 배당하는 부동산투자회사입니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "재원",
+      "desc": "사업이나 지급에 필요한 돈의 원천입니다. 배당 재원과 회계상 순이익은 같지 않을 수 있습니다."
+    },
+    {
+      "name": "코어",
+      "desc": "전자장치에서 자기력·전력 변환 등을 돕는 중심 자성 부품을 뜻합니다."
+    },
+    {
+      "name": "자리츠",
+      "desc": "다른 리츠가 지분 등을 통해 투자하는 하위 부동산투자회사입니다."
+    },
+    {
+      "name": "환헤지",
+      "desc": "환율 변화에 따른 손실 위험을 줄이기 위해 반대 방향의 금융 거래 등을 하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

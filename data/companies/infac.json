@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "infac",
+    "name": "인팩",
+    "ticker": "023810",
+    "rank": 754,
+    "type": "자동차 제어부품"
+  },
+  "overview": {
+    "short": "인팩은 자동차 제어·전동화 부품을 공급합니다.",
+    "summary": "인팩은 자동차 제어·전동화 부품을 공급합니다. 액추에이터·밸브·컨트롤 케이블 등을 생산합니다.",
+    "takeaways": [
+      "인팩은 자동차 제어·전동화 부품을 공급합니다.",
+      "액추에이터·밸브·컨트롤 케이블 등을 생산합니다.",
+      "전자식 파킹브레이크 등 제어 부품도 만듭니다.",
+      "전력 전자 부품과 배터리팩 조립 사업을 운영합니다.",
+      "고객 차종 생산과 개발비·소재·해외 원가를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "제어부품",
+        "desc": "액추에이터·밸브·케이블·파킹브레이크 등을 생산합니다."
+      },
+      {
+        "name": "전동화",
+        "desc": "차량용 전력 전자 부품과 배터리 관련 제품을 공급합니다."
+      },
+      {
+        "name": "국내외 납품",
+        "desc": "완성차·모듈 고객을 위한 생산·공급망을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "차종 주문",
+        "desc": "주요 완성차 고객 생산·신규 차종 수주를 봅니다."
+      },
+      {
+        "title": "개발·전동화",
+        "desc": "신제품 개발·배터리 관련 양산 비용을 확인합니다."
+      },
+      {
+        "title": "제조·환율",
+        "desc": "소재·인건비·해외 환율을 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.563872906748,
+        "op": 0.020019051765,
+        "net": 0.007265498097,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001188",
+          "rawKRW": {
+            "sales": "563872906748",
+            "op": "20019051765",
+            "net": "7265498097"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.586443733483,
+        "op": 0.01978447584,
+        "net": 0.018086321564,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001188",
+          "rawKRW": {
+            "sales": "586443733483",
+            "op": "19784475840",
+            "net": "18086321564"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.148525651623,
+        "op": 0.010816633082,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003212",
+          "rawKRW": {
+            "sales": "148525651623",
+            "op": "10816633082",
+            "net": "7325575129"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.158135541505,
+        "op": 0.002012224563,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002881",
+          "rawKRW": {
+            "sales": "158135541505",
+            "op": "2012224563",
+            "net": "443920552"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.192102095287,
+        "op": 0.008545096717,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003827",
+          "rawKRW": {
+            "sales": "192102095287",
+            "op": "8545096717",
+            "net": "5052799534"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001188",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002881",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003827",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001188",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003212",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "인팩 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003827",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "양산",
+      "desc": "개발과 시험을 마친 제품을 판매·공급하기 위해 대량으로 생산하는 단계입니다."
+    },
+    {
+      "name": "전동화",
+      "desc": "기존 기계식 장치나 내연기관 기능을 전기·전자 장치로 전환하는 것입니다."
+    },
+    {
+      "name": "액추에이터",
+      "desc": "전기 등의 에너지를 움직임으로 바꾸는 부품으로, 여기서는 카메라 초점·보정용 구동부입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "배터리팩",
+      "desc": "여러 배터리 셀·모듈과 제어·보호장치 등을 묶은 배터리 시스템입니다."
+    },
+    {
+      "name": "밸브",
+      "desc": "공기·액체 등의 흐름을 열거나 막고 조절하는 부품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
