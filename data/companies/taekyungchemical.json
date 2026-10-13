@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "taekyungchemical",
+    "name": "태경케미컬",
+    "ticker": "006890",
+    "rank": 744,
+    "type": "탄산가스·환경소재"
+  },
+  "overview": {
+    "short": "태경케미컬은 산업용 가스와 환경 소재를 공급합니다.",
+    "summary": "태경케미컬은 산업용 가스와 환경 소재를 공급합니다. 액체탄산과 드라이아이스를 제조·판매합니다.",
+    "takeaways": [
+      "태경케미컬은 산업용 가스와 환경 소재를 공급합니다.",
+      "액체탄산과 드라이아이스를 제조·판매합니다.",
+      "질소·산소 등 일반 가스 상품도 유통합니다.",
+      "수산화마그네슘·액상소석회 등 환경 제품을 만듭니다.",
+      "원료 가스 확보와 계절 수요·물류비를 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "탄산가스",
+        "desc": "고순도 액체탄산·드라이아이스 등을 공급합니다."
+      },
+      {
+        "name": "일반가스",
+        "desc": "질소·산소 등 가스 상품과 관련 장치를 판매합니다."
+      },
+      {
+        "name": "환경소재",
+        "desc": "수산화마그네슘·액상소석회 등을 생산합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "가스 수요",
+        "desc": "조선·식품 등 고객 주문과 계절 수요를 봅니다."
+      },
+      {
+        "title": "원료 공급",
+        "desc": "원료 탄산가스 조달·저장 능력을 확인합니다."
+      },
+      {
+        "title": "제조·물류",
+        "desc": "전력·운송·원료 가격과 판매단가를 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.071116461803,
+        "op": 0.013705903914,
+        "net": 0.012630825085,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000825",
+          "rawKRW": {
+            "sales": "71116461803",
+            "op": "13705903914",
+            "net": "12630825085"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.061347896962,
+        "op": 0.002063376471,
+        "net": 0.008746862173,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260317000715",
+          "rawKRW": {
+            "sales": "61347896962",
+            "op": "2063376471",
+            "net": "8746862173"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.01471802863,
+        "op": 0.00076720857,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003440",
+          "rawKRW": {
+            "sales": "14718028630",
+            "op": "767208570",
+            "net": "1444612878"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.0139626425,
+        "op": -0.000653473275,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001984",
+          "rawKRW": {
+            "sales": "13962642500",
+            "op": "-653473275",
+            "net": "1731625439"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.012165420075,
+        "op": -0.001812765897,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000647",
+          "rawKRW": {
+            "sales": "12165420075",
+            "op": "-1812765897",
+            "net": "342647142"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000715",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001984",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000647",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000825",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003440",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "태경케미컬 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000647",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "드라이아이스",
+      "desc": "이산화탄소를 고체로 만든 냉각 소재입니다."
+    },
+    {
+      "name": "액체탄산",
+      "desc": "이산화탄소를 액화한 것으로 식품·산업 공정 등에 사용합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

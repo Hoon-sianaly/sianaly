@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "nk",
+    "name": "엔케이",
+    "ticker": "085310",
+    "rank": 708,
+    "type": "소화장치·고압용기"
+  },
+  "overview": {
+    "short": "엔케이는 소화장치와 고압가스 용기를 만드는 회사",
+    "summary": "엔케이는 소화장치와 고압가스 용기를 만드는 회사입니다. 선박·육상 설비의 화재 진압 장치를 공급합니다.",
+    "takeaways": [
+      "엔케이는 소화장치와 고압가스 용기를 만드는 회사입니다.",
+      "선박·육상 설비의 화재 진압 장치를 공급합니다.",
+      "산업용 고압가스 용기와 충전·검사 사업을 운영합니다.",
+      "선박 수처리·방산 부품·수소 관련 사업도 포함됩니다.",
+      "조선·산업 발주와 제작 원가·인증을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "소화장치",
+        "desc": "선박·육상 설비용 고정식·휴대식 소화장치를 공급합니다."
+      },
+      {
+        "name": "고압가스 용기",
+        "desc": "가스 용기 제조·충전·검사 등을 수행합니다."
+      },
+      {
+        "name": "특수·환경 장비",
+        "desc": "방산 부품·선박 수처리·수소 관련 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 발주",
+        "desc": "조선·방산·산업 고객의 장비 주문을 확인합니다."
+      },
+      {
+        "title": "제작·인증",
+        "desc": "금속·장치 원가와 제품 인증·납품 시점을 봅니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "부문별 수익과 신규 설비 투자·비용을 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.110936560917,
+        "op": -0.004824856791,
+        "net": -0.002244995396,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319000323",
+          "rawKRW": {
+            "sales": "110936560917",
+            "op": "-4824856791",
+            "net": "-2244995396"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.130102265815,
+        "op": -0.000647803589,
+        "net": -0.003694204031,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001528",
+          "rawKRW": {
+            "sales": "130102265815",
+            "op": "-647803589",
+            "net": "-3694204031"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.028559281454,
+        "op": 0.000340238473,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002784",
+          "rawKRW": {
+            "sales": "28559281454",
+            "op": "340238473",
+            "net": "-1677035358"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.031914326489,
+        "op": 0.000534042321,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001745",
+          "rawKRW": {
+            "sales": "31914326489",
+            "op": "534042321",
+            "net": "2917591535"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.036792105838,
+        "op": 0.003144228499,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003329",
+          "rawKRW": {
+            "sales": "36792105838",
+            "op": "3144228499",
+            "net": "3552445952"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001528",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001745",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003329",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000323",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002784",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "엔케이 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003329",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "방산",
+      "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

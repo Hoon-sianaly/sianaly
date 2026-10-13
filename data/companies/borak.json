@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "borak",
+    "name": "보락",
+    "ticker": "002760",
+    "rank": 728,
+    "type": "식품첨가물·원료의약품"
+  },
+  "overview": {
+    "short": "보락은 식품첨가물과 원료의약품을 만드는 회사",
+    "summary": "보락은 식품첨가물과 원료의약품을 만드는 회사입니다. 식품의 향·맛 등에 쓰이는 소재를 공급합니다.",
+    "takeaways": [
+      "보락은 식품첨가물과 원료의약품을 만드는 회사입니다.",
+      "식품의 향·맛 등에 쓰이는 소재를 공급합니다.",
+      "의약품 제조에 사용하는 원료도 생산합니다.",
+      "상품 판매와 임가공 등 수입도 있습니다.",
+      "부문별 매출총이익과 회사 전체 영업이익을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "식품첨가물",
+        "desc": "식품 향료·기능성 소재 등을 생산합니다."
+      },
+      {
+        "name": "원료의약품",
+        "desc": "의약품용 원료를 제조·판매합니다."
+      },
+      {
+        "name": "상품·임가공",
+        "desc": "상품 유통과 고객 원료 가공 등을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 주문",
+        "desc": "식품·제약 고객의 주문과 제품 구성을 봅니다."
+      },
+      {
+        "title": "원재료",
+        "desc": "원료 가격·환율과 판매가격을 비교합니다."
+      },
+      {
+        "title": "이익 구분",
+        "desc": "부문 매출총이익에서 공통 판매관리비가 추가로 차감됨을 확인합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.047600285853,
+        "op": -0.001791904067,
+        "net": -0.001509722957,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321000822",
+          "rawKRW": {
+            "sales": "47600285853",
+            "op": "-1791904067",
+            "net": "-1509722957"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.050115779158,
+        "op": 0.00223012483,
+        "net": 0.002339631891,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000334",
+          "rawKRW": {
+            "sales": "50115779158",
+            "op": "2230124830",
+            "net": "2339631891"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.013733592112,
+        "op": 0.000890696048,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813000458",
+          "rawKRW": {
+            "sales": "13733592112",
+            "op": "890696048",
+            "net": "1050109395"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.011206671007,
+        "op": 0.000557322015,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260513000143",
+          "rawKRW": {
+            "sales": "11206671007",
+            "op": "557322015",
+            "net": "542935275"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.01249125345,
+        "op": 0.000683208385,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000418",
+          "rawKRW": {
+            "sales": "12491253450",
+            "op": "683208385",
+            "net": "931067450"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000334",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000143",
+      "published": "2026.05.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000418",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321000822",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813000458",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "보락 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000418",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "원료의약품",
+      "desc": "완제의약품의 약효를 내는 성분으로 사용되는 원료입니다."
+    },
+    {
+      "name": "기능성",
+      "desc": "일반 제품의 기본 용도에 더해 특정 성능이나 사용 목적에 맞춘 특성을 뜻합니다."
+    },
+    {
+      "name": "임가공",
+      "desc": "고객의 원료나 반제품을 받아 가공하고 가공비를 받는 사업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "woongjinthinkbig",
+    "name": "웅진씽크빅",
+    "ticker": "095720",
+    "rank": 715,
+    "type": "교육·출판 플랫폼"
+  },
+  "overview": {
+    "short": "웅진씽크빅은 어린이 학습과 출판 서비스를 제공합니다.",
+    "summary": "웅진씽크빅은 어린이 학습과 출판 서비스를 제공합니다. 학습지·학습센터와 스마트 학습 프로그램을 운영합니다.",
+    "takeaways": [
+      "웅진씽크빅은 어린이 학습과 출판 서비스를 제공합니다.",
+      "학습지·학습센터와 스마트 학습 프로그램을 운영합니다.",
+      "북클럽 등 독서·전집 서비스를 제공합니다.",
+      "연결 회사의 도서유통·물류·영어교육 등이 포함됩니다.",
+      "학습 회원·콘텐츠 비용과 유통 마진을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "학습관리",
+        "desc": "방문·센터·태블릿 기반 학습 서비스를 제공합니다."
+      },
+      {
+        "name": "독서·출판",
+        "desc": "북클럽·전집·단행본 등 독서·출판 사업을 운영합니다."
+      },
+      {
+        "name": "관련 교육·유통",
+        "desc": "도서유통·물류·영어교육 등 연결 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "회원 매출",
+        "desc": "학습·독서 회원과 상품 구성을 확인합니다."
+      },
+      {
+        "title": "콘텐츠 비용",
+        "desc": "교사·콘텐츠·기기·마케팅 비용을 비교합니다."
+      },
+      {
+        "title": "유통·신사업",
+        "desc": "도서유통 마진과 디지털 교육 투자비를 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.867180219415,
+        "op": 0.009246662221,
+        "net": -0.01986744499,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001745",
+          "rawKRW": {
+            "sales": "867180219415",
+            "op": "9246662221",
+            "net": "-19867444990"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.797357375468,
+        "op": -0.010455696547,
+        "net": -0.022681388179,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001421",
+          "rawKRW": {
+            "sales": "797357375468",
+            "op": "-10455696547",
+            "net": "-22681388179"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.205913340191,
+        "op": 0.003558316454,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004164",
+          "rawKRW": {
+            "sales": "205913340191",
+            "op": "3558316454",
+            "net": "-77886432"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.179575267246,
+        "op": -0.003370509126,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002027",
+          "rawKRW": {
+            "sales": "179575267246",
+            "op": "-3370509126",
+            "net": "-4234262228"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.190878290191,
+        "op": 0.003808431346,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004136",
+          "rawKRW": {
+            "sales": "190878290191",
+            "op": "3808431346",
+            "net": "1117116826"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001421",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002027",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004136",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001745",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004164",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "웅진씽크빅 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004136",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "플랫폼",
+      "desc": "여러 제품·기술을 개발하거나 서비스를 제공하는 데 활용하는 공통 기반입니다. 여기서는 약물 전달 등 기술 기반을 뜻합니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 관련 비용 사이의 차이 또는 이익의 정도입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "yuhanpref",
+    "name": "유한양행우",
+    "ticker": "000105",
+    "rank": 688,
+    "type": "유한양행 우선주"
+  },
+  "overview": {
+    "short": "유한양행우는 유한양행의 우선주",
+    "summary": "유한양행우는 유한양행의 우선주입니다. 의약품과 원료의약품을 판매하고 신약을 개발하는 회사입니다.",
+    "takeaways": [
+      "유한양행우는 유한양행의 우선주입니다.",
+      "의약품과 원료의약품을 판매하고 신약을 개발하는 회사입니다.",
+      "의약품: 전문·일반 의약품을 판매합니다.",
+      "표시한 매출·이익은 본주 회사 전체 실적이며 우선주만의 별도 실적이 아닙니다.",
+      "배당·의결권 등 종목별 조건과 회사 사업 성과를 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "의약품",
+        "desc": "전문·일반 의약품을 판매합니다."
+      },
+      {
+        "name": "원료·해외",
+        "desc": "원료의약품 등 제품을 국내외에 공급합니다."
+      },
+      {
+        "name": "신약 개발",
+        "desc": "신약 연구와 기술이전 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매",
+        "desc": "처방·판매 규모와 제품 구성 변화가 중요합니다."
+      },
+      {
+        "title": "기술이전",
+        "desc": "계약금·단계별 수입과 판매 연계 수익을 구분해야 합니다."
+      },
+      {
+        "title": "연구·원가",
+        "desc": "연구개발 비용과 의약품 생산·판매 비용을 함께 봐야 합니다."
+      },
+      {
+        "title": "우선주 조건",
+        "desc": "배당·의결권 등 종목별 조건과 회사 사업 실적은 구분합니다."
+      }
+    ],
+    "financialNote": "본주 회사 전체의 재무 실적을 공유합니다. 우선주만의 별도 매출·영업이익이 아닙니다.",
+    "financialCompanyName": "유한양행"
+  },
+  "market": {},
+  "financials": {
+    "companyRef": "yuhan"
+  },
+  "sources": [
+    {
+      "id": "annual",
+      "label": "유한양행 2025년 사업보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260312001236",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "q2",
+      "label": "유한양행 2026년 반기보고서 — 금융감독원 XBRL 재무제표",
+      "url": "https://opendart.fss.or.kr/xbrl/viewer/main.do?rcpNo=20260814002038",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.07"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001236",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515000958",
+      "published": "2025.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003301",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002331",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002038",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.08"
+    },
+    {
+      "id": "business-reviewed-2026",
+      "label": "유한양행 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002038",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.09"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business-reviewed-2026"
+    ],
+    "drivers": [
+      "q2",
+      "business-reviewed-2026"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "기술이전",
+      "desc": "개발한 기술을 다른 회사가 사용·개발·판매할 수 있도록 권리를 넘기거나 허용하는 계약입니다."
+    },
+    {
+      "name": "원료의약품",
+      "desc": "완제의약품의 약효를 내는 성분으로 사용되는 원료입니다."
+    },
+    {
+      "name": "우선주",
+      "desc": "보통주와 배당·잔여재산 분배 등에서 권리가 다른 종류주식입니다. 구체적인 권리는 발행 조건을 확인해야 합니다."
+    },
+    {
+      "name": "의결권",
+      "desc": "주주총회 안건에 찬성·반대 의사를 표시할 수 있는 권리입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

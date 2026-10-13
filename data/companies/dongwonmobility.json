@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dongwonmobility",
+    "name": "동원모빌리티",
+    "ticker": "018500",
+    "rank": 725,
+    "type": "자동차 차체부품"
+  },
+  "overview": {
+    "short": "동원모빌리티는 자동차 차체부품을 생산하는 회사",
+    "summary": "동원모빌리티는 자동차 차체부품을 생산하는 회사입니다. 문틀 등 차량 구조 관련 부품을 공급합니다.",
+    "takeaways": [
+      "동원모빌리티는 자동차 차체부품을 생산하는 회사입니다.",
+      "문틀 등 차량 구조 관련 부품을 공급합니다.",
+      "국내외 완성차 고객의 생산에 맞춰 납품합니다.",
+      "산업용 강관 등 사업도 운영합니다.",
+      "3월 결산의 연간 실적과 실제 분기 기간을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "차량부품",
+        "desc": "자동차 문틀 등 차체 관련 부품을 생산합니다."
+      },
+      {
+        "name": "해외 생산",
+        "desc": "완성차 고객에 맞춘 해외 생산·납품망을 운영합니다."
+      },
+      {
+        "name": "강관",
+        "desc": "산업·건설·부품용 강관 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "차종 생산",
+        "desc": "주요 완성차 고객의 생산량과 납품 차종을 봅니다."
+      },
+      {
+        "title": "제조 원가",
+        "desc": "철강·인건비·운송비와 해외 환율을 비교합니다."
+      },
+      {
+        "title": "결산 기간",
+        "desc": "4월부터 다음 해 3월까지의 결산과 달력 분기를 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 3월 종료 12개월 결산입니다. 분기는 실제 달력 3개월이며 1~3월은 연간에서 앞선 9개월을 원 단위로 차감했습니다.",
+    "quarterlyNote": "공식 손익계산서의 실제 달력 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.626236089125,
+        "op": 0.041985529628,
+        "net": 0.021164182872,
+        "periodLabel": "2024.04–2025.03",
+        "reportPeriod": "2024.04–2025.03",
+        "reportedKRW": {
+          "sales": "626236089125",
+          "op": "41985529628",
+          "net": "21164182872"
+        },
+        "sourceIds": [
+          "report-20260622000166"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.65953750161,
+        "op": 0.0350079168,
+        "net": 0.039044927549,
+        "periodLabel": "2025.04–2026.03",
+        "reportPeriod": "2025.04–2026.03",
+        "reportedKRW": {
+          "sales": "659537501610",
+          "op": "35007916800",
+          "net": "39044927549"
+        },
+        "sourceIds": [
+          "report-20260622000166"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.163172807518,
+        "op": 0.0154224202,
+        "periodLabel": "2025.01–03",
+        "reportPeriod": "2025.01–03",
+        "reportedKRW": {
+          "sales": "163172807518",
+          "op": "15422420200"
+        },
+        "sourceIds": [
+          "report-20260622000166",
+          "report-20260213002833"
+        ],
+        "derivation": "annual-minus-first-nine-month"
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.168011332257,
+        "op": 0.013053102374,
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06",
+        "reportedKRW": {
+          "sales": "168011332257",
+          "op": "13053102374"
+        },
+        "sourceIds": [
+          "report-20260814002059"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.178815012796,
+        "op": 0.006061280672,
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03",
+        "reportedKRW": {
+          "sales": "178815012796",
+          "op": "6061280672"
+        },
+        "sourceIds": [
+          "report-20260622000166",
+          "report-20260213002833"
+        ],
+        "derivation": "annual-minus-first-nine-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.193668847572,
+        "op": 0.014414948492,
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06",
+        "reportedKRW": {
+          "sales": "193668847572",
+          "op": "14414948492"
+        },
+        "sourceIds": [
+          "report-20260814002059"
+        ]
+      }
+    ],
+    "annualTerm": "12개월 결산",
+    "annualSourceLabel": "공식 3월 종료 12개월 결산",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "quarterlyCalendarNote": "3월 결산 · 1~3월은 연간 값에서 앞선 9개월을 원 단위로 차감"
+  },
+  "sources": [
+    {
+      "id": "report-20260622000166",
+      "label": "동원모빌리티 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260622000166",
+      "published": "2026.06.22",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260213002833",
+      "label": "동원모빌리티 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213002833",
+      "published": "2026.02.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260814002059",
+      "label": "동원모빌리티 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002059",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "동원모빌리티 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002059",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "모빌리티",
+      "desc": "사람이나 물건의 이동과 관련된 기술·제품·서비스·사업입니다. 차량과 이동 서비스를 포함합니다."
+    },
+    {
+      "name": "강관",
+      "desc": "철강을 관 형태로 만든 제품입니다. 건설·기계·배관 등에 쓰입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

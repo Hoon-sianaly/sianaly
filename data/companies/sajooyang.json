@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sajooyang",
+    "name": "사조오양",
+    "ticker": "006090",
+    "rank": 669,
+    "type": "가공식품·수산"
+  },
+  "overview": {
+    "short": "사조오양은 가공식품과 수산물 사업을 운영하는 회사",
+    "summary": "사조오양은 가공식품과 수산물 사업을 운영하는 회사입니다. 맛살 등 수산가공품과 햄·소시지 등을 생산합니다.",
+    "takeaways": [
+      "사조오양은 가공식품과 수산물 사업을 운영하는 회사입니다.",
+      "맛살 등 수산가공품과 햄·소시지 등을 생산합니다.",
+      "선박을 통해 참치·명태 등 수산물을 어획·판매합니다.",
+      "식품 생산과 수산·임대 등 사업을 함께 운영합니다.",
+      "어획량·식품 판매와 원료·연료 비용을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "가공식품",
+        "desc": "맛살·햄·소시지 등 식품을 제조·판매합니다."
+      },
+      {
+        "name": "수산물",
+        "desc": "참치·명태 등 수산물을 어획하고 판매합니다."
+      },
+      {
+        "name": "기타",
+        "desc": "부동산 임대 등 관련 수익 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "식품 수요",
+        "desc": "식품 고객 주문과 제품 구성을 확인합니다."
+      },
+      {
+        "title": "어획·시세",
+        "desc": "어획량·수산물 가격과 조업 여건을 봅니다."
+      },
+      {
+        "title": "원료·연료",
+        "desc": "어육·육류 원료와 선박 연료·물류비를 비교합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.40069683798,
+        "op": 0.020898559487,
+        "net": 0.012647900196,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250703000352",
+          "rawKRW": {
+            "sales": "400696837980",
+            "op": "20898559487",
+            "net": "12647900196"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.417363807366,
+        "op": 0.013516897643,
+        "net": 0.010582107463,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001080",
+          "rawKRW": {
+            "sales": "417363807366",
+            "op": "13516897643",
+            "net": "10582107463"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.100747046407,
+        "op": 0.005909900272,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002081",
+          "rawKRW": {
+            "sales": "100747046407",
+            "op": "5909900272",
+            "net": "7059838746"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.105227544055,
+        "op": 0.006947655678,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002111",
+          "rawKRW": {
+            "sales": "105227544055",
+            "op": "6947655678",
+            "net": "4701292487"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.09211710693,
+        "op": 0.000475656988,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003382",
+          "rawKRW": {
+            "sales": "92117106930",
+            "op": "475656988",
+            "net": "2150486804"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001080",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002111",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003382",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250703000352",
+      "published": "2025.07.03",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002081",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "사조오양 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003382",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "가공식품",
+      "desc": "원재료를 조리·가공해 만든 식품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

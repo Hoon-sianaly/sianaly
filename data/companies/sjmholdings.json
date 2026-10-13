@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sjmholdings",
+    "name": "SJM홀딩스",
+    "ticker": "025530",
+    "rank": 748,
+    "type": "차량·산업부품 지주회사"
+  },
+  "overview": {
+    "short": "SJM홀딩스는 부품회사를 보유한 지주회사",
+    "summary": "SJM홀딩스는 부품회사를 보유한 지주회사입니다. 자회사가 자동차 배기계의 진동을 줄이는 부품을 만듭니다.",
+    "takeaways": [
+      "SJM홀딩스는 부품회사를 보유한 지주회사입니다.",
+      "자회사가 자동차 배기계의 진동을 줄이는 부품을 만듭니다.",
+      "산업 배관의 열변형·진동을 흡수하는 이음쇠도 공급합니다.",
+      "통신용 반도체와 금융투자 등 사업이 포함됩니다.",
+      "차량 생산과 플랜트 수주·자회사 손익을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "자동차부품",
+        "desc": "배기계 진동을 흡수하는 연결 부품 등을 생산합니다."
+      },
+      {
+        "name": "산업용 부품",
+        "desc": "건축·플랜트 배관의 신축이음쇠를 공급합니다."
+      },
+      {
+        "name": "기타 자회사",
+        "desc": "통신용 반도체·신기술 금융투자 등을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "차량 생산",
+        "desc": "완성차 생산과 해외 부품 주문을 확인합니다."
+      },
+      {
+        "title": "산업 수주",
+        "desc": "플랜트·건축 고객의 배관부품 주문을 봅니다."
+      },
+      {
+        "title": "자회사 손익",
+        "desc": "소재·환율과 반도체·금융투자 손익을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.206195488625,
+        "op": 0.013718784595,
+        "net": 0.021274136884,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001596",
+          "rawKRW": {
+            "sales": "206195488625",
+            "op": "13718784595",
+            "net": "21274136884"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.205798697216,
+        "op": 0.01055112147,
+        "net": 0.014571238731,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001165",
+          "rawKRW": {
+            "sales": "205798697216",
+            "op": "10551121470",
+            "net": "14571238731"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.049760659563,
+        "op": 0.004547916725,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003788",
+          "rawKRW": {
+            "sales": "49760659563",
+            "op": "4547916725",
+            "net": "1720444332"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.054300592413,
+        "op": 0.003196947818,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002919",
+          "rawKRW": {
+            "sales": "54300592413",
+            "op": "3196947818",
+            "net": "7865462602"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.053592693027,
+        "op": 0.004908278351,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003749",
+          "rawKRW": {
+            "sales": "53592693027",
+            "op": "4908278351",
+            "net": "10549120349"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001165",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002919",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003749",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001596",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003788",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "SJM홀딩스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003749",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "플랜트",
+      "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
+    },
+    {
+      "name": "지주회사",
+      "desc": "다른 회사의 주식을 보유해 계열사를 지배·관리하는 회사입니다. 자체 사업을 함께 운영하기도 합니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "신축이음쇠",
+      "desc": "온도·압력·진동 등에 따른 배관의 길이 변화를 흡수하는 연결 부품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

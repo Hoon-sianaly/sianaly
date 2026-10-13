@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hojeon",
+    "name": "호전실업",
+    "ticker": "111110",
+    "rank": 737,
+    "type": "기능성 의류 위탁생산"
+  },
+  "overview": {
+    "short": "호전실업은 글로벌 브랜드의 의류를 위탁 생산합니다.",
+    "summary": "호전실업은 글로벌 브랜드의 의류를 위탁 생산합니다. 스포츠웨어와 기능성 아웃웨어가 주요 제품입니다.",
+    "takeaways": [
+      "호전실업은 글로벌 브랜드의 의류를 위탁 생산합니다.",
+      "스포츠웨어와 기능성 아웃웨어가 주요 제품입니다.",
+      "고객 브랜드의 주문에 맞춰 제품을 만듭니다.",
+      "해외 생산법인을 통해 완성 의류를 수출합니다.",
+      "브랜드 주문과 원단·인건비·환율을 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "스포츠웨어",
+        "desc": "글로벌 브랜드의 운동용 의류를 생산합니다."
+      },
+      {
+        "name": "기능성 의류",
+        "desc": "아웃웨어·유니폼 등 기능성 제품을 공급합니다."
+      },
+      {
+        "name": "해외 생산",
+        "desc": "해외 공장에서 주문 의류를 생산·수출합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "브랜드 주문",
+        "desc": "주요 고객 주문과 시즌별 납품을 확인합니다."
+      },
+      {
+        "title": "원단·생산비",
+        "desc": "기능성 원단·부자재·인건비를 비교합니다."
+      },
+      {
+        "title": "수출 운영",
+        "desc": "해외 가동·물류·환율과 고객 집중도를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.463972606649,
+        "op": 0.029520188293,
+        "net": 0.023167875468,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250331002554",
+          "rawKRW": {
+            "sales": "463972606649",
+            "op": "29520188293",
+            "net": "23167875468"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.52087782523,
+        "op": 0.025021864468,
+        "net": 0.011295797806,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260330001610",
+          "rawKRW": {
+            "sales": "520877825230",
+            "op": "25021864468",
+            "net": "11295797806"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.114839491942,
+        "op": 0.00024134934,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003880",
+          "rawKRW": {
+            "sales": "114839491942",
+            "op": "241349340",
+            "net": "-7542412697"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.089200812253,
+        "op": -0.001434462313,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515003128",
+          "rawKRW": {
+            "sales": "89200812253",
+            "op": "-1434462313",
+            "net": "585066108"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.110981607414,
+        "op": 0.004354117398,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003999",
+          "rawKRW": {
+            "sales": "110981607414",
+            "op": "4354117398",
+            "net": "303299068"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330001610",
+      "published": "2026.03.30",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515003128",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003999",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250331002554",
+      "published": "2025.03.31",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003880",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "호전실업 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003999",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "위탁생산",
+      "desc": "다른 회사의 의뢰에 따라 제품을 제조하는 방식입니다."
+    },
+    {
+      "name": "원단",
+      "desc": "옷 등을 만들기 전 단계의 천으로, 의류 제조에 사용하는 재료입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "기능성",
+      "desc": "일반 제품의 기본 용도에 더해 특정 성능이나 사용 목적에 맞춘 특성을 뜻합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "moorimpaper",
+    "name": "무림페이퍼",
+    "ticker": "009200",
+    "rank": 724,
+    "type": "제지·펄프"
+  },
+  "overview": {
+    "short": "무림페이퍼는 종이와 펄프를 생산하는 회사",
+    "summary": "무림페이퍼는 종이와 펄프를 생산하는 회사입니다. 인쇄용지 등 제지 제품을 공급합니다.",
+    "takeaways": [
+      "무림페이퍼는 종이와 펄프를 생산하는 회사입니다.",
+      "인쇄용지 등 제지 제품을 공급합니다.",
+      "연결회사를 통해 종이 원료인 펄프도 생산합니다.",
+      "금융·도매·에너지·골프장 등 사업도 포함됩니다.",
+      "종이·펄프 가격과 원료·에너지 비용을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "제지",
+        "desc": "인쇄·산업용 종이와 관련 제품을 생산합니다."
+      },
+      {
+        "name": "펄프",
+        "desc": "제지 원료와 친환경 소재용 펄프를 공급합니다."
+      },
+      {
+        "name": "금융·기타",
+        "desc": "금융·도매·증기·전기·골프장 등 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 가격",
+        "desc": "종이·펄프 수요와 판매가격을 확인합니다."
+      },
+      {
+        "title": "투입 비용",
+        "desc": "목재칩·에너지·수입 원료와 환율을 비교합니다."
+      },
+      {
+        "title": "부문별 손익",
+        "desc": "제지·펄프와 금융·기타 사업 실적을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.384380090169,
+        "op": 0.089393682541,
+        "net": 0.049346227594,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000368",
+          "rawKRW": {
+            "sales": "1384380090169",
+            "op": "89393682541",
+            "net": "49346227594"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.264911879644,
+        "op": 0.005950945189,
+        "net": -0.023243968507,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316001269",
+          "rawKRW": {
+            "sales": "1264911879644",
+            "op": "5950945189",
+            "net": "-23243968507"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.300204516587,
+        "op": 0.009844691964,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004270",
+          "rawKRW": {
+            "sales": "300204516587",
+            "op": "9844691964",
+            "net": "4961770020"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.307389569338,
+        "op": 0.000159306981,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002819",
+          "rawKRW": {
+            "sales": "307389569338",
+            "op": "159306981",
+            "net": "-7767272336"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.337689478715,
+        "op": 0.028030884349,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003899",
+          "rawKRW": {
+            "sales": "337689478715",
+            "op": "28030884349",
+            "net": "-58217253264"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001269",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002819",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003899",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000368",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004270",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "무림페이퍼 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003899",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "펄프",
+      "desc": "목재 등의 섬유질을 분리해 만든 종이의 주원료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

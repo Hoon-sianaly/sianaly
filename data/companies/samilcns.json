@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samilcns",
+    "name": "삼일씨엔에스",
+    "ticker": "004440",
+    "rank": 709,
+    "type": "콘크리트·풍력 구조물"
+  },
+  "overview": {
+    "short": "삼일씨엔에스는 콘크리트와 철구조물을 생산하는 회사",
+    "summary": "삼일씨엔에스는 콘크리트와 철구조물을 생산하는 회사입니다. 건축물 하중을 지반으로 전달하는 콘크리트 파일을 공급합니다.",
+    "takeaways": [
+      "삼일씨엔에스는 콘크리트와 철구조물을 생산하는 회사입니다.",
+      "건축물 하중을 지반으로 전달하는 콘크리트 파일을 공급합니다.",
+      "공장 제작 콘크리트 구조물 사업도 수행합니다.",
+      "교량·해상풍력 구조물과 골재 등도 생산합니다.",
+      "건설·풍력 수주와 자재·제작 원가를 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "콘크리트",
+        "desc": "건축 기초용 파일과 공장 제작 구조물을 생산합니다."
+      },
+      {
+        "name": "풍력·철구조물",
+        "desc": "교량·해상풍력 등 철구조물을 제작합니다."
+      },
+      {
+        "name": "골재",
+        "desc": "건축·토목에 쓰이는 골재 등을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 수요",
+        "desc": "신축·기반시설 투자와 파일 주문을 확인합니다."
+      },
+      {
+        "title": "풍력 수주",
+        "desc": "풍력 프로젝트 계약·제작·납품 진행을 봅니다."
+      },
+      {
+        "title": "원가·가동",
+        "desc": "시멘트·철강·에너지·인건비와 설비 가동을 비교합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.221295516428,
+        "op": -0.001674561213,
+        "net": -0.002013922758,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001188",
+          "rawKRW": {
+            "sales": "221295516428",
+            "op": "-1674561213",
+            "net": "-2013922758"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.223128675519,
+        "op": 0.004995949054,
+        "net": 0.001494100183,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000312",
+          "rawKRW": {
+            "sales": "223128675519",
+            "op": "4995949054",
+            "net": "1494100183"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.058012355907,
+        "op": 0.002330601223,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000934",
+          "rawKRW": {
+            "sales": "58012355907",
+            "op": "2330601223",
+            "net": "1224591355"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.03995308507,
+        "op": 0.00130617294,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001771",
+          "rawKRW": {
+            "sales": "39953085070",
+            "op": "1306172940",
+            "net": "540571549"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.079595802515,
+        "op": 0.002470959925,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001008",
+          "rawKRW": {
+            "sales": "79595802515",
+            "op": "2470959925",
+            "net": "1781582967"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000312",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001771",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001008",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001188",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000934",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "삼일씨엔에스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001008",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "골재",
+      "desc": "콘크리트 등에 넣는 모래·자갈 등의 재료입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -40,8 +40,10 @@ function context(key, transform, failed = false) {
    }
    assert.ok(out.includes(`href="#company-${id}"`) && out.includes(`id="company-${id}"`),`${entry.key}/${id}`);
   }
-  const pending=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8")).financials.availability?.status === "awaiting-first-report";
-  assert.equal((out.match(/class="vertical-chart(?: [^"]*)?"/g)||[]).length,pending?0:4);
+  let effectiveFinancials=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8")).financials;
+  while(effectiveFinancials.companyRef)effectiveFinancials=JSON.parse(fs.readFileSync(path.join(root,"data/companies",effectiveFinancials.companyRef+".json"),"utf8")).financials;
+  const pending=effectiveFinancials.availability?.status === "awaiting-first-report";
+  assert.equal((out.match(/class="vertical-chart(?: [^"]*)?"/g)||[]).length,pending?0:4,entry.key+' original charts');
   assert.ok(out.indexOf('id="company-quarterly"')<out.indexOf('id="company-annual"'),entry.key+' latest quarters precede annual history');
   assert.ok(out.indexOf('href="#company-quarterly"')<out.indexOf('href="#company-annual"'),entry.key+' navigation follows section order');
   assert.ok(!out.includes('paired-chart'),entry.key+' keeps the original vertical charts');
