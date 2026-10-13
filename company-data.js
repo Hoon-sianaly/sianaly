@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261010-numbers500-1";
+const COMPANY_DATA_VERSION = "20261013-glossary-basis-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -88,7 +88,7 @@ function companyPageData(record) {
   latestAnnualSourceId:latest?.sourceIds[0],
   quarterlySourceIds:[...new Set(quarterly.flatMap(row => row.sourceIds))],
   sectionSourceIds:record.sectionSourceIds,
-  glossary:record.glossary, presentation:record.presentation
+  glossary:record.glossary.filter(term => term.name.replace(/\s/g, "") !== "연결기준"), presentation:record.presentation
  };
 }
 

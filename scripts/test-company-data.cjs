@@ -35,7 +35,7 @@ function context(key, transform, failed = false) {
   assert.ok(out.includes(entry.name),entry.key);
   for (const id of ["intro","business","annual","quarterly","drivers","glossary"]) {
    const record=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8"));
-   if(id==='glossary'&&record.presentation.compact&&!record.glossary.length){
+   if(id==='glossary'&&record.presentation.compact&&!record.glossary.some(term=>term.name.replace(/\s/g,'')!=='연결기준')){
     assert.ok(!out.includes('href="#company-glossary"')&&!out.includes('id="company-glossary"'),entry.key+'/empty glossary');continue;
    }
    assert.ok(out.includes(`href="#company-${id}"`) && out.includes(`id="company-${id}"`),`${entry.key}/${id}`);
