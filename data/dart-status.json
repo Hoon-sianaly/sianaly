@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-10-13",
-  "stocks": 890,
-  "issuers": 824,
-  "automaticIssuers": 752,
-  "fullyValidatedIssuers": 643,
+  "stocks": 941,
+  "issuers": 830,
+  "automaticIssuers": 756,
+  "fullyValidatedIssuers": 647,
   "partiallyValidatedIssuers": 109,
-  "reviewIssuers": 72,
-  "sharedStocks": 66,
+  "reviewIssuers": 74,
+  "sharedStocks": 111,
   "companies": [
     {
       "key": "samsung",
@@ -35264,6 +35264,538 @@
         ],
         "reasons": []
       }
+    },
+    {
+      "key": "daewonchemical",
+      "ticker": "024890",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-13",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260702000206"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000588"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003150"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320001317"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814002417"
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "key": "anp",
+      "ticker": "015260",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-13",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000919"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515002213"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001901"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001897"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001933"
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "key": "dynamicdesign",
+      "ticker": "145210",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-13",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001749"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260514000080"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002665"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250321001537"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814000005"
+          }
+        ],
+        "reasons": [
+          "2025년 별도·연결 한정의견 및 투자자산 기초 잔액·평가손익 감사범위 제한 수동 검토"
+        ]
+      }
+    },
+    {
+      "key": "jooyontech",
+      "ticker": "044380",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-13",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000699"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515000404"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000944"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250320000220"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250813001409"
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "key": "shd",
+      "ticker": "001770",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-13",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000401"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001146"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001585"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250318000112"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001464"
+          }
+        ],
+        "reasons": []
+      }
+    },
+    {
+      "key": "hanchang",
+      "ticker": "005110",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-13",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260326001334"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "validated",
+            "receipt": "20260515001018"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001177"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20250801000425"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20250814001856"
+          }
+        ],
+        "reasons": [
+          "2026년 반기 의견거절·계속기업 불확실성·상장폐지 결정 후속절차 수동 검토"
+        ]
+      }
+    },
+    {
+      "key": "gcholdingspref005257",
+      "ticker": "005257",
+      "mode": "shared",
+      "companyRef": "gcholdings"
+    },
+    {
+      "key": "kolonholdingpref002025",
+      "ticker": "002025",
+      "mode": "shared",
+      "companyRef": "kolonholding"
+    },
+    {
+      "key": "hitejinropref000087",
+      "ticker": "000087",
+      "mode": "shared",
+      "companyRef": "hitejinro"
+    },
+    {
+      "key": "tscorporationpref001795",
+      "ticker": "001795",
+      "mode": "shared",
+      "companyRef": "tscorporation"
+    },
+    {
+      "key": "daeduckholdingspref00806k",
+      "ticker": "00806K",
+      "mode": "shared",
+      "companyRef": "daeduckholdings"
+    },
+    {
+      "key": "koreacircuitpref00781k",
+      "ticker": "00781K",
+      "mode": "shared",
+      "companyRef": "koreacircuit"
+    },
+    {
+      "key": "daesangholdingspref084695",
+      "ticker": "084695",
+      "mode": "shared",
+      "companyRef": "daesangholdings"
+    },
+    {
+      "key": "samyangcorppref145995",
+      "ticker": "145995",
+      "mode": "shared",
+      "companyRef": "samyangcorp"
+    },
+    {
+      "key": "hanwhagalleriapref45226k",
+      "ticker": "45226K",
+      "mode": "shared",
+      "companyRef": "hanwhagalleria"
+    },
+    {
+      "key": "lxholdingspref38380k",
+      "ticker": "38380K",
+      "mode": "shared",
+      "companyRef": "lxholdings"
+    },
+    {
+      "key": "jwpharmapref001067",
+      "ticker": "001067",
+      "mode": "shared",
+      "companyRef": "jwpharma"
+    },
+    {
+      "key": "npcpref004255",
+      "ticker": "004255",
+      "mode": "shared",
+      "companyRef": "npc"
+    },
+    {
+      "key": "daekyopref019685",
+      "ticker": "019685",
+      "mode": "shared",
+      "companyRef": "daekyo"
+    },
+    {
+      "key": "kolonglobalpref003075",
+      "ticker": "003075",
+      "mode": "shared",
+      "companyRef": "kolonglobal"
+    },
+    {
+      "key": "hanyangsecuritiespref001755",
+      "ticker": "001755",
+      "mode": "shared",
+      "companyRef": "hanyangsecurities"
+    },
+    {
+      "key": "duksungpref004835",
+      "ticker": "004835",
+      "mode": "shared",
+      "companyRef": "duksung"
+    },
+    {
+      "key": "solusadvancedpref33637l",
+      "ticker": "33637L",
+      "mode": "shared",
+      "companyRef": "solusadvanced"
+    },
+    {
+      "key": "yuyupharmpref000225",
+      "ticker": "000225",
+      "mode": "shared",
+      "companyRef": "yuyupharm"
+    },
+    {
+      "key": "sksecuritiespref001515",
+      "ticker": "001515",
+      "mode": "shared",
+      "companyRef": "sksecurities"
+    },
+    {
+      "key": "jwpharmapref001065",
+      "ticker": "001065",
+      "mode": "shared",
+      "companyRef": "jwpharma"
+    },
+    {
+      "key": "norooholdingspref000325",
+      "ticker": "000325",
+      "mode": "shared",
+      "companyRef": "norooholdings"
+    },
+    {
+      "key": "sungshincementpref004985",
+      "ticker": "004985",
+      "mode": "shared",
+      "companyRef": "sungshincement"
+    },
+    {
+      "key": "crownconfectionerypref26490k",
+      "ticker": "26490K",
+      "mode": "shared",
+      "companyRef": "crownconfectionery"
+    },
+    {
+      "key": "noroopaintpref090355",
+      "ticker": "090355",
+      "mode": "shared",
+      "companyRef": "noroopaint"
+    },
+    {
+      "key": "keyangpref012205",
+      "ticker": "012205",
+      "mode": "shared",
+      "companyRef": "keyang"
+    },
+    {
+      "key": "kumhoconstructionpref002995",
+      "ticker": "002995",
+      "mode": "shared",
+      "companyRef": "kumhoconstruction"
+    },
+    {
+      "key": "heungkukfirepref000545",
+      "ticker": "000545",
+      "mode": "shared",
+      "companyRef": "heungkukfire"
+    },
+    {
+      "key": "hitejinroholdingspref000145",
+      "ticker": "000145",
+      "mode": "shared",
+      "companyRef": "hitejinroholdings"
+    },
+    {
+      "key": "dongbucorppref005965",
+      "ticker": "005965",
+      "mode": "shared",
+      "companyRef": "dongbucorp"
+    },
+    {
+      "key": "taeyoungpref009415",
+      "ticker": "009415",
+      "mode": "shared",
+      "companyRef": "taeyoung"
+    },
+    {
+      "key": "dongwonsystemspref014825",
+      "ticker": "014825",
+      "mode": "shared",
+      "companyRef": "dongwonsystems"
+    },
+    {
+      "key": "tyholdingspref36328k",
+      "ticker": "36328K",
+      "mode": "shared",
+      "companyRef": "tyholdings"
+    },
+    {
+      "key": "ilyangpref007575",
+      "ticker": "007575",
+      "mode": "shared",
+      "companyRef": "ilyang"
+    },
+    {
+      "key": "crownhaetaeholdingspref005745",
+      "ticker": "005745",
+      "mode": "shared",
+      "companyRef": "crownhaetaeholdings"
+    },
+    {
+      "key": "kumkangkindpref014285",
+      "ticker": "014285",
+      "mode": "shared",
+      "companyRef": "kumkangkind"
+    },
+    {
+      "key": "sungmoonelectronicspref014915",
+      "ticker": "014915",
+      "mode": "shared",
+      "companyRef": "sungmoonelectronics"
+    },
+    {
+      "key": "yuyupharmpref000227",
+      "ticker": "000227",
+      "mode": "shared",
+      "companyRef": "yuyupharm"
+    },
+    {
+      "key": "namsunaluminumpref008355",
+      "ticker": "008355",
+      "mode": "shared",
+      "companyRef": "namsunaluminum"
+    },
+    {
+      "key": "tongyangpref001525",
+      "ticker": "001525",
+      "mode": "shared",
+      "companyRef": "tongyang"
+    },
+    {
+      "key": "kleannarapref004545",
+      "ticker": "004545",
+      "mode": "shared",
+      "companyRef": "kleannara"
+    },
+    {
+      "key": "tongyangpref001527",
+      "ticker": "001527",
+      "mode": "shared",
+      "companyRef": "tongyang"
+    },
+    {
+      "key": "cjseafoodpref011155",
+      "ticker": "011155",
+      "mode": "shared",
+      "companyRef": "cjseafood"
+    },
+    {
+      "key": "seoulfoodpref004415",
+      "ticker": "004415",
+      "mode": "shared",
+      "companyRef": "seoulfood"
+    },
+    {
+      "key": "jinhungpref002785",
+      "ticker": "002785",
+      "mode": "shared",
+      "companyRef": "jinhung"
+    },
+    {
+      "key": "jinhungpref002787",
+      "ticker": "002787",
+      "mode": "shared",
+      "companyRef": "jinhung"
     }
   ]
 }

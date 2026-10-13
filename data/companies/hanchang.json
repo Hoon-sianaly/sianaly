@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hanchang",
+    "name": "한창",
+    "ticker": "005110",
+    "rank": 941,
+    "type": "부동산 개발·사업 재편"
+  },
+  "overview": {
+    "short": "한창은 종속회사를 통해 부동산 개발과 사업관리 등을 수행합니다.",
+    "summary": "한창은 종속회사를 통해 부동산 개발과 사업관리 등을 수행합니다. 부동산 개발은 프로젝트의 진행·분양·자금 회수 시점에 따라 실적 변동이 큽니다.",
+    "takeaways": [
+      "한창은 종속회사를 통해 부동산 개발과 사업관리 등을 수행합니다.",
+      "부동산 개발은 프로젝트의 진행·분양·자금 회수 시점에 따라 실적 변동이 큽니다.",
+      "보고서에 기재된 엔터테인먼트 회사는 반기 중 계열관계가 소멸했습니다.",
+      "2026년 반기에는 별도·연결 재무제표에 대해 의견거절이 기재돼 있습니다.",
+      "상장폐지 결정 관련 절차와 계속기업 불확실성, 자금조달 상황을 우선 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "부동산 개발",
+        "desc": "종속회사를 통해 주거시설 등 부동산 개발·공급 사업을 수행합니다."
+      },
+      {
+        "name": "사업관리",
+        "desc": "PM 방식의 사업관리와 부동산 투자·운용 등을 추진합니다."
+      },
+      {
+        "name": "사업 범위 재편",
+        "desc": "반기 중 엔터테인먼트 회사의 계열관계 소멸 등 사업 범위 변화를 확인합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "프로젝트 현금 회수",
+        "desc": "개발사업 진행과 분양·매각 대금의 회수 여부가 중요합니다."
+      },
+      {
+        "title": "의견거절·계속기업",
+        "desc": "2026년 반기 검토 절차 제약과 계속기업 관련 불확실성을 함께 확인합니다."
+      },
+      {
+        "title": "상장 후속절차",
+        "desc": "보고서에 기재된 상장폐지 결정과 효력정지 신청의 후속 공시를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 2026년 반기 보고서에 별도·연결 의견거절과 계속기업 관련 불확실성, 상장폐지 결정 및 효력정지 신청이 기재되어 있습니다. 보고서 이후 진행 상황은 후속 공시를 확인해야 합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.003089124038,
+        "op": -0.009443656317,
+        "net": -0.018484222632,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250801000425",
+          "rawKRW": {
+            "sales": "3089124038",
+            "op": "-9443656317",
+            "net": "-18484222632"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.008044626288,
+        "op": -0.00777601396,
+        "net": 0.062327037865,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260326001334",
+          "rawKRW": {
+            "sales": "8044626288",
+            "op": "-7776013960",
+            "net": "62327037865"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.002299232749,
+        "op": -0.004162138996,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001856",
+          "rawKRW": {
+            "sales": "2299232749",
+            "op": "-4162138996",
+            "net": "64339382098"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.000836728828,
+        "op": -0.001922366619,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001018",
+          "rawKRW": {
+            "sales": "836728828",
+            "op": "-1922366619",
+            "net": "-7107932597"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.002038341971,
+        "op": -0.001202372387,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001177",
+          "rawKRW": {
+            "sales": "2038341971",
+            "op": "-1202372387",
+            "net": "-158760334"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326001334",
+      "published": "2026.03.26",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001018",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001177",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250801000425",
+      "published": "2025.08.01",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001856",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "한창 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001177",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "audit-context",
+      "label": "한창 최신 보고서 · 회계감사인의 의견 및 강조사항",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001177",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business",
+      "audit-context"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "폐지",
+      "desc": "사용 후 회수한 종이로, 제지업의 재활용 원료로 사용합니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "계속기업",
+      "desc": "회사가 가까운 장래에도 사업을 이어갈 것이라는 회계상 전제입니다. 중요한 불확실성이 있으면 공시·감사 보고서를 함께 확인해야 합니다."
+    },
+    {
+      "name": "의견거절",
+      "desc": "감사인이 충분한 근거를 확보하지 못하는 등 이유로 재무제표에 감사의견을 표명하지 않은 상태입니다."
+    },
+    {
+      "name": "PM",
+      "desc": "프로젝트의 일정·비용·진행 등을 관리하는 사업관리 업무입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

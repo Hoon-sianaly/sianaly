@@ -1,7 +1,7 @@
-# 890개 종목 DART 연결 상태
+# 941개 종목 DART 연결 상태
 
-기준일 2026-10-13. 890개 종목, 824개 발행사, 실적 공유 우선주 66개.
-자동 752개 (표시 기간 전체 643, 일부 기간 보류 109), 공식 자료 수동 확인 72개.
+기준일 2026-10-13. 941개 종목, 830개 발행사, 실적 공유 우선주 111개.
+자동 756개 (표시 기간 전체 647, 일부 기간 보류 109), 공식 자료 수동 확인 74개.
 
 GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확인합니다. 일부 시작 지연이 있을 수 있습니다.
 
@@ -897,3 +897,54 @@ GitHub Actions가 매일 한국시간 오후 6시에 신규 정기공시를 확�
 | 한진칼우 | 본주 실적 공유 | hanjinkal |
 | SUN&L | 자동 |  |
 | 한국전자홀딩스 | 자동 |  |
+| 대원화성 | 자동 |  |
+| 에이엔피 | 자동 |  |
+| 다이나믹디자인 | 공시 감시 · 수치 수동 검토 | 2025년 별도·연결 한정의견 및 투자자산 기초 잔액·평가손익 감사범위 제한 수동 검토 |
+| 주연테크 | 자동 |  |
+| SHD | 자동 |  |
+| 한창 | 공시 감시 · 수치 수동 검토 | 2026년 반기 의견거절·계속기업 불확실성·상장폐지 결정 후속절차 수동 검토 |
+| 녹십자홀딩스2우 | 본주 실적 공유 | gcholdings |
+| 코오롱우 | 본주 실적 공유 | kolonholding |
+| 하이트진로2우B | 본주 실적 공유 | hitejinro |
+| 대한제당우 | 본주 실적 공유 | tscorporation |
+| 대덕1우 | 본주 실적 공유 | daeduckholdings |
+| 코리아써키트2우B | 본주 실적 공유 | koreacircuit |
+| 대상홀딩스우 | 본주 실적 공유 | daesangholdings |
+| 삼양사우 | 본주 실적 공유 | samyangcorp |
+| 한화갤러리아우 | 본주 실적 공유 | hanwhagalleria |
+| LX홀딩스1우 | 본주 실적 공유 | lxholdings |
+| JW중외제약2우B | 본주 실적 공유 | jwpharma |
+| NPC우 | 본주 실적 공유 | npc |
+| 대교우B | 본주 실적 공유 | daekyo |
+| 코오롱글로벌우 | 본주 실적 공유 | kolonglobal |
+| 한양증권우 | 본주 실적 공유 | hanyangsecurities |
+| 덕성우 | 본주 실적 공유 | duksung |
+| 솔루스첨단소재2우B | 본주 실적 공유 | solusadvanced |
+| 유유제약1우 | 본주 실적 공유 | yuyupharm |
+| SK증권우 | 본주 실적 공유 | sksecurities |
+| JW중외제약우 | 본주 실적 공유 | jwpharma |
+| 노루홀딩스우 | 본주 실적 공유 | norooholdings |
+| 성신양회우 | 본주 실적 공유 | sungshincement |
+| 크라운제과우 | 본주 실적 공유 | crownconfectionery |
+| 노루페인트우 | 본주 실적 공유 | noroopaint |
+| 계양전기우 | 본주 실적 공유 | keyang |
+| 금호건설우 | 본주 실적 공유 | kumhoconstruction |
+| 흥국화재우 | 본주 실적 공유 | heungkukfire |
+| 하이트진로홀딩스우 | 본주 실적 공유 | hitejinroholdings |
+| 동부건설우 | 본주 실적 공유 | dongbucorp |
+| 태영건설우 | 본주 실적 공유 | taeyoung |
+| 동원시스템즈우 | 본주 실적 공유 | dongwonsystems |
+| 티와이홀딩스우 | 본주 실적 공유 | tyholdings |
+| 일양약품우 | 본주 실적 공유 | ilyang |
+| 크라운해태홀딩스우 | 본주 실적 공유 | crownhaetaeholdings |
+| 금강공업우 | 본주 실적 공유 | kumkangkind |
+| 성문전자우 | 본주 실적 공유 | sungmoonelectronics |
+| 유유제약2우B | 본주 실적 공유 | yuyupharm |
+| 남선알미우 | 본주 실적 공유 | namsunaluminum |
+| 동양우 | 본주 실적 공유 | tongyang |
+| 깨끗한나라우 | 본주 실적 공유 | kleannara |
+| 동양2우B | 본주 실적 공유 | tongyang |
+| CJ씨푸드1우 | 본주 실적 공유 | cjseafood |
+| 서울식품우 | 본주 실적 공유 | seoulfood |
+| 진흥기업우B | 본주 실적 공유 | jinhung |
+| 진흥기업2우B | 본주 실적 공유 | jinhung |
