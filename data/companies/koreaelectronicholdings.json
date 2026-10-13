@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreaelectronicholdings",
+    "name": "한국전자홀딩스",
+    "ticker": "006200",
+    "rank": 890,
+    "type": "반도체 지주회사"
+  },
+  "overview": {
+    "short": "한국전자홀딩스는 반도체 회사를 보유한 지주회사",
+    "summary": "한국전자홀딩스는 반도체 회사를 보유한 지주회사입니다. 연결회사가 전력 제어·전류 증폭용 반도체를 만듭니다.",
+    "takeaways": [
+      "한국전자홀딩스는 반도체 회사를 보유한 지주회사입니다.",
+      "연결회사가 전력 제어·전류 증폭용 반도체를 만듭니다.",
+      "트랜지스터·집적회로 등 제품을 공급합니다.",
+      "임대·전산 등 서비스 수입도 포함됩니다.",
+      "별도 지주 수입과 연결 반도체 실적을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "반도체",
+        "desc": "연결회사의 전력·증폭용 반도체가 주력입니다."
+      },
+      {
+        "name": "해외 사업",
+        "desc": "해외 반도체 생산·판매망을 운영합니다."
+      },
+      {
+        "name": "지주·서비스",
+        "desc": "자회사 관리·임대·전산서비스 등이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "반도체 수요",
+        "desc": "전자·산업 고객 주문과 제품 구성을 봅니다."
+      },
+      {
+        "title": "제조 원가",
+        "desc": "재료·공장 가동·인건비·환율을 비교합니다."
+      },
+      {
+        "title": "실적 범위",
+        "desc": "지주회사 수입과 연결 자회사 손익을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.294303954603,
+        "op": -0.004125572651,
+        "net": -0.003371469939,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319001004",
+          "rawKRW": {
+            "sales": "294303954603",
+            "op": "-4125572651",
+            "net": "-3371469939"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.275886966324,
+        "op": -0.014050515935,
+        "net": -0.019780495925,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000807",
+          "rawKRW": {
+            "sales": "275886966324",
+            "op": "-14050515935",
+            "net": "-19780495925"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.070274136746,
+        "op": -0.00348666208,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002110",
+          "rawKRW": {
+            "sales": "70274136746",
+            "op": "-3486662080",
+            "net": "-2283262417"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.077685205968,
+        "op": -0.0028642946,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000681",
+          "rawKRW": {
+            "sales": "77685205968",
+            "op": "-2864294600",
+            "net": "-2908252420"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.080623736489,
+        "op": -0.002370095914,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002209",
+          "rawKRW": {
+            "sales": "80623736489",
+            "op": "-2370095914",
+            "net": "-2108288686"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000807",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000681",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002209",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319001004",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002110",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "한국전자홀딩스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002209",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "지주회사",
+      "desc": "다른 회사의 주식을 보유해 계열사를 지배·관리하는 회사입니다. 자체 사업을 함께 운영하기도 합니다."
+    },
+    {
+      "name": "트랜지스터",
+      "desc": "전류를 제어하거나 신호를 증폭하는 반도체 부품입니다."
+    },
+    {
+      "name": "집적회로",
+      "desc": "여러 전자회로를 작은 반도체 칩에 모아 만든 부품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

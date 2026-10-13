@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dongwonfisheries",
+    "name": "동원수산",
+    "ticker": "030720",
+    "rank": 866,
+    "type": "원양어업·수산식품"
+  },
+  "overview": {
+    "short": "동원수산은 수산물 생산·유통 사업을 운영합니다.",
+    "summary": "동원수산은 수산물 생산·유통 사업을 운영합니다. 원양어선으로 참치와 여러 어종을 잡습니다.",
+    "takeaways": [
+      "동원수산은 수산물 생산·유통 사업을 운영합니다.",
+      "원양어선으로 참치와 여러 어종을 잡습니다.",
+      "연결회사가 수산물을 가공·판매합니다.",
+      "빵가루·냉동냉장 등 사업도 있습니다.",
+      "어획량·시세와 선박·가공 비용을 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "원양어업",
+        "desc": "원양어선을 운항해 참치·트롤 어획물을 판매합니다."
+      },
+      {
+        "name": "수산 유통",
+        "desc": "수산물 가공·유통과 식품 사업을 운영합니다."
+      },
+      {
+        "name": "곡물·기타",
+        "desc": "빵가루·냉동냉장·임대 등이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "어획·가격",
+        "desc": "조업량·어종별 시세·환율을 확인합니다."
+      },
+      {
+        "title": "조업 원가",
+        "desc": "선박 연료·선원·수리 비용을 비교합니다."
+      },
+      {
+        "title": "가공·판매",
+        "desc": "수산·빵가루 판매와 냉동·물류비를 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.183650399305,
+        "op": 0.005324047839,
+        "net": 0.005208294274,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250404003738",
+          "rawKRW": {
+            "sales": "183650399305",
+            "op": "5324047839",
+            "net": "5208294274"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.172592224421,
+        "op": 0.008826336971,
+        "net": 0.007745692706,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260312000830",
+          "rawKRW": {
+            "sales": "172592224421",
+            "op": "8826336971",
+            "net": "7745692706"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.052274546693,
+        "op": 0.003905136588,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000918",
+          "rawKRW": {
+            "sales": "52274546693",
+            "op": "3905136588",
+            "net": "2790653890"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.03980431739,
+        "op": 0.003636432445,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000803",
+          "rawKRW": {
+            "sales": "39804317390",
+            "op": "3636432445",
+            "net": "3235775505"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.050044246244,
+        "op": 0.004499521757,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001089",
+          "rawKRW": {
+            "sales": "50044246244",
+            "op": "4499521757",
+            "net": "4261564731"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000830",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000803",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001089",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250404003738",
+      "published": "2025.04.04",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000918",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "동원수산 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001089",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "원양어업",
+      "desc": "먼 바다에서 선박을 이용해 수산물을 잡는 어업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

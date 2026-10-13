@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "youngwire",
+    "name": "영흥",
+    "ticker": "012160",
+    "rank": 826,
+    "type": "선재·차량부품·물류"
+  },
+  "overview": {
+    "short": "영흥은 철강선재와 차량부품 등 사업을 운영합니다.",
+    "summary": "영흥은 철강선재와 차량부품 등 사업을 운영합니다. 냉간선재·봉강과 차량용 스프링을 공급합니다.",
+    "takeaways": [
+      "영흥은 철강선재와 차량부품 등 사업을 운영합니다.",
+      "냉간선재·봉강과 차량용 스프링을 공급합니다.",
+      "물류·방청포장재 사업도 있습니다.",
+      "해외 철강선 유통과 AI서비스 등이 포함됩니다.",
+      "생산 중단·사업 재편 이후 범위와 손익을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "선재·부품",
+        "desc": "냉간선재·봉강과 차량 스프링 등을 공급합니다."
+      },
+      {
+        "name": "물류·포장",
+        "desc": "운송·하역과 방청포장재 사업을 운영합니다."
+      },
+      {
+        "name": "해외·기타",
+        "desc": "해외 철강선 유통과 AI서비스 등이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "산업 주문",
+        "desc": "차량·산업 고객의 선재·부품 수요를 봅니다."
+      },
+      {
+        "title": "원가·물류",
+        "desc": "철강 원료·가공·운송 비용을 비교합니다."
+      },
+      {
+        "title": "사업 재편",
+        "desc": "창원 일부 설비 중단·해외 매각·청산과 연결 범위를 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.480348334559,
+        "op": 0.003072645371,
+        "net": -0.01497405341,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250328001676",
+          "rawKRW": {
+            "sales": "480348334559",
+            "op": "3072645371",
+            "net": "-14974053410"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.433484558559,
+        "op": -0.013168601986,
+        "net": -0.054455858566,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000923",
+          "rawKRW": {
+            "sales": "433484558559",
+            "op": "-13168601986",
+            "net": "-54455858566"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.116282145705,
+        "op": -0.002383703365,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004024",
+          "rawKRW": {
+            "sales": "116282145705",
+            "op": "-2383703365",
+            "net": "-24962048747"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.09642515723,
+        "op": -0.001439129372,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002829",
+          "rawKRW": {
+            "sales": "96425157230",
+            "op": "-1439129372",
+            "net": "-1607900916"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.106766838529,
+        "op": 0.002173841536,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260818000036",
+          "rawKRW": {
+            "sales": "106766838529",
+            "op": "2173841536",
+            "net": "259118192"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000923",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002829",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000036",
+      "published": "2026.08.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250328001676",
+      "published": "2025.03.28",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004024",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "영흥 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260818000036",
+      "published": "2026.08.18",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "AI",
+      "desc": "인공지능입니다. 데이터를 바탕으로 학습해 분류·예측·콘텐츠 생성 등의 작업을 수행하는 기술입니다."
+    },
+    {
+      "name": "선재",
+      "desc": "선 모양으로 가공한 금속 소재로, 강선과 각종 산업 제품의 원료가 됩니다."
+    },
+    {
+      "name": "하역",
+      "desc": "화물을 운송수단에 싣거나 내리는 작업입니다."
+    },
+    {
+      "name": "방청",
+      "desc": "금속에 녹이 생기는 것을 줄이거나 막는 기능입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

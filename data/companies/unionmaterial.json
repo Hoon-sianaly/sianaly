@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "unionmaterial",
+    "name": "유니온머티리얼",
+    "ticker": "047400",
+    "rank": 837,
+    "type": "자석·세라믹 부품"
+  },
+  "overview": {
+    "short": "유니온머티리얼은 자석과 세라믹 부품을 만듭니다.",
+    "summary": "유니온머티리얼은 자석과 세라믹 부품을 만듭니다. 차량·가전 모터용 페라이트 자석을 공급합니다.",
+    "takeaways": [
+      "유니온머티리얼은 자석과 세라믹 부품을 만듭니다.",
+      "차량·가전 모터용 페라이트 자석을 공급합니다.",
+      "절삭공구 등 산업용 세라믹도 생산합니다.",
+      "국내외 연결 생산사업장이 포함됩니다.",
+      "모터·산업 수요와 소재·소성 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "페라이트 자석",
+        "desc": "차량·가전 모터 등의 자석을 생산합니다."
+      },
+      {
+        "name": "세라믹",
+        "desc": "절삭공구·밸브용 디스크 등 산업부품을 공급합니다."
+      },
+      {
+        "name": "해외 생산",
+        "desc": "연결회사의 자석·공구 생산 등이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "모터 주문",
+        "desc": "차량·가전 고객 생산과 자석 수요를 봅니다."
+      },
+      {
+        "title": "산업 부품",
+        "desc": "공구·세라믹 고객 주문과 제품 구성을 확인합니다."
+      },
+      {
+        "title": "소재·가동",
+        "desc": "원료·고온 공정·인건비·해외 환율을 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.108366485493,
+        "op": -0.016501073442,
+        "net": -0.046475655498,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319000740",
+          "rawKRW": {
+            "sales": "108366485493",
+            "op": "-16501073442",
+            "net": "-46475655498"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.101937090012,
+        "op": 0.005429904795,
+        "net": 0.002459943818,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001126",
+          "rawKRW": {
+            "sales": "101937090012",
+            "op": "5429904795",
+            "net": "2459943818"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.026527822072,
+        "op": 0.000718216174,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003163",
+          "rawKRW": {
+            "sales": "26527822072",
+            "op": "718216174",
+            "net": "-2098432374"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.024820687301,
+        "op": 0.001054430056,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002316",
+          "rawKRW": {
+            "sales": "24820687301",
+            "op": "1054430056",
+            "net": "462706421"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.02690267754,
+        "op": 0.000713807344,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003136",
+          "rawKRW": {
+            "sales": "26902677540",
+            "op": "713807344",
+            "net": "322007410"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001126",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002316",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003136",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000740",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003163",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "유니온머티리얼 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003136",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "소성",
+      "desc": "재료를 높은 온도로 구워 필요한 강도·특성을 얻는 공정입니다."
+    },
+    {
+      "name": "밸브",
+      "desc": "공기·액체 등의 흐름을 열거나 막고 조절하는 부품입니다."
+    },
+    {
+      "name": "페라이트",
+      "desc": "산화철 등을 주성분으로 하는 자성 소재입니다. 자석·전자부품 등에 사용합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

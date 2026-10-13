@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "miraeing",
+    "name": "미래아이앤지",
+    "ticker": "007120",
+    "rank": 853,
+    "type": "금융 소프트웨어"
+  },
+  "overview": {
+    "short": "미래아이앤지는 금융 소프트웨어를 제공합니다.",
+    "summary": "미래아이앤지는 금융 소프트웨어를 제공합니다. 은행의 국제금융 메시지 관리 등을 지원합니다.",
+    "takeaways": [
+      "미래아이앤지는 금융 소프트웨어를 제공합니다.",
+      "은행의 국제금융 메시지 관리 등을 지원합니다.",
+      "외화거래·규정준수 관련 솔루션도 공급합니다.",
+      "B&E와 임대·관리 등 사업이 포함됩니다.",
+      "금융기관 계약과 개발·유지보수 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "금융 솔루션",
+        "desc": "은행의 메시지·거래·규정준수 시스템을 공급합니다."
+      },
+      {
+        "name": "유지보수",
+        "desc": "금융 시스템 유지관리·관련 용역을 수행합니다."
+      },
+      {
+        "name": "기타 사업",
+        "desc": "B&E·건물 임대·관리 등이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "금융기관 수주",
+        "desc": "은행 시스템 도입·갱신 계약을 봅니다."
+      },
+      {
+        "title": "개발·인력",
+        "desc": "소프트웨어 개발·인력·외주비를 비교합니다."
+      },
+      {
+        "title": "수익 구성",
+        "desc": "구축·유지보수와 기타 사업 수입을 구분합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.011702648807,
+        "op": 0.002013077715,
+        "net": -0.008038192716,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814002870",
+          "rawKRW": {
+            "sales": "11702648807",
+            "op": "2013077715",
+            "net": "-8038192716"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.014128766686,
+        "op": 0.003798690087,
+        "net": -0.002599733229,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000816",
+          "rawKRW": {
+            "sales": "14128766686",
+            "op": "3798690087",
+            "net": "-2599733229"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.003623753047,
+        "op": 0.00121821235,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003063",
+          "rawKRW": {
+            "sales": "3623753047",
+            "op": "1218212350",
+            "net": "-783992776"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.00367823597,
+        "op": 0.000801050789,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001691",
+          "rawKRW": {
+            "sales": "3678235970",
+            "op": "801050789",
+            "net": "822165166"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.002548001692,
+        "op": 0.00012709444,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002658",
+          "rawKRW": {
+            "sales": "2548001692",
+            "op": "127094440",
+            "net": "-2435641953"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000816",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001691",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002658",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002870",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003063",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "미래아이앤지 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002658",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "소프트웨어",
+      "desc": "컴퓨터·장치가 작업을 수행하도록 하는 프로그램입니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "지관",
+      "desc": "종이를 여러 겹 감거나 붙여 만든 관입니다. 원단·필름 등을 감는 심 등에 씁니다."
+    },
+    {
+      "name": "규정준수",
+      "desc": "업무가 법규·내부규정 등의 기준에 맞게 수행되도록 관리하는 활동입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

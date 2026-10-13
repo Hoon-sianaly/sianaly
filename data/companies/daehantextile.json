@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daehantextile",
+    "name": "대한방직",
+    "ticker": "001070",
+    "rank": 839,
+    "type": "섬유·염색가공"
+  },
+  "overview": {
+    "short": "대한방직은 섬유와 염색가공 사업을 운영합니다.",
+    "summary": "대한방직은 섬유와 염색가공 사업을 운영합니다. 면사·혼방사 등 실을 수입·판매합니다.",
+    "takeaways": [
+      "대한방직은 섬유와 염색가공 사업을 운영합니다.",
+      "면사·혼방사 등 실을 수입·판매합니다.",
+      "직물을 염색·가공해 의류 등 고객에게 공급합니다.",
+      "원단·완제품 온라인 판매와 해외 무역도 합니다.",
+      "섬유 수요와 원단·염료·에너지 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "사류",
+        "desc": "면사·혼방사·특수사 등 소재를 공급합니다."
+      },
+      {
+        "name": "직물 가공",
+        "desc": "염색·가공 원단과 완제품을 판매합니다."
+      },
+      {
+        "name": "무역·기타",
+        "desc": "해외 섬유 무역과 임대 등이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "섬유 주문",
+        "desc": "의류·직물 고객 주문과 제품 구성을 봅니다."
+      },
+      {
+        "title": "원료·에너지",
+        "desc": "원단·염료·전력·연료 비용을 비교합니다."
+      },
+      {
+        "title": "수출·판매",
+        "desc": "수출 환율·유통 경로와 가공 마진을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.133909117274,
+        "op": 0.002418669755,
+        "net": 0.001115646565,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814002484",
+          "rawKRW": {
+            "sales": "133909117274",
+            "op": "2418669755",
+            "net": "1115646565"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.158285867181,
+        "op": 0.000696690065,
+        "net": -0.000610608139,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001239",
+          "rawKRW": {
+            "sales": "158285867181",
+            "op": "696690065",
+            "net": "-610608139"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.04688130281,
+        "op": 0.000076181637,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002671",
+          "rawKRW": {
+            "sales": "46881302810",
+            "op": "76181637",
+            "net": "318844777"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.034900384883,
+        "op": 0.000369290532,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002260",
+          "rawKRW": {
+            "sales": "34900384883",
+            "op": "369290532",
+            "net": "-274291726"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.040586624049,
+        "op": 0.001153662494,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002848",
+          "rawKRW": {
+            "sales": "40586624049",
+            "op": "1153662494",
+            "net": "346969820"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001239",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002260",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002848",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002484",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002671",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "대한방직 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002848",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "원단",
+      "desc": "옷 등을 만들기 전 단계의 천으로, 의류 제조에 사용하는 재료입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 관련 비용 사이의 차이 또는 이익의 정도입니다."
+    },
+    {
+      "name": "면사",
+      "desc": "목화에서 얻은 면섬유로 만든 실입니다."
+    },
+    {
+      "name": "혼방사",
+      "desc": "서로 다른 종류의 섬유를 섞어 만든 실입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "shinpoongpaper",
+    "name": "신풍",
+    "ticker": "002870",
+    "rank": 809,
+    "type": "지류 유통·기타사업"
+  },
+  "overview": {
+    "short": "신풍은 종이 유통을 주된 사업으로 운영합니다.",
+    "summary": "신풍은 종이 유통을 주된 사업으로 운영합니다. 수입지 등 지류를 매입해 판매합니다.",
+    "takeaways": [
+      "신풍은 종이 유통을 주된 사업으로 운영합니다.",
+      "수입지 등 지류를 매입해 판매합니다.",
+      "연결회사의 수입 오디오 사업도 포함됩니다.",
+      "교육·기타 서비스 등 사업도 운영합니다.",
+      "현재 유통 수익과 과거 제지 제조사업을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "지류 유통",
+        "desc": "수입지 등 종이 상품을 판매합니다."
+      },
+      {
+        "name": "오디오",
+        "desc": "연결회사가 오디오·필터 등을 공급합니다."
+      },
+      {
+        "name": "교육·기타",
+        "desc": "학원·기타 서비스 등 사업이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "종이 판매",
+        "desc": "포장·인쇄 등 고객 수요와 판매단가를 봅니다."
+      },
+      {
+        "title": "수입 원가",
+        "desc": "지류 매입가격·환율·운송비를 비교합니다."
+      },
+      {
+        "title": "연결 범위",
+        "desc": "오디오·교육·기타 사업과 주력 유통 손익을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.022778451624,
+        "op": -0.004365691306,
+        "net": 0.000308958199,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250813000090",
+          "rawKRW": {
+            "sales": "22778451624",
+            "op": "-4365691306",
+            "net": "308958199"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.024228056503,
+        "op": -0.002293337379,
+        "net": 0.002001172609,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000293",
+          "rawKRW": {
+            "sales": "24228056503",
+            "op": "-2293337379",
+            "net": "2001172609"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.006413035648,
+        "op": -0.00046604092,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001327",
+          "rawKRW": {
+            "sales": "6413035648",
+            "op": "-466040920",
+            "net": "355061588"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.006025425135,
+        "op": -0.000564447054,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260512000040",
+          "rawKRW": {
+            "sales": "6025425135",
+            "op": "-564447054",
+            "net": "845276699"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.006811537438,
+        "op": -0.000613223667,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000467",
+          "rawKRW": {
+            "sales": "6811537438",
+            "op": "-613223667",
+            "net": "6886960718"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000293",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000040",
+      "published": "2026.05.12",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000467",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813000090",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001327",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "신풍 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000467",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

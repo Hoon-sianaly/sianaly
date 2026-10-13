@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "estarco",
+    "name": "이스타코",
+    "ticker": "015020",
+    "rank": 875,
+    "type": "부동산·교육·호텔"
+  },
+  "overview": {
+    "short": "이스타코는 부동산과 교육·호텔 사업을 운영합니다.",
+    "summary": "이스타코는 부동산과 교육·호텔 사업을 운영합니다. 주택·상가 개발·분양과 임대사업을 합니다.",
+    "takeaways": [
+      "이스타코는 부동산과 교육·호텔 사업을 운영합니다.",
+      "주택·상가 개발·분양과 임대사업을 합니다.",
+      "영어 교육기관을 운영합니다.",
+      "호텔 객실·연회 등 서비스도 제공합니다.",
+      "2025년 의견거절과 계속기업 관련 공시를 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "부동산",
+        "desc": "주택·상가 분양과 임대사업을 수행합니다."
+      },
+      {
+        "name": "교육",
+        "desc": "영어 교육기관 등을 운영합니다."
+      },
+      {
+        "name": "호텔",
+        "desc": "객실·연회·식음료 등 서비스를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임대·분양",
+        "desc": "개발·매각 진행과 임대료·공실을 봅니다."
+      },
+      {
+        "title": "서비스 운영",
+        "desc": "교육 수강·호텔 이용과 운영비를 비교합니다."
+      },
+      {
+        "title": "감사·자금",
+        "desc": "2025년 의견거절·계속기업 관련 기재와 현금흐름을 확인합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 2025년 감사의견은 의견거절이며 감사범위 제한·계속기업 관련 기재가 있습니다. 최신 반기 수치를 원문과 대조했으나 이는 감사인의 신뢰성 확인을 뜻하지 않습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.011491693531,
+        "op": -0.00328646989,
+        "net": -0.004946233587,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320000234",
+          "rawKRW": {
+            "sales": "11491693531",
+            "op": "-3286469890",
+            "net": "-4946233587"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.016428295245,
+        "op": -0.000407494038,
+        "net": -0.00137941177,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000990",
+          "rawKRW": {
+            "sales": "16428295245",
+            "op": "-407494038",
+            "net": "-1379411770"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.005908910793,
+        "op": 0.001751639043,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001830",
+          "rawKRW": {
+            "sales": "5908910793",
+            "op": "1751639043",
+            "net": "1725808125"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.003397482474,
+        "op": -0.000302267388,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001371",
+          "rawKRW": {
+            "sales": "3397482474",
+            "op": "-302267388",
+            "net": "-721368264"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.003537264019,
+        "op": -0.000146905472,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002488",
+          "rawKRW": {
+            "sales": "3537264019",
+            "op": "-146905472",
+            "net": "-771535712"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000990",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001371",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002488",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000234",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001830",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "이스타코 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002488",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "audit-context",
+      "label": "이스타코 최신 보고서 · 회계감사인의 의견 및 강조사항",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002488",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business",
+      "audit-context"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "공실",
+      "desc": "임차인이 없어 사용되지 않는 임대 공간입니다."
+    },
+    {
+      "name": "계속기업",
+      "desc": "회사가 가까운 장래에도 사업을 이어갈 것이라는 회계상 전제입니다. 중요한 불확실성이 있으면 공시·감사 보고서를 함께 확인해야 합니다."
+    },
+    {
+      "name": "의견거절",
+      "desc": "감사인이 충분한 근거를 확보하지 못하는 등 이유로 재무제표에 감사의견을 표명하지 않은 상태입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

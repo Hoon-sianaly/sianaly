@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "enex",
+    "name": "에넥스",
+    "ticker": "011090",
+    "rank": 873,
+    "type": "주방·인테리어 가구"
+  },
+  "overview": {
+    "short": "에넥스는 주방과 인테리어 가구를 공급합니다.",
+    "summary": "에넥스는 주방과 인테리어 가구를 공급합니다. 주방가구·붙박이장 등을 제조·판매합니다.",
+    "takeaways": [
+      "에넥스는 주방과 인테리어 가구를 공급합니다.",
+      "주방가구·붙박이장 등을 제조·판매합니다.",
+      "신규 아파트 등 건설사에 제품을 납품합니다.",
+      "일반 소비자용 가구와 온라인 판매도 합니다.",
+      "건설 납품과 소비자 수요·제조비를 나눠 봅니다."
+    ],
+    "business": [
+      {
+        "name": "건설 특판",
+        "desc": "건설사에 주방·수납가구를 공급합니다."
+      },
+      {
+        "name": "소비자 가구",
+        "desc": "일반 가정용·인테리어 가구를 판매합니다."
+      },
+      {
+        "name": "유통·해외",
+        "desc": "대리점·온라인과 연결 생산·부품 사업이 포함됩니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 주문",
+        "desc": "아파트 공급·현장 납품 일정을 봅니다."
+      },
+      {
+        "title": "소비자 판매",
+        "desc": "리모델링·가구 수요와 유통비를 확인합니다."
+      },
+      {
+        "title": "제조 비용",
+        "desc": "목재·부품·외주·인건비를 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.264107661658,
+        "op": 0.005097016978,
+        "net": 0.003905411933,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318001112",
+          "rawKRW": {
+            "sales": "264107661658",
+            "op": "5097016978",
+            "net": "3905411933"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.215243280358,
+        "op": 0.000545135255,
+        "net": -0.001398247913,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000523",
+          "rawKRW": {
+            "sales": "215243280358",
+            "op": "545135255",
+            "net": "-1398247913"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.054815010945,
+        "op": 0.001554511366,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813000783",
+          "rawKRW": {
+            "sales": "54815010945",
+            "op": "1554511366",
+            "net": "1151658340"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.046687987948,
+        "op": -0.002873293709,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260528000053",
+          "rawKRW": {
+            "sales": "46687987948",
+            "op": "-2873293709",
+            "net": "-3181213594"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.042490682927,
+        "op": -0.003110713379,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001047",
+          "rawKRW": {
+            "sales": "42490682927",
+            "op": "-3110713379",
+            "net": "-3551555382"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000523",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260528000053",
+      "published": "2026.05.28",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001047",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001112",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813000783",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "에넥스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001047",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

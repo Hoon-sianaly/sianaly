@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dya",
+    "name": "디와이에이",
+    "ticker": "002880",
+    "rank": 833,
+    "type": "자동차 시트"
+  },
+  "overview": {
+    "short": "디와이에이는 자동차용 시트를 생산합니다.",
+    "summary": "디와이에이는 자동차용 시트를 생산합니다. 완성차 고객의 차종에 맞춘 좌석을 공급합니다.",
+    "takeaways": [
+      "디와이에이는 자동차용 시트를 생산합니다.",
+      "완성차 고객의 차종에 맞춘 좌석을 공급합니다.",
+      "국내 생산사업장에서 조립·납품합니다.",
+      "기존 차종과 신규 전기차 등 주문에 대응합니다.",
+      "정정 공시의 단위 불일치와 원본 확인 금액을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "차량 시트",
+        "desc": "완성차용 좌석 조립품을 생산합니다."
+      },
+      {
+        "name": "차종별 납품",
+        "desc": "고객 생산라인에 맞춰 시트를 공급합니다."
+      },
+      {
+        "name": "개발·생산",
+        "desc": "신규 차종 개발·품질·공장 운영을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "차종 생산",
+        "desc": "고객 차종 생산량과 신규 주문을 봅니다."
+      },
+      {
+        "title": "제조 원가",
+        "desc": "소재·부품·인건비·공장 효율을 비교합니다."
+      },
+      {
+        "title": "단위 검토",
+        "desc": "반기 정정 공시와 원본의 단위 표기 불일치를 확인하며 원본 금액을 수동 관리합니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 2026년 반기 정정 공시의 손익계산서 단위 표기와 원본 공시가 일치하지 않습니다. 원 단위가 명시된 원본 반기 공시·1분기 공시를 대조해 확인한 금액을 표시하며 자동 반영을 보류합니다.",
+    "quarterlyNote": "2026년 반기 원본의 원 단위 수치와 1분기 공시를 대조했습니다. 정정 공시의 단위 표기 불일치를 수동 검토합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.564915822828,
+        "op": 0.037469149998,
+        "net": 0.004844819495,
+        "periodLabel": "2024",
+        "reportPeriod": "2024",
+        "reportedKRW": {
+          "sales": "564915822828",
+          "op": "37469149998",
+          "net": "4844819495"
+        },
+        "sourceIds": [
+          "report-20260317000864"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.633397608367,
+        "op": 0.030205846731,
+        "net": -0.000651589067,
+        "periodLabel": "2025",
+        "reportPeriod": "2025",
+        "reportedKRW": {
+          "sales": "633397608367",
+          "op": "30205846731",
+          "net": "-651589067"
+        },
+        "sourceIds": [
+          "report-20260317000864"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.152948442879,
+        "op": 0.010277439353,
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06",
+        "reportedKRW": {
+          "sales": "152948442879",
+          "op": "10277439353"
+        },
+        "sourceIds": [
+          "report-20260814004163",
+          "report-20260930000619"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.189277522855,
+        "op": 0.007288600471,
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03",
+        "reportedKRW": {
+          "sales": "189277522855",
+          "op": "7288600471"
+        },
+        "sourceIds": [
+          "report-20260514001087",
+          "report-20260930000619"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.252999996254,
+        "op": 0.013495638433,
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06",
+        "reportedKRW": {
+          "sales": "252999996254",
+          "op": "13495638433"
+        },
+        "sourceIds": [
+          "report-20260814004163",
+          "report-20260930000619"
+        ]
+      }
+    ],
+    "annualTerm": "연간",
+    "annualSourceLabel": "공식 12월 종료 12개월 결산",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "quarterlyCalendarNote": "1분기: 1~3월 · 2분기: 4~6월"
+  },
+  "sources": [
+    {
+      "id": "report-20260317000864",
+      "label": "디와이에이 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000864",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260814004163",
+      "label": "디와이에이 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004163",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260930000619",
+      "label": "디와이에이 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000619",
+      "published": "2026.09.30",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "report-20260514001087",
+      "label": "디와이에이 공식 손익계산서 · 실제 결산기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001087",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "디와이에이 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000619",
+      "published": "2026.09.30",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
