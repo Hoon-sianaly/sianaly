@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hankukpaper",
+    "name": "한국제지",
+    "ticker": "027970",
+    "rank": 625,
+    "type": "인쇄용지·포장지"
+  },
+  "overview": {
+    "short": "한국제지는 인쇄용지와 포장용 판지를 생산하는 회사",
+    "summary": "한국제지는 인쇄용지와 포장용 판지를 생산하는 회사입니다. 복사용지 miilk와 여러 인쇄용지를 판매합니다.",
+    "takeaways": [
+      "한국제지는 인쇄용지와 포장용 판지를 생산하는 회사입니다.",
+      "복사용지 miilk와 여러 인쇄용지를 판매합니다.",
+      "제품 포장에 쓰이는 백판지 등도 공급합니다.",
+      "국내 판매와 북미 등 해외 수출을 병행합니다.",
+      "종이 수요와 펄프·에너지 비용, 공장 가동을 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "인쇄용지",
+        "desc": "복사용지와 일반·고급 인쇄용지를 제조·판매합니다."
+      },
+      {
+        "name": "포장용지",
+        "desc": "백판지 등 산업용 포장재를 공급합니다."
+      },
+      {
+        "name": "유통·수출",
+        "desc": "국내 유통망과 해외 판매법인을 통해 고객에게 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "종이 수요",
+        "desc": "인쇄·사무·포장 고객의 주문과 판매가격을 확인합니다."
+      },
+      {
+        "title": "투입 원가",
+        "desc": "펄프·에너지·운송비와 환율을 비교합니다."
+      },
+      {
+        "title": "설비 효율",
+        "desc": "제품 구성과 설비 가동·통합 구매 효과를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.792088806468,
+        "op": 0.019319754356,
+        "net": 0.004097291056,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250314001620",
+          "rawKRW": {
+            "sales": "792088806468",
+            "op": "19319754356",
+            "net": "4097291056"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.753679418454,
+        "op": 0.00312280854,
+        "net": -0.033452961077,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001240",
+          "rawKRW": {
+            "sales": "753679418454",
+            "op": "3122808540",
+            "net": "-33452961077"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.191956571527,
+        "op": 0.002018712938,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003408",
+          "rawKRW": {
+            "sales": "191956571527",
+            "op": "2018712938",
+            "net": "3100144289"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.198967156648,
+        "op": 0.004558685961,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001363",
+          "rawKRW": {
+            "sales": "198967156648",
+            "op": "4558685961",
+            "net": "-47592846084"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.220386265502,
+        "op": 0.00468187441,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001693",
+          "rawKRW": {
+            "sales": "220386265502",
+            "op": "4681874410",
+            "net": "1149308382"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001240",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001363",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001693",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001620",
+      "published": "2025.03.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003408",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "한국제지 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001693",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "백판지",
+      "desc": "표면이 흰색이며 포장 상자 등에 사용하는 두꺼운 종이입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

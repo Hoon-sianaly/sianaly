@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daechang",
+    "name": "대창",
+    "ticker": "012800",
+    "rank": 631,
+    "type": "황동·동합금 소재"
+  },
+  "overview": {
+    "short": "대창은 황동봉과 동합금 소재를 제조하는 회사",
+    "summary": "대창은 황동봉과 동합금 소재를 제조하는 회사입니다. 구리·아연 등으로 전자·자동차·기계용 기초소재를 만듭니다.",
+    "takeaways": [
+      "대창은 황동봉과 동합금 소재를 제조하는 회사입니다.",
+      "구리·아연 등으로 전자·자동차·기계용 기초소재를 만듭니다.",
+      "황동스크랩 등을 활용해 원재료를 조달합니다.",
+      "국내 고객에게 판매하고 여러 국가로 수출합니다.",
+      "금속가격에 따른 매출 변화와 실제 가공 마진을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "황동봉",
+        "desc": "전자·자동차·기계 부품 등에 쓰이는 황동 소재를 생산합니다."
+      },
+      {
+        "name": "동합금 제품",
+        "desc": "고객 용도에 맞는 구리 합금 제품과 상품을 공급합니다."
+      },
+      {
+        "name": "원료·수출",
+        "desc": "재활용 금속 원료를 활용하고 해외 고객에게 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "금속 시세",
+        "desc": "구리·아연 가격과 원료 매입·판매가격을 확인합니다."
+      },
+      {
+        "title": "재고 영향",
+        "desc": "금속가격 변동이 재고 가치와 가공 이익에 미치는 영향을 봅니다."
+      },
+      {
+        "title": "수요·환율",
+        "desc": "고객 주문과 수출 환율·운송 비용을 비교합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.336870975857,
+        "op": 0.031349006736,
+        "net": 0.003596931864,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318001233",
+          "rawKRW": {
+            "sales": "1336870975857",
+            "op": "31349006736",
+            "net": "3596931864"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.4702370292,
+        "op": 0.051527830529,
+        "net": 0.003288573403,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000499",
+          "rawKRW": {
+            "sales": "1470237029200",
+            "op": "51527830529",
+            "net": "3288573403"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.338049781706,
+        "op": -0.000854134683,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001715",
+          "rawKRW": {
+            "sales": "338049781706",
+            "op": "-854134683",
+            "net": "-1672887853"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.429140465285,
+        "op": 0.023810247447,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000742",
+          "rawKRW": {
+            "sales": "429140465285",
+            "op": "23810247447",
+            "net": "14616217680"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.496772128424,
+        "op": 0.022379185013,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000652",
+          "rawKRW": {
+            "sales": "496772128424",
+            "op": "22379185013",
+            "net": "8804360101"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000499",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000742",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000652",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001233",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001715",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "대창 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000652",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 매입·제조 비용 등의 차이를 뜻합니다. 모든 비용을 차감한 최종 이익과는 다를 수 있습니다."
+    },
+    {
+      "name": "황동",
+      "desc": "구리와 아연을 주성분으로 만든 합금입니다."
+    },
+    {
+      "name": "황동봉",
+      "desc": "황동을 막대 형태로 가공한 소재입니다. 여러 정밀 부품의 원료로 사용합니다."
+    },
+    {
+      "name": "스크랩",
+      "desc": "제품 생산 후 남은 조각이나 사용 후 회수한 금속 원료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

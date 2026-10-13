@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "tonymoly",
+    "name": "토니모리",
+    "ticker": "214420",
+    "rank": 609,
+    "type": "화장품·소비재"
+  },
+  "overview": {
+    "short": "토니모리는 화장품 브랜드 판매와 제조 사업을 운영합니다.",
+    "summary": "토니모리는 화장품 브랜드 판매와 제조 사업을 운영합니다. 기초·색조·헤어 제품을 국내외에 판매합니다.",
+    "takeaways": [
+      "토니모리는 화장품 브랜드 판매와 제조 사업을 운영합니다.",
+      "기초·색조·헤어 제품을 국내외에 판매합니다.",
+      "연결 회사 메가코스는 화장품 개발·생산을 수행합니다.",
+      "반려동물 간식과 벤처투자 사업도 포함됩니다.",
+      "브랜드 판매와 위탁 제조, 투자 손익을 나눠 봅니다."
+    ],
+    "business": [
+      {
+        "name": "화장품 브랜드",
+        "desc": "토니모리·튠나인 등의 화장품을 국내외에 판매합니다."
+      },
+      {
+        "name": "화장품 제조",
+        "desc": "메가코스 등을 통해 고객 브랜드 제품을 개발·생산합니다."
+      },
+      {
+        "name": "반려동물·투자",
+        "desc": "반려동물 간식 생산·판매와 벤처투자 등을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "판매 경로",
+        "desc": "국내외 브랜드 판매와 온라인·매장 구성을 확인합니다."
+      },
+      {
+        "title": "제조 주문",
+        "desc": "화장품 고객 주문과 생산 가동·원가를 비교합니다."
+      },
+      {
+        "title": "사업 손익",
+        "desc": "반려동물 사업과 금융·투자 손익을 본업과 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.176995852869,
+        "op": 0.012102080331,
+        "net": 0.0165884889,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320000852",
+          "rawKRW": {
+            "sales": "176995852869",
+            "op": "12102080331",
+            "net": "16588488900"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.22027358891,
+        "op": 0.014364820223,
+        "net": 0.011404870523,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001192",
+          "rawKRW": {
+            "sales": "220273588910",
+            "op": "14364820223",
+            "net": "11404870523"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.062484448773,
+        "op": 0.005580897883,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000340",
+          "rawKRW": {
+            "sales": "62484448773",
+            "op": "5580897883",
+            "net": "2632419392"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.052028096796,
+        "op": 0.004169154671,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260519000046",
+          "rawKRW": {
+            "sales": "52028096796",
+            "op": "4169154671",
+            "net": "3677709893"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.053962074931,
+        "op": 0.002260503896,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003383",
+          "rawKRW": {
+            "sales": "53962074931",
+            "op": "2260503896",
+            "net": "1930571104"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001192",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260519000046",
+      "published": "2026.05.19",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003383",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000852",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000340",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "토니모리 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003383",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "벤처투자",
+      "desc": "성장 가능성이 있는 초기·신생 기업 등에 자금을 투자하는 사업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

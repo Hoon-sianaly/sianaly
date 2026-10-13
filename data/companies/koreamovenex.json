@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreamovenex",
+    "name": "한국무브넥스",
+    "ticker": "010100",
+    "rank": 630,
+    "type": "자동차 구동부품"
+  },
+  "overview": {
+    "short": "한국무브넥스는 자동차 동력전달·차축 부품을 만드는 회사",
+    "summary": "한국무브넥스는 자동차 동력전달·차축 부품을 만드는 회사입니다. 엔진·변속기의 동력을 바퀴에 전달하는 부품을 공급합니다.",
+    "takeaways": [
+      "한국무브넥스는 자동차 동력전달·차축 부품을 만드는 회사입니다.",
+      "엔진·변속기의 동력을 바퀴에 전달하는 부품을 공급합니다.",
+      "승용·상용차의 차축과 제동 관련 부품도 생산합니다.",
+      "미국·멕시코·중국 등 해외 생산법인을 운영합니다.",
+      "완성차 생산과 금속 원가, 해외 가동·환율을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "동력전달 부품",
+        "desc": "차량의 동력을 바퀴로 전달하는 축 부품을 만듭니다."
+      },
+      {
+        "name": "차축·제동",
+        "desc": "차체 지지·동력전달·제동 기능의 차축 관련 제품을 공급합니다."
+      },
+      {
+        "name": "산업용 부품",
+        "desc": "배관 연결용 프랜지와 산업기계 부품 등을 생산합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "차량 생산",
+        "desc": "주요 완성차의 지역별 생산과 납품량을 확인합니다."
+      },
+      {
+        "title": "제조 비용",
+        "desc": "금속·에너지·인건비와 납품가격을 비교합니다."
+      },
+      {
+        "title": "해외 운영",
+        "desc": "해외 공장 가동률·투자와 환율 영향을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.567411153543,
+        "op": 0.04367371464,
+        "net": 0.047440564199,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000552",
+          "rawKRW": {
+            "sales": "1567411153543",
+            "op": "43673714640",
+            "net": "47440564199"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.699315845004,
+        "op": 0.025317272325,
+        "net": 0.020264910611,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000529",
+          "rawKRW": {
+            "sales": "1699315845004",
+            "op": "25317272325",
+            "net": "20264910611"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.435397099656,
+        "op": 0.007442360412,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001444",
+          "rawKRW": {
+            "sales": "435397099656",
+            "op": "7442360412",
+            "net": "2273789003"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.442839851101,
+        "op": 0.009845457241,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000871",
+          "rawKRW": {
+            "sales": "442839851101",
+            "op": "9845457241",
+            "net": "8703139651"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.444046269857,
+        "op": 0.00870255945,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001488",
+          "rawKRW": {
+            "sales": "444046269857",
+            "op": "8702559450",
+            "net": "7522919225"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000529",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000871",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001488",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000552",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001444",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "한국무브넥스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001488",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장이나 설비가 생산 가능한 능력 중 실제로 사용하는 비율입니다."
+    },
+    {
+      "name": "제동",
+      "desc": "차량의 속도를 줄이거나 멈추는 기능입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "차축",
+      "desc": "차량을 지지하거나 바퀴에 동력을 전달하는 축과 관련 구조입니다."
+    },
+    {
+      "name": "프랜지",
+      "desc": "배관이나 기계 부품을 볼트 등으로 연결하기 위해 만든 돌출된 접합부입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

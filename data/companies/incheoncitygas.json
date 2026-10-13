@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "incheoncitygas",
+    "name": "인천도시가스",
+    "ticker": "034590",
+    "rank": 602,
+    "type": "도시가스 공급"
+  },
+  "overview": {
+    "short": "인천도시가스는 인천과 김포 일부 지역에 도시가스를 공급합니다.",
+    "summary": "인천도시가스는 인천과 김포 일부 지역에 도시가스를 공급합니다. 한국가스공사에서 가스를 구입해 고객에게 판매합니다.",
+    "takeaways": [
+      "인천도시가스는 인천과 김포 일부 지역에 도시가스를 공급합니다.",
+      "한국가스공사에서 가스를 구입해 고객에게 판매합니다.",
+      "가정·상업시설과 산업체 등이 주요 고객입니다.",
+      "배관망과 공급시설을 관리하고 안전 투자를 수행합니다.",
+      "기온·산업 수요와 승인 요금, 설비 비용을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "도시가스 판매",
+        "desc": "인천·김포의 공급권역 내 가정·상업·산업 고객에게 가스를 판매합니다."
+      },
+      {
+        "name": "배관망 운영",
+        "desc": "가스 배관과 압력 조절·공급 시설을 운영합니다."
+      },
+      {
+        "name": "안전·신규 공급",
+        "desc": "안전 관리와 신규 수요처 연결·설비 투자를 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "판매량",
+        "desc": "기온에 따른 난방 수요와 산업체 사용량을 확인합니다."
+      },
+      {
+        "title": "요금 구조",
+        "desc": "도매 가스가격과 지방자치단체가 승인하는 공급비용을 구분합니다."
+      },
+      {
+        "title": "설비 비용",
+        "desc": "배관 유지·안전 투자와 신규 공급 수익을 비교합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.943613477823,
+        "op": 0.019421916059,
+        "net": 0.019271621612,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250306000367",
+          "rawKRW": {
+            "sales": "943613477823",
+            "op": "19421916059",
+            "net": "19271621612"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.962994363377,
+        "op": 0.019148972191,
+        "net": 0.019167356858,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260305001037",
+          "rawKRW": {
+            "sales": "962994363377",
+            "op": "19148972191",
+            "net": "19167356858"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.222232384832,
+        "op": 0.005740483613,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001997",
+          "rawKRW": {
+            "sales": "222232384832",
+            "op": "5740483613",
+            "net": "6143518186"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.319519424365,
+        "op": 0.006947513589,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001259",
+          "rawKRW": {
+            "sales": "319519424365",
+            "op": "6947513589",
+            "net": "6584940312"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.196532483814,
+        "op": 0.003300107107,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002241",
+          "rawKRW": {
+            "sales": "196532483814",
+            "op": "3300107107",
+            "net": "4171226398"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260305001037",
+      "published": "2026.03.05",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001259",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002241",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250306000367",
+      "published": "2025.03.06",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001997",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "인천도시가스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002241",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

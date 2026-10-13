@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "crownconfectionery",
+    "name": "크라운제과",
+    "ticker": "264900",
+    "rank": 640,
+    "type": "과자·제과"
+  },
+  "overview": {
+    "short": "크라운제과는 과자류를 제조·판매하는 회사",
+    "summary": "크라운제과는 과자류를 제조·판매하는 회사입니다. 비스킷·스낵·캔디 등 다양한 제과제품을 공급합니다.",
+    "takeaways": [
+      "크라운제과는 과자류를 제조·판매하는 회사입니다.",
+      "비스킷·스낵·캔디 등 다양한 제과제품을 공급합니다.",
+      "국내 유통망을 통해 소비자에게 제품을 판매합니다.",
+      "소비 취향에 맞춰 신제품과 제품 구성을 조정합니다.",
+      "판매량과 곡물·유지·포장 원가, 유통 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "비스킷·과자",
+        "desc": "비스킷 등 제과제품을 제조·판매합니다."
+      },
+      {
+        "name": "스낵·캔디",
+        "desc": "스낵·캔디 등 여러 종류의 소비자용 과자를 공급합니다."
+      },
+      {
+        "name": "제품 유통",
+        "desc": "유통점·대리점 등을 통해 제품을 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "소비 수요",
+        "desc": "대표 제품과 신제품의 판매량·가격을 확인합니다."
+      },
+      {
+        "title": "수입 원가",
+        "desc": "곡물·유지 등 원료가격과 환율·포장비를 비교합니다."
+      },
+      {
+        "title": "생산·유통",
+        "desc": "공장 가동과 할인·판매·물류 비용을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.13"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.438102375193,
+        "op": 0.02104693355,
+        "net": 0.016776470234,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320000868",
+          "rawKRW": {
+            "sales": "438102375193",
+            "op": "21046933550",
+            "net": "16776470234"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.444838419779,
+        "op": 0.015265165837,
+        "net": 0.012326322962,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000900",
+          "rawKRW": {
+            "sales": "444838419779",
+            "op": "15265165837",
+            "net": "12326322962"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.114395639671,
+        "op": 0.004565509517,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002971",
+          "rawKRW": {
+            "sales": "114395639671",
+            "op": "4565509517",
+            "net": "3553362614"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.108355465233,
+        "op": 0.004040744305,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001459",
+          "rawKRW": {
+            "sales": "108355465233",
+            "op": "4040744305",
+            "net": "3415035171"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.110668996156,
+        "op": 0.003527298612,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002819",
+          "rawKRW": {
+            "sales": "110668996156",
+            "op": "3527298612",
+            "net": "3027623159"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.13"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000900",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001459",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002819",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000868",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002971",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "business",
+      "label": "크라운제과 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002819",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.13"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
