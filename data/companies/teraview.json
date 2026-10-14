@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "teraview",
+    "name": "테라뷰",
+    "ticker": "950250",
+    "rank": 558,
+    "type": "테라헤르츠 검사"
+  },
+  "overview": {
+    "short": "테라뷰는 자회사를 통해 테라헤르츠 검사 장비를 공급하는 회사",
+    "summary": "테라뷰는 자회사를 통해 테라헤르츠 검사 장비를 공급하는 회사입니다. 반도체 패키지의 결함을 찾는 검사 기술을 제공합니다.",
+    "takeaways": [
+      "테라뷰는 자회사를 통해 테라헤르츠 검사 장비를 공급하는 회사입니다.",
+      "반도체 패키지의 결함을 찾는 검사 기술을 제공합니다.",
+      "자동차 코팅·배터리 등의 두께·물성도 비접촉으로 측정합니다.",
+      "연구용 장비와 유지보수·소프트웨어 서비스도 판매합니다.",
+      "실적은 파운드·4월 결산이며 실제 표시 기간을 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "반도체 검사",
+        "desc": "패키징 결함 분석용 EOTPR 장비 등을 공급합니다."
+      },
+      {
+        "name": "산업 코팅 검사",
+        "desc": "자동차 도장·배터리 등 검사·계측 장비를 제공합니다."
+      },
+      {
+        "name": "연구·서비스",
+        "desc": "범용 장비와 유지보수·소모품·소프트웨어를 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "장비 채택",
+        "desc": "산업 고객의 성능 검증·장비 계약을 확인합니다."
+      },
+      {
+        "title": "공급·원가",
+        "desc": "납품 시점과 정밀 제작·연구 비용이 실적에 영향을 줍니다."
+      },
+      {
+        "title": "통화·기간",
+        "desc": "연결 파운드 실적과 5월~다음 해 4월 결산을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준·영국 파운드 실적입니다. 4월 결산 연간은 5월~다음 해 4월이며, 분기는 표시한 실제 3개월입니다. 원화로 환산하지 않습니다.",
+    "quarterlyNote": "표시한 실제 기간의 3개월 실적이며 회계연도 분기 번호·누적 실적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "GBP_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.000004224378,
+        "op": -0.000003971319,
+        "net": -0.000003768433,
+        "periodLabel": "2024.05–2025.04",
+        "reportPeriod": "2024.05–2025.04",
+        "reportedGBP": {
+          "sales": "4224378",
+          "op": "-3971319",
+          "net": "-3768433"
+        },
+        "sourceIds": [
+          "report-20260819000383"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.000004079864,
+        "op": -0.000004864477,
+        "net": -0.000004596534,
+        "periodLabel": "2025.05–2026.04",
+        "reportPeriod": "2025.05–2026.04",
+        "reportedGBP": {
+          "sales": "4079864",
+          "op": "-4864477",
+          "net": "-4596534"
+        },
+        "sourceIds": [
+          "report-20260819000383"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.000001015778,
+        "op": -0.000001630638,
+        "periodLabel": "2026.02–04",
+        "reportPeriod": "2026.02–04",
+        "reportedGBP": {
+          "sales": "1015778",
+          "op": "-1630638"
+        },
+        "sourceIds": [
+          "report-20260819000383",
+          "report-20260330001819"
+        ],
+        "derivation": "annual-minus-first-nine-month"
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.000001014288,
+        "op": -8.37559e-7,
+        "periodLabel": "2025.05–07",
+        "reportPeriod": "2025.05–07",
+        "reportedGBP": {
+          "sales": "1014288",
+          "op": "-837559"
+        },
+        "sourceIds": [
+          "report-20260923000617"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 7.72351e-7,
+        "op": -0.000001520283,
+        "periodLabel": "2026.05–07",
+        "reportPeriod": "2026.05–07",
+        "reportedGBP": {
+          "sales": "772351",
+          "op": "-1520283"
+        },
+        "sourceIds": [
+          "report-20260923000617"
+        ]
+      }
+    ],
+    "currency": "GBP",
+    "highlightFormat": "GBP",
+    "annualTerm": "12개월 결산",
+    "annualSourceLabel": "공식 파운드 4월 종료 12개월 결산",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "quarterlyCalendarNote": "4월 결산 · 2~4월은 연간에서 앞선 9개월을 파운드 단위로 차감"
+  },
+  "sources": [
+    {
+      "id": "report-20260819000383",
+      "label": "테라뷰 공식 GBP 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000383",
+      "published": "2026.08.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "report-20260330001819",
+      "label": "테라뷰 공식 GBP 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260330001819",
+      "published": "2026.03.30",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "report-20260923000617",
+      "label": "테라뷰 공식 GBP 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000617",
+      "published": "2026.09.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "테라뷰 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260923000617",
+      "published": "2026.09.23",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "반도체 패키지",
+      "desc": "반도체 칩을 보호하고 외부 회로와 연결할 수 있도록 만든 구조입니다."
+    },
+    {
+      "name": "소프트웨어",
+      "desc": "컴퓨터·장치가 작업을 수행하도록 하는 프로그램입니다."
+    },
+    {
+      "name": "패키징",
+      "desc": "반도체 칩을 보호하고 외부 회로와 연결할 수 있게 가공하는 과정입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "소모품",
+      "desc": "기기 사용 과정에서 소진돼 교체·보충하는 재료입니다. 인쇄용 토너 등이 해당합니다."
+    },
+    {
+      "name": "계측",
+      "desc": "온도·압력 등 설비 상태나 물리량을 장치로 측정하는 일입니다."
+    },
+    {
+      "name": "코팅",
+      "desc": "소재 표면에 다른 물질을 얇게 입히는 공정입니다."
+    },
+    {
+      "name": "테라헤르츠",
+      "desc": "마이크로파와 적외선 사이의 주파수 영역으로, 재료의 두께·구조 등을 검사하는 데 활용됩니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

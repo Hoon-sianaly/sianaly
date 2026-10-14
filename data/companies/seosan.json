@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "seosan",
+    "name": "서산",
+    "ticker": "079650",
+    "rank": 548,
+    "type": "콘크리트 제품"
+  },
+  "overview": {
+    "short": "서산은 레미콘과 콘크리트 제품을 만드는 회사",
+    "summary": "서산은 레미콘과 콘크리트 제품을 만드는 회사입니다. 건설 현장용 레미콘을 생산·공급합니다.",
+    "takeaways": [
+      "서산은 레미콘과 콘크리트 제품을 만드는 회사입니다.",
+      "건설 현장용 레미콘을 생산·공급합니다.",
+      "전주·통신주와 기초공사용 고강도파일도 제조합니다.",
+      "전기차 충전기 등 에너지솔루션 사업도 다룹니다.",
+      "건설 발주와 자재·운송 비용, 신규 사업 성과를 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "레미콘",
+        "desc": "건설 현장에 필요한 굳기 전 콘크리트를 공급합니다."
+      },
+      {
+        "name": "콘크리트 제품",
+        "desc": "전주·통신주·고강도파일 등을 제조합니다."
+      },
+      {
+        "name": "에너지솔루션",
+        "desc": "전기자동차 충전기 관련 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 수요",
+        "desc": "지역 건설·공공공사 발주가 제품 주문에 영향을 줍니다."
+      },
+      {
+        "title": "원가·운송",
+        "desc": "시멘트·골재·에너지와 현장 운송 비용을 확인합니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "콘크리트 수익과 충전기 사업 실적·비용을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.035683765002,
+        "op": -0.002494575557,
+        "net": -0.002459067607,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000347",
+          "rawKRW": {
+            "sales": "35683765002",
+            "op": "-2494575557",
+            "net": "-2459067607"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.045103016559,
+        "op": -0.003330555325,
+        "net": -0.002845461469,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316000539",
+          "rawKRW": {
+            "sales": "45103016559",
+            "op": "-3330555325",
+            "net": "-2845461469"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.01101103752,
+        "op": -0.000624792511,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000777",
+          "rawKRW": {
+            "sales": "11011037520",
+            "op": "-624792511",
+            "net": "34304852"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.011490691875,
+        "op": 0.000308326706,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000257",
+          "rawKRW": {
+            "sales": "11490691875",
+            "op": "308326706",
+            "net": "642423429"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.012976014916,
+        "op": -0.000325586173,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001244",
+          "rawKRW": {
+            "sales": "12976014916",
+            "op": "-325586173",
+            "net": "420480886"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000539",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000257",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001244",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000347",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000777",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "서산 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001244",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "레미콘",
+      "desc": "공장에서 혼합한 뒤 굳기 전에 건설 현장으로 운반하는 콘크리트입니다."
+    },
+    {
+      "name": "골재",
+      "desc": "콘크리트 등의 재료로 쓰는 모래·자갈·쇄석입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "고강도파일",
+      "desc": "건물 등의 하중을 지반에 전달하기 위해 사용하는 고강도 말뚝입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

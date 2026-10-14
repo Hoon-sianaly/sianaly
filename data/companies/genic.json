@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "genic",
+    "name": "제닉",
+    "ticker": "123330",
+    "rank": 520,
+    "type": "마스크팩·화장품"
+  },
+  "overview": {
+    "short": "제닉은 마스크팩과 기초화장품을 만드는 회사",
+    "summary": "제닉은 마스크팩과 기초화장품을 만드는 회사입니다. 수분을 머금는 하이드로겔 마스크팩이 주력입니다.",
+    "takeaways": [
+      "제닉은 마스크팩과 기초화장품을 만드는 회사입니다.",
+      "수분을 머금는 하이드로겔 마스크팩이 주력입니다.",
+      "고객 브랜드의 OEM·ODM 제품을 생산합니다.",
+      "셀더마 등 자체 브랜드와 시트마스크·스킨케어도 다룹니다.",
+      "고객 주문과 생산 품질, 브랜드·유통 비용을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "하이드로겔팩",
+        "desc": "젤 형태의 피부관리용 마스크팩을 제조합니다."
+      },
+      {
+        "name": "위탁생산",
+        "desc": "고객 상표의 시트마스크·기초화장품 등을 개발·생산합니다."
+      },
+      {
+        "name": "자체 브랜드",
+        "desc": "셀더마 등 브랜드 제품을 국내외에서 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 주문",
+        "desc": "브랜드사의 신제품·재주문이 제조 매출에 영향을 줍니다."
+      },
+      {
+        "title": "생산 효율",
+        "desc": "공장 가동·재료·품질 비용을 확인합니다."
+      },
+      {
+        "title": "판매 구성",
+        "desc": "위탁생산과 자체 브랜드의 이익·판촉비 차이를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.049908316638,
+        "op": 0.006023625764,
+        "net": 0.007562687681,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000829",
+          "rawKRW": {
+            "sales": "49908316638",
+            "op": "6023625764",
+            "net": "7562687681"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.078198461125,
+        "op": 0.014973754098,
+        "net": 0.018886570777,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316001140",
+          "rawKRW": {
+            "sales": "78198461125",
+            "op": "14973754098",
+            "net": "18886570777"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.024648863702,
+        "op": 0.005460571392,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002438",
+          "rawKRW": {
+            "sales": "24648863702",
+            "op": "5460571392",
+            "net": "3999656414"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.029356408951,
+        "op": 0.003410999501,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000899",
+          "rawKRW": {
+            "sales": "29356408951",
+            "op": "3410999501",
+            "net": "3476045139"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.049209965806,
+        "op": 0.009987427081,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001174",
+          "rawKRW": {
+            "sales": "49209965806",
+            "op": "9987427081",
+            "net": "11214382210"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001140",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000899",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001174",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000829",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002438",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "제닉 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001174",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "ODM",
+      "desc": "제조업체가 제품을 개발·설계하고 고객 브랜드에 공급하는 방식입니다."
+    },
+    {
+      "name": "OEM",
+      "desc": "다른 회사의 주문·설계 등에 따라 제품을 제조하는 방식입니다."
+    },
+    {
+      "name": "위탁생산",
+      "desc": "다른 회사의 의뢰에 따라 제품을 제조하는 방식입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "하이드로겔",
+      "desc": "물을 많이 머금을 수 있는 그물망 구조의 젤 소재입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

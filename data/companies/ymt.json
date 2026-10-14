@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ymt",
+    "name": "와이엠티",
+    "ticker": "251370",
+    "rank": 517,
+    "type": "전자 화학소재"
+  },
+  "overview": {
+    "short": "와이엠티는 전자기판 제조용 화학소재를 만드는 회사",
+    "summary": "와이엠티는 전자기판 제조용 화학소재를 만드는 회사입니다. 기판 표면에 금·구리 등을 입히는 도금 약품을 공급합니다.",
+    "takeaways": [
+      "와이엠티는 전자기판 제조용 화학소재를 만드는 회사입니다.",
+      "기판 표면에 금·구리 등을 입히는 도금 약품을 공급합니다.",
+      "표면을 산화로부터 보호하고 연결 신뢰성을 높이는 소재를 다룹니다.",
+      "반도체 기판 등 새 적용 분야도 개발합니다.",
+      "기판 고객 생산과 소재 채택, 원재료 가격을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "도금 약품",
+        "desc": "전자기판의 금·구리 도금 등에 쓰는 약품을 만듭니다."
+      },
+      {
+        "name": "표면처리",
+        "desc": "산화 방지·접합 신뢰성을 위한 화학소재를 공급합니다."
+      },
+      {
+        "name": "신규 소재",
+        "desc": "반도체 기판 등 고성능 전자소재를 개발합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "기판 생산",
+        "desc": "고객 전자기기·기판 생산량이 소재 수요에 영향을 줍니다."
+      },
+      {
+        "title": "고객 승인",
+        "desc": "신규 소재의 시험·채택과 공급 확대를 확인합니다."
+      },
+      {
+        "title": "원가·개발",
+        "desc": "금속 원료·제조 비용과 연구개발 지출을 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.137230743419,
+        "op": 0.003594293042,
+        "net": -0.002333704898,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814003550",
+          "rawKRW": {
+            "sales": "137230743419",
+            "op": "3594293042",
+            "net": "-2333704898"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.144603566752,
+        "op": 0.012924655576,
+        "net": 0.001469225205,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001480",
+          "rawKRW": {
+            "sales": "144603566752",
+            "op": "12924655576",
+            "net": "1469225205"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.035101321408,
+        "op": 0.004021618359,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001718",
+          "rawKRW": {
+            "sales": "35101321408",
+            "op": "4021618359",
+            "net": "2058312644"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.034976711987,
+        "op": 0.00258314456,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515003122",
+          "rawKRW": {
+            "sales": "34976711987",
+            "op": "2583144560",
+            "net": "2790489148"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.041213202207,
+        "op": 0.001577651535,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003727",
+          "rawKRW": {
+            "sales": "41213202207",
+            "op": "1577651535",
+            "net": "-2115927476"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001480",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515003122",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003727",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003550",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001718",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "와이엠티 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003727",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "도금",
+      "desc": "금속 표면에 다른 금속을 입혀 부식 방지 등 특성을 더하는 가공입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

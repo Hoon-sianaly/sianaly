@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "mezoo",
+    "name": "메쥬",
+    "ticker": "0088M0",
+    "rank": 547,
+    "type": "원격 환자감시"
+  },
+  "overview": {
+    "short": "메쥬는 환자 생체신호를 측정·관리하는 의료기기 회사",
+    "summary": "메쥬는 환자 생체신호를 측정·관리하는 의료기기 회사입니다. 이동 가능한 환자의 상태를 원격으로 확인하는 시스템을 만듭니다.",
+    "takeaways": [
+      "메쥬는 환자 생체신호를 측정·관리하는 의료기기 회사입니다.",
+      "이동 가능한 환자의 상태를 원격으로 확인하는 시스템을 만듭니다.",
+      "환자감시장치와 휴대형 심전도 기록 장치를 공급합니다.",
+      "관련 제품·상품과 데이터·용역 사업도 다룹니다.",
+      "병원 도입과 제품 허가, 개발·운영 비용을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "환자감시",
+        "desc": "환자의 생체신호를 측정·전송하는 장치를 공급합니다."
+      },
+      {
+        "name": "홀터 심전계",
+        "desc": "일상 활동 중 심전도를 연속 기록하는 기기를 만듭니다."
+      },
+      {
+        "name": "통합 서비스",
+        "desc": "환자 상태 관리용 시스템과 관련 상품·용역을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "의료 도입",
+        "desc": "병원·의료진의 장비 채택과 실제 사용을 확인합니다."
+      },
+      {
+        "title": "허가·품질",
+        "desc": "의료기기 승인과 신호·전송 신뢰성이 중요합니다."
+      },
+      {
+        "title": "운영 비용",
+        "desc": "기기 개발·생산·서버·지원 비용을 함께 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.002366370314,
+        "op": -0.005950618932,
+        "net": -0.007074387234,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260331001630",
+          "rawKRW": {
+            "sales": "2366370314",
+            "op": "-5950618932",
+            "net": "-7074387234"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.007377640926,
+        "op": -0.002832462145,
+        "net": 0.002759611141,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260331001630",
+          "rawKRW": {
+            "sales": "7377640926",
+            "op": "-2832462145",
+            "net": "2759611141"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.002775491973,
+        "op": 0.000531111236,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001165",
+          "rawKRW": {
+            "sales": "2775491973",
+            "op": "531111236",
+            "net": "278420331"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.003908180962,
+        "op": 0.000957302796,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001736",
+          "rawKRW": {
+            "sales": "3908180962",
+            "op": "957302796",
+            "net": "955122208"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.005668414582,
+        "op": 0.000874700941,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001165",
+          "rawKRW": {
+            "sales": "5668414582",
+            "op": "874700941",
+            "net": "1097834697"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331001630",
+      "published": "2026.03.31",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001736",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001165",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331001630",
+      "published": "2026.03.31",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001165",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "메쥬 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001165",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "용역",
+      "desc": "제품 판매와 달리 공정 개발·분석·작업 등 서비스를 제공하는 사업입니다."
+    },
+    {
+      "name": "심전도",
+      "desc": "심장 활동에서 발생하는 전기 신호를 기록한 검사 정보입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "홀터 심전계",
+      "desc": "일상생활 중 심장의 전기 신호를 일정 기간 연속 기록하는 휴대형 의료기기입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

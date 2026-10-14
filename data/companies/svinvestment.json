@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "svinvestment",
+    "name": "SV인베스트먼트",
+    "ticker": "289080",
+    "rank": 528,
+    "type": "벤처 투자"
+  },
+  "overview": {
+    "short": "SV인베스트먼트는 벤처기업에 투자하는 회사",
+    "summary": "SV인베스트먼트는 벤처기업에 투자하는 회사입니다. 투자조합을 결성해 기업을 발굴·투자·관리합니다.",
+    "takeaways": [
+      "SV인베스트먼트는 벤처기업에 투자하는 회사입니다.",
+      "투자조합을 결성해 기업을 발굴·투자·관리합니다.",
+      "관리·성과보수와 투자 관련 손익을 얻습니다.",
+      "3월 결산이므로 연간은 4월부터 다음 해 3월까지입니다.",
+      "투자 회수·평가손익과 보수 수익, 실제 표시 기간을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "조합 운용",
+        "desc": "투자자금을 모집해 조합을 결성·관리합니다."
+      },
+      {
+        "name": "기업 투자",
+        "desc": "중소·벤처기업을 발굴하고 성장·회수를 지원합니다."
+      },
+      {
+        "name": "자기자본 투자",
+        "desc": "회사 출자·투자 자산을 운용합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "펀드 규모",
+        "desc": "운용 규모와 관리보수 조건을 확인합니다."
+      },
+      {
+        "title": "회수·평가",
+        "desc": "상장·매각과 투자자산 평가 변화가 이익에 영향을 줍니다."
+      },
+      {
+        "title": "기간·지표",
+        "desc": "3월 결산·실제 달력 분기와 투자 영업수익을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준·3월 결산입니다. 연간은 4월~다음 해 3월이며 분기는 표시한 실제 달력 3개월입니다.",
+    "quarterlyNote": "표시한 실제 기간의 3개월 실적이며 회계연도 분기 번호·누적 실적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2025,
+        "sales": 0.020989057638,
+        "op": -0.008362514261,
+        "net": -0.007057598479,
+        "periodLabel": "2024.04–2025.03",
+        "reportPeriod": "2024.04–2025.03",
+        "reportedKRW": {
+          "sales": "20989057638",
+          "op": "-8362514261",
+          "net": "-7057598479"
+        },
+        "sourceIds": [
+          "report-20260618000244"
+        ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.021431214509,
+        "op": -0.002717454431,
+        "net": -0.001001203784,
+        "periodLabel": "2025.04–2026.03",
+        "reportPeriod": "2025.04–2026.03",
+        "reportedKRW": {
+          "sales": "21431214509",
+          "op": "-2717454431",
+          "net": "-1001203784"
+        },
+        "sourceIds": [
+          "report-20260618000244"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.005999755545,
+        "op": 0.000325300004,
+        "periodLabel": "2026.01–03",
+        "reportPeriod": "2026.01–03",
+        "reportedKRW": {
+          "sales": "5999755545",
+          "op": "325300004"
+        },
+        "sourceIds": [
+          "report-20260618000244",
+          "report-20260213002449"
+        ],
+        "derivation": "annual-minus-first-nine-month"
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.006514773333,
+        "op": 0.000982392613,
+        "periodLabel": "2025.04–06",
+        "reportPeriod": "2025.04–06",
+        "reportedKRW": {
+          "sales": "6514773333",
+          "op": "982392613"
+        },
+        "sourceIds": [
+          "report-20260813001312"
+        ]
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.009148729356,
+        "op": 0.001570657985,
+        "periodLabel": "2026.04–06",
+        "reportPeriod": "2026.04–06",
+        "reportedKRW": {
+          "sales": "9148729356",
+          "op": "1570657985"
+        },
+        "sourceIds": [
+          "report-20260813001312"
+        ]
+      }
+    ],
+    "annualTerm": "12개월 결산",
+    "annualSourceLabel": "공식 3월 종료 12개월 결산",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "quarterlyCalendarNote": "3월 결산 · 1~3월은 연간에서 앞선 9개월을 원 단위로 차감",
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (투자·운용)",
+        "help": "조합 관리·성과보수와 투자 관련 수익이며 투자원금·운용자산·현금 회수액과 다릅니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "투자·운용 관련 수익에서 영업비용을 차감한 값입니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "report-20260618000244",
+      "label": "SV인베스트먼트 공식 KRW 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000244",
+      "published": "2026.06.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "report-20260213002449",
+      "label": "SV인베스트먼트 공식 KRW 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260213002449",
+      "published": "2026.02.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "report-20260813001312",
+      "label": "SV인베스트먼트 공식 KRW 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001312",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "SV인베스트먼트 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001312",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "평가손익",
+      "desc": "자산 등의 평가 가치 변동으로 발생하는 회계상 손익으로, 실제 현금 회수와 다를 수 있습니다."
+    },
+    {
+      "name": "자기자본 투자",
+      "desc": "외부 고객의 자금이 아니라 회사가 보유한 자금 등을 투자하는 사업입니다."
+    },
+    {
+      "name": "벤처 투자",
+      "desc": "초기·성장 단계 기업 등에 자금을 투자하고 성장·회수를 추진하는 사업입니다."
+    },
+    {
+      "name": "투자조합",
+      "desc": "여러 출자자의 자금을 모아 기업 등에 투자하고 수익을 배분하는 투자기구입니다."
+    },
+    {
+      "name": "관리보수",
+      "desc": "펀드·조합 등을 관리·운용한 대가로 받는 보수입니다."
+    },
+    {
+      "name": "성과보수",
+      "desc": "정해진 투자 성과 등의 조건을 달성할 때 받는 추가 보수입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

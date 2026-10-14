@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "saeronics",
+    "name": "새로닉스",
+    "ticker": "042600",
+    "rank": 544,
+    "type": "전자·태양광 부품"
+  },
+  "overview": {
+    "short": "새로닉스는 전자기기와 태양광 부품을 만드는 회사",
+    "summary": "새로닉스는 전자기기와 태양광 부품을 만드는 회사입니다. TV 제어부품과 주방용 TV 등을 공급합니다.",
+    "takeaways": [
+      "새로닉스는 전자기기와 태양광 부품을 만드는 회사입니다.",
+      "TV 제어부품과 주방용 TV 등을 공급합니다.",
+      "해외 자회사는 TV 케이스 등 사출물을 생산합니다.",
+      "태양전지를 연결하는 리본 부품 사업도 포함됩니다.",
+      "전자·태양광 주문과 원가, 관계기업 손익을 구분해 봅니다."
+    ],
+    "business": [
+      {
+        "name": "전자기기",
+        "desc": "TV 제어부품·주방 TV 등 제품을 제조합니다."
+      },
+      {
+        "name": "사출 부품",
+        "desc": "해외 자회사가 전자기기용 플라스틱 부품을 만듭니다."
+      },
+      {
+        "name": "태양광 부품",
+        "desc": "태양전지 연결용 리본을 제조·판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 주문",
+        "desc": "TV·태양광 고객의 생산과 판매를 확인합니다."
+      },
+      {
+        "title": "제조 비용",
+        "desc": "금속·수지·해외 인건비와 가동률이 이익에 영향을 줍니다."
+      },
+      {
+        "title": "투자 손익",
+        "desc": "본업 영업이익과 관계기업·금융 손익을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.202501396859,
+        "op": 0.007282953087,
+        "net": -0.052916727406,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000898",
+          "rawKRW": {
+            "sales": "202501396859",
+            "op": "7282953087",
+            "net": "-52916727406"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.164947822818,
+        "op": -0.002632839358,
+        "net": -0.032061620585,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260625000120",
+          "rawKRW": {
+            "sales": "164947822818",
+            "op": "-2632839358",
+            "net": "-32061620585"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.039503226243,
+        "op": -0.003376513004,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000745",
+          "rawKRW": {
+            "sales": "39503226243",
+            "op": "-3376513004",
+            "net": "-22213404336"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.045375589389,
+        "op": -0.000584423923,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000182",
+          "rawKRW": {
+            "sales": "45375589389",
+            "op": "-584423923",
+            "net": "-2238695929"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.042727319954,
+        "op": -0.004490058704,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000410",
+          "rawKRW": {
+            "sales": "42727319954",
+            "op": "-4490058704",
+            "net": "14285577914"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260625000120",
+      "published": "2026.06.25",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000182",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000410",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000898",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000745",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "새로닉스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000410",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장·설비가 생산능력에 비해 실제로 사용된 정도입니다."
+    },
+    {
+      "name": "태양광",
+      "desc": "햇빛을 태양전지 등으로 전기에너지로 바꾸는 발전 방식입니다."
+    },
+    {
+      "name": "사출",
+      "desc": "녹인 플라스틱 등을 금형에 주입해 모양을 만드는 제조 방식입니다."
+    },
+    {
+      "name": "수지",
+      "desc": "플라스틱·접착제·도료 등을 만드는 고분자 재료를 뜻합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

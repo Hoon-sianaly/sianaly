@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "cheryongindustrial",
+    "name": "제룡산업",
+    "ticker": "147830",
+    "rank": 560,
+    "type": "송배전 자재"
+  },
+  "overview": {
+    "short": "제룡산업은 전력·통신·철도용 자재를 만드는 회사",
+    "summary": "제룡산업은 전력·통신·철도용 자재를 만드는 회사입니다. 송배전선을 고정·지지하는 금속 부품을 공급합니다.",
+    "takeaways": [
+      "제룡산업은 전력·통신·철도용 자재를 만드는 회사입니다.",
+      "송배전선을 고정·지지하는 금속 부품을 공급합니다.",
+      "지중배전 등 합성수지 제품도 제조합니다.",
+      "공공기관과 민간 고객에 주문형 제품을 판매합니다.",
+      "전력 인프라 발주와 원재료·가공 비용을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "금속 자재",
+        "desc": "송배전·통신·철도 전차선용 금구류를 제조합니다."
+      },
+      {
+        "name": "수지 제품",
+        "desc": "가공·지중배전용 합성수지 자재를 만듭니다."
+      },
+      {
+        "name": "주문 공급",
+        "desc": "고객 규격별 다품종 자재를 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "인프라 발주",
+        "desc": "전력·통신·철도 시설 투자와 보수 수요를 확인합니다."
+      },
+      {
+        "title": "납품 일정",
+        "desc": "공공·민간 계약과 제품 공급이 매출에 영향을 줍니다."
+      },
+      {
+        "title": "제조 원가",
+        "desc": "금속·수지와 가공·인건비를 함께 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.02932825052,
+        "op": 0.004088736219,
+        "net": 0.006241819049,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000547",
+          "rawKRW": {
+            "sales": "29328250520",
+            "op": "4088736219",
+            "net": "6241819049"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.037923882483,
+        "op": 0.010572575305,
+        "net": 0.011488403993,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316000423",
+          "rawKRW": {
+            "sales": "37923882483",
+            "op": "10572575305",
+            "net": "11488403993"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.009763669607,
+        "op": 0.003173205628,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813000096",
+          "rawKRW": {
+            "sales": "9763669607",
+            "op": "3173205628",
+            "net": "3144629905"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.013912163687,
+        "op": 0.004836581584,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260513000255",
+          "rawKRW": {
+            "sales": "13912163687",
+            "op": "4836581584",
+            "net": "5272229347"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.016282469861,
+        "op": 0.005835144491,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000834",
+          "rawKRW": {
+            "sales": "16282469861",
+            "op": "5835144491",
+            "net": "9443123518"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000423",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000255",
+      "published": "2026.05.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000834",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000547",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813000096",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "제룡산업 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000834",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "배전",
+      "desc": "송전망에서 받은 전기를 지역의 가정·공장 등 사용자에게 나눠 공급하는 과정입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "수지",
+      "desc": "플라스틱·접착제·도료 등을 만드는 고분자 재료를 뜻합니다."
+    },
+    {
+      "name": "합성수지",
+      "desc": "화학적으로 합성한 고분자 소재로 플라스틱 제품의 원료로 쓰입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
