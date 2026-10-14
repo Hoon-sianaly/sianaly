@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "mezzion",
+    "name": "메지온",
+    "ticker": "140410",
+    "rank": 45,
+    "type": "희귀질환 신약 개발"
+  },
+  "overview": {
+    "short": "메지온은 유데나필 등을 활용한 신약 개발에 주력하는 회사",
+    "summary": "메지온은 유데나필 등을 활용한 신약 개발에 주력하는 회사입니다. 폰탄 수술 이후 환자를 대상으로 하는 치료제 등의 임상 개발을 진행합니다.",
+    "takeaways": [
+      "메지온은 유데나필 등을 활용한 신약 개발에 주력하는 회사입니다.",
+      "폰탄 수술 이후 환자를 대상으로 하는 치료제 등의 임상 개발을 진행합니다.",
+      "추가 임상과 인허가 절차의 진행을 현재 판매 성과와 구분해야 합니다.",
+      "2026년 반기 보고서의 매출은 BNF 사업부의 상품 판매에서 발생했습니다.",
+      "임상 결과와 규제기관 협의, 연구개발 비용·현금 소요가 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "폰탄 환자 치료제 개발",
+        "desc": "폰탄 수술 이후 환자를 대상으로 유데나필의 임상 개발을 진행합니다."
+      },
+      {
+        "name": "기타 신약 연구",
+        "desc": "다른 질환에 대한 적응증 확대와 후보물질 개발을 진행합니다."
+      },
+      {
+        "name": "BNF 상품 판매",
+        "desc": "보고서상 기존 사료사업부인 BNF 사업부에서 상품 판매를 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임상·인허가",
+        "desc": "추가 임상 결과와 규제기관 협의·신청 절차를 확인합니다."
+      },
+      {
+        "title": "개발과 매출 구분",
+        "desc": "신약 기대와 현재 BNF 사업부의 상품 매출을 구분합니다."
+      },
+      {
+        "title": "개발비·자금조달",
+        "desc": "임상·연구개발 지출과 보유 현금·추가 자금 소요를 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.00861162088,
+        "op": -0.014299550646,
+        "net": -0.019476774574,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001584",
+          "rawKRW": {
+            "sales": "8611620880",
+            "op": "-14299550646",
+            "net": "-19476774574"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "-표준계정코드 미사용-"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.007909500393,
+        "op": -0.016768533041,
+        "net": -0.03492886237,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001282",
+          "rawKRW": {
+            "sales": "7909500393",
+            "op": "-16768533041",
+            "net": "-34928862370"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "-표준계정코드 미사용-"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.001744204057,
+        "op": -0.003547630702,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001474",
+          "rawKRW": {
+            "sales": "1744204057",
+            "op": "-3547630702",
+            "net": "-1850287390"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.002015440537,
+        "op": -0.004562840209,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002590",
+          "rawKRW": {
+            "sales": "2015440537",
+            "op": "-4562840209"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "-표준계정코드 미사용-"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.002200899865,
+        "op": -0.004540625132,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003105",
+          "rawKRW": {
+            "sales": "2200899865",
+            "op": "-4540625132",
+            "net": "7685387188"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001282",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002590",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003105",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001584",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001474",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "메지온 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003105",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 확인하는 연구 단계입니다."
+    },
+    {
+      "name": "적응증",
+      "desc": "의약품이 사용될 수 있도록 허가받거나 개발 중인 질환·증상 범위입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "BNF",
+      "desc": "메지온 보고서에서 기존 사료사업부를 구분하는 사업부 명칭입니다. 신약 개발 사업의 매출과 구분합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

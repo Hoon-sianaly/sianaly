@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "parksystems",
+    "name": "파크시스템스",
+    "ticker": "140860",
+    "rank": 42,
+    "type": "원자현미경"
+  },
+  "overview": {
+    "short": "파크시스템스는 미세한 표면을 측정하는 원자현미경을 만드는 회사",
+    "summary": "파크시스템스는 미세한 표면을 측정하는 원자현미경을 만드는 회사입니다. 원자현미경은 작은 탐침을 이용해 표면의 높낮이와 특성 등을 분석합니다.",
+    "takeaways": [
+      "파크시스템스는 미세한 표면을 측정하는 원자현미경을 만드는 회사입니다.",
+      "원자현미경은 작은 탐침을 이용해 표면의 높낮이와 특성 등을 분석합니다.",
+      "연구기관용 장비와 반도체 등 산업 현장에서 사용하는 장비를 공급합니다.",
+      "소모품과 서비스 등 관련 사업도 운영합니다.",
+      "고객 연구·설비 투자와 산업용 장비 채택, 해외 납품 일정이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "산업용 원자현미경",
+        "desc": "반도체 등 산업 공정의 미세 구조·표면 분석용 장비를 공급합니다."
+      },
+      {
+        "name": "연구용 원자현미경",
+        "desc": "대학·연구기관 등의 나노 측정·분석 장비를 공급합니다."
+      },
+      {
+        "name": "소모품·서비스",
+        "desc": "장비에 필요한 소모품과 기술서비스 등을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 투자·채택",
+        "desc": "산업 고객의 검사·계측 투자와 연구기관의 장비 수요를 확인합니다."
+      },
+      {
+        "title": "수주·인도 일정",
+        "desc": "고가 장비의 주문·납품·검수 시점에 따라 분기 실적이 달라질 수 있습니다."
+      },
+      {
+        "title": "제품 구성·환율",
+        "desc": "산업용·연구용 장비의 구성과 해외 판매 환율, 개발 비용을 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.175059849427,
+        "op": 0.038529871391,
+        "net": 0.042803661818,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319001027",
+          "rawKRW": {
+            "sales": "175059849427",
+            "op": "38529871391",
+            "net": "42803661818"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.205613479882,
+        "op": 0.042191026195,
+        "net": 0.03447572585,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000022",
+          "rawKRW": {
+            "sales": "205613479882",
+            "op": "42191026195",
+            "net": "34475725850"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.052309189062,
+        "op": 0.011966820237,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003126",
+          "rawKRW": {
+            "sales": "52309189062",
+            "op": "11966820237",
+            "net": "4048386140"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.039361450726,
+        "op": 0.002098076555,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001410",
+          "rawKRW": {
+            "sales": "39361450726",
+            "op": "2098076555",
+            "net": "5126656142"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.053038561979,
+        "op": 0.004216571167,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004158",
+          "rawKRW": {
+            "sales": "53038561979",
+            "op": "4216571167",
+            "net": "2592730125"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000022",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001410",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004158",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319001027",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003126",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "파크시스템스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004158",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "소모품",
+      "desc": "기기 사용 과정에서 소진돼 교체·보충하는 재료입니다. 인쇄용 토너 등이 해당합니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "계측",
+      "desc": "온도·압력 등 설비 상태나 물리량을 장치로 측정하는 일입니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품된 제품이나 시스템이 계약 조건을 충족하는지 고객이 확인하는 절차입니다."
+    },
+    {
+      "name": "원자현미경",
+      "desc": "미세한 탐침을 이용해 시료 표면의 높낮이와 물리적 특성 등을 측정하는 장비입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

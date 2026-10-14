@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hlb",
+    "name": "HLB",
+    "ticker": "028300",
+    "rank": 9,
+    "type": "바이오·헬스케어"
+  },
+  "overview": {
+    "short": "HLB는 항암신약 개발과 헬스케어 등 여러 사업을 운영하는 회사",
+    "summary": "HLB는 항암신약 개발과 헬스케어 등 여러 사업을 운영하는 회사입니다. 해외 종속회사를 통해 리보세라닙 등 항암제의 개발·인허가를 추진합니다.",
+    "takeaways": [
+      "HLB는 항암신약 개발과 헬스케어 등 여러 사업을 운영하는 회사입니다.",
+      "해외 종속회사를 통해 리보세라닙 등 항암제의 개발·인허가를 추진합니다.",
+      "헬스케어 사업은 진단기기와 의약외품·의료소모품 등을 제조·판매합니다.",
+      "선박과 미디어커머스 사업도 연결 사업 범위에 포함됩니다.",
+      "신약의 임상·인허가 기대와 현재 사업 매출, 연구개발·자금조달 부담을 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "항암신약 개발",
+        "desc": "종속회사를 통해 리보세라닙·리라푸그라티닙 등 항암제 개발을 진행합니다."
+      },
+      {
+        "name": "헬스케어 제품",
+        "desc": "체외진단 의료기기·의약외품·의료소모품 등을 제조·판매합니다."
+      },
+      {
+        "name": "기타 연결 사업",
+        "desc": "특수선·구명정 등 선박과 미디어커머스 사업을 함께 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임상·인허가 진행",
+        "desc": "개발 약물의 임상 결과와 규제기관 심사·후속 절차를 확인합니다."
+      },
+      {
+        "title": "현금과 자금조달",
+        "desc": "신약 연구개발 및 해외 종속회사 운영에 필요한 자금 부담이 중요합니다."
+      },
+      {
+        "title": "연결 사업 손익",
+        "desc": "헬스케어·선박 등 현재 매출 사업의 손익과 신약 개발 비용을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.068125727347,
+        "op": -0.118516152929,
+        "net": -0.10802679856,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001860",
+          "rawKRW": {
+            "sales": "68125727347",
+            "op": "-118516152929",
+            "net": "-108026798560"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.084172574224,
+        "op": -0.104217336541,
+        "net": -0.235415156253,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001673",
+          "rawKRW": {
+            "sales": "84172574224",
+            "op": "-104217336541",
+            "net": "-235415156253"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.015732443379,
+        "op": -0.023061473106,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001215",
+          "rawKRW": {
+            "sales": "15732443379",
+            "op": "-23061473106",
+            "net": "-60751604424"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.01868914978,
+        "op": -0.023192956604,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001567",
+          "rawKRW": {
+            "sales": "18689149780",
+            "op": "-23192956604",
+            "net": "-40896159183"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.028001908177,
+        "op": -0.0225201448,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002713",
+          "rawKRW": {
+            "sales": "28001908177",
+            "op": "-22520144800",
+            "net": "-80394939460"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001673",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001567",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002713",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001860",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001215",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "HLB 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002713",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "커머스",
+      "desc": "상품이나 서비스를 사고파는 사업입니다. 이 페이지에서는 온라인 쇼핑·선물하기 등의 서비스를 뜻합니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 확인하는 연구 단계입니다."
+    },
+    {
+      "name": "체외진단",
+      "desc": "혈액·소변 등의 검체를 몸 밖에서 검사하여 질병이나 건강 상태를 확인하는 방식입니다."
+    },
+    {
+      "name": "의약외품",
+      "desc": "의약품과 구분해 관리하는 보건 관련 제품 분류입니다. 일부 구강·위생 제품 등이 해당합니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "소모품",
+      "desc": "기기 사용 과정에서 소진돼 교체·보충하는 재료입니다. 인쇄용 토너 등이 해당합니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

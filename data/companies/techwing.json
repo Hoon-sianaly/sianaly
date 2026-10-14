@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "techwing",
+    "name": "테크윙",
+    "ticker": "089030",
+    "rank": 46,
+    "type": "반도체 검사장비"
+  },
+  "overview": {
+    "short": "테크윙은 반도체 검사장비와 관련 부품을 개발·제조하는 회사",
+    "summary": "테크윙은 반도체 검사장비와 관련 부품을 개발·제조하는 회사입니다. 테스트 핸들러는 반도체를 검사 위치로 이동시키고 분류하는 장비입니다.",
+    "takeaways": [
+      "테크윙은 반도체 검사장비와 관련 부품을 개발·제조하는 회사입니다.",
+      "테스트 핸들러는 반도체를 검사 위치로 이동시키고 분류하는 장비입니다.",
+      "프로버 등 웨이퍼·HBM 검사 관련 장비로 제품군을 확대합니다.",
+      "종속회사를 통해 디스플레이 평가장비 등도 공급합니다.",
+      "고객의 검사 투자와 신규 장비 채택, 부품·서비스 수익을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "반도체 검사장비",
+        "desc": "테스트 핸들러·프로버 등 반도체 검사 관련 장비를 공급합니다."
+      },
+      {
+        "name": "교체 부품·지원",
+        "desc": "검사 대상 변경용 부품과 보드, 유지보수 등을 제공합니다."
+      },
+      {
+        "name": "디스플레이 평가",
+        "desc": "종속회사를 통해 OLED·LCD 등 화면 평가장비를 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 검사 투자",
+        "desc": "반도체 고객의 생산량과 검사 공정 확대가 장비 수요에 영향을 줍니다."
+      },
+      {
+        "title": "신규 장비 채택",
+        "desc": "HBM 등 신규 검사 솔루션의 고객 평가·채택·납품을 확인합니다."
+      },
+      {
+        "title": "장비·부품 구성",
+        "desc": "장비와 교체 부품·서비스 매출의 구성, 개발 비용을 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.185507171034,
+        "op": 0.023411077264,
+        "net": -0.02197045322,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000416",
+          "rawKRW": {
+            "sales": "185507171034",
+            "op": "23411077264",
+            "net": "-21970453220"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.159128398402,
+        "op": 0.015837572847,
+        "net": 0.008996126448,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260623000173",
+          "rawKRW": {
+            "sales": "159128398402",
+            "op": "15837572847",
+            "net": "8996126448"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.048893652605,
+        "op": 0.006361081674,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000910",
+          "rawKRW": {
+            "sales": "48893652605",
+            "op": "6361081674",
+            "net": "21722830381"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.052399688379,
+        "op": 0.009702115572,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001350",
+          "rawKRW": {
+            "sales": "52399688379",
+            "op": "9702115572",
+            "net": "-6098167977"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.056776728491,
+        "op": 0.012507979529,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001211",
+          "rawKRW": {
+            "sales": "56776728491",
+            "op": "12507979529",
+            "net": "5080287548"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260623000173",
+      "published": "2026.06.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001350",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001211",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000416",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000910",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "테크윙 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001211",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "OLED",
+      "desc": "소자가 스스로 빛을 내는 유기발광다이오드 디스플레이 기술입니다."
+    },
+    {
+      "name": "LCD",
+      "desc": "액정과 별도의 빛을 내는 장치를 이용해 화면을 표시하는 디스플레이 기술입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "테스트 핸들러",
+      "desc": "반도체 검사 과정에서 제품을 시험 장치로 옮기고 검사 뒤 분류하는 장비입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
