@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261014-kosdaq200-1";
+const COMPANY_DATA_VERSION = "20261014-kosdaq300-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -31,7 +31,7 @@ async function loadCompanyRecord(key, ancestors = []) {
 }
 
 function financialDisplayUnit(value, currency) {
- if(currency==="USD"){const a=Math.abs(value);if(a>=0.0001)return{label:"억달러",factor:10000};if(a>=0.00000001)return{label:"만달러",factor:100000000};return{label:"달러",factor:1000000000000};}
+ if(currency==="USD"||currency==="CNY"){const a=Math.abs(value),name=currency==="USD"?"달러":"위안";if(a>=0.0001)return{label:"억"+name,factor:10000};if(a>=0.00000001)return{label:"만"+name,factor:100000000};return{label:name,factor:1000000000000};}
  const magnitude=Math.abs(value);
  if (magnitude >= 1) return {label:"조원",factor:1};
  if (magnitude >= 0.0001) return {label:"억원",factor:10000};

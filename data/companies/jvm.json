@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "jvm",
+    "name": "제이브이엠",
+    "ticker": "054950",
+    "rank": 276,
+    "type": "약국 자동화"
+  },
+  "overview": {
+    "short": "제이브이엠은 약국 자동화 회사",
+    "summary": "제이브이엠은 약국 자동화 회사입니다. 처방약을 분류·분배·포장하는 장비를 만듭니다.",
+    "takeaways": [
+      "제이브이엠은 약국 자동화 회사입니다.",
+      "처방약을 분류·분배·포장하는 장비를 만듭니다.",
+      "병원·약국의 약품·재고 관리를 지원합니다.",
+      "설치 장비용 소모품도 반복 공급합니다.",
+      "신규 장비와 소모품 매출을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "조제 시스템",
+        "desc": "약 분류·포장 자동화장비를 공급합니다."
+      },
+      {
+        "name": "관리 시스템",
+        "desc": "약품 보관·투약 관리를 지원합니다."
+      },
+      {
+        "name": "소모품",
+        "desc": "설치 장비용 포장·교체 용품을 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "장비 도입",
+        "desc": "병원·약국의 설치 수요를 봅니다."
+      },
+      {
+        "title": "반복 매출",
+        "desc": "소모품 사용·설치 기반을 확인합니다."
+      },
+      {
+        "title": "해외·원가",
+        "desc": "수출·유통·생산 비용을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.159434150636,
+        "op": 0.030675011499,
+        "net": 0.028844340035,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001593",
+          "rawKRW": {
+            "sales": "159434150636",
+            "op": "30675011499",
+            "net": "28844340035"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.173129219712,
+        "op": 0.033276260919,
+        "net": 0.028350804537,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001116",
+          "rawKRW": {
+            "sales": "173129219712",
+            "op": "33276260919",
+            "net": "28350804537"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.047537480253,
+        "op": 0.010903180253,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003226",
+          "rawKRW": {
+            "sales": "47537480253",
+            "op": "10903180253",
+            "net": "8899813894"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.045484139897,
+        "op": 0.009291852414,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001024",
+          "rawKRW": {
+            "sales": "45484139897",
+            "op": "9291852414",
+            "net": "7593691303"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.049306359684,
+        "op": 0.013523560607,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003335",
+          "rawKRW": {
+            "sales": "49306359684",
+            "op": "13523560607",
+            "net": "11578547350"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001116",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001024",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003335",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001593",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003226",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "제이브이엠 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003335",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "소모품",
+      "desc": "기기 사용 과정에서 소진돼 교체·보충하는 재료입니다. 인쇄용 토너 등이 해당합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

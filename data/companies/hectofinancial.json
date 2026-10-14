@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hectofinancial",
+    "name": "헥토파이낸셜",
+    "ticker": "234340",
+    "rank": 275,
+    "type": "전자결제·정산"
+  },
+  "overview": {
+    "short": "헥토파이낸셜은 전자결제 회사",
+    "summary": "헥토파이낸셜은 전자결제 회사입니다. 가상계좌·펌뱅킹 서비스를 제공합니다.",
+    "takeaways": [
+      "헥토파이낸셜은 전자결제 회사입니다.",
+      "가상계좌·펌뱅킹 서비스를 제공합니다.",
+      "계좌 기반 간편현금결제도 운영합니다.",
+      "해외 플랫폼과 국내 사업자의 외화 정산을 돕습니다.",
+      "거래 수수료와 정산·시스템 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "계좌 서비스",
+        "desc": "가상계좌·은행 전산 연계를 제공합니다."
+      },
+      {
+        "name": "간편결제",
+        "desc": "계좌 기반 결제를 중계합니다."
+      },
+      {
+        "name": "해외 정산",
+        "desc": "국경 간 거래의 외화 정산을 지원합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "거래 활동",
+        "desc": "고객 결제·정산 물량을 봅니다."
+      },
+      {
+        "title": "계약 조건",
+        "desc": "수수료와 금융기관 비용을 확인합니다."
+      },
+      {
+        "title": "운영 안정",
+        "desc": "시스템·정산 위험 관리를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.159308044324,
+        "op": 0.013293369221,
+        "net": 0.008974108141,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250616000276",
+          "rawKRW": {
+            "sales": "159308044324",
+            "op": "13293369221",
+            "net": "8974108141"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.187435598839,
+        "op": 0.015577801607,
+        "net": 0.008824797927,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001380",
+          "rawKRW": {
+            "sales": "187435598839",
+            "op": "15577801607",
+            "net": "8824797927"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.044525827435,
+        "op": 0.003835601531,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003204",
+          "rawKRW": {
+            "sales": "44525827435",
+            "op": "3835601531",
+            "net": "2748849561"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.057471142722,
+        "op": 0.009136813436,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002755",
+          "rawKRW": {
+            "sales": "57471142722",
+            "op": "9136813436",
+            "net": "6815985744"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.050136973068,
+        "op": 0.004609083923,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003372",
+          "rawKRW": {
+            "sales": "50136973068",
+            "op": "4609083923",
+            "net": "4219677254"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001380",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002755",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003372",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250616000276",
+      "published": "2025.06.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003204",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "헥토파이낸셜 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003372",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "플랫폼",
+      "desc": "여러 제품·기술을 개발하거나 서비스를 제공하는 데 활용하는 공통 기반입니다. 여기서는 약물 전달 등 기술 기반을 뜻합니다."
+    },
+    {
+      "name": "펌뱅킹",
+      "desc": "기업과 은행 전산을 연결해 입출금·조회 등의 업무를 처리하는 서비스입니다."
+    },
+    {
+      "name": "가상계좌",
+      "desc": "입금 확인·정산을 위해 고객이나 거래별로 부여하는 계좌번호입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "eubiologics",
+    "name": "유바이오로직스",
+    "ticker": "206650",
+    "rank": 274,
+    "type": "백신·바이오 수탁생산"
+  },
+  "overview": {
+    "short": "유바이오로직스는 백신 회사",
+    "summary": "유바이오로직스는 백신 회사입니다. 경구용 콜레라 백신이 주된 매출입니다.",
+    "takeaways": [
+      "유바이오로직스는 백신 회사입니다.",
+      "경구용 콜레라 백신이 주된 매출입니다.",
+      "새 예방백신의 연구·개발을 추진합니다.",
+      "바이오 의약품 수탁 연구·생산도 제공합니다.",
+      "공급 계약과 생산·품질·개발비를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "콜레라 백신",
+        "desc": "경구용 백신을 생산·공급합니다."
+      },
+      {
+        "name": "백신 개발",
+        "desc": "후속 예방백신을 연구합니다."
+      },
+      {
+        "name": "수탁 서비스",
+        "desc": "바이오 의약품 연구·제조를 대행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "백신 공급",
+        "desc": "국제 조달·주문·인도 일정을 봅니다."
+      },
+      {
+        "title": "생산 품질",
+        "desc": "가동·수율·품질 규격을 확인합니다."
+      },
+      {
+        "title": "개발 자금",
+        "desc": "후속 임상·설비 비용을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.096035297831,
+        "op": 0.034321335803,
+        "net": 0.018991722463,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000779",
+          "rawKRW": {
+            "sales": "96035297831",
+            "op": "34321335803",
+            "net": "18991722463"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.149195024704,
+        "op": 0.060663218448,
+        "net": 0.04126400384,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260317000832",
+          "rawKRW": {
+            "sales": "149195024704",
+            "op": "60663218448",
+            "net": "41264003840"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.03623409439,
+        "op": 0.011240277023,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001443",
+          "rawKRW": {
+            "sales": "36234094390",
+            "op": "11240277023",
+            "net": "7728944934"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.015642562304,
+        "op": 0.002192023047,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001073",
+          "rawKRW": {
+            "sales": "15642562304",
+            "op": "2192023047",
+            "net": "3663072210"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.033219694674,
+        "op": 0.008576674714,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001113",
+          "rawKRW": {
+            "sales": "33219694674",
+            "op": "8576674714",
+            "net": "7502444753"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000832",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001073",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001113",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000779",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001443",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "유바이오로직스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001113",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입·생산한 제품 중 정상적으로 사용할 수 있는 제품의 비율입니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 평가하는 시험입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "수탁",
+      "desc": "다른 회사의 의뢰를 받아 생산이나 업무를 대신 수행하는 것입니다."
+    },
+    {
+      "name": "경구",
+      "desc": "약물을 입으로 복용하는 투여 방식을 뜻합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

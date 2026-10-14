@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "temc",
+    "name": "티이엠씨",
+    "ticker": "425040",
+    "rank": 261,
+    "type": "반도체 가스·공급장비"
+  },
+  "overview": {
+    "short": "티이엠씨는 반도체 특수가스 회사",
+    "summary": "티이엠씨는 반도체 특수가스 회사입니다. 가스 합성·분리·정제·충전을 수행합니다.",
+    "takeaways": [
+      "티이엠씨는 반도체 특수가스 회사입니다.",
+      "가스 합성·분리·정제·충전을 수행합니다.",
+      "공정용 가스·케미칼을 공급합니다.",
+      "연결 사업에는 반도체·배터리 공급장비가 있습니다.",
+      "공장 가동과 고객 승인·원가를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "특수가스",
+        "desc": "반도체 공정용 고순도 가스를 생산합니다."
+      },
+      {
+        "name": "공급 장비",
+        "desc": "약액·가스·전해액 공급장치를 만듭니다."
+      },
+      {
+        "name": "관련 가스",
+        "desc": "연결 회사를 통해 산업용 가스를 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "공정 수요",
+        "desc": "반도체 생산·공정 변화에 따른 사용을 봅니다."
+      },
+      {
+        "title": "제품 승인",
+        "desc": "고객 인증·신규 납품을 확인합니다."
+      },
+      {
+        "title": "원가·시설",
+        "desc": "원료 조달·정제 수율·투자를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.310234690169,
+        "op": 0.019701451369,
+        "net": 0.017073068609,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000974",
+          "rawKRW": {
+            "sales": "310234690169",
+            "op": "19701451369",
+            "net": "17073068609"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.279708410111,
+        "op": 0.024837637287,
+        "net": 0.017699960143,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000082",
+          "rawKRW": {
+            "sales": "279708410111",
+            "op": "24837637287",
+            "net": "17699960143"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.076331747358,
+        "op": 0.006898539786,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002522",
+          "rawKRW": {
+            "sales": "76331747358",
+            "op": "6898539786",
+            "net": "1757633503"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.049514288942,
+        "op": 0.000141706345,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000618",
+          "rawKRW": {
+            "sales": "49514288942",
+            "op": "141706345",
+            "net": "2101990438"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.086461337823,
+        "op": 0.005858763867,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000997",
+          "rawKRW": {
+            "sales": "86461337823",
+            "op": "5858763867",
+            "net": "5292344622"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000082",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000618",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000997",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000974",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002522",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "티이엠씨 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000997",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입·생산한 제품 중 정상적으로 사용할 수 있는 제품의 비율입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "특수가스",
+      "desc": "반도체 등 정밀한 제조 공정에 사용하는 고순도·특수 용도의 가스입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "고순도",
+      "desc": "불순물의 함량이 매우 낮은 상태로, 공정별 요구 수준이 다릅니다."
+    },
+    {
+      "name": "전해액",
+      "desc": "배터리 내부에서 이온이 이동할 수 있도록 하는 액체 소재입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

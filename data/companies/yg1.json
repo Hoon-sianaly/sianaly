@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "yg1",
+    "name": "와이지-원",
+    "ticker": "019210",
+    "rank": 203,
+    "type": "절삭공구"
+  },
+  "overview": {
+    "short": "와이지-원은 금속 등을 깎는 절삭공구 회사",
+    "summary": "와이지-원은 금속 등을 깎는 절삭공구 회사입니다. 밀링·드릴·나사·선삭 공구를 공급합니다.",
+    "takeaways": [
+      "와이지-원은 금속 등을 깎는 절삭공구 회사입니다.",
+      "밀링·드릴·나사·선삭 공구를 공급합니다.",
+      "일체형과 날 교체형 제품을 운영합니다.",
+      "기계·자동차·항공 등 제조업에 판매합니다.",
+      "제조 경기와 소모품 교체·원재료를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "절삭공구",
+        "desc": "밀링·드릴 등 가공 공구를 생산합니다."
+      },
+      {
+        "name": "교체형 제품",
+        "desc": "날을 교체하는 공구를 공급합니다."
+      },
+      {
+        "name": "해외 판매",
+        "desc": "국내외 제조 고객에게 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제조 수요",
+        "desc": "설비 가동과 공구 주문을 봅니다."
+      },
+      {
+        "title": "제품 구성",
+        "desc": "고사양 공구의 비중을 확인합니다."
+      },
+      {
+        "title": "생산 원가",
+        "desc": "합금·가공비와 환율을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.574990223686,
+        "op": 0.055815895657,
+        "net": 0.016982356919,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000722",
+          "rawKRW": {
+            "sales": "574990223686",
+            "op": "55815895657",
+            "net": "16982356919"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.639382631795,
+        "op": 0.066528357756,
+        "net": 0.025329083247,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000988",
+          "rawKRW": {
+            "sales": "639382631795",
+            "op": "66528357756",
+            "net": "25329083247"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.150738655754,
+        "op": 0.015564196036,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003122",
+          "rawKRW": {
+            "sales": "150738655754",
+            "op": "15564196036",
+            "net": "2433373292"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.207783601842,
+        "op": 0.038838835003,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001399",
+          "rawKRW": {
+            "sales": "207783601842",
+            "op": "38838835003",
+            "net": "25745057360"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.213294648255,
+        "op": 0.047746853294,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002362",
+          "rawKRW": {
+            "sales": "213294648255",
+            "op": "47746853294",
+            "net": "30386443871"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000988",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001399",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002362",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000722",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003122",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "와이지-원 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002362",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "소모품",
+      "desc": "기기 사용 과정에서 소진돼 교체·보충하는 재료입니다. 인쇄용 토너 등이 해당합니다."
+    },
+    {
+      "name": "합금",
+      "desc": "둘 이상의 원소를 섞어 강도·내열성 등 필요한 성질을 갖도록 만든 금속입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

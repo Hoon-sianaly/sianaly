@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "asflow",
+    "name": "아스플로",
+    "ticker": "159010",
+    "rank": 220,
+    "type": "공정가스 부품"
+  },
+  "overview": {
+    "short": "아스플로는 반도체 공정가스 부품 회사",
+    "summary": "아스플로는 반도체 공정가스 부품 회사입니다. 고청정 튜브·피팅을 공급합니다.",
+    "takeaways": [
+      "아스플로는 반도체 공정가스 부품 회사입니다.",
+      "고청정 튜브·피팅을 공급합니다.",
+      "밸브·레귤레이터·금속필터도 생산합니다.",
+      "시공·장비 고객의 가스 이송에 적용됩니다.",
+      "청정 품질과 신규 고객 채택·제조비를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "튜브·피팅",
+        "desc": "공정가스 이송·연결 부품을 공급합니다."
+      },
+      {
+        "name": "유량 제어",
+        "desc": "밸브·압력 조절기를 공급합니다."
+      },
+      {
+        "name": "필터·모듈",
+        "desc": "고청정 필터·모듈을 생산합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 투자",
+        "desc": "공장·장비 발주를 확인합니다."
+      },
+      {
+        "title": "품질 채택",
+        "desc": "청정 규격·고객 승인을 봅니다."
+      },
+      {
+        "title": "제조 원가",
+        "desc": "소재·표면처리·수율을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.083609960696,
+        "op": -0.001863944824,
+        "net": -0.002367405915,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250313000971",
+          "rawKRW": {
+            "sales": "83609960696",
+            "op": "-1863944824",
+            "net": "-2367405915"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.067924197059,
+        "op": -0.007014701152,
+        "net": -0.009937488884,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316001408",
+          "rawKRW": {
+            "sales": "67924197059",
+            "op": "-7014701152",
+            "net": "-9937488884"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.014921970103,
+        "op": -0.001991884462,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250915000309",
+          "rawKRW": {
+            "sales": "14921970103",
+            "op": "-1991884462",
+            "net": "-5387027983"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.028314726511,
+        "op": 0.001383083233,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260511000427",
+          "rawKRW": {
+            "sales": "28314726511",
+            "op": "1383083233",
+            "net": "1233645714"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.031714304453,
+        "op": 0.004419623406,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001412",
+          "rawKRW": {
+            "sales": "31714304453",
+            "op": "4419623406",
+            "net": "8819092121"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001408",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260511000427",
+      "published": "2026.05.11",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001412",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313000971",
+      "published": "2025.03.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250915000309",
+      "published": "2025.09.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "아스플로 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001412",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입·생산한 제품 중 정상적으로 사용할 수 있는 제품의 비율입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "밸브",
+      "desc": "공기·액체 등의 흐름을 열거나 막고 조절하는 부품입니다."
+    },
+    {
+      "name": "피팅",
+      "desc": "배관·튜브를 연결하거나 방향을 바꾸는 부품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

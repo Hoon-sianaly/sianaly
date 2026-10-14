@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hancom",
+    "name": "한컴",
+    "ticker": "030520",
+    "rank": 213,
+    "type": "문서 SW·안전장비"
+  },
+  "overview": {
+    "short": "한컴은 문서 소프트웨어 회사",
+    "summary": "한컴은 문서 소프트웨어 회사입니다. 오피스와 AI·클라우드 문서 서비스를 제공합니다.",
+    "takeaways": [
+      "한컴은 문서 소프트웨어 회사입니다.",
+      "오피스와 AI·클라우드 문서 서비스를 제공합니다.",
+      "SDK 등 기술 라이선스도 공급합니다.",
+      "연결 사업에는 소방·방산 장비와 금융 등이 포함됩니다.",
+      "SW 수익과 제조·투자 손익을 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "문서 SW",
+        "desc": "설치형·클라우드 문서 제품을 제공합니다."
+      },
+      {
+        "name": "안전 장비",
+        "desc": "계열사 소방·방산 제품을 공급합니다."
+      },
+      {
+        "name": "기타·금융",
+        "desc": "서비스·투자 등 연결 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 계약",
+        "desc": "SW 라이선스·구독 수요를 봅니다."
+      },
+      {
+        "title": "AI 사업화",
+        "desc": "신규 서비스 도입·매출을 구분합니다."
+      },
+      {
+        "title": "연결 비용",
+        "desc": "제조 원가·개발비·투자 손익을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.304773304445,
+        "op": 0.040422695177,
+        "net": 0.013996109787,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319000886",
+          "rawKRW": {
+            "sales": "304773304445",
+            "op": "40422695177",
+            "net": "13996109787"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.326744735334,
+        "op": 0.036397225985,
+        "net": 0.024577732451,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001305",
+          "rawKRW": {
+            "sales": "326744735334",
+            "op": "36397225985",
+            "net": "24577732451"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.086412575354,
+        "op": 0.016404841198,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001218",
+          "rawKRW": {
+            "sales": "86412575354",
+            "op": "16404841198",
+            "net": "15083817218"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.063616446094,
+        "op": 0.008564239878,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260513000306",
+          "rawKRW": {
+            "sales": "63616446094",
+            "op": "8564239878",
+            "net": "6838974511"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.119951671883,
+        "op": 0.014337143757,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000727",
+          "rawKRW": {
+            "sales": "119951671883",
+            "op": "14337143757",
+            "net": "24144238032"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001305",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260513000306",
+      "published": "2026.05.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000727",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000886",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001218",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "한컴 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000727",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "라이선스",
+      "desc": "기술·소프트웨어·콘텐츠 등을 정해진 조건으로 사용할 수 있는 권리·계약입니다."
+    },
+    {
+      "name": "AI",
+      "desc": "인공지능입니다. 데이터를 바탕으로 학습해 분류·예측·콘텐츠 생성 등의 작업을 수행하는 기술입니다."
+    },
+    {
+      "name": "클라우드",
+      "desc": "서버·저장·소프트웨어 등의 자원을 네트워크로 이용하는 서비스 방식입니다."
+    },
+    {
+      "name": "방산",
+      "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    },
+    {
+      "name": "소프트웨어",
+      "desc": "컴퓨터·장치가 작업을 수행하도록 하는 프로그램입니다."
+    },
+    {
+      "name": "전장",
+      "desc": "자동차 등의 전기·전자 장치와 관련 시스템을 뜻합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

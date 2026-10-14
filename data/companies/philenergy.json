@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "philenergy",
+    "name": "필에너지",
+    "ticker": "378340",
+    "rank": 299,
+    "type": "배터리 조립장비"
+  },
+  "overview": {
+    "short": "필에너지는 배터리 공정장비 회사",
+    "summary": "필에너지는 배터리 공정장비 회사입니다. 레이저로 전극을 가공하는 장비를 만듭니다.",
+    "takeaways": [
+      "필에너지는 배터리 공정장비 회사입니다.",
+      "레이저로 전극을 가공하는 장비를 만듭니다.",
+      "전극·분리막을 쌓는 적층 장비를 공급합니다.",
+      "원통형 전지 권취 설비·개조·부품도 제공합니다.",
+      "고객 투자와 검수·수주 잔고를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "레이저 가공",
+        "desc": "전극 탭 형성·절단 장비를 공급합니다."
+      },
+      {
+        "name": "적층·권취",
+        "desc": "전지 내부 재료를 쌓거나 감는 설비를 만듭니다."
+      },
+      {
+        "name": "개조·부품",
+        "desc": "기존 장비 개조·교체 부품을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "배터리 투자",
+        "desc": "고객 공장 발주·수주를 봅니다."
+      },
+      {
+        "title": "검수 일정",
+        "desc": "장비 설치와 매출 인식을 확인합니다."
+      },
+      {
+        "title": "원가·현금",
+        "desc": "부품·개발비·대금 회수를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.28539972334,
+        "op": 0.014201565297,
+        "net": 0.013366407761,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318001117",
+          "rawKRW": {
+            "sales": "285399723340",
+            "op": "14201565297",
+            "net": "13366407761"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.033194030028,
+        "op": -0.022174111983,
+        "net": -0.015848684203,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316001654",
+          "rawKRW": {
+            "sales": "33194030028",
+            "op": "-22174111983",
+            "net": "-15848684203"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.022919203699,
+        "op": -0.003854186037,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001275",
+          "rawKRW": {
+            "sales": "22919203699",
+            "op": "-3854186037",
+            "net": "-2907447991"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.001738415476,
+        "op": -0.003881697094,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514001092",
+          "rawKRW": {
+            "sales": "1738415476",
+            "op": "-3881697094",
+            "net": "-4096578086"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.00239073276,
+        "op": -0.007143555188,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002628",
+          "rawKRW": {
+            "sales": "2390732760",
+            "op": "-7143555188",
+            "net": "-3797379857"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001654",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514001092",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002628",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001117",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001275",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "필에너지 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002628",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "분리막",
+      "desc": "배터리 양극과 음극이 직접 닿지 않도록 분리하면서 이온은 통과시키는 소재입니다."
+    },
+    {
+      "name": "대금 회수",
+      "desc": "상품이나 서비스를 제공한 뒤 고객에게 받을 돈을 실제로 받는 것입니다."
+    },
+    {
+      "name": "수주 잔고",
+      "desc": "이미 계약한 주문 중 아직 매출로 반영되지 않은 물량이나 금액입니다. 미래 이익이 확정됐다는 뜻은 아닙니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품한 제품·장비가 고객의 사양과 조건을 충족하는지 확인하는 절차입니다."
+    },
+    {
+      "name": "권취",
+      "desc": "얇은 전극·분리막 등의 재료를 말아 전지 내부 구조를 만드는 공정입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

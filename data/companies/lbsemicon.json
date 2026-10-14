@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lbsemicon",
+    "name": "LB세미콘",
+    "ticker": "061970",
+    "rank": 294,
+    "type": "반도체 후공정"
+  },
+  "overview": {
+    "short": "LB세미콘은 반도체 후공정 회사",
+    "summary": "LB세미콘은 반도체 후공정 회사입니다. 칩의 연결부 형성과 패키징·테스트를 합니다.",
+    "takeaways": [
+      "LB세미콘은 반도체 후공정 회사입니다.",
+      "칩의 연결부 형성과 패키징·테스트를 합니다.",
+      "디스플레이·전력관리 등 시스템 칩을 처리합니다.",
+      "연결 사업에는 배터리 소재 재생도 있습니다.",
+      "칩 물량과 설비 가동·재생 원가를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "범핑·패키징",
+        "desc": "칩 연결부·패키지를 가공합니다."
+      },
+      {
+        "name": "반도체 테스트",
+        "desc": "칩의 성능·불량을 검사합니다."
+      },
+      {
+        "name": "배터리 재생",
+        "desc": "사용 배터리의 금속 원료를 회수합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "칩 수요",
+        "desc": "고객 생산·제품 구성을 봅니다."
+      },
+      {
+        "title": "시설 가동",
+        "desc": "장비 활용·감가상각을 확인합니다."
+      },
+      {
+        "title": "사업 원가",
+        "desc": "공정 수율·소재 재생 비용을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.450864779668,
+        "op": -0.018823421741,
+        "net": -0.023019472887,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001686",
+          "rawKRW": {
+            "sales": "450864779668",
+            "op": "-18823421741",
+            "net": "-23019472887"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.479781936611,
+        "op": -0.039800058194,
+        "net": -0.150875528423,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320000806",
+          "rawKRW": {
+            "sales": "479781936611",
+            "op": "-39800058194",
+            "net": "-150875528423"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.115688096141,
+        "op": -0.003306404461,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002274",
+          "rawKRW": {
+            "sales": "115688096141",
+            "op": "-3306404461",
+            "net": "-10950827226"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.134251848673,
+        "op": 0.00764323027,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001798",
+          "rawKRW": {
+            "sales": "134251848673",
+            "op": "7643230270",
+            "net": "10417930496"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.144854953991,
+        "op": 0.013108569883,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002061",
+          "rawKRW": {
+            "sales": "144854953991",
+            "op": "13108569883",
+            "net": "8970908834"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000806",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001798",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002061",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001686",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002274",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "LB세미콘 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002061",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입·생산한 제품 중 정상적으로 사용할 수 있는 제품의 비율입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "감가상각",
+      "desc": "설비·장비 등의 취득 비용을 사용 기간에 걸쳐 나누어 비용으로 반영하는 것입니다."
+    },
+    {
+      "name": "패키징",
+      "desc": "반도체 칩을 보호하고 외부 회로와 연결할 수 있게 가공하는 과정입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "후공정",
+      "desc": "만들어진 반도체 칩을 조립·포장·검사하는 단계입니다."
+    },
+    {
+      "name": "범핑",
+      "desc": "반도체 칩에 외부 연결용 미세 금속 돌기를 만드는 공정입니다."
+    },
+    {
+      "name": "패키지",
+      "desc": "반도체 칩을 보호하고 외부 회로와 연결하는 조립 구조입니다."
+    },
+    {
+      "name": "전력관리",
+      "desc": "전자기기에 필요한 전압·전류·전력 사용을 조절하는 기능입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

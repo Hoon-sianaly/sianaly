@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "unison",
+    "name": "유니슨",
+    "ticker": "018000",
+    "rank": 270,
+    "type": "풍력발전 설비"
+  },
+  "overview": {
+    "short": "유니슨은 풍력발전 설비 회사",
+    "summary": "유니슨은 풍력발전 설비 회사입니다. 풍력발전기와 타워를 공급합니다.",
+    "takeaways": [
+      "유니슨은 풍력발전 설비 회사입니다.",
+      "풍력발전기와 타워를 공급합니다.",
+      "발전단지 개발·시공을 수행합니다.",
+      "운영·유지보수 사업도 합니다.",
+      "프로젝트 수주·설치와 현금 흐름을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "풍력 설비",
+        "desc": "발전기 완제품·타워를 생산합니다."
+      },
+      {
+        "name": "단지 구축",
+        "desc": "풍력단지 개발·설치 공사를 수행합니다."
+      },
+      {
+        "name": "운영 지원",
+        "desc": "설비 유지보수·관련 용역을 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "프로젝트",
+        "desc": "인허가·수주·착공 일정을 봅니다."
+      },
+      {
+        "title": "공사 수행",
+        "desc": "설치 진척·원가·대금 회수를 확인합니다."
+      },
+      {
+        "title": "사업 자금",
+        "desc": "제조·개발비와 자금 여력을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.025733465438,
+        "op": -0.012512162672,
+        "net": -0.02254972406,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001401",
+          "rawKRW": {
+            "sales": "25733465438",
+            "op": "-12512162672",
+            "net": "-22549724060"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.040267921584,
+        "op": -0.009532987389,
+        "net": -0.020877619659,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001238",
+          "rawKRW": {
+            "sales": "40267921584",
+            "op": "-9532987389",
+            "net": "-20877619659"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.013285012689,
+        "op": -0.001653596667,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003317",
+          "rawKRW": {
+            "sales": "13285012689",
+            "op": "-1653596667",
+            "net": "-7704295725"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.003784015206,
+        "op": -0.002610388504,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002966",
+          "rawKRW": {
+            "sales": "3784015206",
+            "op": "-2610388504",
+            "net": "-4567205722"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.00576364073,
+        "op": -0.004942929734,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004133",
+          "rawKRW": {
+            "sales": "5763640730",
+            "op": "-4942929734",
+            "net": "-10262047817"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001238",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002966",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004133",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001401",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003317",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "유니슨 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004133",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "대금 회수",
+      "desc": "상품이나 서비스를 제공한 뒤 고객에게 받을 돈을 실제로 받는 것입니다."
+    },
+    {
+      "name": "현금 흐름",
+      "desc": "일정 기간 실제로 들어오고 나가는 돈의 움직임입니다. 회계상 이익과 다를 수 있습니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "용역",
+      "desc": "제품 판매와 달리 공정 개발·분석·작업 등 서비스를 제공하는 사업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

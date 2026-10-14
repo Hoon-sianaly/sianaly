@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "cncinternational",
+    "name": "씨앤씨인터내셔널",
+    "ticker": "352480",
+    "rank": 295,
+    "type": "색조화장품 개발생산"
+  },
+  "overview": {
+    "short": "씨앤씨인터내셔널은 색조화장품 ODM 회사",
+    "summary": "씨앤씨인터내셔널은 색조화장품 ODM 회사입니다. 브랜드 고객을 위해 제품을 개발·생산합니다.",
+    "takeaways": [
+      "씨앤씨인터내셔널은 색조화장품 ODM 회사입니다.",
+      "브랜드 고객을 위해 제품을 개발·생산합니다.",
+      "립스틱·립틴트 등 입술 제품이 주력입니다.",
+      "눈·베이스 화장품도 공급합니다.",
+      "브랜드 주문과 신제품·생산 효율을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "입술 제품",
+        "desc": "립스틱·립틴트 등을 개발·생산합니다."
+      },
+      {
+        "name": "눈 화장품",
+        "desc": "아이라이너·아이브로우 등을 만듭니다."
+      },
+      {
+        "name": "베이스 제품",
+        "desc": "피부 표현용 색조 제품을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "브랜드 주문",
+        "desc": "고객 신제품·반복 발주를 봅니다."
+      },
+      {
+        "title": "생산 효율",
+        "desc": "공장 가동·수율·납기를 확인합니다."
+      },
+      {
+        "title": "제품 원가",
+        "desc": "원료·용기·개발·인건비를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.282883855707,
+        "op": 0.028962985598,
+        "net": 0.032443841008,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001159",
+          "rawKRW": {
+            "sales": "282883855707",
+            "op": "28962985598",
+            "net": "32443841008"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.28847780046,
+        "op": 0.022170749656,
+        "net": 0.014286675994,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001238",
+          "rawKRW": {
+            "sales": "288477800460",
+            "op": "22170749656",
+            "net": "14286675994"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.073897481216,
+        "op": 0.008681026791,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001817",
+          "rawKRW": {
+            "sales": "73897481216",
+            "op": "8681026791",
+            "net": "1214537397"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.070837103638,
+        "op": 0.002967005733,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002052",
+          "rawKRW": {
+            "sales": "70837103638",
+            "op": "2967005733",
+            "net": "5083005363"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.073321341715,
+        "op": 0.001600640914,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002473",
+          "rawKRW": {
+            "sales": "73321341715",
+            "op": "1600640914",
+            "net": "-6233460272"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001238",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002052",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002473",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001159",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001817",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "씨앤씨인터내셔널 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002473",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입·생산한 제품 중 정상적으로 사용할 수 있는 제품의 비율입니다."
+    },
+    {
+      "name": "ODM",
+      "desc": "제조업체가 제품을 개발·설계하고 고객 브랜드에 공급하는 방식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

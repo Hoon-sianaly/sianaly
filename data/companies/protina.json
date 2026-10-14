@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "protina",
+    "name": "프로티나",
+    "ticker": "468530",
+    "rank": 202,
+    "type": "단백질 분석"
+  },
+  "overview": {
+    "short": "프로티나는 단백질 상호작용 분석 회사",
+    "summary": "프로티나는 단백질 상호작용 분석 회사입니다. SPID 플랫폼으로 단일분자 수준의 정보를 측정합니다.",
+    "takeaways": [
+      "프로티나는 단백질 상호작용 분석 회사입니다.",
+      "SPID 플랫폼으로 단일분자 수준의 정보를 측정합니다.",
+      "제약사의 바이오마커·신약 개발을 지원합니다.",
+      "분석 기술을 활용한 자체 신약 개발도 추진합니다.",
+      "분석 계약과 임상·사업화 기대를 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "분석 플랫폼",
+        "desc": "단백질 상호작용을 관측·정량화합니다."
+      },
+      {
+        "name": "연구 솔루션",
+        "desc": "바이오마커·항체 개발을 지원합니다."
+      },
+      {
+        "name": "신약 연구",
+        "desc": "자체 후보 개발을 추진합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "연구 계약",
+        "desc": "제약사 수주·반복 사용을 봅니다."
+      },
+      {
+        "title": "사업화",
+        "desc": "분석 서비스와 신약 개발을 구분합니다."
+      },
+      {
+        "title": "개발 자금",
+        "desc": "인력·시설 비용과 현금을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.002300721436,
+        "op": -0.00912121318,
+        "net": -0.005734135054,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001240",
+          "rawKRW": {
+            "sales": "2300721436",
+            "op": "-9121213180",
+            "net": "-5734135054"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.002950918349,
+        "op": -0.011367962763,
+        "net": -0.009011931696,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001240",
+          "rawKRW": {
+            "sales": "2950918349",
+            "op": "-11367962763",
+            "net": "-9011931696"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.0009635683,
+        "op": -0.002397012578,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001063",
+          "rawKRW": {
+            "sales": "963568300",
+            "op": "-2397012578",
+            "net": "-1957139112"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.0001685575,
+        "op": -0.004712013613,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001897",
+          "rawKRW": {
+            "sales": "168557500",
+            "op": "-4712013613",
+            "net": "-3281984247"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.00034927645,
+        "op": -0.003955963406,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001510",
+          "rawKRW": {
+            "sales": "349276450",
+            "op": "-3955963406",
+            "net": "-3111949030"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001240",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001897",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001510",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001063",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001240",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "프로티나 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001510",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 평가하는 시험입니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "항체",
+      "desc": "특정 표적에 결합하는 단백질로, 의약품의 치료·전달 기술에도 쓰입니다."
+    },
+    {
+      "name": "플랫폼",
+      "desc": "여러 제품·기술을 개발하거나 서비스를 제공하는 데 활용하는 공통 기반입니다. 여기서는 약물 전달 등 기술 기반을 뜻합니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "바이오마커",
+      "desc": "질환 상태나 치료 반응 등을 평가하는 데 사용하는 생물학적 지표입니다."
+    },
+    {
+      "name": "정합",
+      "desc": "여기서는 전력·신호가 효율적으로 전달되도록 회로 조건을 맞추는 것을 뜻합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
