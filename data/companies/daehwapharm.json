@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daehwapharm",
+    "name": "대화제약",
+    "ticker": "067080",
+    "rank": 420,
+    "type": "의약품 제조"
+  },
+  "overview": {
+    "short": "대화제약은 의약품과 의약품 원료를 제조·판매하는 회사",
+    "summary": "대화제약은 의약품과 의약품 원료를 제조·판매하는 회사입니다. 전문의약품과 경피흡수제·항암제 등을 다룹니다.",
+    "takeaways": [
+      "대화제약은 의약품과 의약품 원료를 제조·판매하는 회사입니다.",
+      "전문의약품과 경피흡수제·항암제 등을 다룹니다.",
+      "의약품 도매와 자회사의 원료 제조도 사업에 포함됩니다.",
+      "화장품·의료기기와 의료정보시스템 사업도 운영합니다.",
+      "제품 판매와 신약 사업화, 원가·개발비를 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "의약품",
+        "desc": "전문의약품·경피흡수제·항암제 등을 제조·판매합니다."
+      },
+      {
+        "name": "원료·도매",
+        "desc": "의약품 원료 제조와 상품 도매를 수행합니다."
+      },
+      {
+        "name": "의료 관련 사업",
+        "desc": "필러 등 의료기기·화장품과 의료정보 서비스를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매",
+        "desc": "처방과 유통 거래처의 주문이 매출에 영향을 줍니다."
+      },
+      {
+        "title": "개발·허가",
+        "desc": "새 의약품의 승인·판매 일정과 개발 비용을 확인합니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "제조·도매·원료 부문의 이익 차이를 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.149409212217,
+        "op": 0.006713011646,
+        "net": 0.000829834748,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001162",
+          "rawKRW": {
+            "sales": "149409212217",
+            "op": "6713011646",
+            "net": "829834748"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.143060002187,
+        "op": 0.003162277476,
+        "net": 0.002329966909,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000941",
+          "rawKRW": {
+            "sales": "143060002187",
+            "op": "3162277476",
+            "net": "2329966909"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.035961660611,
+        "op": 0.000285167326,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250811000185",
+          "rawKRW": {
+            "sales": "35961660611",
+            "op": "285167326",
+            "net": "-517247797"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.037032014208,
+        "op": 0.000453583854,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000822",
+          "rawKRW": {
+            "sales": "37032014208",
+            "op": "453583854",
+            "net": "-265657554"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.041291264989,
+        "op": 0.00332867703,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260807000456",
+          "rawKRW": {
+            "sales": "41291264989",
+            "op": "3328677030",
+            "net": "1983280767"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000941",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000822",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000456",
+      "published": "2026.08.07",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001162",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250811000185",
+      "published": "2025.08.11",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "대화제약 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000456",
+      "published": "2026.08.07",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "전문의약품",
+      "desc": "의사의 처방과 전문적 판단에 따라 사용하는 의약품입니다."
+    },
+    {
+      "name": "필러",
+      "desc": "피부 등의 부위에 볼륨을 보충하는 시술용 재료입니다. 치과 소재에서는 레진 등을 채우고 성질을 개선하는 입자 재료를 뜻하기도 합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "경피흡수제",
+      "desc": "피부를 통해 약 성분이 흡수되도록 만든 의약품 제형입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

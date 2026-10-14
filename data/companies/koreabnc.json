@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreabnc",
+    "name": "한국비엔씨",
+    "ticker": "256840",
+    "rank": 401,
+    "type": "미용·바이오"
+  },
+  "overview": {
+    "short": "한국비엔씨는 피부 필러와 시술용 의료기기를 만드는 회사",
+    "summary": "한국비엔씨는 피부 필러와 시술용 의료기기를 만드는 회사입니다. 히알루론산 필러, 콜라겐 제품과 화장품을 판매합니다.",
+    "takeaways": [
+      "한국비엔씨는 피부 필러와 시술용 의료기기를 만드는 회사입니다.",
+      "히알루론산 필러, 콜라겐 제품과 화장품을 판매합니다.",
+      "보툴리눔 톡신 의약품과 미용기기도 다룹니다.",
+      "자회사의 연구용 시약·시험기기 유통도 연결 실적에 포함됩니다.",
+      "제품 허가와 해외 판매 확대, 연구개발 비용을 함께 살펴봅니다."
+    ],
+    "business": [
+      {
+        "name": "미용 제품",
+        "desc": "피부 필러·화장품·보툴리눔 톡신 관련 제품을 판매합니다."
+      },
+      {
+        "name": "시술용 재료",
+        "desc": "유착방지재와 창상피복재 등 수술·시술용 의료기기를 공급합니다."
+      },
+      {
+        "name": "바이오 유통",
+        "desc": "자회사를 통해 연구용 시약·시험기기를 유통합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 허가",
+        "desc": "국가별 허가와 판매 가능 품목이 매출에 영향을 줍니다."
+      },
+      {
+        "title": "판매 구성",
+        "desc": "자체 제품과 유통 상품의 비중에 따라 이익이 달라집니다."
+      },
+      {
+        "title": "개발 비용",
+        "desc": "의약품 개발·설비 비용과 판매 성과를 함께 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.089229997633,
+        "op": 0.010705760232,
+        "net": 0.013264766446,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814003452",
+          "rawKRW": {
+            "sales": "89229997633",
+            "op": "10705760232",
+            "net": "13264766446"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.095899224534,
+        "op": 0.001630469768,
+        "net": 0.002046628725,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260408003166",
+          "rawKRW": {
+            "sales": "95899224534",
+            "op": "1630469768",
+            "net": "2046628725"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.024631230053,
+        "op": 0.001593376754,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003531",
+          "rawKRW": {
+            "sales": "24631230053",
+            "op": "1593376754",
+            "net": "280939602"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.020731134965,
+        "op": -0.001479841341,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002963",
+          "rawKRW": {
+            "sales": "20731134965",
+            "op": "-1479841341",
+            "net": "-1326084377"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.024606572851,
+        "op": -0.00036626289,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814004180",
+          "rawKRW": {
+            "sales": "24606572851",
+            "op": "-366262890",
+            "net": "-1737934320"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260408003166",
+      "published": "2026.04.08",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002963",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004180",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003452",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003531",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "한국비엔씨 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004180",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "보툴리눔 톡신",
+      "desc": "신경과 근육 사이의 신호 전달을 일시적으로 억제하는 성분을 활용한 의약품입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "필러",
+      "desc": "피부 등의 부위에 볼륨을 보충하는 시술용 재료입니다. 치과 소재에서는 레진 등을 채우고 성질을 개선하는 입자 재료를 뜻하기도 합니다."
+    },
+    {
+      "name": "히알루론산",
+      "desc": "수분을 붙잡는 성질을 가진 물질로, 피부 필러·의약품·화장품 등에 사용됩니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "콜라겐",
+      "desc": "피부·뼈 등 조직을 구성하는 단백질로, 의료용 재료와 화장품 등에 활용됩니다."
+    },
+    {
+      "name": "유착방지재",
+      "desc": "수술 후 서로 붙지 않아야 할 조직이 붙는 현상을 줄이기 위한 의료용 재료입니다."
+    },
+    {
+      "name": "창상피복재",
+      "desc": "상처 부위를 덮어 보호하고 회복 환경을 유지하는 의료용 재료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

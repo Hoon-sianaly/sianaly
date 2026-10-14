@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "korchip",
+    "name": "코칩",
+    "ticker": "126730",
+    "rank": 416,
+    "type": "에너지 저장 부품"
+  },
+  "overview": {
+    "short": "코칩은 전기를 저장하는 소형 전자부품을 만드는 회사",
+    "summary": "코칩은 전기를 저장하는 소형 전자부품을 만드는 회사입니다. 칩셀카본 브랜드의 슈퍼커패시터가 주력 제품입니다.",
+    "takeaways": [
+      "코칩은 전기를 저장하는 소형 전자부품을 만드는 회사입니다.",
+      "칩셀카본 브랜드의 슈퍼커패시터가 주력 제품입니다.",
+      "기기의 데이터·시간 유지 등에 필요한 보조 전력을 제공합니다.",
+      "리튬계 소형 전지와 MLCC 유통도 다룹니다.",
+      "고객 제품 채택과 생산 원가, 자체 제품 비중을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "슈퍼커패시터",
+        "desc": "빠르게 충전·방전하는 소형 전력 저장 부품을 제조합니다."
+      },
+      {
+        "name": "리튬계 전지",
+        "desc": "칩셀리튬 제품을 개발·판매합니다."
+      },
+      {
+        "name": "전자부품 유통",
+        "desc": "MLCC 등 전자부품을 유통합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 채택",
+        "desc": "전자기기 설계에 제품이 채택되는지 확인합니다."
+      },
+      {
+        "title": "제조·유통 구성",
+        "desc": "자체 제품과 유통 상품의 비중이 이익에 영향을 줍니다."
+      },
+      {
+        "title": "개발·생산",
+        "desc": "새 제품 개발과 생산설비 비용을 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.033371108724,
+        "op": 0.002899394604,
+        "net": 0.003229561639,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250319000690",
+          "rawKRW": {
+            "sales": "33371108724",
+            "op": "2899394604",
+            "net": "3229561639"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.038284849477,
+        "op": 0.001139330952,
+        "net": 0.002849319517,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260327000999",
+          "rawKRW": {
+            "sales": "38284849477",
+            "op": "1139330952",
+            "net": "2849319517"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.008626932766,
+        "op": 0.000477303216,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003393",
+          "rawKRW": {
+            "sales": "8626932766",
+            "op": "477303216",
+            "net": "974607467"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.012052696916,
+        "op": 0.001068847321,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260430000038",
+          "rawKRW": {
+            "sales": "12052696916",
+            "op": "1068847321",
+            "net": "2128140444"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.017996033146,
+        "op": 0.004410030759,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001691",
+          "rawKRW": {
+            "sales": "17996033146",
+            "op": "4410030759",
+            "net": "3490983975"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260327000999",
+      "published": "2026.03.27",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260430000038",
+      "published": "2026.04.30",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001691",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000690",
+      "published": "2025.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003393",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "코칩 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001691",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "MLCC",
+      "desc": "전기를 저장하고 전압·신호를 안정시키는 작은 적층 세라믹 부품입니다."
+    },
+    {
+      "name": "커패시터",
+      "desc": "전하를 저장하는 전자부품으로, 콘덴서라고도 부릅니다."
+    },
+    {
+      "name": "슈퍼커패시터",
+      "desc": "전기 에너지를 빠르게 저장·방출하는 장치로 보조 전원·전력제어 등에 사용합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

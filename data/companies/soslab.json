@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "soslab",
+    "name": "에스오에스랩",
+    "ticker": "464080",
+    "rank": 480,
+    "type": "라이다 센서"
+  },
+  "overview": {
+    "short": "에스오에스랩은 레이저로 주변 거리를 측정하는 라이다 회사",
+    "summary": "에스오에스랩은 레이저로 주변 거리를 측정하는 라이다 회사입니다. 차량·로봇 등이 주변 공간을 인식하는 센서를 개발합니다.",
+    "takeaways": [
+      "에스오에스랩은 레이저로 주변 거리를 측정하는 라이다 회사입니다.",
+      "차량·로봇 등이 주변 공간을 인식하는 센서를 개발합니다.",
+      "3차원 고정형과 2차원 라이다 제품을 공급합니다.",
+      "측정 데이터를 고객 용도에 맞게 분석하는 솔루션도 제공합니다.",
+      "제품 채택·양산과 개발·제조 비용을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "3D 라이다",
+        "desc": "주변 물체의 위치·형상을 측정하는 고정형 센서를 공급합니다."
+      },
+      {
+        "name": "2D 라이다",
+        "desc": "산업 현장 등의 거리·안전 감지용 센서를 제공합니다."
+      },
+      {
+        "name": "데이터 솔루션",
+        "desc": "라이다 데이터를 활용하는 고객 맞춤 분석을 지원합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 채택",
+        "desc": "차량·로봇·산업 고객의 검증과 공급 계약을 확인합니다."
+      },
+      {
+        "title": "양산 확대",
+        "desc": "시험 제품과 실제 대량 공급의 차이를 구분합니다."
+      },
+      {
+        "title": "개발·원가",
+        "desc": "센서 성능 개선과 부품·생산 비용을 함께 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.004935969544,
+        "op": -0.012830689054,
+        "net": -0.011955889729,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321000862",
+          "rawKRW": {
+            "sales": "4935969544",
+            "op": "-12830689054",
+            "net": "-11955889729"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.006086041489,
+        "op": -0.016131399828,
+        "net": -0.017702033529,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000013",
+          "rawKRW": {
+            "sales": "6086041489",
+            "op": "-16131399828",
+            "net": "-17702033529"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.001273158751,
+        "op": -0.004248469426,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002878",
+          "rawKRW": {
+            "sales": "1273158751",
+            "op": "-4248469426",
+            "net": "-4415800189"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.000580500289,
+        "op": -0.005502470168,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002099",
+          "rawKRW": {
+            "sales": "580500289",
+            "op": "-5502470168",
+            "net": "-6468934913"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.00045598025,
+        "op": -0.005177308502,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003376",
+          "rawKRW": {
+            "sales": "455980250",
+            "op": "-5177308502",
+            "net": "-6243283865"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000013",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002099",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003376",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321000862",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002878",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "에스오에스랩 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003376",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "양산",
+      "desc": "개발과 시험을 마친 제품을 판매·공급하기 위해 대량으로 생산하는 단계입니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "라이다",
+      "desc": "빛을 쏘고 돌아오는 신호로 물체의 거리·형상을 측정하는 기술입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

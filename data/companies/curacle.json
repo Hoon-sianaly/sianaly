@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "curacle",
+    "name": "큐라클",
+    "ticker": "365270",
+    "rank": 410,
+    "type": "신약 개발"
+  },
+  "overview": {
+    "short": "큐라클은 혈관 기능 장애와 관련된 신약을 개발하는 회사",
+    "summary": "큐라클은 혈관 기능 장애와 관련된 신약을 개발하는 회사입니다. 혈관 안쪽 세포의 기능을 개선하는 치료제를 연구합니다.",
+    "takeaways": [
+      "큐라클은 혈관 기능 장애와 관련된 신약을 개발하는 회사입니다.",
+      "혈관 안쪽 세포의 기능을 개선하는 치료제를 연구합니다.",
+      "화학 합성 신약과 생물학적 제제 후보를 개발합니다.",
+      "제품 판매보다 기술이전 계약과 연구 단계가 중요한 사업입니다.",
+      "임상 결과와 계약 조건, 연구개발 자금 소요를 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "혈관 치료제",
+        "desc": "혈관내피 기능 장애를 겨냥하는 신약 후보를 연구합니다."
+      },
+      {
+        "name": "후보물질 개발",
+        "desc": "자체 기술과 외부 협력을 통해 치료제 후보를 발굴합니다."
+      },
+      {
+        "name": "기술이전",
+        "desc": "계약금·단계별 기술료·로열티 등을 사업화 수익으로 추구합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임상 진행",
+        "desc": "시험 결과와 개발 일정에 따라 사업 가치와 비용이 달라집니다."
+      },
+      {
+        "title": "계약 조건",
+        "desc": "기술이전 체결·반환과 단계별 대금 수령을 확인합니다."
+      },
+      {
+        "title": "자금 소요",
+        "desc": "안정적 제품 판매가 없는 개발 단계의 현금 지출을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.001632550301,
+        "op": -0.01263468798,
+        "net": -0.01488647315,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001071",
+          "rawKRW": {
+            "sales": "1632550301",
+            "op": "-12634687980",
+            "net": "-14886473150"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.000007101468,
+        "op": -0.016503369291,
+        "net": -0.018112835664,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001692",
+          "rawKRW": {
+            "sales": "7101468",
+            "op": "-16503369291",
+            "net": "-18112835664"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0,
+        "op": -0.005315952908,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000829",
+          "rawKRW": {
+            "sales": "0",
+            "op": "-5315952908"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.00104898,
+        "op": -0.002999262717,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000376",
+          "rawKRW": {
+            "sales": "1048980000",
+            "op": "-2999262717",
+            "net": "-3144398267"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.00718460333,
+        "op": 0.002358590981,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000829",
+          "rawKRW": {
+            "sales": "7184603330",
+            "op": "2358590981",
+            "net": "3227579411"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001692",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000376",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000829",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001071",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000829",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "큐라클 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000829",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 평가하는 시험입니다."
+    },
+    {
+      "name": "기술이전",
+      "desc": "개발 기술이나 권리를 다른 회사에 제공하고 계약금·단계별 대금 등을 받는 계약입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "로열티",
+      "desc": "기술·브랜드 등의 사용이나 제품 판매량에 따라 지급하는 대가입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

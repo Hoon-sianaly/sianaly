@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "cellbion",
+    "name": "셀비온",
+    "ticker": "308430",
+    "rank": 477,
+    "type": "방사성 신약"
+  },
+  "overview": {
+    "short": "셀비온은 방사성의약품을 개발하는 회사",
+    "summary": "셀비온은 방사성의약품을 개발하는 회사입니다. 전립선암 진단과 치료를 결합하는 신약을 연구합니다.",
+    "takeaways": [
+      "셀비온은 방사성의약품을 개발하는 회사입니다.",
+      "전립선암 진단과 치료를 결합하는 신약을 연구합니다.",
+      "특정 암세포를 찾아가 방사선을 전달하는 기술을 활용합니다.",
+      "진단용 의약품과 관련 생산 사업도 다룹니다.",
+      "치료제 임상·허가와 기존 판매, 개발 지출을 구분해 봅니다."
+    ],
+    "business": [
+      {
+        "name": "치료제 개발",
+        "desc": "전립선암 표적 방사성 치료제를 개발합니다."
+      },
+      {
+        "name": "동반 진단",
+        "desc": "치료와 연계되는 방사성 진단제를 연구합니다."
+      },
+      {
+        "name": "제조·판매",
+        "desc": "진단용 방사성의약품과 관련 제품을 생산·판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임상·허가",
+        "desc": "신약 시험 결과와 승인 단계를 확인합니다."
+      },
+      {
+        "title": "생산 역량",
+        "desc": "방사성 물질 취급·제조·배송 체계가 중요합니다."
+      },
+      {
+        "title": "자금 소요",
+        "desc": "기존 매출과 연구·임상 지출을 함께 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.00228980298,
+        "op": -0.007136638558,
+        "net": -0.007266102152,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320000939",
+          "rawKRW": {
+            "sales": "2289802980",
+            "op": "-7136638558",
+            "net": "-7266102152"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.001945073476,
+        "op": -0.008244608272,
+        "net": -0.007573629082,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001329",
+          "rawKRW": {
+            "sales": "1945073476",
+            "op": "-8244608272",
+            "net": "-7573629082"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.000404458064,
+        "op": -0.002084107498,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001224",
+          "rawKRW": {
+            "sales": "404458064",
+            "op": "-2084107498",
+            "net": "-1893065492"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.000612528841,
+        "op": -0.002445200791,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260813000694",
+          "rawKRW": {
+            "sales": "612528841",
+            "op": "-2445200791"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.000472050834,
+        "op": -0.002641657882,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000694",
+          "rawKRW": {
+            "sales": "472050834",
+            "op": "-2641657882",
+            "net": "14401888777"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001329",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000694",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000694",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000939",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001224",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "셀비온 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000694",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 평가하는 시험입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "방사성의약품",
+      "desc": "방사선을 내는 물질을 이용해 질병의 위치를 확인하거나 치료하는 의약품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

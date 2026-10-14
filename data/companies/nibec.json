@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "nibec",
+    "name": "나이벡",
+    "ticker": "138610",
+    "rank": 483,
+    "type": "조직재생 소재"
+  },
+  "overview": {
+    "short": "나이벡은 조직재생용 바이오소재를 만드는 회사",
+    "summary": "나이벡은 조직재생용 바이오소재를 만드는 회사입니다. 치과용 골이식재와 콜라겐 소재를 공급합니다.",
+    "takeaways": [
+      "나이벡은 조직재생용 바이오소재를 만드는 회사입니다.",
+      "치과용 골이식재와 콜라겐 소재를 공급합니다.",
+      "펩타이드 의약품과 융합 소재도 개발합니다.",
+      "구강보건 제품과 해외 인증·판매망을 운영합니다.",
+      "현재 재생 소재 매출과 신약 개발 지출을 구분해 봅니다."
+    ],
+    "business": [
+      {
+        "name": "재생 소재",
+        "desc": "치과용 골이식재·콜라겐 등 조직재생 소재를 판매합니다."
+      },
+      {
+        "name": "펩타이드 개발",
+        "desc": "펩타이드 의약품과 융합 의료소재를 연구합니다."
+      },
+      {
+        "name": "구강보건",
+        "desc": "항생연고·시린이 관련 제품 등 구강 제품을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "해외 판매",
+        "desc": "의료기기 승인과 글로벌 거래처 주문을 확인합니다."
+      },
+      {
+        "title": "제품 채택",
+        "desc": "새 재생 소재의 도입과 생산 확대가 실적에 영향을 줍니다."
+      },
+      {
+        "title": "개발 비용",
+        "desc": "의약품 연구·임상 지출과 기존 제품 이익을 함께 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.024550141599,
+        "op": -0.00492654132,
+        "net": -0.009326815289,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001307",
+          "rawKRW": {
+            "sales": "24550141599",
+            "op": "-4926541320",
+            "net": "-9326815289"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.032718793376,
+        "op": 0.005025830136,
+        "net": 0.004641985404,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001388",
+          "rawKRW": {
+            "sales": "32718793376",
+            "op": "5025830136",
+            "net": "4641985404"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.015799610372,
+        "op": 0.008393086652,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003830",
+          "rawKRW": {
+            "sales": "15799610372",
+            "op": "8393086652",
+            "net": "7724343709"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.005240908743,
+        "op": 0.000137126427,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000162",
+          "rawKRW": {
+            "sales": "5240908743",
+            "op": "137126427",
+            "net": "1148546954"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.006060942842,
+        "op": 0.000102547477,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001611",
+          "rawKRW": {
+            "sales": "6060942842",
+            "op": "102547477",
+            "net": "381339999"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001388",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000162",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001611",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001307",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003830",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "나이벡 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001611",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 평가하는 시험입니다."
+    },
+    {
+      "name": "펩타이드",
+      "desc": "아미노산이 짧게 연결된 물질로, 몸속 작용을 조절하거나 특정 부위에 약물을 전달하는 데 활용됩니다."
+    },
+    {
+      "name": "이식재",
+      "desc": "손상된 신체 조직을 보완·재건하기 위해 사용하는 재료입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "콜라겐",
+      "desc": "피부·뼈 등 조직을 구성하는 단백질로, 의료용 재료와 화장품 등에 활용됩니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

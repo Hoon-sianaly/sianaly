@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "kzprecision",
+    "name": "KZ정밀",
+    "ticker": "036560",
+    "rank": 444,
+    "type": "산업용 펌프"
+  },
+  "overview": {
+    "short": "KZ정밀은 산업용 펌프와 밸브를 만드는 회사",
+    "summary": "KZ정밀은 산업용 펌프와 밸브를 만드는 회사입니다. 석유화학·정유 등 공정에서 액체를 이송하는 펌프를 공급합니다.",
+    "takeaways": [
+      "KZ정밀은 산업용 펌프와 밸브를 만드는 회사입니다.",
+      "석유화학·정유 등 공정에서 액체를 이송하는 펌프를 공급합니다.",
+      "배관 흐름을 조절하는 밸브와 주물도 다룹니다.",
+      "국내외 산업시설 프로젝트에 제품을 납품합니다.",
+      "설비 투자·정비 수요와 제품 원가를 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "펌프",
+        "desc": "산업 공정용 원심펌프 등을 제조·판매합니다."
+      },
+      {
+        "name": "밸브",
+        "desc": "액체·기체·분체 이송 배관용 밸브를 공급합니다."
+      },
+      {
+        "name": "주물·부품",
+        "desc": "펌프 제조 등에 필요한 주물과 관련 부품을 만듭니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "설비 발주",
+        "desc": "정유·화학·전력 등 고객의 설비 투자가 주문에 영향을 줍니다."
+      },
+      {
+        "title": "제품 신뢰성",
+        "desc": "공정 조건에 맞는 내식·내마모 성능과 인증이 중요합니다."
+      },
+      {
+        "title": "제조 비용",
+        "desc": "금속 원재료·가공·외부 부품 비용을 확인합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.112713189198,
+        "op": 0.015202848992,
+        "net": 0.019199161723,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250312001117",
+          "rawKRW": {
+            "sales": "112713189198",
+            "op": "15202848992",
+            "net": "19199161723"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.110512771845,
+        "op": 0.010180084478,
+        "net": 0.009303093069,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260311004507",
+          "rawKRW": {
+            "sales": "110512771845",
+            "op": "10180084478",
+            "net": "9303093069"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.032132811468,
+        "op": 0.004005699657,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002227",
+          "rawKRW": {
+            "sales": "32132811468",
+            "op": "4005699657",
+            "net": "4073010981"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.022968496525,
+        "op": 0.001825700783,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001210",
+          "rawKRW": {
+            "sales": "22968496525",
+            "op": "1825700783",
+            "net": "8524166136"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.034270020658,
+        "op": 0.006978754616,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001897",
+          "rawKRW": {
+            "sales": "34270020658",
+            "op": "6978754616",
+            "net": "6856153458"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004507",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001210",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001897",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250312001117",
+      "published": "2025.03.12",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002227",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "KZ정밀 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001897",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "밸브",
+      "desc": "공기·액체 등의 흐름을 열거나 막고 조절하는 부품입니다."
+    },
+    {
+      "name": "분체",
+      "desc": "가루 형태의 재료입니다. 분체도료는 가루를 부착·가열해 표면을 코팅합니다."
+    },
+    {
+      "name": "주물",
+      "desc": "금속을 녹여 틀에 부은 뒤 굳혀 만든 제품입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
