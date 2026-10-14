@@ -2,16 +2,7 @@
   "disclosures": {
     "schemaVersion": 1,
     "scannedThrough": "2026-10-14",
-    "pending": [
-      {
-        "id": "hanshinconstruction/2026/11012",
-        "key": "hanshinconstruction",
-        "year": 2026,
-        "report": "11012",
-        "receipt": "20261014000290",
-        "title": "[기재정정]반기보고서 (2026.06)"
-      }
-    ],
+    "pending": [],
     "reviewQueue": [
       {
         "id": "shinhan/2025/11011",
@@ -46,69 +37,8 @@
       "crholdings/2026/11012": "20261006000307",
       "ckdholdings/2026/11012": "20261012000414",
       "dydukyang/2026/11012": "20261012000127",
-      "pyunghwaholdings/2026/11012": "20261013000109"
-    }
-  },
-  "publication": {
-    "commit": "e36a1625337662ca99f9e966dfae6ee6b4e2ee18",
-    "candidate": {
-      "schemaVersion": 1,
-      "status": "validated",
-      "baseSha": "772de2aeb0dc33093b5102163d94d9c17230e262",
-      "asOf": "2026-10-14",
-      "checkedAt": "2026-10-14T07:37:42.491Z",
-      "strategy": "new-disclosures",
-      "stats": {
-        "listRequests": 1,
-        "listedFilings": 4,
-        "targetIssuers": 1,
-        "financialRequests": 1,
-        "pendingJobs": 1,
-        "reviewItems": 3
-      },
-      "results": [
-        {
-          "key": "hanshinconstruction",
-          "status": "changed",
-          "changes": [
-            {
-              "year": 2026,
-              "quarter": 2,
-              "receipt": "20261014000290",
-              "fields": [
-                {
-                  "field": "sales",
-                  "before": 0.258893384709,
-                  "after": 0.258893384709
-                },
-                {
-                  "field": "op",
-                  "before": 0.020476931681,
-                  "after": 0.020476931681
-                }
-              ]
-            }
-          ],
-          "pending": [],
-          "held": []
-        }
-      ],
-      "ready": [
-        {
-          "id": "hanshinconstruction/2026/11012",
-          "key": "hanshinconstruction",
-          "year": 2026,
-          "report": "11012",
-          "receipt": "20261014000290",
-          "title": "[기재정정]반기보고서 (2026.06)"
-        }
-      ],
-      "files": [
-        {
-          "path": "data/companies/hanshinconstruction.json",
-          "content": "{\n  \"schemaVersion\": 1,\n  \"profile\": {\n    \"key\": \"hanshinconstruction\",\n    \"name\": \"한신공영\",\n    \"ticker\": \"004960\",\n    \"rank\": 582,\n    \"type\": \"주택·토목 건설\"\n  },\n  \"overview\": {\n    \"short\": \"한신공영은 주택·건축과 토목 공사를 수행하는 건설회사\",\n    \"summary\": \"한신공영은 주택·건축과 토목 공사를 수행하는 건설회사입니다. 한신더휴 브랜드로 아파트 등 주거시설을 공급합니다.\",\n    \"takeaways\": [\n      \"한신공영은 주택·건축과 토목 공사를 수행하는 건설회사입니다.\",\n      \"한신더휴 브랜드로 아파트 등 주거시설을 공급합니다.\",\n      \"민간 주택·정비사업과 공공 건축 공사를 수행합니다.\",\n      \"도로·철도·상하수도 등 토목 공사에도 참여합니다.\",\n      \"공사 수주뿐 아니라 원가와 분양·대금 회수도 확인합니다.\"\n    ],\n    \"business\": [\n      {\n        \"name\": \"주택·건축\",\n        \"desc\": \"아파트·도시정비 사업과 민간·공공 건축 공사를 수행합니다.\"\n      },\n      {\n        \"name\": \"토목\",\n        \"desc\": \"도로·철도·상하수도 등 기반시설을 건설합니다.\"\n      },\n      {\n        \"name\": \"자체 개발\",\n        \"desc\": \"자체 사업의 분양과 개발 관련 업무를 운영합니다.\"\n      }\n    ],\n    \"drivers\": [\n      {\n        \"title\": \"수주·분양\",\n        \"desc\": \"신규 수주와 현장별 분양·공정 진행을 확인합니다.\"\n      },\n      {\n        \"title\": \"공사 원가\",\n        \"desc\": \"자재·인건비 상승과 공사비 조정 여부를 비교합니다.\"\n      },\n      {\n        \"title\": \"자금 회수\",\n        \"desc\": \"공사 미수금과 개발사업 금융 부담을 함께 봅니다.\"\n      }\n    ],\n    \"financialNote\": \"연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.\",\n    \"quarterlyNote\": \"공식 손익계산서의 각 3개월 실적입니다.\"\n  },\n  \"market\": {},\n  \"financials\": {\n    \"unit\": \"KRW_trillion\",\n    \"basis\": \"consolidated\",\n    \"verification\": {\n      \"status\": \"verified\",\n      \"verifiedAt\": \"2026.10.13\"\n    },\n    \"annual\": [\n      {\n        \"year\": 2024,\n        \"sales\": 1.490447569221,\n        \"op\": 0.037254849485,\n        \"net\": 0.01476486023,\n        \"sourceIds\": [\n          \"dart-2024-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250814002318\",\n          \"rawKRW\": {\n            \"sales\": \"1490447569221\",\n            \"op\": \"37254849485\",\n            \"net\": \"14764860230\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2025,\n        \"sales\": 1.149191208443,\n        \"op\": 0.064521039255,\n        \"net\": 0.057864389832,\n        \"sourceIds\": [\n          \"dart-2025-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260319000721\",\n          \"rawKRW\": {\n            \"sales\": \"1149191208443\",\n            \"op\": \"64521039255\",\n            \"net\": \"57864389832\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"quarterly\": [\n      {\n        \"year\": 2025,\n        \"quarter\": 2,\n        \"sales\": 0.300192352678,\n        \"op\": 0.017693193169,\n        \"sourceIds\": [\n          \"dart-2025-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250814002437\",\n          \"rawKRW\": {\n            \"sales\": \"300192352678\",\n            \"op\": \"17693193169\",\n            \"net\": \"3614686424\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 1,\n        \"sales\": 0.25238506059,\n        \"op\": 0.019337566955,\n        \"sourceIds\": [\n          \"dart-2026-q1\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260515000732\",\n          \"rawKRW\": {\n            \"sales\": \"252385060590\",\n            \"op\": \"19337566955\",\n            \"net\": \"12323403478\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 2,\n        \"sales\": 0.258893384709,\n        \"op\": 0.020476931681,\n        \"sourceIds\": [\n          \"dart-2026-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20261014000290\",\n          \"rawKRW\": {\n            \"sales\": \"258893384709\",\n            \"op\": \"20476931681\",\n            \"net\": \"18897417180\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"automaticUpdate\": {\n      \"provider\": \"OpenDART\",\n      \"scope\": \"Validated financial statement metrics\",\n      \"updatedAt\": \"2026.10.14\"\n    }\n  },\n  \"sources\": [\n    {\n      \"id\": \"dart-2025-annual\",\n      \"label\": \"2025년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000721\",\n      \"published\": \"2026.03.19\",\n      \"verifiedAt\": \"2026.10.13\"\n    },\n    {\n      \"id\": \"dart-2026-q1\",\n      \"label\": \"2026년 1분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000732\",\n      \"published\": \"2026.05.15\",\n      \"verifiedAt\": \"2026.10.13\"\n    },\n    {\n      \"id\": \"dart-2026-q2\",\n      \"label\": \"2026년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261014000290\",\n      \"published\": \"2026.10.14\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2024-annual\",\n      \"label\": \"2024년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002318\",\n      \"published\": \"2025.08.14\",\n      \"verifiedAt\": \"2026.10.13\"\n    },\n    {\n      \"id\": \"dart-2025-q2\",\n      \"label\": \"2025년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002437\",\n      \"published\": \"2025.08.14\",\n      \"verifiedAt\": \"2026.10.13\"\n    },\n    {\n      \"id\": \"business\",\n      \"label\": \"한신공영 최신 정기보고서 · 사업의 내용\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000688\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.13\"\n    }\n  ],\n  \"sectionSourceIds\": {\n    \"business\": [\n      \"business\"\n    ],\n    \"drivers\": [\n      \"business\"\n    ]\n  },\n  \"glossary\": [\n    {\n      \"name\": \"연결 기준\",\n      \"desc\": \"회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다.\"\n    },\n    {\n      \"name\": \"미수금\",\n      \"desc\": \"매출이나 거래가 발생했지만 아직 받지 못한 돈입니다.\"\n    },\n    {\n      \"name\": \"공정\",\n      \"desc\": \"제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다.\"\n    },\n    {\n      \"name\": \"대금 회수\",\n      \"desc\": \"상품이나 서비스를 제공한 뒤 고객에게 받을 돈을 실제로 받는 것입니다.\"\n    },\n    {\n      \"name\": \"수주\",\n      \"desc\": \"고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다.\"\n    }\n  ],\n  \"presentation\": {\n    \"compact\": true,\n    \"chartStyle\": \"comparison\"\n  }\n}\n"
-        }
-      ]
+      "pyunghwaholdings/2026/11012": "20261013000109",
+      "hanshinconstruction/2026/11012": "20261014000290"
     }
   }
 }
