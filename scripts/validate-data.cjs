@@ -41,7 +41,8 @@ function validateFinancials(record, seen = []) {
   assert.equal(Object.keys(financials).length, 1, `Referenced financials must not duplicate rows: ${key}`);
   return validateFinancials(records.get(financials.companyRef), [...seen, key]);
  }
- assert.ok(["KRW_trillion","USD_trillion","CNY_trillion"].includes(financials.unit));
+ assert.ok(["KRW_trillion","USD_trillion","CNY_trillion","JPY_trillion"].includes(financials.unit));
+ if(financials.unit==="JPY_trillion"){assert.equal(financials.currency,"JPY");assert.equal(financials.highlightFormat,"JPY");for(const row of [...financials.annual,...financials.quarterly])for(const f of ["sales","op",...(row.net!==undefined?["net"]:[])]){assert.match(row.reportedJPY?.[f]||"",/^-?\d+$/);assert.equal(row[f],Number(row.reportedJPY[f])/1e12);assert.equal(row.reportedKRW,undefined);assert.ok(row.periodLabel&&row.reportPeriod);}}
  if(financials.unit==="CNY_trillion"){assert.equal(financials.currency,"CNY");assert.equal(financials.highlightFormat,"CNY");for(const row of [...financials.annual,...financials.quarterly])for(const f of ["sales","op",...(row.net!==undefined?["net"]:[])]){assert.match(row.reportedCNY?.[f]||"",/^-?\d+$/);assert.equal(row[f],Number(row.reportedCNY[f])/1e12);assert.equal(row.reportedKRW,undefined);assert.ok(row.periodLabel&&row.reportPeriod);}}
  if(financials.unit==="USD_trillion"){assert.equal(financials.currency,"USD");assert.equal(financials.highlightFormat,"USD");for(const row of [...financials.annual,...financials.quarterly])for(const f of ["sales","op"]){assert.match(row.reportedUSD?.[f]||"",/^-?\d+$/);assert.equal(row[f],Number(row.reportedUSD[f])/1e12);assert.equal(row.reportedKRW,undefined);}}
  if(financials.metrics) for(const field of ["sales","op"]){

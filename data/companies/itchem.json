@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "itchem",
+    "name": "아이티켐",
+    "ticker": "309710",
+    "rank": 301,
+    "type": "정밀화학 소재"
+  },
+  "overview": {
+    "short": "아이티켐은 정밀화학 소재 회사",
+    "summary": "아이티켐은 정밀화학 소재 회사입니다. 원료의약품과 의약품 중간체를 생산합니다.",
+    "takeaways": [
+      "아이티켐은 정밀화학 소재 회사입니다.",
+      "원료의약품과 의약품 중간체를 생산합니다.",
+      "OLED 등 디스플레이용 전자재료도 만듭니다.",
+      "고객 공정 개발과 대량생산을 지원합니다.",
+      "감사 의견과 제품 승인·수율을 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "의약품 소재",
+        "desc": "원료의약품·중간체를 합성합니다."
+      },
+      {
+        "name": "전자재료",
+        "desc": "OLED 등 정밀화학 소재를 공급합니다."
+      },
+      {
+        "name": "공정 개발",
+        "desc": "고객 공동개발·양산 전환을 지원합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 승인",
+        "desc": "품질 검증·양산 주문을 봅니다."
+      },
+      {
+        "title": "제조 원가",
+        "desc": "합성 수율·원료·설비 비용을 확인합니다."
+      },
+      {
+        "title": "감사·현금",
+        "desc": "감사 범위 제한과 자금 여력을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다. 최신 반기보고서에 기초재무제표 검토범위 제한에 따른 의견거절과 전기 감사증거 미확보 등이 기재되어 있습니다. 표시 수치는 회사 제출값의 원문 대조 결과이며 감사에서 적정성이 확인된 수치라는 뜻이 아닙니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.049102752858,
+        "op": 0.003594368188,
+        "net": 0.011417848887,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260407003281",
+          "rawKRW": {
+            "sales": "49102752858",
+            "op": "3594368188",
+            "net": "11417848887"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.061966968775,
+        "op": -0.001850846474,
+        "net": -0.014330238735,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260407003281",
+          "rawKRW": {
+            "sales": "61966968775",
+            "op": "-1850846474",
+            "net": "-14330238735"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.019830389498,
+        "op": -0.000724573747,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250827000521",
+          "rawKRW": {
+            "sales": "19830389498",
+            "op": "-724573747",
+            "net": "-1837100918"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.01269929203,
+        "op": -0.001721939273,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260601001979",
+          "rawKRW": {
+            "sales": "12699292030",
+            "op": "-1721939273",
+            "net": "-4302604419"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.015090540514,
+        "op": -0.002772663284,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260828001529",
+          "rawKRW": {
+            "sales": "15090540514",
+            "op": "-2772663284",
+            "net": "-1458214825"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260407003281",
+      "published": "2026.04.07",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001979",
+      "published": "2026.06.01",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001529",
+      "published": "2026.08.28",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250827000521",
+      "published": "2025.08.27",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260407003281",
+      "published": "2026.04.07",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "아이티켐 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001529",
+      "published": "2026.08.28",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "audit-context",
+      "label": "아이티켐 최신 보고서 · 회계감사인의 의견 및 강조사항",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001529",
+      "published": "2026.08.28",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business",
+      "audit-context"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입하거나 생산한 제품 중 규격을 충족한 양품의 비율입니다."
+    },
+    {
+      "name": "OLED",
+      "desc": "전류를 흘리면 유기 발광 재료가 스스로 빛을 내는 디스플레이 기술입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "양산",
+      "desc": "개발과 시험을 마친 제품을 판매·공급하기 위해 대량으로 생산하는 단계입니다."
+    },
+    {
+      "name": "원료의약품",
+      "desc": "완성된 약의 치료 작용을 내는 주성분으로 사용되는 물질입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "전자재료",
+      "desc": "반도체·디스플레이 등 전자제품의 제조와 기능 구현에 사용하는 소재입니다."
+    },
+    {
+      "name": "의견거절",
+      "desc": "감사인이 충분한 감사증거를 확보하지 못하는 등의 사유로 재무제표에 의견을 제시하지 않는 것입니다."
+    },
+    {
+      "name": "적정",
+      "desc": "감사인이 재무제표가 회계기준에 따라 중요하게 왜곡되지 않았다고 판단한 의견입니다. 투자 안전이나 미래 이익을 보증하는 뜻은 아닙니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "중간체",
+      "desc": "최종 소재·의약품을 만들기 전 합성 과정에서 생기는 중간 물질입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

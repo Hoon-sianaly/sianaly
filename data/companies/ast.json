@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ast",
+    "name": "아스트",
+    "ticker": "067390",
+    "rank": 364,
+    "type": "항공기 동체·개조"
+  },
+  "overview": {
+    "short": "아스트는 항공기 구조물 회사",
+    "summary": "아스트는 항공기 구조물 회사입니다. 민항기 동체·보강 부품을 만듭니다.",
+    "takeaways": [
+      "아스트는 항공기 구조물 회사입니다.",
+      "민항기 동체·보강 부품을 만듭니다.",
+      "여객기의 화물기 개조용 도어도 공급합니다.",
+      "항공기 제조·개조 프로젝트에 참여합니다.",
+      "재무는 별도 범위로 비교합니다."
+    ],
+    "business": [
+      {
+        "name": "민항기 제조",
+        "desc": "동체·벌크헤드·보강 부품을 생산합니다."
+      },
+      {
+        "name": "항공기 개조",
+        "desc": "화물 도어·관련 구조물을 공급합니다."
+      },
+      {
+        "name": "제작·가공",
+        "desc": "고객 규격의 항공 구조물을 만듭니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "항공기 생산",
+        "desc": "제작사 물량·납품 일정을 봅니다."
+      },
+      {
+        "title": "개조 수요",
+        "desc": "화물기 전환 프로젝트를 확인합니다."
+      },
+      {
+        "title": "제조·자금",
+        "desc": "소재·공정비·차입·현금을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다. 2026년 연결 API가 제공되지 않아 화면의 모든 비교 기간을 공식 별도 재무제표로 통일했습니다. 연결 사업 소개와 별도 수치를 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.168739896411,
+        "op": -0.003759707342,
+        "net": -0.014142241522,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001263",
+          "rawKRW": {
+            "sales": "168739896411",
+            "op": "-3759707342",
+            "net": "-14142241522"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.254397973852,
+        "op": 0.007317577129,
+        "net": -0.008846631434,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001569",
+          "rawKRW": {
+            "sales": "254397973852",
+            "op": "7317577129",
+            "net": "-8846631434"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.056577165795,
+        "op": -0.003408085403,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001368",
+          "rawKRW": {
+            "sales": "56577165795",
+            "op": "-3408085403",
+            "net": "-8213177427"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.071366609321,
+        "op": 0.007046281961,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260708000502",
+          "rawKRW": {
+            "sales": "71366609321",
+            "op": "7046281961",
+            "net": "5326857902"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.056996960537,
+        "op": 0.003822532341,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001368",
+          "rawKRW": {
+            "sales": "56996960537",
+            "op": "3822532341",
+            "net": "1754157798"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001569",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000502",
+      "published": "2026.07.08",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001368",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001263",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001368",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "아스트 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001368",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "API",
+      "desc": "소프트웨어·시스템 사이에서 기능이나 데이터를 주고받는 연결 규칙·인터페이스입니다."
+    },
+    {
+      "name": "벌크헤드",
+      "desc": "선박·항공기 등의 내부 공간을 나누고 구조를 보강하는 격벽입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

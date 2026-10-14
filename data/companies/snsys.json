@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "snsys",
+    "name": "에스엔시스",
+    "ticker": "0008Z0",
+    "rank": 377,
+    "type": "선박 전력·제어 장비"
+  },
+  "overview": {
+    "short": "에스엔시스는 선박 기자재 회사",
+    "summary": "에스엔시스는 선박 기자재 회사입니다. 선박·해양용 배전반을 만듭니다.",
+    "takeaways": [
+      "에스엔시스는 선박 기자재 회사입니다.",
+      "선박·해양용 배전반을 만듭니다.",
+      "평형수 처리·이중연료 공급 설비를 제공합니다.",
+      "선박 자동화·유지보수도 수행합니다.",
+      "조선 수주와 납품·서비스 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "파워솔루션",
+        "desc": "선박·해양·육상 배전반을 공급합니다."
+      },
+      {
+        "name": "에코솔루션",
+        "desc": "평형수·연료 공급 설비를 만듭니다."
+      },
+      {
+        "name": "제어·MRO",
+        "desc": "자동화·유지보수·개조를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "선박 발주",
+        "desc": "신조·환경규제 대응 주문을 봅니다."
+      },
+      {
+        "title": "수행 일정",
+        "desc": "제작·설치·검수를 확인합니다."
+      },
+      {
+        "title": "제품 원가",
+        "desc": "전기부품·인력·해외 지원비를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.138127527874,
+        "op": 0.01547780009,
+        "net": 0.022672572637,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260320000971",
+          "rawKRW": {
+            "sales": "138127527874",
+            "op": "15477800090",
+            "net": "22672572637"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.144425340172,
+        "op": 0.017738505697,
+        "net": 0.018041280232,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320000971",
+          "rawKRW": {
+            "sales": "144425340172",
+            "op": "17738505697",
+            "net": "18041280232"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.04123470869,
+        "op": 0.005006408277,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250822000364",
+          "rawKRW": {
+            "sales": "41234708690",
+            "op": "5006408277",
+            "net": "5930680441"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.034251652138,
+        "op": 0.00379914836,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001980",
+          "rawKRW": {
+            "sales": "34251652138",
+            "op": "3799148360",
+            "net": "3678909554"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.041075547288,
+        "op": 0.006071907968,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000091",
+          "rawKRW": {
+            "sales": "41075547288",
+            "op": "6071907968",
+            "net": "5481901550"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000971",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001980",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000091",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250822000364",
+      "published": "2025.08.22",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000971",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "에스엔시스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000091",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "배전",
+      "desc": "송전망에서 받은 전기를 지역의 가정·공장 등 사용자에게 나눠 공급하는 과정입니다."
+    },
+    {
+      "name": "이중연료",
+      "desc": "두 종류의 연료를 사용할 수 있도록 설계된 엔진이나 연료 공급 방식입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "MRO",
+      "desc": "설비의 유지보수·수리·운영에 필요한 제품과 서비스를 뜻합니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품한 제품·장비가 고객의 사양과 조건을 충족하는지 확인하는 절차입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "samyangcomtech",
+    "name": "삼양컴텍",
+    "ticker": "484590",
+    "rank": 302,
+    "type": "방탄·방호 소재"
+  },
+  "overview": {
+    "short": "삼양컴텍은 방탄·방호 제품 회사",
+    "summary": "삼양컴텍은 방탄·방호 제품 회사입니다. 전차·장갑차 등의 장갑을 생산합니다.",
+    "takeaways": [
+      "삼양컴텍은 방탄·방호 제품 회사입니다.",
+      "전차·장갑차 등의 장갑을 생산합니다.",
+      "항공기용 방탄 부품도 공급합니다.",
+      "세라믹·복합소재 기술을 활용합니다.",
+      "방산 프로젝트와 납기·제조 원가를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "지상 방호",
+        "desc": "전차·장갑차용 장갑을 공급합니다."
+      },
+      {
+        "name": "항공 부품",
+        "desc": "항공기용 방탄·방호 부품을 만듭니다."
+      },
+      {
+        "name": "소재 개발",
+        "desc": "세라믹·복합소재를 연구·생산합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "방산 발주",
+        "desc": "국내외 무기체계 사업을 봅니다."
+      },
+      {
+        "title": "납품·품질",
+        "desc": "생산 일정·성능 인증을 확인합니다."
+      },
+      {
+        "title": "제조 효율",
+        "desc": "소재·가공 수율·시설 비용을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.141594663733,
+        "op": 0.018058661707,
+        "net": 0.016491769029,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260326001251",
+          "rawKRW": {
+            "sales": "141594663733",
+            "op": "18058661707",
+            "net": "16491769029"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.15460727023,
+        "op": 0.026631015664,
+        "net": 0.022669606521,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260326001251",
+          "rawKRW": {
+            "sales": "154607270230",
+            "op": "26631015664",
+            "net": "22669606521"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.035471076437,
+        "op": 0.00784675081,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250822000351",
+          "rawKRW": {
+            "sales": "35471076437",
+            "op": "7846750810",
+            "net": "5860764373"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.01652571509,
+        "op": 0.00199560347,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000911",
+          "rawKRW": {
+            "sales": "16525715090",
+            "op": "1995603470",
+            "net": "2381977388"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.04678979859,
+        "op": 0.011483135119,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000731",
+          "rawKRW": {
+            "sales": "46789798590",
+            "op": "11483135119",
+            "net": "9291731560"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326001251",
+      "published": "2026.03.26",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000911",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000731",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250822000351",
+      "published": "2025.08.22",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260326001251",
+      "published": "2026.03.26",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "삼양컴텍 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000731",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입하거나 생산한 제품 중 규격을 충족한 양품의 비율입니다."
+    },
+    {
+      "name": "방산",
+      "desc": "군사 장비·무기와 관련 기술·서비스를 공급하는 방위산업입니다."
+    },
+    {
+      "name": "복합소재",
+      "desc": "여러 소재를 결합해 강도·무게·내구성 등의 특성을 조절한 소재입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "세라믹",
+      "desc": "고온 공정을 통해 만드는 무기질 재료로, 전자·내열 부품 등에 쓰입니다."
+    },
+    {
+      "name": "방탄",
+      "desc": "탄환 등의 충격·관통으로부터 사람이나 장비를 보호하는 기능입니다."
+    },
+    {
+      "name": "장갑",
+      "desc": "전차·차량 등을 보호하기 위해 붙이는 방호 구조물입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

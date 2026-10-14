@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "inhwaprecision",
+    "name": "인화정공",
+    "ticker": "101930",
+    "rank": 314,
+    "type": "선박엔진·산업부품"
+  },
+  "overview": {
+    "short": "인화정공은 금속 가공 회사",
+    "summary": "인화정공은 금속 가공 회사입니다. 선박 엔진용 대형 부품이 주력입니다.",
+    "takeaways": [
+      "인화정공은 금속 가공 회사입니다.",
+      "선박 엔진용 대형 부품이 주력입니다.",
+      "발전설비 부품도 공급합니다.",
+      "연결 회사가 금속성형기계·구조재를 만듭니다.",
+      "조선 물량과 가공·소재 원가를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "선박엔진",
+        "desc": "엔진 커버·프레임·구조물을 만듭니다."
+      },
+      {
+        "name": "성형기계",
+        "desc": "선재 가공용 기계를 공급합니다."
+      },
+      {
+        "name": "산업 구조재",
+        "desc": "발전·화공·철도용 설비를 만듭니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "조선 발주",
+        "desc": "엔진 고객 생산·납품을 봅니다."
+      },
+      {
+        "title": "가공 효율",
+        "desc": "용접·대형 가공 수율을 확인합니다."
+      },
+      {
+        "title": "비용·투자",
+        "desc": "소재·인력·설비와 보유 지분을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.092784009378,
+        "op": 0.010261098402,
+        "net": 0.04002317031,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000134",
+          "rawKRW": {
+            "sales": "92784009378",
+            "op": "10261098402",
+            "net": "40023170310"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.107958290033,
+        "op": 0.015534294993,
+        "net": 0.0255667977,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260407001497",
+          "rawKRW": {
+            "sales": "107958290033",
+            "op": "15534294993",
+            "net": "25566797700"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.025162399258,
+        "op": 0.004408809436,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250926000123",
+          "rawKRW": {
+            "sales": "25162399258",
+            "op": "4408809436",
+            "net": "19229010988"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.02598650754,
+        "op": 0.00416228932,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000424",
+          "rawKRW": {
+            "sales": "25986507540",
+            "op": "4162289320"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.031829877537,
+        "op": 0.005133675665,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002712",
+          "rawKRW": {
+            "sales": "31829877537",
+            "op": "5133675665",
+            "net": "9386222411"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260407001497",
+      "published": "2026.04.07",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000424",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002712",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000134",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250926000123",
+      "published": "2025.09.26",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "인화정공 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002712",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입하거나 생산한 제품 중 규격을 충족한 양품의 비율입니다."
+    },
+    {
+      "name": "선재",
+      "desc": "가늘고 길게 가공한 금속 소재로 볼트·너트 등의 원료로 사용합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

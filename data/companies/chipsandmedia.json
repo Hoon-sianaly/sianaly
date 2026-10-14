@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "chipsandmedia",
+    "name": "칩스앤미디어",
+    "ticker": "094360",
+    "rank": 316,
+    "type": "영상 반도체 IP"
+  },
+  "overview": {
+    "short": "칩스앤미디어는 반도체 설계자산 회사",
+    "summary": "칩스앤미디어는 반도체 설계자산 회사입니다. 영상 압축·복원 기술을 칩 업체에 제공합니다.",
+    "takeaways": [
+      "칩스앤미디어는 반도체 설계자산 회사입니다.",
+      "영상 압축·복원 기술을 칩 업체에 제공합니다.",
+      "고객은 설계자산을 자체 반도체에 넣습니다.",
+      "라이선스와 제품 생산량에 따른 수익을 얻습니다.",
+      "기술 계약과 고객 양산·연구비를 봅니다."
+    ],
+    "business": [
+      {
+        "name": "비디오 IP",
+        "desc": "영상 인코딩·디코딩 설계자산을 제공합니다."
+      },
+      {
+        "name": "라이선스",
+        "desc": "고객의 기술 사용권 계약을 체결합니다."
+      },
+      {
+        "name": "양산 수익",
+        "desc": "고객 칩 생산에 따른 로열티를 얻습니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "기술 채택",
+        "desc": "신규 칩 설계 계약을 봅니다."
+      },
+      {
+        "title": "양산 전환",
+        "desc": "고객 제품 출하·로열티를 확인합니다."
+      },
+      {
+        "title": "개발 비용",
+        "desc": "새 영상 규격·인력 비용을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.027075424194,
+        "op": 0.005281327227,
+        "net": 0.010009046321,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250312000857",
+          "rawKRW": {
+            "sales": "27075424194",
+            "op": "5281327227",
+            "net": "10009046321"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.028467135839,
+        "op": 0.006964476384,
+        "net": 0.005922544212,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260311004380",
+          "rawKRW": {
+            "sales": "28467135839",
+            "op": "6964476384",
+            "net": "5922544212"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_GrossProfit"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.006613279142,
+        "op": 0.001376378642,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002409",
+          "rawKRW": {
+            "sales": "6613279142",
+            "op": "1376378642",
+            "net": "802160682"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.005779897129,
+        "op": 0.000180528224,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000396",
+          "rawKRW": {
+            "sales": "5779897129",
+            "op": "180528224",
+            "net": "1293976271"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_GrossProfit"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.007091905736,
+        "op": 0.001126870846,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000789",
+          "rawKRW": {
+            "sales": "7091905736",
+            "op": "1126870846",
+            "net": "2177371119"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_GrossProfit"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004380",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000396",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000789",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250312000857",
+      "published": "2025.03.12",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002409",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "칩스앤미디어 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000789",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "라이선스",
+      "desc": "기술·브랜드·콘텐츠 등을 계약 조건에 따라 사용할 수 있는 권리입니다."
+    },
+    {
+      "name": "양산",
+      "desc": "개발과 시험을 마친 제품을 판매·공급하기 위해 대량으로 생산하는 단계입니다."
+    },
+    {
+      "name": "IP",
+      "desc": "여기서는 반도체 설계자산 또는 콘텐츠 지식재산을 뜻하며 해당 사업 문맥으로 구분합니다."
+    },
+    {
+      "name": "로열티",
+      "desc": "기술·브랜드 등의 사용이나 제품 판매량에 따라 지급하는 대가입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

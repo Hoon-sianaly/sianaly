@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "smec",
+    "name": "스맥",
+    "ticker": "099440",
+    "rank": 329,
+    "type": "공작기계·자동화"
+  },
+  "overview": {
+    "short": "스맥은 공작기계·자동화 회사",
+    "summary": "스맥은 공작기계·자동화 회사입니다. CNC 선반·머시닝센터를 만듭니다.",
+    "takeaways": [
+      "스맥은 공작기계·자동화 회사입니다.",
+      "CNC 선반·머시닝센터를 만듭니다.",
+      "로봇·융복합 자동화 설비도 공급합니다.",
+      "연결 사업에는 통신·네트워크 장비가 있습니다.",
+      "설비 수요와 원가·경영권 분쟁을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "공작기계",
+        "desc": "금속 가공용 선반·머시닝센터를 만듭니다."
+      },
+      {
+        "name": "자동화",
+        "desc": "로봇·융복합 생산설비를 공급합니다."
+      },
+      {
+        "name": "ICT",
+        "desc": "통신·네트워크 장비를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "시설 투자",
+        "desc": "국내외 제조업 발주를 봅니다."
+      },
+      {
+        "title": "제조 원가",
+        "desc": "주물·제어장치·재고를 확인합니다."
+      },
+      {
+        "title": "분쟁 경과",
+        "desc": "경영권 소송·자금 영향을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 감사의견은 적정이며 경영권 분쟁 관련 소송 결과의 불확실성이 강조돼 있습니다. 이를 계속기업 불확실성이나 의견거절로 표시하지 않습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.20129894429,
+        "op": 0.023955100228,
+        "net": 0.022133889833,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814003888",
+          "rawKRW": {
+            "sales": "201298944290",
+            "op": "23955100228",
+            "net": "22133889833"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.153589636057,
+        "op": -0.016809504557,
+        "net": -0.021494427733,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001679",
+          "rawKRW": {
+            "sales": "153589636057",
+            "op": "-16809504557",
+            "net": "-21494427733"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.03475903938,
+        "op": -0.001044655604,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004045",
+          "rawKRW": {
+            "sales": "34759039380",
+            "op": "-1044655604",
+            "net": "-3767856605"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.029210004386,
+        "op": -0.004841679902,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515003129",
+          "rawKRW": {
+            "sales": "29210004386",
+            "op": "-4841679902",
+            "net": "-5064632623"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.047760971382,
+        "op": 0.001608784223,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002700",
+          "rawKRW": {
+            "sales": "47760971382",
+            "op": "1608784223",
+            "net": "2864123593"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001679",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515003129",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002700",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003888",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004045",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "스맥 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002700",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "audit-context",
+      "label": "스맥 최신 보고서 · 회계감사인의 의견 및 강조사항",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002700",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business",
+      "audit-context"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "계속기업",
+      "desc": "회사가 가까운 미래에 영업을 계속한다는 회계상 전제입니다. 중요한 불확실성이 있다는 설명과 감사의견 거절은 구분합니다."
+    },
+    {
+      "name": "의견거절",
+      "desc": "감사인이 충분한 감사증거를 확보하지 못하는 등의 사유로 재무제표에 의견을 제시하지 않는 것입니다."
+    },
+    {
+      "name": "적정",
+      "desc": "감사인이 재무제표가 회계기준에 따라 중요하게 왜곡되지 않았다고 판단한 의견입니다. 투자 안전이나 미래 이익을 보증하는 뜻은 아닙니다."
+    },
+    {
+      "name": "주물",
+      "desc": "녹인 금속을 틀에 부어 굳힌 제품입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "jtc",
+    "name": "JTC",
+    "ticker": "950170",
+    "rank": 398,
+    "type": "일본 관광객 면세유통"
+  },
+  "overview": {
+    "short": "JTC는 일본에서 매장을 운영하는 유통회사",
+    "summary": "JTC는 일본에서 매장을 운영하는 유통회사입니다. 방일 외국인 관광객에게 상품을 판매합니다.",
+    "takeaways": [
+      "JTC는 일본에서 매장을 운영하는 유통회사입니다.",
+      "방일 외국인 관광객에게 상품을 판매합니다.",
+      "건강보조식품·화장품·생활용품을 취급합니다.",
+      "재무 수치는 엔화이며 연간은 2월 결산입니다.",
+      "관광객·매장 판매와 실제 보고기간을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "식품",
+        "desc": "자체 브랜드·건강보조식품 등을 판매합니다."
+      },
+      {
+        "name": "화장품·생활",
+        "desc": "일본 화장품·생활용품을 공급합니다."
+      },
+      {
+        "name": "매장 운영",
+        "desc": "관광 거점의 면세 매장을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "관광 수요",
+        "desc": "방일객 구성·방문·객단가를 봅니다."
+      },
+      {
+        "title": "제품 마진",
+        "desc": "자체 브랜드·매입·재고를 확인합니다."
+      },
+      {
+        "title": "통화·비용",
+        "desc": "엔화 실적·임차·인건비를 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준 · 일본 엔화(JPY) 공시 수치이며 원화로 환산한 값이 아닙니다. 연간은 2월 종료 12개월 결산입니다. 중간 실적은 표시된 실제 3개월이며 12~2월은 연간에서 앞선 9개월을 차감했습니다.",
+    "quarterlyNote": "표시한 실제 기간의 3개월 실적이며 회계연도 분기 번호·누적 실적과 구분합니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "JPY_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2026,
+        "sales": 0.031794810735,
+        "op": 0.000623393626,
+        "net": 0.000510625454,
+        "periodLabel": "2025.03–2026.02",
+        "reportPeriod": "2025.03–2026.02",
+        "reportedJPY": {
+          "sales": "31794810735",
+          "op": "623393626",
+          "net": "510625454"
+        },
+        "sourceIds": [
+          "report-20260528000907"
+        ]
+      },
+      {
+        "year": 2025,
+        "sales": 0.034026611684,
+        "op": 0.005242790064,
+        "net": 0.008514835732,
+        "periodLabel": "2024.03–2025.02",
+        "reportPeriod": "2024.03–2025.02",
+        "reportedJPY": {
+          "sales": "34026611684",
+          "op": "5242790064",
+          "net": "8514835732"
+        },
+        "sourceIds": [
+          "report-20260528000907"
+        ]
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.004713409814,
+        "op": -0.001512563033,
+        "periodLabel": "2025.12–2026.02",
+        "reportPeriod": "2025.12–2026.02",
+        "reportedJPY": {
+          "sales": "4713409814",
+          "op": "-1512563033"
+        },
+        "sourceIds": [
+          "report-20260528000907",
+          "report-20260129000649"
+        ],
+        "derivation": "annual-minus-first-nine-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.004902490901,
+        "op": 0.000227642463,
+        "periodLabel": "2026.03–05",
+        "reportPeriod": "2026.03–05",
+        "reportedJPY": {
+          "sales": "4902490901",
+          "op": "227642463"
+        },
+        "sourceIds": [
+          "report-20260730000413"
+        ]
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.01004846418,
+        "op": 0.001168794326,
+        "periodLabel": "2025.03–05",
+        "reportPeriod": "2025.03–05",
+        "reportedJPY": {
+          "sales": "10048464180",
+          "op": "1168794326"
+        },
+        "sourceIds": [
+          "report-20260730000413"
+        ]
+      }
+    ],
+    "accountingStandard": "IFRS",
+    "currency": "JPY",
+    "highlightFormat": "JPY",
+    "annualTerm": "12개월 결산",
+    "annualSourceLabel": "공식 2월 종료 12개월 결산",
+    "quarterlyTerm": "최근 3개월",
+    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "quarterlyCalendarNote": "2월 결산 · 실제 분기 12~2월 및 3~5월 · 달력상의 1~3월·4~6월과 다릅니다."
+  },
+  "sources": [
+    {
+      "id": "report-20260528000907",
+      "label": "JTC 공식 JPY 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260528000907",
+      "published": "2026.05.28",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "report-20260129000649",
+      "label": "JTC 공식 JPY 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260129000649",
+      "published": "2026.01.29",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "report-20260730000413",
+      "label": "JTC 공식 JPY 손익계산서 · 실제 기간 확인",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000413",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "JTC 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000413",
+      "published": "2026.07.30",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "객단가",
+      "desc": "고객 한 명이 평균적으로 지출하는 금액입니다."
+    },
+    {
+      "name": "마진",
+      "desc": "판매가격과 관련 비용 사이의 차이 또는 이익의 정도입니다."
+    },
+    {
+      "name": "JPY",
+      "desc": "일본 엔화를 나타내는 통화 코드입니다."
+    },
+    {
+      "name": "IFRS",
+      "desc": "여러 국가에서 재무제표 작성에 사용하는 국제회계기준입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

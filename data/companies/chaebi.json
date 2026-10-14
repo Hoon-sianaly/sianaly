@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "chaebi",
+    "name": "채비",
+    "ticker": "0011T0",
+    "rank": 384,
+    "type": "전기차 충전 인프라"
+  },
+  "overview": {
+    "short": "채비는 전기차 충전 회사",
+    "summary": "채비는 전기차 충전 회사입니다. 충전소를 설치·운영하고 충전 서비스를 제공합니다.",
+    "takeaways": [
+      "채비는 전기차 충전 회사입니다.",
+      "충전소를 설치·운영하고 충전 서비스를 제공합니다.",
+      "충전기를 개발·제조·판매합니다.",
+      "원격 관리·유지보수까지 수행합니다.",
+      "충전 사용량과 설치·전력 비용을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "충전 운영",
+        "desc": "자체 충전소에서 충전 서비스를 합니다."
+      },
+      {
+        "name": "충전기 제조",
+        "desc": "급속 등 충전기를 개발·공급합니다."
+      },
+      {
+        "name": "설치·관리",
+        "desc": "충전 인프라 구축·유지보수를 합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "충전 이용",
+        "desc": "차량 보급·사용량·요금을 봅니다."
+      },
+      {
+        "title": "기기 판매",
+        "desc": "고객 설치·충전기 발주를 확인합니다."
+      },
+      {
+        "title": "운영 자금",
+        "desc": "전력·임차·설비 투자비를 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다. 화면은 별도 기준으로 통일했습니다. API에 없는 2025·2024년 연간 별도 실적은 공식 투자설명서의 별도 손익계산서 원문을 대조했으며 해당 연간 기간은 API 재생을 보류합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.085082131335,
+        "op": -0.027596910112,
+        "net": -0.054494524573,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260417000497",
+          "rawKRW": {
+            "sales": "85082131335",
+            "op": "-27596910112",
+            "net": "-54494524573"
+          },
+          "periodBasis": "annual"
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.101733980656,
+        "op": -0.029627487093,
+        "net": -0.033749899375,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260417000497",
+          "rawKRW": {
+            "sales": "101733980656",
+            "op": "-29627487093",
+            "net": "-33749899375"
+          },
+          "periodBasis": "annual"
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.021141188561,
+        "op": -0.009230649876,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003357",
+          "rawKRW": {
+            "sales": "21141188561",
+            "op": "-9230649876",
+            "net": "-10187037372"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.020696260709,
+        "op": -0.009657820731,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001888",
+          "rawKRW": {
+            "sales": "20696260709",
+            "op": "-9657820731",
+            "net": "-11042016926"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.028945094411,
+        "op": -0.010043465271,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003357",
+          "rawKRW": {
+            "sales": "28945094411",
+            "op": "-10043465271",
+            "net": "-11385068117"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001888",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003357",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000497",
+      "published": "2026.04.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260417000497",
+      "published": "2026.04.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003357",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "채비 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003357",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "API",
+      "desc": "소프트웨어·시스템 사이에서 기능이나 데이터를 주고받는 연결 규칙·인터페이스입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
