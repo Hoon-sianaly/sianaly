@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sfa",
+    "name": "SFA",
+    "ticker": "056190",
+    "rank": 81,
+    "type": "물류·제조 자동화"
+  },
+  "overview": {
+    "short": "SFA는 물류와 제조 현장의 자동화 설비를 공급하는 회사",
+    "summary": "SFA는 물류와 제조 현장의 자동화 설비를 공급하는 회사입니다. 로봇과 AI 기술을 활용한 물류·제조 자동화가 주요 사업입니다.",
+    "takeaways": [
+      "SFA는 물류와 제조 현장의 자동화 설비를 공급하는 회사입니다.",
+      "로봇과 AI 기술을 활용한 물류·제조 자동화가 주요 사업입니다.",
+      "반도체·배터리·디스플레이 등 여러 산업의 생산설비를 공급합니다.",
+      "연결 실적에는 SFA반도체의 반도체 패키징 사업도 포함됩니다.",
+      "주문 제작 장비의 프로젝트 일정과 후공정 사업의 가동률을 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "물류 자동화",
+        "desc": "유통·제조 현장의 이송·보관 등 자동화 시스템을 공급합니다."
+      },
+      {
+        "name": "제조·인프라 설비",
+        "desc": "반도체·배터리 등 제조 공정과 관련 인프라 설비를 공급합니다."
+      },
+      {
+        "name": "반도체 패키징",
+        "desc": "SFA반도체를 통해 조립·검사 등 반도체 후공정 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "프로젝트 발주",
+        "desc": "고객의 설비 투자와 자동화 전환 수주를 확인합니다."
+      },
+      {
+        "title": "공사·검수",
+        "desc": "설비 제작·설치·검수 진행과 원가 변동이 분기 실적에 영향을 줍니다."
+      },
+      {
+        "title": "연결 사업 구성",
+        "desc": "자동화 사업과 반도체 후공정의 수익성·가동률을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 2.04536158127,
+        "op": -0.04839908401,
+        "net": -0.03211741021,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001991",
+          "rawKRW": {
+            "sales": "2045361581270",
+            "op": "-48399084010",
+            "net": "-32117410210"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.630950490066,
+        "op": 0.085860974188,
+        "net": 0.052102798598,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260610000400",
+          "rawKRW": {
+            "sales": "1630950490066",
+            "op": "85860974188",
+            "net": "52102798598"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.444992026297,
+        "op": 0.021121709711,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003265",
+          "rawKRW": {
+            "sales": "444992026297",
+            "op": "21121709711",
+            "net": "2569631428"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.361146689778,
+        "op": 0.015449174949,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002612",
+          "rawKRW": {
+            "sales": "361146689778",
+            "op": "15449174949",
+            "net": "20433245464"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.400006678183,
+        "op": 0.028991025715,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260812000465",
+          "rawKRW": {
+            "sales": "400006678183",
+            "op": "28991025715",
+            "net": "23343540683"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260610000400",
+      "published": "2026.06.10",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002612",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000465",
+      "published": "2026.08.12",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001991",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003265",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "SFA 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000465",
+      "published": "2026.08.12",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장·설비가 생산능력에 비해 실제로 사용된 정도입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "AI",
+      "desc": "인공지능입니다. 데이터를 바탕으로 학습해 분류·예측·콘텐츠 생성 등의 작업을 수행하는 기술입니다."
+    },
+    {
+      "name": "패키징",
+      "desc": "반도체 칩을 보호하고 외부 회로와 연결할 수 있도록 조립하는 과정입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품한 제품·장비가 고객의 사양과 조건을 충족하는지 확인하는 절차입니다."
+    },
+    {
+      "name": "후공정",
+      "desc": "만들어진 반도체 칩을 조립·포장·검사하는 단계입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

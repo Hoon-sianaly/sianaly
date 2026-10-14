@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "stpharm",
+    "name": "에스티팜",
+    "ticker": "237690",
+    "rank": 52,
+    "type": "원료의약품 위탁개발생산"
+  },
+  "overview": {
+    "short": "에스티팜은 신약의 원료를 개발하고 생산하는 제약회사",
+    "summary": "에스티팜은 신약의 원료를 개발하고 생산하는 제약회사입니다. 핵산 치료제에 쓰이는 올리고뉴클레오타이드 원료의 위탁개발생산이 주요 사업입니다.",
+    "takeaways": [
+      "에스티팜은 신약의 원료를 개발하고 생산하는 제약회사입니다.",
+      "핵산 치료제에 쓰이는 올리고뉴클레오타이드 원료의 위탁개발생산이 주요 사업입니다.",
+      "저분자 신약 원료와 제네릭 의약품 원료도 생산합니다.",
+      "mRNA 관련 소재·기술과 자체 신약 연구에도 참여합니다.",
+      "고객 신약의 개발·상업화 단계와 생산시설 가동률이 실적에 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "올리고 CDMO",
+        "desc": "핵산 치료제 개발사의 원료를 공정 개발부터 생산까지 맡습니다."
+      },
+      {
+        "name": "저분자·제네릭 원료",
+        "desc": "신약과 복제약에 사용되는 원료의약품을 공급합니다."
+      },
+      {
+        "name": "신규 기술·연구",
+        "desc": "mRNA 관련 소재·기술 및 자체 신약 연구개발을 진행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 개발 단계",
+        "desc": "임상용 주문과 상업화 제품의 반복 생산은 물량과 수익 구조가 다릅니다."
+      },
+      {
+        "title": "시설 가동",
+        "desc": "증설한 올리고 생산시설의 가동률과 초기 비용을 확인합니다."
+      },
+      {
+        "title": "품질과 계약",
+        "desc": "의약품 제조 품질 인증, 고객 계약 이행과 연구개발 지출을 함께 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.27375134284,
+        "op": 0.027692533192,
+        "net": 0.032463839888,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250814002070",
+          "rawKRW": {
+            "sales": "273751342840",
+            "op": "27692533192",
+            "net": "32463839888"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.331681282447,
+        "op": 0.05493254375,
+        "net": 0.054561944733,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260602000343",
+          "rawKRW": {
+            "sales": "331681282447",
+            "op": "54932543750",
+            "net": "54561944733"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.068250893813,
+        "op": 0.012918898204,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003419",
+          "rawKRW": {
+            "sales": "68250893813",
+            "op": "12918898204",
+            "net": "5367408105"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.06696145722,
+        "op": 0.011529137999,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000979",
+          "rawKRW": {
+            "sales": "66961457220",
+            "op": "11529137999",
+            "net": "15200643419"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.108484009377,
+        "op": 0.018307057461,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003399",
+          "rawKRW": {
+            "sales": "108484009377",
+            "op": "18307057461",
+            "net": "13150929276"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000343",
+      "published": "2026.06.02",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000979",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003399",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002070",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003419",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "에스티팜 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003399",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장·설비가 생산능력에 비해 실제로 사용된 정도입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 평가하는 시험입니다."
+    },
+    {
+      "name": "원료의약품",
+      "desc": "완성된 의약품을 만드는 데 사용하는 주요 약효 성분 등 원료입니다."
+    },
+    {
+      "name": "위탁개발",
+      "desc": "다른 회사의 요청을 받아 제품·기술 개발을 대신 수행하는 사업입니다."
+    },
+    {
+      "name": "제네릭",
+      "desc": "특허 등이 만료된 기존 의약품과 같은 유효성분으로 개발한 복제약입니다."
+    },
+    {
+      "name": "상업화",
+      "desc": "연구·개발한 제품이나 기술을 허가·생산·판매 등 실제 사업으로 연결하는 과정입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "핵산",
+      "desc": "유전정보를 저장·전달하는 DNA·RNA 등을 구성하는 물질입니다."
+    },
+    {
+      "name": "mRNA",
+      "desc": "단백질을 만드는 정보를 전달하는 RNA로, 일부 백신·치료제 기술에 사용합니다."
+    },
+    {
+      "name": "위탁개발생산",
+      "desc": "고객의 제품 개발·공정 설계·제조 등을 맡아 수행하는 사업입니다."
+    },
+    {
+      "name": "올리고뉴클레오타이드",
+      "desc": "짧은 핵산 사슬로, 일부 유전자·RNA 치료제의 원료로 사용합니다."
+    },
+    {
+      "name": "CDMO",
+      "desc": "의약품의 제조 공정 개발과 생산을 고객사 대신 수행하는 사업입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

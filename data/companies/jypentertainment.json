@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "jypentertainment",
+    "name": "JYP Ent.",
+    "ticker": "035900",
+    "rank": 68,
+    "type": "음악·아티스트 사업"
+  },
+  "overview": {
+    "short": "JYP Ent.는 아티스트를 육성하고 음악·공연을 제작하는 회사",
+    "summary": "JYP Ent.는 아티스트를 육성하고 음악·공연을 제작하는 회사입니다. 음반과 음원 판매, 공연·출연이 주요 수익원입니다.",
+    "takeaways": [
+      "JYP Ent.는 아티스트를 육성하고 음악·공연을 제작하는 회사입니다.",
+      "음반과 음원 판매, 공연·출연이 주요 수익원입니다.",
+      "상품과 팬클럽, 아티스트 지적재산을 활용한 사업도 운영합니다.",
+      "국내외 팬 수요를 기반으로 여러 아티스트의 활동을 전개합니다.",
+      "앨범 발매와 공연 일정, 제작비 및 정산 시점에 따라 분기 실적이 달라집니다."
+    ],
+    "business": [
+      {
+        "name": "음반·음원",
+        "desc": "소속 아티스트의 음악을 기획·제작하고 유통·판매합니다."
+      },
+      {
+        "name": "매니지먼트·공연",
+        "desc": "콘서트와 출연·광고 등 아티스트 활동을 운영합니다."
+      },
+      {
+        "name": "IP·상품",
+        "desc": "아티스트 상품과 팬클럽, 지적재산 라이선싱 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "활동 일정",
+        "desc": "주요 아티스트의 앨범과 공연 일정이 당기 매출에 영향을 줍니다."
+      },
+      {
+        "title": "해외 팬 수요",
+        "desc": "지역별 공연 규모와 음원·상품 판매, 환율을 확인합니다."
+      },
+      {
+        "title": "제작·육성 비용",
+        "desc": "공연 원가와 아티스트 정산, 신규 아티스트 육성 비용을 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.601787883332,
+        "op": 0.12826226924,
+        "net": 0.097714913917,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000598",
+          "rawKRW": {
+            "sales": "601787883332",
+            "op": "128262269240",
+            "net": "97714913917"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.821854634614,
+        "op": 0.155246094076,
+        "net": 0.16056347608,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001519",
+          "rawKRW": {
+            "sales": "821854634614",
+            "op": "155246094076",
+            "net": "160563476080"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.215832158598,
+        "op": 0.052908292627,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814004137",
+          "rawKRW": {
+            "sales": "215832158598",
+            "op": "52908292627",
+            "net": "36259049372"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.185959611998,
+        "op": 0.033374435834,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002272",
+          "rawKRW": {
+            "sales": "185959611998",
+            "op": "33374435834",
+            "net": "31904529664"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.183142887242,
+        "op": 0.030997855609,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003204",
+          "rawKRW": {
+            "sales": "183142887242",
+            "op": "30997855609",
+            "net": "21660591816"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001519",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002272",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003204",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000598",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814004137",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "JYP Ent. 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003204",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "IP",
+      "desc": "지식재산권입니다. 여기서는 캐릭터·콘텐츠 등의 사용·상품화 권리를 뜻합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

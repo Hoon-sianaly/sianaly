@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "bhi",
+    "name": "비에이치아이",
+    "ticker": "083650",
+    "rank": 61,
+    "type": "발전설비"
+  },
+  "overview": {
+    "short": "비에이치아이는 발전소에 필요한 설비를 설계하고 제작하는 회사",
+    "summary": "비에이치아이는 발전소에 필요한 설비를 설계하고 제작하는 회사입니다. 복합화력발전의 배기가스 열을 회수하는 HRSG가 주요 제품입니다.",
+    "takeaways": [
+      "비에이치아이는 발전소에 필요한 설비를 설계하고 제작하는 회사입니다.",
+      "복합화력발전의 배기가스 열을 회수하는 HRSG가 주요 제품입니다.",
+      "화력발전용 보일러와 복수기·열교환기 같은 보조기기도 공급합니다.",
+      "발전사업자와 건설사 등에 주문 제작 방식으로 납품합니다.",
+      "발전 프로젝트 수주와 공정 진행, 원자재·제작 비용을 함께 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "HRSG",
+        "desc": "가스터빈 배기가스의 열로 증기를 만드는 배열회수보일러를 공급합니다."
+      },
+      {
+        "name": "보일러",
+        "desc": "화력발전 등에 쓰이는 보일러를 설계·제작합니다."
+      },
+      {
+        "name": "보조기기",
+        "desc": "복수기·열교환기·탈기기 등 발전소의 보조 설비를 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "발전소 투자",
+        "desc": "국내외 발전 프로젝트의 발주와 수주잔고를 확인합니다."
+      },
+      {
+        "title": "공정과 납품",
+        "desc": "주문 제작·시공 진행과 고객 일정에 따라 매출 인식이 달라집니다."
+      },
+      {
+        "title": "제작 원가",
+        "desc": "철강 등 원자재 가격, 외주 제작비와 프로젝트별 원가를 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.404741038609,
+        "op": 0.021927258374,
+        "net": 0.01958505243,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250314001420",
+          "rawKRW": {
+            "sales": "404741038609",
+            "op": "21927258374",
+            "net": "19585052430"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.774116878915,
+        "op": 0.075496618005,
+        "net": 0.065196402061,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320000821",
+          "rawKRW": {
+            "sales": "774116878915",
+            "op": "75496618005",
+            "net": "65196402061"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.169299323933,
+        "op": 0.020389794178,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002599",
+          "rawKRW": {
+            "sales": "169299323933",
+            "op": "20389794178",
+            "net": "29888265753"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.280793040014,
+        "op": 0.03532457222,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000542",
+          "rawKRW": {
+            "sales": "280793040014",
+            "op": "35324572220",
+            "net": "5098911590"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.296273189758,
+        "op": 0.045483095564,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000764",
+          "rawKRW": {
+            "sales": "296273189758",
+            "op": "45483095564",
+            "net": "20318448639"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000821",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000542",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000764",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001420",
+      "published": "2025.03.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002599",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "비에이치아이 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000764",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "열교환기",
+      "desc": "서로 다른 유체 사이에 열을 전달하여 가열하거나 냉각하는 설비입니다."
+    },
+    {
+      "name": "배열회수보일러",
+      "desc": "발전 설비 등의 뜨거운 배기가스에서 열을 회수해 증기를 만드는 설비입니다."
+    },
+    {
+      "name": "복수기",
+      "desc": "사용한 증기를 냉각해 물로 되돌리는 발전 설비입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "터빈",
+      "desc": "증기·가스 등의 흐름으로 회전하여 동력을 만드는 장치입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "수주잔고",
+      "desc": "받은 주문 중 아직 매출·납품으로 완료하지 않은 금액입니다."
+    },
+    {
+      "name": "HRSG",
+      "desc": "배열회수보일러로, 가스터빈 등에서 배출된 열을 회수해 증기를 만드는 설비입니다."
+    },
+    {
+      "name": "탈기기",
+      "desc": "물 속의 용존 가스 등을 제거하는 설비입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

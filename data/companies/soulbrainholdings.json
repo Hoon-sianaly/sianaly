@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "soulbrainholdings",
+    "name": "솔브레인홀딩스",
+    "ticker": "036830",
+    "rank": 87,
+    "type": "전자소재·헬스케어 지주"
+  },
+  "overview": {
+    "short": "솔브레인홀딩스는 전자소재와 헬스케어 등 계열사를 보유한 지주회사",
+    "summary": "솔브레인홀딩스는 전자소재와 헬스케어 등 계열사를 보유한 지주회사입니다. 연결 사업에는 배터리 전해액과 리드탭 생산이 포함됩니다.",
+    "takeaways": [
+      "솔브레인홀딩스는 전자소재와 헬스케어 등 계열사를 보유한 지주회사입니다.",
+      "연결 사업에는 배터리 전해액과 리드탭 생산이 포함됩니다.",
+      "디스플레이 가공·소재와 반도체 검사 부품 사업도 운영합니다.",
+      "마스크팩 등 바이오헬스케어와 투자·임대 사업에도 참여합니다.",
+      "솔브레인과 별개 회사이므로 연결 대상과 지분법 손익을 구분해서 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "배터리 소재",
+        "desc": "계열사를 통해 전해액과 리드탭을 생산·판매합니다."
+      },
+      {
+        "name": "전자소재·부품",
+        "desc": "디스플레이 가공·소재와 반도체 검사 부품 등의 사업을 운영합니다."
+      },
+      {
+        "name": "헬스케어·지주",
+        "desc": "화장품 등 헬스케어 계열사와 투자·배당·임대 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "사업별 수요",
+        "desc": "배터리·전자소재와 헬스케어 고객의 주문을 각각 확인합니다."
+      },
+      {
+        "title": "연결·지분법",
+        "desc": "연결 회사의 매출과 지분법 손익, 지주회사 현금 유입을 구분합니다."
+      },
+      {
+        "title": "원가·투자",
+        "desc": "해외 생산 원가와 환율, 계열사 투자·차입 부담을 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.433749481738,
+        "op": 0.031810422475,
+        "net": 0.055294686026,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001251",
+          "rawKRW": {
+            "sales": "433749481738",
+            "op": "31810422475",
+            "net": "55294686026"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.556646781397,
+        "op": 0.008859913929,
+        "net": 0.495558016939,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001251",
+          "rawKRW": {
+            "sales": "556646781397",
+            "op": "8859913929",
+            "net": "495558016939"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.149160602758,
+        "op": 0.006769021296,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003804",
+          "rawKRW": {
+            "sales": "149160602758",
+            "op": "6769021296",
+            "net": "22847305926"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.176320057278,
+        "op": 0.001491880292,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002250",
+          "rawKRW": {
+            "sales": "176320057278",
+            "op": "1491880292",
+            "net": "23573130523"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.208793353326,
+        "op": 0.031891851928,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003804",
+          "rawKRW": {
+            "sales": "208793353326",
+            "op": "31891851928",
+            "net": "107805991616"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001251",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002250",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003804",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001251",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003804",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "솔브레인홀딩스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003804",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "지분법",
+      "desc": "관계기업의 손익 중 보유 지분에 해당하는 부분을 투자회사의 손익에 반영하는 회계 방식입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "지주회사",
+      "desc": "다른 회사의 주식을 보유해 계열사를 지배·관리하는 회사입니다. 자체 사업을 함께 운영하기도 합니다."
+    },
+    {
+      "name": "배당",
+      "desc": "회사가 정해진 절차에 따라 주주에게 나누어 지급하는 돈이나 주식입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "리드탭",
+      "desc": "배터리 내부 전극과 외부 회로를 연결하는 금속 단자 부품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
