@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "wooritechnologyinvestment",
+    "name": "우리기술투자",
+    "ticker": "041190",
+    "rank": 194,
+    "type": "신기술 기업 투자"
+  },
+  "overview": {
+    "short": "우리기술투자는 신기술기업 등에 투자하는 회사",
+    "summary": "우리기술투자는 신기술기업 등에 투자하는 회사입니다. 지분투자와 투자조합 결성·운용을 수행합니다.",
+    "takeaways": [
+      "우리기술투자는 신기술기업 등에 투자하는 회사입니다.",
+      "지분투자와 투자조합 결성·운용을 수행합니다.",
+      "투자기업의 성장과 매각·상장 등을 통해 회수를 추진합니다.",
+      "평가손익과 회수·운용 수익이 실적에 영향을 줍니다.",
+      "특정 투자기업 가치와 실제 회수 현금은 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "기업 투자",
+        "desc": "신기술기업 등에 자본을 공급합니다."
+      },
+      {
+        "name": "조합 운용",
+        "desc": "투자조합 결성과 자금 관리·운용을 수행합니다."
+      },
+      {
+        "name": "회수·지원",
+        "desc": "투자기업 지원과 지분 매각 등 회수를 추진합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "투자 가치",
+        "desc": "주요 투자기업의 성과와 평가 방식·변동을 확인합니다."
+      },
+      {
+        "title": "현금 회수",
+        "desc": "상장·매각과 실제 대금 유입을 구분합니다."
+      },
+      {
+        "title": "운용·집중",
+        "desc": "조합 규모와 투자 집중도·자금 사용을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.192251177787,
+        "op": 0.175683516935,
+        "net": 0.1477377452,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320000645",
+          "rawKRW": {
+            "sales": "192251177787",
+            "op": "175683516935",
+            "net": "147737745200"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.162866987251,
+        "op": 0.13807596977,
+        "net": 0.110544592503,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001355",
+          "rawKRW": {
+            "sales": "162866987251",
+            "op": "138075969770",
+            "net": "110544592503"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.171484833351,
+        "op": 0.163009842344,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001820",
+          "rawKRW": {
+            "sales": "171484833351",
+            "op": "163009842344",
+            "net": "130659694384"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.018419237529,
+        "op": 0.015434690653,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000921",
+          "rawKRW": {
+            "sales": "18419237529",
+            "op": "15434690653",
+            "net": "14356015187"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.085401278734,
+        "op": 0.075773788103,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001664",
+          "rawKRW": {
+            "sales": "85401278734",
+            "op": "75773788103",
+            "net": "60451358122"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    },
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (투자·운용)",
+        "help": "신기술기업 투자·평가·회수 등에 따른 영업수익입니다. 투자원금이나 현금 회수액과 다릅니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "같은 연결 범위의 영업비용을 차감한 손익입니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001355",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000921",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001664",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000645",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001820",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "우리기술투자 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001664",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "평가손익",
+      "desc": "자산 등의 평가 가치 변동으로 발생하는 회계상 손익으로, 실제 현금 회수와 다를 수 있습니다."
+    },
+    {
+      "name": "투자조합",
+      "desc": "여러 출자자의 자금을 모아 기업 등에 투자하고 수익을 배분하는 투자기구입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

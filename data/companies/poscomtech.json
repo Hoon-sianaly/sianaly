@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "poscomtech",
+    "name": "포스코엠텍",
+    "ticker": "009520",
+    "rank": 164,
+    "type": "철강 포장·부원료"
+  },
+  "overview": {
+    "short": "포스코엠텍은 철강제품 포장과 부원료 회사",
+    "summary": "포스코엠텍은 철강제품 포장과 부원료 회사입니다. 포스코 등의 철강제품을 포장하는 용역을 수행합니다.",
+    "takeaways": [
+      "포스코엠텍은 철강제품 포장과 부원료 회사입니다.",
+      "포스코 등의 철강제품을 포장하는 용역을 수행합니다.",
+      "제강에서 산소를 제거하는 알루미늄 탈산제를 공급합니다.",
+      "합금 공장 위탁운영과 포장 설비도 사업에 포함됩니다.",
+      "철강 생산량과 알루미늄 원가, 계약 수익성을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "철강 포장",
+        "desc": "열연·냉연 등 제품 포장 용역을 수행합니다."
+      },
+      {
+        "name": "탈산제",
+        "desc": "알루미늄 펠레트 등 제강용 부원료를 공급합니다."
+      },
+      {
+        "name": "설비·위탁운영",
+        "desc": "포장 설비와 합금 공장 운영 서비스를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "철강 생산",
+        "desc": "고객 제철소의 생산·포장 물량을 확인합니다."
+      },
+      {
+        "title": "알루미늄 가격",
+        "desc": "원료 매입과 제품 판매 단가를 함께 봅니다."
+      },
+      {
+        "title": "계약·인건비",
+        "desc": "용역 조건과 인력·설비 운영 비용을 확인합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.346628290419,
+        "op": 0.001422749362,
+        "net": 0.000567503575,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250313001212",
+          "rawKRW": {
+            "sales": "346628290419",
+            "op": "1422749362",
+            "net": "567503575"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.357432185147,
+        "op": 0.00103445616,
+        "net": 0.00141149767,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000807",
+          "rawKRW": {
+            "sales": "357432185147",
+            "op": "1034456160",
+            "net": "1411497670"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.08934592188,
+        "op": -0.003244441828,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001196",
+          "rawKRW": {
+            "sales": "89345921880",
+            "op": "-3244441828",
+            "net": "-3603475934"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.103339758743,
+        "op": 0.002479007846,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000960",
+          "rawKRW": {
+            "sales": "103339758743",
+            "op": "2479007846",
+            "net": "2237643864"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.107195793914,
+        "op": 0.009668226696,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000665",
+          "rawKRW": {
+            "sales": "107195793914",
+            "op": "9668226696",
+            "net": "7732713783"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000807",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000960",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000665",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001212",
+      "published": "2025.03.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001196",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "포스코엠텍 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000665",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "냉연",
+      "desc": "금속을 상온에 가까운 상태에서 압연해 표면·두께 등을 가공하는 방식입니다."
+    },
+    {
+      "name": "열연",
+      "desc": "금속을 높은 온도에서 눌러 판·봉 등 형태로 만드는 가공입니다."
+    },
+    {
+      "name": "용역",
+      "desc": "제품 판매와 달리 공정 개발·분석·작업 등 서비스를 제공하는 사업입니다."
+    },
+    {
+      "name": "합금",
+      "desc": "둘 이상의 원소를 섞어 강도·내열성 등 필요한 성질을 갖도록 만든 금속입니다."
+    },
+    {
+      "name": "제강",
+      "desc": "용해·정련 등을 통해 필요한 성분의 강철을 만드는 공정입니다."
+    },
+    {
+      "name": "탈산제",
+      "desc": "금속 제조 과정에서 산소를 제거하는 데 쓰는 재료입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sunic",
+    "name": "선익시스템",
+    "ticker": "171090",
+    "rank": 103,
+    "type": "OLED 증착 장비"
+  },
+  "overview": {
+    "short": "선익시스템은 OLED 등의 증착 장비를 만드는 회사",
+    "summary": "선익시스템은 OLED 등의 증착 장비를 만드는 회사입니다. 디스플레이에 유기물질을 얇게 입히는 공정이 주력 분야입니다.",
+    "takeaways": [
+      "선익시스템은 OLED 등의 증착 장비를 만드는 회사입니다.",
+      "디스플레이에 유기물질을 얇게 입히는 공정이 주력 분야입니다.",
+      "고객 요구에 맞춰 장비를 주문 제작합니다.",
+      "장비 부품과 유지보수 등 관련 서비스도 제공합니다.",
+      "대규모 수주와 실제 납품·검수의 시차를 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "증착 장비",
+        "desc": "OLED 등 제조용 유기물 증착 장비를 공급합니다."
+      },
+      {
+        "name": "소형·신규 공정",
+        "desc": "마이크로디스플레이 등 새로운 공정용 장비를 개발합니다."
+      },
+      {
+        "name": "부품·서비스",
+        "desc": "소모 부품과 장비 유지보수를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 투자",
+        "desc": "디스플레이 고객의 공장·공정 투자를 확인합니다."
+      },
+      {
+        "title": "납품·검수",
+        "desc": "장비 인도와 검수 시점에 따라 분기 매출이 달라집니다."
+      },
+      {
+        "title": "개발·제작비",
+        "desc": "장비 사양과 부품 원가, 신규 기술 개발 비용을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.112925047956,
+        "op": 0.007906583113,
+        "net": -0.028070043302,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250723000058",
+          "rawKRW": {
+            "sales": "112925047956",
+            "op": "7906583113",
+            "net": "-28070043302"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.515761033577,
+        "op": 0.111525548096,
+        "net": 0.096523950618,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001146",
+          "rawKRW": {
+            "sales": "515761033577",
+            "op": "111525548096",
+            "net": "96523950618"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.190054705124,
+        "op": 0.039961738195,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001029",
+          "rawKRW": {
+            "sales": "190054705124",
+            "op": "39961738195",
+            "net": "59341252424"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.016098564434,
+        "op": 0.001474918893,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002995",
+          "rawKRW": {
+            "sales": "16098564434",
+            "op": "1474918893",
+            "net": "-19632956360"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.020242142077,
+        "op": -0.01014257089,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003806",
+          "rawKRW": {
+            "sales": "20242142077",
+            "op": "-10142570890",
+            "net": "-7953600177"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001146",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002995",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003806",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250723000058",
+      "published": "2025.07.23",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001029",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "선익시스템 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003806",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "OLED",
+      "desc": "소자가 스스로 빛을 내는 유기발광다이오드 디스플레이 기술입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품한 제품·장비가 고객의 사양과 조건을 충족하는지 확인하는 절차입니다."
+    },
+    {
+      "name": "증착",
+      "desc": "반도체 기판 등에 필요한 물질을 얇은 막 형태로 쌓는 제조 공정입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

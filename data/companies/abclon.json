@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "abclon",
+    "name": "앱클론",
+    "ticker": "174900",
+    "rank": 181,
+    "type": "항체·세포치료제 연구"
+  },
+  "overview": {
+    "short": "앱클론은 항체 신약과 세포치료제 회사",
+    "summary": "앱클론은 항체 신약과 세포치료제 회사입니다. NEST·AffiMab 등 항체 개발 기술을 보유합니다.",
+    "takeaways": [
+      "앱클론은 항체 신약과 세포치료제 회사입니다.",
+      "NEST·AffiMab 등 항체 개발 기술을 보유합니다.",
+      "혈액암용 CAR-T 후보 AT101 등을 개발합니다.",
+      "현재 사업에는 항체 연구용역과 상품 판매도 포함됩니다.",
+      "임상·기술이전과 현재 매출·개발비를 구분해서 봅니다."
+    ],
+    "business": [
+      {
+        "name": "항체 신약",
+        "desc": "항체·이중항체 후보를 개발하고 기술이전을 추진합니다."
+      },
+      {
+        "name": "CAR-T",
+        "desc": "혈액암 등 세포치료제 후보의 임상을 수행합니다."
+      },
+      {
+        "name": "용역·상품",
+        "desc": "항체 개발 용역과 관련 상품을 공급합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "임상 진전",
+        "desc": "후보별 안전성·효과와 개발 단계를 확인합니다."
+      },
+      {
+        "title": "계약 수익",
+        "desc": "기술이전 조건과 당기 용역·상품 매출을 구분합니다."
+      },
+      {
+        "title": "개발 자금",
+        "desc": "임상·생산 비용과 현금·자금조달을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.002339823669,
+        "op": -0.015588944512,
+        "net": -0.016301551979,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250325000001",
+          "rawKRW": {
+            "sales": "2339823669",
+            "op": "-15588944512",
+            "net": "-16301551979"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.004714084167,
+        "op": -0.017635733976,
+        "net": -0.017906959742,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260313000798",
+          "rawKRW": {
+            "sales": "4714084167",
+            "op": "-17635733976",
+            "net": "-17906959742"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.001112112258,
+        "op": -0.003344542288,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250813001415",
+          "rawKRW": {
+            "sales": "1112112258",
+            "op": "-3344542288",
+            "net": "-3469384398"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.000434196714,
+        "op": -0.003058924606,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000467",
+          "rawKRW": {
+            "sales": "434196714",
+            "op": "-3058924606",
+            "net": "-2781386635"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.001684169879,
+        "op": -0.006254858541,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001580",
+          "rawKRW": {
+            "sales": "1684169879",
+            "op": "-6254858541",
+            "net": "-6058717130"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000798",
+      "published": "2026.03.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000467",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001580",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250325000001",
+      "published": "2025.03.25",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250813001415",
+      "published": "2025.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "앱클론 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001580",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "임상",
+      "desc": "사람을 대상으로 의약품 등의 안전성과 효과를 평가하는 시험입니다."
+    },
+    {
+      "name": "기술이전",
+      "desc": "개발 기술이나 권리를 다른 회사에 제공하고 계약금·단계별 대금 등을 받는 계약입니다."
+    },
+    {
+      "name": "항체",
+      "desc": "특정 항원에 결합하는 단백질로, 진단과 의약품 등에서 활용됩니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "이중항체",
+      "desc": "서로 다른 두 표적을 인식하도록 설계한 항체 기술입니다."
+    },
+    {
+      "name": "용역",
+      "desc": "제품 판매와 달리 공정 개발·분석·작업 등 서비스를 제공하는 사업입니다."
+    },
+    {
+      "name": "CAR-T",
+      "desc": "면역세포에 암세포 표적을 인식하는 기능을 부여해 개발하는 세포치료제 기술입니다."
+    },
+    {
+      "name": "NEST",
+      "desc": "앱클론이 항체 신약 후보를 발굴·개발하는 기반 기술의 명칭입니다."
+    },
+    {
+      "name": "AffiMab",
+      "desc": "앱클론의 이중항체 신약 개발 플랫폼 명칭입니다."
+    },
+    {
+      "name": "AT101",
+      "desc": "앱클론이 혈액암 등을 대상으로 개발하는 CAR-T 치료제 후보 명칭입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

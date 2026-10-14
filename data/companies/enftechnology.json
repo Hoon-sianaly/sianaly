@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "enftechnology",
+    "name": "이엔에프테크놀로지",
+    "ticker": "102710",
+    "rank": 127,
+    "type": "전자공정 화학소재"
+  },
+  "overview": {
+    "short": "이엔에프테크놀로지는 전자공정용 화학제품 회사",
+    "summary": "이엔에프테크놀로지는 전자공정용 화학제품 회사입니다. 반도체·디스플레이의 식각·세정 등에 쓰는 약품을 공급합니다.",
+    "takeaways": [
+      "이엔에프테크놀로지는 전자공정용 화학제품 회사입니다.",
+      "반도체·디스플레이의 식각·세정 등에 쓰는 약품을 공급합니다.",
+      "감광재료의 원료와 컬러페이스트·CMP 소재도 취급합니다.",
+      "국내외 공장과 회수·정제 시스템을 운영합니다.",
+      "고객 가동률과 원료 가격, 고순도 제품 채택이 중요합니다."
+    ],
+    "business": [
+      {
+        "name": "공정 약품",
+        "desc": "식각액·신너·현상액·박리액 등을 공급합니다."
+      },
+      {
+        "name": "정밀 화학 원료",
+        "desc": "감광재료용 원료와 컬러페이스트를 공급합니다."
+      },
+      {
+        "name": "CMP·회수",
+        "desc": "CMP 소재와 공정 약품 회수·정제 체계를 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 가동",
+        "desc": "반도체·디스플레이 생산량과 약품 사용을 확인합니다."
+      },
+      {
+        "title": "원재료·단가",
+        "desc": "석유화학 원료와 고객 공급가격을 함께 봅니다."
+      },
+      {
+        "title": "해외·품질",
+        "desc": "해외 공장 가동과 품질 인증·신제품 채택을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.582433714374,
+        "op": 0.059332428655,
+        "net": 0.029728683765,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000794",
+          "rawKRW": {
+            "sales": "582433714374",
+            "op": "59332428655",
+            "net": "29728683765"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.670896289801,
+        "op": 0.078076791477,
+        "net": 0.05030621222,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316000534",
+          "rawKRW": {
+            "sales": "670896289801",
+            "op": "78076791477",
+            "net": "50306212220"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.164227404225,
+        "op": 0.023502016591,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001564",
+          "rawKRW": {
+            "sales": "164227404225",
+            "op": "23502016591",
+            "net": "14718915545"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.170869057158,
+        "op": 0.024918178957,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000571",
+          "rawKRW": {
+            "sales": "170869057158",
+            "op": "24918178957",
+            "net": "19739929188"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.179010795049,
+        "op": 0.02725473272,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000480",
+          "rawKRW": {
+            "sales": "179010795049",
+            "op": "27254732720",
+            "net": "15387720436"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000534",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000571",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000480",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000794",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001564",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "이엔에프테크놀로지 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000480",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장·설비가 생산능력에 비해 실제로 사용된 정도입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "CMP",
+      "desc": "화학·기계적 작용을 결합해 웨이퍼 표면 등을 평탄하게 가공하는 공정입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "식각",
+      "desc": "필요 없는 부분을 선택적으로 제거해 회로 등의 모양을 만드는 공정입니다."
+    },
+    {
+      "name": "고순도",
+      "desc": "불순물의 함량이 매우 낮은 상태로, 공정별 요구 수준이 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

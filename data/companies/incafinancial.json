@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "incafinancial",
+    "name": "인카금융서비스",
+    "ticker": "211050",
+    "rank": 177,
+    "type": "보험 판매 대리"
+  },
+  "overview": {
+    "short": "인카금융서비스는 독립보험대리점 회사",
+    "summary": "인카금융서비스는 독립보험대리점 회사입니다. 여러 보험사의 상품을 비교·중개해 판매합니다.",
+    "takeaways": [
+      "인카금융서비스는 독립보험대리점 회사입니다.",
+      "여러 보험사의 상품을 비교·중개해 판매합니다.",
+      "보험설계사 조직과 교육·정보시스템을 운영합니다.",
+      "판매·계약 유지에 따라 보험사에서 수수료를 받습니다.",
+      "매출은 보험료 총액이 아니며 설계사 수수료·환수를 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "보험 판매",
+        "desc": "손해·생명보험 상품의 대리·중개를 수행합니다."
+      },
+      {
+        "name": "계약 관리",
+        "desc": "보험 유지에 따른 관리·관련 서비스를 제공합니다."
+      },
+      {
+        "name": "설계사 지원",
+        "desc": "설계사 교육·영업·정보시스템을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "신계약·유지",
+        "desc": "신규 판매와 계약 유지율을 함께 확인합니다."
+      },
+      {
+        "title": "수수료 구조",
+        "desc": "보험사 수입과 설계사 지급·환수 조건을 봅니다."
+      },
+      {
+        "title": "조직 비용",
+        "desc": "설계사 영입·지원과 소비자 보호·관리 비용을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.832258694,
+        "op": 0.086266641,
+        "net": 0.062026401,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001685",
+          "rawKRW": {
+            "sales": "832258694000",
+            "op": "86266641000",
+            "net": "62026401000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.0217685,
+        "op": 0.094843958,
+        "net": 0.070953247,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260320001328",
+          "rawKRW": {
+            "sales": "1021768500000",
+            "op": "94843958000",
+            "net": "70953247000"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.238768322,
+        "op": 0.023748557,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002160",
+          "rawKRW": {
+            "sales": "238768322000",
+            "op": "23748557000",
+            "net": "17333255000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.301224262,
+        "op": 0.025950989,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000992",
+          "rawKRW": {
+            "sales": "301224262000",
+            "op": "25950989000",
+            "net": "22518746000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.338806116,
+        "op": 0.032329191,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002507",
+          "rawKRW": {
+            "sales": "338806116000",
+            "op": "32329191000",
+            "net": "21998071000"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001328",
+      "published": "2026.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000992",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002507",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001685",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002160",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "인카금융서비스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002507",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "보험대리점",
+      "desc": "보험회사를 대신해 상품 판매·계약 체결 등을 중개하는 사업자입니다."
+    },
+    {
+      "name": "보험설계사",
+      "desc": "보험상품의 설명·권유·계약 모집 업무를 수행하는 사람입니다."
+    },
+    {
+      "name": "환수",
+      "desc": "지급한 수수료 등을 계약 해지·조건 미충족 등의 사유로 되돌려 받는 것입니다."
+    },
+    {
+      "name": "유지율",
+      "desc": "계약·가입 등이 일정 기간 계속 유지되는 비율입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

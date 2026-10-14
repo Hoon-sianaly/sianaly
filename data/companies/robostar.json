@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "robostar",
+    "name": "로보스타",
+    "ticker": "090360",
+    "rank": 140,
+    "type": "산업용 로봇·스마트공장"
+  },
+  "overview": {
+    "short": "로보스타는 제조용 로봇과 자동화 솔루션 회사",
+    "summary": "로보스타는 제조용 로봇과 자동화 솔루션 회사입니다. 직각·다관절 로봇과 제어기를 공급합니다.",
+    "takeaways": [
+      "로보스타는 제조용 로봇과 자동화 솔루션 회사입니다.",
+      "직각·다관절 로봇과 제어기를 공급합니다.",
+      "반도체 웨이퍼·디스플레이 기판 이송용 로봇도 운영합니다.",
+      "물류 운반 로봇과 스마트팩토리 시스템을 제공합니다.",
+      "산업별 설비 투자와 프로젝트 원가·검수를 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "제조 로봇",
+        "desc": "조립·이송 등에 사용하는 산업용 로봇을 공급합니다."
+      },
+      {
+        "name": "반도체·이송",
+        "desc": "웨이퍼·글라스 반송 로봇과 관련 시스템을 공급합니다."
+      },
+      {
+        "name": "스마트팩토리",
+        "desc": "무인 운반·보관 등 물류 자동화를 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 투자",
+        "desc": "자동차·전자·배터리 고객의 설비 발주를 봅니다."
+      },
+      {
+        "title": "프로젝트 수행",
+        "desc": "시스템 설치·검수와 제작 원가를 확인합니다."
+      },
+      {
+        "title": "제품 확장",
+        "desc": "신규 로봇 채택과 연구개발·지원 비용을 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.089140364461,
+        "op": 0.000148546186,
+        "net": 0.00221718098,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250313001105",
+          "rawKRW": {
+            "sales": "89140364461",
+            "op": "148546186",
+            "net": "2217180980"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.075735139041,
+        "op": -0.005660781243,
+        "net": -0.005200635442,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260312000793",
+          "rawKRW": {
+            "sales": "75735139041",
+            "op": "-5660781243",
+            "net": "-5200635442"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.019651450559,
+        "op": -0.000815687336,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003675",
+          "rawKRW": {
+            "sales": "19651450559",
+            "op": "-815687336",
+            "net": "-1351103069"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.025146294054,
+        "op": 0.000073726189,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001569",
+          "rawKRW": {
+            "sales": "25146294054",
+            "op": "73726189",
+            "net": "933887772"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.026369469062,
+        "op": 0.000499640798,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002413",
+          "rawKRW": {
+            "sales": "26369469062",
+            "op": "499640798",
+            "net": "1098222270"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000793",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001569",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002413",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313001105",
+      "published": "2025.03.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003675",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "로보스타 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002413",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품한 제품·장비가 고객의 사양과 조건을 충족하는지 확인하는 절차입니다."
+    },
+    {
+      "name": "다관절",
+      "desc": "여러 관절을 연결해 다양한 방향으로 움직일 수 있는 구조입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

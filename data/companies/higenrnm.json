@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "higenrnm",
+    "name": "하이젠알앤엠",
+    "ticker": "160190",
+    "rank": 117,
+    "type": "산업용 모터·구동"
+  },
+  "overview": {
+    "short": "하이젠알앤엠은 산업용 모터와 정밀 구동 제품 회사",
+    "summary": "하이젠알앤엠은 산업용 모터와 정밀 구동 제품 회사입니다. 펌프·팬 등에 쓰는 산업용 전동기가 기존 사업 기반입니다.",
+    "takeaways": [
+      "하이젠알앤엠은 산업용 모터와 정밀 구동 제품 회사입니다.",
+      "펌프·팬 등에 쓰는 산업용 전동기가 기존 사업 기반입니다.",
+      "서보모터·드라이브와 로봇 구동 제품도 개발합니다.",
+      "전기차용 모터·인버터 등 모빌리티 분야에 참여합니다.",
+      "기존 모터 판매와 로봇·모빌리티의 사업화 단계를 구분합니다."
+    ],
+    "business": [
+      {
+        "name": "산업용 전동기",
+        "desc": "산업 설비에 사용하는 모터를 생산합니다."
+      },
+      {
+        "name": "서보·로봇",
+        "desc": "정밀 제어용 모터·드라이브와 액추에이터를 개발·공급합니다."
+      },
+      {
+        "name": "모빌리티",
+        "desc": "전기차용 모터·인버터 등 구동 제품을 개발합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "산업 수요",
+        "desc": "설비 고객의 주문과 모터 교체 수요를 봅니다."
+      },
+      {
+        "title": "신규 채택",
+        "desc": "로봇·모빌리티용 제품의 평가·양산을 구분합니다."
+      },
+      {
+        "title": "생산 비용",
+        "desc": "국내외 제조 원가와 개발비, 시설 가동률을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.075886180614,
+        "op": -0.00036925355,
+        "net": -0.001092879556,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000179",
+          "rawKRW": {
+            "sales": "75886180614",
+            "op": "-369253550",
+            "net": "-1092879556"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.073543971242,
+        "op": -0.008908556551,
+        "net": -0.007101548368,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260804000547",
+          "rawKRW": {
+            "sales": "73543971242",
+            "op": "-8908556551",
+            "net": "-7101548368"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.016711093054,
+        "op": -0.00139192687,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250822000084",
+          "rawKRW": {
+            "sales": "16711093054",
+            "op": "-1391926870",
+            "net": "-1653976999"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.018634338294,
+        "op": -0.003394944946,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260807000176",
+          "rawKRW": {
+            "sales": "18634338294",
+            "op": "-3394944946",
+            "net": "-3215142545"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.02079951368,
+        "op": -0.00146448781,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000515",
+          "rawKRW": {
+            "sales": "20799513680",
+            "op": "-1464487810",
+            "net": "-888725667"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000547",
+      "published": "2026.08.04",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000176",
+      "published": "2026.08.07",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000515",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000179",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250822000084",
+      "published": "2025.08.22",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "하이젠알앤엠 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000515",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장·설비가 생산능력에 비해 실제로 사용된 정도입니다."
+    },
+    {
+      "name": "모빌리티",
+      "desc": "사람이나 물건의 이동과 관련된 기술·제품·서비스·사업입니다. 차량과 이동 서비스를 포함합니다."
+    },
+    {
+      "name": "양산",
+      "desc": "개발과 시험을 마친 제품을 판매·공급하기 위해 대량으로 생산하는 단계입니다."
+    },
+    {
+      "name": "인버터",
+      "desc": "직류·교류 등의 전기 형태를 변환해 모터·장치를 구동하는 장치입니다."
+    },
+    {
+      "name": "액추에이터",
+      "desc": "전기 등의 에너지를 움직임으로 바꾸는 구동장치로, 로봇 관절과 이동장치 등에 사용됩니다."
+    },
+    {
+      "name": "서보모터",
+      "desc": "위치·속도 등을 정밀하게 제어하는 모터입니다."
+    },
+    {
+      "name": "드라이브",
+      "desc": "모터 등에 필요한 전력을 공급하고 움직임을 제어하는 장치입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

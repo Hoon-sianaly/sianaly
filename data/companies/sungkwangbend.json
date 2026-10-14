@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sungkwangbend",
+    "name": "성광벤드",
+    "ticker": "014620",
+    "rank": 114,
+    "type": "산업용 관이음쇠"
+  },
+  "overview": {
+    "short": "성광벤드는 배관을 연결하는 관이음쇠를 만드는 회사",
+    "summary": "성광벤드는 배관을 연결하는 관이음쇠를 만드는 회사입니다. 엘보·티·리듀서로 배관 방향·분기·굵기를 조절합니다.",
+    "takeaways": [
+      "성광벤드는 배관을 연결하는 관이음쇠를 만드는 회사입니다.",
+      "엘보·티·리듀서로 배관 방향·분기·굵기를 조절합니다.",
+      "석유화학·LNG·조선해양·발전 프로젝트에 공급합니다.",
+      "종속회사 화진피에프도 같은 분야의 사업을 운영합니다.",
+      "플랜트 발주와 주문 제품 구성, 금속 원가를 함께 봅니다."
+    ],
+    "business": [
+      {
+        "name": "방향·분기 이음쇠",
+        "desc": "엘보와 티 등 산업용 배관 연결재를 생산합니다."
+      },
+      {
+        "name": "관경 조절",
+        "desc": "배관 굵기를 바꾸는 리듀서 등을 공급합니다."
+      },
+      {
+        "name": "제품·상품 판매",
+        "desc": "자체·계열사 생산과 관련 상품 판매를 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "프로젝트 발주",
+        "desc": "국내외 플랜트·조선의 발주와 수주잔고를 봅니다."
+      },
+      {
+        "title": "소재별 구성",
+        "desc": "탄소강·합금 등 제품별 단가와 수익성을 확인합니다."
+      },
+      {
+        "title": "원가·납기",
+        "desc": "금속 조달과 가공 비용, 고객 납품 일정을 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.227683121973,
+        "op": 0.041988089482,
+        "net": 0.041007522794,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001354",
+          "rawKRW": {
+            "sales": "227683121973",
+            "op": "41988089482",
+            "net": "41007522794"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.245669879092,
+        "op": 0.041955658561,
+        "net": 0.034432123396,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260708000008",
+          "rawKRW": {
+            "sales": "245669879092",
+            "op": "41955658561",
+            "net": "34432123396"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.05810854798,
+        "op": 0.010770220498,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001906",
+          "rawKRW": {
+            "sales": "58108547980",
+            "op": "10770220498",
+            "net": "6455597355"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.05913747536,
+        "op": 0.006569418113,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001055",
+          "rawKRW": {
+            "sales": "59137475360",
+            "op": "6569418113",
+            "net": "8426828641"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.064132334617,
+        "op": 0.010007057915,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002129",
+          "rawKRW": {
+            "sales": "64132334617",
+            "op": "10007057915",
+            "net": "9577666117"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260708000008",
+      "published": "2026.07.08",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001055",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002129",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001354",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001906",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "성광벤드 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002129",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "플랜트",
+      "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
+    },
+    {
+      "name": "LNG",
+      "desc": "액화천연가스로, 매우 낮은 온도로 냉각해 액체 상태로 운송·보관합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "수주잔고",
+      "desc": "받은 주문 중 아직 매출·납품으로 완료하지 않은 금액입니다."
+    },
+    {
+      "name": "합금",
+      "desc": "둘 이상의 원소를 섞어 강도·내열성 등 필요한 성질을 갖도록 만든 금속입니다."
+    },
+    {
+      "name": "관이음쇠",
+      "desc": "배관을 연결하거나 방향·분기·굵기를 바꾸는 부품입니다."
+    },
+    {
+      "name": "엘보",
+      "desc": "배관의 진행 방향을 바꾸는 굽은 관이음쇠입니다."
+    },
+    {
+      "name": "리듀서",
+      "desc": "서로 다른 굵기의 배관을 연결하는 부품입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "gncenergy",
+    "name": "지엔씨에너지",
+    "ticker": "119850",
+    "rank": 119,
+    "type": "발전기·에너지 설비"
+  },
+  "overview": {
+    "short": "지엔씨에너지는 비상·상용 발전기를 공급하는 회사",
+    "summary": "지엔씨에너지는 비상·상용 발전기를 공급하는 회사입니다. 데이터센터와 건물·플랜트용 발전기를 설계·설치합니다.",
+    "takeaways": [
+      "지엔씨에너지는 비상·상용 발전기를 공급하는 회사입니다.",
+      "데이터센터와 건물·플랜트용 발전기를 설계·설치합니다.",
+      "바이오가스를 활용한 발전설비와 운영 사업도 수행합니다.",
+      "관련 회사를 통해 공조·연료전지·해외 발전에 참여합니다.",
+      "대형 프로젝트의 수주와 설치 일정, 장비 원가를 확인합니다."
+    ],
+    "business": [
+      {
+        "name": "발전기",
+        "desc": "디젤·가스터빈 등 비상·상용 발전기를 공급합니다."
+      },
+      {
+        "name": "바이오가스",
+        "desc": "폐자원 가스를 활용한 발전설비와 운영을 수행합니다."
+      },
+      {
+        "name": "관련 에너지",
+        "desc": "공조와 연료전지 등 관련 사업에 참여합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "시설 발주",
+        "desc": "데이터센터·건축·플랜트의 발전기 발주를 봅니다."
+      },
+      {
+        "title": "납품·설치",
+        "desc": "프로젝트별 제작·설치·검수 일정을 확인합니다."
+      },
+      {
+        "title": "설비·운영 원가",
+        "desc": "엔진 등 조달 비용과 발전소 운영 수익을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.226316215163,
+        "op": 0.031703602364,
+        "net": 0.038864565846,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250318000086",
+          "rawKRW": {
+            "sales": "226316215163",
+            "op": "31703602364",
+            "net": "38864565846"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.262633597538,
+        "op": 0.049372497571,
+        "net": 0.040016826711,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260331003325",
+          "rawKRW": {
+            "sales": "262633597538",
+            "op": "49372497571",
+            "net": "40016826711"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.060825133664,
+        "op": 0.012206200776,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250812000159",
+          "rawKRW": {
+            "sales": "60825133664",
+            "op": "12206200776",
+            "net": "9729902399"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.05542705084,
+        "op": 0.0044036291,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001753",
+          "rawKRW": {
+            "sales": "55427050840",
+            "op": "4403629100",
+            "net": "12330577225"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.066495947819,
+        "op": 0.010160166377,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001483",
+          "rawKRW": {
+            "sales": "66495947819",
+            "op": "10160166377",
+            "net": "14089767581"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331003325",
+      "published": "2026.03.31",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001753",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001483",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000086",
+      "published": "2025.03.18",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250812000159",
+      "published": "2025.08.12",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "지엔씨에너지 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001483",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "연료전지",
+      "desc": "연료와 산화제의 화학 반응으로 전기를 만드는 장치입니다."
+    },
+    {
+      "name": "데이터센터",
+      "desc": "서버·저장장치·네트워크 장비와 이를 운영할 전력·냉각 설비를 모아 놓은 시설입니다."
+    },
+    {
+      "name": "플랜트",
+      "desc": "제품을 생산하거나 에너지·환경 처리를 수행하는 산업 설비입니다."
+    },
+    {
+      "name": "공조",
+      "desc": "공간의 온도·습도·공기 상태 등을 조절하는 설비·기술입니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "터빈",
+      "desc": "증기·가스 등의 흐름으로 회전하여 동력을 만드는 장치입니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "수주",
+      "desc": "고객에게 공사·제품·서비스 주문을 받는 것입니다. 계약 금액이 즉시 전부 매출이 되는 것은 아닙니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품한 제품·장비가 고객의 사양과 조건을 충족하는지 확인하는 절차입니다."
+    },
+    {
+      "name": "바이오가스",
+      "desc": "유기성 폐자원 등을 분해해 얻는 가스로 발전·열 생산 등에 활용합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "seobutnd",
+    "name": "서부T&D",
+    "ticker": "006730",
+    "rank": 111,
+    "type": "호텔·쇼핑몰·식기"
+  },
+  "overview": {
+    "short": "서부T&D는 호텔과 쇼핑몰 등 사업을 운영합니다.",
+    "summary": "서부T&D는 호텔과 쇼핑몰 등 사업을 운영합니다. 서울드래곤시티의 객실·식음료 등이 주요 수익원입니다.",
+    "takeaways": [
+      "서부T&D는 호텔과 쇼핑몰 등 사업을 운영합니다.",
+      "서울드래곤시티의 객실·식음료 등이 주요 수익원입니다.",
+      "쇼핑몰 판매수수료와 임대·관리 수익도 발생합니다.",
+      "연결 실적에는 식기류 제조·판매 사업도 포함됩니다.",
+      "호텔 영업과 부동산·연결 사업의 손익을 구분해서 봅니다."
+    ],
+    "business": [
+      {
+        "name": "호텔",
+        "desc": "객실·식음료와 행사·부대시설을 운영합니다."
+      },
+      {
+        "name": "쇼핑몰·임대",
+        "desc": "쇼핑몰과 물류·부동산 임대 사업을 운영합니다."
+      },
+      {
+        "name": "식기류",
+        "desc": "연결회사를 통해 식기류를 제조·판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "호텔 수요",
+        "desc": "객실 판매와 평균 객실료, 관광·행사 수요를 봅니다."
+      },
+      {
+        "title": "임대·판매",
+        "desc": "입점사 판매와 임대·관리 수익을 확인합니다."
+      },
+      {
+        "title": "투자·연결 범위",
+        "desc": "부동산 투자·차입과 신규 연결 사업 원가를 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.180946752003,
+        "op": 0.048050305863,
+        "net": 0.0646542844,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000002",
+          "rawKRW": {
+            "sales": "180946752003",
+            "op": "48050305863",
+            "net": "64654284400"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.24832996253,
+        "op": 0.070337173396,
+        "net": 0.116197439307,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319000002",
+          "rawKRW": {
+            "sales": "248329962530",
+            "op": "70337173396",
+            "net": "116197439307"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.053019212885,
+        "op": 0.011251616307,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001754",
+          "rawKRW": {
+            "sales": "53019212885",
+            "op": "11251616307",
+            "net": "-3763932332"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.066086319401,
+        "op": 0.017786628942,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000938",
+          "rawKRW": {
+            "sales": "66086319401",
+            "op": "17786628942",
+            "net": "5966711636"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.087676480384,
+        "op": 0.018271539572,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001754",
+          "rawKRW": {
+            "sales": "87676480384",
+            "op": "18271539572",
+            "net": "6153837717"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000002",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000938",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001754",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000002",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001754",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "서부T&D 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001754",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

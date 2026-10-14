@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "chunbo",
+    "name": "천보",
+    "ticker": "278280",
+    "rank": 186,
+    "type": "전해질·정밀화학 소재"
+  },
+  "overview": {
+    "short": "천보는 배터리와 전자용 정밀화학 소재 회사",
+    "summary": "천보는 배터리와 전자용 정밀화학 소재 회사입니다. 전해질·전해액 첨가제로 배터리 성능을 보완합니다.",
+    "takeaways": [
+      "천보는 배터리와 전자용 정밀화학 소재 회사입니다.",
+      "전해질·전해액 첨가제로 배터리 성능을 보완합니다.",
+      "디스플레이 식각·발광과 반도체용 소재도 공급합니다.",
+      "의약품 중간체와 기타 정밀화학 제품을 운영합니다.",
+      "제품 판매량·단가와 신규 공장 가동 부담을 봅니다."
+    ],
+    "business": [
+      {
+        "name": "배터리 소재",
+        "desc": "전해질·전해액 첨가제를 공급합니다."
+      },
+      {
+        "name": "전자소재",
+        "desc": "디스플레이·반도체용 공정 소재를 공급합니다."
+      },
+      {
+        "name": "의약·정밀화학",
+        "desc": "의약품 중간체와 기능성 화학제품을 생산합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "배터리 수요",
+        "desc": "고객 주문과 소재별 채택·판매량을 확인합니다."
+      },
+      {
+        "title": "가격·원료",
+        "desc": "소재 판매단가와 원재료·재고 평가를 봅니다."
+      },
+      {
+        "title": "가동·투자",
+        "desc": "증설 시설 가동률과 감가상각·차입을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.14"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.144912632914,
+        "op": -0.022751764756,
+        "net": -0.032319407781,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250331003295",
+          "rawKRW": {
+            "sales": "144912632914",
+            "op": "-22751764756",
+            "net": "-32319407781"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.133849589627,
+        "op": 0.003710962944,
+        "net": -0.060014543541,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316001138",
+          "rawKRW": {
+            "sales": "133849589627",
+            "op": "3710962944",
+            "net": "-60014543541"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.033088121261,
+        "op": 0.002891047285,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001568",
+          "rawKRW": {
+            "sales": "33088121261",
+            "op": "2891047285",
+            "net": "-5849627753"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.040771271164,
+        "op": -0.003411110852,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000981",
+          "rawKRW": {
+            "sales": "40771271164",
+            "op": "-3411110852",
+            "net": "-9541488615"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.051002936722,
+        "op": -0.003812961742,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001466",
+          "rawKRW": {
+            "sales": "51002936722",
+            "op": "-3812961742",
+            "net": "-2807709912"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.14"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001138",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000981",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001466",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250331003295",
+      "published": "2025.03.31",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001568",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "business",
+      "label": "천보 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001466",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.14"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "공장·설비가 생산능력에 비해 실제로 사용된 정도입니다."
+    },
+    {
+      "name": "차입",
+      "desc": "은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다."
+    },
+    {
+      "name": "공정",
+      "desc": "제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다."
+    },
+    {
+      "name": "감가상각",
+      "desc": "설비·장비 등의 취득 비용을 사용 기간에 걸쳐 나누어 비용으로 반영하는 것입니다."
+    },
+    {
+      "name": "전해질",
+      "desc": "이온을 통해 전기를 전달하는 물질로, 배터리 전해액 등의 핵심 성분입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "기능성",
+      "desc": "일반 제품의 기본 용도에 더해 특정 성능이나 사용 목적에 맞춘 특성을 뜻합니다."
+    },
+    {
+      "name": "식각",
+      "desc": "필요 없는 부분을 선택적으로 제거해 회로 등의 모양을 만드는 공정입니다."
+    },
+    {
+      "name": "전해액",
+      "desc": "배터리 등에서 이온 이동을 매개하는 액체 소재입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
