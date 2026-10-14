@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261014-kosdaq300-1";
+const COMPANY_DATA_VERSION = "20261014-kosdaq300-2";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 
@@ -77,7 +77,7 @@ function companyPageData(record) {
   latestSales:formatFinancialHighlight(latest?.sales, financials.highlightFormat),
   latestOp:formatFinancialHighlight(latest?.op, financials.highlightFormat),
   latestNet:latest?.net == null ? null : formatFinancialHighlight(latest.net,financials.highlightFormat),
-  financialBasis:financials.basis === "consolidated" ? "K-IFRS 연결 기준" : "K-IFRS 별도 기준",
+  financialBasis:(financials.accountingStandard || "K-IFRS")+(financials.basis === "consolidated" ? " 연결 기준" : " 별도 기준"),
   financialMetrics:financials.metrics || {
    sales:{label:"매출",help:"제품과 서비스를 팔아 얻은 전체 금액"},
    op:{label:"영업이익",help:"매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"}
