@@ -1,9 +1,31 @@
 // Trial layout for Samsung only. Financial records and other company pages stay intact.
-function initSamsungFinancialTabs(company) {
+function initSamsungFinancialTabs(company, renderChart, renderSources) {
  if (company.key !== 'samsung') return;
  const quarter = document.getElementById('company-quarterly');
  const annual = document.getElementById('company-annual');
  if (!quarter || !annual) return;
+ const history=company.allQuarters.filter(row=>row.year>=2025).map(row=>({...row}));
+ const annual2025=company.annual.find(row=>row.year===2025);
+ const firstNine=history.filter(row=>row.year===2025&&row.quarter<=3);
+ let derivedFourth=false;
+ if(!history.some(row=>row.year===2025&&row.quarter===4)&&annual2025&&firstNine.length===3&&[1,2,3].every(q=>firstNine.some(row=>row.quarter===q))){
+  const raw=row=>row.dart?.rawKRW||row.reportedKRW;
+  if([annual2025,...firstNine].every(row=>['sales','op'].every(field=>/^-?\d+$/.test(raw(row)?.[field]||'')))){
+   const amounts=Object.fromEntries(['sales','op'].map(field=>[field,BigInt(raw(annual2025)[field])-firstNine.reduce((sum,row)=>sum+BigInt(raw(row)[field]),0n)]));
+   history.push({year:2025,quarter:4,sales:Number(amounts.sales)/1e12,op:Number(amounts.op)/1e12,sourceIds:[...new Set([annual2025,...firstNine].flatMap(row=>row.sourceIds))]});
+   derivedFourth=true;
+  }
+ }
+ history.sort((a,b)=>a.year-b.year||a.quarter-b.quarter);
+ for(const row of history)row.periodLabel=`${row.year}년 ${row.quarter}분기`;
+ const chartWidth=Math.max(370,history.length*95+90);
+ quarter.querySelector('.metric-charts').outerHTML=renderChart(history,{width:chartWidth});
+ for(const note of quarter.querySelectorAll('.chart-reading'))note.remove();
+ quarter.querySelector('table tbody').innerHTML=history.map(row=>`<tr><td>${row.periodLabel}</td><td>${formatFinancialHighlight(row.sales,company.financialCurrency)}</td><td>${formatFinancialHighlight(row.op,company.financialCurrency)}</td></tr>`).join('');
+ const sources=quarter.querySelector('.source-links');
+ if(sources)sources.outerHTML=renderSources([...new Set(history.flatMap(row=>row.sourceIds))]);
+ if(derivedFourth){const note=document.createElement('p');note.className='financial-basis';note.textContent='2025년 4분기는 공식 연간 실적에서 1~3분기 합계를 뺀 값입니다.';quarter.append(note);}
+ quarter.style.setProperty('--history-chart-width',chartWidth+'px');
  const root = document.createElement('section');
  root.id = 'company-performance';
  root.innerHTML = `<div class="title">실적</div>
@@ -57,7 +79,7 @@ function initSamsungFinancialTabs(company) {
   }
   for (const button of metricButtons) button.setAttribute('aria-pressed', String(button.dataset.metric === metric));
   root.querySelector('.performance-caption').textContent = period === 'quarter'
-   ? `${company.quarterlyYear}년 · 각 분기 3개월 실적 · ${company.financialBasis}`
+   ? `2025년부터 ${company.quarterlyYear}년까지 · 각 분기 3개월 실적 · ${company.financialBasis}`
    : `연도별 12개월 실적 · ${company.financialBasis}`;
  }
  root.addEventListener('click', event => {

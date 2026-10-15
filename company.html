@@ -73,6 +73,8 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 #company-performance .metric-panel{margin:0;padding:20px 12px 6px;background:#fff;border:0}
 #company-performance .metric-panel figcaption{display:none}
 #company-performance .vertical-chart{max-width:580px;margin:auto}
+#company-performance #company-quarterly .metric-panel{overflow-x:auto;overscroll-behavior-x:contain}
+#company-performance #company-quarterly .vertical-chart{width:var(--history-chart-width);max-width:none}
 #company-performance .chart-reading{margin:12px 0 0}
 #company-performance .performance-details{margin-top:24px;border-top:1px solid #edf1f6;padding-top:16px}
 #company-performance .performance-details summary{font-size:12px;color:#6d7f9d;cursor:pointer;line-height:1.8}
@@ -83,7 +85,7 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
 <script src="company-data.js?v=20261015-samsung-tabs-1"></script>
 <script src="company-search.js?v=20261007-detail-search-1"></script>
-<script src="samsung-financial-tabs.js?v=20261015-samsung-tabs-1"></script>
+<script src="samsung-financial-tabs.js?v=20261015-samsung-history-1"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company");
 const app=document.getElementById("app");
@@ -121,18 +123,19 @@ function sourceLinks(ids){
  if(!ids.length)return "";
  return `<div class="source-links"><b>공식 자료</b><ul>${ids.map(id=>{const s=c.sourceLinks[id];return `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>${s.published?` · 발표 ${esc(s.published)}`:s.asOf?` · 자료 기준 ${esc(s.asOf)}`:""}</li>`}).join("")}</ul><span>확인일: ${esc(c.verifiedAt)}</span></div>`;
 }
-function comparisonChart(rows){
+function comparisonChart(rows,options={}){
  const metrics=[{field:"sales",title:c.financialMetrics.sales.label,help:c.financialMetrics.sales.help,color:"#2563eb"},{field:"op",title:c.financialMetrics.op.label,help:c.financialMetrics.op.help,color:"#111827"}];
  return `<div class="metric-charts">${metrics.map(m=>{
   const rawValues=rows.map(r=>r[m.field]), unit=financialDisplayUnit(Math.max(...rawValues.map(Math.abs),0),c.financialCurrency);
   const values=rawValues.map(value=>value*unit.factor), highest=Math.max(...values,0), lowest=Math.min(...values,0);
   const magnitude=Math.pow(10,Math.floor(Math.log10(Math.max(highest,Math.abs(lowest),0.1)))), step=magnitude/2;
   const upper=Math.max(step,Math.ceil(highest/step)*step), lower=lowest<0?Math.floor(lowest/step)*step:0;
-  const left=75, right=350, top=28, bottom=208, y=value=>bottom-(value-lower)/(upper-lower)*(bottom-top), zero=y(0);
+  const chartWidth=options.width||370;
+  const left=75, right=chartWidth-20, top=28, bottom=208, y=value=>bottom-(value-lower)/(upper-lower)*(bottom-top), zero=y(0);
   const ticks=[...new Set([upper,upper/2,0,...(lower<0?[lower]:[])])];
   const slots=(right-left)/Math.max(rows.length,1), width=Math.min(48,slots*0.5);
   const labels=rows.map(r=>`${r.periodLabel || (r.quarter?r.quarter+"분기":r.period)}: ${formatFinancialHighlight(r[m.field],c.financialCurrency)}`).join(", ");
-  return `<figure class="metric-panel"><figcaption>${esc(m.title)}</figcaption><svg class="vertical-chart" viewBox="0 0 370 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
+  return `<figure class="metric-panel"><figcaption>${esc(m.title)}</figcaption><svg class="vertical-chart" viewBox="0 0 ${chartWidth} 252" role="img" aria-label="${esc(m.title+": "+labels)}"><title>${esc(m.title+": "+labels)}</title>
   ${ticks.map(value=>`<line x1="${left}" y1="${y(value)}" x2="${right}" y2="${y(value)}" stroke="${value===0?"#94a3b8":"#e2e8f0"}"/><text x="${left-8}" y="${y(value)+4}" text-anchor="end" class="axis-label">${formatFinancialNumber(value)}</text>`).join("")}
   ${rows.map((r,i)=>{const value=r[m.field]*unit.factor,x=left+slots*(i+0.5),pos=y(value);return `<rect x="${x-width/2}" y="${Math.min(pos,zero)}" width="${width}" height="${Math.abs(zero-pos)}" rx="3" fill="${value<0?"#dc2626":m.color}"/><text x="${x}" y="${value<0?pos+15:pos-8}" text-anchor="middle" class="value-label">${formatFinancialHighlight(r[m.field],c.financialCurrency)}</text><text x="${x}" y="238" text-anchor="middle" class="axis-label">${esc(r.periodLabel || (r.quarter?r.quarter+"분기":r.period))}</text>`}).join("")}
   </svg></figure>`;
@@ -217,7 +220,7 @@ else{
   const markup=app.innerHTML,a=markup.indexOf('<section id="company-annual">'),q=markup.indexOf('<section id="company-quarterly">'),d=markup.indexOf('<section id="company-drivers">');
   if(a>=0&&a<q&&q<d)app.innerHTML=(markup.slice(0,a)+markup.slice(q,d)+markup.slice(a,q)+markup.slice(d)).replace(/(<a href="#company-annual">[\s\S]*?<\/a>)(<a href="#company-quarterly">[\s\S]*?<\/a>)/,'$2$1');
  }
- if(key==='samsung')initSamsungFinancialTabs(c);
+ if(key==='samsung')initSamsungFinancialTabs(c,comparisonChart,sourceLinks);
  const toc=document.getElementById("companyToc");
 
  if(typeof matchMedia==="function"){
