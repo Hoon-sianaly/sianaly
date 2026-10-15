@@ -1,6 +1,7 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261015-samsung-tabs-1";
+const COMPANY_DATA_VERSION = "20261015-fixed-history-1";
 const companyDataCache = new Map();
+const financialHistoryCache = new Map();
 let companyCatalogPromise;
 
 async function readCompanyJSON(path) {
@@ -27,7 +28,24 @@ async function loadCompanyRecord(key, ancestors = []) {
  if (!record.financials.companyRef) return record;
  const parent = await loadCompanyRecord(record.financials.companyRef, [...ancestors, key]);
  if (!parent) throw new Error("참조한 회사의 실적이 없습니다.");
- return {...record, financials:parent.financials, financialSources:parent.sources};
+ return {...record, financials:parent.financials, financialSources:parent.sources,financialHistoryIdentity:parent.financialHistoryIdentity||{key:parent.profile.key,ticker:parent.profile.ticker}};
+}
+
+async function addFinancialHistory(record) {
+ const identity=record.financialHistoryIdentity||record.profile;
+ const shard=[...identity.key].reduce((n,ch)=>(n+ch.charCodeAt(0))%16,0).toString(16);
+ try {
+  if(!financialHistoryCache.has(shard))financialHistoryCache.set(shard,readCompanyJSON(`data/history/${shard}.json`));
+  const data=await financialHistoryCache.get(shard),history=data.companies[identity.key];
+  if(!history)return record;
+  if(history.ticker!==identity.ticker||history.basis!==record.financials.basis||history.currency!==(record.financials.currency||'KRW'))throw Error('과거 실적의 기업·통화·재무 범위가 일치하지 않습니다.');
+  const f=record.financials,anchor=row=>row?{sales:row.sales,op:row.op,sourceIds:row.sourceIds}:null;
+  const current={annual2025:anchor(f.annual.find(q=>q.year===2025)),quarter2025Q2:anchor(f.quarterly.find(q=>q.year===2025&&q.quarter===2)),quarter2026Q2:anchor(f.quarterly.find(q=>q.year===2026&&q.quarter===2))};
+  if(JSON.stringify(current)!==JSON.stringify(history.anchors))return {...record,historyStatus:'baseline-changed'};
+  const merge=(primary,extra)=>[...primary,...extra.filter(row=>!primary.some(p=>p.year===row.year&&p.quarter===row.quarter))];
+  const sources=[...(record.financialSources||record.sources),...history.sources];
+  return {...record,financials:{...f,annual:merge(f.annual,history.annual),quarterly:merge(f.quarterly,history.quarterly)},...(record.financialSources?{financialSources:sources}:{sources}),historyStatus:'loaded',historyIssues:history.issues,historyAsOf:data.asOf.replaceAll('-','.')};
+ } catch {return {...record,historyStatus:'unavailable'};}
 }
 
 function financialDisplayUnit(value, currency) {
@@ -83,6 +101,7 @@ function companyPageData(record) {
    op:{label:"영업이익",help:"매출에서 매출원가와 판매·관리 비용 등을 차감한 본업의 이익"}
   },
   verifiedAt:financials.verification.verifiedAt,
+  historyStatus:record.historyStatus,historyIssues:record.historyIssues||[],historyAsOf:record.historyAsOf,
   sourceLinks, sources:record.sources.map(source => source.label),
   annualSourceIds:[...new Set(annual.flatMap(row => row.sourceIds))],
   latestAnnualSourceId:latest?.sourceIds[0],
@@ -93,6 +112,7 @@ function companyPageData(record) {
 }
 
 async function loadCompanyData(key) {
- const record = await loadCompanyRecord(key);
+ let record = await loadCompanyRecord(key);
+ if(record)record=await addFinancialHistory(record);
  return record ? companyPageData(record) : null;
 }
