@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "dongbangmedical",
+    "name": "동방메디컬",
+    "ticker": "240550",
+    "rank": 611,
+    "type": "미용·한방 의료기기"
+  },
+  "overview": {
+    "short": "동방메디컬은 한방과 미용 시술에 쓰는 의료기기를 만드는 회사",
+    "summary": "동방메디컬은 한방과 미용 시술에 쓰는 의료기기를 만드는 회사입니다. 일회용 침·부항컵과 피부 시술용 필러·니들 등을 공급합니다.",
+    "takeaways": [
+      "동방메디컬은 한방과 미용 시술에 쓰는 의료기기를 만드는 회사입니다.",
+      "일회용 침·부항컵과 피부 시술용 필러·니들 등을 공급합니다.",
+      "자체 브랜드 제품을 국내와 해외 의료 시장에 판매합니다.",
+      "제품별 인허가와 판매망 확보가 사업의 중요한 요소입니다.",
+      "수출 확대가 제조 원가와 판매 비용을 감당하며 이익으로 이어지는지 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "한방 의료기기",
+        "desc": "일회용 한방침과 부항컵 등을 제조합니다."
+      },
+      {
+        "name": "미용 의료기기",
+        "desc": "필러·니들·흡수성 봉합사 등 시술용 제품을 공급합니다."
+      },
+      {
+        "name": "국내외 판매",
+        "desc": "자체 브랜드 제품을 국내 의료기관과 해외 판매망에 제공합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매",
+        "desc": "제품별 판매량과 국가별 수출 구성을 확인합니다."
+      },
+      {
+        "title": "인허가·품질",
+        "desc": "국가별 허가와 의료기기 품질 관리가 중요합니다."
+      },
+      {
+        "title": "원가·유통",
+        "desc": "생산 효율과 해외 유통·마케팅 비용을 함께 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.105113645139,
+        "op": 0.015045956736,
+        "net": 0.003127066174,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320001252",
+          "rawKRW": {
+            "sales": "105113645139",
+            "op": "15045956736",
+            "net": "3127066174"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.113536899863,
+        "op": 0.017005218832,
+        "net": 0.011442051299,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260618000383",
+          "rawKRW": {
+            "sales": "113536899863",
+            "op": "17005218832",
+            "net": "11442051299"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.026192538393,
+        "op": 0.00313564875,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250827000578",
+          "rawKRW": {
+            "sales": "26192538393",
+            "op": "3135648750",
+            "net": "1926711839"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.031403549385,
+        "op": 0.006051931904,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000820",
+          "rawKRW": {
+            "sales": "31403549385",
+            "op": "6051931904",
+            "net": "5274001862"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.033940580994,
+        "op": 0.006357463133,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000719",
+          "rawKRW": {
+            "sales": "33940580994",
+            "op": "6357463133",
+            "net": "3994914036"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260618000383",
+      "published": "2026.06.18",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000820",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000719",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320001252",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250827000578",
+      "published": "2025.08.27",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "동방메디컬 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000719",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "봉합사",
+      "desc": "수술 등에서 조직을 꿰매는 데 사용하는 의료용 실입니다."
+    },
+    {
+      "name": "필러",
+      "desc": "피부 등의 부위에 볼륨을 보충하는 시술용 재료입니다. 치과 소재에서는 레진 등을 채우고 성질을 개선하는 입자 재료를 뜻하기도 합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "니들",
+      "desc": "주사나 시술 등에 사용하는 의료용 바늘입니다."
+    },
+    {
+      "name": "부항컵",
+      "desc": "한방 치료 등에서 피부 부위에 압력 차이를 만드는 컵 형태의 기구입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

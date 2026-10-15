@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ilseung",
+    "name": "일승",
+    "ticker": "333430",
+    "rank": 680,
+    "type": "조선 환경·배관 기자재"
+  },
+  "overview": {
+    "short": "일승은 선박용 환경 장비와 배관 등 조선기자재를 공급하는 회사",
+    "summary": "일승은 선박용 환경 장비와 배관 등 조선기자재를 공급하는 회사입니다. 선박 분뇨처리장치와 조수기·연료유 청정기 등을 만듭니다.",
+    "takeaways": [
+      "일승은 선박용 환경 장비와 배관 등 조선기자재를 공급하는 회사입니다.",
+      "선박 분뇨처리장치와 조수기·연료유 청정기 등을 만듭니다.",
+      "연결 사업에는 선박 배관을 미리 제작하는 PIPE SPOOL 사업이 있습니다.",
+      "조선 LNG와 소재 관련 사업도 운영합니다.",
+      "선박 발주·건조 일정과 사업별 원가를 나눠 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "환경 장비",
+        "desc": "선박용 분뇨처리·조수·연료 정화 장비를 공급합니다."
+      },
+      {
+        "name": "배관 제작",
+        "desc": "선박에 설치할 배관 조립품을 제작합니다."
+      },
+      {
+        "name": "LNG·소재",
+        "desc": "조선 LNG 관련 기자재와 소재 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "선박 건조",
+        "desc": "조선 고객의 생산과 기자재 납품 일정을 확인합니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "환경 장비와 배관·LNG 부문의 판매를 구분합니다."
+      },
+      {
+        "title": "제작 원가",
+        "desc": "금속·부품·인력 비용과 프로젝트 수익성을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.051793219831,
+        "op": 0.006913731124,
+        "net": 0.006518274761,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001525",
+          "rawKRW": {
+            "sales": "51793219831",
+            "op": "6913731124",
+            "net": "6518274761"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.050673752132,
+        "op": 0.010863172422,
+        "net": 0.013685746628,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001235",
+          "rawKRW": {
+            "sales": "50673752132",
+            "op": "10863172422",
+            "net": "13685746628"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.011587631813,
+        "op": 0.001285729997,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003813",
+          "rawKRW": {
+            "sales": "11587631813",
+            "op": "1285729997",
+            "net": "916277892"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.012078786461,
+        "op": 0.00230357261,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000003",
+          "rawKRW": {
+            "sales": "12078786461",
+            "op": "2303572610",
+            "net": "3674704880"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.016228790693,
+        "op": 0.005932655527,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000008",
+          "rawKRW": {
+            "sales": "16228790693",
+            "op": "5932655527",
+            "net": "6752450408"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001235",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000003",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000008",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001525",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003813",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "일승 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000008",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "LNG",
+      "desc": "액화천연가스로, 매우 낮은 온도로 냉각해 액체 상태로 운송·보관합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

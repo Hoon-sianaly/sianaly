@@ -1,5 +1,5 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261014-kosdaq600-1";
+const COMPANY_DATA_VERSION = "20261015-kosdaq700-1";
 const companyDataCache = new Map();
 let companyCatalogPromise;
 

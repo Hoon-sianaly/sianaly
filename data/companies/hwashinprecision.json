@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hwashinprecision",
+    "name": "화신정공",
+    "ticker": "126640",
+    "rank": 636,
+    "type": "자동차 부품·강재 가공"
+  },
+  "overview": {
+    "short": "화신정공은 자동차 부품과 가공 강재를 공급하는 회사",
+    "summary": "화신정공은 자동차 부품과 가공 강재를 공급하는 회사입니다. 차량의 차체·조향 등과 관련된 부품을 제조합니다.",
+    "takeaways": [
+      "화신정공은 자동차 부품과 가공 강재를 공급하는 회사입니다.",
+      "차량의 차체·조향 등과 관련된 부품을 제조합니다.",
+      "완성차 회사와 부품 협력사에 모듈 또는 개별 부품을 납품합니다.",
+      "강판을 폭에 맞춰 자르는 원소재 가공 사업도 합니다.",
+      "자동차 생산량과 강재 가격·제품 원가를 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "자동차 부품",
+        "desc": "샤시와 정밀가공·보수용 부품 등을 생산합니다."
+      },
+      {
+        "name": "고객 납품",
+        "desc": "완성차 및 부품 계열사에 모듈·개별품을 공급합니다."
+      },
+      {
+        "name": "강재 가공",
+        "desc": "강판을 슬리팅 가공해 부품 협력사 등에 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "차량 생산",
+        "desc": "주요 고객의 생산량과 차종별 공급 물량을 봅니다."
+      },
+      {
+        "title": "강재 가격",
+        "desc": "원재료 매입과 판매 가격·재고 변동을 확인합니다."
+      },
+      {
+        "title": "생산 효율",
+        "desc": "가동률과 정밀 가공·불량 관리가 중요합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.321956980467,
+        "op": 0.001340851683,
+        "net": 0.002636388224,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000290",
+          "rawKRW": {
+            "sales": "321956980467",
+            "op": "1340851683",
+            "net": "2636388224"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.378937475942,
+        "op": 0.011781968219,
+        "net": 0.010313484744,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260316000444",
+          "rawKRW": {
+            "sales": "378937475942",
+            "op": "11781968219",
+            "net": "10313484744"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.098460172144,
+        "op": 0.005425570783,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001328",
+          "rawKRW": {
+            "sales": "98460172144",
+            "op": "5425570783",
+            "net": "4274554292"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.12131966932,
+        "op": 0.012161803257,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000206",
+          "rawKRW": {
+            "sales": "121319669320",
+            "op": "12161803257",
+            "net": "10144508465"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.101535378319,
+        "op": 0.010272730479,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814001456",
+          "rawKRW": {
+            "sales": "101535378319",
+            "op": "10272730479",
+            "net": "8105920714"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000444",
+      "published": "2026.03.16",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000206",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001456",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000290",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001328",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "화신정공 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001456",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산시설이 사용할 수 있는 능력에 비해 실제로 얼마나 사용됐는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "조향",
+      "desc": "차량이 움직이는 방향을 바꾸는 기능입니다."
+    },
+    {
+      "name": "강판",
+      "desc": "철강을 판 모양으로 가공한 소재입니다. 강관·자동차 부품 등 여러 제품의 원료로 사용합니다."
+    },
+    {
+      "name": "납품",
+      "desc": "주문받은 제품을 정해진 조건에 맞춰 고객에게 공급하는 것입니다."
+    },
+    {
+      "name": "차체",
+      "desc": "자동차의 골격·외형을 이루는 구조를 뜻합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "모듈",
+      "desc": "특정 기능을 수행하도록 여러 부품을 결합한 구성 단위입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

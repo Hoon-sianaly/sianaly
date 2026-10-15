@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "aniplus",
+    "name": "애니플러스",
+    "ticker": "310200",
+    "rank": 661,
+    "type": "애니메이션·콘텐츠"
+  },
+  "overview": {
+    "short": "애니플러스는 애니메이션 방송·유통과 관련 상품 사업을 하는 회사",
+    "summary": "애니플러스는 애니메이션 방송·유통과 관련 상품 사업을 하는 회사입니다. 채널과 스트리밍 플랫폼에서 콘텐츠를 제공합니다.",
+    "takeaways": [
+      "애니플러스는 애니메이션 방송·유통과 관련 상품 사업을 하는 회사입니다.",
+      "채널과 스트리밍 플랫폼에서 콘텐츠를 제공합니다.",
+      "캐릭터 상품과 전시·행사 사업도 운영합니다.",
+      "연결 자회사에서 드라마와 해외 콘텐츠 유통 등을 합니다.",
+      "콘텐츠 판권 비용과 구독·상품·행사 수익을 나눠 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "콘텐츠 유통",
+        "desc": "애니메이션 채널·라프텔 등 플랫폼으로 콘텐츠를 제공합니다."
+      },
+      {
+        "name": "캐릭터 상품",
+        "desc": "완구·문구 등 캐릭터 상품을 기획·판매합니다."
+      },
+      {
+        "name": "전시·제작",
+        "desc": "전시·행사와 드라마 제작 등 연결 사업을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "콘텐츠 수요",
+        "desc": "인기 작품 확보와 구독·채널 수익을 확인합니다."
+      },
+      {
+        "title": "판권·제작비",
+        "desc": "콘텐츠 조달과 제작 비용·회수를 봅니다."
+      },
+      {
+        "title": "상품·행사",
+        "desc": "상품 재고와 전시·행사 일정별 수익성을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.130975963475,
+        "op": 0.025139081598,
+        "net": 0.018029079938,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250327000729",
+          "rawKRW": {
+            "sales": "130975963475",
+            "op": "25139081598",
+            "net": "18029079938"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.150299705151,
+        "op": 0.022683638558,
+        "net": 0.014044673132,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000867",
+          "rawKRW": {
+            "sales": "150299705151",
+            "op": "22683638558",
+            "net": "14044673132"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.028611388204,
+        "op": 0.003056197659,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814002928",
+          "rawKRW": {
+            "sales": "28611388204",
+            "op": "3056197659",
+            "net": "2189160369"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.029612217513,
+        "op": 0.00241962439,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002871",
+          "rawKRW": {
+            "sales": "29612217513",
+            "op": "2419624390",
+            "net": "2198706366"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.032305275703,
+        "op": 0.003278554183,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20261001000338",
+          "rawKRW": {
+            "sales": "32305275703",
+            "op": "3278554183",
+            "net": "1058938491"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000867",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002871",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000338",
+      "published": "2026.10.01",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250327000729",
+      "published": "2025.03.27",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002928",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "애니플러스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261001000338",
+      "published": "2026.10.01",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "플랫폼",
+      "desc": "여러 기술·제품·서비스를 제공하거나 개발하는 공통 기반입니다."
+    },
+    {
+      "name": "콘텐츠",
+      "desc": "영상·음악·공연·글 등 이용자에게 제공하는 창작물과 정보입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "구독",
+      "desc": "서비스를 계속 이용하는 대가로 일정 기간마다 요금을 내는 방식입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

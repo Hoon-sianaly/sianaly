@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "niceinfra",
+    "name": "NICE인프라",
+    "ticker": "063570",
+    "rank": 693,
+    "type": "금융·모빌리티 운영 인프라"
+  },
+  "overview": {
+    "short": "NICE인프라는 금융과 생활 현장의 기기·운영 서비스를 제공하는 회사",
+    "summary": "NICE인프라는 금융과 생활 현장의 기기·운영 서비스를 제공하는 회사입니다. ATM 금융 서비스와 기기 관리 사업을 합니다.",
+    "takeaways": [
+      "NICE인프라는 금융과 생활 현장의 기기·운영 서비스를 제공하는 회사입니다.",
+      "ATM 금융 서비스와 기기 관리 사업을 합니다.",
+      "주차·전기차 충전과 무인 솔루션 등 인프라도 운영합니다.",
+      "자회사 현금수송과 대량현금 관리 등이 연결 사업에 포함됩니다.",
+      "기기·현장 규모와 실제 이용·유지보수 비용을 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "금융 인프라",
+        "desc": "ATM 금융 서비스와 기기 구축·관리 등을 제공합니다."
+      },
+      {
+        "name": "모빌리티·무인",
+        "desc": "주차·충전 인프라와 무인 솔루션을 구축·운영합니다."
+      },
+      {
+        "name": "현금수송·임대",
+        "desc": "현금수송·관리와 부동산 임대 등 연결 사업을 합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "기기 이용",
+        "desc": "ATM·주차·충전 등 현장 이용과 계약 수익을 확인합니다."
+      },
+      {
+        "title": "운영 비용",
+        "desc": "유지보수·인력·현금수송 비용을 봅니다."
+      },
+      {
+        "title": "시설 투자",
+        "desc": "장비 투자와 신규 운영 계약의 수익성을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.338702988011,
+        "op": 0.01870447255,
+        "net": 0.002397982374,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250317000969",
+          "rawKRW": {
+            "sales": "338702988011",
+            "op": "18704472550",
+            "net": "2397982374"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.383954233593,
+        "op": 0.030713748831,
+        "net": 0.00719030023,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001581",
+          "rawKRW": {
+            "sales": "383954233593",
+            "op": "30713748831",
+            "net": "7190300230"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.09269335305,
+        "op": 0.00987544132,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003412",
+          "rawKRW": {
+            "sales": "92693353050",
+            "op": "9875441320",
+            "net": "3007296266"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.103211490071,
+        "op": 0.007465424095,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515001803",
+          "rawKRW": {
+            "sales": "103211490071",
+            "op": "7465424095",
+            "net": "1754477542"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.110468183594,
+        "op": 0.009647416968,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002987",
+          "rawKRW": {
+            "sales": "110468183594",
+            "op": "9647416968",
+            "net": "4984736137"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001581",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001803",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002987",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317000969",
+      "published": "2025.03.17",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003412",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "NICE인프라 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002987",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "모빌리티",
+      "desc": "사람이나 물건의 이동과 관련된 기술·제품·서비스·사업입니다. 차량과 이동 서비스를 포함합니다."
+    },
+    {
+      "name": "솔루션",
+      "desc": "특정 업무나 문제를 해결하기 위해 제공하는 제품·기술·서비스의 묶음입니다."
+    },
+    {
+      "name": "ATM",
+      "desc": "현금 입출금과 이체 등 은행 업무를 자동으로 처리하는 기기입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

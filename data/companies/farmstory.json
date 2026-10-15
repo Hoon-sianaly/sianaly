@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "farmstory",
+    "name": "팜스토리",
+    "ticker": "027710",
+    "rank": 630,
+    "type": "사료·축산·식품"
+  },
+  "overview": {
+    "short": "팜스토리는 사료와 돼지고기·닭고기 관련 사업을 하는 회사",
+    "summary": "팜스토리는 사료와 돼지고기·닭고기 관련 사업을 하는 회사입니다. 축산 농가에 배합사료를 공급합니다.",
+    "takeaways": [
+      "팜스토리는 사료와 돼지고기·닭고기 관련 사업을 하는 회사입니다.",
+      "축산 농가에 배합사료를 공급합니다.",
+      "양돈 사육과 도축·가공을 통해 육류를 판매합니다.",
+      "자회사에서는 닭고기 가공과 곡물 등 관련 사업도 운영합니다.",
+      "곡물 가격과 축산물 판매 가격의 변화가 함께 작용합니다."
+    ],
+    "business": [
+      {
+        "name": "배합사료",
+        "desc": "돼지·닭·소 등 축종별 사료를 제조·판매합니다."
+      },
+      {
+        "name": "양돈·육가공",
+        "desc": "돼지를 사육하고 도축·가공 제품을 공급합니다."
+      },
+      {
+        "name": "가금·곡물",
+        "desc": "자회사에서 닭고기 가공과 곡물 관련 사업을 합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "원재료 가격",
+        "desc": "사료용 곡물 가격과 환율·운송비를 확인합니다."
+      },
+      {
+        "title": "축산 시세",
+        "desc": "돼지고기·닭고기 가격과 사육·도축 물량이 중요합니다."
+      },
+      {
+        "title": "사업별 손익",
+        "desc": "사료·육가공·가금 부문의 원가와 수익성을 나눠 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 1.453900541921,
+        "op": 0.040778899216,
+        "net": 0.005162956521,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250321001447",
+          "rawKRW": {
+            "sales": "1453900541921",
+            "op": "40778899216",
+            "net": "5162956521"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 1.45585108075,
+        "op": 0.034969057306,
+        "net": 0.030668871519,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000994",
+          "rawKRW": {
+            "sales": "1455851080750",
+            "op": "34969057306",
+            "net": "30668871519"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.371507768823,
+        "op": 0.015889752256,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814003291",
+          "rawKRW": {
+            "sales": "371507768823",
+            "op": "15889752256",
+            "net": "18598732301"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.347114021241,
+        "op": 0.008691267559,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515002538",
+          "rawKRW": {
+            "sales": "347114021241",
+            "op": "8691267559",
+            "net": "-2060211274"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.36298503394,
+        "op": 0.017636031173,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20261002000645",
+          "rawKRW": {
+            "sales": "362985033940",
+            "op": "17636031173",
+            "net": "13336520861"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000994",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002538",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000645",
+      "published": "2026.10.02",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250321001447",
+      "published": "2025.03.21",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003291",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "팜스토리 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000645",
+      "published": "2026.10.02",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "육가공",
+      "desc": "육류를 가공해 햄·소시지 등 식품을 만드는 사업이나 공정입니다."
+    },
+    {
+      "name": "배합사료",
+      "desc": "가축에 필요한 영양 성분을 맞추기 위해 여러 원료를 섞어 만든 사료입니다."
+    },
+    {
+      "name": "양돈",
+      "desc": "돼지를 기르는 축산 사업입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "powerlogics",
+    "name": "파워로직스",
+    "ticker": "047310",
+    "rank": 646,
+    "type": "카메라·배터리 전자부품"
+  },
+  "overview": {
+    "short": "파워로직스는 카메라모듈과 배터리 관련 전자부품을 만드는 회사",
+    "summary": "파워로직스는 카메라모듈과 배터리 관련 전자부품을 만드는 회사입니다. 모바일·차량용 카메라모듈을 공급합니다.",
+    "takeaways": [
+      "파워로직스는 카메라모듈과 배터리 관련 전자부품을 만드는 회사입니다.",
+      "모바일·차량용 카메라모듈을 공급합니다.",
+      "이차전지의 과충전·과방전을 막는 보호회로도 만듭니다.",
+      "전기차·에너지저장장치용 배터리팩 등으로 사업을 확장합니다.",
+      "사업별 물량과 원가·신규 투자 부담을 나눠 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "카메라모듈",
+        "desc": "모바일 기기와 차량 등에 사용하는 카메라모듈을 공급합니다."
+      },
+      {
+        "name": "배터리 회로",
+        "desc": "배터리 보호와 상태 관리에 필요한 전자회로를 만듭니다."
+      },
+      {
+        "name": "배터리팩",
+        "desc": "전기차·ESS 등 중대형 배터리팩 사업을 합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 생산",
+        "desc": "기기·차량 고객의 생산량과 부품 채택을 확인합니다."
+      },
+      {
+        "title": "제품 수익",
+        "desc": "카메라와 배터리 제품의 판매 구성·수율을 봅니다."
+      },
+      {
+        "title": "신규 투자",
+        "desc": "배터리팩 개발·설비 투자와 실제 매출 발생을 확인합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.733444024609,
+        "op": 0.002421533753,
+        "net": 0.012422763198,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260602000010",
+          "rawKRW": {
+            "sales": "733444024609",
+            "op": "2421533753",
+            "net": "12422763198"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.686534652866,
+        "op": -0.006367044445,
+        "net": -0.012318778055,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260602000010",
+          "rawKRW": {
+            "sales": "686534652866",
+            "op": "-6367044445",
+            "net": "-12318778055"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.165921234705,
+        "op": -0.005963275329,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814000853",
+          "rawKRW": {
+            "sales": "165921234705",
+            "op": "-5963275329",
+            "net": "-6501844742"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.241317634312,
+        "op": 0.007818308081,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000417",
+          "rawKRW": {
+            "sales": "241317634312",
+            "op": "7818308081",
+            "net": "8891207494"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.200535182225,
+        "op": 0.00462580629,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000125",
+          "rawKRW": {
+            "sales": "200535182225",
+            "op": "4625806290",
+            "net": "3641735143"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000010",
+      "published": "2026.06.02",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000417",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000125",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260602000010",
+      "published": "2026.06.02",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814000853",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "파워로직스 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000125",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "수율",
+      "desc": "투입·생산한 물량 중 정상 제품으로 완성되는 비율입니다."
+    },
+    {
+      "name": "이차전지",
+      "desc": "충전해 반복적으로 사용할 수 있는 배터리입니다."
+    },
+    {
+      "name": "ESS",
+      "desc": "전기를 저장했다가 필요할 때 공급하는 에너지저장장치입니다."
+    },
+    {
+      "name": "배터리팩",
+      "desc": "여러 배터리 셀·모듈과 제어·보호장치 등을 묶은 배터리 시스템입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "보호회로",
+      "desc": "과충전·과방전·과전류 등으로부터 배터리를 보호하는 전자 회로입니다."
+    },
+    {
+      "name": "모듈",
+      "desc": "특정 기능을 수행하도록 여러 부품을 결합한 구성 단위입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

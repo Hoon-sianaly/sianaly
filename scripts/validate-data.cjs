@@ -77,7 +77,13 @@ function validateFinancials(record, seen = []) {
    const period = `${row.year}/${row.quarter || 0}`;
    assert.ok(!periods.has(period), `Duplicate period: ${key}/${period}`);
    periods.add(period);
-   assert.ok(Number.isFinite(row.sales) && row.sales >= 0, `Invalid sales: ${key}/${period}`);
+   const signedOperatingRevenue=financials.metrics?.sales?.allowNegative===true;
+   if(signedOperatingRevenue){
+    assert.equal(financials.metrics.sales.label,'영업수익 (투자·운용)',`Signed metric must identify investment revenue: ${key}`);
+    assert.match(row.reportedKRW?.sales||'',/^-?\d+$/,`Signed metric requires official raw amount: ${key}/${period}`);
+    assert.equal(row.sales,Number(row.reportedKRW.sales)/1e12,`Signed metric raw mismatch: ${key}/${period}`);
+   }
+   assert.ok(Number.isFinite(row.sales) && (row.sales >= 0 || signedOperatingRevenue), `Invalid sales: ${key}/${period}`);
    assert.ok(Number.isFinite(row.op), `Invalid operating profit: ${key}/${period}`);
    if (row.net !== undefined) assert.ok(Number.isFinite(row.net));
    assert.ok(Array.isArray(row.sourceIds));

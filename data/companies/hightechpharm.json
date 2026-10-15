@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "hightechpharm",
+    "name": "하이텍팜",
+    "ticker": "106190",
+    "rank": 700,
+    "type": "항생제 원료의약품"
+  },
+  "overview": {
+    "short": "하이텍팜은 주사제용 항생제 원료의약품을 생산하는 회사",
+    "summary": "하이텍팜은 주사제용 항생제 원료의약품을 생산하는 회사입니다. 카바페넴계 항생제 원료가 주요 제품입니다.",
+    "takeaways": [
+      "하이텍팜은 주사제용 항생제 원료의약품을 생산하는 회사입니다.",
+      "카바페넴계 항생제 원료가 주요 제품입니다.",
+      "이미페넴·에르타페넴 등 원료를 제약 고객에게 공급합니다.",
+      "해외 판매와 무균 생산·품질 관리가 중요합니다.",
+      "제품 판매량·수출 가격과 원재료·시설 비용을 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "항생제 원료",
+        "desc": "카바페넴계 등 주사제용 항생제 원료를 생산합니다."
+      },
+      {
+        "name": "무균 제조",
+        "desc": "제약 고객에 맞는 무균 원료의약품을 공급합니다."
+      },
+      {
+        "name": "기타 제품",
+        "desc": "세팔로스포린계와 기타 원료 관련 제품을 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "수출 수요",
+        "desc": "해외 고객의 구매와 제품별 판매량·가격을 확인합니다."
+      },
+      {
+        "title": "품질·규제",
+        "desc": "의약품 제조 품질과 고객·규제기관 기준 충족이 중요합니다."
+      },
+      {
+        "title": "원가·환율",
+        "desc": "원재료·시설 가동과 환율의 영향을 봅니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.077513117378,
+        "op": 0.015557754205,
+        "net": 0.013710010333,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250313000616",
+          "rawKRW": {
+            "sales": "77513117378",
+            "op": "15557754205",
+            "net": "13710010333"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.070183145366,
+        "op": 0.012856017087,
+        "net": 0.011475138191,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260312001020",
+          "rawKRW": {
+            "sales": "70183145366",
+            "op": "12856017087",
+            "net": "11475138191"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.023020606627,
+        "op": 0.003217915769,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001602",
+          "rawKRW": {
+            "sales": "23020606627",
+            "op": "3217915769",
+            "net": "2341868887"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.014126306553,
+        "op": -0.001096275632,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260515000712",
+          "rawKRW": {
+            "sales": "14126306553",
+            "op": "-1096275632",
+            "net": "-267017053"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.023379278699,
+        "op": 0.006292944825,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260929000530",
+          "rawKRW": {
+            "sales": "23379278699",
+            "op": "6292944825",
+            "net": "5245361134"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001020",
+      "published": "2026.03.12",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000712",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000530",
+      "published": "2026.09.29",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250313000616",
+      "published": "2025.03.13",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001602",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "하이텍팜 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000530",
+      "published": "2026.09.29",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "원료의약품",
+      "desc": "완성된 약의 치료 작용을 내는 주성분으로 사용되는 물질입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "무균",
+      "desc": "미생물 오염이 없도록 관리된 상태를 뜻합니다."
+    },
+    {
+      "name": "카바페넴계",
+      "desc": "여러 세균 감염 치료에 쓰이는 항생제 계열입니다. 실제 사용은 의료진의 판단에 따릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

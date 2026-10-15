@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "ahnkook",
+    "name": "안국약품",
+    "ticker": "001540",
+    "rank": 605,
+    "type": "의약품·헬스케어"
+  },
+  "overview": {
+    "short": "안국약품은 의약품과 헬스케어·뷰티 제품을 제조하고 판매하는 회사",
+    "summary": "안국약품은 의약품과 헬스케어·뷰티 제품을 제조하고 판매하는 회사입니다. 시네츄라 등 호흡기 의약품과 순환기계 의약품을 공급합니다.",
+    "takeaways": [
+      "안국약품은 의약품과 헬스케어·뷰티 제품을 제조하고 판매하는 회사입니다.",
+      "시네츄라 등 호흡기 의약품과 순환기계 의약품을 공급합니다.",
+      "토비콤 등 소비자용 제품도 여러 유통 채널에서 판매합니다.",
+      "자체 생산시설을 활용한 의약품 위탁생산 사업을 병행합니다.",
+      "주요 제품 판매와 연구개발·판매관리 비용을 함께 확인해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "전문의약품",
+        "desc": "호흡기·순환기 등 질환 치료에 사용하는 의약품을 공급합니다."
+      },
+      {
+        "name": "헬스케어·뷰티",
+        "desc": "토비콤·리쥬비더마 등 소비자용 제품을 판매합니다."
+      },
+      {
+        "name": "의약품 생산",
+        "desc": "향남 공장에서 자체 제품과 위탁 의약품을 생산합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "제품 판매",
+        "desc": "주요 처방 의약품의 판매량과 신제품 기여를 봅니다."
+      },
+      {
+        "title": "유통 채널",
+        "desc": "온라인몰·소매 채널 확대에 따른 판매와 비용을 확인합니다."
+      },
+      {
+        "title": "연구·생산",
+        "desc": "연구개발비와 생산시설 가동·품질 관리 비용이 중요합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2024,
+        "sales": 0.271115916678,
+        "op": 0.006701374793,
+        "net": 0.016343180693,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20250320000862",
+          "rawKRW": {
+            "sales": "271115916678",
+            "op": "6701374793",
+            "net": "16343180693"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.306873904373,
+        "op": 0.009822537198,
+        "net": 0.007319463691,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000992",
+          "rawKRW": {
+            "sales": "306873904373",
+            "op": "9822537198",
+            "net": "7319463691"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.076822927894,
+        "op": 0.004965314865,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20250814001421",
+          "rawKRW": {
+            "sales": "76822927894",
+            "op": "4965314865",
+            "net": "3070707210"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.098927522231,
+        "op": 0.016018604678,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260514000535",
+          "rawKRW": {
+            "sales": "98927522231",
+            "op": "16018604678",
+            "net": "12395276555"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.091850924877,
+        "op": 0.008640460429,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002566",
+          "rawKRW": {
+            "sales": "91850924877",
+            "op": "8640460429",
+            "net": "8574459991"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000992",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000535",
+      "published": "2026.05.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002566",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250320000862",
+      "published": "2025.03.20",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001421",
+      "published": "2025.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "안국약품 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002566",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "위탁생산",
+      "desc": "다른 회사의 주문을 받아 제품을 대신 생산하는 사업입니다."
+    },
+    {
+      "name": "유통 채널",
+      "desc": "제품이나 서비스를 고객에게 판매하는 경로입니다. 온라인몰·매장·도매·판매 대리점 등이 포함됩니다."
+    },
+    {
+      "name": "전문의약품",
+      "desc": "의사의 처방과 전문적 판단에 따라 사용하는 의약품입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

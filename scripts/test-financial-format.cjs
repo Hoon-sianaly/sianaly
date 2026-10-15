@@ -18,3 +18,6 @@ assert.equal(ctx.formatFinancialHighlight(4943342767/1e12,'CNY'),'49억위안');
 
 assert.equal(ctx.formatFinancialHighlight(31794810735/1e12,'JPY'),'318억엔');assert.equal(ctx.formatFinancialHighlight(-80000/1e12,'JPY'),'-8만엔');assert.equal(ctx.formatFinancialHighlight(0,'JPY'),'0엔');ctx.c.financialCurrency='JPY';const yen=ctx.comparisonChart([{period:'2026.03–05',sales:4902490901/1e12,op:227642463/1e12}]);assert(yen.includes('엔')&&!yen.includes('억원')&&!yen.includes('달러')&&!yen.includes('위안'));
 assert.equal(ctx.formatFinancialHighlight(31794810735/1e12,'GBP'),'318억파운드');assert.equal(ctx.formatFinancialHighlight(-80000/1e12,'GBP'),'-8만파운드');assert.equal(ctx.formatFinancialHighlight(0,'GBP'),'0파운드');ctx.c.financialCurrency='GBP';const pound=ctx.comparisonChart([{period:'2026.03–05',sales:4902490901/1e12,op:227642463/1e12}]);assert(pound.includes('파운드')&&!pound.includes('억원')&&!pound.includes('달러')&&!pound.includes('위안'));
+ctx.c.financialCurrency='KRW';ctx.c.financialMetrics.sales.label='영업수익 (투자·운용)';ctx.salesLabel='영업수익 (투자·운용)';
+const investment=ctx.comparisonChart([{period:'2025.04–06',sales:-1743409855/1e12,op:-2680103033/1e12},{period:'2026.04–06',sales:8829063399/1e12,op:5056829341/1e12}]);
+assert(investment.includes('-17억원')&&investment.includes('영업수익 (투자·운용)')&&investment.includes('fill="#dc2626"'));
