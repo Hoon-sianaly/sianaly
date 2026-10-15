@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreafurniture",
+    "name": "한국가구",
+    "ticker": "004590",
+    "rank": 815,
+    "type": "가구·식품 원료 유통"
+  },
+  "overview": {
+    "short": "고급 가구 수입판매와 식품 원료 유통을 운영합니다.",
+    "summary": "고급 가구 수입판매와 식품 원료 유통을 운영합니다. 해외 브랜드의 소파·식탁·생활 가구를 판매합니다.",
+    "takeaways": [
+      "고급 가구 수입판매와 식품 원료 유통을 운영합니다.",
+      "해외 브랜드의 소파·식탁·생활 가구를 판매합니다.",
+      "자회사 제원인터내쇼날은 제과·제빵 원료를 공급합니다.",
+      "연결 매출은 가구만으로 설명하기 어렵습니다.",
+      "가구 소비와 식품 원료 사업의 손익을 나눠 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "가구 판매",
+        "desc": "해외 고급 브랜드 가구를 수입·판매합니다."
+      },
+      {
+        "name": "식품 원료",
+        "desc": "초콜릿·코코아 등 제과·제빵 재료를 공급합니다."
+      },
+      {
+        "name": "유통 운영",
+        "desc": "브랜드 판매망·재고·물류를 관리합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "가구 수요",
+        "desc": "고급 소비재 판매와 매장 비용을 확인합니다."
+      },
+      {
+        "title": "원료 유통",
+        "desc": "식품 고객 주문과 상품 매입비를 봅니다."
+      },
+      {
+        "title": "환율·재고",
+        "desc": "수입 환율과 재고에 묶이는 자금을 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.102947090163,
+        "op": 0.012426948013,
+        "net": 0.011017349911,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260311003919",
+          "rawKRW": {
+            "sales": "102947090163",
+            "op": "12426948013",
+            "net": "11017349911"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.128719457546,
+        "op": 0.017822858597,
+        "net": 0.015985694911,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260311003919",
+          "rawKRW": {
+            "sales": "128719457546",
+            "op": "17822858597",
+            "net": "15985694911"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.141617438014,
+        "op": 0.017534529185,
+        "net": 0.01426516824,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260311003919",
+          "rawKRW": {
+            "sales": "141617438014",
+            "op": "17534529185",
+            "net": "14265168240"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.034690121985,
+        "op": 0.005828668647,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002602",
+          "rawKRW": {
+            "sales": "34690121985",
+            "op": "5828668647"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.033853896986,
+        "op": 0.00407703181,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002602",
+          "rawKRW": {
+            "sales": "33853896986",
+            "op": "4077031810"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.032645644242,
+        "op": 0.003644498495,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114000822",
+          "rawKRW": {
+            "sales": "32645644242",
+            "op": "3644498495",
+            "net": "2698853729"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.044274655626,
+        "op": 0.006041786829,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002602",
+          "rawKRW": {
+            "sales": "44274655626",
+            "op": "6041786829"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.037041050871,
+        "op": 0.003669150206,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002602",
+          "rawKRW": {
+            "sales": "37041050871",
+            "op": "3669150206",
+            "net": "2806124057"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003919",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002602",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002602",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003919",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002602",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003919",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002602",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000822",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20260311003919",
+      "label": "한국가구 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003919",
+      "published": "2026.03.11",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20251114000822",
+      "label": "한국가구 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000822",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "한국가구 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002602",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

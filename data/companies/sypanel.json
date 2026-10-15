@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sypanel",
+    "name": "에스와이",
+    "ticker": "109610",
+    "rank": 805,
+    "type": "건축 패널·강재"
+  },
+  "overview": {
+    "short": "건축용 샌드위치패널을 만드는 회사",
+    "summary": "건축용 샌드위치패널을 만드는 회사입니다. 단열재와 강판을 결합해 벽·지붕용 제품을 공급합니다.",
+    "takeaways": [
+      "건축용 샌드위치패널을 만드는 회사입니다.",
+      "단열재와 강판을 결합해 벽·지붕용 제품을 공급합니다.",
+      "자회사는 컬러강판·데크플레이트 등을 만듭니다.",
+      "국내와 해외에서 건축자재 사업을 운영합니다.",
+      "건설 수요와 강판·단열재 원가를 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "건축 패널",
+        "desc": "용도별 단열·난연 패널을 제조합니다."
+      },
+      {
+        "name": "강재·구조재",
+        "desc": "컬러강판·데크플레이트 등을 공급합니다."
+      },
+      {
+        "name": "해외 사업",
+        "desc": "해외 생산·판매 거점을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "건설 수요",
+        "desc": "산업·일반 건축의 자재 주문을 확인합니다."
+      },
+      {
+        "title": "원재료",
+        "desc": "강판·단열재 매입비와 판매가격을 비교합니다."
+      },
+      {
+        "title": "공장 효율",
+        "desc": "국내외 공장 가동과 운송 비용을 봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.553670148803,
+        "op": 0.013557446896,
+        "net": -0.00953640995,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260722000434",
+          "rawKRW": {
+            "sales": "553670148803",
+            "op": "13557446896",
+            "net": "-9536409950"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.561008736665,
+        "op": 0.021934910618,
+        "net": 0.006321297109,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260722000434",
+          "rawKRW": {
+            "sales": "561008736665",
+            "op": "21934910618",
+            "net": "6321297109"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.501552720795,
+        "op": -0.006626642816,
+        "net": -0.015865691092,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260722000434",
+          "rawKRW": {
+            "sales": "501552720795",
+            "op": "-6626642816",
+            "net": "-15865691092"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.116301933607,
+        "op": -0.002008624366,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002083",
+          "rawKRW": {
+            "sales": "116301933607",
+            "op": "-2008624366"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.135936283945,
+        "op": -0.000088144756,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002083",
+          "rawKRW": {
+            "sales": "135936283945",
+            "op": "-88144756"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.116578937875,
+        "op": -0.000954401701,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114001628",
+          "rawKRW": {
+            "sales": "116578937875",
+            "op": "-954401701",
+            "net": "-2376438579"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.126300807064,
+        "op": -0.001207493119,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002083",
+          "rawKRW": {
+            "sales": "126300807064",
+            "op": "-1207493119"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.152403501402,
+        "op": -0.001013344074,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002083",
+          "rawKRW": {
+            "sales": "152403501402",
+            "op": "-1013344074",
+            "net": "-5364618903"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260722000434",
+      "published": "2026.07.22",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002083",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002083",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260722000434",
+      "published": "2026.07.22",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002083",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260722000434",
+      "published": "2026.07.22",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002083",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001628",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20260722000434",
+      "label": "에스와이 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260722000434",
+      "published": "2026.07.22",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20251114001628",
+      "label": "에스와이 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001628",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "에스와이 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002083",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "강판",
+      "desc": "철강을 판 모양으로 가공한 소재입니다. 강관·자동차 부품 등 여러 제품의 원료로 사용합니다."
+    },
+    {
+      "name": "컬러강판",
+      "desc": "강판 표면에 색상·무늬와 보호 기능을 가진 도료를 입힌 제품입니다."
+    },
+    {
+      "name": "플레이트",
+      "desc": "평평한 판 형태의 소재·부품입니다. 여기서는 금형·정밀가공용 판을 뜻합니다."
+    },
+    {
+      "name": "단열",
+      "desc": "열이 전달되는 것을 줄이는 기능입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
