@@ -7,13 +7,18 @@ const loader = fs.readFileSync(path.join(root, "company-data.js"), "utf8");
 const html = fs.readFileSync(path.join(root, "company.html"), "utf8");
 const script = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(match => match[1]).join("\n");
 function context(key, transform, failed = false) {
- const nodes = {}, storage = new Map(), errors = [], requests = [];
+ const nodes = {}, storage = new Map(), errors = [], requests = [], financialTabsCalls = [];
  const classList = () => ({add(){},toggle(){}});
  const ctx = vm.createContext({
   URLSearchParams, document:{body:{classList:classList()},getElementById(id){return nodes[id] ||= {innerHTML:"",classList:classList(),addEventListener(){}};}},
   location:{search:`?company=${key}`,reload(){}},
   console:{error(error){errors.push(error);}},
   localStorage:{getItem:key=>storage.get(key) || null,setItem:(key,value)=>storage.set(key,value)},
+  // This VM tests data loading and base markup. Tab DOM behavior is checked in a real browser.
+  initFinancialTabs(company, renderChart, renderSources){
+   assert.equal(typeof renderChart,'function');assert.equal(typeof renderSources,'function');
+   financialTabsCalls.push(company);
+  },
   fetch:async url=>{
    requests.push(url);
    if (failed) return {ok:false,status:503};
@@ -23,7 +28,7 @@ function context(key, transform, failed = false) {
   }
  });
  vm.runInContext(loader,ctx);
- return {ctx,nodes,storage,errors,requests};
+ return {ctx,nodes,storage,errors,requests,financialTabsCalls};
 }
 (async()=>{
  const catalog = JSON.parse(fs.readFileSync(path.join(root,"data/company-index.json"),"utf8"));
@@ -32,6 +37,8 @@ function context(key, transform, failed = false) {
   await vm.runInContext(script,state.ctx);
   const out = state.nodes.app.innerHTML;
   assert.equal(state.errors.length,0,entry.key);
+  assert.equal(state.financialTabsCalls.length,1,entry.key+' initializes shared financial tabs');
+  assert.equal(state.financialTabsCalls[0].key,entry.key);
   assert.ok(out.includes(entry.name),entry.key);
   for (const id of ["intro","business","annual","quarterly","drivers","glossary"]) {
    const record=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8"));

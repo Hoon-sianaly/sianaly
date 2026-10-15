@@ -60,13 +60,15 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 .take b{color:#5882d5;font-weight:600}
 #company-quarterly{border-color:#d7e3f8}
 
-/* Samsung trial: one shared chart area, quarterly first. */
+/* One shared financial chart area, quarterly first. */
 #company-performance [hidden]{display:none!important}
 #company-performance .performance-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:24px 0 12px}
 #company-performance .performance-periods,#company-performance .performance-metrics{display:flex;gap:4px;padding:4px;border-radius:12px;background:#f1f3f7}
 #company-performance button{border:0;border-radius:9px;background:transparent;color:#8791a2;padding:10px 18px;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap}
 #company-performance button[aria-selected="true"],#company-performance button[aria-pressed="true"]{background:#fff;color:#2f61c5;font-weight:600;box-shadow:0 2px 6px #1c34510b}
 #company-performance button:focus-visible,#company-performance [role="tabpanel"]:focus-visible{outline:2px solid #5882d5;outline-offset:3px}
+#company-performance .performance-metrics{max-width:100%}
+#company-performance [data-metric]{white-space:normal;overflow-wrap:anywhere;min-width:0}
 #company-performance .performance-caption{font-size:12px;color:#8490a1;margin:0 0 16px;line-height:1.7}
 #company-performance>section{border:0;background:transparent;box-shadow:none;padding:0;margin:0;border-radius:0}
 #company-performance .metric-charts{grid-template-columns:minmax(0,1fr);margin:0}
@@ -85,7 +87,7 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
 <script src="company-data.js?v=20261015-samsung-tabs-1"></script>
 <script src="company-search.js?v=20261007-detail-search-1"></script>
-<script src="samsung-financial-tabs.js?v=20261015-samsung-history-1"></script>
+<script src="financial-tabs.js?v=20261015-all-financial-tabs-1"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company");
 const app=document.getElementById("app");
@@ -220,7 +222,7 @@ else{
   const markup=app.innerHTML,a=markup.indexOf('<section id="company-annual">'),q=markup.indexOf('<section id="company-quarterly">'),d=markup.indexOf('<section id="company-drivers">');
   if(a>=0&&a<q&&q<d)app.innerHTML=(markup.slice(0,a)+markup.slice(q,d)+markup.slice(a,q)+markup.slice(d)).replace(/(<a href="#company-annual">[\s\S]*?<\/a>)(<a href="#company-quarterly">[\s\S]*?<\/a>)/,'$2$1');
  }
- if(key==='samsung')initSamsungFinancialTabs(c,comparisonChart,sourceLinks);
+ initFinancialTabs(c,comparisonChart,sourceLinks);
  const toc=document.getElementById("companyToc");
 
  if(typeof matchMedia==="function"){
