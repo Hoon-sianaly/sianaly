@@ -79,7 +79,10 @@ function validateFinancials(record, seen = []) {
    periods.add(period);
    const signedOperatingRevenue=financials.metrics?.sales?.allowNegative===true;
    if(signedOperatingRevenue){
-    assert.equal(financials.metrics.sales.label,'영업수익 (투자·운용)',`Signed metric must identify investment revenue: ${key}`);
+    if(financials.metrics.sales.label!=='영업수익 (투자·운용)'){
+     assert.equal(financials.metrics.sales.label,'매출',`Signed metric must identify its reported revenue: ${key}`);
+     assert.ok(financials.metrics.sales.signReason?.trim(),`Signed sales needs an explicit official-report explanation: ${key}`);
+    }
     assert.match(row.reportedKRW?.sales||'',/^-?\d+$/,`Signed metric requires official raw amount: ${key}/${period}`);
     assert.equal(row.sales,Number(row.reportedKRW.sales)/1e12,`Signed metric raw mismatch: ${key}/${period}`);
    }

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "koreapharma",
+    "name": "한국파마",
+    "ticker": "032300",
+    "rank": 774,
+    "type": "전문의약품"
+  },
+  "overview": {
+    "short": "여러 질환의 처방 의약품을 만드는 회사",
+    "summary": "여러 질환의 처방 의약품을 만드는 회사입니다. 정신신경·소화기 분야 제품이 주요 사업입니다.",
+    "takeaways": [
+      "여러 질환의 처방 의약품을 만드는 회사입니다.",
+      "정신신경·소화기 분야 제품이 주요 사업입니다.",
+      "순환기·항생항균 등 치료제도 판매합니다.",
+      "개량신약과 약물전달 기술 관련 연구를 수행합니다.",
+      "기존 의약품 판매와 개발비를 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "전문약",
+        "desc": "정신신경·소화기·순환기 치료제를 판매합니다."
+      },
+      {
+        "name": "기타 의약품",
+        "desc": "항생항균 등 다양한 처방제품을 공급합니다."
+      },
+      {
+        "name": "연구개발",
+        "desc": "개량신약·제형 등 의약 기술을 개발합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "처방 수요",
+        "desc": "주요 제품의 처방과 판매 구성을 확인합니다."
+      },
+      {
+        "title": "약가·비용",
+        "desc": "제품 가격과 원료·판매비를 봅니다."
+      },
+      {
+        "title": "연구 성과",
+        "desc": "개발 단계와 실제 제품 출시를 구분합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.083240454815,
+        "op": 0.006269393301,
+        "net": 0.000083763705,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001107",
+          "rawKRW": {
+            "sales": "83240454815",
+            "op": "6269393301",
+            "net": "83763705"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.081277283919,
+        "op": 0.006086466794,
+        "net": 0.003791743101,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001107",
+          "rawKRW": {
+            "sales": "81277283919",
+            "op": "6086466794",
+            "net": "3791743101"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.087601377061,
+        "op": -0.000887328366,
+        "net": -0.002640407217,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001107",
+          "rawKRW": {
+            "sales": "87601377061",
+            "op": "-887328366",
+            "net": "-2640407217"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.020785995541,
+        "op": 0.000830705161,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260813000703",
+          "rawKRW": {
+            "sales": "20785995541",
+            "op": "830705161"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.023385899169,
+        "op": 0.000082574531,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000703",
+          "rawKRW": {
+            "sales": "23385899169",
+            "op": "82574531"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.023995892352,
+        "op": 0.00050739649,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114001896",
+          "rawKRW": {
+            "sales": "23995892352",
+            "op": "507396490",
+            "net": "-20902803"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.024601670926,
+        "op": 0.00130600984,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260813000703",
+          "rawKRW": {
+            "sales": "24601670926",
+            "op": "1306009840"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.025905813722,
+        "op": 0.002164976323,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000703",
+          "rawKRW": {
+            "sales": "25905813722",
+            "op": "2164976323",
+            "net": "1323286347"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001107",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000703",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000703",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001107",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000703",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001107",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000703",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001896",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20260319001107",
+      "label": "한국파마 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001107",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20251114001896",
+      "label": "한국파마 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001896",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "한국파마 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000703",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "전문의약품",
+      "desc": "의사의 처방과 전문적 판단에 따라 사용하는 의약품입니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "개량신약",
+      "desc": "기존 의약품의 제형·성분 구성·효능 등 일부 특성을 개선해 허가받는 의약품입니다. 완전히 새로운 성분의 신약과 구분합니다."
+    },
+    {
+      "name": "제형",
+      "desc": "정제·캡슐·분말·액상 등 제품을 복용·사용할 수 있게 만든 형태입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

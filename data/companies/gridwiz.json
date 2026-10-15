@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "gridwiz",
+    "name": "그리드위즈",
+    "ticker": "453450",
+    "rank": 782,
+    "type": "전력 수요관리"
+  },
+  "overview": {
+    "short": "고객의 전기 사용을 조절하는 서비스를 제공합니다.",
+    "summary": "고객의 전기 사용을 조절하는 서비스를 제공합니다. 절감한 전력을 시장에서 거래하는 수요관리가 중심입니다.",
+    "takeaways": [
+      "고객의 전기 사용을 조절하는 서비스를 제공합니다.",
+      "절감한 전력을 시장에서 거래하는 수요관리가 중심입니다.",
+      "전기차 충전 통신모뎀과 관련 장비도 판매합니다.",
+      "ESS·태양광 운영관리 등을 함께 수행합니다.",
+      "전력거래 수익과 고객 정산·장비 매출을 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "수요관리",
+        "desc": "고객의 전기 절감량을 전력시장과 연결합니다."
+      },
+      {
+        "name": "충전 제품",
+        "desc": "전기차 충전용 통신모뎀·검사장비를 공급합니다."
+      },
+      {
+        "name": "에너지 운영",
+        "desc": "ESS·태양광 등 분산에너지 관리를 지원합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "참여 고객",
+        "desc": "관리 가능한 전력과 고객 참여를 확인합니다."
+      },
+      {
+        "title": "전력 정산",
+        "desc": "전력시장 보상과 고객 지급액을 함께 봅니다."
+      },
+      {
+        "title": "제품 확대",
+        "desc": "충전장비 판매와 개발비 부담을 살펴봅니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.131870602109,
+        "op": 0.001591501114,
+        "net": 0.004156327772,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260619000475",
+          "rawKRW": {
+            "sales": "131870602109",
+            "op": "1591501114",
+            "net": "4156327772"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.124674395185,
+        "op": -0.004342600272,
+        "net": -0.002790149667,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260619000475",
+          "rawKRW": {
+            "sales": "124674395185",
+            "op": "-4342600272",
+            "net": "-2790149667"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.125608613271,
+        "op": 0.000816318926,
+        "net": 0.002019339165,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260619000475",
+          "rawKRW": {
+            "sales": "125608613271",
+            "op": "816318926",
+            "net": "2019339165"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.022137627834,
+        "op": -0.003371589956,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002782",
+          "rawKRW": {
+            "sales": "22137627834",
+            "op": "-3371589956"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.026111968075,
+        "op": 0.001443058869,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002782",
+          "rawKRW": {
+            "sales": "26111968075",
+            "op": "1443058869"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.042693374869,
+        "op": 0.003344707517,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114001373",
+          "rawKRW": {
+            "sales": "42693374869",
+            "op": "3344707517",
+            "net": "7783779854"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.020609469832,
+        "op": -0.002197672237,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002782",
+          "rawKRW": {
+            "sales": "20609469832",
+            "op": "-2197672237"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.020856501644,
+        "op": -0.001652130956,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002782",
+          "rawKRW": {
+            "sales": "20856501644",
+            "op": "-1652130956",
+            "net": "-946447140"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000475",
+      "published": "2026.06.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002782",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002782",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000475",
+      "published": "2026.06.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002782",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002782",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001373",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000475",
+      "published": "2026.06.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20260619000475",
+      "label": "그리드위즈 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000475",
+      "published": "2026.06.19",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20251114001373",
+      "label": "그리드위즈 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001373",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "그리드위즈 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002782",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "ESS",
+      "desc": "전기를 저장했다가 필요할 때 공급하는 에너지저장장치입니다."
+    },
+    {
+      "name": "태양광",
+      "desc": "햇빛을 태양전지 등으로 전기에너지로 바꾸는 발전 방식입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "전장",
+      "desc": "자동차 등의 전기·전자 장치와 관련 시스템을 뜻합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "정산",
+      "desc": "거래 후 받을 돈과 지급할 돈을 계산해 실제로 지급하는 과정입니다."
+    },
+    {
+      "name": "수요관리",
+      "desc": "전력시장 요구 등에 맞춰 고객의 전기 사용량을 조절하는 서비스입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

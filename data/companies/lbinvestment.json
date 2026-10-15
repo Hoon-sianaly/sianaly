@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lbinvestment",
+    "name": "LB인베스트먼트",
+    "ticker": "309960",
+    "rank": 743,
+    "type": "벤처투자·펀드 운용"
+  },
+  "overview": {
+    "short": "성장기업에 투자하는 벤처캐피털",
+    "summary": "성장기업에 투자하는 벤처캐피털입니다. 벤처투자조합과 사모펀드를 결성·운용합니다.",
+    "takeaways": [
+      "성장기업에 투자하는 벤처캐피털입니다.",
+      "벤처투자조합과 사모펀드를 결성·운용합니다.",
+      "펀드 관리보수와 성과보수에서 수익이 발생합니다.",
+      "투자기업의 가치 변동과 회수 성과도 영향을 줍니다.",
+      "운용자산 규모와 실현된 투자성과를 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "펀드 운용",
+        "desc": "출자금을 모아 성장기업에 투자합니다."
+      },
+      {
+        "name": "운용 보수",
+        "desc": "펀드 관리보수와 조건에 따른 성과보수를 받습니다."
+      },
+      {
+        "name": "투자 회수",
+        "desc": "상장·지분 매각 등으로 투자금을 회수합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "신규 결성",
+        "desc": "새 펀드 결성과 관리보수 기반을 확인합니다."
+      },
+      {
+        "title": "회수 성과",
+        "desc": "투자기업 매각·상장과 성과보수 발생을 봅니다."
+      },
+      {
+        "title": "평가 손익",
+        "desc": "현금 회수와 장부상 가치 변동을 구분합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.15"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.027582188617,
+        "op": 0.008463269974,
+        "net": 0.006421973511,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000708",
+          "rawKRW": {
+            "sales": "27582188617",
+            "op": "8463269974",
+            "net": "6421973511"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.030257378187,
+        "op": 0.010852356019,
+        "net": 0.008577972938,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000708",
+          "rawKRW": {
+            "sales": "30257378187",
+            "op": "10852356019",
+            "net": "8577972938"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.026415002944,
+        "op": 0.009665347388,
+        "net": 0.01243331896,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318000708",
+          "rawKRW": {
+            "sales": "26415002944",
+            "op": "9665347388",
+            "net": "12433318960"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.005294244845,
+        "op": 0.001018871563,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002232",
+          "rawKRW": {
+            "sales": "5294244845",
+            "op": "1018871563"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.006884705259,
+        "op": 0.002641997957,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002232",
+          "rawKRW": {
+            "sales": "6884705259",
+            "op": "2641997957"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.008142128381,
+        "op": 0.005284689104,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114001399",
+          "rawKRW": {
+            "sales": "8142128381",
+            "op": "5284689104",
+            "net": "4638131363"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.01311740067,
+        "op": 0.0021111856,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002232",
+          "rawKRW": {
+            "sales": "13117400670",
+            "op": "2111185600"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.008536884635,
+        "op": 0.003435016386,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002232",
+          "rawKRW": {
+            "sales": "8536884635",
+            "op": "3435016386",
+            "net": "3153890216"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.15"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000708",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002232",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002232",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000708",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002232",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000708",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002232",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001399",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20260318000708",
+      "label": "LB인베스트먼트 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000708",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "report-20251114001399",
+      "label": "LB인베스트먼트 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001399",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "business",
+      "label": "LB인베스트먼트 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002232",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.15"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "벤처투자",
+      "desc": "성장 가능성이 있는 초기·신생 기업 등에 자금을 투자하는 사업입니다."
+    },
+    {
+      "name": "사모펀드",
+      "desc": "제한된 투자자의 자금을 모아 운용하는 펀드입니다."
+    },
+    {
+      "name": "자성",
+      "desc": "자석의 힘에 반응하거나 자기력을 띠는 성질입니다."
+    },
+    {
+      "name": "투자조합",
+      "desc": "여러 출자자의 자금을 모아 기업 등에 투자하고 수익을 배분하는 투자기구입니다."
+    },
+    {
+      "name": "관리보수",
+      "desc": "펀드·조합 등을 관리·운용한 대가로 받는 보수입니다."
+    },
+    {
+      "name": "성과보수",
+      "desc": "정해진 투자 성과 등의 조건을 달성할 때 받는 추가 보수입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
