@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daechangsteel",
+    "name": "대창스틸",
+    "ticker": "140520",
+    "rank": 1222,
+    "type": "철강 가공"
+  },
+  "overview": {
+    "short": "철강재를 가공해 산업 고객에 공급합니다.",
+    "summary": "철강재를 가공해 산업 고객에 공급합니다. 냉연·열연·도금강판 등이 주요 제품입니다.",
+    "takeaways": [
+      "철강재를 가공해 산업 고객에 공급합니다.",
+      "냉연·열연·도금강판 등이 주요 제품입니다.",
+      "절단·가공 후 고객 규격에 맞춰 판매합니다.",
+      "이중바닥재와 알루미늄·부동산 사업도 있습니다.",
+      "현재 실적은 철강 사업의 비중이 큽니다."
+    ],
+    "business": [
+      {
+        "name": "철강 가공",
+        "desc": "강판을 절단·가공해 공급합니다."
+      },
+      {
+        "name": "이중바닥재",
+        "desc": "건물용 바닥 시스템을 판매합니다."
+      },
+      {
+        "name": "기타 사업",
+        "desc": "알루미늄·부동산 관련 사업이 있습니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "철강 수요",
+        "desc": "차량·가전·건설 고객 주문이 중요합니다."
+      },
+      {
+        "title": "가격 차이",
+        "desc": "철강 매입가·판매가·재고를 확인해야 합니다."
+      },
+      {
+        "title": "가공 비용",
+        "desc": "물류·설비·인력 비용이 이익을 좌우합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.16"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.419753133733,
+        "op": 0.005729081726,
+        "net": 0.002110280841,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000588",
+          "rawKRW": {
+            "sales": "419753133733",
+            "op": "5729081726",
+            "net": "2110280841"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.402449365609,
+        "op": 0.002965845039,
+        "net": 0.000763448315,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000588",
+          "rawKRW": {
+            "sales": "402449365609",
+            "op": "2965845039",
+            "net": "763448315"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.398574191699,
+        "op": 0.003355298284,
+        "net": 0.002856401397,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000588",
+          "rawKRW": {
+            "sales": "398574191699",
+            "op": "3355298284",
+            "net": "2856401397"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.095880958533,
+        "op": 0.000750947293,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260813000657",
+          "rawKRW": {
+            "sales": "95880958533",
+            "op": "750947293"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.104707794398,
+        "op": -0.000907061139,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000657",
+          "rawKRW": {
+            "sales": "104707794398",
+            "op": "-907061139"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.097471402831,
+        "op": 0.001616502626,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251113000847",
+          "rawKRW": {
+            "sales": "97471402831",
+            "op": "1616502626",
+            "net": "2165884812"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.103022042294,
+        "op": -0.000008758442,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260813000657",
+          "rawKRW": {
+            "sales": "103022042294",
+            "op": "-8758442"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.125312950843,
+        "op": 0.003231014654,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813000657",
+          "rawKRW": {
+            "sales": "125312950843",
+            "op": "3231014654",
+            "net": "1987875337"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.16"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000588",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000657",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000657",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000588",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000657",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000588",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000657",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251113000847",
+      "published": "2025.11.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20260323000588",
+      "label": "대창스틸 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000588",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20251113000847",
+      "label": "대창스틸 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251113000847",
+      "published": "2025.11.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "business",
+      "label": "대창스틸 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000657",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "냉연",
+      "desc": "금속을 상대적으로 낮은 온도에서 압연해 두께·표면·정밀도를 조절하는 공정입니다."
+    },
+    {
+      "name": "강판",
+      "desc": "철강을 판 모양으로 가공한 소재입니다. 강관·자동차 부품 등 여러 제품의 원료로 사용합니다."
+    },
+    {
+      "name": "도금",
+      "desc": "금속 표면에 다른 금속을 입혀 부식 방지 등 특성을 더하는 가공입니다."
+    },
+    {
+      "name": "도금강판",
+      "desc": "부식을 줄이기 위해 표면에 아연 등 금속층을 입힌 강판입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "열연",
+      "desc": "금속을 높은 온도에서 눌러 판·봉 등 형태로 만드는 가공입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
