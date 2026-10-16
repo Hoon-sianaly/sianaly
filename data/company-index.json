@@ -20328,6 +20328,182 @@
       "file": "jiransecurity.json",
       "market": "KOSDAQ",
       "alias": "지란지교시큐리티"
+    },
+    {
+      "key": "sejoong",
+      "name": "세중",
+      "ticker": "039310",
+      "file": "sejoong.json",
+      "market": "KOSDAQ",
+      "alias": "세중"
+    },
+    {
+      "key": "innogene",
+      "name": "이노진",
+      "ticker": "344860",
+      "file": "innogene.json",
+      "market": "KOSDAQ",
+      "alias": "이노진"
+    },
+    {
+      "key": "irem",
+      "name": "이렘",
+      "ticker": "009730",
+      "file": "irem.json",
+      "market": "KOSDAQ",
+      "alias": "이렘"
+    },
+    {
+      "key": "senergy",
+      "name": "에스에너지",
+      "ticker": "095910",
+      "file": "senergy.json",
+      "market": "KOSDAQ",
+      "alias": "에스에너지"
+    },
+    {
+      "key": "speco",
+      "name": "스페코",
+      "ticker": "013810",
+      "file": "speco.json",
+      "market": "KOSDAQ",
+      "alias": "스페코"
+    },
+    {
+      "key": "spolytech",
+      "name": "에스폴리텍",
+      "ticker": "050760",
+      "file": "spolytech.json",
+      "market": "KOSDAQ",
+      "alias": "에스폴리텍"
+    },
+    {
+      "key": "toebox",
+      "name": "토박스코리아",
+      "ticker": "215480",
+      "file": "toebox.json",
+      "market": "KOSDAQ",
+      "alias": "토박스코리아"
+    },
+    {
+      "key": "stco",
+      "name": "에스티오",
+      "ticker": "098660",
+      "file": "stco.json",
+      "market": "KOSDAQ",
+      "alias": "에스티오"
+    },
+    {
+      "key": "enbio",
+      "name": "인바이오",
+      "ticker": "352940",
+      "file": "enbio.json",
+      "market": "KOSDAQ",
+      "alias": "인바이오"
+    },
+    {
+      "key": "poongjeonpharma",
+      "name": "풍전약품",
+      "ticker": "298060",
+      "file": "poongjeonpharma.json",
+      "market": "KOSDAQ",
+      "alias": "풍전약품 에스씨엠생명과학"
+    },
+    {
+      "key": "oa",
+      "name": "오아",
+      "ticker": "342870",
+      "file": "oa.json",
+      "market": "KOSDAQ",
+      "alias": "오아"
+    },
+    {
+      "key": "pnctech",
+      "name": "피앤씨테크",
+      "ticker": "237750",
+      "file": "pnctech.json",
+      "market": "KOSDAQ",
+      "alias": "피앤씨테크"
+    },
+    {
+      "key": "bifido",
+      "name": "비피도",
+      "ticker": "238200",
+      "file": "bifido.json",
+      "market": "KOSDAQ",
+      "alias": "비피도"
+    },
+    {
+      "key": "cleanandscience",
+      "name": "크린앤사이언스",
+      "ticker": "045520",
+      "file": "cleanandscience.json",
+      "market": "KOSDAQ",
+      "alias": "크린앤사이언스"
+    },
+    {
+      "key": "mcnulty",
+      "name": "한국맥널티",
+      "ticker": "222980",
+      "file": "mcnulty.json",
+      "market": "KOSDAQ",
+      "alias": "한국맥널티"
+    },
+    {
+      "key": "sonosquare",
+      "name": "소노스퀘어",
+      "ticker": "007720",
+      "file": "sonosquare.json",
+      "market": "KOSDAQ",
+      "alias": "소노스퀘어"
+    },
+    {
+      "key": "ranix",
+      "name": "라닉스",
+      "ticker": "317120",
+      "file": "ranix.json",
+      "market": "KOSDAQ",
+      "alias": "라닉스"
+    },
+    {
+      "key": "tnent",
+      "name": "티엔엔터테인먼트",
+      "ticker": "131100",
+      "file": "tnent.json",
+      "market": "KOSDAQ",
+      "alias": "티엔엔터테인먼트"
+    },
+    {
+      "key": "invenia",
+      "name": "인베니아",
+      "ticker": "079950",
+      "file": "invenia.json",
+      "market": "KOSDAQ",
+      "alias": "인베니아"
+    },
+    {
+      "key": "billions",
+      "name": "빌리언스",
+      "ticker": "044480",
+      "file": "billions.json",
+      "market": "KOSDAQ",
+      "alias": "빌리언스"
+    },
+    {
+      "key": "valofe",
+      "name": "밸로프",
+      "ticker": "331520",
+      "file": "valofe.json",
+      "market": "KOSDAQ",
+      "alias": "밸로프"
+    },
+    {
+      "key": "daehospecialsteel",
+      "name": "대호특수강",
+      "ticker": "021040",
+      "file": "daehospecialsteel.json",
+      "market": "KOSDAQ",
+      "alias": "대호특수강"
     }
   ],
   "rankingSnapshot": {
@@ -20383,9 +20559,9 @@
   "marketRankingSnapshots": {
     "KOSDAQ": {
       "asOf": "2026.10.16",
-      "capturedAt": "2026-10-16T12:10:15.910Z",
+      "capturedAt": "2026-10-16T12:46:03.749Z",
       "source": "https://m.stock.naver.com/api/stocks/marketValue/KOSDAQ?page=1&pageSize=100",
-      "note": "조회 시점 코스닥 시가총액 목록의 다음 100개 미등록 종목을 추가했습니다. 순위는 변동될 수 있습니다."
+      "note": "조회 시점 코스닥 시가총액 목록의 다음 22개 미등록 종목을 추가했습니다. 순위는 변동될 수 있습니다."
     }
   },
   "marketCoverage": {
@@ -20395,11 +20571,11 @@
       "preferredStocks": 111
     },
     "KOSDAQ": {
-      "stocks": 1600,
-      "companies": 1600,
+      "stocks": 1622,
+      "companies": 1622,
       "asOf": "2026-10-16",
       "listedCompaniesAtSnapshot": 1819,
-      "note": "1600개 등록. 전체 시장 완성 집계가 아닙니다."
+      "note": "1622개 등록. 전체 시장 완성 집계가 아닙니다."
     }
   }
 }

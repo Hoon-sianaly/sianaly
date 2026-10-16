@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-10-16",
-  "stocks": 2541,
-  "issuers": 2430,
-  "automaticIssuers": 2253,
+  "stocks": 2563,
+  "issuers": 2452,
+  "automaticIssuers": 2275,
   "fullyValidatedIssuers": 1180,
-  "partiallyValidatedIssuers": 1073,
+  "partiallyValidatedIssuers": 1095,
   "reviewIssuers": 177,
   "sharedStocks": 111,
   "companies": [
@@ -146830,6 +146830,2074 @@
             "report": "11014",
             "status": "validated",
             "receipt": "20251114001654"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "sejoong",
+      "ticker": "039310",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001716",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003748",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001716",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003748",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003748",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001716"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003748"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003748"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001716"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003748"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001716"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003748"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000825"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "innogene",
+      "ticker": "344860",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001547",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260317000491",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001547",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260317000491",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001547",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000491"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001547"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001547"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000491"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001547"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000491"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001547"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000363"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "irem",
+      "ticker": "009730",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003102",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001654",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003102",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001654",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003102",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001654"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003102"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003102"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001654"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003102"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001654"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003102"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002276"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "senergy",
+      "ticker": "095910",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260320000812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003270",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003270",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260320000812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003270",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320000812"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003270"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003270"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260320000812"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003270"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260320000812"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003270"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002668"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "speco",
+      "ticker": "013810",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003255",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001092",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003255",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001092",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003255",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001092"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003255"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003255"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001092"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003255"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001092"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003255"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002255"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spolytech",
+      "ticker": "050760",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000159",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000252",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000159",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000252",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000159",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000252"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000159"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000159"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000252"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000159"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000252"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000159"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000066"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "toebox",
+      "ticker": "215480",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000608",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813001259",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813001259",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813001259",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000608",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11014",
+          "receipt": "20251114000343",
+          "reason": "Quarter series differs from official cumulative scope; original Q3 held for reconciliation"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000608"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813001259"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001259"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000608"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813001259"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000608"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813001259"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "stco",
+      "ticker": "098660",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002151",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000928",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002151",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000928",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002151",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000928"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002151"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002151"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000928"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002151"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000928"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002151"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001127"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "enbio",
+      "ticker": "352940",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813000903",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318000963",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000903",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318000963",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813000903",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000963"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000903"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000903"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000963"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813000903"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000963"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000903"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000879"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "poongjeonpharma",
+      "ticker": "298060",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001708",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260316001672",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001708",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260316001672",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001708",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001672"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001708"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001708"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316001672"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001708"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316001672"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001708"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000934"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "oa",
+      "ticker": "342870",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000957",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000957",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002688",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002688",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002688",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000957"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002688"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002688"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002688"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114003018"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000957"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000957"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002688"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "pnctech",
+      "ticker": "237750",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003816",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001712",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003816",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001712",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003816",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001712"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003816"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003816"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001712"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003816"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001712"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003816"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000347"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "bifido",
+      "ticker": "238200",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001247",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260311003760",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001247",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260311003760",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001247",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260311003760"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001247"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001247"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260311003760"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001247"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260311003760"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001247"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001699"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "cleanandscience",
+      "ticker": "045520",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260812000060",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000283",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260812000060",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000283",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260812000060",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000283"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260812000060"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260812000060"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000283"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260812000060"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000283"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260812000060"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000123"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "mcnulty",
+      "ticker": "222980",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000537",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000958",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000537",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000958",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000537",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000958"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000537"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000537"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000958"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000537"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000958"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000537"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002232"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "sonosquare",
+      "ticker": "007720",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001106",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813001277",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001106",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813001277",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813001277",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001106"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813001277"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813001277"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001106"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813001277"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001106"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813001277"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251112000206"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "ranix",
+      "ticker": "317120",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003333",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318000717",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003333",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318000717",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003333",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000717"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003333"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003333"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000717"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003333"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000717"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003333"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001751"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "tnent",
+      "ticker": "131100",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001027",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003355",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001027",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003355",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003355",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001027"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003355"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003355"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001027"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003355"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001027"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003355"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002677"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "invenia",
+      "ticker": "079950",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002964",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260703000398",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002964",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260703000398",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002964",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260703000398"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002964"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002964"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260703000398"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002964"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260703000398"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002964"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002174"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "billions",
+      "ticker": "044480",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002411",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002411",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002411",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000776",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000776",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11014",
+          "receipt": "20251114002026",
+          "reason": "Quarter series differs from official cumulative scope; original Q3 held for reconciliation"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000776"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002411"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002411"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000776"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002411"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000776"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002411"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "valofe",
+      "ticker": "331520",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260810000674",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001700",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260810000674",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001700",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260810000674",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001700"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260810000674"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260810000674"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001700"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260810000674"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001700"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260810000674"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002495"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "daehospecialsteel",
+      "ticker": "021040",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260317000646",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002563",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260317000646",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002563",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002563",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-16",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000646"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002563"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002563"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000646"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002563"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002563"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002475"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000646"
           }
         ],
         "reasons": [
