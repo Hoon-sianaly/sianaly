@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "daejooindustry",
+    "name": "대주산업",
+    "ticker": "003310",
+    "rank": 1017,
+    "type": "배합사료"
+  },
+  "overview": {
+    "short": "가축과 반려동물 등에 먹이는 사료를 만드는 회사",
+    "summary": "가축과 반려동물 등에 먹이는 사료를 만드는 회사입니다. 축종·사육 목적에 맞춘 배합사료를 공급합니다.",
+    "takeaways": [
+      "가축과 반려동물 등에 먹이는 사료를 만드는 회사입니다.",
+      "축종·사육 목적에 맞춘 배합사료를 공급합니다.",
+      "반려동물 간식·캔 상품도 판매합니다.",
+      "연결 사업에는 사료첨가제 등 관련 제품이 있습니다.",
+      "수입 원료와 환율·판매단가를 함께 봐야 합니다."
+    ],
+    "business": [
+      {
+        "name": "배합사료",
+        "desc": "동물의 종류·용도에 맞는 사료를 생산합니다."
+      },
+      {
+        "name": "반려동물 제품",
+        "desc": "간식과 고양이 캔 등 상품을 공급합니다."
+      },
+      {
+        "name": "첨가제",
+        "desc": "동물약품·사료 원료 등 연결 사업이 있습니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "사육·판매",
+        "desc": "축산·반려동물 고객의 주문량이 매출에 영향을 줍니다."
+      },
+      {
+        "title": "원료·환율",
+        "desc": "국제 곡물·원료 가격과 수입 환율을 확인해야 합니다."
+      },
+      {
+        "title": "단가·가동",
+        "desc": "판매가격 조정과 생산 가동률이 이익을 좌우합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.16"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.105014557386,
+        "op": 0.007684213963,
+        "net": 0.010149663332,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001116",
+          "rawKRW": {
+            "sales": "105014557386",
+            "op": "7684213963",
+            "net": "10149663332"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.106038654753,
+        "op": 0.010025103418,
+        "net": 0.008315526894,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001116",
+          "rawKRW": {
+            "sales": "106038654753",
+            "op": "10025103418",
+            "net": "8315526894"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.100983295727,
+        "op": 0.010635427841,
+        "net": 0.006758876148,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001116",
+          "rawKRW": {
+            "sales": "100983295727",
+            "op": "10635427841",
+            "net": "6758876148"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.025549495654,
+        "op": 0.002575311463,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000694",
+          "rawKRW": {
+            "sales": "25549495654",
+            "op": "2575311463"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.024901312872,
+        "op": 0.002082666412,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000694",
+          "rawKRW": {
+            "sales": "24901312872",
+            "op": "2082666412"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.024003083203,
+        "op": 0.00250416602,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114000969",
+          "rawKRW": {
+            "sales": "24003083203",
+            "op": "2504166020",
+            "net": "1873834008"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.024987373471,
+        "op": 0.001965318485,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000694",
+          "rawKRW": {
+            "sales": "24987373471",
+            "op": "1965318485"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.025268745952,
+        "op": 0.002558077189,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000694",
+          "rawKRW": {
+            "sales": "25268745952",
+            "op": "2558077189",
+            "net": "1945336540"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.16"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001116",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000694",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000694",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001116",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000694",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001116",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000694",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000969",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20260318001116",
+      "label": "대주산업 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001116",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20251114000969",
+      "label": "대주산업 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000969",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "business",
+      "label": "대주산업 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000694",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산시설이 사용할 수 있는 능력에 비해 실제로 얼마나 사용됐는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "배합사료",
+      "desc": "가축에 필요한 영양 성분을 맞추기 위해 여러 원료를 섞어 만든 사료입니다."
+    },
+    {
+      "name": "첨가제",
+      "desc": "기본 재료에 기능·품질 개선을 위해 소량 넣는 물질입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

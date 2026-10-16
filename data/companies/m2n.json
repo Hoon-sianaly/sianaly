@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "m2n",
+    "name": "엠투엔",
+    "ticker": "033310",
+    "rank": 1085,
+    "type": "차량 부품·스틸드럼"
+  },
+  "overview": {
+    "short": "차량 공조 부품과 금속 포장용기를 만드는 회사",
+    "summary": "차량 공조 부품과 금속 포장용기를 만드는 회사입니다. 전장 사업은 냉난방용 센서 등 부품을 공급합니다.",
+    "takeaways": [
+      "차량 공조 부품과 금속 포장용기를 만드는 회사입니다.",
+      "전장 사업은 냉난방용 센서 등 부품을 공급합니다.",
+      "스틸드럼은 석유화학 제품의 포장에 쓰입니다.",
+      "신약 개발 사업도 추진합니다.",
+      "주력 제조 매출과 개발 사업 비용을 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "차량 전장",
+        "desc": "HVAC용 센서 등 공조 시스템 부품을 만듭니다."
+      },
+      {
+        "name": "스틸드럼",
+        "desc": "철강제 포장용기를 생산·유통합니다."
+      },
+      {
+        "name": "신약 개발",
+        "desc": "치료제 후보 관련 연구·개발 사업이 있습니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "고객 생산",
+        "desc": "차량·석유화학 고객의 생산이 매출에 영향을 줍니다."
+      },
+      {
+        "title": "원재료 가격",
+        "desc": "냉연강판·동·전자부품 원가를 확인해야 합니다."
+      },
+      {
+        "title": "사업별 비용",
+        "desc": "공장 가동·제품 구성과 신약 투자비를 나눠 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.16"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.076995441504,
+        "op": 0.003209549957,
+        "net": 0.003239297722,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001092",
+          "rawKRW": {
+            "sales": "76995441504",
+            "op": "3209549957",
+            "net": "3239297722"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.091210150195,
+        "op": 0.003743595073,
+        "net": 0.003514797943,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001092",
+          "rawKRW": {
+            "sales": "91210150195",
+            "op": "3743595073",
+            "net": "3514797943"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.086549524568,
+        "op": 0.00276834483,
+        "net": -0.000596488882,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001092",
+          "rawKRW": {
+            "sales": "86549524568",
+            "op": "2768344830",
+            "net": "-596488882"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.021577003488,
+        "op": 0.000768437072,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000413",
+          "rawKRW": {
+            "sales": "21577003488",
+            "op": "768437072"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.02415935195,
+        "op": 0.001510477236,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000413",
+          "rawKRW": {
+            "sales": "24159351950",
+            "op": "1510477236"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.021935037217,
+        "op": 0.000709144883,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000413",
+          "rawKRW": {
+            "sales": "21935037217",
+            "op": "709144883"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.022849230168,
+        "op": 0.000659267482,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000413",
+          "rawKRW": {
+            "sales": "22849230168",
+            "op": "659267482",
+            "net": "4278935277"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.16"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001092",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000413",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000413",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001092",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000413",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001092",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000413",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "business",
+      "label": "엠투엔 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000413",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "냉연",
+      "desc": "금속을 상대적으로 낮은 온도에서 압연해 두께·표면·정밀도를 조절하는 공정입니다."
+    },
+    {
+      "name": "공조",
+      "desc": "공간의 온도·습도·공기 상태 등을 조절하는 설비·기술입니다."
+    },
+    {
+      "name": "강판",
+      "desc": "철강을 판 모양으로 가공한 소재입니다. 강관·자동차 부품 등 여러 제품의 원료로 사용합니다."
+    },
+    {
+      "name": "냉연강판",
+      "desc": "금속 소재를 상온에 가까운 상태에서 압연해 두께와 표면 등을 가공한 강판입니다."
+    },
+    {
+      "name": "전장",
+      "desc": "자동차 등에 들어가는 전기·전자 장치와 부품을 뜻합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
