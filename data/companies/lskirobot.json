@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "lskirobot",
+    "name": "LSK아이로봇",
+    "ticker": "091970",
+    "rank": 1493,
+    "type": "도전성 소재·주방기기"
+  },
+  "overview": {
+    "short": "정전기를 제어하는 소재를 공급합니다.",
+    "summary": "정전기를 제어하는 소재를 공급합니다. 도전성 플라스틱 시트·수지 등을 만듭니다.",
+    "takeaways": [
+      "정전기를 제어하는 소재를 공급합니다.",
+      "도전성 플라스틱 시트·수지 등을 만듭니다.",
+      "기능성 보호 필름·원료 기술이 있습니다.",
+      "주방기기 판매도 연결 사업에 포함됩니다.",
+      "회사 이름과 실제 소재·유통 매출을 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "도전성 소재",
+        "desc": "정전기 제어용 플라스틱·원료를 공급합니다."
+      },
+      {
+        "name": "기능성 소재",
+        "desc": "보호 필름·테이프·코팅 관련 기술을 개발합니다."
+      },
+      {
+        "name": "주방기기",
+        "desc": "주방기기 상품·제품을 판매합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "소재 주문",
+        "desc": "전자·포장 등 고객의 소재 구매가 중요합니다."
+      },
+      {
+        "title": "사업 구성",
+        "desc": "소재·주방기기 매출과 개발 품목을 확인해야 합니다."
+      },
+      {
+        "title": "공급 비용",
+        "desc": "화학 원료·상품 매입·환율이 이익을 좌우합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.16"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.042401462051,
+        "op": -0.001843750735,
+        "net": -0.006114538212,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001457",
+          "rawKRW": {
+            "sales": "42401462051",
+            "op": "-1843750735",
+            "net": "-6114538212"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.055510197733,
+        "op": 0.000177820407,
+        "net": -0.003701905727,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001457",
+          "rawKRW": {
+            "sales": "55510197733",
+            "op": "177820407",
+            "net": "-3701905727"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.0501112779,
+        "op": -0.000262421464,
+        "net": -0.010206415759,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323001457",
+          "rawKRW": {
+            "sales": "50111277900",
+            "op": "-262421464",
+            "net": "-10206415759"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.008504280286,
+        "op": -0.001106172098,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260813001265",
+          "rawKRW": {
+            "sales": "8504280286",
+            "op": "-1106172098"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.007712304651,
+        "op": -0.001023356103,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001265",
+          "rawKRW": {
+            "sales": "7712304651",
+            "op": "-1023356103"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.013338127529,
+        "op": 0.00085565027,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114000680",
+          "rawKRW": {
+            "sales": "13338127529",
+            "op": "855650270",
+            "net": "-101568396"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.008560860872,
+        "op": -0.001386364184,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260813001265",
+          "rawKRW": {
+            "sales": "8560860872",
+            "op": "-1386364184"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.010208498925,
+        "op": -0.001135821362,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260813001265",
+          "rawKRW": {
+            "sales": "10208498925",
+            "op": "-1135821362",
+            "net": "3247538836"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.16"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001457",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001265",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001265",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001457",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001265",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001457",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001265",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000680",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20260323001457",
+      "label": "LSK아이로봇 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001457",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20251114000680",
+      "label": "LSK아이로봇 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000680",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "business",
+      "label": "LSK아이로봇 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001265",
+      "published": "2026.08.13",
+      "verifiedAt": "2026.10.16"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "필름",
+      "desc": "얇은 막 형태의 소재로, 포장재와 전자 부품 등의 재료로 사용합니다."
+    },
+    {
+      "name": "수지",
+      "desc": "플라스틱·접착제·도료 등을 만드는 고분자 재료를 뜻합니다."
+    },
+    {
+      "name": "기능성",
+      "desc": "일반 제품의 기본 용도에 더해 특정 성능이나 사용 목적에 맞춘 특성을 뜻합니다."
+    },
+    {
+      "name": "코팅",
+      "desc": "소재 표면에 다른 물질을 얇게 입히는 공정입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "정전기",
+      "desc": "물체에 전하가 쌓여 있다가 순간적으로 방전될 수 있는 전기입니다."
+    },
+    {
+      "name": "도전성",
+      "desc": "전기가 통하는 성질입니다. 정전기를 제어하는 소재에도 활용됩니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
