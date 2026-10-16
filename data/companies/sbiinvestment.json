@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "sbiinvestment",
+    "name": "SBI인베스트먼트",
+    "ticker": "019550",
+    "rank": 954,
+    "type": "벤처투자 운용"
+  },
+  "overview": {
+    "short": "벤처기업에 투자하는 펀드를 운용하는 회사",
+    "summary": "벤처기업에 투자하는 펀드를 운용하는 회사입니다. 출자금을 모아 투자조합 등을 결성합니다.",
+    "takeaways": [
+      "벤처기업에 투자하는 펀드를 운용하는 회사입니다.",
+      "출자금을 모아 투자조합 등을 결성합니다.",
+      "운용보수와 투자손익 등에서 영업수익이 발생합니다.",
+      "투자기업의 성장과 상장·매각으로 투자금을 회수합니다.",
+      "펀드 규모와 회사의 실제 수익·현금 회수는 구분해야 합니다."
+    ],
+    "business": [
+      {
+        "name": "펀드 운용",
+        "desc": "벤처투자조합과 사모투자 등을 운용합니다."
+      },
+      {
+        "name": "운용 보수",
+        "desc": "펀드 관리와 성과 조건에 따라 보수를 받습니다."
+      },
+      {
+        "name": "투자·회수",
+        "desc": "기업에 투자하고 상장·매각 등으로 자금을 회수합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "펀드 결성",
+        "desc": "신규 출자와 운용자산이 보수 기반에 영향을 줍니다."
+      },
+      {
+        "title": "회수 성과",
+        "desc": "투자기업의 상장·매각과 성과보수를 확인해야 합니다."
+      },
+      {
+        "title": "평가 손익",
+        "desc": "장부상 평가 변화와 실제 현금 회수를 구분해야 합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.16"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.029276094479,
+        "op": 0.00853918295,
+        "net": 0.008318470367,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001599",
+          "rawKRW": {
+            "sales": "29276094479",
+            "op": "8539182950",
+            "net": "8318470367"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.028682710829,
+        "op": 0.011742142586,
+        "net": 0.011389847353,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001599",
+          "rawKRW": {
+            "sales": "28682710829",
+            "op": "11742142586",
+            "net": "11389847353"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.032707572126,
+        "op": 0.009323017602,
+        "net": 0.009324127663,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001599",
+          "rawKRW": {
+            "sales": "32707572126",
+            "op": "9323017602",
+            "net": "9324127663"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.003569248472,
+        "op": 0.000909752328,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000253",
+          "rawKRW": {
+            "sales": "3569248472",
+            "op": "909752328"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.004305192419,
+        "op": 0.001093768293,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000253",
+          "rawKRW": {
+            "sales": "4305192419",
+            "op": "1093768293"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.004953494045,
+        "op": 0.002063431266,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114000478",
+          "rawKRW": {
+            "sales": "4953494045",
+            "op": "2063431266",
+            "net": "2065017424"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.008109221172,
+        "op": 0.004941943761,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000253",
+          "rawKRW": {
+            "sales": "8109221172",
+            "op": "4941943761"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.005213371787,
+        "op": 0.00261834549,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000253",
+          "rawKRW": {
+            "sales": "5213371787",
+            "op": "2618345490",
+            "net": "2547293361"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "ifrs-full_ProfitLossFromOperatingActivities"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.16"
+    },
+    "metrics": {
+      "sales": {
+        "label": "영업수익 (투자·운용)",
+        "help": "펀드 운용보수와 투자손익 등 영업 수익입니다. 펀드 규모나 투자 원금 회수 총액이 아닙니다."
+      },
+      "op": {
+        "label": "영업이익",
+        "help": "투자·운용 수익에서 영업비용을 반영한 이익 또는 손실입니다."
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001599",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000253",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000253",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001599",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000253",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001599",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000253",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000478",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20260318001599",
+      "label": "SBI인베스트먼트 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001599",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20251114000478",
+      "label": "SBI인베스트먼트 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000478",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "business",
+      "label": "SBI인베스트먼트 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000253",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "벤처투자",
+      "desc": "성장 가능성이 있는 초기·신생 기업 등에 자금을 투자하는 사업입니다."
+    },
+    {
+      "name": "운용보수",
+      "desc": "펀드 등의 투자·운용 업무를 맡은 회사에 지급하는 비용입니다."
+    },
+    {
+      "name": "투자조합",
+      "desc": "여러 출자자의 자금을 모아 기업 등에 투자하고 수익을 배분하는 투자기구입니다."
+    },
+    {
+      "name": "성과보수",
+      "desc": "정해진 투자 성과 등의 조건을 달성할 때 받는 추가 보수입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "영업수익",
+      "desc": "회사의 주된 영업활동에서 발생하는 수익입니다. 금융·투자 회사에서는 대출 원금이나 펀드 규모와 구분합니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}
