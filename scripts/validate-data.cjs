@@ -63,7 +63,9 @@ function validateFinancials(record, seen = []) {
  }
  if (verified) assert.match(financials.verification.verifiedAt, /^\d{4}\.\d{2}\.\d{2}$/);
  for (const field of ["annual", "quarterly"]) {
-  assert.ok(Array.isArray(financials[field]) && (financials[field].length || awaiting), `No ${field} rows: ${key}`);
+  const firstAnnualPending=field==='annual'&&financials.availability?.status==='first-annual-pending';
+  if(firstAnnualPending){assert.ok(financials.quarterly.length);assert.ok(financials.availability.reason?.trim());assert.ok(financials.availability.sourceIds?.length);assert.ok(financials.availability.sourceIds.every(id=>record.sources.some(s=>s.id===id&&s.url)));}
+  assert.ok(Array.isArray(financials[field]) && (financials[field].length || awaiting || firstAnnualPending), `No ${field} rows: ${key}`);
   const periods = new Set();
   for (const row of financials[field]) {
    assert.ok(Number.isInteger(row.year) && row.year >= 1900 && row.year <= 2200);

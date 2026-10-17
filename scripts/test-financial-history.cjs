@@ -1,5 +1,10 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert/strict'),root=path.resolve(__dirname,'..'),ctx=vm.createContext({}),catalog=require('../data/company-index.json'),registry=require('../data/dart-companies.json'),keys=new Set(catalog.companies.map(c=>c.key)),issuers=new Map(registry.companies.filter(c=>!c.companyRef).map(c=>[c.key,c]));
 vm.runInContext(fs.readFileSync(path.join(root,'financial-periods.js'),'utf8'),ctx);
+ctx.shortPeriodCompany={annual:[{year:2025,sales:0,op:-1,partialPeriod:true,reportPeriod:'2025.01.08–2025.12.31'}],allQuarters:[{year:2025,quarter:2,sales:0,op:-1,partialPeriod:true,reportPeriod:'2025.04.08–2025.06.30'},{year:2026,quarter:2,sales:0,op:-2,reportPeriod:'2026.04–06'}]};
+const shortPeriods=vm.runInContext('standardFinancialRows(shortPeriodCompany)',ctx);
+assert.equal(shortPeriods.annual.find(r=>r.year===2025).sales,null);
+assert.equal(shortPeriods.quarterly.find(r=>r.year===2025&&r.quarter===2).sales,null);
+assert.equal(shortPeriods.quarterly.find(r=>r.year===2026&&r.quarter===2).sales,0);
 async function checkHistoryLoader(){
  const loadContext=vm.createContext({fetch:async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(path.join(root,url.split('?')[0]),'utf8'))})});
  vm.runInContext(fs.readFileSync(path.join(root,'company-data.js'),'utf8'),loadContext);

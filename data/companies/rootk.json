@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "rootk",
+    "name": "루트K",
+    "ticker": "195990",
+    "rank": 1697,
+    "type": "공작기계·장비"
+  },
+  "overview": {
+    "short": "소형 공작기계와 연결 장비 사업 등을 운영하는 회사",
+    "summary": "소형 공작기계와 연결 장비 사업 등을 운영하는 회사입니다. 신약 관련 권리·개발 사업은 장비 판매 실적과 구분해서 봐야 합니다.",
+    "takeaways": [
+      "소형 공작기계와 연결 장비 사업 등을 운영하는 회사입니다.",
+      "신약 관련 권리·개발 사업은 장비 판매 실적과 구분해서 봐야 합니다.",
+      "소형 머시닝센터와 자동공구교환장치 등 관련 제품을 공급합니다.",
+      "연결 회사가 반도체·디스플레이·전지 관련 장비와 모듈을 공급합니다.",
+      "항체 신약 관련 권리와 연구개발 사업을 추진합니다."
+    ],
+    "business": [
+      {
+        "name": "공작기계",
+        "desc": "소형 머시닝센터와 자동공구교환장치 등 관련 제품을 공급합니다."
+      },
+      {
+        "name": "산업 장비",
+        "desc": "연결 회사가 반도체·디스플레이·전지 관련 장비와 모듈을 공급합니다."
+      },
+      {
+        "name": "바이오 개발",
+        "desc": "항체 신약 관련 권리와 연구개발 사업을 추진합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "설비 주문",
+        "desc": "공작기계·산업 장비 고객의 투자와 납기·검수가 중요합니다."
+      },
+      {
+        "title": "제작 원가",
+        "desc": "장비별 부품·외주 가공·개발 비용이 이익에 영향을 줍니다."
+      },
+      {
+        "title": "바이오 진행",
+        "desc": "신약 개발·권리 사업의 진행과 자금 부담을 장비 본업과 따로 봐야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.16"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.025375405459,
+        "op": -0.008807316159,
+        "net": -0.025742047377,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000905",
+          "rawKRW": {
+            "sales": "25375405459",
+            "op": "-8807316159",
+            "net": "-25742047377"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.031663085394,
+        "op": -0.010206548561,
+        "net": -0.015629483396,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000905",
+          "rawKRW": {
+            "sales": "31663085394",
+            "op": "-10206548561",
+            "net": "-15629483396"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.0319227918,
+        "op": -0.009281936003,
+        "net": -0.048919928977,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260323000905",
+          "rawKRW": {
+            "sales": "31922791800",
+            "op": "-9281936003",
+            "net": "-48919928977"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.00887157594,
+        "op": -0.003263617535,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002799",
+          "rawKRW": {
+            "sales": "8871575940",
+            "op": "-3263617535"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.009116828993,
+        "op": -0.002524555424,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002799",
+          "rawKRW": {
+            "sales": "9116828993",
+            "op": "-2524555424"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.007870507491,
+        "op": -0.001701012624,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114002660",
+          "rawKRW": {
+            "sales": "7870507491",
+            "op": "-1701012624",
+            "net": "-206166930"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.007885588393,
+        "op": -0.00226045912,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814002799",
+          "rawKRW": {
+            "sales": "7885588393",
+            "op": "-2260459120"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.009018536856,
+        "op": -0.004111526035,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814002799",
+          "rawKRW": {
+            "sales": "9018536856",
+            "op": "-4111526035",
+            "net": "-5845784414"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.16"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000905",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002799",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002799",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000905",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002799",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000905",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002799",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114002660",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20260323000905",
+      "label": "루트K 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323000905",
+      "published": "2026.03.23",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20251114002660",
+      "label": "루트K 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114002660",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "business",
+      "label": "루트K 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002799",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.16"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "항체",
+      "desc": "특정 표적에 결합하는 단백질로, 의약품의 치료·전달 기술에도 쓰입니다."
+    },
+    {
+      "name": "디스플레이",
+      "desc": "정보나 영상을 보여주는 화면 장치 또는 화면 패널을 뜻합니다."
+    },
+    {
+      "name": "연구개발",
+      "desc": "새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다."
+    },
+    {
+      "name": "검수",
+      "desc": "납품한 제품·장비가 계약 조건에 맞는지 고객이 확인하는 절차입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "모듈",
+      "desc": "특정 기능을 수행하도록 여러 부품을 결합한 구성 단위입니다."
+    },
+    {
+      "name": "머시닝센터",
+      "desc": "여러 공구를 바꾸며 금속 등을 자동으로 가공하는 공작기계입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

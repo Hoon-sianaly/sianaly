@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "iokenm",
+    "name": "아이오케이이엔엠",
+    "ticker": "078860",
+    "rank": 1674,
+    "type": "엔터테인먼트"
+  },
+  "overview": {
+    "short": "연예인 매니지먼트를 중심으로 콘텐츠 사업을 운영하는 회사",
+    "summary": "연예인 매니지먼트를 중심으로 콘텐츠 사업을 운영하는 회사입니다. 영업 활동 손익과 투자 관련 손익을 구분해서 봐야 합니다.",
+    "takeaways": [
+      "연예인 매니지먼트를 중심으로 콘텐츠 사업을 운영하는 회사입니다.",
+      "영업 활동 손익과 투자 관련 손익을 구분해서 봐야 합니다.",
+      "배우·방송인·가수의 방송·광고 등 활동을 지원합니다.",
+      "음반·음원 제작과 유통 사업을 운영합니다.",
+      "영상 콘텐츠 제작과 관련 사업을 수행합니다."
+    ],
+    "business": [
+      {
+        "name": "매니지먼트",
+        "desc": "배우·방송인·가수의 방송·광고 등 활동을 지원합니다."
+      },
+      {
+        "name": "음악",
+        "desc": "음반·음원 제작과 유통 사업을 운영합니다."
+      },
+      {
+        "name": "영상 제작",
+        "desc": "영상 콘텐츠 제작과 관련 사업을 수행합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "소속 인력 활동",
+        "desc": "방송·광고 출연 계약과 활동량이 매출에 영향을 줍니다."
+      },
+      {
+        "title": "콘텐츠 성과",
+        "desc": "음원·영상 제작비와 판매·유통 수익을 함께 봐야 합니다."
+      },
+      {
+        "title": "투자·연결 손익",
+        "desc": "투자 자산 손익과 자회사 정리 등 변화를 본업 손익과 구분해야 합니다."
+      }
+    ],
+    "financialNote": "연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "consolidated",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.16"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.021624929538,
+        "op": -0.006297873596,
+        "net": -0.021648765344,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001338",
+          "rawKRW": {
+            "sales": "21624929538",
+            "op": "-6297873596",
+            "net": "-21648765344"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.024102439439,
+        "op": -0.006467640163,
+        "net": -0.021384231151,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001338",
+          "rawKRW": {
+            "sales": "24102439439",
+            "op": "-6467640163",
+            "net": "-21384231151"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.012227719936,
+        "op": -0.008022887227,
+        "net": -0.017409328374,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260319001338",
+          "rawKRW": {
+            "sales": "12227719936",
+            "op": "-8022887227",
+            "net": "-17409328374"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.003807749044,
+        "op": -0.002140533728,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20261013000327",
+          "rawKRW": {
+            "sales": "3807749044",
+            "op": "-2140533728"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.002496814509,
+        "op": -0.00182344561,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20261013000327",
+          "rawKRW": {
+            "sales": "2496814509",
+            "op": "-1823445610"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.003153898955,
+        "op": -0.001151088562,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114002127",
+          "rawKRW": {
+            "sales": "3153898955",
+            "op": "-1151088562",
+            "net": "-1487644552"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.00098122667,
+        "op": -0.001382479774,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20261013000327",
+          "rawKRW": {
+            "sales": "981226670",
+            "op": "-1382479774"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.002759116205,
+        "op": -0.000746210646,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20261013000327",
+          "rawKRW": {
+            "sales": "2759116205",
+            "op": "-746210646"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.16"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001338",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000327",
+      "published": "2026.10.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000327",
+      "published": "2026.10.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001338",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000327",
+      "published": "2026.10.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001338",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000327",
+      "published": "2026.10.13",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114002127",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20260319001338",
+      "label": "아이오케이이엔엠 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319001338",
+      "published": "2026.03.19",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "report-20251114002127",
+      "label": "아이오케이이엔엠 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114002127",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "business",
+      "label": "아이오케이이엔엠 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261013000327",
+      "published": "2026.10.13",
+      "verifiedAt": "2026.10.16"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "연결 기준",
+      "desc": "회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다."
+    },
+    {
+      "name": "콘텐츠",
+      "desc": "영상·음악·공연·글 등 이용자에게 제공하는 창작물과 정보입니다."
+    },
+    {
+      "name": "재분류",
+      "desc": "사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

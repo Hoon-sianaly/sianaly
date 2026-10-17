@@ -64,7 +64,7 @@ function context(key, transform, failed = false) {
   assert.ok(!out.includes("주가와 밸류에이션"),entry.key);
   assert.ok(out.includes("공식 자료") && !out.includes("발표 null"),entry.key);
   const record=JSON.parse(fs.readFileSync(path.join(root,"data/companies",entry.file),"utf8"));
-  if(record.financials.metrics){
+  if(record.financials.metrics&&!pending){
    for(const metric of Object.values(record.financials.metrics)) {
     assert.ok(out.includes(`<figcaption>${metric.label}</figcaption>`),`${entry.key}: chart metric`);
     assert.ok(out.includes(`<th scope="col">${metric.label}</th>`),`${entry.key}: table metric`);
