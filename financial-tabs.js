@@ -52,16 +52,26 @@ function initFinancialTabs(company, renderChart, renderSources, renderInsights) 
   reading?.remove();
   const insights = panel.querySelector('.insight-grid');
   const insightNote = panel.querySelector('.insight-note');
+  let periodNotes;
+  const notes=(period==='quarter'?fixed.quarterly:fixed.annual).filter(row=>row.missingStatus);
+  if(notes.length){
+   const groups=new Map();
+   for(const row of notes){const group=groups.get(row.missingReason)||[];group.push(row.periodLabel);groups.set(row.missingReason,group);}
+   periodNotes=document.createElement('div');periodNotes.className='period-availability-notes';
+   periodNotes.setAttribute('aria-label','빈 기간 안내');
+   for(const [reason,periods]of groups){const p=document.createElement('p'),b=document.createElement('b');b.textContent=periods.join(' · ');p.append(b,document.createElement('br'),document.createTextNode(reason));periodNotes.append(p);}
+   const stamp=document.createElement('small');stamp.textContent='확인일 '+company.financialPeriodReviewAsOf;periodNotes.append(stamp);
+  }
   const more = document.createElement('details');
   more.className = 'performance-details';
   more.innerHTML = '<summary>실적표와 공식 자료 보기</summary>';
   for (const node of [...panel.childNodes]) {
    if (![charts, reading, insights, insightNote].includes(node)) more.append(node);
   }
-  panel.replaceChildren(...[charts, insights, insightNote, more].filter(Boolean));
+  panel.replaceChildren(...[charts, periodNotes, insights, insightNote, more].filter(Boolean));
   const original=originalTables[period];
   const originalRows=period==='quarter'?company.allQuarters:company.annual;
-  const mismatched=originalRows.some(row=>{const d=financialDateRange(row);return row.durationMonths===6||(d&&(period==='annual'?(d.start!==1||d.end!==12||d.year!==d.endYear):((d.end-d.start)!==2||d.year!==d.endYear||![1,4,7,10].includes(d.start))));});
+  const mismatched=originalRows.some(row=>{const d=financialDateRange(row);return row.partialPeriod||row.durationMonths===6||(d&&(period==='annual'?(d.start!==1||d.end!==12||d.year!==d.endYear):((d.end-d.start)!==2||d.year!==d.endYear||![1,4,7,10].includes(d.start))));});
   if(original&&mismatched){
    original.querySelector('tbody').innerHTML=originalRows.map(row=>'<tr><td>'+esc(row.reportPeriod||row.periodLabel||(row.quarter?`${row.year}년 ${row.quarter}분기`:String(row.year)))+'</td><td>'+formatFinancialHighlight(row.sales,company.financialCurrency)+'</td><td>'+formatFinancialHighlight(row.op,company.financialCurrency)+'</td></tr>').join('');
    const actual=document.createElement('details');actual.className='actual-periods';actual.innerHTML='<summary>다른 결산 기간의 공시 실적 보기</summary>';actual.append(original);actual.insertAdjacentHTML('beforeend',renderSources([...new Set(originalRows.flatMap(row=>row.sourceIds))]));more.append(actual);

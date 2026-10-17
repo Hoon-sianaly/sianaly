@@ -8,6 +8,8 @@ function financialDateRange(row){
 }
 function standardFinancialRows(company){
  const reason=(year,quarter)=>{
+  const note=(company.financialPeriodNotes||[]).find(n=>n.year===year&&n.quarter===quarter);
+  if(note)return note.reason;
   if(company.financialAvailability)return company.financialAvailability.reason;
   if(company.historyStatus==='baseline-changed')return '정정된 공시와 과거 비교값 대조 필요';
   if(company.historyStatus==='unavailable')return '과거 실적 자료를 불러오지 못함';
@@ -20,11 +22,13 @@ function standardFinancialRows(company){
  const quarterly=STANDARD_FINANCIAL_QUARTERS.map(([year,quarter])=>{
   const start=quarter*3-2,end=quarter*3;
   const row=company.allQuarters.find(row=>{if(row.partialPeriod||row.durationMonths&&row.durationMonths!==3)return false;const dates=financialDateRange(row);return dates?dates.year===year&&dates.endYear===year&&dates.start===start&&dates.end===end:row.year===year&&row.quarter===quarter&&!/반기|6개월/.test(company.quarterlyTerm);});
-  return row?{...row,year,quarter,periodLabel:`${year}년 ${quarter}분기`}:{year,quarter,periodLabel:`${year}년 ${quarter}분기`,sales:null,op:null,sourceIds:[],missingReason:reason(year,quarter)};
+  const note=(company.financialPeriodNotes||[]).find(n=>n.year===year&&n.quarter===quarter);
+  return row?{...row,year,quarter,periodLabel:`${year}년 ${quarter}분기`}:{year,quarter,periodLabel:`${year}년 ${quarter}분기`,sales:null,op:null,sourceIds:note?.sourceIds||[],missingStatus:note?.status,missingReason:reason(year,quarter)};
  });
  const annual=STANDARD_FINANCIAL_YEARS.map(year=>{
   const row=company.annual.find(row=>{if(row.partialPeriod)return false;const dates=financialDateRange(row);return dates?dates.year===year&&dates.endYear===year&&dates.start===1&&dates.end===12:row.year===year&&!/(?:3|6)개월/.test(company.annualTerm||'');});
-  return row?{...row,periodLabel:String(year),period:String(year)}:{year,periodLabel:String(year),period:String(year),sales:null,op:null,sourceIds:[],missingReason:reason(year)};
+  const note=(company.financialPeriodNotes||[]).find(n=>n.year===year&&n.quarter===undefined);
+  return row?{...row,periodLabel:String(year),period:String(year)}:{year,periodLabel:String(year),period:String(year),sales:null,op:null,sourceIds:note?.sourceIds||[],missingStatus:note?.status,missingReason:reason(year)};
  });
  return {annual,quarterly};
 }

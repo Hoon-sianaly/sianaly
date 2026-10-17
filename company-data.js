@@ -1,7 +1,10 @@
 // Bump this release when deploying catalog or company JSON changes.
-const COMPANY_DATA_VERSION = "20261017-kosdaq1822-1";
+const COMPANY_DATA_VERSION = "20261017-period-review-1";
+// Regenerate this lookup from financial-period-review.json when publishing a review.
+const FINANCIAL_PERIOD_REVIEW_KEYS = new Set("ablecnc,acryl,aekyungchemical,agentai,ajnetworks,akholdings,alicopharm,alphaai,altsmart,anamelectronics,apr,aribiolab,ascendio,asea,aseacement,asiaseed,asiatech,ast,atec,atechsolution,axvis,banglim,benotnr,bigwaverobotics,billions,bimatrix,biobijou,biodyn,bituen,bluecom,bobcat,bonne,bowonchemical,brils,bubang,bumyang,camusenc,canaftx,carriepower,celestra,cellid,celltrion,cginvites,chaebi,chemtros,chrisfnc,citech,cjcheil,clobot,cnplus,contec,contentree,cosmorobotics,cosriggerglobal,cpsystem,crystalsynthetic,csacosmic,cubeent,cuckoohomesys,curacle,cutech,cxi,daeati,daegudepartment,daehanship,daehansteel,daehoal,daesanfnb,daesang,daesangholdings,daesungindustrial,daewonkangup,daishininfo,daishinvaluereit,dasandmc,dbinsurance,delicious,deokyangenergen,derkwoo,dhautolead,dhautonex,digitalgraphics,districtheating,dnauto,dndplatformreit,dongwonmobility,dongwoofarm,doosan,doosancorp,drtech,dscinvestment,dya,dyd,dynamicdesign,dynamicsolution,e1,ecoglow,ecoplastic,ecovolt,ecstelecom,egis,elp,embrain,emni,emro,enchem,enertork,englewoodlab,enplus,episholdings,ereitkokrep,esrkendall,estarco,esteem,ewoncomfortech,exem,exicurehitron,exiongroup,ezcaretech,fantagio,fescaro,finecircuit,fingerstory,flask,forcs,gemvax,ghoststudio,gitsn,globaltaxfree,globaltechnology,grt,gs,gspnl,gst,haechitech,hana,hanchang,hanchangindustry,handsome,hanexpress,hanjinkal,hanpass,hansaemk,hansbiomed,hanulsemiconductor,hanwhaaero,hanwhacorp,hanwhaengine,hanwhagalleria,hanwhageneral,hanwhalife,hanwhamachinery,hanwhareit,hanwhasecurities,hanwhasystems,hanwhavision,hbinvestment,hdconstruction,hdhyundai,heungguoil,heungkukfire,hfr,hhi,hlgenomics,hmm,hshyosung,humasis,hwaseungcorporation,hydrolithium,hynix,hyosungonb,hyundai,hyundaibioscience,hyundaicorpholdings,hyundaiezwel,hyundaigf,hyundaipharm,hyungjielite,ibk,icraft,icure,igisresidence,igisvalueplusreit,ildongholdings,iljindiamond,iljindisplay,imbiologics,immunoncia,infinitt,ingeniatherapeutics,interm,intronbio,inventera,iscreamedu,isuchemical,isuspecialty,itchem,itechkorea,itmsemiconductor,itoxi,jeilmns,jejubank,jincostech,jntc,joongangadvanced,jrglobalreit,jtc,jungdown,juseongcorp,justek,jwshinyak,kakao,kangstem,kb,kbif,kbiolabs,kbstarreit,kcc,kcgreenholdings,kctech,kepcotech,kga,kia,kidoindustry,kishin,kiwoom,knj,knrsystems,knsinc,kolonglobal,kolonholding,kolontissuegene,koramcolife,koramcotheonereit,koreaasset,koreacapital,koreaexportpackaging,koreafinancial,koreapetroleum,kpxchemical,krmotors,ktnasmedia,ktng,kumbi,kumyang,kxhitech,kyungnampharm,leadcorp,lemonhealthcare,lgchem,lge,lges,lginnotek,lig,linksolution,livsmed,logen,lotteinnovate,lottereit,lselectric,lsnetworks,lvmcholdings,lycom,m2n,madup,makinarocks,manhosteel,mapsrealty,marinesolution,masoncapital,masternreit,mdevice,melcon,mercury,mezoo,mirae,miraeglobalreit,miraemapsreit,mitech,mkelectron,mkif,moatech,mobirix,mobis,modelsolution,moonbaesteel,mot,namkwang,naraenanotech,naver,ncn,nearthlab,neopharm,neorigin,neosapience,neovue,neuromeka,neurophet,newon,nexadynamics,nhallwonreit,nhprimereit,nhsecurities,niceholdings,nisteel,noul,novarex,nowib,obzen,oneulenm,organictea,organoidscience,orientbio,osungadvanced,panent,parataxiskorea,pcl,peacepeacestudio,pearlabyss,peoplebio,pie,pnsrobotics,poled,poongkang,poscoint,prestigebiologics,prestigebiopharma,pureunbank,qaid,quadmedicine,quantumrail,recensmedical,remedi,rftech,rollingstone,rznomics,sambuto,samjinfood,samjinlnd,samryoong,samsungbio,samsungcard,samsungcnt,samsungel,samsungfire,samsungfnreit,samsunglife,samyangbiopharm,samyangholdings,sangsangin,sanigen,sanil,satoshiholdings,sconnect,sdi,sec,seculetter,sejongmedical,semifive,semits,sewonprecision,sfanexcel,sgasolutions,sgi,shiftup,shinhan,shinhanalpha,shinhanglobalreit,shinhanseobureit,shinsegaeintl,shinyoung,sillatrading,simpac,sk,skc,sketernix,skinnovation,skreit,sksquare,skylabs,solborn,solusadvanced,spac0004y0,spac0037t0,spac0041b0,spac0041j0,spac0041l0,spac0044k0,spac0054v0,spac0068y0,spac0071m0,spac0072z0,spac0088d0,spac0091w0,spac0093g0,spac0096b0,spac0096d0,spac0097f0,spac0098t0,spac0099w0,spac0099x0,spac0101c0,spac0105p0,spac0115h0,spac0129k0,spac0130d0,spac0130h0,spac0131d0,spac0132g0,spac0134x0,spac0164h0,spac0165x0,spac0197v0,spac0200g0,spac0209j0,spac466690,spac468760,spac473000,spac473950,spac474490,spac474660,spac474930,spac475240,spac475250,spac477340,spac477380,spac477470,spac477760,spac478110,spac478390,spac478440,spac479880,spac481890,spac482520,spac482680,spac482690,spac484130,spac486630,spac487360,spac487720,spac487830,spac488060,spac489210,spac489480,spac489730,spac492220,spac493790,spac496070,spac498390,ssr,stonebridgevc,stx,svinvestment,systeeltec,taekwang,taewon,taihanfiberoptics,teraview,theenm,thinkware,threebillion,threes,toebox,toolgen,topruntotal,tpcglobal,tstrillion,ubion,unitrontech,ust,vaiv,venueg,vidente,vitzronextech,willbes,wiseplanet,woori,wooritechnologyinvestment,yangjisa,ylab,yuanta,yuhwa,yujinrobot".split(","));
 const companyDataCache = new Map();
 const financialHistoryCache = new Map();
+let financialPeriodReviewPromise;
 let companyCatalogPromise;
 
 async function readCompanyJSON(path) {
@@ -48,6 +51,23 @@ async function addFinancialHistory(record) {
  } catch {return {...record,historyStatus:'unavailable'};}
 }
 
+async function addFinancialPeriodReview(record, canonical) {
+ const identity=record.financialHistoryIdentity||record.profile;
+ if(!FINANCIAL_PERIOD_REVIEW_KEYS.has(identity.key))return record;
+ try {
+  if(!financialPeriodReviewPromise)financialPeriodReviewPromise=readCompanyJSON('data/financial-period-review.json');
+  const data=await financialPeriodReviewPromise,review=data.companies[identity.key];
+  if(!review)return record;
+  if(review.ticker!==identity.ticker||review.basis!==canonical.basis||review.currency!==(canonical.currency||'KRW'))return record;
+  const anchor=row=>row?{sales:row.sales,op:row.op,sourceIds:row.sourceIds}:null;
+  const anchors={annual2025:anchor(canonical.annual.find(r=>r.year===2025)),quarter2025Q2:anchor(canonical.quarterly.find(r=>r.year===2025&&r.quarter===2)),quarter2026Q2:anchor(canonical.quarterly.find(r=>r.year===2026&&r.quarter===2))};
+  const compatible=JSON.stringify(anchors)===JSON.stringify(review.anchors);
+  const merge=(primary,extra)=>[...primary,...extra.filter(r=>!primary.some(p=>p.year===r.year&&p.quarter===r.quarter))];
+  const sources=[...(record.financialSources||record.sources),...(compatible?review.sources:[])];
+  return {...record,financials:{...record.financials,...(compatible?{annual:merge(record.financials.annual,review.annual),quarterly:merge(record.financials.quarterly,review.quarterly)}:{})},...(record.financialSources?{financialSources:sources}:{sources}),financialPeriodNotes:review.notes,financialPeriodReviewAsOf:data.asOf};
+ } catch {return record;}
+}
+
 function financialDisplayUnit(value, currency) {
  if(currency==="USD"||currency==="CNY"||currency==="JPY"||currency==="GBP"){const a=Math.abs(value),name=currency==="USD"?"달러":currency==="CNY"?"위안":currency==="GBP"?"파운드":"엔";if(a>=0.0001)return{label:"억"+name,factor:10000};if(a>=0.00000001)return{label:"만"+name,factor:100000000};return{label:name,factor:1000000000000};}
  const magnitude=Math.abs(value);
@@ -88,6 +108,8 @@ function companyPageData(record) {
   annualTerm:financials.annualTerm || "연간",
   annualSourceLabel:financials.annualSourceLabel || "공식 연간 실적 자료",
   financialAvailability:financials.availability || null,
+  financialPeriodNotes:record.financialPeriodNotes||[],
+  financialPeriodReviewAsOf:record.financialPeriodReviewAsOf,
   financialCurrency:financials.currency || "KRW",
   quarterlyCalendarNote:financials.quarterlyCalendarNote || "",
   quarterlyTerm:financials.quarterlyTerm || "분기",
@@ -113,6 +135,6 @@ function companyPageData(record) {
 
 async function loadCompanyData(key) {
  let record = await loadCompanyRecord(key);
- if(record)record=await addFinancialHistory(record);
+ if(record){const canonical=record.financials;record=await addFinancialHistory(record);record=await addFinancialPeriodReview(record,canonical);}
  return record ? companyPageData(record) : null;
 }
