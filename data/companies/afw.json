@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "afw",
+    "name": "에이에프더블류",
+    "ticker": "312610",
+    "rank": 1821,
+    "type": "금속 주조·용접 부품"
+  },
+  "overview": {
+    "short": "금속 주조·마찰용접 기술을 이용한 부품을 만드는 회사",
+    "summary": "금속 주조·마찰용접 기술을 이용한 부품을 만드는 회사입니다. 현재 매출은 다이캐스팅 비중이 크며 전장·전지 부품 확대도 확인해야 합니다.",
+    "takeaways": [
+      "금속 주조·마찰용접 기술을 이용한 부품을 만드는 회사입니다.",
+      "현재 매출은 다이캐스팅 비중이 크며 전장·전지 부품 확대도 확인해야 합니다.",
+      "알루미늄 정밀 주조와 자동차 등 산업용 부품 가공을 수행합니다.",
+      "친환경 차량 전장품 등에 쓰는 금속 접합·가공 제품을 공급합니다.",
+      "전지용 음극 단자와 기타 마찰용접 금속 가공품을 생산합니다."
+    ],
+    "business": [
+      {
+        "name": "다이캐스팅",
+        "desc": "알루미늄 정밀 주조와 자동차 등 산업용 부품 가공을 수행합니다."
+      },
+      {
+        "name": "마찰교반용접",
+        "desc": "친환경 차량 전장품 등에 쓰는 금속 접합·가공 제품을 공급합니다."
+      },
+      {
+        "name": "전지 단자·금속 가공",
+        "desc": "전지용 음극 단자와 기타 마찰용접 금속 가공품을 생산합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "자동차·전지 생산",
+        "desc": "고객 생산량과 신규 부품 채택이 중요합니다."
+      },
+      {
+        "title": "제품 전환",
+        "desc": "주조·전장·전지 단자의 판매 구성과 신규 양산 진행을 확인해야 합니다."
+      },
+      {
+        "title": "소재·설비 비용",
+        "desc": "알루미늄·구리 등 소재와 가공·설비 가동률이 수익성에 영향을 줍니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.17"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.006822097666,
+        "op": -0.004082720063,
+        "net": -0.003019611866,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260317000168",
+          "rawKRW": {
+            "sales": "6822097666",
+            "op": "-4082720063",
+            "net": "-3019611866"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.01574403734,
+        "op": -0.006475847079,
+        "net": -0.005612828409,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260317000168",
+          "rawKRW": {
+            "sales": "15744037340",
+            "op": "-6475847079",
+            "net": "-5612828409"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.013707979371,
+        "op": -0.009520851758,
+        "net": -0.010260326956,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260317000168",
+          "rawKRW": {
+            "sales": "13707979371",
+            "op": "-9520851758",
+            "net": "-10260326956"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.002808493933,
+        "op": -0.002032150145,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000551",
+          "rawKRW": {
+            "sales": "2808493933",
+            "op": "-2032150145"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.003646894141,
+        "op": -0.002472505445,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000551",
+          "rawKRW": {
+            "sales": "3646894141",
+            "op": "-2472505445"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.003304607418,
+        "op": -0.002477642665,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114000302",
+          "rawKRW": {
+            "sales": "3304607418",
+            "op": "-2477642665",
+            "net": "-2420491884"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.004271049376,
+        "op": -0.002023663403,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814000551",
+          "rawKRW": {
+            "sales": "4271049376",
+            "op": "-2023663403"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.006453923407,
+        "op": -0.002632275251,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814000551",
+          "rawKRW": {
+            "sales": "6453923407",
+            "op": "-2632275251",
+            "net": "-2609036402"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.17"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000168",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000551",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000551",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000168",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000551",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000168",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000551",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000302",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "report-20260317000168",
+      "label": "에이에프더블류 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000168",
+      "published": "2026.03.17",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "report-20251114000302",
+      "label": "에이에프더블류 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000302",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "business",
+      "label": "에이에프더블류 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000551",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "가동률",
+      "desc": "생산시설이 사용할 수 있는 능력에 비해 실제로 얼마나 사용됐는지를 나타내는 비율입니다."
+    },
+    {
+      "name": "양산",
+      "desc": "개발과 시험을 마친 제품을 판매·공급하기 위해 대량으로 생산하는 단계입니다."
+    },
+    {
+      "name": "전장",
+      "desc": "자동차 등에 들어가는 전기·전자 장치와 부품을 뜻합니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    },
+    {
+      "name": "다이캐스팅",
+      "desc": "녹인 금속을 금형에 주입해 정밀한 형태의 부품을 만드는 주조 방식입니다."
+    },
+    {
+      "name": "마찰교반용접",
+      "desc": "회전 공구의 마찰열과 압력을 이용해 금속을 녹이지 않고 접합하는 기술입니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

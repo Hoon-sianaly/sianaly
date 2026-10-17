@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-16",
-  "stocks": 2663,
-  "issuers": 2552,
-  "automaticIssuers": 2352,
+  "asOf": "2026-10-17",
+  "stocks": 2763,
+  "issuers": 2649,
+  "automaticIssuers": 2383,
   "fullyValidatedIssuers": 1180,
-  "partiallyValidatedIssuers": 1172,
-  "reviewIssuers": 200,
-  "sharedStocks": 111,
+  "partiallyValidatedIssuers": 1203,
+  "reviewIssuers": 266,
+  "sharedStocks": 114,
   "companies": [
     {
       "key": "samsung",
@@ -156434,6 +156434,3862 @@
           "신규 스팩; 자체 정기 손익계산서 확인 전"
         ]
       }
+    },
+    {
+      "key": "celestra",
+      "ticker": "352770",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "olipass",
+      "ticker": "244460",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0134x0",
+      "ticker": "0134X0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "nuvotec",
+      "ticker": "060260",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001632",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001572",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001572",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001632",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001572",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001632"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001632"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001632"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002798"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac498390",
+      "ticker": "498390",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "choapharm",
+      "ticker": "034940",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001421",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260313000763",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001421",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260313000763",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001421",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260313000763"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260313000763"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260313000763"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002271"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac481890",
+      "ticker": "481890",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0099x0",
+      "ticker": "0099X0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0164h0",
+      "ticker": "0164H0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac489730",
+      "ticker": "489730",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0096b0",
+      "ticker": "0096B0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0097f0",
+      "ticker": "0097F0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac478390",
+      "ticker": "478390",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0093g0",
+      "ticker": "0093G0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "medicox",
+      "ticker": "054180",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac492220",
+      "ticker": "492220",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0037t0",
+      "ticker": "0037T0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac482520",
+      "ticker": "482520",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "humaxholdings",
+      "ticker": "028080",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001706",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002034",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001706",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002034",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002034",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001706"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001706"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001706"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001263"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "bioinfra",
+      "ticker": "199730",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "비표준 손익 계정 이름; 원문 손익계산서 직접 대조"
+        ]
+      }
+    },
+    {
+      "key": "e8software",
+      "ticker": "418620",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002560",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002560",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002560",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001647"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001647"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001647"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001865"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac0054v0",
+      "ticker": "0054V0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0091w0",
+      "ticker": "0091W0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0131d0",
+      "ticker": "0131D0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "samyungenc",
+      "ticker": "065570",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "kukilcopper",
+      "ticker": "060480",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813000988",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260316000972",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000988",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260316000972",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813000988",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316000972"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000972"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000972"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000688"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac477760",
+      "ticker": "477760",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0041l0",
+      "ticker": "0041L0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0088d0",
+      "ticker": "0088D0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "ksindustry",
+      "ticker": "101000",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0132g0",
+      "ticker": "0132G0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac482690",
+      "ticker": "482690",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0071m0",
+      "ticker": "0071M0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac474660",
+      "ticker": "474660",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac474490",
+      "ticker": "474490",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac487360",
+      "ticker": "487360",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac477470",
+      "ticker": "477470",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0105p0",
+      "ticker": "0105P0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac496070",
+      "ticker": "496070",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "agentai",
+      "ticker": "060900",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260324000863",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260324000863",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20261012000291",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20261012000291",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20261012000291",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11014",
+          "receipt": "20251114002422",
+          "reason": "Quarter series differs from official cumulative scope; original Q3 held for reconciliation"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260324000863"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261012000291"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261012000291"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000863"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20261012000291"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000863"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261012000291"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "snw",
+      "ticker": "103230",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000331",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260320000704",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000331",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260320000704",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000331",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320000704"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260320000704"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260320000704"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000145"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac0129k0",
+      "ticker": "0129K0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "vessel",
+      "ticker": "177350",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000287",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001310",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000287",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001310",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000287",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001310"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001310"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001310"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002714"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac0096d0",
+      "ticker": "0096D0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "moalifeplus",
+      "ticker": "142760",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001264",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001264",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001264"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001264"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001264"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002842"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac486630",
+      "ticker": "486630",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0098t0",
+      "ticker": "0098T0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "estaid",
+      "ticker": "239340",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000678",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260316000918",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000678",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260316000918",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000678",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316000918"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000918"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000918"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001625"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac493790",
+      "ticker": "493790",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0004y0",
+      "ticker": "0004Y0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac489210",
+      "ticker": "489210",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "yesuntech",
+      "ticker": "250930",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002112",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001486",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002112",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001486",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002112",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001486"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001486"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001486"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000926"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "iscreamedu",
+      "ticker": "289010",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001021",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001021",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000061",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813000061",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813000061",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11014",
+          "receipt": "20251114002186",
+          "reason": "Quarter series differs from official cumulative scope; original Q3 held for reconciliation"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001021"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000061"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000061"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001021"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813000061"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001021"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000061"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "alphaai",
+      "ticker": "043100",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0130d0",
+      "ticker": "0130D0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac478110",
+      "ticker": "478110",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac466690",
+      "ticker": "466690",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "finetec",
+      "ticker": "131760",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002275",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002275",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002275",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000647"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000647"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000647"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001697"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "microdigital",
+      "ticker": "305090",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0041b0",
+      "ticker": "0041B0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "kukyounggnm",
+      "ticker": "006050",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002183",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260316001289",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002183",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260316001289",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002183",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001289"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316001289"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316001289"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001443"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "zinitix",
+      "ticker": "303030",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003023",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260325000837",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003023",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260325000837",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003023",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260325000837"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260325000837"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260325000837"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001110"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "wingsfoot",
+      "ticker": "335870",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003354",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001575",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003354",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001575",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003354",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001575"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001575"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001575"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000507"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "thumbage",
+      "ticker": "208640",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003569",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001744",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003569",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001744",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003569",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001744"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001744"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001744"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001850"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac488060",
+      "ticker": "488060",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "kemtech",
+      "ticker": "106080",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "csrepeater",
+      "ticker": "065770",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002989",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319001412",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002989",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319001412",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002989",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001412"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001412"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001412"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002320"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac484130",
+      "ticker": "484130",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac487720",
+      "ticker": "487720",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "yujintechnology",
+      "ticker": "240600",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003601",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319001162",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003601",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319001162",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003601",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001162"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001162"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001162"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002460"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac473950",
+      "ticker": "473950",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac487830",
+      "ticker": "487830",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac468760",
+      "ticker": "468760",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "moadata",
+      "ticker": "288980",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002441",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000530",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002441",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000530",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002441",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000530"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000530"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000530"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002451"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "sejints",
+      "ticker": "067770",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813000457",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260629000270",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000457",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260629000270",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813000457",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260629000270"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260629000270"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260629000270"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000378"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "spac0068y0",
+      "ticker": "0068Y0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0041j0",
+      "ticker": "0041J0",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "hyungjiglobal",
+      "ticker": "308100",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260929000687",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260929000687",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260929000687",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001332"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001332"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001332"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114003035"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "mobileappliance",
+      "ticker": "087260",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814004261",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260324000733",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814004261",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260324000733",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814004261",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260324000733"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000733"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000733"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001535"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "haesungindustrialpref",
+      "ticker": "03481K",
+      "mode": "shared",
+      "companyRef": "haesungindustrial"
+    },
+    {
+      "key": "spac475250",
+      "ticker": "475250",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "tobesoft",
+      "ticker": "079970",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac474930",
+      "ticker": "474930",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "siresources",
+      "ticker": "065420",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20261006000366",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319001295",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20261006000366",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319001295",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20261006000366",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001295"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001295"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001295"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000918"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "skonec",
+      "ticker": "276040",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac473000",
+      "ticker": "473000",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac475240",
+      "ticker": "475240",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "hyungjiinc",
+      "ticker": "011080",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000879",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260930000552",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000879",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260930000552",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260930000552",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000879"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000879"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002164"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000879"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      }
+    },
+    {
+      "key": "paionx",
+      "ticker": "900100",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "USD·IFRS 보고; 임의 원화 환산 없이 공식 원문 대조"
+        ]
+      }
+    },
+    {
+      "key": "pintel",
+      "ticker": "291810",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260812000620",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260312000904",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260812000620",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260312000904",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260812000620",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312000904"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260312000904"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260312000904"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000927"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "kdconstruction",
+      "ticker": "044180",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "carriepower",
+      "ticker": "313760",
+      "mode": "review",
+      "basis": "consolidated",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "itoxi",
+      "ticker": "052770",
+      "mode": "review",
+      "basis": "separate",
+      "blockedPeriods": [],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "kmpharm",
+      "ticker": "225430",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001718",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000724",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001718",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000724",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001718",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000724"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000724"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000724"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001058"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "shillasg",
+      "ticker": "025870",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001084",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001084",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001084",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001332"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001332"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001332"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001454"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "hanjuart",
+      "ticker": "058450",
+      "mode": "automatic",
+      "basis": "consolidated",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260810000615",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318000278",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260810000615",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318000278",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260810000615",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000278"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000278"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000278"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001809"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "goldns",
+      "ticker": "035290",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000934",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000991",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000934",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000991",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000934",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000991"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000991"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000991"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002266"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "daehospecialsteelpref",
+      "ticker": "021045",
+      "mode": "shared",
+      "companyRef": "daehospecialsteel"
+    },
+    {
+      "key": "afw",
+      "ticker": "312610",
+      "mode": "automatic",
+      "basis": "separate",
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000551",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260317000168",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000551",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260317000168",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000551",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ],
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000168"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000168"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000168"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000302"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      }
+    },
+    {
+      "key": "softcenpref",
+      "ticker": "032685",
+      "mode": "shared",
+      "companyRef": "softcen"
     }
   ]
 }

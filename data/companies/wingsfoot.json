@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "key": "wingsfoot",
+    "name": "윙스풋",
+    "ticker": "335870",
+    "rank": 1785,
+    "type": "신발 유통"
+  },
+  "overview": {
+    "short": "자체·라이선스·글로벌 브랜드 신발을 유통하는 회사",
+    "summary": "자체·라이선스·글로벌 브랜드 신발을 유통하는 회사입니다. 브랜드 계약과 상품별 재고·판매 채널 구성이 중요합니다.",
+    "takeaways": [
+      "자체·라이선스·글로벌 브랜드 신발을 유통하는 회사입니다.",
+      "브랜드 계약과 상품별 재고·판매 채널 구성이 중요합니다.",
+      "윙스풋과 국내 라이선스 브랜드 신발을 기획·판매합니다.",
+      "글로벌 브랜드 상품을 매입하거나 위탁받아 판매합니다.",
+      "백화점·아울렛·온라인·도매·홈쇼핑 등 판매망을 운영합니다."
+    ],
+    "business": [
+      {
+        "name": "자체·라이선스",
+        "desc": "윙스풋과 국내 라이선스 브랜드 신발을 기획·판매합니다."
+      },
+      {
+        "name": "글로벌 브랜드",
+        "desc": "글로벌 브랜드 상품을 매입하거나 위탁받아 판매합니다."
+      },
+      {
+        "name": "유통 채널",
+        "desc": "백화점·아울렛·온라인·도매·홈쇼핑 등 판매망을 운영합니다."
+      }
+    ],
+    "drivers": [
+      {
+        "title": "브랜드 수요",
+        "desc": "소비자 선호와 브랜드별 판매·계약 유지가 중요합니다."
+      },
+      {
+        "title": "재고·할인",
+        "desc": "시즌 재고와 할인·아울렛 판매가 수익성에 영향을 줍니다."
+      },
+      {
+        "title": "매입·채널 비용",
+        "desc": "상품 조달·환율과 물류·판매 수수료를 확인해야 합니다."
+      }
+    ],
+    "financialNote": "별도 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.",
+    "quarterlyNote": "공식 손익계산서의 각 3개월 실적입니다."
+  },
+  "market": {},
+  "financials": {
+    "unit": "KRW_trillion",
+    "basis": "separate",
+    "verification": {
+      "status": "verified",
+      "verifiedAt": "2026.10.17"
+    },
+    "annual": [
+      {
+        "year": 2023,
+        "sales": 0.051588558204,
+        "op": 0.003977336929,
+        "net": 0.00332836758,
+        "sourceIds": [
+          "dart-2023-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001575",
+          "rawKRW": {
+            "sales": "51588558204",
+            "op": "3977336929",
+            "net": "3328367580"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "sales": 0.046494380735,
+        "op": 0.001890337522,
+        "net": 0.001197282588,
+        "sourceIds": [
+          "dart-2024-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001575",
+          "rawKRW": {
+            "sales": "46494380735",
+            "op": "1890337522",
+            "net": "1197282588"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "sales": 0.041955687748,
+        "op": -0.002795720442,
+        "net": -0.001770678999,
+        "sourceIds": [
+          "dart-2025-annual"
+        ],
+        "dart": {
+          "receipt": "20260318001575",
+          "rawKRW": {
+            "sales": "41955687748",
+            "op": "-2795720442",
+            "net": "-1770678999"
+          },
+          "periodBasis": "annual",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "quarterly": [
+      {
+        "year": 2025,
+        "quarter": 1,
+        "sales": 0.00707239956,
+        "op": -0.000824957576,
+        "sourceIds": [
+          "dart-2025-q1"
+        ],
+        "dart": {
+          "receipt": "20260814003354",
+          "rawKRW": {
+            "sales": "7072399560",
+            "op": "-824957576"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.008722440473,
+        "op": -0.001059287671,
+        "sourceIds": [
+          "dart-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003354",
+          "rawKRW": {
+            "sales": "8722440473",
+            "op": "-1059287671"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2025,
+        "quarter": 3,
+        "sales": 0.007523600709,
+        "op": -0.000524217301,
+        "sourceIds": [
+          "dart-2025-q3"
+        ],
+        "dart": {
+          "receipt": "20251114000507",
+          "rawKRW": {
+            "sales": "7523600709",
+            "op": "-524217301",
+            "net": "-1239320429"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 1,
+        "sales": 0.001454627344,
+        "op": -0.004431004959,
+        "sourceIds": [
+          "dart-2026-q1"
+        ],
+        "dart": {
+          "receipt": "20260814003354",
+          "rawKRW": {
+            "sales": "1454627344",
+            "op": "-4431004959"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 2,
+        "sales": 0.001755851441,
+        "op": -0.001942454932,
+        "sourceIds": [
+          "dart-2026-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003354",
+          "rawKRW": {
+            "sales": "1755851441",
+            "op": "-1942454932",
+            "net": "1016651214"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      }
+    ],
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Validated financial statement metrics",
+      "updatedAt": "2026.10.17"
+    }
+  },
+  "sources": [
+    {
+      "id": "dart-2025-annual",
+      "label": "2025년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001575",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2026-q1",
+      "label": "2026년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003354",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2026-q2",
+      "label": "2026년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003354",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2024-annual",
+      "label": "2024년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001575",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2025-q2",
+      "label": "2025년 2분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003354",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2023-annual",
+      "label": "2023년 연간 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001575",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2025-q1",
+      "label": "2025년 1분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003354",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "dart-2025-q3",
+      "label": "2025년 3분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000507",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "report-20260318001575",
+      "label": "윙스풋 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001575",
+      "published": "2026.03.18",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "report-20251114000507",
+      "label": "윙스풋 공식 손익계산서 · 연간 및 누적 차감 근거",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114000507",
+      "published": "2025.11.14",
+      "verifiedAt": "2026.10.17"
+    },
+    {
+      "id": "business",
+      "label": "윙스풋 최신 정기보고서 · 사업의 내용",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003354",
+      "published": "2026.08.14",
+      "verifiedAt": "2026.10.17"
+    }
+  ],
+  "sectionSourceIds": {
+    "business": [
+      "business"
+    ],
+    "drivers": [
+      "business"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "별도 기준",
+      "desc": "자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다."
+    },
+    {
+      "name": "라이선스",
+      "desc": "브랜드·기술·콘텐츠 등의 권리를 계약 조건에 따라 사용할 수 있는 허락입니다."
+    },
+    {
+      "name": "유통 채널",
+      "desc": "제품이나 서비스를 고객에게 판매하는 경로입니다. 온라인몰·매장·도매·판매 대리점 등이 포함됩니다."
+    },
+    {
+      "name": "조달",
+      "desc": "사업에 필요한 자금·원료·제품 등을 확보하는 것입니다. 은행에서는 예금 등으로 운용 자금을 마련하는 의미로 쓰입니다."
+    },
+    {
+      "name": "반기",
+      "desc": "6개월 기간입니다. 반기 누적 실적은 한 분기의 3개월 실적과 다릅니다."
+    }
+  ],
+  "presentation": {
+    "compact": true,
+    "chartStyle": "comparison"
+  }
+}

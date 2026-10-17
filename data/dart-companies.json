@@ -170651,6 +170651,4378 @@
           "신규 스팩; 자체 정기 손익계산서 확인 전"
         ]
       }
+    },
+    {
+      "key": "celestra",
+      "ticker": "352770",
+      "corpCode": "01201970",
+      "corpName": "셀레스트라",
+      "modified": "20260928",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "olipass",
+      "ticker": "244460",
+      "corpCode": "01070149",
+      "corpName": "올리패스",
+      "modified": "20260814",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0134x0",
+      "ticker": "0134X0",
+      "corpCode": "01976418",
+      "corpName": "대신밸런스제20호스팩",
+      "modified": "20260605",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "nuvotec",
+      "ticker": "060260",
+      "corpCode": "00351375",
+      "corpName": "뉴보텍",
+      "modified": "20260609",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001632"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001632"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001632"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001572"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002798"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001632",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001572",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001572",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001632",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001572",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac498390",
+      "ticker": "498390",
+      "corpCode": "01881800",
+      "corpName": "한화플러스제5호스팩",
+      "modified": "20250320",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "choapharm",
+      "ticker": "034940",
+      "corpCode": "00231831",
+      "corpName": "조아제약",
+      "modified": "20240701",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260313000763"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260313000763"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260313000763"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001421"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002271"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001421",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260313000763",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001421",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260313000763",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001421",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac481890",
+      "ticker": "481890",
+      "corpCode": "01834194",
+      "corpName": "엔에이치스팩31호",
+      "modified": "20240726",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0099x0",
+      "ticker": "0099X0",
+      "corpCode": "01949584",
+      "corpName": "IBKS제25호스팩",
+      "modified": "20251219",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0164h0",
+      "ticker": "0164H0",
+      "corpCode": "01987779",
+      "corpName": "한국제16호스팩",
+      "modified": "20260630",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac489730",
+      "ticker": "489730",
+      "corpCode": "01857991",
+      "corpName": "디비금융제13호스팩",
+      "modified": "20241128",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0096b0",
+      "ticker": "0096B0",
+      "corpCode": "01946532",
+      "corpName": "삼성스팩12호",
+      "modified": "20251128",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0097f0",
+      "ticker": "0097F0",
+      "corpCode": "01949469",
+      "corpName": "미래에셋비전스팩10호",
+      "modified": "20251223",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac478390",
+      "ticker": "478390",
+      "corpCode": "01816268",
+      "corpName": "KB제29호스팩",
+      "modified": "20240621",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0093g0",
+      "ticker": "0093G0",
+      "corpCode": "01947072",
+      "corpName": "미래에셋비전스팩8호",
+      "modified": "20251127",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "medicox",
+      "ticker": "054180",
+      "corpCode": "00356839",
+      "corpName": "메디콕스",
+      "modified": "20260911",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac492220",
+      "ticker": "492220",
+      "corpCode": "01866926",
+      "corpName": "KB제31호스팩",
+      "modified": "20241212",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0037t0",
+      "ticker": "0037T0",
+      "corpCode": "01902990",
+      "corpName": "KB제32호스팩",
+      "modified": "20250704",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac482520",
+      "ticker": "482520",
+      "corpCode": "01845701",
+      "corpName": "교보16호스팩",
+      "modified": "20260902",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "humaxholdings",
+      "ticker": "028080",
+      "corpCode": "00219440",
+      "corpName": "휴맥스홀딩스",
+      "modified": "20260306",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001706"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001706"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001706"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002034"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001263"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001706",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002034",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001706",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002034",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002034",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "bioinfra",
+      "ticker": "199730",
+      "corpCode": "01110058",
+      "corpName": "바이오인프라",
+      "modified": "20230329",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "비표준 손익 계정 이름; 원문 손익계산서 직접 대조"
+        ]
+      }
+    },
+    {
+      "key": "e8software",
+      "ticker": "418620",
+      "corpCode": "01516890",
+      "corpName": "E8",
+      "modified": "20260424",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001647"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001647"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001647"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002560"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001865"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002560",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002560",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002560",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac0054v0",
+      "ticker": "0054V0",
+      "corpCode": "01931585",
+      "corpName": "엔에이치스팩32호",
+      "modified": "20260309",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0091w0",
+      "ticker": "0091W0",
+      "corpCode": "01945339",
+      "corpName": "신영스팩11호",
+      "modified": "20251124",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0131d0",
+      "ticker": "0131D0",
+      "corpCode": "01964246",
+      "corpName": "키움히어로제2호스팩",
+      "modified": "20260423",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "samyungenc",
+      "ticker": "065570",
+      "corpCode": "00288343",
+      "corpName": "삼영이엔씨",
+      "modified": "20250212",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "kukilcopper",
+      "ticker": "060480",
+      "corpCode": "00203847",
+      "corpName": "국일신동",
+      "modified": "20260408",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316000972"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000972"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000972"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000988"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000688"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813000988",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260316000972",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000988",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260316000972",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813000988",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac477760",
+      "ticker": "477760",
+      "corpCode": "01814589",
+      "corpName": "디비금융스팩12호",
+      "modified": "20240618",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0041l0",
+      "ticker": "0041L0",
+      "corpCode": "01906598",
+      "corpName": "하나35호스팩",
+      "modified": "20250806",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0088d0",
+      "ticker": "0088D0",
+      "corpCode": "01958111",
+      "corpName": "메리츠제1호스팩",
+      "modified": "20251215",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "ksindustry",
+      "ticker": "101000",
+      "corpCode": "00618410",
+      "corpName": "KS인더스트리",
+      "modified": "20260327",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0132g0",
+      "ticker": "0132G0",
+      "corpCode": "01985203",
+      "corpName": "교보20호스팩",
+      "modified": "20260409",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac482690",
+      "ticker": "482690",
+      "corpCode": "01845534",
+      "corpName": "대신밸런스제19호스팩",
+      "modified": "20241120",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0071m0",
+      "ticker": "0071M0",
+      "corpCode": "01935183",
+      "corpName": "삼성스팩11호",
+      "modified": "20260304",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac474660",
+      "ticker": "474660",
+      "corpCode": "01809569",
+      "corpName": "신한제12호스팩",
+      "modified": "20240710",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac474490",
+      "ticker": "474490",
+      "corpCode": "01804476",
+      "corpName": "유안타제16호스팩",
+      "modified": "20240502",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac487360",
+      "ticker": "487360",
+      "corpCode": "01853214",
+      "corpName": "신한제14호스팩",
+      "modified": "20260120",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac477470",
+      "ticker": "477470",
+      "corpCode": "01817249",
+      "corpName": "미래에셋비전스팩5호",
+      "modified": "20240619",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0105p0",
+      "ticker": "0105P0",
+      "corpCode": "01954832",
+      "corpName": "유진스팩12호",
+      "modified": "20251211",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac496070",
+      "ticker": "496070",
+      "corpCode": "01875146",
+      "corpName": "신한제16호스팩",
+      "modified": "20250529",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "agentai",
+      "ticker": "060900",
+      "corpCode": "00367695",
+      "corpName": "에이전트AI",
+      "modified": "20261016",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260324000863"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261012000291"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261012000291"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000863"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20261012000291"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000863"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261012000291"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260324000863",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260324000863",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20261012000291",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20261012000291",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20261012000291",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11014",
+          "receipt": "20251114002422",
+          "reason": "Quarter series differs from official cumulative scope; original Q3 held for reconciliation"
+        }
+      ]
+    },
+    {
+      "key": "snw",
+      "ticker": "103230",
+      "corpCode": "00137012",
+      "corpName": "에스앤더블류",
+      "modified": "20221205",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260320000704"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260320000704"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260320000704"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000331"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000145"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000331",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260320000704",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000331",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260320000704",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000331",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac0129k0",
+      "ticker": "0129K0",
+      "corpCode": "01963140",
+      "corpName": "신한제18호스팩",
+      "modified": "20260506",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "vessel",
+      "ticker": "177350",
+      "corpCode": "00813389",
+      "corpName": "베셀",
+      "modified": "20260504",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001310"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001310"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001310"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000287"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002714"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000287",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001310",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000287",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001310",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000287",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac0096d0",
+      "ticker": "0096D0",
+      "corpCode": "01946596",
+      "corpName": "미래에셋비전스팩9호",
+      "modified": "20251201",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "moalifeplus",
+      "ticker": "142760",
+      "corpCode": "00587925",
+      "corpName": "모아라이프플러스",
+      "modified": "20240417",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001264"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001264"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001264"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002812"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002842"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001264",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001264",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002812",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac486630",
+      "ticker": "486630",
+      "corpCode": "01851650",
+      "corpName": "KB제30호스팩",
+      "modified": "20240925",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0098t0",
+      "ticker": "0098T0",
+      "corpCode": "01949140",
+      "corpName": "교보19호스팩",
+      "modified": "20251212",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "estaid",
+      "ticker": "239340",
+      "corpCode": "01128622",
+      "corpName": "이스트에이드",
+      "modified": "20240513",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316000918"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000918"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316000918"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000678"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001625"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000678",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260316000918",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000678",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260316000918",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000678",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac493790",
+      "ticker": "493790",
+      "corpCode": "01872219",
+      "corpName": "유안타제17호스팩",
+      "modified": "20250123",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0004y0",
+      "ticker": "0004Y0",
+      "corpCode": "01884065",
+      "corpName": "디비금융제14호스팩",
+      "modified": "20250722",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac489210",
+      "ticker": "489210",
+      "corpCode": "01866528",
+      "corpName": "교보17호스팩",
+      "modified": "20241121",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "yesuntech",
+      "ticker": "250930",
+      "corpCode": "01166109",
+      "corpName": "예선테크",
+      "modified": "20260312",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001486"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001486"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001486"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002112"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000926"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002112",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001486",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002112",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001486",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002112",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "iscreamedu",
+      "ticker": "289010",
+      "corpCode": "00983934",
+      "corpName": "아이스크림에듀",
+      "modified": "20260605",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001021"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000061"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000061"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001021"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813000061"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001021"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000061"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001021",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001021",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000061",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813000061",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813000061",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11014",
+          "receipt": "20251114002186",
+          "reason": "Quarter series differs from official cumulative scope; original Q3 held for reconciliation"
+        }
+      ]
+    },
+    {
+      "key": "alphaai",
+      "ticker": "043100",
+      "corpCode": "00220109",
+      "corpName": "알파AI",
+      "modified": "20251128",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0130d0",
+      "ticker": "0130D0",
+      "corpCode": "01963520",
+      "corpName": "신한제17호스팩",
+      "modified": "20260401",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac478110",
+      "ticker": "478110",
+      "corpCode": "01815764",
+      "corpName": "이베스트스팩6호",
+      "modified": "20240712",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac466690",
+      "ticker": "466690",
+      "corpCode": "01784677",
+      "corpName": "키움히어로제1호스팩",
+      "modified": "20260320",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "finetec",
+      "ticker": "131760",
+      "corpCode": "00820352",
+      "corpName": "파인텍",
+      "modified": "20260206",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000647"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000647"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000647"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002275"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001697"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002275",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002275",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000647",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002275",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "microdigital",
+      "ticker": "305090",
+      "corpCode": "01267967",
+      "corpName": "마이크로디지탈",
+      "modified": "20250711",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac0041b0",
+      "ticker": "0041B0",
+      "corpCode": "01910324",
+      "corpName": "교보18호스팩",
+      "modified": "20250814",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "kukyounggnm",
+      "ticker": "006050",
+      "corpCode": "00104537",
+      "corpName": "국영지앤엠",
+      "modified": "20250326",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260316001289"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316001289"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260316001289"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002183"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001443"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002183",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260316001289",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002183",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260316001289",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002183",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "zinitix",
+      "ticker": "303030",
+      "corpCode": "01318933",
+      "corpName": "지니틱스",
+      "modified": "20261015",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260325000837"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260325000837"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260325000837"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003023"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001110"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003023",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260325000837",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003023",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260325000837",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003023",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "wingsfoot",
+      "ticker": "335870",
+      "corpCode": "01405585",
+      "corpName": "윙스풋",
+      "modified": "20260119",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001575"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001575"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001575"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003354"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000507"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003354",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001575",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003354",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001575",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003354",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "thumbage",
+      "ticker": "208640",
+      "corpCode": "01049422",
+      "corpName": "썸에이지",
+      "modified": "20251203",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001744"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001744"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001744"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003569"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001850"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003569",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001744",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003569",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001744",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003569",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac488060",
+      "ticker": "488060",
+      "corpCode": "01854392",
+      "corpName": "유진스팩11호",
+      "modified": "20241031",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "kemtech",
+      "ticker": "106080",
+      "corpCode": "00542898",
+      "corpName": "케이이엠텍",
+      "modified": "20260630",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "csrepeater",
+      "ticker": "065770",
+      "corpCode": "00303703",
+      "corpName": "CS",
+      "modified": "20260602",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001412"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001412"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001412"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002989"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002320"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002989",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319001412",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002989",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319001412",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002989",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac484130",
+      "ticker": "484130",
+      "corpCode": "01847550",
+      "corpName": "하나34호스팩",
+      "modified": "20241119",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac487720",
+      "ticker": "487720",
+      "corpCode": "01877126",
+      "corpName": "키움제10호스팩",
+      "modified": "20250228",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "yujintechnology",
+      "ticker": "240600",
+      "corpCode": "01085026",
+      "corpName": "유진테크놀로지",
+      "modified": "20250409",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001162"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001162"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001162"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814003601"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002460"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814003601",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319001162",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814003601",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319001162",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814003601",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac473950",
+      "ticker": "473950",
+      "corpCode": "01801822",
+      "corpName": "SK증권제13호스팩",
+      "modified": "20240725",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac487830",
+      "ticker": "487830",
+      "corpCode": "01854408",
+      "corpName": "신한제15호스팩",
+      "modified": "20241115",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac468760",
+      "ticker": "468760",
+      "corpCode": "01787072",
+      "corpName": "유진스팩10호",
+      "modified": "20240229",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "moadata",
+      "ticker": "288980",
+      "corpCode": "01423837",
+      "corpName": "모아데이타",
+      "modified": "20230223",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000530"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000530"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000530"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814002441"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002451"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814002441",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000530",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814002441",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000530",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814002441",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "sejints",
+      "ticker": "067770",
+      "corpCode": "00406727",
+      "corpName": "세진티에스",
+      "modified": "20230222",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260629000270"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260629000270"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260629000270"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260813000457"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000378"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260813000457",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260629000270",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260813000457",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260629000270",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260813000457",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "spac0068y0",
+      "ticker": "0068Y0",
+      "corpCode": "01933981",
+      "corpName": "비엔케이제3호스팩",
+      "modified": "20251121",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac0041j0",
+      "ticker": "0041J0",
+      "corpCode": "01906552",
+      "corpName": "엘에스스팩1호",
+      "modified": "20250722",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "hyungjiglobal",
+      "ticker": "308100",
+      "corpCode": "01181807",
+      "corpName": "형지글로벌",
+      "modified": "20250327",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323001332"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001332"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323001332"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260929000687"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114003035"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260929000687",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260929000687",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260929000687",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "mobileappliance",
+      "ticker": "087260",
+      "corpCode": "00556615",
+      "corpName": "모바일어플라이언스",
+      "modified": "20260630",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260324000733"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000733"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260324000733"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814004261"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001535"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814004261",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260324000733",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814004261",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260324000733",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814004261",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "haesungindustrialpref",
+      "ticker": "03481K",
+      "companyRef": "haesungindustrial",
+      "mode": "shared"
+    },
+    {
+      "key": "spac475250",
+      "ticker": "475250",
+      "corpCode": "01807729",
+      "corpName": "하나33호스팩",
+      "modified": "20240424",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "tobesoft",
+      "ticker": "079970",
+      "corpCode": "00596260",
+      "corpName": "투비소프트",
+      "modified": "20250106",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac474930",
+      "ticker": "474930",
+      "corpCode": "01807747",
+      "corpName": "신한제13호스팩",
+      "modified": "20240710",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "siresources",
+      "ticker": "065420",
+      "corpCode": "00120906",
+      "corpName": "에스아이리소스",
+      "modified": "20260716",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319001295"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001295"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319001295"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20261006000366"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000918"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20261006000366",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319001295",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20261006000366",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319001295",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20261006000366",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "skonec",
+      "ticker": "276040",
+      "corpCode": "01290248",
+      "corpName": "스코넥",
+      "modified": "20260803",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "spac473000",
+      "ticker": "473000",
+      "corpCode": "01798722",
+      "corpName": "SK증권제12호스팩",
+      "modified": "20240507",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "spac475240",
+      "ticker": "475240",
+      "corpCode": "01807738",
+      "corpName": "하나32호스팩",
+      "modified": "20240327",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "기업인수목적회사; 영업수익·운영비와 예치금 이자수익을 공식 원문에서 구분"
+        ]
+      }
+    },
+    {
+      "key": "hyungjiinc",
+      "ticker": "011080",
+      "corpCode": "00142713",
+      "corpName": "형지I&amp;C",
+      "modified": "20260318",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260319000879"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000879"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260930000552"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002164"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260319000879"
+          }
+        ],
+        "reasons": [
+          "최신 공시 비교·누적 값을 원문과 대조해 반영; 원 기간 API로 되돌아가지 않도록 해당 기간 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260319000879",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260930000552",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260319000879",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260930000552",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260930000552",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "paionx",
+      "ticker": "900100",
+      "corpCode": "00781202",
+      "corpName": "파이온엑스",
+      "modified": "20260518",
+      "fsDiv": "CFS",
+      "currency": "USD",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "USD·IFRS 보고; 임의 원화 환산 없이 공식 원문 대조"
+        ]
+      }
+    },
+    {
+      "key": "pintel",
+      "ticker": "291810",
+      "corpCode": "01524507",
+      "corpName": "핀텔",
+      "modified": "20260306",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260312000904"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260312000904"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260312000904"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260812000620"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251113000927"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260812000620",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260312000904",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260812000620",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260312000904",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260812000620",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "kdconstruction",
+      "ticker": "044180",
+      "corpCode": "00111218",
+      "corpName": "KD",
+      "modified": "20260430",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "carriepower",
+      "ticker": "313760",
+      "corpCode": "00863038",
+      "corpName": "캐리",
+      "modified": "20241212",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "itoxi",
+      "ticker": "052770",
+      "corpCode": "00346911",
+      "corpName": "아이톡시",
+      "modified": "20260707",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "review",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [],
+        "reasons": [
+          "감사·검토의견 변형 이력; 최신 보고서의 감사의견·범위 제한·계속기업 관련 근거 수동 확인"
+        ]
+      }
+    },
+    {
+      "key": "kmpharm",
+      "ticker": "225430",
+      "corpCode": "01095704",
+      "corpName": "케이엠제약",
+      "modified": "20260401",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000724"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000724"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000724"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001718"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001058"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001718",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000724",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001718",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000724",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001718",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "shillasg",
+      "ticker": "025870",
+      "corpCode": "00136004",
+      "corpName": "신라에스지",
+      "modified": "20260213",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318001332"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001332"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318001332"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814001084"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001454"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814001084",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814001084",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318001332",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814001084",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "hanjuart",
+      "ticker": "058450",
+      "corpCode": "00146427",
+      "corpName": "한주에이알티",
+      "modified": "20260918",
+      "fsDiv": "CFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260318000278"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000278"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260318000278"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260810000615"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114001809"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260810000615",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260318000278",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260810000615",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260318000278",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260810000615",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "goldns",
+      "ticker": "035290",
+      "corpCode": "00249502",
+      "corpName": "골드앤에스",
+      "modified": "20260401",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260323000991"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000991"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260323000991"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000934"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114002266"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000934",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260323000991",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000934",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260323000991",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000934",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "daehospecialsteelpref",
+      "ticker": "021045",
+      "companyRef": "daehospecialsteel",
+      "mode": "shared"
+    },
+    {
+      "key": "afw",
+      "ticker": "312610",
+      "corpCode": "01223219",
+      "corpName": "에이에프더블류",
+      "modified": "20260504",
+      "fsDiv": "OFS",
+      "currency": "KRW",
+      "salesLabel": "매출",
+      "opLabel": "영업이익",
+      "mode": "automatic",
+      "validation": {
+        "asOf": "2026-10-17",
+        "periods": [
+          {
+            "year": 2025,
+            "report": "11011",
+            "status": "validated",
+            "receipt": "20260317000168"
+          },
+          {
+            "year": 2026,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2026,
+            "report": "11012",
+            "status": "validated",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2024,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000168"
+          },
+          {
+            "year": 2025,
+            "report": "11012",
+            "status": "review-required",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2023,
+            "report": "11011",
+            "status": "review-required",
+            "receipt": "20260317000168"
+          },
+          {
+            "year": 2025,
+            "report": "11013",
+            "status": "review-required",
+            "receipt": "20260814000551"
+          },
+          {
+            "year": 2025,
+            "report": "11014",
+            "status": "validated",
+            "receipt": "20251114000302"
+          }
+        ],
+        "reasons": [
+          "최신 공식 비교·누적 실적과 원문 출처를 보존; 원 기간 API의 되돌림을 보류"
+        ]
+      },
+      "blockedPeriods": [
+        {
+          "year": 2026,
+          "report": "11013",
+          "receipt": "20260814000551",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2024,
+          "report": "11011",
+          "receipt": "20260317000168",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11012",
+          "receipt": "20260814000551",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2023,
+          "report": "11011",
+          "receipt": "20260317000168",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        },
+        {
+          "year": 2025,
+          "report": "11013",
+          "receipt": "20260814000551",
+          "reason": "Latest official comparative/cumulative source verified; prevent original API receipt from replacing it"
+        }
+      ]
+    },
+    {
+      "key": "softcenpref",
+      "ticker": "032685",
+      "companyRef": "softcen",
+      "mode": "shared"
     }
   ]
 }
