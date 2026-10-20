@@ -61,16 +61,16 @@
         "year": 2023,
         "sales": 0.088076437797,
         "op": 0.00162277849,
-        "net": -0.005300247585,
+        "net": -0.005878569121,
         "sourceIds": [
-          "dart-2023-annual"
+          "numeric-review-20260429001036"
         ],
         "dart": {
-          "receipt": "20260323001464",
+          "receipt": "20260429001036",
           "rawKRW": {
             "sales": "88076437797",
             "op": "1622778490",
-            "net": "-5300247585"
+            "net": "-5878569121"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -84,22 +84,28 @@
               "ifrs-full_ProfitLoss"
             ]
           }
+        },
+        "numericReview": {
+          "asOf": "2026-10-20",
+          "fields": [
+            "net"
+          ]
         }
       },
       {
         "year": 2024,
         "sales": 0.088600534688,
         "op": 0.001657604767,
-        "net": 0.022070523755,
+        "net": 0.029809092237,
         "sourceIds": [
-          "dart-2024-annual"
+          "numeric-review-20260429001036"
         ],
         "dart": {
-          "receipt": "20260323001464",
+          "receipt": "20260429001036",
           "rawKRW": {
             "sales": "88600534688",
             "op": "1657604767",
-            "net": "22070523755"
+            "net": "29809092237"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -113,6 +119,12 @@
               "ifrs-full_ProfitLoss"
             ]
           }
+        },
+        "numericReview": {
+          "asOf": "2026-10-20",
+          "fields": [
+            "net"
+          ]
         }
       },
       {
@@ -394,6 +406,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001571",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.15"
+    },
+    {
+      "id": "numeric-review-20260429001036",
+      "label": "공식 재무제표·비교 수치 · 실적 수치 재검토",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260429001036",
+      "published": "2026.04.29",
+      "verifiedAt": "2026.10.20"
     }
   ],
   "sectionSourceIds": {

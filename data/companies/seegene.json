@@ -61,16 +61,16 @@
         "year": 2024,
         "sales": 0.414251733221,
         "op": -0.016479248127,
-        "net": -0.008692763751,
+        "net": -0.020270094191,
         "sourceIds": [
-          "dart-2024-annual"
+          "numeric-review-20260515001029"
         ],
         "dart": {
-          "receipt": "20260319000422",
+          "receipt": "20260515001029",
           "rawKRW": {
             "sales": "414251733221",
             "op": "-16479248127",
-            "net": "-8692763751"
+            "net": "-20270094191"
           },
           "periodBasis": "annual",
           "accounts": {
@@ -84,6 +84,12 @@
               "ifrs-full_ProfitLoss"
             ]
           }
+        },
+        "numericReview": {
+          "asOf": "2026-10-20",
+          "fields": [
+            "net"
+          ]
         }
       },
       {
@@ -253,6 +259,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002284",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "numeric-review-20260515001029",
+      "label": "공식 재무제표·비교 수치 · 실적 수치 재검토",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001029",
+      "published": "2026.05.15",
+      "verifiedAt": "2026.10.20"
     }
   ],
   "sectionSourceIds": {

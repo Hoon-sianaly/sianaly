@@ -60,51 +60,72 @@
       {
         "year": 2025,
         "sales": 0,
-        "op": 0.00002971841,
-        "net": 0.00002946835,
+        "op": -0.00002971841,
+        "net": -0.00002946835,
         "periodLabel": "2025.01–12",
         "reportPeriod": "2025.01–12",
         "reportedKRW": {
           "sales": "0",
-          "op": "29718410",
-          "net": "29468350"
+          "op": "-29718410",
+          "net": "-29468350"
         },
         "sourceIds": [
           "report-20260304000619"
-        ]
+        ],
+        "numericReview": {
+          "asOf": "2026-10-20",
+          "fields": [
+            "op",
+            "net"
+          ]
+        }
       },
       {
         "year": 2024,
         "sales": 0,
-        "op": 0.00002762285,
-        "net": 0.000021440037,
+        "op": -0.00002762285,
+        "net": -0.000021440037,
         "periodLabel": "2024.01–12",
         "reportPeriod": "2024.01–12",
         "reportedKRW": {
           "sales": "0",
-          "op": "27622850",
-          "net": "21440037"
+          "op": "-27622850",
+          "net": "-21440037"
         },
         "sourceIds": [
           "report-20260304000619"
-        ]
+        ],
+        "numericReview": {
+          "asOf": "2026-10-20",
+          "fields": [
+            "op",
+            "net"
+          ]
+        }
       },
       {
         "year": 2023,
         "sales": 0,
-        "op": 0.0000082769,
-        "net": 0.000009181892,
+        "op": -0.0000082769,
+        "net": -0.000009181892,
         "periodLabel": "2023.09.01–2023.12.31",
         "reportPeriod": "2023.09.01–2023.12.31",
         "partialPeriod": true,
         "reportedKRW": {
           "sales": "0",
-          "op": "8276900",
-          "net": "9181892"
+          "op": "-8276900",
+          "net": "-9181892"
         },
         "sourceIds": [
           "report-20260304000619"
-        ]
+        ],
+        "numericReview": {
+          "asOf": "2026-10-20",
+          "fields": [
+            "op",
+            "net"
+          ]
+        }
       }
     ],
     "quarterly": [
@@ -192,7 +213,7 @@
       "label": "키움히어로제1호스팩 공식 KRW 손익계산서 · 실제 기간 확인",
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260304000619",
       "published": "2026.03.04",
-      "verifiedAt": "2026.10.17"
+      "verifiedAt": "2026.10.20"
     },
     {
       "id": "report-20260814001869",
