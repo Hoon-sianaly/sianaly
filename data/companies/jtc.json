@@ -106,7 +106,16 @@
           "report-20260528000907",
           "report-20260129000649"
         ],
-        "derivation": "annual-minus-first-nine-month"
+        "derivation": "annual-minus-first-nine-month",
+        "numericReview": {
+          "asOf": "2026-10-21",
+          "method": "DART-public-original",
+          "fields": [
+            "sales",
+            "op"
+          ],
+          "report": "financial-numeric-review-originals-20261021.json"
+        }
       },
       {
         "year": 2026,
@@ -154,14 +163,14 @@
       "label": "JTC 공식 JPY 손익계산서 · 실제 기간 확인",
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260528000907",
       "published": "2026.05.28",
-      "verifiedAt": "2026.10.14"
+      "verifiedAt": "2026.10.21"
     },
     {
       "id": "report-20260129000649",
       "label": "JTC 공식 JPY 손익계산서 · 실제 기간 확인",
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260129000649",
       "published": "2026.01.29",
-      "verifiedAt": "2026.10.14"
+      "verifiedAt": "2026.10.21"
     },
     {
       "id": "report-20260730000413",

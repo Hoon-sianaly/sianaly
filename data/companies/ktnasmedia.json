@@ -71,7 +71,18 @@
         },
         "sourceIds": [
           "report-20260320000328"
-        ]
+        ],
+        "numericReview": {
+          "asOf": "2026-10-21",
+          "method": "DART-public-original",
+          "fields": [
+            "sales",
+            "op",
+            "net"
+          ],
+          "report": "financial-numeric-review-originals-20261021.json"
+        },
+        "basis": "separate"
       },
       {
         "year": 2024,
@@ -87,7 +98,17 @@
         },
         "sourceIds": [
           "report-20260320000328"
-        ]
+        ],
+        "numericReview": {
+          "asOf": "2026-10-21",
+          "method": "DART-public-original",
+          "fields": [
+            "op",
+            "net"
+          ],
+          "report": "financial-numeric-review-originals-20261021.json"
+        },
+        "basis": "consolidated"
       }
     ],
     "quarterly": [
@@ -149,7 +170,7 @@
       "label": "KT나스미디어 공식 KRW 손익계산서 · 실제 기간 확인",
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000328",
       "published": "2026.03.20",
-      "verifiedAt": "2026.10.14"
+      "verifiedAt": "2026.10.21"
     },
     {
       "id": "report-20260814003681",

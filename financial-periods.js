@@ -10,6 +10,8 @@ function standardFinancialRows(company){
  const reason=(year,quarter)=>{
   const note=(company.financialPeriodNotes||[]).find(n=>n.year===year&&n.quarter===quarter);
   if(note)return note.reason;
+  const actual=(quarter?company.allQuarters:company.annual).find(row=>row.year===year&&row.quarter===quarter);
+  if(actual?.comparisonNote)return actual.comparisonNote;
   if(company.financialAvailability)return company.financialAvailability.reason;
   if(company.historyStatus==='baseline-changed')return '정정된 공시와 과거 비교값 대조 필요';
   if(company.historyStatus==='unavailable')return '과거 실적 자료를 불러오지 못함';
