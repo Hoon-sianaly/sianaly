@@ -8,6 +8,7 @@ on:
       - 'home-popular.*'
       - 'company-popularity.js'
       - 'scripts/test-popular.cjs'
+      - 'scripts/popular-handler.mjs'
       - '.github/workflows/popular-checks.yml'
   workflow_dispatch:
 permissions:
@@ -21,5 +22,6 @@ jobs:
         with:
           node-version: '24'
       - run: node scripts/test-popular.cjs
+      - run: npx --yes wrangler@3.114.17 pages functions build . --outdir tmp/popular-functions-build
       - run: node scripts/test-search.cjs
       - run: node scripts/test-company-data.cjs

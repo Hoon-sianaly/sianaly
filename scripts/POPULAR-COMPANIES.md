@@ -22,6 +22,6 @@
 
 `node scripts/test-popular.cjs` — 실제 SQLite 쿼리, 24시간 범위, 48시간 삭제, 중복 ID, 동일 출처·기업 검증, 캐시, 화면의 기업명·링크·빈 상태, 30분 클라이언트 재집계 방지와 동일 ID 재시도.
 
-`npx wrangler@4 pages functions build . --outdir tmp/popular-functions-build` — Pages Function 컴파일.
+`npx wrangler@3.114.17 pages functions build . --outdir tmp/popular-functions-build` — Cloudflare Git 배포 서버와 동일한 버전으로 Pages Function 컴파일. 회사 목록을 읽는 진입점과 집계 처리 로직(scripts/popular-handler.mjs)을 분리해 Node 테스트에서도 같은 집계 로직을 사용함.
 
 `npx wrangler@4 pages dev . --d1 POPULAR_DB --persist-to tmp/popular-local-state` — 실제 서비스와 분리된 로컬 D1 검증. 로컬 테스트 조회는 공개 순위에 전달되지 않음.

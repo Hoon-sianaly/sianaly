@@ -7,7 +7,8 @@ class D1 {
  async batch(statements){this.queries+=statements.length;this.sqlite.exec('BEGIN');try{const results=statements.map(s=>{const p=this.sqlite.prepare(s.sql);return /^SELECT/i.test(s.sql)?{success:true,results:p.all(...s.values)}:{success:true,meta:{changes:Number(p.run(...s.values).changes)}};});this.sqlite.exec('COMMIT');return results;}catch(e){this.sqlite.exec('ROLLBACK');throw e;}}
 }
 async function main(){
- const {onRequest}=await import(pathToFileURL(root+'/functions/api/popular.js'));
+ const {createPopularHandler}=await import(pathToFileURL(root+'/scripts/popular-handler.mjs'));
+ const onRequest=createPopularHandler(require('../data/company-index.json').companies.map(c=>c.key));
  const db=new D1(),env={POPULAR_DB:db},url='https://dev.sianaly.com/api/popular';
  const call=(method='GET',body,options={})=>onRequest({env:options.env||env,request:new Request(url+(options.query||''),{method,headers:{Origin:options.origin||'https://dev.sianaly.com','Content-Type':options.type||'application/json','User-Agent':options.agent||'Browser'},...(body!==undefined?{body:JSON.stringify(body)}:{})}),waitUntil:promise=>promise});
  assert.equal((await call('GET',undefined,{env:{}})).status,503);
