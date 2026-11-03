@@ -32,7 +32,7 @@ main{max-width:1160px}#companyDiscovery{padding:0;background:transparent;border:
 @media(max-width:900px){.market-panels{gap:16px}.market-panel{padding:24px 20px 18px}.market-panel .company-card .industry-label{display:none}.market-panel .industry-select{width:140px}}
 @media(max-width:700px){.market-panels{grid-template-columns:minmax(0,1fr);gap:20px}.market-panel{padding:24px 22px 18px}.market-panel .company-card .industry-label{display:block}.market-panel .industry-select{width:164px}.market-overview-head{margin-bottom:16px}}
 @media(max-width:380px){.market-panel{padding:22px 16px 16px}.market-panel .industry-select{width:143px}.market-panel .company-card{column-gap:9px}.market-panel .company-card .industry-label{max-width:76px}}
-</style></head>
+</style><link rel="stylesheet" href="member-account.css?v=20261103-member-1"></head>
 <body>
 <header><a class="logo" href="index.html" aria-label="SIANALY 홈">SI<span>ANALY</span></a><div class="market-nav"><button id="marketMenuButton" class="market-menu-button" type="button" aria-label="시장 바로가기 메뉴" aria-haspopup="menu" aria-controls="marketMenu" aria-expanded="false"><span>시장 둘러보기</span><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><div id="marketMenu" class="market-menu" role="menu" aria-label="시장 바로가기" hidden><button type="button" role="menuitem" data-market="KOSPI">코스피</button><button type="button" role="menuitem" data-market="KOSDAQ">코스닥</button></div></div></header>
 <section class="hero">
@@ -67,4 +67,4 @@ q.addEventListener("input",e=>render(e.target.value));
 q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
-</script></body></html>
+</script><script src="member-account.js?v=20261103-member-1" defer></script></body></html>

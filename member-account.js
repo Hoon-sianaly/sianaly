@@ -1,0 +1,77 @@
+(function(){
+ 'use strict';
+ let config,session={signedIn:false},favoriteKeys=new Set(),catalog=new Map(),busy=false,pendingCompany=null;
+ let nav,dialog,toast,toastTimer,homeList;const wiredFavorites=new WeakSet();
+ const api=async(action,body,method=body?'POST':'GET')=>{
+  const response=await fetch('/api/account/'+action,{method,credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json'}:{},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(15000)});
+  const data=await response.json();if(!response.ok){const e=new Error(data.code||'unavailable');e.code=data.code;throw e;}return data;
+ };
+ function node(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
+ function say(text){toast.textContent=text;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4500);}
+ function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
+ function showDialog(title){
+  dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
+ }
+ function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','로그인하면 처음 이용 시 SIANALY 회원 계정이 생성됩니다. 비밀번호는 소셜 로그인 서비스에서 관리합니다.'),node('p','SIANALY는 회원 식별과 즐겨찾기 저장에 필요한 정보만 기능에 사용합니다. 동의한 소셜 프로필 정보는 인증 서비스에 보관될 수 있습니다.'),node('p','탈퇴하면 SIANALY 회원 인증 정보와 저장한 즐겨찾기가 삭제됩니다.'));return details;}
+ function loginDialog(){
+  showDialog('SIANALY 로그인');dialog.append(node('p',pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':'소셜 계정으로 간편하게 시작하세요.'));
+  const error=node('p','','member-error');error.setAttribute('role','alert');
+  for(const provider of config.providers){const button=node('button',provider.name+'로 계속하기','member-provider');button.type='button';button.dataset.provider=provider.id;
+   button.onclick=async()=>{for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=true;error.textContent='';try{
+    try{if(pendingCompany)sessionStorage.setItem('sianaly.pendingFavorite',JSON.stringify({key:pendingCompany,createdAt:Date.now()}));}catch{}
+    const next=location.pathname+location.search,data=await api('login',{provider:provider.id,next});location.assign(data.url);
+   }catch(e){error.textContent=errorText(e);for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=false;}};dialog.append(button);
+  }
+  dialog.append(error,info());
+ }
+ function publishChange(){try{localStorage.setItem('sianaly.member.changed',String(Date.now()));}catch{}}
+ function render(){
+  nav.textContent=session.signedIn?'내 계정':'로그인';
+  const favorite=document.querySelector('.member-favorite');if(favorite){const selected=favoriteKeys.has(favorite.dataset.company);favorite.setAttribute('aria-pressed',String(selected));favorite.textContent=selected?'★ 저장됨':'☆ 즐겨찾기';}
+  if(homeList){homeList.parentElement.hidden=!session.signedIn;homeList.replaceChildren();for(const key of favoriteKeys){const company=catalog.get(key);if(!company)continue;const li=node('li'),link=node('a',company.name);link.href='company.html?company='+encodeURIComponent(key);li.append(link);homeList.append(li);}const empty=homeList.parentElement.querySelector('.member-favorites-empty');empty.hidden=Boolean(favoriteKeys.size);}
+ }
+ async function changeFavorite(key){
+  if(!session.signedIn){pendingCompany=key;loginDialog();return;}
+  if(busy)return;busy=true;const remove=favoriteKeys.has(key);try{await api('favorites',{company:key},remove?'DELETE':'POST');if(remove)favoriteKeys.delete(key);else favoriteKeys.add(key);render();publishChange();say(remove?'즐겨찾기에서 삭제했어요.':'즐겨찾기에 저장했어요.');}catch(e){if(e.code==='login_required'){session={signedIn:false};favoriteKeys.clear();render();pendingCompany=key;loginDialog();}else say(errorText(e));}finally{busy=false;}
+ }
+ function accountDialog(){
+  if(!session.signedIn){pendingCompany=null;loginDialog();return;}
+  showDialog('내 계정');dialog.append(node('p',(session.provider||'소셜 계정')+'으로 로그인 중'));
+  const favorites=node('button','내 즐겨찾기','member-menu-action');favorites.type='button';favorites.onclick=()=>{dialog.close();if(homeList){homeList.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else location.assign('/#memberFavorites');};
+  const logout=node('button','로그아웃','member-menu-action');logout.type='button';logout.onclick=async()=>{logout.disabled=true;try{await api('logout',{});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('로그아웃했어요.');}catch(e){logout.disabled=false;say(errorText(e));}};
+  dialog.append(favorites,logout);
+  const deletion=node('details',undefined,'member-information');deletion.append(node('summary','회원 탈퇴'),node('p','회원 인증 정보와 즐겨찾기가 모두 삭제됩니다. 계속하려면 아래에 ‘회원탈퇴’를 입력하세요.'));
+  const input=node('input',undefined,'member-delete-input');input.type='text';input.placeholder='회원탈퇴';input.setAttribute('aria-label','회원 탈퇴 확인 문구');input.autocomplete='off';
+  const confirm=node('button','탈퇴하기','member-menu-action member-danger');confirm.type='button';confirm.disabled=true;input.oninput=()=>{confirm.disabled=input.value!=='회원탈퇴';};
+  const error=node('p','','member-error');error.setAttribute('role','alert');confirm.onclick=async()=>{confirm.disabled=true;try{await api('delete',{confirmation:input.value});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('회원 탈퇴가 완료됐어요.');}catch(e){if(e.code==='reauth_required'){loginDialog();return;}error.textContent=errorText(e);confirm.disabled=false;}};
+  deletion.append(input,confirm,error);dialog.append(deletion,info());
+ }
+ async function reloadSession(){
+  try{session=await api('session');favoriteKeys.clear();if(session.signedIn){const data=await api('favorites');favoriteKeys=new Set(data.companies.map(c=>c.key).filter(key=>catalog.has(key)));}render();}
+  catch(e){session={signedIn:false};favoriteKeys.clear();render();}
+ }
+ function mountCompany(){
+  const key=new URLSearchParams(location.search).get('company'),hero=document.querySelector('#app .hero');
+  if(!hero||!catalog.has(key))return;
+  let button=hero.querySelector('.member-favorite');if(button&&wiredFavorites.has(button))return;
+  if(!button){const controls=node('div',undefined,'member-company-controls');button=node('button','☆ 즐겨찾기','member-favorite');button.type='button';button.dataset.company=key;button.setAttribute('aria-pressed','false');controls.append(button);hero.append(controls);}
+  wiredFavorites.add(button);button.onclick=()=>changeFavorite(key);render();
+ }
+ async function init(){
+  try{config=await api('config');if(!config.ready||!config.providers.length)return;const data=await loadCompanyCatalog();catalog=new Map(data.companies.map(c=>[c.key,c]));}catch{return;}
+  const header=document.querySelector('header');if(!header)return;
+  nav=node('button','로그인','member-nav-button');nav.type='button';nav.onclick=accountDialog;
+  const actions=node('div',undefined,'member-header-actions'),existing=header.lastElementChild;header.dataset.memberPage=document.querySelector('.company-search')?'company':'home';if(existing&&!existing.classList.contains('logo'))actions.append(existing);actions.append(nav);header.append(actions);
+  dialog=node('dialog',undefined,'member-dialog');dialog.setAttribute('aria-labelledby','memberDialogTitle');dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});document.body.append(dialog);
+  toast=node('div',undefined,'member-toast');toast.hidden=true;toast.setAttribute('role','status');document.body.append(toast);
+  if(!document.getElementById('app')){const area=node('section',undefined,'member-favorites');area.id='memberFavorites';area.hidden=true;const head=node('div',undefined,'member-favorites-head');head.append(node('h2','내 즐겨찾기'));homeList=node('ul',undefined,'member-favorites-list');const empty=node('p','기업 페이지에서 ☆ 즐겨찾기를 눌러 저장할 수 있어요.','member-favorites-empty');area.append(head,homeList,empty);document.querySelector('main')?.before(area);}
+  mountCompany();const app=document.getElementById('app');if(app)new MutationObserver(mountCompany).observe(app,{childList:true,subtree:true});
+  await reloadSession();
+  if(session.signedIn){let pending;try{pending=JSON.parse(sessionStorage.getItem('sianaly.pendingFavorite')||'null');sessionStorage.removeItem('sianaly.pendingFavorite');}catch{}if(pending?.createdAt>Date.now()-600000&&catalog.has(pending.key)&&!favoriteKeys.has(pending.key))await changeFavorite(pending.key);}
+  const query=new URLSearchParams(location.search);if(query.has('accountError')){say('로그인을 완료하지 못했어요. 다시 시도해 주세요.');query.delete('accountError');history.replaceState(null,'',location.pathname+(query.size?'?'+query:'')+location.hash);}
+  if(location.hash==='#memberFavorites'&&homeList&&!homeList.parentElement.hidden)homeList.parentElement.scrollIntoView({block:'center'});
+  window.addEventListener('storage',event=>{if(event.key==='sianaly.member.changed'){favoriteKeys.clear();session={signedIn:false};render();reloadSession();}});
+  window.addEventListener('pageshow',event=>{if(event.persisted){favoriteKeys.clear();session={signedIn:false};render();reloadSession();}});
+ }
+ init();
+})();

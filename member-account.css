@@ -1,0 +1,33 @@
+.member-header-actions{display:flex;align-items:center;justify-content:flex-end;gap:20px;flex:1;min-width:0}
+.member-header-actions .company-search{flex:1;max-width:480px;width:auto}
+.member-nav-button,.member-favorite{font:inherit;font-size:12px;line-height:1.5;white-space:nowrap;padding:9px 14px;border:1px solid #dfe5ed;border-radius:7px;background:#fff;color:#536178;cursor:pointer}
+.member-nav-button:hover,.member-favorite:hover{border-color:#93b0f1;color:#3568e8}
+.member-nav-button:disabled,.member-favorite:disabled{opacity:.6;cursor:wait}
+.member-company-controls{margin-top:16px}
+.member-favorite[aria-pressed="true"]{border-color:#b4c7f5;background:#edf3ff;color:#2d5fc9}
+.member-dialog{width:400px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 40px);overflow:auto;padding:30px;border:1px solid #e3e8ef;border-radius:14px;background:#fff;color:#17243b;box-shadow:0 18px 60px #17243b2b;font-family:Arial,"Noto Sans KR",sans-serif}
+.member-dialog::backdrop{background:#17243b55}
+.member-dialog h2{margin:0 30px 10px 0;font-size:22px;font-weight:600;letter-spacing:-.6px}
+.member-dialog p{font-size:13px;line-height:1.8;color:#778398;margin:10px 0 20px}
+.member-dialog-close{position:absolute;top:15px;right:15px;width:32px;height:32px;border:0;border-radius:5px;background:transparent;color:#8793a6;font-size:23px;cursor:pointer}
+.member-provider,.member-menu-action{display:block;width:100%;margin:10px 0 0;padding:13px 16px;border:1px solid #dfe5ed;border-radius:7px;background:#fff;color:#35445a;text-align:center;font:inherit;font-size:14px;line-height:1.5;cursor:pointer;text-decoration:none}
+.member-provider[data-provider="kakao"]{background:#fee500;border-color:#fee500;color:#191919}
+.member-provider[data-provider="custom:naver"]{background:#03a94d;border-color:#03a94d;color:#fff}
+.member-provider:disabled,.member-menu-action:disabled{opacity:.6;cursor:wait}
+.member-information{margin-top:22px;border-top:1px solid #e9edf2;padding-top:16px;font-size:12px;line-height:1.8;color:#8490a1}
+.member-information summary{cursor:pointer;color:#6b788e}
+.member-information p{margin:10px 0;font-size:12px}
+.member-dialog .member-error{margin:12px 0 0;color:#b44747;font-size:12px;line-height:1.8}
+.member-delete-input{width:100%;height:42px;padding:0 12px;margin:4px 0 0;border:1px solid #dfe5ed;border-radius:6px;font:inherit;font-size:16px;color:#17243b;background:#fff}
+.member-danger{color:#b44747;border-color:#e6cccc}
+.member-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);max-width:calc(100vw - 32px);z-index:1100;padding:12px 18px;border:1px solid #dfe5ed;border-radius:8px;background:#fff;color:#536178;box-shadow:0 8px 28px #17243b14;font-size:13px;line-height:1.6;text-align:center}
+.member-toast[hidden]{display:none}
+.member-favorites{max-width:1104px;margin:0 auto 28px;padding:0 28px}
+.member-favorites[hidden]{display:none}
+.member-favorites-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:13px}
+.member-favorites h2{margin:0;font-size:15px;font-weight:500;letter-spacing:-.3px;color:#536178}
+.member-favorites-list{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 6px;list-style:none;margin:0}
+.member-favorites-list a{display:block;padding:9px 14px;border:1px solid #e0e6ee;border-radius:6px;color:#536178;font-size:12px;white-space:nowrap;background:#fff}
+.member-favorites-empty{margin:0;color:#929cab;font-size:12px;line-height:1.8}
+@media(max-width:540px){.member-header-actions{gap:12px}.member-nav-button{padding:9px 12px;min-height:40px}.member-favorites{padding:0 20px;margin-bottom:22px}.member-dialog{padding:27px 23px}.member-provider,.member-menu-action{min-height:46px}.member-favorite{min-height:42px}}
+@media(max-width:430px){header[data-member-page="company"] .member-header-actions{display:contents}header[data-member-page="company"] .company-search{order:3;flex-basis:100%;width:100%;max-width:none}header[data-member-page="company"] .member-nav-button{order:2;margin-left:auto}header[data-member-page="company"] .logo{order:1}header[data-member-page="home"] .market-menu-button{padding-left:0}header[data-member-page="home"] .market-menu-button>span{display:none}}

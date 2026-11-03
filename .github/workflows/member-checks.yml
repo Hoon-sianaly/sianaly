@@ -1,0 +1,28 @@
+name: Member account checks
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'member-account.*'
+      - 'functions/api/account/**'
+      - 'scripts/*member*'
+      - 'scripts/account-handler.mjs'
+      - 'supabase/**'
+      - 'package*.json'
+      - '.github/workflows/member-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: node scripts/test-member-account.mjs
+      - run: node scripts/test-member-rls.mjs
+      - run: npx --yes wrangler@3.114.17 pages functions build functions --outdir tmp/member-functions-build
