@@ -77,11 +77,10 @@
    fragment.append(doc.createTextNode(text.slice(offset)));node.replaceWith(fragment);
   }
   const memo=doc.createElement('aside');memo.id='company-term-memo';memo.className='term-memo';memo.hidden=true;memo.tabIndex=-1;memo.setAttribute('role','dialog');memo.setAttribute('aria-labelledby','company-term-title');
-  const eyebrow=doc.createElement('small');eyebrow.textContent='용어 메모';
   const title=doc.createElement('strong');title.id='company-term-title';
   const description=doc.createElement('p');
   const dismiss=doc.createElement('button');dismiss.type='button';dismiss.className='term-memo-close';dismiss.textContent='×';dismiss.setAttribute('aria-label','용어 설명 닫기');
-  memo.append(eyebrow,title,description,dismiss);doc.body.append(memo);
+  memo.append(title,description,dismiss);doc.body.append(memo);
   let active=null;
   function close(restore=false){const previous=active;memo.hidden=true;active?.setAttribute('aria-expanded','false');active=null;if(restore)previous?.focus({preventScroll:true});}
   function open(button){
