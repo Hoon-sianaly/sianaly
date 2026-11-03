@@ -1,0 +1,25 @@
+name: Popular company checks
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'functions/**'
+      - '_routes.json'
+      - 'home-popular.*'
+      - 'company-popularity.js'
+      - 'scripts/test-popular.cjs'
+      - '.github/workflows/popular-checks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node scripts/test-popular.cjs
+      - run: node scripts/test-search.cjs
+      - run: node scripts/test-company-data.cjs

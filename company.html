@@ -94,6 +94,7 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 <script src="company-search.js?v=20261007-detail-search-1"></script>
 <script src="financial-periods.js?v=20261103-review97-1"></script>
 <script src="financial-tabs.js?v=20261103-review97-1"></script>
+<script src="company-popularity.js?v=20261103-popular-1"></script>
 <script>
 const key=new URLSearchParams(location.search).get("company");
 const app=document.getElementById("app");
@@ -252,6 +253,7 @@ else{
   window.addEventListener('scroll',queueHighlight,{passive:true});window.addEventListener('resize',queueHighlight);highlightSection();
  }
  updateRecent();
+ if(typeof scheduleCompanyView==='function')scheduleCompanyView(c.key);
 }
 })().catch(error=>{
  console.error(error);
