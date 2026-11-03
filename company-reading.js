@@ -17,18 +17,26 @@
  function prepareCompanyCopy(company){
   const map=value=>typeof value==='string'?compactCompanyText(value):Array.isArray(value)?value.map(map):value&&typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,map(v)])):value;
   const result={...company};
-  for(const key of ['summary','short','takeaways','business','drivers','glossary','financialNote','annualNote','quarterlyNote','quarterlyCalendarNote'])if(company[key]!==undefined)result[key]=map(company[key]);
+  for(const key of ['summary','short','financialNote','annualNote','quarterlyNote','quarterlyCalendarNote'])if(company[key]!==undefined)result[key]=map(company[key]);
+  result.introSummary=company.summary;
+  result.glossary=company.glossary.map(term=>({...term,desc:compactGlossaryText(term.desc)}));
   return result;
+ }
+ function compactGlossaryText(value){
+  const text=String(value).replace(/([가-힣]+)합니다(?=[.!?](?:\s|$)|\s*$)/g,'$1')
+   .replace(/쓰입니다(?=[.!?](?:\s|$)|\s*$)/g,'사용')
+   .replace(/(사용|활용|이용|포함|저장|반영)됩니다(?=[.!?](?:\s|$)|\s*$)/g,'$1');
+  return compactCompanyText(text);
  }
  function companyReadingTerms(company){
   const basics=[
    {name:company.financialMetrics.sales.label,desc:company.financialMetrics.sales.help},
    {name:company.financialMetrics.op.label,desc:company.financialMetrics.op.help},
-   {name:'연결 기준',desc:'회사와 지배하는 자회사의 재무 정보를 합친 기준. 회사 사이의 내부 거래는 제거함'},
+   {name:'연결 기준',desc:'회사와 지배하는 자회사의 재무 정보를 합친 기준. 회사 사이의 내부 거래는 제거'},
    {name:'별도 기준',desc:'자회사 실적을 합산하지 않고 해당 회사 자체의 재무 정보만 표시한 기준'},
    {name:'PER',desc:'주가를 주당순이익으로 나눈 값. 현재 주가가 이익의 몇 배인지 보는 지표'},
    {name:'PBR',desc:'주가를 주당순자산으로 나눈 값. 현재 주가가 회계상 순자산의 몇 배인지 보는 지표'},
-   {name:'영업이익률',desc:'매출에서 영업이익이 차지하는 비율. 영업이익을 매출로 나눈 뒤 100을 곱해 계산함'},
+   {name:'영업이익률',desc:'매출에서 영업이익이 차지하는 비율. 영업이익을 매출로 나눈 뒤 100을 곱해 계산'},
    {name:'매출원가',desc:'판매한 제품·상품을 만들거나 사들이는 데 직접 들어간 비용'},
    {name:'매출채권',desc:'제품·서비스를 판매하고 아직 받지 못한 대금'},
    {name:'시가총액',desc:'주가에 상장 주식 수를 곱한 값. 주식시장에서 평가한 회사의 전체 주식 가치'}
@@ -64,7 +72,7 @@
   for(const node of nodes){
    const parent=node.parentElement;
    if(!parent||parent.closest('script,style,svg,a,button,nav,summary,table,h1,.source-links,.source,.data-freshness,.num,.vcard,.term b'))continue;
-   const text=compactCompanyText(node.textContent);node.textContent=text;
+   const text=parent.closest('#company-intro,#company-business,#company-drivers')?node.textContent:parent.closest('.glossary')?compactGlossaryText(node.textContent):compactCompanyText(node.textContent);node.textContent=text;
    if(parent.closest('.glossary'))continue;
    const matches=findCompanyTerms(text,entries);if(!matches.length)continue;
    const fragment=doc.createDocumentFragment();let offset=0;
@@ -86,7 +94,7 @@
   function open(button){
    if(active===button){close(true);return;}
    close();active=button;const term=terms[Number(button.dataset.termIndex)];
-   title.textContent=term.name;description.textContent=compactCompanyText(term.desc);memo.hidden=false;active.setAttribute('aria-expanded','true');
+   title.textContent=term.name;description.textContent=compactGlossaryText(term.desc);memo.hidden=false;active.setAttribute('aria-expanded','true');
    const rect=button.getBoundingClientRect(),width=memo.offsetWidth,height=memo.offsetHeight,gap=16;
    memo.style.left=Math.max(gap,Math.min(rect.left,window.innerWidth-width-gap))+'px';
    const below=rect.bottom+8;memo.style.top=Math.max(gap,Math.min(below+height<=window.innerHeight-gap?below:rect.top-height-8,window.innerHeight-height-gap))+'px';
@@ -98,5 +106,5 @@
   doc.addEventListener('keydown',event=>{if(event.key==='Escape'&&active){event.preventDefault();close(true);}});
   window.addEventListener('scroll',()=>close(),{passive:true});window.addEventListener('resize',()=>close());
  }
- Object.assign(scope,{compactCompanyText,prepareCompanyCopy,companyReadingTerms,findCompanyTerms,initCompanyReading});
+ Object.assign(scope,{compactCompanyText,compactGlossaryText,prepareCompanyCopy,companyReadingTerms,findCompanyTerms,initCompanyReading});
 })(typeof globalThis!=='undefined'?globalThis:this);

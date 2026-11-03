@@ -89,7 +89,7 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 <body>
 <header><a class="logo" href="index.html" style="color:inherit">SI<span>ANALY</span>.</a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
-<script src="company-reading.js?v=20261103-reading-2"></script>
+<script src="company-reading.js?v=20261103-reading-3"></script>
 <script src="company-data.js?v=20261103-reading-1"></script>
 <script src="company-search.js?v=20261007-detail-search-1"></script>
 <script src="financial-periods.js?v=20261103-review97-1"></script>
@@ -197,7 +197,7 @@ else{
  <div class="vcard"><span>PBR</span><strong>${c.pbr}</strong><small>기준일 데이터</small></div></div>
  <p class="note">※ PER·PBR은 데이터 제공처의 산식과 기준일에 따라 달라질 수 있습니다. SIANALY는 이를 매수·매도 판단으로 해석하지 않습니다.</p></section>`}
 
- <section id="company-intro">${compact?"":`<div class="blue">01 · 처음 보는 사람을 위한 5줄</div>`}<div class="title">${compact?`${c.name} 한눈에 보기`:`${c.name}을 한눈에`}</div>${compact?"":`<div class="desc">${c.summary}</div>`}<p class="reading-hint">밑줄 있는 용어를 누르면 짧은 설명을 볼 수 있음</p>
+ <section id="company-intro">${compact?"":`<div class="blue">01 · 처음 보는 사람을 위한 5줄</div>`}<div class="title">${compact?`${c.name} 한눈에 보기`:`${c.name}을 한눈에`}</div>${compact?"":`<div class="desc">${c.introSummary || c.summary}</div>`}<p class="reading-hint">밑줄 있는 용어를 누르면 짧은 설명을 볼 수 있음</p>
  ${c.takeaways.map((x,i)=>`<div class="take"><b>${i+1}</b><span>${x}</span></div>`).join("")}</section>
 
  <section id="company-business">${compact?"":`<div class="blue">02 · 돈은 어디서 벌까?</div>`}<div class="title">주요 사업</div>
