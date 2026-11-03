@@ -120,13 +120,53 @@
         "sourceIds": [
           "report-20260615000262"
         ]
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.035595970178,
+        "op": -0.006902793851,
+        "reportedKRW": {
+          "sales": "35595970178",
+          "op": "-6902793851"
+        },
+        "sourceIds": [
+          "dart-reviewed-20261022000450"
+        ],
+        "reviewedFiling": {
+          "receipt": "20261022000450",
+          "reviewedAt": "2026.11.03",
+          "report": "dart-review-20261103.json"
+        },
+        "durationMonths": 6,
+        "reportPeriod": "2026.02–07",
+        "periodLabel": "2026.02–07",
+        "dart": {
+          "receipt": "20261022000450",
+          "rawKRW": {
+            "sales": "35595970178",
+            "op": "-6902793851"
+          },
+          "periodBasis": "six-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "annualTerm": "6개월 결산",
     "annualSourceLabel": "공식 1월 종료 6개월 결산",
     "quarterlyCalendarNote": "1월·7월 결산 · 아래 실제 3개월은 2~4월",
-    "quarterlyTerm": "최근 3개월",
-    "quarterlyBasisLabel": "공식 실제 3개월 실적",
+    "quarterlyTerm": "실제 보고기간",
+    "quarterlyBasisLabel": "실제 공시기간별 실적 · 3개월·6개월 구분",
     "metrics": {
       "sales": {
         "label": "영업수익 (부동산·투자 등)",
@@ -136,6 +176,11 @@
         "label": "영업이익",
         "help": "동일한 연결 범위의 부동산 영업비용을 차감한 이익입니다."
       }
+    },
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Receipt-specific source-reviewed financial periods; existing manual update policy retained",
+      "updatedAt": "2026.11.03"
     }
   },
   "sources": [
@@ -166,6 +211,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260615000262",
       "published": "2026.06.15",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-reviewed-20261022000450",
+      "label": "사업보고서 (2026.07) · 실제 2026.02–07 원문 대조",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261022000450",
+      "published": "2026.10.22",
+      "verifiedAt": "2026.11.03"
     }
   ],
   "sectionSourceIds": {

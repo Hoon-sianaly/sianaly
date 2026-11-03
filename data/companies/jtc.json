@@ -92,6 +92,21 @@
     ],
     "quarterly": [
       {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.01004846418,
+        "op": 0.001168794326,
+        "periodLabel": "2025.03–05",
+        "reportPeriod": "2025.03–05",
+        "reportedJPY": {
+          "sales": "10048464180",
+          "op": "1168794326"
+        },
+        "sourceIds": [
+          "report-20260730000413"
+        ]
+      },
+      {
         "year": 2026,
         "quarter": 1,
         "sales": 0.004713409814,
@@ -133,19 +148,24 @@
         ]
       },
       {
-        "year": 2025,
-        "quarter": 2,
-        "sales": 0.01004846418,
-        "op": 0.001168794326,
-        "periodLabel": "2025.03–05",
-        "reportPeriod": "2025.03–05",
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.003598646692,
+        "op": -0.000279831722,
         "reportedJPY": {
-          "sales": "10048464180",
-          "op": "1168794326"
+          "sales": "3598646692",
+          "op": "-279831722"
         },
         "sourceIds": [
-          "report-20260730000413"
-        ]
+          "dart-reviewed-20261030000675"
+        ],
+        "reviewedFiling": {
+          "receipt": "20261030000675",
+          "reviewedAt": "2026.11.03",
+          "report": "dart-review-20261103.json"
+        },
+        "reportPeriod": "2026.06–08",
+        "periodLabel": "2026.06–08"
       }
     ],
     "accountingStandard": "IFRS",
@@ -155,7 +175,12 @@
     "annualSourceLabel": "공식 2월 종료 12개월 결산",
     "quarterlyTerm": "최근 3개월",
     "quarterlyBasisLabel": "공식 실제 3개월 실적",
-    "quarterlyCalendarNote": "2월 결산 · 실제 분기 12~2월 및 3~5월 · 달력상의 1~3월·4~6월과 다릅니다."
+    "quarterlyCalendarNote": "2월 결산 · 실제 분기 12~2월 및 3~5월 · 달력상의 1~3월·4~6월과 다릅니다.",
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Receipt-specific source-reviewed financial periods; existing manual update policy retained",
+      "updatedAt": "2026.11.03"
+    }
   },
   "sources": [
     {
@@ -185,6 +210,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260730000413",
       "published": "2026.07.30",
       "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-reviewed-20261030000675",
+      "label": "반기보고서 (2026.08) · 실제 2026.06–08 원문 대조",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000675",
+      "published": "2026.10.30",
+      "verifiedAt": "2026.11.03"
     }
   ],
   "sectionSourceIds": {

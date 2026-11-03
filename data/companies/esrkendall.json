@@ -164,6 +164,45 @@
           "report-20260414001470"
         ],
         "derivation": "six-month-minus-first-three-month"
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.033431572054,
+        "op": 0.01432094179,
+        "reportedKRW": {
+          "sales": "33431572054",
+          "op": "14320941790"
+        },
+        "sourceIds": [
+          "dart-reviewed-20261015000029"
+        ],
+        "reviewedFiling": {
+          "receipt": "20261015000029",
+          "reviewedAt": "2026.11.03",
+          "report": "dart-review-20261103.json"
+        },
+        "reportPeriod": "2026.06–08",
+        "periodLabel": "2026.06–08",
+        "dart": {
+          "receipt": "20261015000029",
+          "rawKRW": {
+            "sales": "33431572054",
+            "op": "14320941790"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "quarterlyCalendarNote": "5월·11월 6개월 결산 회사 · 각 3개월의 실제 기간 표시 · 달력 분기와 다름",
@@ -178,6 +217,11 @@
         "label": "영업이익",
         "help": "임대 관련 수익에서 영업비용을 차감한 이익입니다. 금융비용 차감 후 이익·현금 배당과 다릅니다."
       }
+    },
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Receipt-specific source-reviewed financial periods; existing manual update policy retained",
+      "updatedAt": "2026.11.03"
     }
   },
   "sources": [
@@ -208,6 +252,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260414001470",
       "published": "2026.04.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-reviewed-20261015000029",
+      "label": "반기보고서 (2026.08) · 실제 2026.06–08 원문 대조",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000029",
+      "published": "2026.10.15",
+      "verifiedAt": "2026.11.03"
     }
   ],
   "sectionSourceIds": {

@@ -50,7 +50,7 @@ function normalize(html,company,job){
  const consolidated=job.title.replace(/\s/g,'').includes('연결재무제표기준');
  if(consolidated!==(company.fsDiv==='CFS'))throw Error('Earnings reporting basis mismatch');
  const title=text(html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1]||'');
- const identity=value=>String(value).replace(/\s|\(주\)|㈜/g,'');
+ const identity=value=>text(String(value)).replace(/\s|\(주\)|㈜/g,'');
  if(identity(title.split('/')[0])!==identity(company.corpName))throw Error('Earnings company identity mismatch');
  const tables=[...html.matchAll(/<table\b[^>]*>[\s\S]*?<\/table>/gi)].map(m=>m[0]);
  const periods=tables.map(grid).flat().filter(r=>r[0]==='당기실적'&&r.some(v=>/^\d{4}-\d{2}-\d{2}$/.test(v)));

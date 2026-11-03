@@ -54,6 +54,12 @@ async function main(){
   run('dart-portfolio',['--mode','update','--base-sha',base]);
   const candidate=JSON.parse(fs.readFileSync(path.join(out,'portfolio-update.json'))),registry=JSON.parse(fs.readFileSync('data/dart-companies.json'));
   validateFiles(candidate,registry);if(candidate.baseSha!==base)throw Error('Candidate baseline mismatch');
+  const statePath=path.join(out,'disclosure-state.json');
+  const reviewed=require('./dart-review.cjs').reconcileCheckout(JSON.parse(fs.readFileSync(statePath)));
+  require('./dart-disclosures.cjs').saveState(reviewed.state,statePath);
+  candidate.stats.reviewItems=reviewed.state.reviewQueue.length;
+  candidate.stats.reviewedItemsClosed=reviewed.closed.length;
+  fs.writeFileSync(path.join(out,'portfolio-update.json'),JSON.stringify(candidate,null,2)+'\n');
   await persist();
   if(candidate.files.length){
    for(const f of candidate.files)fs.writeFileSync(f.path,f.content);
@@ -67,7 +73,7 @@ async function main(){
   }
   const errors=candidate.results.filter(r=>r.status==='error');
   const review=JSON.parse(fs.readFileSync(path.join(out,'disclosure-state.json'))).reviewQueue.filter(item=>!priorReview.has(item.receipt));
-  const summary=`DART new-disclosure update\n\nChanged companies: ${candidate.files.length}\nFinancial API requests: ${candidate.stats.financialRequests}\nPending jobs: ${candidate.stats.pendingJobs}\nReview items: ${candidate.stats.reviewItems} (${review.length} new)\nErrors: ${errors.length}\n`+review.slice(0,30).map(item=>`\n- [${item.key} / ${item.receipt}](https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${item.receipt}): ${item.reason}`).join('')+'\n';
+  const summary=`DART new-disclosure update\n\nChanged companies: ${candidate.files.length}\nFinancial API requests: ${candidate.stats.financialRequests}\nPending jobs: ${candidate.stats.pendingJobs}\nReview items: ${candidate.stats.reviewItems} (${review.length} new)\nReviewed items closed: ${candidate.stats.reviewedItemsClosed}\nErrors: ${errors.length}\n`+review.slice(0,30).map(item=>`\n- [${item.key} / ${item.receipt}](https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${item.receipt}): ${item.reason}`).join('')+'\n';
   console.log(summary);if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
   if(errors.length)throw Error('Some issuers require attention; their pending jobs were retained');
  }catch(e){await persist();throw e;}

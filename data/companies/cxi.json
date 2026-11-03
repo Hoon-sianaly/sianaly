@@ -104,6 +104,25 @@
         "sourceIds": [
           "report-20251028000429"
         ]
+      },
+      {
+        "year": 2026,
+        "sales": 0.000238584546,
+        "op": 0.000014401074,
+        "reportedCNY": {
+          "sales": "238584546",
+          "op": "14401074"
+        },
+        "sourceIds": [
+          "dart-reviewed-20261028000469"
+        ],
+        "reviewedFiling": {
+          "receipt": "20261028000469",
+          "reviewedAt": "2026.11.03",
+          "report": "dart-review-20261103.json"
+        },
+        "reportPeriod": "2025.07–2026.06",
+        "periodLabel": "2025.07–2026.06"
       }
     ],
     "quarterly": [
@@ -193,7 +212,12 @@
     "annualSourceLabel": "공식 CNY 6월 종료 12개월 결산",
     "quarterlyTerm": "최근 3개월",
     "quarterlyBasisLabel": "공식 실제 3개월 실적",
-    "quarterlyCalendarNote": "6월 결산 · 실제 달력 3개월 · 2026년 6월 결산 정기보고서 미확인"
+    "quarterlyCalendarNote": "6월 결산 · 실제 달력 3개월 · 2026년 6월 결산 정기보고서 미확인",
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Receipt-specific source-reviewed financial periods; existing manual update policy retained",
+      "updatedAt": "2026.11.03"
+    }
   },
   "sources": [
     {
@@ -230,6 +254,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601001840",
       "published": "2026.06.01",
       "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-reviewed-20261028000469",
+      "label": "사업보고서 (2026.06) · 실제 2025.07–2026.06 원문 대조",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028000469",
+      "published": "2026.10.28",
+      "verifiedAt": "2026.11.03"
     }
   ],
   "sectionSourceIds": {

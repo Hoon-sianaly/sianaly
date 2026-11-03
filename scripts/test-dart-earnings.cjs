@@ -14,6 +14,8 @@ assert.equal(e.isEarnings('연결재무제표기준영업(잠정)실적(공정�
 for(const modified of [html.replace('2026-07-01','2026-01-01'),html.replace('단위 : 조원','단위 : USD'),html.replace('삼성전자/','다른회사/'),html.replace('>195.25<','>미확정<')])assert.throws(()=>e.normalize(modified,company,job));
 assert.throws(()=>e.normalize(html,{...company,fsDiv:'OFS'},job));
 assert.throws(()=>e.normalize(html,{...company,salesLabel:'순이자이익'},job));
+assert.equal(e.normalize(html.replace('삼성전자/','삼성E&amp;A/'),{...company,corpName:'삼성E&amp;A'},job).sales,195.25);
+assert.throws(()=>e.normalize(html.replace('삼성전자/','다른자회사/'),company,job),/identity/);
 const base={profile:{key:'sample',ticker:'123456'},overview:{summary:'unchanged'},financials:{basis:'consolidated',unit:'KRW_trillion',annual:[],quarterly:[]},sources:[]};
 const applied=applyRows(base,[row],company,'2026-11-03');
 assert.equal(applied.changes.length,1);assert.equal(applied.record.financials.quarterly[0].disclosureStatus,'preliminary');assert.match(applied.record.sources[0].label,/잠정/);

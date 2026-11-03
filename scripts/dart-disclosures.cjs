@@ -51,7 +51,7 @@ async function discover(registry,state,asOf,api=core.api){
    }
    const p=reportPeriod(r.report_nm);
    if(!p?.report){
-    if(!next.reviewQueue.some(q=>q.receipt===r.rcept_no))next.reviewQueue.push({key:c.key,receipt:r.rcept_no,title:r.report_nm,reason:'Unsupported report period; manual review required'});
+    if(!next.reviewQueue.some(q=>q.receipt===r.rcept_no)&&!next.reviewHistory?.some(q=>q.key===c.key&&q.receipt===r.rcept_no))next.reviewQueue.push({key:c.key,receipt:r.rcept_no,title:r.report_nm,reason:'Unsupported report period; manual review required'});
     continue;
    }
    const id=`${c.key}/${p.year}/${p.report}`,job={id,key:c.key,year:p.year,report:p.report,receipt:r.rcept_no,title:r.report_nm};

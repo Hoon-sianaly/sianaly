@@ -17,6 +17,9 @@ async function main(){
  const zero=await d.discover(registry,state,'2026-10-08',async()=>({status:'013'}));assert.equal(zero.state.pending.length,0);assert.equal(zero.listRequests,4);
  const retry=await d.discover(registry,found.state,'2026-10-09',async()=>({status:'013'}));assert.equal(retry.state.pending.length,1);
  const unsupported=await d.discover(registry,state,'2026-10-08',async()=>({status:'000',page_no:1,total_page:1,list:[filing('20261008000003','사업보고서 (2026.03)')]}));assert.equal(unsupported.state.reviewQueue.length,1);assert.equal(unsupported.state.pending.length,0);
+ const archived={...state,reviewHistory:[{key:'sample',receipt:'20261008000003',status:'confirmed'}]};
+ const seen=await d.discover(registry,archived,'2026-10-08',async()=>({status:'000',page_no:1,total_page:1,list:[filing('20261008000003','사업보고서 (2026.03)'),filing('20261008000004','사업보고서 (2026.03)')]}));
+ assert.equal(seen.state.reviewQueue.length,1);assert.equal(seen.state.reviewQueue[0].receipt,'20261008000004','Only the reviewed receipt closes; a later correction still needs review');
  await assert.rejects(()=>d.discover(registry,state,'2026-10-08',async(e,a)=>a.page_no==='1'?{status:'000',page_no:1,total_page:2,list:[filing()]}:{status:'013'}),/pagination/);assert.equal(state.scannedThrough,'2026-10-08');
  // An older publication acknowledgment cannot delete a newer correction waiting in the queue.
  const newest=structuredClone(found.state);d.complete(newest,[{...newest.pending[0],receipt:'20261008000001'}]);assert.equal(newest.pending.length,1);

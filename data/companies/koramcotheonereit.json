@@ -150,6 +150,45 @@
         "sourceIds": [
           "report-20260813000607"
         ]
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.310330870584,
+        "op": 0.269836903585,
+        "reportedKRW": {
+          "sales": "310330870584",
+          "op": "269836903585"
+        },
+        "sourceIds": [
+          "dart-reviewed-20261029000393"
+        ],
+        "reviewedFiling": {
+          "receipt": "20261029000393",
+          "reviewedAt": "2026.11.03",
+          "report": "dart-review-20261103.json"
+        },
+        "reportPeriod": "2026.06–08",
+        "periodLabel": "2026.06–08",
+        "dart": {
+          "receipt": "20261029000393",
+          "rawKRW": {
+            "sales": "310330870584",
+            "op": "269836903585"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "annualTerm": "최근 3개월 결산",
@@ -166,6 +205,11 @@
         "label": "영업이익",
         "help": "동일한 별도 범위의 영업비용을 차감한 이익입니다."
       }
+    },
+    "automaticUpdate": {
+      "provider": "OpenDART",
+      "scope": "Receipt-specific source-reviewed financial periods; existing manual update policy retained",
+      "updatedAt": "2026.11.03"
     }
   },
   "sources": [
@@ -203,6 +247,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000607",
       "published": "2026.08.13",
       "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-reviewed-20261029000393",
+      "label": "사업보고서 (2026.08) · 실제 2026.06–08 원문 대조",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000393",
+      "published": "2026.10.29",
+      "verifiedAt": "2026.11.03"
     }
   ],
   "sectionSourceIds": {

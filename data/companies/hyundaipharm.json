@@ -213,12 +213,51 @@
         },
         "periodLabel": "2026.03–05",
         "reportPeriod": "2026.03–05"
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.056273396508,
+        "op": 0.002439468051,
+        "reportedKRW": {
+          "sales": "56273396508",
+          "op": "2439468051"
+        },
+        "sourceIds": [
+          "dart-reviewed-20261015000435"
+        ],
+        "reviewedFiling": {
+          "receipt": "20261015000435",
+          "reviewedAt": "2026.11.03",
+          "report": "dart-review-20261103.json"
+        },
+        "reportPeriod": "2026.06–08",
+        "periodLabel": "2026.06–08",
+        "dart": {
+          "receipt": "20261015000435",
+          "rawKRW": {
+            "sales": "56273396508",
+            "op": "2439468051"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
-      "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.09"
+      "scope": "Receipt-specific source-reviewed financial periods; existing manual update policy retained",
+      "updatedAt": "2026.11.03"
     },
     "quarterlyCalendarNote": "11월 결산 · 회계 1분기 12~2월, 2분기 3~5월"
   },
@@ -264,6 +303,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000511",
       "published": "2026.07.15",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-reviewed-20261015000435",
+      "label": "분기보고서 (2026.08) · 실제 2026.06–08 원문 대조",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261015000435",
+      "published": "2026.10.15",
+      "verifiedAt": "2026.11.03"
     }
   ],
   "sectionSourceIds": {

@@ -203,12 +203,49 @@
             ]
           }
         }
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.033387929722,
+        "op": 0.002137121542,
+        "reportedKRW": {
+          "sales": "33387929722",
+          "op": "2137121542"
+        },
+        "sourceIds": [
+          "dart-reviewed-20261029000052"
+        ],
+        "reviewedFiling": {
+          "receipt": "20261029000052",
+          "reviewedAt": "2026.11.03",
+          "report": "dart-review-20261103.json"
+        },
+        "dart": {
+          "receipt": "20261029000052",
+          "rawKRW": {
+            "sales": "33387929722",
+            "op": "2137121542"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
-      "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.14"
+      "scope": "Receipt-specific source-reviewed financial periods; existing manual update policy retained",
+      "updatedAt": "2026.11.03"
     }
   },
   "sources": [
@@ -260,6 +297,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260812000513",
       "published": "2026.08.12",
       "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-reviewed-20261029000052",
+      "label": "분기보고서 (2026.09) · 실제 2026.07–09 원문 대조",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000052",
+      "published": "2026.10.29",
+      "verifiedAt": "2026.11.03"
     }
   ],
   "sectionSourceIds": {
