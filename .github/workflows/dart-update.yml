@@ -42,6 +42,7 @@ jobs:
           node scripts/test-dart-review.cjs
           node scripts/validate-data.cjs
           node scripts/test-company-data.cjs
+          node scripts/test-company-reading.cjs
           node scripts/test-search.cjs
           node scripts/test-insights.cjs
           node scripts/test-financial-format.cjs
