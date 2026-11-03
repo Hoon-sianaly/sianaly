@@ -36,7 +36,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    const authorization=request.headers.get('Authorization')||'';
    if(!providers.includes('custom:naver')||url.search||authorization.length>4096||!/^Bearer [A-Za-z0-9+/_=.-]+$/i.test(authorization))return respond({code:'unauthorized'},401);
    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),10000);
-   try{const response=await upstreamFetch('https://openapi.naver.com/v1/nid/me',{headers:{Authorization:authorization,Accept:'application/json'},redirect:'error',signal:controller.signal});
+   try{const response=await upstreamFetch('https://openapi.naver.com/v1/nid/me',{headers:{Authorization:authorization,Accept:'application/json'},redirect:'manual',signal:controller.signal});
     if(!response.ok)return respond({code:'unauthorized'},401);const profile=await response.json(),id=profile?.response?.id;
     if(profile.resultcode!=='00'||typeof id!=='string'||!id||id.length>255)return respond({code:'unauthorized'},401);
     return respond({sub:id});

@@ -65,7 +65,7 @@ assert.equal(realLogin.status,200);const realURL=new URL((await realLogin.json()
 assert.equal(realURL.searchParams.get('code_challenge_method'),'s256');assert.ok(realURL.searchParams.get('code_challenge'));
 const realCookie=realLogin.headers.get('Set-Cookie');assert.match(realCookie,/__Host-sianaly-auth-code-verifier=/);assert.match(realCookie,/HttpOnly/);assert.match(realCookie,/Secure/);assert.match(realCookie,/Max-Age=600/);
 let upstreamCalls=0;
-const naverHandler=createAccountHandler({companyKeys:keys,upstreamFetch:async(url,opts)=>{upstreamCalls++;assert.equal(url,'https://openapi.naver.com/v1/nid/me');assert.equal(opts.redirect,'error');assert.equal(opts.headers.Authorization,'Bearer test-naver-token');return Response.json({resultcode:'00',response:{id:'app-scoped-id',email:'private@example.test',name:'Private',mobile:'not-forwarded'}});}});
+const naverHandler=createAccountHandler({companyKeys:keys,upstreamFetch:async(url,opts)=>{upstreamCalls++;assert.equal(url,'https://openapi.naver.com/v1/nid/me');assert.equal(opts.redirect,'manual');assert.equal(opts.headers.Authorization,'Bearer test-naver-token');return Response.json({resultcode:'00',response:{id:'app-scoped-id',email:'private@example.test',name:'Private',mobile:'not-forwarded'}});}});
 const naverRequest=async(path,authorization)=>naverHandler({request:new Request(origin+'/api/account/'+path,{headers:authorization?{Authorization:authorization}:{}}),env,params:{action:'naver-userinfo'}});
 assert.equal((await naverRequest('naver-userinfo')).status,401);
 assert.equal((await naverRequest('naver-userinfo?token=forbidden','Bearer test-naver-token')).status,401);assert.equal(upstreamCalls,0);
