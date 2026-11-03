@@ -48,7 +48,7 @@
  }
  function accountDialog(){
   if(!session.signedIn){pendingCompany=null;loginDialog();return;}
-  showDialog('내 계정');dialog.append(node('p',(session.provider||'소셜 계정')+'으로 로그인 중'),nicknameForm());
+  showDialog('내 계정');dialog.append(node('p',(session.provider||'소셜')+' 계정으로 로그인 중'),nicknameForm());
   const favorites=node('button','내 즐겨찾기','member-menu-action');favorites.type='button';favorites.onclick=()=>{dialog.close();if(homeList){homeList.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else location.assign('/#memberFavorites');};
   const logout=node('button','로그아웃','member-menu-action');logout.type='button';logout.onclick=async()=>{logout.disabled=true;try{await api('logout',{});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('로그아웃했어요.');}catch(e){logout.disabled=false;say(errorText(e));}};
   dialog.append(favorites,logout);

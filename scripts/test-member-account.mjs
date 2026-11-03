@@ -70,4 +70,7 @@ const naverRequest=async(path,authorization)=>naverHandler({request:new Request(
 assert.equal((await naverRequest('naver-userinfo')).status,401);
 assert.equal((await naverRequest('naver-userinfo?token=forbidden','Bearer test-naver-token')).status,401);assert.equal(upstreamCalls,0);
 assert.deepEqual(await (await naverRequest('naver-userinfo','Bearer test-naver-token')).json(),{sub:'app-scoped-id'});assert.equal(upstreamCalls,1);
+const redirectHandler=createAccountHandler({companyKeys:keys,upstreamFetch:async(url,opts)=>{assert.equal(opts.redirect,'manual');return Response.redirect('https://untrusted.test/',302);}});
+const redirectResponse=await redirectHandler({request:new Request(origin+'/api/account/naver-userinfo',{headers:{Authorization:'Bearer test-naver-token'}}),env,params:{action:'naver-userinfo'}});
+assert.equal(redirectResponse.status,401);
 console.log('Member API: provider gating, PKCE cookies, safe redirects, CSRF, verified identity, private responses and deletion checks passed.');
