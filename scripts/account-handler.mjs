@@ -1,7 +1,7 @@
 import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supabase/ssr';
 import {createClient} from '@supabase/supabase-js';
 
-const providerNames={google:'Google',kakao:'카카오','custom:naver':'네이버'};
+const providerNames={google:'Google',kakao:'카카오','custom:kakao':'카카오','custom:naver':'네이버'};
 export function safeAccountReturn(value,origin,companyKeys){
  try{const url=new URL(value||'/',origin);if(url.origin!==origin||url.username||url.password)return '/';
   if(['/','/index.html'].includes(url.pathname))return url.pathname;
@@ -13,7 +13,7 @@ async function bodyJSON(request){
  while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>1024){await reader.cancel();throw Error('Large body');}text+=decoder.decode(value,{stream:true});}
  const body=JSON.parse(text+decoder.decode());if(!body||Array.isArray(body)||typeof body!=='object')throw Error('Invalid body');return body;
 }
-export function createAccountHandler({companyKeys,serverClient=createServerClient,adminClient=createClient,clock=Date.now,upstreamFetch=fetch}){
+export function createAccountHandler({companyKeys,serverClient=createServerClient,adminClient=createClient,clock=Date.now,upstreamFetch=(...args)=>fetch(...args)}){
  const keys=new Set(companyKeys);
  return async function onRequest({request,env,params}){
   const url=new URL(request.url),action=String(params.action||''),headers=new Headers({'Cache-Control':'private, no-store','Pragma':'no-cache','Vary':'Cookie','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'});
@@ -34,7 +34,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     if(!response.ok)return respond({code:'unauthorized'},401);const profile=await response.json(),id=profile?.response?.id;
     if(profile.resultcode!=='00'||typeof id!=='string'||!id||id.length>255)return respond({code:'unauthorized'},401);
     return respond({sub:id});
-   }catch{return respond({code:'userinfo_unavailable'},502);}
+   }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}
   }
   const methods={session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
