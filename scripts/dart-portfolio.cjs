@@ -1,6 +1,7 @@
 const fs=require('node:fs'),path=require('node:path');
 const core=require('./dart-core.cjs');
 const disclosures=require('./dart-disclosures.cjs');
+const earnings=require('./dart-earnings.cjs');
 const {periods,koreanDate}=require('./update-dart-samsung.cjs');
 const catalog=require('../data/company-index.json');
 const readRecords=()=>Object.fromEntries(catalog.companies.map(c=>[c.key,JSON.parse(fs.readFileSync(path.join(core.root,'data/companies',c.file),'utf8'))]));
@@ -11,23 +12,30 @@ function applyRows(record,rows,company,asOf){
  const next=structuredClone(record),changes=[];
  for(const row of rows){
   if(row.currency!=='KRW'||row.basis!==record.financials.basis||!/^\d{14}$/.test(row.receipt)||row.periodBasis!==(row.quarter?'three-month':'annual'))throw Error('Invalid candidate provenance');
-  if(!Number.isInteger(row.year)||row.year<2015||row.year>Number(asOf.slice(0,4))||row.quarter!==undefined&&![1,2,3].includes(row.quarter))throw Error('Invalid candidate period');
+  if(!Number.isInteger(row.year)||row.year<2015||row.year>Number(asOf.slice(0,4))||row.quarter!==undefined&&![1,2,3,...(row.disclosureStatus==='preliminary'?[4]:[])].includes(row.quarter))throw Error('Invalid candidate period');
   for(const field of ['sales','op',...(row.net!==undefined?['net']:[])])if(!Number.isFinite(row[field])||row[field]!==Number(core.amount(row.rawKRW[field]))/1e12)throw Error('Invalid candidate amount');
   if(row.sales<0)throw Error('Negative sales is unsupported by the current UI');
   const bucket=row.quarter?next.financials.quarterly:next.financials.annual,old=bucket.find(r=>r.year===row.year&&r.quarter===row.quarter);
+  const preliminary=row.disclosureStatus==='preliminary';
+  // Filed statements outrank preliminary releases, including later preliminary corrections.
+  if(preliminary&&old&&old.disclosureStatus!=='preliminary')continue;
+  if(old?.dart?.receipt>row.receipt&&!(old.disclosureStatus==='preliminary'&&!preliminary))continue;
   const reconciled=company.reconciliations?.some(r=>r.year===row.year&&r.quarter===(row.quarter||null)&&r.receipt===row.receipt&&['sales','op'].every(f=>r.values[f]===row.rawKRW[f]&&r.previous[f]===old?.[f]));
   if(old&&!old.dart&&core.compare(row,record).status==='review-required'&&!reconciled)throw Error('Uncalibrated existing values require review');
   if(!row.quarter&&old?.net!==undefined&&row.net===undefined)throw Error('Existing annual net income has no matching account');
-  const fields=['sales','op',...(!row.quarter&&row.net!==undefined?['net']:[])],id=`dart-${row.year}-${row.quarter?'q'+row.quarter:'annual'}`;
-  if(old&&fields.every(f=>old[f]===row[f])&&old.dart?.receipt===row.receipt)continue;
+  const fields=['sales','op',...(!row.quarter&&row.net!==undefined?['net']:[])],id=`dart-${preliminary?'earnings-':''}${row.year}-${row.quarter?'q'+row.quarter:'annual'}`;
+  if(old&&fields.every(f=>old[f]===row[f])&&old.dart?.receipt===row.receipt&&old.disclosureStatus===row.disclosureStatus)continue;
   const updated={...(old||{}),year:row.year,...(row.quarter?{quarter:row.quarter}:{}),sales:row.sales,op:row.op,...(!row.quarter&&row.net!==undefined?{net:row.net}:{}),sourceIds:[id],dart:{receipt:row.receipt,rawKRW:row.rawKRW,periodBasis:row.periodBasis,accounts:row.accounts}};
+  if(preliminary){updated.disclosureStatus='preliminary';updated.reportPeriod=row.reportPeriod;}
+  else if(old?.disclosureStatus==='preliminary'){delete updated.disclosureStatus;delete updated.reportPeriod;delete updated.net; if(!row.quarter&&row.net!==undefined)updated.net=row.net;}
   if(old)bucket[bucket.indexOf(old)]=updated;else bucket.push(updated);
   bucket.sort((a,b)=>a.year-b.year||(a.quarter||0)-(b.quarter||0));
   const source={id,label:`${row.year}년 ${row.quarter?row.quarter+'분기':'연간'} ${row.basis==='separate'?'별도':'연결'} 재무제표 · DART`,url:`https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${row.receipt}`,published:row.receipt.slice(0,8).replace(/(\d{4})(\d{2})(\d{2})/,'$1.$2.$3'),verifiedAt:asOf.replaceAll('-','.')};
+  if(preliminary)source.label=`${row.year}년 ${row.quarter?row.quarter+'분기':'연간'} 영업(잠정)실적 공정공시 · DART`;
   const index=next.sources.findIndex(s=>s.id===id);if(index<0)next.sources.push(source);else next.sources[index]=source;
   changes.push({year:row.year,quarter:row.quarter||null,receipt:row.receipt,fields:fields.map(f=>({field:f,before:old?.[f]??null,after:row[f]}))});
  }
- if(changes.length)next.financials.automaticUpdate={provider:'OpenDART',scope:'Validated financial statement metrics',updatedAt:asOf.replaceAll('-','.')};
+ if(changes.length)next.financials.automaticUpdate={provider:'OpenDART',scope:'Validated financial statements and explicitly labelled preliminary earnings',updatedAt:asOf.replaceAll('-','.')};
  return {record:next,changes};
 }
 async function pooled(items,fn){let cursor=0;await Promise.all(Array.from({length:3},async()=>{while(cursor<items.length){const i=cursor++;await fn(items[i],i);}}));}
@@ -120,22 +128,35 @@ async function update(baseSha){
  disclosures.saveState(state,statePath);
  const byKey=new Map(registry.companies.filter(c=>c.corpCode).map(c=>[c.key,c])),groups=new Map();
  for(const job of state.pending){
-  if(!byKey.has(job.key)||job.id!==`${job.key}/${job.year}/${job.report}`||!/^\d{14}$/.test(job.receipt)||!['11011','11012','11013','11014'].includes(job.report))throw Error('Invalid pending disclosure job');
+  if(!byKey.has(job.key)||!/^\d{14}$/.test(job.receipt)||(job.kind==='preliminary'?job.id!==`${job.key}/preliminary/${job.receipt}`||!earnings.isEarnings(job.title):job.id!==`${job.key}/${job.year}/${job.report}`||!['11011','11012','11013','11014'].includes(job.report)))throw Error('Invalid pending disclosure job');
   if(!groups.has(job.key))groups.set(job.key,[]);groups.get(job.key).push(job);
  }
  let financialRequests=0;
  await pooled([...groups],async([key,jobs])=>{
-  const c=byKey.get(key),automatic=jobs.filter(j=>c.mode==='automatic'&&!c.blockedPeriods?.some(b=>b.year===j.year&&b.report===j.report)),held=jobs.filter(j=>!automatic.includes(j));
+  const c=byKey.get(key),automatic=jobs.filter(j=>c.mode==='automatic'&&(j.kind==='preliminary'||!c.blockedPeriods?.some(b=>b.year===j.year&&b.report===j.report))),held=jobs.filter(j=>!automatic.includes(j));
   for(const job of held){if(!state.reviewQueue.some(q=>q.receipt===job.receipt))state.reviewQueue.push({...job,reason:c.mode==='review'?'Metric/currency mapping requires review':'Existing period is held for reporting-scope review'});}
   disclosures.complete(state,held);
   if(!automatic.length){results.push({key,status:'review',receipts:held,reason:'New report retained for review; existing values preserved'});return;}
   try{
    const baseline=await remoteJSON(baseSha,`data/companies/${key}.json`),rows=[],completed=[],pending=[];
-   for(const job of automatic){
+   for(const job of automatic.sort((a,b)=>Number(a.kind!=='preliminary')-Number(b.kind!=='preliminary')||a.receipt.localeCompare(b.receipt))){
+    if(job.kind==='preliminary'){
+     try{
+      financialRequests++;const row=await earnings.fetchEarnings(c,job);
+      const report=row.quarter?({1:'11013',2:'11012',3:'11014',4:'11011'}[row.quarter]):'11011';
+      if(c.blockedPeriods?.some(b=>b.year===row.year&&b.report===report))throw Error('Existing period held for reporting-scope review');
+      rows.push(row);completed.push(job);
+     }catch(e){
+      if(/OpenDART|unavailable/i.test(e.message)){pending.push({...job,reason:e.message});continue;}
+      if(!state.reviewQueue.some(q=>q.receipt===job.receipt))state.reviewQueue.push({...job,reason:e.message});
+      disclosures.complete(state,[job]);
+     }
+     continue;
+    }
     financialRequests++;const payload=await core.financial(c,job);
     if(payload.status==='013'){pending.push({...job,reason:'Financial API not ready'});continue;}
     const row=core.normalize(payload,c,job),old=(row.quarter?baseline.financials.quarterly:baseline.financials.annual).find(r=>r.year===row.year&&r.quarter===row.quarter);
-    if(row.receipt<job.receipt||old?.dart?.receipt>row.receipt){pending.push({...job,reason:'Financial API receipt is older than the filing or published data'});continue;}
+    if(row.receipt<job.receipt||old?.disclosureStatus!=='preliminary'&&old?.dart?.receipt>row.receipt){pending.push({...job,reason:'Financial API receipt is older than the filing or published data'});continue;}
     rows.push(row);completed.push(job);
    }
    const applied=applyRows(baseline,rows,c,asOf);
@@ -156,7 +177,7 @@ async function acknowledge(baseSha){
  for(const f of candidate.files){
   if(!/^data\/companies\/[a-z][a-z0-9-]*\.json$/.test(f.path))throw Error('Invalid candidate file path');
   const live=await remoteJSON(baseSha,f.path),expected=JSON.parse(f.content);
-  if(JSON.stringify(live.financials)!==JSON.stringify(expected.financials))throw Error('Published financials do not match; pending jobs retained');
+  if(['financials','sources'].some(key=>JSON.stringify(live[key])!==JSON.stringify(expected[key])))throw Error('Published financials or sources do not match; pending jobs retained');
  }
  const statePath=file('disclosure-state.json'),state=JSON.parse(fs.readFileSync(statePath,'utf8'));
  disclosures.complete(state,candidate.ready||[]);disclosures.saveState(state,statePath);

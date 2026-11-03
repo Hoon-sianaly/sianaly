@@ -2,7 +2,12 @@
 const fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process');
 const repo='Hoon-sianaly/sianaly',branch='codex/dart-state',out=path.resolve('dart-output');
 async function api(route,method='GET',body){
- const r=await fetch(`https://api.github.com/repos/${repo}/${route}`,{method,headers:{Authorization:`Bearer ${process.env.GITHUB_TOKEN}`,Accept:'application/vnd.github+json','User-Agent':'SIANALY-DART','Content-Type':'application/json'},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(45000)});
+ let r;
+ for(let attempt=0;attempt<3;attempt++){
+  try{r=await fetch(`https://api.github.com/repos/${repo}/${route}`,{method,headers:{Authorization:`Bearer ${process.env.GITHUB_TOKEN}`,Accept:'application/vnd.github+json','User-Agent':'SIANALY-DART','Content-Type':'application/json'},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(45000)});if(r.status<500)break;}
+  catch{if(attempt===2)throw Error(`GitHub ${method} ${route.split('/')[0]} connection failed after retries; pending jobs retained`);}
+  if(attempt<2)await new Promise(resolve=>setTimeout(resolve,1000*(attempt+1)));
+ }
  if(r.status===404&&method==='GET')return null;
  if(!r.ok)throw Error(`GitHub ${method} ${route.split('/')[0]} failed (${r.status})`);
  return r.json();
@@ -16,7 +21,7 @@ function validateFiles(candidate,registry){
 }
 async function live(files){
  for(let attempt=0;attempt<20;attempt++){
-  const ok=await Promise.all(files.map(async f=>{try{const r=await fetch(`https://dev.sianaly.com/${f.path}?dart=${Date.now()}`,{signal:AbortSignal.timeout(20000)});return r.ok&&JSON.stringify((await r.json()).financials)===JSON.stringify(JSON.parse(f.content).financials);}catch{return false;}}));
+  const ok=await Promise.all(files.map(async f=>{try{const r=await fetch(`https://dev.sianaly.com/${f.path}?dart=${Date.now()}`,{signal:AbortSignal.timeout(20000)});if(!r.ok)return false;const actual=await r.json(),expected=JSON.parse(f.content);return ['financials','sources'].every(key=>JSON.stringify(actual[key])===JSON.stringify(expected[key]));}catch{return false;}}));
   if(ok.every(Boolean))return;
   await new Promise(r=>setTimeout(r,15000));
  }
@@ -40,11 +45,12 @@ async function main(){
   const p=envelope.publication;fs.writeFileSync(path.join(out,'portfolio-update.json'),JSON.stringify(p.candidate));
   let head=await api('git/ref/heads/main');
   if(head.object.sha===p.candidate.baseSha){await api('git/refs/heads/main','PATCH',{sha:p.commit,force:false});head={object:{sha:p.commit}};}
-  run('dart-portfolio',['--mode','acknowledge','--base-sha',head.object.sha]);await live(p.candidate.files);delete envelope.publication;await persist();
+  await live(p.candidate.files);run('dart-portfolio',['--mode','acknowledge','--base-sha',head.object.sha]);delete envelope.publication;await persist();
  }
  try{
   const head=await api('git/ref/heads/main'),base=head.object.sha;
   if(base!==process.env.GITHUB_SHA)throw Error('Main changed since checkout; rerun on latest main');
+  const priorReview=new Set((envelope.disclosures?.reviewQueue||[]).map(item=>item.receipt));
   run('dart-portfolio',['--mode','update','--base-sha',base]);
   const candidate=JSON.parse(fs.readFileSync(path.join(out,'portfolio-update.json'))),registry=JSON.parse(fs.readFileSync('data/dart-companies.json'));
   validateFiles(candidate,registry);if(candidate.baseSha!==base)throw Error('Candidate baseline mismatch');
@@ -60,7 +66,8 @@ async function main(){
    await live(candidate.files);run('dart-portfolio',['--mode','acknowledge','--base-sha',commit.sha]);delete envelope.publication;await persist();
   }
   const errors=candidate.results.filter(r=>r.status==='error');
-  const summary=`DART new-disclosure update\n\nChanged companies: ${candidate.files.length}\nFinancial API requests: ${candidate.stats.financialRequests}\nPending jobs: ${candidate.stats.pendingJobs}\nReview items: ${candidate.stats.reviewItems}\nErrors: ${errors.length}\n`;
+  const review=JSON.parse(fs.readFileSync(path.join(out,'disclosure-state.json'))).reviewQueue.filter(item=>!priorReview.has(item.receipt));
+  const summary=`DART new-disclosure update\n\nChanged companies: ${candidate.files.length}\nFinancial API requests: ${candidate.stats.financialRequests}\nPending jobs: ${candidate.stats.pendingJobs}\nReview items: ${candidate.stats.reviewItems} (${review.length} new)\nErrors: ${errors.length}\n`+review.slice(0,30).map(item=>`\n- [${item.key} / ${item.receipt}](https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${item.receipt}): ${item.reason}`).join('')+'\n';
   console.log(summary);if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
   if(errors.length)throw Error('Some issuers require attention; their pending jobs were retained');
  }catch(e){await persist();throw e;}

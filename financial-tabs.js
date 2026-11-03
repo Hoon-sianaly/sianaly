@@ -94,7 +94,8 @@ function initFinancialTabs(company, renderChart, renderSources, renderInsights) 
    button.tabIndex = active ? 0 : -1;
   }
   for (const button of metricButtons) button.setAttribute('aria-pressed', String(button.dataset.metric === metric));
-  root.querySelector('.performance-caption').textContent=period==='quarter'?'2025년 1분기 ~ 2026년 2분기 · 각 3개월 실적 · '+company.financialBasis:'2023·2024·2025년 · 각 1~12월 실적 · '+company.financialBasis;
+  const rows=period==='quarter'?fixed.quarterly:fixed.annual;
+  root.querySelector('.performance-caption').textContent=(period==='quarter'?`${rows[0].year}년 ${rows[0].quarter}분기 ~ ${rows.at(-1).year}년 ${rows.at(-1).quarter}분기 · 각 3개월 실적`:`${rows.map(r=>r.year).join('·')}년 · 각 1~12월 실적`)+' · '+company.financialBasis+(rows.some(r=>r.disclosureStatus==='preliminary')?' · 잠정실적 포함, 정기보고서 제출 후 갱신':'');
  }
  const missing=document.createElement('p');missing.className='financial-basis fixed-period-note';missing.textContent='— 표시는 확인된 수치가 없는 기간입니다. 0원이나 이익이 없다는 뜻이 아닙니다. 결산 기간이 다른 기업의 실제 공시 자료는 아래에서 따로 볼 수 있습니다.';root.append(missing);
  root.addEventListener('click', event => {

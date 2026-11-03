@@ -7,6 +7,18 @@ function financialDateRange(row){
  return m?{year:Number(m[1]),start:Number(m[2]),endYear:Number(m[3]||m[1]),end:Number(m[4])}:null;
 }
 function standardFinancialRows(company){
+ const calendarQuarter=row=>{
+  if(row.partialPeriod||row.durationMonths&&row.durationMonths!==3)return null;
+  const d=financialDateRange(row);
+  if(d){if(d.year!==d.endYear||d.end-d.start!==2||![1,4,7,10].includes(d.start))return null;return [d.year,Math.ceil(d.end/3)];}
+  return /반기|6개월/.test(company.quarterlyTerm)||!Number.isInteger(row.quarter)?null:[row.year,row.quarter];
+ };
+ const quarterIndex=([year,quarter])=>year*4+quarter-1;
+ const latestIndex=Math.max(quarterIndex(STANDARD_FINANCIAL_QUARTERS.at(-1)),...company.allQuarters.map(calendarQuarter).filter(Boolean).map(quarterIndex));
+ const quarters=Array.from({length:6},(_,i)=>{const index=latestIndex-5+i;return [Math.floor(index/4),index%4+1];});
+ const eligibleAnnual=company.annual.filter(row=>{const d=financialDateRange(row);return !row.partialPeriod&&!(d&&(d.year!==d.endYear||d.start!==1||d.end!==12))&&!/(?:3|6)개월/.test(company.annualTerm||'');});
+ const latestYear=Math.max(STANDARD_FINANCIAL_YEARS.at(-1),...eligibleAnnual.map(row=>row.year));
+ const years=[latestYear-2,latestYear-1,latestYear];
  const reason=(year,quarter)=>{
   const note=(company.financialPeriodNotes||[]).find(n=>n.year===year&&n.quarter===quarter);
   if(note)return note.reason;
@@ -21,16 +33,16 @@ function standardFinancialRows(company){
   if(issue?.reason==='No financial statements')return 'DART 정형자료 미제공 · 원문 확인 필요';
   return '해당 기간의 공시 수치 확인 필요';
  };
- const quarterly=STANDARD_FINANCIAL_QUARTERS.map(([year,quarter])=>{
+ const quarterly=quarters.map(([year,quarter])=>{
   const start=quarter*3-2,end=quarter*3;
   const row=company.allQuarters.find(row=>{if(row.partialPeriod||row.durationMonths&&row.durationMonths!==3)return false;const dates=financialDateRange(row);return dates?dates.year===year&&dates.endYear===year&&dates.start===start&&dates.end===end:row.year===year&&row.quarter===quarter&&!/반기|6개월/.test(company.quarterlyTerm);});
   const note=(company.financialPeriodNotes||[]).find(n=>n.year===year&&n.quarter===quarter);
-  return row?{...row,year,quarter,periodLabel:`${year}년 ${quarter}분기`}:{year,quarter,periodLabel:`${year}년 ${quarter}분기`,sales:null,op:null,sourceIds:note?.sourceIds||[],missingStatus:note?.status,missingReason:reason(year,quarter)};
+  return row?{...row,year,quarter,periodLabel:`${year}년 ${quarter}분기${row.disclosureStatus==='preliminary'?' (잠정)':''}`}:{year,quarter,periodLabel:`${year}년 ${quarter}분기`,sales:null,op:null,sourceIds:note?.sourceIds||[],missingStatus:note?.status,missingReason:reason(year,quarter)};
  });
- const annual=STANDARD_FINANCIAL_YEARS.map(year=>{
+ const annual=years.map(year=>{
   const row=company.annual.find(row=>{if(row.partialPeriod)return false;const dates=financialDateRange(row);return dates?dates.year===year&&dates.endYear===year&&dates.start===1&&dates.end===12:row.year===year&&!/(?:3|6)개월/.test(company.annualTerm||'');});
   const note=(company.financialPeriodNotes||[]).find(n=>n.year===year&&n.quarter===undefined);
-  return row?{...row,periodLabel:String(year),period:String(year)}:{year,periodLabel:String(year),period:String(year),sales:null,op:null,sourceIds:note?.sourceIds||[],missingStatus:note?.status,missingReason:reason(year)};
+  return row?{...row,periodLabel:String(year)+(row.disclosureStatus==='preliminary'?' (잠정)':''),period:String(year)}:{year,periodLabel:String(year),period:String(year),sales:null,op:null,sourceIds:note?.sourceIds||[],missingStatus:note?.status,missingReason:reason(year)};
  });
  return {annual,quarterly};
 }

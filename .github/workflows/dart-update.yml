@@ -1,7 +1,7 @@
 name: DART disclosure updates
 on:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '17,47 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -9,6 +9,8 @@ on:
       - '.github/workflows/dart-update.yml'
       - 'scripts/dart-actions.cjs'
       - 'scripts/dart-portfolio.cjs'
+      - 'scripts/dart-disclosures.cjs'
+      - 'scripts/dart-earnings.cjs'
       - 'data/dart-companies.json'
 permissions:
   contents: write
@@ -34,6 +36,7 @@ jobs:
           node scripts/test-dart-samsung.cjs
           node scripts/test-dart-update.cjs
           node scripts/test-dart-actions.cjs
+          node scripts/test-dart-earnings.cjs
           node scripts/validate-data.cjs
           node scripts/test-company-data.cjs
           node scripts/test-search.cjs

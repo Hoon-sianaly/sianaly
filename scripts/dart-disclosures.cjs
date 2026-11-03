@@ -1,5 +1,6 @@
 const fs=require('node:fs'),path=require('node:path');
 const core=require('./dart-core.cjs');
+const {isEarnings}=require('./dart-earnings.cjs');
 function dayShift(day,delta){const d=new Date(day+'T12:00:00Z');if(!Number.isFinite(d.getTime()))throw Error('Invalid disclosure date');d.setUTCDate(d.getUTCDate()+delta);return d.toISOString().slice(0,10);}
 function windows(start,end){const result=[];if(start>end)throw Error('Disclosure cursor is in the future');while(start<=end){const to=[dayShift(start,29),end].sort()[0];result.push({from:start,to});start=dayShift(to,1);}return result;}
 function reportPeriod(name){
@@ -19,24 +20,35 @@ function loadState(registry,asOf,statePath){
  return {schemaVersion:1,scannedThrough:dates[0]||asOf,pending:[],reviewQueue:[]};
 }
 async function listFilings(from,to,api=core.api){
- const rows=[];let pages=1;
+ const rows=[];
+ for(const market of ['Y','K'])for(const type of ['A','I']){
+ let pages=1,total;
  for(let page=1;page<=pages;page++){
-  const p=await api('list.json',{bgn_de:from.replaceAll('-',''),end_de:to.replaceAll('-',''),pblntf_ty:'A',last_reprt_at:'N',corp_cls:'Y',sort:'date',sort_mth:'asc',page_count:'100',page_no:String(page)});
-  if(p.status==='013'){if(page!==1)throw Error('Disclosure pagination changed; retry required');return [];}
+  const p=await api('list.json',{bgn_de:from.replaceAll('-',''),end_de:to.replaceAll('-',''),pblntf_ty:type,last_reprt_at:'N',corp_cls:market,sort:'date',sort_mth:'asc',page_count:'100',page_no:String(page)});
+  if(p.status==='013'){if(page!==1)throw Error('Disclosure pagination changed; retry required');break;}
   const count=Number(p.total_page);
   if(!Number.isInteger(count)||count<1||count>10000||Number(p.page_no)!==page||!Array.isArray(p.list)||!p.list.length)throw Error('Invalid disclosure pagination');
-  pages=Math.max(pages,count);rows.push(...p.list);
+  if(total!==undefined&&p.total_count!==undefined&&Number(p.total_count)!==total)throw Error('Disclosure pagination changed; retry required');
+  total=p.total_count===undefined?undefined:Number(p.total_count);
+  pages=Math.max(pages,count);rows.push(...p.list.filter(r=>type==='A'||isEarnings(r.report_nm)));
+ }
  }
  return rows;
 }
 async function discover(registry,state,asOf,api=core.api){
  const next=structuredClone(state),byCorp=new Map(registry.companies.filter(c=>c.corpCode).map(c=>[c.corpCode,c])),jobs=new Map(next.pending.map(j=>[j.id,j]));
  let listRequests=0,filings=0;
- for(const window of windows(dayShift(state.scannedThrough,-3),asOf)){
+ const from=state.scanVersion===2?dayShift(state.scannedThrough,-3):[dayShift(state.scannedThrough,-3),dayShift(asOf,-31)].sort()[0];
+ for(const window of windows(from,asOf)){
   const rows=await listFilings(window.from,window.to,async(...args)=>{listRequests++;return api(...args);});filings+=rows.length;
   for(const r of rows){
    const c=byCorp.get(r.corp_code);if(!c)continue;
    if(!/^\d{14}$/.test(r.rcept_no||'')||!/^\d{8}$/.test(r.rcept_dt||'')||r.rcept_dt<window.from.replaceAll('-','')||r.rcept_dt>window.to.replaceAll('-',''))throw Error('Invalid filing receipt/date');
+   if(isEarnings(r.report_nm)){
+    const id=`${c.key}/preliminary/${r.rcept_no}`;
+    if(!next.completed?.[id])jobs.set(id,{id,key:c.key,kind:'preliminary',receipt:r.rcept_no,title:r.report_nm});
+    continue;
+   }
    const p=reportPeriod(r.report_nm);
    if(!p?.report){
     if(!next.reviewQueue.some(q=>q.receipt===r.rcept_no))next.reviewQueue.push({key:c.key,receipt:r.rcept_no,title:r.report_nm,reason:'Unsupported report period; manual review required'});
@@ -48,7 +60,7 @@ async function discover(registry,state,asOf,api=core.api){
    if(!prior||job.receipt>prior.receipt)jobs.set(id,job);
   }
  }
- next.scannedThrough=asOf;next.pending=[...jobs.values()];next.completed=next.completed||{};
+ next.scannedThrough=asOf;next.scanVersion=2;next.pending=[...jobs.values()];next.completed=next.completed||{};
  return {state:next,listRequests,filings};
 }
 function saveState(state,statePath){fs.mkdirSync(path.dirname(statePath),{recursive:true});fs.writeFileSync(statePath+'.tmp',JSON.stringify(state,null,2)+'\n');fs.renameSync(statePath+'.tmp',statePath);}
