@@ -1,18 +1,18 @@
 import assert from 'node:assert/strict';
-import {createAccountHandler,safeAccountReturn} from './account-handler.mjs';
+import {createAccountHandler,safeAccountReturn,memberNickname} from './account-handler.mjs';
 const origin='https://dev.sianaly.com',now=Date.now();
 const env={AUTH_SITE_URL:origin,AUTH_ENABLED:'true',AUTH_PROVIDERS:'google,custom:kakao,custom:naver',SUPABASE_URL:'https://example.supabase.co',SUPABASE_PUBLISHABLE_KEY:'test-public',SUPABASE_SECRET_KEY:'test-server-only'};
 const keys=new Set(['samsung','naver']);
 for(const value of ['https://evil.test','//evil.test','javascript:alert(1)','/unknown','/company?company=missing'])assert.equal(safeAccountReturn(value,origin,keys),'/');
 assert.equal(safeAccountReturn('/company?company=samsung&extra=1#x',origin,keys),'/company?company=samsung');
-let user=null,options,insert,removed,deleted,adminCalls=0,exchanged;
+let user=null,options,insert,removed,deleted,adminCalls=0,exchanged,nicknameUpdate;
 const handler=createAccountHandler({companyKeys:keys,clock:()=>now,serverClient:(url,key,opts)=>{
  assert.equal(key,env.SUPABASE_PUBLISHABLE_KEY);options=opts;
  return {auth:{getUser:async()=>({data:{user},error:null}),signInWithOAuth:async args=>{
   assert.equal(args.options.redirectTo,origin+'/api/account/callback?next=%2F');
   opts.cookies.setAll([{name:'__Host-sianaly-auth-code-verifier',value:'test-verifier',options:{domain:'.evil.test',httpOnly:false,secure:false,sameSite:'none'}}]);
   return {data:{url:env.SUPABASE_URL+'/auth/v1/authorize?provider='+args.provider}};
- },exchangeCodeForSession:async code=>{exchanged=code;return {};},signOut:async()=>({})},from:table=>{
+ },exchangeCodeForSession:async code=>{exchanged=code;return {};},signOut:async()=>({}),updateUser:async data=>{nicknameUpdate=data;return {}; }},from:table=>{
   assert.equal(table,'sianaly_favorites');return {
    select:()=>({order:()=>({limit:async()=>({data:[{company_key:'samsung',created_at:'today'},{company_key:'invalid',created_at:'today'}]})})}),
    upsert:async(row,settings)=>{insert={row,settings};return {};},
@@ -29,6 +29,7 @@ assert.equal((await request('config',{overrides:{AUTH_ENABLED:'false'}})).status
 assert.equal((await (await request('config')).json()).providers.length,3);
 assert.equal((await request('session',{overrides:{AUTH_SITE_URL:'https://evil.test'}})).status,503);
 assert.equal((await request('favorites')).status,401);
+assert.equal((await request('nickname',{method:'POST',body:{nickname:'별명'}})).status,401);
 assert.equal((await request('login',{method:'POST',body:{provider:'google'},requestOrigin:'https://evil.test'})).status,403);
 assert.equal((await request('login',{method:'POST',body:{provider:'unknown'}})).status,400);
 let response=await request('login',{method:'POST',body:{provider:'google',next:'https://evil.test'}});
@@ -37,7 +38,16 @@ for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/','Max-Age=600'])as
 assert.ok(!cookie.toLowerCase().includes('domain='));assert.equal(options.cookieOptions.name,'__Host-sianaly-auth');
 response=await request('callback?code=test&next=https://evil.test');assert.equal(response.status,303);assert.equal(response.headers.get('Location'),'/');assert.equal(exchanged,'test');
 user={id:'verified-user',last_sign_in_at:new Date(now).toISOString(),email:'private@example.test',app_metadata:{provider:'google'}};
-const session=await (await request('session')).json();assert.deepEqual(session,{signedIn:true,provider:'Google'});
+const session=await (await request('session')).json();assert.deepEqual(session,{signedIn:true,provider:'Google',nickname:''});
+assert.equal((await request('favorites',{method:'POST',body:{company:'samsung'}})).status,409);
+assert.equal(memberNickname('<script>'),null);assert.equal(memberNickname('a\nb'),null);assert.equal(memberNickname('가'.repeat(21)),null);
+assert.equal((await request('nickname',{method:'POST',body:{nickname:'별명'},requestOrigin:'https://evil.test'})).status,403);
+assert.equal((await request('nickname',{method:'POST',body:{nickname:'별명',user_id:'victim'}})).status,400);
+assert.equal((await request('nickname',{method:'POST',body:{nickname:'<img>'}})).status,400);
+assert.deepEqual(await (await request('nickname',{method:'POST',body:{nickname:'  별명  '}})).json(),{nickname:'별명'});
+assert.deepEqual(nicknameUpdate,{data:{sianaly_nickname:'별명'}});assert.equal(adminCalls,0);
+user.user_metadata={sianaly_nickname:'별명'};assert.equal((await (await request('session')).json()).nickname,'별명');
+assert.equal((await request('nickname',{method:'POST',body:{nickname:''}})).status,400);
 assert.deepEqual(await (await request('favorites')).json(),{companies:[{key:'samsung',createdAt:'today'}]});
 assert.equal((await request('favorites',{method:'POST',body:{company:'samsung',user_id:'victim'}})).status,400);
 assert.equal((await request('favorites',{method:'POST',body:{company:'samsung'}})).status,200);assert.equal(insert.row.user_id,user.id);assert.equal(insert.settings.ignoreDuplicates,true);

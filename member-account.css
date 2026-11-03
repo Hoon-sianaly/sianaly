@@ -11,11 +11,14 @@
 .member-dialog p{font-size:13px;line-height:1.8;color:#778398;margin:10px 0 20px}
 .member-dialog-close{position:absolute;top:15px;right:15px;width:32px;height:32px;border:0;border-radius:5px;background:transparent;color:#8793a6;font-size:23px;cursor:pointer}
 .member-provider,.member-menu-action{display:block;width:100%;margin:10px 0 0;padding:13px 16px;border:1px solid #dfe5ed;border-radius:7px;background:#fff;color:#35445a;text-align:center;font:inherit;font-size:14px;line-height:1.5;cursor:pointer;text-decoration:none}
-.member-provider[data-provider="kakao"]{background:#fee500;border-color:#fee500;color:#191919}
+.member-provider[data-provider="kakao"],.member-provider[data-provider="custom:kakao"]{background:#fee500;border-color:#fee500;color:#191919}
 .member-provider[data-provider="custom:naver"]{background:#03a94d;border-color:#03a94d;color:#fff}
 .member-provider:disabled,.member-menu-action:disabled{opacity:.6;cursor:wait}
 .member-information{margin-top:22px;border-top:1px solid #e9edf2;padding-top:16px;font-size:12px;line-height:1.8;color:#8490a1}
 .member-information summary{cursor:pointer;color:#6b788e}
+.member-profile{margin:20px 0;padding-bottom:20px;border-bottom:1px solid #e9edf2}
+.member-profile label{font-size:13px;color:#536178}
+.member-profile p{margin:8px 0;font-size:12px}
 .member-information p{margin:10px 0;font-size:12px}
 .member-dialog .member-error{margin:12px 0 0;color:#b44747;font-size:12px;line-height:1.8}
 .member-delete-input{width:100%;height:42px;padding:0 12px;margin:4px 0 0;border:1px solid #dfe5ed;border-radius:6px;font:inherit;font-size:16px;color:#17243b;background:#fff}

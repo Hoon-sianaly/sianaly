@@ -8,7 +8,7 @@
  };
  function node(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
  function say(text){toast.textContent=text;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4500);}
- function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
+ function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
  function showDialog(title){
   dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
@@ -32,11 +32,23 @@
  }
  async function changeFavorite(key){
   if(!session.signedIn){pendingCompany=key;loginDialog();return;}
-  if(busy)return;busy=true;const remove=favoriteKeys.has(key);try{await api('favorites',{company:key},remove?'DELETE':'POST');if(remove)favoriteKeys.delete(key);else favoriteKeys.add(key);render();publishChange();say(remove?'즐겨찾기에서 삭제했어요.':'즐겨찾기에 저장했어요.');}catch(e){if(e.code==='login_required'){session={signedIn:false};favoriteKeys.clear();render();pendingCompany=key;loginDialog();}else say(errorText(e));}finally{busy=false;}
+  if(!session.nickname){pendingCompany=key;nicknameDialog();return;}
+  if(busy)return;busy=true;const remove=favoriteKeys.has(key);try{await api('favorites',{company:key},remove?'DELETE':'POST');if(remove)favoriteKeys.delete(key);else favoriteKeys.add(key);render();publishChange();say(remove?'즐겨찾기에서 삭제했어요.':'즐겨찾기에 저장했어요.');}catch(e){if(e.code==='login_required'){session={signedIn:false};favoriteKeys.clear();render();pendingCompany=key;loginDialog();}else if(e.code==='nickname_required'){session.nickname='';pendingCompany=key;nicknameDialog();}else say(errorText(e));}finally{busy=false;}
+ }
+ function nicknameForm(onSaved,first=false){
+  const profile=node('form',undefined,'member-profile'),label=node('label','별명'),nickname=node('input',undefined,'member-delete-input');
+  nickname.id='memberNickname';label.htmlFor=nickname.id;nickname.type='text';nickname.value=session.nickname||'';nickname.required=true;nickname.minLength=2;nickname.maxLength=20;nickname.autocomplete='nickname';nickname.placeholder='내가 사용할 별명';nickname.setAttribute('aria-describedby','memberNicknameHelp');
+  const help=node('p','2~20자 · 본명 대신 별명을 사용해 주세요.');help.id='memberNicknameHelp';
+  const save=node('button',first?'가입 완료':'별명 저장','member-menu-action'),profileStatus=node('p','','member-error');save.type='submit';profileStatus.setAttribute('role','status');
+  profile.onsubmit=async event=>{event.preventDefault();save.disabled=true;profileStatus.textContent='';try{const data=await api('nickname',{nickname:nickname.value});session.nickname=data.nickname;nickname.value=data.nickname;publishChange();say(first?'가입을 완료했어요.':'별명을 저장했어요.');if(onSaved)await onSaved();}catch(e){profileStatus.textContent=errorText(e);}finally{save.disabled=false;}};
+  profile.append(label,nickname,help,save,profileStatus);return profile;
+ }
+ function nicknameDialog(){
+  showDialog('어떤 별명으로 시작할까요?');dialog.append(node('p','SIANALY에서 사용할 별명을 정하면 가입이 완료돼요. 소셜 계정의 이름은 사용하지 않아요.'),nicknameForm(async()=>{dialog.close();if(pendingCompany){const key=pendingCompany;pendingCompany=null;if(!favoriteKeys.has(key))await changeFavorite(key);}},true));
  }
  function accountDialog(){
   if(!session.signedIn){pendingCompany=null;loginDialog();return;}
-  showDialog('내 계정');dialog.append(node('p',(session.provider||'소셜 계정')+'으로 로그인 중'));
+  showDialog('내 계정');dialog.append(node('p',(session.provider||'소셜 계정')+'으로 로그인 중'),nicknameForm());
   const favorites=node('button','내 즐겨찾기','member-menu-action');favorites.type='button';favorites.onclick=()=>{dialog.close();if(homeList){homeList.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else location.assign('/#memberFavorites');};
   const logout=node('button','로그아웃','member-menu-action');logout.type='button';logout.onclick=async()=>{logout.disabled=true;try{await api('logout',{});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('로그아웃했어요.');}catch(e){logout.disabled=false;say(errorText(e));}};
   dialog.append(favorites,logout);
@@ -67,7 +79,7 @@
   if(!document.getElementById('app')){const area=node('section',undefined,'member-favorites');area.id='memberFavorites';area.hidden=true;const head=node('div',undefined,'member-favorites-head');head.append(node('h2','내 즐겨찾기'));homeList=node('ul',undefined,'member-favorites-list');const empty=node('p','기업 페이지에서 ☆ 즐겨찾기를 눌러 저장할 수 있어요.','member-favorites-empty');area.append(head,homeList,empty);document.querySelector('main')?.before(area);}
   mountCompany();const app=document.getElementById('app');if(app)new MutationObserver(mountCompany).observe(app,{childList:true,subtree:true});
   await reloadSession();
-  if(session.signedIn){let pending;try{pending=JSON.parse(sessionStorage.getItem('sianaly.pendingFavorite')||'null');sessionStorage.removeItem('sianaly.pendingFavorite');}catch{}if(pending?.createdAt>Date.now()-600000&&catalog.has(pending.key)&&!favoriteKeys.has(pending.key))await changeFavorite(pending.key);}
+  if(session.signedIn){let pending;try{pending=JSON.parse(sessionStorage.getItem('sianaly.pendingFavorite')||'null');sessionStorage.removeItem('sianaly.pendingFavorite');}catch{}if(pending?.createdAt>Date.now()-600000&&catalog.has(pending.key)&&!favoriteKeys.has(pending.key))pendingCompany=pending.key;if(!session.nickname)nicknameDialog();else if(pendingCompany){const key=pendingCompany;pendingCompany=null;await changeFavorite(key);}}
   const query=new URLSearchParams(location.search);if(query.has('accountError')){say('로그인을 완료하지 못했어요. 다시 시도해 주세요.');query.delete('accountError');history.replaceState(null,'',location.pathname+(query.size?'?'+query:'')+location.hash);}
   if(location.hash==='#memberFavorites'&&homeList&&!homeList.parentElement.hidden)homeList.parentElement.scrollIntoView({block:'center'});
   window.addEventListener('storage',event=>{if(event.key==='sianaly.member.changed'){favoriteKeys.clear();session={signedIn:false};render();reloadSession();}});

@@ -2,6 +2,11 @@ import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supab
 import {createClient} from '@supabase/supabase-js';
 
 const providerNames={google:'Google',kakao:'카카오','custom:kakao':'카카오','custom:naver':'네이버'};
+export function memberNickname(value){
+ if(typeof value!=='string')return null;
+ const nickname=value.normalize('NFKC').trim();
+ return Array.from(nickname).length>=2&&Array.from(nickname).length<=20&&/^[\p{L}\p{N} _-]+$/u.test(nickname)?nickname:null;
+}
 export function safeAccountReturn(value,origin,companyKeys){
  try{const url=new URL(value||'/',origin);if(url.origin!==origin||url.username||url.password)return '/';
   if(['/','/index.html'].includes(url.pathname))return url.pathname;
@@ -30,13 +35,14 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    if(request.method!=='GET')return respond({code:'method_not_allowed'},405);
    const authorization=request.headers.get('Authorization')||'';
    if(!providers.includes('custom:naver')||url.search||authorization.length>4096||!/^Bearer [A-Za-z0-9+/_=.-]+$/i.test(authorization))return respond({code:'unauthorized'},401);
-   try{const response=await upstreamFetch('https://openapi.naver.com/v1/nid/me',{headers:{Authorization:authorization,Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(10000)});
+   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),10000);
+   try{const response=await upstreamFetch('https://openapi.naver.com/v1/nid/me',{headers:{Authorization:authorization,Accept:'application/json'},redirect:'error',signal:controller.signal});
     if(!response.ok)return respond({code:'unauthorized'},401);const profile=await response.json(),id=profile?.response?.id;
     if(profile.resultcode!=='00'||typeof id!=='string'||!id||id.length>255)return respond({code:'unauthorized'},401);
     return respond({sub:id});
-   }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}
+   }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}finally{clearTimeout(timer);}
   }
-  const methods={session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],delete:['POST']};
+  const methods={session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
   const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
@@ -61,11 +67,17 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return redirect(safeAccountReturn(url.searchParams.get('next'),site.origin,keys));
    }
    const {data,error}=await client.auth.getUser();const user=error?null:data?.user;
-   if(action==='session')return respond({signedIn:Boolean(user),provider:user?providerNames[user.app_metadata?.provider]||'소셜 계정':null});
+   if(action==='session')return respond({signedIn:Boolean(user),provider:user?providerNames[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null});
    if(action==='logout'){
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }
    if(!user)return respond({code:'login_required'},401);
+   if(action==='nickname'){
+    const body=await bodyJSON(request),nickname=memberNickname(body.nickname);
+    if(Object.keys(body).some(k=>k!=='nickname')||nickname===null)return respond({code:'invalid_nickname'},400);
+    const {error}=await client.auth.updateUser({data:{sianaly_nickname:nickname}});
+    return error?respond({code:'nickname_unavailable'},503):respond({nickname});
+   }
    if(action==='favorites'){
     // Always use the user's client. Never use the admin key to read or write favorites.
     if(request.method==='GET'){
@@ -73,6 +85,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
      if(error)return respond({code:'favorites_unavailable'},503);
      return respond({companies:(rows||[]).filter(row=>keys.has(row.company_key)).map(row=>({key:row.company_key,createdAt:row.created_at}))});
     }
+    if(request.method==='POST'&&!memberNickname(user.user_metadata?.sianaly_nickname))return respond({code:'nickname_required'},409);
     const body=await bodyJSON(request);if(Object.keys(body).some(k=>k!=='company')||!keys.has(body.company))return respond({code:'invalid_company'},400);
     const result=request.method==='POST'?await client.from('sianaly_favorites').upsert({user_id:user.id,company_key:body.company},{onConflict:'user_id,company_key',ignoreDuplicates:true}):await client.from('sianaly_favorites').delete().eq('user_id',user.id).eq('company_key',body.company);
     return result.error?respond({code:'favorites_unavailable'},503):respond({ok:true});
