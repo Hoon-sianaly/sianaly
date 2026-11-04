@@ -60,7 +60,6 @@ function initFinancialTabs(company, renderChart, renderSources, renderInsights) 
    periodNotes=document.createElement('div');periodNotes.className='period-availability-notes';
    periodNotes.setAttribute('aria-label','빈 기간 안내');
    for(const [reason,periods]of groups){const p=document.createElement('p'),b=document.createElement('b');b.textContent=periods.join(' · ');p.append(b,document.createElement('br'),document.createTextNode(reason));periodNotes.append(p);}
-   const stamp=document.createElement('small');stamp.textContent='확인일 '+company.financialPeriodReviewAsOf;periodNotes.append(stamp);
   }
   const more = document.createElement('details');
   more.className = 'performance-details';
