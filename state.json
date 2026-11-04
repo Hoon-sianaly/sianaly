@@ -17,13 +17,6 @@
         "kind": "preliminary",
         "receipt": "20261104800154",
         "title": "[첨부정정]연결재무제표기준영업(잠정)실적(공정공시)              "
-      },
-      {
-        "id": "isens/preliminary/20261104900171",
-        "key": "isens",
-        "kind": "preliminary",
-        "receipt": "20261104900171",
-        "title": "연결재무제표기준영업(잠정)실적(공정공시)              "
       }
     ],
     "reviewQueue": [
@@ -737,7 +730,8 @@
       "skt/preliminary/20261104800085": "20261104800085",
       "lguplus/preliminary/20261104800119": "20261104800119",
       "lghellovision/preliminary/20261104800121": "20261104800121",
-      "incross/preliminary/20261104900139": "20261104900139"
+      "incross/preliminary/20261104900139": "20261104900139",
+      "isens/preliminary/20261104900171": "20261104900171"
     },
     "scanVersion": 2,
     "reviewHistory": [
@@ -1390,100 +1384,5 @@
         "report": "data/dart-review-20261103.json"
       }
     ]
-  },
-  "publication": {
-    "commit": "1d08734430aef349b17f2970e81eb9fa3cc43440",
-    "candidate": {
-      "schemaVersion": 1,
-      "status": "validated",
-      "baseSha": "65a830d9b7b4930e0e85d94381f373c848b7d478",
-      "asOf": "2026-11-04",
-      "checkedAt": "2026-11-04T02:30:49.733Z",
-      "strategy": "new-disclosures",
-      "stats": {
-        "listRequests": 7,
-        "listedFilings": 99,
-        "targetIssuers": 3,
-        "financialRequests": 3,
-        "pendingJobs": 3,
-        "reviewItems": 32,
-        "reviewedItemsClosed": 0
-      },
-      "results": [
-        {
-          "key": "lghellovision",
-          "status": "pending",
-          "changes": [],
-          "pending": [
-            {
-              "id": "lghellovision/preliminary/20261104800154",
-              "key": "lghellovision",
-              "kind": "preliminary",
-              "receipt": "20261104800154",
-              "title": "[첨부정정]연결재무제표기준영업(잠정)실적(공정공시)              ",
-              "reason": "Official earnings document unavailable"
-            }
-          ],
-          "held": []
-        },
-        {
-          "key": "isens",
-          "status": "changed",
-          "changes": [
-            {
-              "year": 2026,
-              "quarter": 3,
-              "receipt": "20261104900171",
-              "fields": [
-                {
-                  "field": "sales",
-                  "before": null,
-                  "after": 0.086472
-                },
-                {
-                  "field": "op",
-                  "before": null,
-                  "after": 0.003793
-                }
-              ]
-            }
-          ],
-          "pending": [],
-          "held": []
-        },
-        {
-          "key": "toolgen",
-          "status": "pending",
-          "changes": [],
-          "pending": [
-            {
-              "id": "toolgen/2026/11012",
-              "key": "toolgen",
-              "year": 2026,
-              "report": "11012",
-              "receipt": "20261023000304",
-              "title": "[기재정정]반기보고서 (2026.06)",
-              "reason": "Financial API receipt is older than the filing or published data"
-            }
-          ],
-          "held": []
-        }
-      ],
-      "ready": [
-        {
-          "id": "isens/preliminary/20261104900171",
-          "key": "isens",
-          "kind": "preliminary",
-          "receipt": "20261104900171",
-          "title": "연결재무제표기준영업(잠정)실적(공정공시)              "
-        }
-      ],
-      "files": [
-        {
-          "path": "data/companies/isens.json",
-          "content": "{\n  \"schemaVersion\": 1,\n  \"profile\": {\n    \"key\": \"isens\",\n    \"name\": \"아이센스\",\n    \"ticker\": \"099190\",\n    \"rank\": 173,\n    \"type\": \"혈당·현장진단\"\n  },\n  \"overview\": {\n    \"short\": \"아이센스는 혈당 측정과 현장진단 기기 회사\",\n    \"summary\": \"아이센스는 혈당 측정과 현장진단 기기 회사입니다. 자가혈당 측정기와 일회용 스트립을 공급합니다.\",\n    \"takeaways\": [\n      \"아이센스는 혈당 측정과 현장진단 기기 회사입니다.\",\n      \"자가혈당 측정기와 일회용 스트립을 공급합니다.\",\n      \"연속혈당 측정기와 센서 사업도 운영합니다.\",\n      \"병원용 혈액가스·당화혈색소 등 분석장비를 제공합니다.\",\n      \"장비 보급과 소모품 반복 사용, 신제품 비용을 함께 봅니다.\"\n    ],\n    \"business\": [\n      {\n        \"name\": \"자가혈당\",\n        \"desc\": \"혈당 측정기·스트립 등 제품을 공급합니다.\"\n      },\n      {\n        \"name\": \"연속혈당\",\n        \"desc\": \"혈당을 연속 측정하는 센서·기기를 공급합니다.\"\n      },\n      {\n        \"name\": \"현장진단\",\n        \"desc\": \"분석장비와 카트리지·스트립을 공급합니다.\"\n      }\n    ],\n    \"drivers\": [\n      {\n        \"title\": \"반복 사용\",\n        \"desc\": \"장비 고객의 스트립·센서 사용량을 확인합니다.\"\n      },\n      {\n        \"title\": \"허가·채택\",\n        \"desc\": \"신제품의 국가별 허가와 판매·유통을 봅니다.\"\n      },\n      {\n        \"title\": \"제조·개발비\",\n        \"desc\": \"센서 수율과 시설·연구개발·마케팅 비용을 확인합니다.\"\n      }\n    ],\n    \"financialNote\": \"연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다.\",\n    \"quarterlyNote\": \"공식 손익계산서의 각 3개월 실적입니다.\"\n  },\n  \"market\": {},\n  \"financials\": {\n    \"unit\": \"KRW_trillion\",\n    \"basis\": \"consolidated\",\n    \"verification\": {\n      \"status\": \"verified\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    \"annual\": [\n      {\n        \"year\": 2024,\n        \"sales\": 0.291137903797,\n        \"op\": 0.002657678239,\n        \"net\": -0.001952791476,\n        \"sourceIds\": [\n          \"dart-2024-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250318001234\",\n          \"rawKRW\": {\n            \"sales\": \"291137903797\",\n            \"op\": \"2657678239\",\n            \"net\": \"-1952791476\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2025,\n        \"sales\": 0.315444741611,\n        \"op\": 0.007886581393,\n        \"net\": -0.006690635026,\n        \"sourceIds\": [\n          \"dart-2025-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260318001657\",\n          \"rawKRW\": {\n            \"sales\": \"315444741611\",\n            \"op\": \"7886581393\",\n            \"net\": \"-6690635026\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"quarterly\": [\n      {\n        \"year\": 2025,\n        \"quarter\": 2,\n        \"sales\": 0.076789423184,\n        \"op\": 0.00168055214,\n        \"sourceIds\": [\n          \"dart-2025-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250814003626\",\n          \"rawKRW\": {\n            \"sales\": \"76789423184\",\n            \"op\": \"1680552140\",\n            \"net\": \"784020277\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 1,\n        \"sales\": 0.075129546642,\n        \"op\": 0.00093731963,\n        \"sourceIds\": [\n          \"dart-2026-q1\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260515002356\",\n          \"rawKRW\": {\n            \"sales\": \"75129546642\",\n            \"op\": \"937319630\",\n            \"net\": \"1600790505\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 2,\n        \"sales\": 0.088674090937,\n        \"op\": 0.006607677156,\n        \"sourceIds\": [\n          \"dart-2026-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260814001297\",\n          \"rawKRW\": {\n            \"sales\": \"88674090937\",\n            \"op\": \"6607677156\",\n            \"net\": \"3969941329\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\",\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 3,\n        \"sales\": 0.086472,\n        \"op\": 0.003793,\n        \"sourceIds\": [\n          \"dart-earnings-2026-q3\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20261104900171\",\n          \"rawKRW\": {\n            \"sales\": \"86472000000\",\n            \"op\": \"3793000000\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"매출액/당해실적\"\n            ],\n            \"op\": [\n              \"영업이익/당해실적\"\n            ]\n          }\n        },\n        \"disclosureStatus\": \"preliminary\",\n        \"reportPeriod\": \"2026-07-01–2026-09-30\"\n      }\n    ],\n    \"automaticUpdate\": {\n      \"provider\": \"OpenDART\",\n      \"scope\": \"Validated financial statements and explicitly labelled preliminary earnings\",\n      \"updatedAt\": \"2026.11.04\"\n    }\n  },\n  \"sources\": [\n    {\n      \"id\": \"dart-2025-annual\",\n      \"label\": \"2025년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001657\",\n      \"published\": \"2026.03.18\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2026-q1\",\n      \"label\": \"2026년 1분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002356\",\n      \"published\": \"2026.05.15\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2026-q2\",\n      \"label\": \"2026년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001297\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2024-annual\",\n      \"label\": \"2024년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001234\",\n      \"published\": \"2025.03.18\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2025-q2\",\n      \"label\": \"2025년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003626\",\n      \"published\": \"2025.08.14\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"business\",\n      \"label\": \"아이센스 최신 정기보고서 · 사업의 내용\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001297\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-earnings-2026-q3\",\n      \"label\": \"2026년 3분기 영업(잠정)실적 공정공시 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104900171\",\n      \"published\": \"2026.11.04\",\n      \"verifiedAt\": \"2026.11.04\"\n    }\n  ],\n  \"sectionSourceIds\": {\n    \"business\": [\n      \"business\"\n    ],\n    \"drivers\": [\n      \"business\"\n    ]\n  },\n  \"glossary\": [\n    {\n      \"name\": \"연결 기준\",\n      \"desc\": \"회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다.\"\n    },\n    {\n      \"name\": \"수율\",\n      \"desc\": \"투입·생산한 제품 중 정상적으로 사용할 수 있는 제품의 비율입니다.\"\n    },\n    {\n      \"name\": \"연구개발\",\n      \"desc\": \"새 제품·기술을 연구하고 실제 사용할 수 있도록 개발하는 활동입니다. 지출이 곧바로 매출이나 성공을 뜻하지는 않습니다.\"\n    },\n    {\n      \"name\": \"소모품\",\n      \"desc\": \"기기 사용 과정에서 소진돼 교체·보충하는 재료입니다. 인쇄용 토너 등이 해당합니다.\"\n    },\n    {\n      \"name\": \"현장진단\",\n      \"desc\": \"검사실 외의 진료 현장 등에서 신속하게 시행하는 진단 분야입니다.\"\n    },\n    {\n      \"name\": \"연속혈당\",\n      \"desc\": \"센서 등을 통해 일정 기간 혈당 관련 수치를 연속적으로 측정하는 방식입니다.\"\n    },\n    {\n      \"name\": \"스트립\",\n      \"desc\": \"여기서는 혈당 등의 검체를 분석하는 일회용 시험지·검사 부품입니다.\"\n    },\n    {\n      \"name\": \"카트리지\",\n      \"desc\": \"진단장비 등에 끼워 사용하는 시약·검체 처리용 부품입니다.\"\n    }\n  ],\n  \"presentation\": {\n    \"compact\": true,\n    \"chartStyle\": \"comparison\"\n  }\n}\n"
-        }
-      ]
-    }
   }
 }
