@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>자유게시판 · SIANALY</title>
+<link rel="stylesheet" href="member-account.css?v=20261105-auth-actions">
+<link rel="stylesheet" href="board.css">
+<script src="company-data.js?v=20261103-reading-1" defer></script>
+<script src="member-account.js?v=20261105-board" defer></script>
+<script src="board.js" defer></script>
+</head>
+<body>
+<header class="board-header">
+<a class="logo" href="index.html"><img src="sianaly-symbol.svg" alt="SIANALY 홈" width="30" height="34"></a>
+<a class="member-nav-button board-nav" href="board.html" aria-current="page">게시판</a>
+</header>
+<main id="app" class="board">
+<div class="board-heading"><h1>자유게시판</h1><a id="board-write" class="board-primary" href="board.html?write=1">글쓰기</a></div>
+<p id="board-status" role="status"></p>
+<section id="board-content" aria-label="게시판 내용"></section>
+<noscript>게시판을 보려면 자바스크립트를 켜 주세요.</noscript>
+</main>
+</body>
+</html>

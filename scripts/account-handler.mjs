@@ -1,3 +1,4 @@
+import {handleBoard} from './board-handler.mjs';
 import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supabase/ssr';
 import {createClient} from '@supabase/supabase-js';
 
@@ -10,12 +11,17 @@ export function memberNickname(value){
 export function safeAccountReturn(value,origin,companyKeys){
  try{const url=new URL(value||'/',origin);if(url.origin!==origin||url.username||url.password)return '/';
   if(['/','/index.html'].includes(url.pathname))return url.pathname;
+  if(['/board','/board.html'].includes(url.pathname)){
+   const post=url.searchParams.get('post');
+   if(post && /^[1-9][0-9]{0,14}$/.test(post))return '/board.html?post='+post;
+   return url.searchParams.get('write')==='1'?'/board.html?write=1':'/board.html';
+  }
   if(['/company','/company.html'].includes(url.pathname)&&companyKeys.has(url.searchParams.get('company')))return url.pathname+'?company='+encodeURIComponent(url.searchParams.get('company'));
  }catch{}return '/';
 }
-async function bodyJSON(request){
+async function bodyJSON(request,maxBytes=1024){
  const reader=request.body?.getReader();if(!reader)throw Error('Missing body');let size=0,text='';const decoder=new TextDecoder();
- while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>1024){await reader.cancel();throw Error('Large body');}text+=decoder.decode(value,{stream:true});}
+ while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>maxBytes){await reader.cancel();throw Error('Large body');}text+=decoder.decode(value,{stream:true});}
  const body=JSON.parse(text+decoder.decode());if(!body||Array.isArray(body)||typeof body!=='object')throw Error('Invalid body');return body;
 }
 export function createAccountHandler({companyKeys,serverClient=createServerClient,adminClient=createClient,clock=Date.now,upstreamFetch=(...args)=>fetch(...args)}){
@@ -28,6 +34,10 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const providers=(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
   const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY)&&providers.length>0;
   if(action==='config'&&request.method==='GET')return respond({ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[]});
+  if(action==='board'&&request.method==='GET'){
+   try{return await handleBoard({db:env.POPULAR_DB,url,method:'GET',respond});}
+   catch{return respond({code:'board_unavailable'},503);}
+  }
   if(!ready)return respond({ready:false,code:'unavailable'},503);
   // Supabase custom OAuth expects top-level sub; Naver returns response.id.
   // Forward only to Naver's fixed HTTPS endpoint and return only the app-scoped ID.
@@ -42,7 +52,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({sub:id});
    }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}finally{clearTimeout(timer);}
   }
-  const methods={session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
+  const methods={board:['POST'],session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
   const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
@@ -72,6 +82,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }
    if(!user)return respond({code:'login_required'},401);
+   if(action==='board')return await handleBoard({db:env.POPULAR_DB,url,method:request.method,user,nickname:memberNickname(user.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond});
    if(action==='nickname'){
     const body=await bodyJSON(request),nickname=memberNickname(body.nickname);
     if(Object.keys(body).some(k=>k!=='nickname')||nickname===null)return respond({code:'invalid_nickname'},400);
