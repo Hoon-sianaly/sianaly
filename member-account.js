@@ -1,7 +1,7 @@
 (function(){
  'use strict';
  let config,session={signedIn:false},favoriteKeys=new Set(),catalog=new Map(),busy=false,pendingCompany=null;
- let nav,dialog,toast,toastTimer,homeList;const wiredFavorites=new WeakSet();
+ let nav,signup,dialog,toast,toastTimer,homeList;const wiredFavorites=new WeakSet();
  const api=async(action,body,method=body?'POST':'GET')=>{
   const response=await fetch('/api/account/'+action,{method,credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json'}:{},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(15000)});
   const data=await response.json();if(!response.ok){const e=new Error(data.code||'unavailable');e.code=data.code;throw e;}return data;
@@ -13,8 +13,8 @@
   dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
  function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','로그인하면 처음 이용 시 SIANALY 회원 계정이 생성됩니다. 비밀번호는 소셜 로그인 서비스에서 관리합니다.'),node('p','SIANALY는 회원 식별과 즐겨찾기 저장에 필요한 정보만 기능에 사용합니다. 동의한 소셜 프로필 정보는 인증 서비스에 보관될 수 있습니다.'),node('p','탈퇴하면 SIANALY 회원 인증 정보와 저장한 즐겨찾기가 삭제됩니다.'));return details;}
- function loginDialog(){
-  showDialog('SIANALY 로그인');dialog.append(node('p',pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':'소셜 계정으로 간편하게 시작하세요.'));
+ function loginDialog(signingUp=false){
+  showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');dialog.append(node('p',pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':signingUp?'소셜 계정을 선택하고 별명을 정하면 가입이 완료돼요.':'소셜 계정으로 로그인하세요.'));
   const error=node('p','','member-error');error.setAttribute('role','alert');
   for(const provider of config.providers){const button=node('button',provider.name+'로 계속하기','member-provider');button.type='button';button.dataset.provider=provider.id;
    button.onclick=async()=>{for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=true;error.textContent='';try{
@@ -27,6 +27,7 @@
  function publishChange(){try{localStorage.setItem('sianaly.member.changed',String(Date.now()));}catch{}}
  function render(){
   nav.textContent=session.signedIn?'내 계정':'로그인';
+  signup.hidden=session.signedIn;
   const favorite=document.querySelector('.member-favorite');if(favorite){const selected=favoriteKeys.has(favorite.dataset.company);favorite.setAttribute('aria-pressed',String(selected));favorite.textContent=selected?'★ 저장됨':'☆ 즐겨찾기';}
   if(homeList){homeList.parentElement.hidden=!session.signedIn;homeList.replaceChildren();for(const key of favoriteKeys){const company=catalog.get(key);if(!company)continue;const li=node('li'),link=node('a',company.name);link.href='company.html?company='+encodeURIComponent(key);li.append(link);homeList.append(li);}const empty=homeList.parentElement.querySelector('.member-favorites-empty');empty.hidden=Boolean(favoriteKeys.size);}
  }
@@ -73,7 +74,10 @@
   try{config=await api('config');if(!config.ready||!config.providers.length)return;const data=await loadCompanyCatalog();catalog=new Map(data.companies.map(c=>[c.key,c]));}catch{return;}
   const header=document.querySelector('header');if(!header)return;
   nav=node('button','로그인','member-nav-button');nav.type='button';nav.onclick=accountDialog;
-  const actions=node('div',undefined,'member-header-actions'),existing=header.lastElementChild;header.dataset.memberPage=document.querySelector('.company-search')?'company':'home';if(existing&&!existing.classList.contains('logo'))actions.append(existing);actions.append(nav);header.append(actions);
+  signup=node('button','회원가입','member-nav-button member-signup');signup.type='button';
+  signup.onclick=()=>{pendingCompany=null;loginDialog(true);};
+  const authButtons=node('div',undefined,'member-auth-buttons');authButtons.append(nav,signup);
+  const actions=node('div',undefined,'member-header-actions'),existing=header.lastElementChild;header.dataset.memberPage=document.querySelector('.company-search')?'company':'home';if(existing&&!existing.classList.contains('logo'))actions.append(existing);actions.append(authButtons);header.append(actions);
   dialog=node('dialog',undefined,'member-dialog');dialog.setAttribute('aria-labelledby','memberDialogTitle');dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});document.body.append(dialog);
   toast=node('div',undefined,'member-toast');toast.hidden=true;toast.setAttribute('role','status');document.body.append(toast);
   if(!document.getElementById('app')){const area=node('section',undefined,'member-favorites');area.id='memberFavorites';area.hidden=true;const head=node('div',undefined,'member-favorites-head');head.append(node('h2','내 즐겨찾기'));homeList=node('ul',undefined,'member-favorites-list');const empty=node('p','기업 페이지에서 ☆ 즐겨찾기를 눌러 저장할 수 있어요.','member-favorites-empty');area.append(head,homeList,empty);document.querySelector('main')?.before(area);}
