@@ -3,6 +3,12 @@
  const recent=document.getElementById('homeRecentList'),menuButton=document.getElementById('marketMenuButton'),menu=document.getElementById('marketMenu');
  const esc=v=>String(v).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
  const panels=[...document.querySelectorAll('.market-panel')].map(element=>({element,market:element.dataset.market,selected:'',limit:10}));
+ const marketButtons=[...document.querySelectorAll('[data-discovery-market]')];
+ function selectMarket(market){
+  for(const panel of panels)panel.element.hidden=panel.market!==market;
+  for(const button of marketButtons)button.setAttribute('aria-pressed',String(button.dataset.discoveryMarket===market));
+ }
+ for(const button of marketButtons)button.addEventListener('click',()=>selectMarket(button.dataset.discoveryMarket));
  let companies=[],snapshots={};
  const marketName=market=>market==='KOSDAQ'?'코스닥':'코스피';
  const poolFor=market=>companies.filter(c=>c.market===market);
@@ -14,7 +20,7 @@
  for(const panel of panels){panel.element.addEventListener('click',event=>{if(event.target.closest('.industry-filter')){panel.selected='';panel.limit=10;render(panel);}if(event.target.closest('.market-more')){const previous=panel.element.querySelectorAll('.company-card').length;panel.limit+=10;render(panel);panel.element.querySelectorAll('.company-card')[previous]?.focus({preventScroll:true});}});panel.element.addEventListener('change',event=>{if(!event.target.matches('.industry-select'))return;panel.selected=event.target.value;panel.limit=10;render(panel);});}
  function setMenu(open,focus=false){menu.hidden=!open;menuButton.setAttribute('aria-expanded',String(open));if(open&&focus)menu.querySelector('button').focus();}
  menuButton.addEventListener('click',()=>setMenu(menu.hidden));menuButton.addEventListener('keydown',event=>{if(['ArrowDown','ArrowUp'].includes(event.key)){event.preventDefault();setMenu(true,true);}});
- menu.addEventListener('click',event=>{const button=event.target.closest('[data-market]');if(!button)return;const panel=panels.find(p=>p.market===button.dataset.market);setMenu(false);panel.element.querySelector('h3').focus({preventScroll:true});panel.element.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});});
+ menu.addEventListener('click',event=>{const button=event.target.closest('[data-market]');if(!button)return;const panel=panels.find(p=>p.market===button.dataset.market);setMenu(false);selectMarket(panel.market);marketButtons.find(tab=>tab.dataset.discoveryMarket===panel.market)?.focus({preventScroll:true});document.getElementById('companyDiscovery').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});});
  menu.addEventListener('keydown',event=>{const buttons=[...menu.querySelectorAll('button')],index=buttons.indexOf(document.activeElement);if(['ArrowDown','ArrowUp','Home','End'].includes(event.key)){event.preventDefault();const next=event.key==='Home'?0:event.key==='End'?buttons.length-1:(index+(event.key==='ArrowDown'?1:-1)+buttons.length)%buttons.length;buttons[next].focus();}});
  document.addEventListener('click',event=>{if(!event.target.closest('.market-nav'))setMenu(false);});document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!menu.hidden){setMenu(false);menuButton.focus();}});document.querySelector('.market-nav').addEventListener('focusout',()=>{requestAnimationFrame(()=>{if(!document.querySelector('.market-nav').contains(document.activeElement))setMenu(false);});});
  addEventListener('pageshow',()=>{if(companies.length)renderRecent();});addEventListener('storage',event=>{if(event.key==='sianalyRecent'&&companies.length)renderRecent();});init();
