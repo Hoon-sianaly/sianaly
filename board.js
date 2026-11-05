@@ -5,13 +5,15 @@
  const query = new URLSearchParams(location.search);
  const postId = query.get('post');
  const writing = query.get('write') === '1';
+ const moderation = query.get('moderation') === '1';
  const api = '/api/account/board';
  const errors = {
   login_required:'로그인한 뒤 작성할 수 있어요.',
   nickname_required:'먼저 마이페이지에서 별명을 설정해 주세요.',
   invalid_post:'입력 내용을 확인해 주세요.',
   slow_down:'잠시 기다렸다 다시 등록해 주세요.',
-  post_not_found:'글을 찾을 수 없어요.'
+  post_not_found:'글을 찾을 수 없어요.',
+  forbidden:'운영자만 이용할 수 있어요.'
  };
  function element(tag, value, className) {
   const node = document.createElement(tag);
@@ -128,6 +130,33 @@
   actions.append(edit,remove);
   view.append(actions,feedback);
  }
+ function addModeratorActions(view, post, url, canManage) {
+  const actions = element('div',null,'board-post-actions');
+  const toggle = element('button',post.hidden ? '숨김 해제' : '글 숨기기','board-secondary');
+  const remove = element('button','운영자 삭제','board-secondary board-danger');
+  const feedback = element('p',null,'board-danger');
+  feedback.setAttribute('role','alert');
+  toggle.type = remove.type = 'button';
+  async function moderate(removing) {
+   const prompt = removing ? '운영자 권한으로 이 글과 달린 댓글을 삭제할까요?' : post.hidden ? '이 글을 다시 공개할까요?' : '이 글을 일반 목록에서 숨길까요?';
+   if (!window.confirm(prompt)) return;
+   toggle.disabled = remove.disabled = true;
+   feedback.textContent = '';
+   try {
+    await request(url,{method:removing?'DELETE':'PATCH',headers:{'Content-Type':'application/json'},...(removing?{}:{body:JSON.stringify({hidden:!post.hidden})})});
+    if (removing) location.assign('board.html');
+    else location.reload();
+   } catch (error) {
+    feedback.textContent = error.message;
+    toggle.disabled = remove.disabled = false;
+   }
+  }
+  toggle.onclick = () => moderate(false);
+  remove.onclick = () => moderate(true);
+  actions.append(toggle);
+  if (!canManage) actions.append(remove);
+  view.append(actions,feedback);
+ }
  async function loadNotices() {
   const notices = document.getElementById('board-notices');
   const feed = document.getElementById('board-notice-feed');
@@ -182,12 +211,14 @@
   status.textContent = '불러오는 중…';
   if (postId) {
    const url = api + '?post=' + encodeURIComponent(postId);
-   const {post,comments,next,canManage} = await request(url);
+   const {post,comments,next,canManage,canModerate} = await request(url);
    const article = element('article',null,'board-card');
    const view = element('div');
    view.append(element('h2',post.title),metadata(post),element('p',post.body,'board-body'));
+   if (post.hidden) view.prepend(element('p','운영자가 숨긴 글이에요. 작성자와 운영자만 볼 수 있어요.','board-hidden-label'));
    article.append(view);
    if (canManage) addPostActions(article,view,post,url);
+   if (canModerate) addModeratorActions(view,post,url,canManage);
    content.append(article);
    const section = element('section',null,'board-card');
    section.append(element('h2','댓글'));
@@ -209,17 +240,23 @@
    if (!comments.length) list.append(element('p','아직 댓글이 없어요.'));
    renderMore(list,next,loadComments);
    content.append(section);
-   await addForm(section,true);
+   if (!post.hidden) await addForm(section,true);
   } else {
+   const listApi = api + (moderation ? '?moderation=1' : '');
+   if (moderation) {
+    document.querySelector('#board-toolbar h2').textContent = '숨긴 글';
+    writeLink.before(link('전체 글','board.html','board-secondary'));
+   }
    const card = element('div',null,'board-card board-feed');
    const list = element('ul',null,'board-list');
    card.append(list);
    content.append(card);
    const loadPosts = async before => {
-    const {posts,next} = await request(before ? api + '?before=' + before : api);
+    const {posts,next,canModerate} = await request(before ? listApi + (moderation?'&':'?') + 'before=' + before : listApi);
+    if (!before && canModerate && !moderation) writeLink.before(link('숨긴 글','board.html?moderation=1','board-secondary'));
     for (const post of posts) {
      const item = element('li');
-     const title = link(post.title,'board.html?post=' + encodeURIComponent(post.id));
+     const title = link((post.hidden?'[숨김] ':'')+post.title,'board.html?post=' + encodeURIComponent(post.id));
      title.append(metadata(post));
      item.append(title);
      list.append(item);
@@ -228,9 +265,8 @@
      const empty = element('div',null,'board-empty');
      const icon = element('span',null,'board-empty-icon');
      icon.setAttribute('aria-hidden','true');
-     empty.append(icon,element('h3','아직 올라온 글이 없어요'),
-      element('p','요즘 눈여겨보는 기업이나 궁금한 점을 남겨보세요.'),
-      link('첫 글 쓰기',writeLink.href,'board-secondary'));
+     empty.append(icon,element('h3',moderation?'숨긴 글이 없어요':'아직 올라온 글이 없어요'));
+     if (!moderation) empty.append(element('p','요즘 눈여겨보는 기업이나 궁금한 점을 남겨보세요.'),link('첫 글 쓰기',writeLink.href,'board-secondary'));
      card.append(empty);
     }
     renderMore(card,next,loadPosts);

@@ -23,7 +23,7 @@ Existing project `sianaly`, environment serving **dev.sianaly.com** and sianaly.
 | AUTH_PROVIDERS | `custom:naver,custom:kakao,google` |
 | SUPABASE_URL | `https://jprnqliszpqercqrdisi.supabase.co` |
 | SUPABASE_PUBLISHABLE_KEY | Project publishable key, environment setting |
-| SUPABASE_SECRET_KEY | Encrypted Secret; own-account deletion only |
+| SUPABASE_SECRET_KEY | Encrypted Secret; own-account deletion and private departure synchronization |
 
 Build command: `npm ci --omit=dev --ignore-scripts --no-audit --no-fund`. Functions use fail-closed behavior. The existing POPULAR_DB binding is preserved. Dependencies are lockfile pinned and excluded from static uploads.
 
@@ -51,7 +51,15 @@ The verified user's Supabase client updates only `user_metadata.sianaly_nickname
 
 Each request creates a fresh server-side client. Session identity is verified with `getUser`. Responses are private/no-store. Mutations require same-origin JSON. Sessions and PKCE verifiers use Secure host-only HttpOnly SameSite=Lax cookies; no browser script token access. The session API returns sign-in state, provider label and the chosen site nickname, not email/user UUID. Favorites always use the user's client plus RLS.
 
-Own-account deletion requires the exact confirmation text and a sign-in within ten minutes. Only this endpoint uses the privileged server key, and it deletes only the currently verified user. Provider-side unlinking is separate from deleting the SIANALY account. Never delete real customer accounts for testing.
+Own-account deletion requires the exact confirmation text and a sign-in within ten minutes. The privileged server key deletes only the currently verified user and synchronizes the server-only member-departure queue with the board. Board posts and comments remain after withdrawal. Their author becomes `탈퇴한 회원`, and their former account ownership is removed. Provider-side unlinking is separate from deleting the SIANALY account. Never delete real customer accounts for testing.
+
+## Board operation and withdrawal
+
+- Operator permission comes only from the verified Auth user's server-managed `app_metadata.sianaly_role = admin`. User-editable metadata, display nicknames and request payloads grant no permissions. The owner's Naver account with site nickname `운영자` was assigned this role on 2026-11-05.
+- Operators can hide, restore and delete posts. The `숨긴 글` list and `마이페이지 → 게시판 관리` link are visible to operators. Public lists and direct links exclude hidden content. Its author can still see and edit the hidden post; it stays hidden until an operator restores it. Hidden posts reject new comments. Deleting a post also deletes its comments.
+- Supabase migration `20261105055637_board_member_departures.sql` records Auth deletions transactionally. The public queue table has forced RLS and allows only server-role reads/deletes; its trigger function is private and unavailable to anonymous or signed-in members.
+- Board requests drain that queue before returning data. D1 atomically marks a hash of the departed owner, replaces the post/comment author label and removes original ownership. The queue is acknowledged only after D1 commits, so retries preserve content and finish interrupted work. SQL write guards reject late requests from departed users. A synchronization failure temporarily blocks board responses instead of serving stale author information.
+- The D1 tables for hidden posts and departed-owner hashes are added idempotently alongside existing board tables. Existing posts and account data are preserved. Record the hosted migration baseline before adopting CLI migration replay, since the original favorites table was created separately through the dashboard.
 
 ## Naver identity adapter
 

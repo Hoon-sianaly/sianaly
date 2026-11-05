@@ -20,7 +20,21 @@ try{
  await assert.rejects(db.exec(`update public.sianaly_favorites set company_key='naver';`),/permission denied/);
  await asUser(a);assert.deepEqual((await db.query('select company_key from public.sianaly_favorites')).rows,[{company_key:'samsung'}]);
  await db.exec('reset role; set role anon;');await assert.rejects(db.query('select * from public.sianaly_favorites'),/permission denied/);
+ await db.exec('reset role; create role service_role bypassrls; create role supabase_auth_admin; grant usage on schema auth to supabase_auth_admin; grant select,delete on auth.users to supabase_auth_admin;');
+ const departures=await readFile(new URL('../supabase/migrations/20261105055637_board_member_departures.sql',import.meta.url),'utf8');
+ await db.exec(departures);
  await db.exec(`reset role; delete from auth.users where id='${a}';`);
  assert.deepEqual((await db.query('select user_id,company_key from public.sianaly_favorites')).rows,[{user_id:b,company_key:'kakao'}]);
+ assert.deepEqual((await db.query('select user_id from public.sianaly_member_departures')).rows,[{user_id:a}]);
+ for(const role of ['anon','authenticated']){
+  await db.exec('reset role; set role '+role+';');
+  await assert.rejects(db.query('select * from public.sianaly_member_departures'),/permission denied/);
+  await assert.rejects(db.query('select sianaly_internal.queue_member_departure()'),/permission denied/);
+ }
+ await db.exec('reset role; set role service_role;');
+ assert.deepEqual((await db.query('select user_id from public.sianaly_member_departures')).rows,[{user_id:a}]);
+ await db.exec('delete from public.sianaly_member_departures; reset role;');
+ await db.exec('begin; set local role supabase_auth_admin; delete from auth.users; rollback;');
+ assert.equal((await db.query('select * from public.sianaly_member_departures')).rows.length,0);
  console.log('Member RLS: owner isolation, anonymous denial, update denial and cascade passed.');
 }finally{await db.close();}

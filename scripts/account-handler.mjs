@@ -1,4 +1,4 @@
-import {handleBoard} from './board-handler.mjs';
+import {handleBoard,initializeBoard,syncBoardDepartures} from './board-handler.mjs';
 import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supabase/ssr';
 import {createClient} from '@supabase/supabase-js';
 
@@ -42,18 +42,20 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const url=new URL(request.url),action=String(params.action||''),headers=new Headers({'Cache-Control':'private, no-store','Pragma':'no-cache','Vary':'Cookie','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'});
   const respond=(body,status=200)=>{headers.set('Content-Type','application/json; charset=utf-8');return new Response(JSON.stringify(body),{status,headers});};
   const redirect=(path)=>{headers.set('Location',path);return new Response(null,{status:303,headers});};
+  const administrativeClient=()=>adminClient(env.SUPABASE_URL,env.SUPABASE_SECRET_KEY,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
+  const serveBoard=user=>handleBoard({db:env.POPULAR_DB,url,method:request.method,user,nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond,syncDepartures:()=>syncBoardDepartures(env.POPULAR_DB,administrativeClient())});
   let site;try{site=new URL(env.AUTH_SITE_URL);if(site.origin!==url.origin||site.pathname!=='/'||site.search||site.hash||site.username||site.password||(site.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(site.hostname)))throw Error('Invalid site');}catch{return respond({ready:false,code:'unavailable'},503);}
   const providers=(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
   const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY);
   if(action==='config'&&request.method==='GET')return respond({ready,email:ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[]});
   const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
-  const boardRead=action==='board'&&request.method==='GET',mine=url.searchParams.get('mine')==='1';
+  const boardRead=action==='board'&&request.method==='GET',mine=url.searchParams.get('mine')==='1',moderation=url.searchParams.get('moderation')==='1';
   const hasSession=(request.headers.get('Cookie')||'').split(';').some(cookie=>{
    const name=cookie.trim().split('=',1)[0];
    return name===cookieName||name.startsWith(cookieName+'.');
   });
-  if(boardRead&&!mine&&(!url.searchParams.has('post')||!ready||!hasSession)){
-   try{return await handleBoard({db:env.POPULAR_DB,url,method:'GET',respond});}
+  if(boardRead&&!mine&&!moderation&&(!ready||!hasSession)){
+   try{return await serveBoard();}
    catch{return respond({code:'board_unavailable'},503);}
   }
   if(!ready)return respond({ready:false,code:'unavailable'},503);
@@ -140,11 +142,11 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    const {data,error}=await client.auth.getUser();const user=error?null:data?.user;
    const proof=cookies.find(cookie=>cookie.name===cookieName+'-recovery')?.value;
    const passwordReset=Boolean(user&&await validRecoveryProof(proof,env.SUPABASE_SECRET_KEY,user.id,clock()));
-   if(action==='session')return respond({signedIn:Boolean(user),provider:user?({...providerNames,email:'이메일',google:'Google'})[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null,...(passwordReset?{passwordReset:true}:{})});
+   if(action==='session')return respond({signedIn:Boolean(user),provider:user?({...providerNames,email:'이메일',google:'Google'})[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null,...(user?.app_metadata?.sianaly_role==='admin'?{isAdmin:true}:{}),...(passwordReset?{passwordReset:true}:{})});
    if(action==='logout'){
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }
-   if(!user&&!(boardRead&&!mine))return respond({code:'login_required'},401);
+   if(!user&&!(boardRead&&!mine&&!moderation))return respond({code:'login_required'},401);
    if(action==='password-update'){
     if(!passwordReset)return respond({code:'recovery_required'},409);
     const body=await bodyJSON(request);
@@ -156,7 +158,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     clearCookies();
     return respond({ok:true,sessionWarning});
    }
-   if(action==='board')return await handleBoard({db:env.POPULAR_DB,url,method:request.method,user,nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond});
+   if(action==='board')return await serveBoard(user);
    if(action==='nickname'){
     const body=await bodyJSON(request),nickname=memberNickname(body.nickname);
     if(Object.keys(body).some(k=>k!=='nickname')||nickname===null)return respond({code:'invalid_nickname'},400);
@@ -178,8 +180,11 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    if(action==='delete'){
     const body=await bodyJSON(request);if(Object.keys(body).some(k=>k!=='confirmation')||body.confirmation!=='회원탈퇴')return respond({code:'confirmation_required'},400);
     const signedInAt=Date.parse(user.last_sign_in_at);if(!Number.isFinite(signedInAt)||signedInAt<clock()-600000||signedInAt>clock()+60000)return respond({code:'reauth_required'},409);
-    const admin=adminClient(env.SUPABASE_URL,env.SUPABASE_SECRET_KEY,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
+    await initializeBoard(env.POPULAR_DB);
+    const admin=administrativeClient();
     const {error}=await admin.auth.admin.deleteUser(user.id);if(error)return respond({code:'delete_failed'},503);
+    // The Auth trigger durably queues anonymization even if the D1 update has to retry.
+    try{await syncBoardDepartures(env.POPULAR_DB,admin);}catch{console.error('board_departure_sync_pending');}
     clearCookies();return respond({ok:true});
    }
   }catch{return action==='callback'?redirect('/?accountError=login_failed'):respond({code:'unavailable'},503);}

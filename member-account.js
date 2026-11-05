@@ -14,7 +14,7 @@
  function showDialog(title){
   dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
- function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','네이버·카카오 또는 이메일로 가입할 수 있어요. 가입 후 사이트에서 사용할 별명을 설정해요.'),node('p','이메일과 비밀번호는 회원 인증 서비스에서 가입·로그인에 사용해요. 소셜 로그인에서 동의한 정보도 인증 서비스에 보관될 수 있어요.'),node('p','탈퇴하면 SIANALY 회원 인증 정보와 저장한 즐겨찾기가 삭제됩니다.'));return details;}
+ function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','네이버·카카오 또는 이메일로 가입할 수 있어요. 가입 후 사이트에서 사용할 별명을 설정해요.'),node('p','이메일과 비밀번호는 회원 인증 서비스에서 가입·로그인에 사용해요. 소셜 로그인에서 동의한 정보도 인증 서비스에 보관될 수 있어요.'),node('p','탈퇴하면 회원 인증 정보와 즐겨찾기가 삭제돼요. 작성한 글·댓글은 남으며 작성자는 ‘탈퇴한 회원’으로 표시돼요.'));return details;}
  function loginDialog(signingUp=false){
   showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');
   dialog.append(node('p',signingUp?'이메일·비밀번호·별명을 입력하면 바로 가입돼요.':pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':'가입한 이메일과 비밀번호를 입력해 주세요.'));
@@ -154,7 +154,7 @@
    try{
     const page=await api('board?mine=1'+(next?'&before='+encodeURIComponent(next):''));
     for(const post of page.posts){
-     const item=node('li'),link=node('a',post.title);
+     const item=node('li'),link=node('a',(post.hidden?'[숨김] ':'')+post.title);
      link.href='/board?post='+encodeURIComponent(post.id);item.append(link);list.append(item);
     }
     next=page.next;loaded=true;pagination.hidden=!next;
@@ -172,7 +172,8 @@
   const favorites=node('button','내 즐겨찾기','member-menu-action');favorites.type='button';favorites.onclick=()=>{dialog.close();if(homeList){homeList.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else location.assign('/#memberFavorites');};
   const logout=node('button','로그아웃','member-menu-action');logout.type='button';logout.onclick=async()=>{logout.disabled=true;try{await api('logout',{});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('로그아웃했어요.');}catch(e){logout.disabled=false;say(errorText(e));}};
   dialog.append(favorites,myPosts(),logout);
-  const deletion=node('details',undefined,'member-information');deletion.append(node('summary','회원 탈퇴'),node('p','회원 인증 정보와 즐겨찾기가 모두 삭제됩니다. 계속하려면 아래에 ‘회원탈퇴’를 입력하세요.'));
+  if(session.isAdmin){const management=node('a','게시판 관리','member-menu-action');management.href='/board?moderation=1';dialog.append(management);}
+  const deletion=node('details',undefined,'member-information');deletion.append(node('summary','회원 탈퇴'),node('p','회원 인증 정보와 즐겨찾기가 삭제돼요. 글·댓글은 남으며 작성자는 ‘탈퇴한 회원’으로 표시돼요. 계속하려면 아래에 ‘회원탈퇴’를 입력하세요.'));
   const input=node('input',undefined,'member-delete-input');input.type='text';input.placeholder='회원탈퇴';input.setAttribute('aria-label','회원 탈퇴 확인 문구');input.autocomplete='off';
   const confirm=node('button','탈퇴하기','member-menu-action member-danger');confirm.type='button';confirm.disabled=true;input.oninput=()=>{confirm.disabled=input.value!=='회원탈퇴';};
   const error=node('p','','member-error');error.setAttribute('role','alert');confirm.onclick=async()=>{confirm.disabled=true;try{await api('delete',{confirmation:input.value});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('회원 탈퇴가 완료됐어요.');}catch(e){if(e.code==='reauth_required'){loginDialog();return;}error.textContent=errorText(e);confirm.disabled=false;}};

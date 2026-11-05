@@ -3,6 +3,27 @@ import {DatabaseSync} from 'node:sqlite';
 import {createAccountHandler,safeAccountReturn,memberNickname} from './account-handler.mjs';
 const origin='https://dev.sianaly.com',now=Date.now();
 const env={AUTH_SITE_URL:origin,AUTH_ENABLED:'true',AUTH_PROVIDERS:'google,custom:kakao,custom:naver',SUPABASE_URL:'https://example.supabase.co',SUPABASE_PUBLISHABLE_KEY:'test-public',SUPABASE_SECRET_KEY:'test-server-only'};
+const sqlite=new DatabaseSync(':memory:');
+let failDepartureBatch=false;
+const departures=new Set();
+const db={
+ prepare(sql){
+  function bind(...params){
+   return {
+    sql,
+    first:async()=>sqlite.prepare(sql).get(...params),
+    all:async()=>({results:sqlite.prepare(sql).all(...params)}),
+    run:async()=>{const {changes,lastInsertRowid}=sqlite.prepare(sql).run(...params);return {meta:{changes,last_row_id:lastInsertRowid}};}
+   };
+  }
+  return {...bind(),bind};
+ },
+ batch:async statements=>{
+  if(failDepartureBatch&&statements.some(statement=>statement.sql.startsWith('UPDATE board_posts SET owner')))throw Error('Temporary D1 failure');
+  return Promise.all(statements.map(statement=>statement.run()));
+ }
+};
+env.POPULAR_DB=db;
 const keys=new Set(['samsung','naver']);
 for(const value of ['https://evil.test','//evil.test','javascript:alert(1)','/unknown','/company?company=missing'])assert.equal(safeAccountReturn(value,origin,keys),'/');
 assert.equal(safeAccountReturn('/company?company=samsung&extra=1#x',origin,keys),'/company?company=samsung');
@@ -37,7 +58,19 @@ const handler=createAccountHandler({companyKeys:keys,clock:()=>handlerNow,server
    delete:()=>({eq:(field,id)=>({eq:async(field2,key)=>{removed={field,id,field2,key};return {};}})})
   };
  }};
-},adminClient:(url,key,opts)=>{adminCalls++;assert.equal(key,env.SUPABASE_SECRET_KEY);assert.equal(opts.auth.persistSession,false);return {auth:{admin:{deleteUser:async id=>{deleted=id;return {};}}}};}});
+},adminClient:(url,key,opts)=>{
+ adminCalls++;assert.equal(key,env.SUPABASE_SECRET_KEY);assert.equal(opts.auth.persistSession,false);
+ return {
+  auth:{admin:{deleteUser:async id=>{deleted=id;departures.add(id);return {};}}},
+  from:table=>{
+   assert.equal(table,'sianaly_member_departures');
+   return {
+    select:()=>({order:()=>({limit:async()=>({data:[...departures].map(user_id=>({user_id}))})})}),
+    delete:()=>({in:async(field,ids)=>{assert.equal(field,'user_id');for(const id of ids)departures.delete(id);return {};}})
+   };
+  }
+ };
+}});
 async function request(action,{method='GET',body,requestOrigin=origin,cookie,overrides={},ip='192.0.2.1'}={}){
  const headers={'CF-Connecting-IP':ip};if(method!=='GET'){headers.Origin=requestOrigin;headers['Content-Type']='application/json';}if(cookie)headers.Cookie=cookie;
  const response=await handler({request:new Request(origin+'/api/account/'+action,{method,headers,...(body!==undefined?{body:JSON.stringify(body)}:{})}),env:{...env,...overrides},params:{action:action.split('?')[0]}});
@@ -77,20 +110,6 @@ user.last_sign_in_at=new Date(now).toISOString();response=await request('delete'
 assert.equal(response.status,200);assert.equal(deleted,user.id);assert.match(response.headers.get('Set-Cookie'),/Max-Age=0/);assert.ok(!response.headers.get('Set-Cookie').includes('unrelated'));
 assert.equal((await request('favorites',{method:'PUT',body:{}})).status,405);
 assert.equal((await request('favorites',{method:'POST',body:{company:'x'.repeat(1500)}})).status,503);
-const sqlite=new DatabaseSync(':memory:');
-const db={
- prepare(sql){
-  function bind(...params){
-   return {
-    first:async()=>sqlite.prepare(sql).get(...params),
-    all:async()=>({results:sqlite.prepare(sql).all(...params)}),
-    run:async()=>{const {changes,lastInsertRowid}=sqlite.prepare(sql).run(...params);return {meta:{changes,last_row_id:lastInsertRowid}};}
-   };
-  }
-  return {...bind(),bind};
- },
- batch:async statements=>Promise.all(statements.map(statement=>statement.run()))
-};
 const board=(query='',options={})=>request('board'+query,{...options,overrides:{POPULAR_DB:db}});
 const memberCookie='__Host-sianaly-auth.0=test';
 user={id:'author',user_metadata:{sianaly_nickname:'작성자'}};
@@ -108,6 +127,28 @@ assert.equal((await (await board(detail,{cookie:memberCookie})).json()).canManag
 assert.deepEqual((await (await board('?mine=1',{cookie:memberCookie})).json()).posts,[]);
 assert.equal((await board(detail,{method:'PATCH',body:{title:'다른 제목',body:'다른 본문'}})).status,404);
 assert.equal((await board(detail,{method:'DELETE'})).status,404);
+user={id:'other',user_metadata:{sianaly_nickname:'운영자',sianaly_role:'admin'}};
+assert.equal((await board(detail,{method:'PATCH',body:{hidden:true}})).status,403);
+assert.equal((await board('?moderation=1',{cookie:memberCookie})).status,403);
+user={id:'moderator',app_metadata:{sianaly_role:'admin'}};
+assert.equal((await (await request('session')).json()).isAdmin,true);
+assert.equal((await board(detail,{method:'PATCH',body:{title:'운영자 수정',body:'본문'}})).status,404);
+assert.equal((await board(detail,{method:'PATCH',body:{hidden:true}})).status,200);
+assert.equal((await board(detail,{method:'PATCH',body:{hidden:true}})).status,200);
+assert.equal((await (await board('?moderation=1',{cookie:memberCookie})).json()).posts[0].id,id);
+user=null;
+assert.equal((await board(detail)).status,404);
+assert.equal((await board('?moderation=1')).status,401);
+assert.deepEqual((await (await board()).json()).posts,[]);
+user={id:'other',user_metadata:{sianaly_nickname:'일반회원'}};
+assert.equal((await board(detail,{cookie:memberCookie})).status,404);
+assert.equal((await board(detail,{method:'POST',body:{body:'숨긴 글 댓글'}})).status,404);
+user={id:'author'};
+assert.equal((await (await board(detail,{cookie:memberCookie})).json()).post.hidden,1);
+assert.equal((await (await board('?mine=1',{cookie:memberCookie})).json()).posts[0].hidden,1);
+user={id:'moderator',app_metadata:{sianaly_role:'admin'}};
+assert.equal((await board(detail,{method:'PATCH',body:{hidden:false}})).status,200);
+assert.equal((await board(detail)).status,200);
 user=null;
 assert.equal((await board('?mine=1')).status,401);
 assert.equal((await board(detail,{method:'DELETE'})).status,401);
@@ -120,6 +161,34 @@ assert.equal((await (await board(detail)).json()).post.title,'수정 제목');
 assert.equal((await board(detail,{method:'DELETE'})).status,200);
 assert.equal((await board(detail)).status,404);
 assert.equal(sqlite.prepare('SELECT count(*) AS total FROM board_comments').get().total,0);
+const retainedId=Number(sqlite.prepare('INSERT INTO board_posts (owner,author,title,body,created_at) VALUES (?,?,?,?,?)').run('retiring-member','예전별명','남길 글','남길 본문',now).lastInsertRowid);
+sqlite.prepare('INSERT INTO board_comments (post_id,owner,author,body,created_at) VALUES (?,?,?,?,?)').run(retainedId,'retiring-member','예전별명','남길 댓글',now);
+user={id:'retiring-member',last_sign_in_at:new Date(now).toISOString()};
+failDepartureBatch=true;
+const previousConsoleError=console.error;let queuedMessage;
+console.error=message=>{queuedMessage=message;};
+assert.equal((await request('delete',{method:'POST',body:{confirmation:'회원탈퇴'}})).status,200);
+console.error=previousConsoleError;
+assert.equal(queuedMessage,'board_departure_sync_pending');
+assert.ok(departures.has('retiring-member'));
+user=null;
+assert.equal((await board('?post='+retainedId)).status,503);
+failDepartureBatch=false;
+const retained=await (await board('?post='+retainedId)).json();
+assert.equal(retained.post.author,'탈퇴한 회원');
+assert.equal(retained.post.body,'남길 본문');
+assert.equal(retained.comments[0].author,'탈퇴한 회원');
+assert.equal(retained.comments[0].body,'남길 댓글');
+assert.equal(sqlite.prepare('SELECT owner FROM board_posts WHERE id = ?').get(retainedId).owner,'');
+assert.equal(departures.size,0);
+user={id:'retiring-member',user_metadata:{sianaly_nickname:'옛 세션'}};
+assert.equal((await board('',{method:'POST',body:{title:'늦은 요청',body:'본문'}})).status,401);
+user={id:'another-user',user_metadata:{sianaly_nickname:'예전별명'}};
+assert.equal((await (await board('?post='+retainedId,{cookie:memberCookie})).json()).canManage,false);
+user={id:'moderator',app_metadata:{sianaly_role:'admin'}};
+assert.equal((await board('?post='+retainedId,{method:'DELETE'})).status,200);
+assert.equal(sqlite.prepare('SELECT count(*) AS total FROM board_comments WHERE post_id = ?').get(retainedId).total,0);
+const adminCallsBeforeEmail=adminCalls;
 user=null;
 const emailRequest=(action,body,options={})=>request(action,{method:'POST',body,overrides:{POPULAR_DB:db},...options});
 const signupBody={email:' member@example.test ',password:'test-password-123',nickname:'  별명  '};
@@ -133,7 +202,7 @@ assert.equal(emailResponse.status,200);
 assert.deepEqual(await emailResponse.json(),{ok:true});
 assert.deepEqual(emailCall,{action:'signup',input:{email:'member@example.test',password:'test-password-123',options:{data:{sianaly_nickname:'별명'}}}});
 for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/','Max-Age=2592000'])assert.ok(emailResponse.headers.get('Set-Cookie').includes(flag),flag);
-assert.equal(adminCalls,1);
+assert.equal(adminCalls,adminCallsBeforeEmail);
 emailError={status:400};
 assert.equal((await emailRequest('email-login',{email:'member@example.test',password:'wrong'})).status,400);
 emailError=null;
