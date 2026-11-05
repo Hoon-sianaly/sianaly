@@ -1,6 +1,7 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process');
 const repo='Hoon-sianaly/sianaly',branch='codex/dart-state',out=path.resolve('dart-output');
+const noticePath='data/dart-updates.json';
 async function api(route,method='GET',body){
  let r;
  for(let attempt=0;attempt<3;attempt++){
@@ -18,6 +19,26 @@ function validateFiles(candidate,registry){
  const allowed=new Set(registry.companies.filter(c=>c.mode==='automatic').map(c=>`data/companies/${c.key}.json`));
  for(const f of candidate.files){if(!allowed.has(f.path))throw Error('Unexpected company file');JSON.parse(f.content);}
  if(new Set(candidate.files.map(f=>f.path)).size!==candidate.files.length)throw Error('Duplicate candidate');
+}
+function buildNoticeFeed(candidate,previous,publishedAt){
+ const results=new Map(candidate.results.map(result=>[result.key,result]));
+ const companies=candidate.files.map(file=>{
+  const {profile,financials}=JSON.parse(file.content);
+  const periods=new Map();
+  for(const change of results.get(profile.key).changes){
+   const {year,quarter}=change;
+   const key=`${year}-${quarter||0}`;
+   if(!periods.has(key))periods.set(key,{year,quarter,before:new Map()});
+   const period=periods.get(key);
+   for(const {field,before} of change.fields)if(!period.before.has(field))period.before.set(field,before);
+  }
+  return {key:profile.key,name:profile.name,periods:[...periods.values()].map(({year,quarter,before})=>{
+   const row=(quarter?financials.quarterly:financials.annual).find(row=>row.year===year&&(!quarter||row.quarter===quarter));
+   const fields=[...before].filter(([field,value])=>(row[field]??null)!==value).map(([field])=>field);
+   return {year,quarter,receipt:row.dart.receipt,preliminary:row.disclosureStatus==='preliminary',fields};
+  })};
+ });
+ return {updates:[{publishedAt,companies},...previous.updates].slice(0,20)};
 }
 async function live(files){
  for(let attempt=0;attempt<20;attempt++){
@@ -64,7 +85,9 @@ async function main(){
   if(candidate.files.length){
    for(const f of candidate.files)fs.writeFileSync(f.path,f.content);
    for(const script of ['validate-data','test-company-data','test-insights','test-search','test-financial-format'])run(script);
-   const commitBase=await api(`git/commits/${base}`),tree=await api('git/trees','POST',{base_tree:commitBase.tree.sha,tree:candidate.files.map(f=>({...f,mode:'100644',type:'blob'}))});
+   const previous=JSON.parse(fs.readFileSync(noticePath,'utf8'));
+   const notice={path:noticePath,content:JSON.stringify(buildNoticeFeed(candidate,previous,new Date().toISOString()),null,2)+'\n'};
+   const commitBase=await api(`git/commits/${base}`),tree=await api('git/trees','POST',{base_tree:commitBase.tree.sha,tree:[...candidate.files,notice].map(f=>({...f,mode:'100644',type:'blob'}))});
    const commit=await api('git/commits','POST',{message:'Update verified financials from new DART disclosures',tree:tree.sha,parents:[base]});
    const current=await api('git/ref/heads/main');if(current.object.sha!==base)throw Error('Main changed before publication');
    envelope.publication={commit:commit.sha,candidate};await persist();
@@ -78,4 +101,4 @@ async function main(){
   if(errors.length)throw Error('Some issuers require attention; their pending jobs were retained');
  }catch(e){await persist();throw e;}
 }
-module.exports={validateFiles};if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1;});
+module.exports={validateFiles,buildNoticeFeed};if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1;});

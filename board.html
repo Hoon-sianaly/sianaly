@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>자유게시판 · SIANALY</title>
 <link rel="stylesheet" href="member-account.css?v=20261105-auth-actions">
-<link rel="stylesheet" href="board.css?v=20261105-dots-nav">
+<link rel="stylesheet" href="board.css?v=20261105-dart-notices">
 <script src="company-data.js?v=20261103-reading-1" defer></script>
 <script src="member-account.js?v=20261105-board" defer></script>
-<script src="board.js?v=20261105-community" defer></script>
+<script src="board.js?v=20261105-dart-notices" defer></script>
 </head>
 <body>
 <header class="board-header">
@@ -29,6 +29,10 @@
     <path d="M61 61h.01m24 0h.01m24 0h.01" stroke="#2473d4" stroke-width="9" stroke-linecap="round"/>
     <path d="M178 20v16m-8-8h16M20 107v12m-6-6h12" stroke="#a9d9ff" stroke-width="2" stroke-linecap="round"/>
   </svg>
+</section>
+<section id="board-notices" class="board-notices" aria-labelledby="board-notice-title" hidden>
+  <h2 id="board-notice-title"><span>공지</span> DART 업데이트</h2>
+  <div id="board-notice-feed"><p>업데이트 내역을 불러오는 중…</p></div>
 </section>
 <div id="board-toolbar" class="board-toolbar">
   <h2>전체 글</h2>

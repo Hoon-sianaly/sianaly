@@ -86,6 +86,44 @@
    }
   };
  }
+ async function loadNotices() {
+  const notices = document.getElementById('board-notices');
+  const feed = document.getElementById('board-notice-feed');
+  const names = {sales:'매출액',op:'영업이익',net:'당기순이익'};
+  const date = new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',dateStyle:'medium',timeStyle:'short'});
+  notices.hidden = false;
+  try {
+   const {updates} = await request('/data/dart-updates.json',{cache:'no-cache'});
+   if (!updates.length) {
+    feed.replaceChildren(element('p','다음 DART 업데이트부터 사이트에 반영된 내역이 여기에 표시돼요.'));
+    return;
+   }
+   const entries = updates.map(({publishedAt,companies}) => {
+    const details = element('details');
+    details.append(element('summary',date.format(new Date(publishedAt)) + ' · ' + companies.length + '개 기업 업데이트'));
+    const list = element('ul');
+    for (const company of companies) {
+     const item = element('li');
+     item.append(link(company.name,'company.html?company=' + encodeURIComponent(company.key)));
+     const periods = element('ul');
+     for (const period of company.periods) {
+      const label = period.year + '년 ' + (period.quarter ? period.quarter + '분기' : '연간');
+      const metrics = period.fields.map(field => names[field]).join('·') || '공시 출처 갱신';
+      const row = element('li',label + (period.preliminary ? ' 잠정실적' : '') + ' · ' + metrics + ' ');
+      row.append(link('DART 원문','https://dart.fss.or.kr/dsaf001/main.do?rcpNo=' + encodeURIComponent(period.receipt)));
+      periods.append(row);
+     }
+     item.append(periods);
+     list.append(item);
+    }
+    details.append(list);
+    return details;
+   });
+   feed.replaceChildren(...entries);
+  } catch {
+   feed.replaceChildren(element('p','업데이트 내역을 불러오지 못했어요.'));
+  }
+ }
  async function main() {
   if (writing || postId) {
    document.getElementById('board-toolbar').hidden = true;
@@ -156,5 +194,6 @@
   }
   status.textContent = '';
  }
+ if (!writing && !postId) void loadNotices();
  main().catch(error => { status.textContent = error.message; });
 })();
