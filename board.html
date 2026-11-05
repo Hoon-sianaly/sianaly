@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>자유게시판 · SIANALY</title>
 <link rel="stylesheet" href="member-account.css?v=20261105-auth-actions">
-<link rel="stylesheet" href="board.css">
+<link rel="stylesheet" href="board.css?v=20261105-community">
 <script src="company-data.js?v=20261103-reading-1" defer></script>
 <script src="member-account.js?v=20261105-board" defer></script>
-<script src="board.js" defer></script>
+<script src="board.js?v=20261105-community" defer></script>
 </head>
 <body>
 <header class="board-header">
@@ -16,7 +16,27 @@
 <a class="member-nav-button board-nav" href="board.html" aria-current="page">게시판</a>
 </header>
 <main id="app" class="board">
-<div class="board-heading"><h1>자유게시판</h1><a id="board-write" class="board-primary" href="board.html?write=1">글쓰기</a></div>
+<section class="board-hero" aria-labelledby="board-title">
+  <div class="board-hero-copy">
+    <span class="board-eyebrow">SIANALY 커뮤니티</span>
+    <h1 id="board-title">자유게시판</h1>
+    <p>관심 있는 기업 이야기부터 가벼운 질문까지.</p>
+  </div>
+  <svg class="board-hero-art" viewBox="0 0 220 148" fill="none" aria-hidden="true">
+    <circle cx="122" cy="74" r="64" fill="#fff" fill-opacity=".1"/>
+    <path d="M109 54h67a14 14 0 0 1 14 14v35a14 14 0 0 1-14 14h-8v15l-21-15h-38a14 14 0 0 1-14-14V68a14 14 0 0 1 14-14Z" fill="#8ccaff" fill-opacity=".65"/>
+    <path d="M44 24h83a16 16 0 0 1 16 16v42a16 16 0 0 1-16 16H79l-24 17V98H44a16 16 0 0 1-16-16V40a16 16 0 0 1 16-16Z" fill="#eef7ff"/>
+    <path d="M61 61h.01m24 0h.01m24 0h.01" stroke="#2473d4" stroke-width="9" stroke-linecap="round"/>
+    <path d="M178 20v16m-8-8h16M20 107v12m-6-6h12" stroke="#a9d9ff" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</section>
+<div id="board-toolbar" class="board-toolbar">
+  <h2>전체 글</h2>
+  <a id="board-write" class="board-primary" href="board.html?write=1">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5 4 4M4 20l5-1L20 8a2.8 2.8 0 0 0-4-4L5 15l-1 5Z"/></svg>
+    글쓰기
+  </a>
+</div>
 <p id="board-status" role="status"></p>
 <section id="board-content" aria-label="게시판 내용"></section>
 <noscript>게시판을 보려면 자바스크립트를 켜 주세요.</noscript>

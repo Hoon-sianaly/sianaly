@@ -88,8 +88,9 @@
  }
  async function main() {
   if (writing || postId) {
-   writeLink.hidden = true;
-   content.append(link('목록으로','board.html','board-secondary'));
+   document.getElementById('board-toolbar').hidden = true;
+   document.querySelector('.board-hero').classList.add('board-hero-compact');
+   content.append(link('← 목록으로','board.html','board-secondary'));
   }
   if (writing) {
    const card = element('div',null,'board-card');
@@ -127,7 +128,7 @@
    content.append(section);
    await addForm(section,true);
   } else {
-   const card = element('div',null,'board-card');
+   const card = element('div',null,'board-card board-feed');
    const list = element('ul',null,'board-list');
    card.append(list);
    content.append(card);
@@ -140,7 +141,15 @@
      item.append(title);
      list.append(item);
     }
-    if (!before && !posts.length) card.append(element('p','아직 글이 없어요. 첫 이야기를 남겨보세요.'));
+    if (!before && !posts.length) {
+     const empty = element('div',null,'board-empty');
+     const icon = element('span',null,'board-empty-icon');
+     icon.setAttribute('aria-hidden','true');
+     empty.append(icon,element('h3','아직 올라온 글이 없어요'),
+      element('p','요즘 눈여겨보는 기업이나 궁금한 점을 남겨보세요.'),
+      link('첫 글 쓰기',writeLink.href,'board-secondary'));
+     card.append(empty);
+    }
     renderMore(card,next,loadPosts);
    };
    await loadPosts();
