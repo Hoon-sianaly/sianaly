@@ -6,13 +6,21 @@ const env={AUTH_SITE_URL:origin,AUTH_ENABLED:'true',AUTH_PROVIDERS:'google,custo
 const keys=new Set(['samsung','naver']);
 for(const value of ['https://evil.test','//evil.test','javascript:alert(1)','/unknown','/company?company=missing'])assert.equal(safeAccountReturn(value,origin,keys),'/');
 assert.equal(safeAccountReturn('/company?company=samsung&extra=1#x',origin,keys),'/company?company=samsung');
-let user=null,options,insert,removed,deleted,adminCalls=0,exchanged,nicknameUpdate;
+let user=null,options,insert,removed,deleted,adminCalls=0,exchanged,nicknameUpdate,emailCall,emailError=null,emailHasSession=true;
 const handler=createAccountHandler({companyKeys:keys,clock:()=>now,serverClient:(url,key,opts)=>{
  assert.equal(key,env.SUPABASE_PUBLISHABLE_KEY);options=opts;
  return {auth:{getUser:async()=>({data:{user},error:null}),signInWithOAuth:async args=>{
   assert.equal(args.options.redirectTo,origin+'/api/account/callback?next=%2F');
   opts.cookies.setAll([{name:'__Host-sianaly-auth-code-verifier',value:'test-verifier',options:{domain:'.evil.test',httpOnly:false,secure:false,sameSite:'none'}}]);
   return {data:{url:env.SUPABASE_URL+'/auth/v1/authorize?provider='+args.provider}};
+ },signUp:async input=>{
+  emailCall={action:'signup',input};
+  if(!emailError&&emailHasSession)opts.cookies.setAll([{name:'__Host-sianaly-auth',value:'test-email-session',options:{httpOnly:false}}]);
+  return {data:{session:emailHasSession?{access_token:'never-return-this-token'}:null},error:emailError};
+ },signInWithPassword:async input=>{
+  emailCall={action:'login',input};
+  if(!emailError)opts.cookies.setAll([{name:'__Host-sianaly-auth',value:'test-email-session',options:{}}]);
+  return {data:{session:{access_token:'never-return-this-token'}},error:emailError};
  },exchangeCodeForSession:async code=>{exchanged=code;return {};},signOut:async()=>({}),updateUser:async data=>{nicknameUpdate=data;return {}; }},from:table=>{
   assert.equal(table,'sianaly_favorites');return {
    select:()=>({order:()=>({limit:async()=>({data:[{company_key:'samsung',created_at:'today'},{company_key:'invalid',created_at:'today'}]})})}),
@@ -21,19 +29,20 @@ const handler=createAccountHandler({companyKeys:keys,clock:()=>now,serverClient:
   };
  }};
 },adminClient:(url,key,opts)=>{adminCalls++;assert.equal(key,env.SUPABASE_SECRET_KEY);assert.equal(opts.auth.persistSession,false);return {auth:{admin:{deleteUser:async id=>{deleted=id;return {};}}}};}});
-async function request(action,{method='GET',body,requestOrigin=origin,cookie,overrides={}}={}){
- const headers={};if(method!=='GET'){headers.Origin=requestOrigin;headers['Content-Type']='application/json';}if(cookie)headers.Cookie=cookie;
+async function request(action,{method='GET',body,requestOrigin=origin,cookie,overrides={},ip='192.0.2.1'}={}){
+ const headers={'CF-Connecting-IP':ip};if(method!=='GET'){headers.Origin=requestOrigin;headers['Content-Type']='application/json';}if(cookie)headers.Cookie=cookie;
  const response=await handler({request:new Request(origin+'/api/account/'+action,{method,headers,...(body!==undefined?{body:JSON.stringify(body)}:{})}),env:{...env,...overrides},params:{action:action.split('?')[0]}});
  assert.match(response.headers.get('Cache-Control'),/no-store/);return response;
 }
 assert.equal((await request('config',{overrides:{AUTH_ENABLED:'false'}})).status,200);
-assert.equal((await (await request('config')).json()).providers.length,3);
+assert.deepEqual(await (await request('config')).json(),{ready:true,email:true,providers:[{id:'custom:kakao',name:'카카오'},{id:'custom:naver',name:'네이버'}]});
 assert.equal((await request('session',{overrides:{AUTH_SITE_URL:'https://evil.test'}})).status,503);
 assert.equal((await request('favorites')).status,401);
 assert.equal((await request('nickname',{method:'POST',body:{nickname:'별명'}})).status,401);
 assert.equal((await request('login',{method:'POST',body:{provider:'google'},requestOrigin:'https://evil.test'})).status,403);
 assert.equal((await request('login',{method:'POST',body:{provider:'unknown'}})).status,400);
-let response=await request('login',{method:'POST',body:{provider:'google',next:'https://evil.test'}});
+assert.equal((await request('login',{method:'POST',body:{provider:'google'}})).status,400);
+let response=await request('login',{method:'POST',body:{provider:'custom:naver',next:'https://evil.test'}});
 assert.equal(response.status,200);const cookie=response.headers.get('Set-Cookie');
 for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/','Max-Age=600'])assert.ok(cookie.includes(flag),flag);
 assert.ok(!cookie.toLowerCase().includes('domain='));assert.equal(options.cookieOptions.name,'__Host-sianaly-auth');
@@ -102,10 +111,37 @@ assert.equal((await (await board(detail)).json()).post.title,'수정 제목');
 assert.equal((await board(detail,{method:'DELETE'})).status,200);
 assert.equal((await board(detail)).status,404);
 assert.equal(sqlite.prepare('SELECT count(*) AS total FROM board_comments').get().total,0);
+user=null;
+const emailRequest=(action,body,options={})=>request(action,{method:'POST',body,overrides:{POPULAR_DB:db},...options});
+const signupBody={email:' member@example.test ',password:'test-password-123',nickname:'  별명  '};
+assert.equal((await emailRequest('email-signup',signupBody,{requestOrigin:'https://evil.test'})).status,403);
+assert.equal((await emailRequest('email-signup',{...signupBody,email:'invalid'})).status,400);
+assert.equal((await emailRequest('email-signup',{...signupBody,password:'short'})).status,400);
+assert.equal((await emailRequest('email-signup',{...signupBody,nickname:'<script>'})).status,400);
+assert.equal((await emailRequest('email-signup',{...signupBody,user_id:'victim'})).status,400);
+const emailResponse=await emailRequest('email-signup',signupBody);
+assert.equal(emailResponse.status,200);
+assert.deepEqual(await emailResponse.json(),{ok:true});
+assert.deepEqual(emailCall,{action:'signup',input:{email:'member@example.test',password:'test-password-123',options:{data:{sianaly_nickname:'별명'}}}});
+for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/','Max-Age=2592000'])assert.ok(emailResponse.headers.get('Set-Cookie').includes(flag),flag);
+assert.equal(adminCalls,1);
+emailError={status:400};
+assert.equal((await emailRequest('email-login',{email:'member@example.test',password:'wrong'})).status,400);
+emailError=null;
+assert.deepEqual(await (await emailRequest('email-login',{email:'member@example.test',password:'test-password-123'})).json(),{ok:true});
+assert.equal(emailCall.action,'login');
+emailHasSession=false;
+assert.equal((await emailRequest('email-signup',signupBody)).status,409);
+emailHasSession=true;
+const attempts=await Promise.all(Array.from({length:8},()=>emailRequest('email-signup',signupBody,{ip:'192.0.2.2'})));
+assert.equal(attempts.filter(r=>r.status===200).length,5);
+assert.equal(attempts.filter(r=>r.status===429).length,3);
+assert.ok(!JSON.stringify(sqlite.prepare('SELECT * FROM member_email_attempts').all()).includes('192.0.2.'));
+assert.equal((await emailRequest('email-signup',signupBody,{overrides:{POPULAR_DB:null}})).status,503);
 sqlite.close();
 // Exercise the official SDK's PKCE generation and cookie adapter without a live account or network request.
 const realHandler=createAccountHandler({companyKeys:keys});
-const realLogin=await realHandler({request:new Request(origin+'/api/account/login',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify({provider:'google',next:'/'})}),env,params:{action:'login'}});
+const realLogin=await realHandler({request:new Request(origin+'/api/account/login',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify({provider:'custom:naver',next:'/'})}),env,params:{action:'login'}});
 assert.equal(realLogin.status,200);const realURL=new URL((await realLogin.json()).url);
 assert.equal(realURL.searchParams.get('code_challenge_method'),'s256');assert.ok(realURL.searchParams.get('code_challenge'));
 const realCookie=realLogin.headers.get('Set-Cookie');assert.match(realCookie,/__Host-sianaly-auth-code-verifier=/);assert.match(realCookie,/HttpOnly/);assert.match(realCookie,/Secure/);assert.match(realCookie,/Max-Age=600/);

@@ -2,7 +2,7 @@ import {handleBoard} from './board-handler.mjs';
 import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supabase/ssr';
 import {createClient} from '@supabase/supabase-js';
 
-const providerNames={google:'Google',kakao:'카카오','custom:kakao':'카카오','custom:naver':'네이버'};
+const providerNames={'custom:kakao':'카카오','custom:naver':'네이버'};
 export function memberNickname(value){
  if(typeof value!=='string')return null;
  const nickname=value.normalize('NFKC').trim();
@@ -24,6 +24,17 @@ async function bodyJSON(request,maxBytes=1024){
  while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>maxBytes){await reader.cancel();throw Error('Large body');}text+=decoder.decode(value,{stream:true});}
  const body=JSON.parse(text+decoder.decode());if(!body||Array.isArray(body)||typeof body!=='object')throw Error('Invalid body');return body;
 }
+async function allowEmailAttempt(db,request,secret,action,now){
+ const window=action==='email-signup'?3600000:900000,limit=action==='email-signup'?5:30;
+ const bucket=Math.floor(now/window);
+ const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);
+ const digest=await crypto.subtle.sign('HMAC',key,new TextEncoder().encode(request.headers.get('CF-Connecting-IP')||'unknown'));
+ const hash=Array.from(new Uint8Array(digest),byte=>byte.toString(16).padStart(2,'0')).join('');
+ await db.prepare('CREATE TABLE IF NOT EXISTS member_email_attempts (key TEXT PRIMARY KEY, attempts INTEGER NOT NULL, expires_at INTEGER NOT NULL)').run();
+ await db.prepare('DELETE FROM member_email_attempts WHERE expires_at < ?').bind(now).run();
+ const result=await db.prepare('INSERT INTO member_email_attempts (key, attempts, expires_at) VALUES (?, 1, ?) ON CONFLICT(key) DO UPDATE SET attempts = attempts + 1 WHERE attempts < ?').bind(action+':'+bucket+':'+hash,(bucket+1)*window,limit).run();
+ return Boolean(result.meta.changes);
+}
 export function createAccountHandler({companyKeys,serverClient=createServerClient,adminClient=createClient,clock=Date.now,upstreamFetch=(...args)=>fetch(...args)}){
  const keys=new Set(companyKeys);
  return async function onRequest({request,env,params}){
@@ -32,8 +43,8 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const redirect=(path)=>{headers.set('Location',path);return new Response(null,{status:303,headers});};
   let site;try{site=new URL(env.AUTH_SITE_URL);if(site.origin!==url.origin||site.pathname!=='/'||site.search||site.hash||site.username||site.password||(site.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(site.hostname)))throw Error('Invalid site');}catch{return respond({ready:false,code:'unavailable'},503);}
   const providers=(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
-  const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY)&&providers.length>0;
-  if(action==='config'&&request.method==='GET')return respond({ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[]});
+  const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY);
+  if(action==='config'&&request.method==='GET')return respond({ready,email:ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[]});
   const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
   const boardRead=action==='board'&&request.method==='GET',mine=url.searchParams.get('mine')==='1';
   const hasSession=(request.headers.get('Cookie')||'').split(';').some(cookie=>{
@@ -58,7 +69,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({sub:id});
    }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}finally{clearTimeout(timer);}
   }
-  const methods={board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
+  const methods={board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
   let cookies;try{cookies=parseCookieHeader(request.headers.get('Cookie')||'');}catch{return respond({code:'invalid_session'},401);}
@@ -68,6 +79,26 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   try{
    // A separate client per request; private cookies and API responses are never cached.
    const client=serverClient(env.SUPABASE_URL,env.SUPABASE_PUBLISHABLE_KEY,{cookieOptions:{...cookieOptions,name:cookieName},cookies:{getAll:()=>cookies,setAll:items=>{for(const c of items)writeCookie(c.name,c.value,c.options);}}});
+   if(action==='email-signup'||action==='email-login'){
+    const body=await bodyJSON(request,4096),signingUp=action==='email-signup';
+    const allowed=signingUp?['email','password','nickname']:['email','password'];
+    const email=typeof body.email==='string'?body.email.trim():'',password=body.password;
+    if(Object.keys(body).some(key=>!allowed.includes(key))||email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return respond({code:'invalid_email'},400);
+    if(typeof password!=='string'||password.length>128||password.length<(signingUp?10:1))return respond({code:'invalid_password'},400);
+    const nickname=signingUp?memberNickname(body.nickname):null;
+    if(signingUp&&!nickname)return respond({code:'invalid_nickname'},400);
+    if(!env.POPULAR_DB)return respond({code:'unavailable'},503);
+    if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
+    const result=signingUp
+     ?await client.auth.signUp({email,password,options:{data:{sianaly_nickname:nickname}}})
+     :await client.auth.signInWithPassword({email,password});
+    if(result.error){
+     if(result.error.status===429)return respond({code:'too_many_attempts'},429);
+     return respond({code:signingUp?'email_signup_failed':'email_login_failed'},400);
+    }
+    if(!result.data?.session)return respond({code:'email_confirmation_required'},409);
+    return respond({ok:true});
+   }
    if(action==='login'){
     const body=await bodyJSON(request);if(Object.keys(body).some(k=>!['provider','next'].includes(k))||!providers.includes(body.provider))return respond({code:'invalid_provider'},400);
     const next=safeAccountReturn(body.next,site.origin,keys);
@@ -82,7 +113,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return redirect(safeAccountReturn(url.searchParams.get('next'),site.origin,keys));
    }
    const {data,error}=await client.auth.getUser();const user=error?null:data?.user;
-   if(action==='session')return respond({signedIn:Boolean(user),provider:user?providerNames[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null});
+   if(action==='session')return respond({signedIn:Boolean(user),provider:user?({...providerNames,email:'이메일',google:'Google'})[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null});
    if(action==='logout'){
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }

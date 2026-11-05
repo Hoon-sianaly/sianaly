@@ -8,13 +8,46 @@
  };
  function node(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
  function say(text){toast.textContent=text;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4500);}
- function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
+ function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.',invalid_email:'이메일 주소를 확인해 주세요.',invalid_password:'비밀번호는 10~128자로 설정해 주세요.',too_many_attempts:'요청이 많아요. 잠시 후 다시 시도해 주세요.',email_login_failed:'이메일과 비밀번호를 확인해 주세요.',email_signup_failed:'가입하지 못했어요. 이미 가입한 이메일이라면 로그인해 주세요.',email_confirmation_required:'이메일 가입 설정을 확인 중이에요. 잠시 후 다시 시도해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
  function showDialog(title){
   dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
- function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','로그인하면 처음 이용 시 SIANALY 회원 계정이 생성됩니다. 비밀번호는 소셜 로그인 서비스에서 관리합니다.'),node('p','SIANALY는 회원 식별과 즐겨찾기 저장에 필요한 정보만 기능에 사용합니다. 동의한 소셜 프로필 정보는 인증 서비스에 보관될 수 있습니다.'),node('p','탈퇴하면 SIANALY 회원 인증 정보와 저장한 즐겨찾기가 삭제됩니다.'));return details;}
+ function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','네이버·카카오 또는 이메일로 가입할 수 있어요. 가입 후 사이트에서 사용할 별명을 설정해요.'),node('p','이메일과 비밀번호는 회원 인증 서비스에서 가입·로그인에 사용해요. 소셜 로그인에서 동의한 정보도 인증 서비스에 보관될 수 있어요.'),node('p','탈퇴하면 SIANALY 회원 인증 정보와 저장한 즐겨찾기가 삭제됩니다.'));return details;}
+ function emailDialog(signingUp){
+  showDialog(signingUp?'이메일로 회원가입':'이메일로 로그인');
+  dialog.append(node('p',signingUp?'이메일·비밀번호·별명을 입력하면 바로 가입돼요.':'가입한 이메일과 비밀번호를 입력해 주세요.'));
+  const form=node('form',undefined,'member-email-form');
+  const fields=[['email','이메일','email','email'],['password','비밀번호','password',signingUp?'new-password':'current-password']];
+  if(signingUp)fields.push(['nickname','별명','text','nickname']);
+  for(const [name,caption,type,autocomplete] of fields){
+   const label=node('label',caption),input=node('input',undefined,'member-delete-input');
+   input.id='memberEmail-'+name;input.name=name;input.type=type;input.autocomplete=autocomplete;input.required=true;
+   input.maxLength=name==='email'?254:name==='password'?128:20;
+   if(signingUp&&name==='password')input.minLength=10;
+   if(name==='nickname')input.minLength=2;
+   label.htmlFor=input.id;
+   form.append(label,input);
+  }
+  if(signingUp)form.append(node('p','비밀번호 10자 이상 · 별명 2~20자'));
+  const submit=node('button',signingUp?'가입하기':'로그인','member-menu-action member-email-submit');
+  submit.type='submit';
+  const error=node('p','','member-error');error.setAttribute('role','alert');
+  form.append(submit,error);
+  form.onsubmit=async event=>{
+   event.preventDefault();submit.disabled=true;error.textContent='';
+   try{
+    await api(signingUp?'email-signup':'email-login',Object.fromEntries(new FormData(form)));
+    form.reset();publishChange();
+    try{if(pendingCompany)sessionStorage.setItem('sianaly.pendingFavorite',JSON.stringify({key:pendingCompany,createdAt:Date.now()}));}catch{}
+    location.reload();
+   }catch(e){error.textContent=errorText(e);submit.disabled=false;}
+  };
+  const back=node('button','다른 방법 선택','member-menu-action');back.type='button';back.onclick=()=>loginDialog(signingUp);
+  const toggle=node('button',signingUp?'이미 가입했나요? 로그인':'이메일로 새로 가입하기','member-menu-action');toggle.type='button';toggle.onclick=()=>emailDialog(!signingUp);
+  dialog.append(form,node('p','비밀번호 찾기는 메일 발송 연결 후 제공 예정이에요. 비밀번호를 안전하게 보관해 주세요.'),toggle,back,info());
+ }
  function loginDialog(signingUp=false){
-  showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');dialog.append(node('p',pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':signingUp?'소셜 계정을 선택하고 별명을 정하면 가입이 완료돼요.':'소셜 계정으로 로그인하세요.'));
+  showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');dialog.append(node('p',pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':signingUp?'네이버·카카오 또는 이메일로 시작하세요.':'편한 방법으로 로그인하세요.'));
   const error=node('p','','member-error');error.setAttribute('role','alert');
   for(const provider of config.providers){const button=node('button',provider.name+'로 계속하기','member-provider');button.type='button';button.dataset.provider=provider.id;
    button.onclick=async()=>{for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=true;error.textContent='';try{
@@ -22,6 +55,7 @@
     const next=location.pathname+location.search,data=await api('login',{provider:provider.id,next});location.assign(data.url);
    }catch(e){error.textContent=errorText(e);for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=false;}};dialog.append(button);
   }
+  if(config.email){const email=node('button',signingUp?'이메일로 회원가입':'이메일로 로그인','member-menu-action');email.type='button';email.onclick=()=>emailDialog(signingUp);dialog.append(email);}
   dialog.append(error,info());
  }
  function publishChange(){try{localStorage.setItem('sianaly.member.changed',String(Date.now()));}catch{}}
@@ -95,7 +129,7 @@
   wiredFavorites.add(button);button.onclick=()=>changeFavorite(key);render();
  }
  async function init(){
-  try{config=await api('config');if(!config.ready||!config.providers.length)return;const data=await loadCompanyCatalog();catalog=new Map(data.companies.map(c=>[c.key,c]));}catch{return;}
+  try{config=await api('config');if(!config.ready||(!config.providers.length&&!config.email))return;const data=await loadCompanyCatalog();catalog=new Map(data.companies.map(c=>[c.key,c]));}catch{return;}
   const header=document.querySelector('header');if(!header)return;
   nav=node('button','로그인','member-nav-button');nav.type='button';nav.onclick=accountDialog;
   signup=node('button','회원가입','member-nav-button member-signup');signup.type='button';
