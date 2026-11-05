@@ -1,11 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 132" role="img" aria-label="SIANALY">
-  <title>SIANALY · 브랜드 로고 06</title>
-  <path fill="#117ee3" d="M0 32 58 0v32L30 47Z"/>
-  <path fill="#1194ef" d="M58 0 116 27 86 45 58 32Z"/>
-  <path fill="#43a5f5" d="M116 27v32L86 45Z"/>
-  <path fill="#07346d" d="M0 32v30l30-15Z"/>
-  <path fill="#065ec3" d="m0 62 30-15 31 15-31 17Z"/>
-  <path fill="#0b7bdf" d="m30 79 31-17 31 19-25 13Z"/>
-  <path fill="#082b60" d="m0 76 54 26v30L0 106Z"/>
-  <path fill="#3ca2f2" d="m54 102 62-35v31l-62 34Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="37 14 205 206" role="img" aria-label="SIANALY">
+  <title>SIANALY · SA 심볼</title>
+  <defs>
+    <linearGradient id="top" x1="45" y1="84" x2="184" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#269cff"/><stop offset="1" stop-color="#209eff"/>
+    </linearGradient>
+    <linearGradient id="front" x1="37" y1="65" x2="141" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0753bb"/><stop offset="1" stop-color="#003d9e"/>
+    </linearGradient>
+    <linearGradient id="side" x1="194" y1="87" x2="235" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#168cee"/><stop offset="1" stop-color="#1486e8"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="123" y1="211" x2="169" y2="119" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24a6ff"/><stop offset="1" stop-color="#1f9df2"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#top)" d="M37 65 125 14 167 37 75 86Z"/>
+  <path fill="url(#front)" d="M37 65 141 121 140 164 37 107Z"/>
+  <path fill="url(#top)" d="M109 104 200 54 242 77 141 121Z"/>
+  <path fill="url(#side)" d="M189 103 242 77 242 178 210 194 209 141Z"/>
+  <path fill="url(#front)" d="M169 162 209 141 210 169 160 195Z"/>
+  <path fill="url(#ribbon)" d="M141 121 189 103 169 162 160 195 116 220 116 178 140 164Z"/>
+  <path fill="url(#front)" d="M37 137 116 178 116 220 37 179Z"/>
 </svg>
