@@ -138,8 +138,7 @@
   feedback.setAttribute('role','alert');
   toggle.type = remove.type = 'button';
   async function moderate(removing) {
-   const prompt = removing ? '운영자 권한으로 이 글과 달린 댓글을 삭제할까요?' : post.hidden ? '이 글을 다시 공개할까요?' : '이 글을 일반 목록에서 숨길까요?';
-   if (!window.confirm(prompt)) return;
+   if (removing && !window.confirm('운영자 권한으로 이 글과 달린 댓글을 삭제할까요?')) return;
    toggle.disabled = remove.disabled = true;
    feedback.textContent = '';
    try {
