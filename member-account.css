@@ -40,3 +40,9 @@
 .member-email-form{margin-top:20px}
 .member-email-form label{display:block;margin-top:12px;color:#536178;font-size:13px}
 .member-email-form .member-email-submit{background:#195bb2;border-color:#195bb2;color:#fff}
+.member-auth-divider{display:flex;align-items:center;gap:12px;margin:22px 0 14px;color:#8994a5;font-size:12px}
+.member-auth-divider::before,.member-auth-divider::after{content:"";flex:1;height:1px;background:#e5eaf2}
+.member-social-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.member-social-options .member-provider{margin:0;padding-inline:8px}
+.member-auth-toggle{display:block;margin:20px auto 0;padding:6px;border:0;background:transparent;color:#245ba6;font:inherit;font-size:13px;cursor:pointer}
+.member-auth-toggle:hover{text-decoration:underline;text-underline-offset:3px}

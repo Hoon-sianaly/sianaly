@@ -13,9 +13,9 @@
   dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
  function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','네이버·카카오 또는 이메일로 가입할 수 있어요. 가입 후 사이트에서 사용할 별명을 설정해요.'),node('p','이메일과 비밀번호는 회원 인증 서비스에서 가입·로그인에 사용해요. 소셜 로그인에서 동의한 정보도 인증 서비스에 보관될 수 있어요.'),node('p','탈퇴하면 SIANALY 회원 인증 정보와 저장한 즐겨찾기가 삭제됩니다.'));return details;}
- function emailDialog(signingUp){
-  showDialog(signingUp?'이메일로 회원가입':'이메일로 로그인');
-  dialog.append(node('p',signingUp?'이메일·비밀번호·별명을 입력하면 바로 가입돼요.':'가입한 이메일과 비밀번호를 입력해 주세요.'));
+ function loginDialog(signingUp=false){
+  showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');
+  dialog.append(node('p',signingUp?'이메일·비밀번호·별명을 입력하면 바로 가입돼요.':pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':'가입한 이메일과 비밀번호를 입력해 주세요.'));
   const form=node('form',undefined,'member-email-form');
   const fields=[['email','이메일','email','email'],['password','비밀번호','password',signingUp?'new-password':'current-password']];
   if(signingUp)fields.push(['nickname','별명','text','nickname']);
@@ -42,21 +42,18 @@
     location.reload();
    }catch(e){error.textContent=errorText(e);submit.disabled=false;}
   };
-  const back=node('button','다른 방법 선택','member-menu-action');back.type='button';back.onclick=()=>loginDialog(signingUp);
-  const toggle=node('button',signingUp?'이미 가입했나요? 로그인':'이메일로 새로 가입하기','member-menu-action');toggle.type='button';toggle.onclick=()=>emailDialog(!signingUp);
-  dialog.append(form,node('p','비밀번호 찾기는 메일 발송 연결 후 제공 예정이에요. 비밀번호를 안전하게 보관해 주세요.'),toggle,back,info());
- }
- function loginDialog(signingUp=false){
-  showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');dialog.append(node('p',pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':signingUp?'네이버·카카오 또는 이메일로 시작하세요.':'편한 방법으로 로그인하세요.'));
-  const error=node('p','','member-error');error.setAttribute('role','alert');
-  for(const provider of config.providers){const button=node('button',provider.name+'로 계속하기','member-provider');button.type='button';button.dataset.provider=provider.id;
+  dialog.append(form);
+  const providers=['custom:kakao','custom:naver'].map(id=>config.providers.find(provider=>provider.id===id)).filter(Boolean);
+  if(providers.length)dialog.append(node('div','또는','member-auth-divider'));
+  const social=node('div',undefined,'member-social-options');
+  for(const provider of providers){const button=node('button',provider.name+(signingUp?'로 가입하기':'로 로그인'),'member-provider');button.type='button';button.dataset.provider=provider.id;
    button.onclick=async()=>{for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=true;error.textContent='';try{
     try{if(pendingCompany)sessionStorage.setItem('sianaly.pendingFavorite',JSON.stringify({key:pendingCompany,createdAt:Date.now()}));}catch{}
     const next=location.pathname+location.search,data=await api('login',{provider:provider.id,next});location.assign(data.url);
-   }catch(e){error.textContent=errorText(e);for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=false;}};dialog.append(button);
+   }catch(e){error.textContent=errorText(e);for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=false;}};social.append(button);
   }
-  if(config.email){const email=node('button',signingUp?'이메일로 회원가입':'이메일로 로그인','member-menu-action');email.type='button';email.onclick=()=>emailDialog(signingUp);dialog.append(email);}
-  dialog.append(error,info());
+  const toggle=node('button',signingUp?'이미 가입했나요? 로그인':'처음이신가요? 회원가입','member-auth-toggle');toggle.type='button';toggle.onclick=()=>loginDialog(!signingUp);
+  dialog.append(social,toggle,node('p','비밀번호 찾기는 메일 발송 연결 후 제공 예정이에요. 비밀번호를 안전하게 보관해 주세요.'),info());
  }
  function publishChange(){try{localStorage.setItem('sianaly.member.changed',String(Date.now()));}catch{}}
  function render(){
