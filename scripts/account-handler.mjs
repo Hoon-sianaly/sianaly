@@ -1,4 +1,5 @@
 import {handleBoard,initializeBoard,syncBoardDepartures} from './board-handler.mjs';
+import {handleReports} from './report-handler.mjs';
 import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supabase/ssr';
 import {createClient} from '@supabase/supabase-js';
 
@@ -25,7 +26,7 @@ async function bodyJSON(request,maxBytes=1024){
  const body=JSON.parse(text+decoder.decode());if(!body||Array.isArray(body)||typeof body!=='object')throw Error('Invalid body');return body;
 }
 async function allowEmailAttempt(db,request,secret,action,now){
- const signup=action==='email-signup',recovery=action==='password-forgot';
+ const signup=action==='email-signup'||action==='reports',recovery=action==='password-forgot';
  const window=signup||recovery?3600000:900000,limit=signup?5:recovery?3:30;
  const bucket=Math.floor(now/window);
  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);
@@ -72,9 +73,13 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({sub:id});
    }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}finally{clearTimeout(timer);}
   }
-  const methods={board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],'password-forgot':['POST'],'password-recovery':['POST'],'password-update':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
+  const methods={reports:['GET','POST','PATCH'],board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],'password-forgot':['POST'],'password-recovery':['POST'],'password-update':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
+  const serveReports=user=>handleReports({db:env.POPULAR_DB,url,method:request.method,user,companyKeys:keys,readBody:()=>bodyJSON(request,10000),respond,now:clock(),allowAttempt:()=>allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,'reports',clock())});
+  if(action==='reports'&&request.method==='POST'){
+   try{return await serveReports();}catch{return respond({code:'reports_unavailable'},503);}
+  }
   let cookies;try{cookies=parseCookieHeader(request.headers.get('Cookie')||'');}catch{return respond({code:'invalid_session'},401);}
   const cookieOptions={path:'/',secure,httpOnly:true,sameSite:'lax',maxAge:60*60*24*30};
   function writeCookie(name,value,options={}){const final={...options,...cookieOptions};if(name.includes('code-verifier')||name===cookieName+'-recovery')final.maxAge=600;if(options.maxAge===0)final.maxAge=0;if(options.expires)final.expires=options.expires;delete final.domain;headers.append('Set-Cookie',serializeCookieHeader(name,value,final));cookies=cookies.filter(c=>c.name!==name);if(final.maxAge!==0)cookies.push({name,value});}
@@ -159,6 +164,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({ok:true,sessionWarning});
    }
    if(action==='board')return await serveBoard(user);
+   if(action==='reports')return await serveReports(user);
    if(action==='nickname'){
     const body=await bodyJSON(request),nickname=memberNickname(body.nickname);
     if(Object.keys(body).some(k=>k!=='nickname')||nickname===null)return respond({code:'invalid_nickname'},400);

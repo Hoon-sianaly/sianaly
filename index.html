@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SIANALY</title>
-<link rel="stylesheet" href="site-contact.css?v=20261105-contact">
+<link rel="stylesheet" href="site-contact.css?v=20261105-reports">
 <link rel="stylesheet" href="home-popular.css?v=20261105-blue-home">
 <style>
 :root{color-scheme:light;--ink:#17243b;--muted:#7b8595;--line:#e7ebf0;--blue:#3568e8}
@@ -81,7 +81,7 @@ body{background:#f3f7fd}
 <section class="market-panel" id="discoveryKosdaq" data-market="KOSDAQ" hidden aria-labelledby="kosdaqTitle"><div class="market-panel-head"><div><span class="market-eyebrow">KOSDAQ</span><h3 id="kosdaqTitle" tabindex="-1">코스닥</h3></div><div class="market-total">분석 가능한 종목<strong data-market-total>불러오는 중</strong></div></div><div class="industry-filters" role="group" aria-label="코스닥 업종 필터"></div><p class="market-results-label" role="status" aria-live="polite"></p><div class="company-grid" aria-label="코스닥 분석 가능한 기업 목록"><p class="discovery-empty" role="status">기업 목록을 불러오는 중입니다.</p></div><button class="market-more" type="button" hidden>더 보기</button><p class="ranking-caption"></p></section>
 </div></section>
 </main>
-<footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="notice">SIANALY는 기업 및 산업에 관한 정보와 분석을 제공하는 서비스입니다. 특정 금융상품의 매수·매도 또는 투자 여부를 권유하는 서비스가 아닙니다.</p><div class="site-contact-links"><span>문의 · 제안</span><a href="mailto:sianaly11@gmail.com?subject=SIANALY%20%EB%AC%B8%EC%9D%98" title="메일 앱에서 문의 작성">sianaly11@gmail.com</a></div></footer>
+<footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="notice">SIANALY는 기업 및 산업에 관한 정보와 분석을 제공하는 서비스입니다. 특정 금융상품의 매수·매도 또는 투자 여부를 권유하는 서비스가 아닙니다.</p><div class="site-contact-links"><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com?subject=SIANALY%20%EB%AC%B8%EC%9D%98" title="메일 앱에서 문의 작성">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261103-reading-3"></script>
 <script src="company-data.js?v=20261103-reading-1"></script>
 <script src="home-discovery.js?v=20261105-header"></script>
@@ -102,4 +102,4 @@ q.addEventListener("input",e=>render(e.target.value));
 q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
-</script><script src="member-account.js?v=20261105-board-admin" defer></script></body></html>
+</script><script src="member-account.js?v=20261105-reports" defer></script></body></html>

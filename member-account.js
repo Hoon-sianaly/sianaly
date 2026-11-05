@@ -173,6 +173,7 @@
   const logout=node('button','로그아웃','member-menu-action');logout.type='button';logout.onclick=async()=>{logout.disabled=true;try{await api('logout',{});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('로그아웃했어요.');}catch(e){logout.disabled=false;say(errorText(e));}};
   dialog.append(favorites,myPosts(),logout);
   if(session.isAdmin){const management=node('a','게시판 관리','member-menu-action');management.href='/board?moderation=1';dialog.append(management);}
+  if(session.isAdmin){const reports=node('a','오류 제보 관리','member-menu-action');reports.href='/reports';dialog.append(reports);}
   const deletion=node('details',undefined,'member-information');deletion.append(node('summary','회원 탈퇴'),node('p','회원 인증 정보와 즐겨찾기가 삭제돼요. 글·댓글은 남으며 작성자는 ‘탈퇴한 회원’으로 표시돼요. 계속하려면 아래에 ‘회원탈퇴’를 입력하세요.'));
   const input=node('input',undefined,'member-delete-input');input.type='text';input.placeholder='회원탈퇴';input.setAttribute('aria-label','회원 탈퇴 확인 문구');input.autocomplete='off';
   const confirm=node('button','탈퇴하기','member-menu-action member-danger');confirm.type='button';confirm.disabled=true;input.oninput=()=>{confirm.disabled=input.value!=='회원탈퇴';};
