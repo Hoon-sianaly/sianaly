@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SIANALY — 기업 분석</title>
+<link rel="stylesheet" href="site-contact.css?v=20261105-contact">
 <link rel="stylesheet" href="company-reading.css?v=20261103-reading-1">
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#111827;font-family:Arial,"Noto Sans KR",sans-serif}
@@ -92,6 +93,7 @@ header .logo img{display:block;width:clamp(30px, 7vw, 34px);height:auto}
 <body>
 <header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 닫기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 열기">←</button></main>
+<footer class="site-contact"><div class="site-contact-links"><span>문의 · 제안</span><a href="mailto:sianaly11@gmail.com?subject=SIANALY%20%EB%AC%B8%EC%9D%98" title="메일 앱에서 문의 작성">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261103-reading-3"></script>
 <script src="company-data.js?v=20261103-reading-1"></script>
 <script src="company-search.js?v=20261007-detail-search-1"></script>
@@ -179,6 +181,8 @@ function financialInsights(row,previous,basis){
 }
 if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>';}
 else{
+ const reportPage=(location.origin||'https://dev.sianaly.com')+'/company?company='+encodeURIComponent(c.key);
+ const reportEmail='mailto:sianaly11@gmail.com?subject='+encodeURIComponent('[SIANALY 오류 제보] '+c.name)+'&body='+encodeURIComponent('기업: '+c.name+' ('+c.ticker+')\r\n페이지: '+reportPage+'\r\n\r\n오류가 있는 항목:\r\n\r\n현재 표시된 내용:\r\n\r\n올바른 내용 또는 참고 자료:\r\n');
  const awaiting=c.financialAvailability?.status==='awaiting-first-report';
  const latestAnnual=c.annual.at(-1),previousAnnual=c.annual.find(row=>row.year===latestAnnual?.year-1);
  const latestQuarter=c.latestQuarter;
@@ -227,6 +231,7 @@ else{
   <div class="term"><b>DRAM</b><span>PC·스마트폰·서버 등에서 작업 중인 데이터를 빠르게 저장하고 꺼내 쓰는 메모리입니다.</span></div>
   <div class="term"><b>NAND</b><span>전원이 꺼져도 데이터가 남는 메모리로, SSD와 스마트폰 저장장치 등에 사용됩니다.</span></div>
  `}</div></section>`:""}
+ <section class="company-report" aria-label="기업 정보 오류 제보"><div><h2>잘못된 정보가 있나요?</h2><p>내용이나 숫자에서 발견한 오류를 알려주세요. 메일 앱에서 작성할 수 있어요.</p></div><a class="company-report-link" href="${esc(reportEmail)}" aria-label="${esc(c.name)} 오류 제보 메일 작성">오류 제보</a></section>
  </div>`;
  if(latestFirst){
   const markup=app.innerHTML,a=markup.indexOf('<section id="company-annual">'),q=markup.indexOf('<section id="company-quarterly">'),d=markup.indexOf('<section id="company-drivers">');

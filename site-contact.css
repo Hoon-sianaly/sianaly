@@ -1,0 +1,10 @@
+.site-contact{max-width:1104px;margin:48px auto 0;padding:24px 28px 30px;border-top:1px solid #dfe7f2;color:#718198;font-size:12px;line-height:1.7}
+.site-contact-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;margin-top:14px}
+.site-contact-links a{color:#255b9d;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.site-contact a:focus-visible,.company-report-link:focus-visible{outline:2px solid #3568e8;outline-offset:4px}
+.company-report{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;background:#eef5ff;border:1px solid #d8e5f6;border-radius:12px}
+.company-report h2{margin:0;color:#27466e;font-size:15px;font-weight:600;letter-spacing:-.3px}
+.company-report p{margin:5px 0 0;color:#6a7c94;font-size:12px;line-height:1.7}
+.company-report-link{display:inline-flex;align-items:center;justify-content:center;flex:none;min-height:42px;padding:9px 16px;border:1px solid #b9cfee;border-radius:8px;background:#fff;color:#245b9f;font-size:13px;font-weight:600;text-decoration:none}
+.company-report-link:hover{border-color:#7fa4d7;background:#f7faff}
+@media(max-width:600px){.site-contact{margin:32px 20px 0;padding:20px 0 26px}.company-report{align-items:flex-start;flex-direction:column;gap:14px}.company-report-link{width:100%}}
