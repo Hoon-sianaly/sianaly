@@ -8,7 +8,7 @@
  const api = '/api/account/board';
  const errors = {
   login_required:'로그인한 뒤 작성할 수 있어요.',
-  nickname_required:'먼저 내 계정에서 별명을 설정해 주세요.',
+  nickname_required:'먼저 마이페이지에서 별명을 설정해 주세요.',
   invalid_post:'입력 내용을 확인해 주세요.',
   slow_down:'잠시 기다렸다 다시 등록해 주세요.',
   post_not_found:'글을 찾을 수 없어요.'
@@ -45,12 +45,14 @@
    catch (error) { status.textContent = error.message; button.disabled = false; }
   };
  }
- async function addForm(parent, comment) {
-  let member;
-  try { member = await request('/api/account/session'); } catch { member = null; }
-  if (!member?.signedIn || !member.nickname) {
-   parent.append(element('p',member?.signedIn ? '내 계정에서 별명을 설정한 뒤 작성할 수 있어요.' : '상단에서 로그인한 뒤 작성할 수 있어요.'));
-   return;
+ async function addForm(parent, comment, existing, cancel) {
+  if (!existing) {
+   let member;
+   try { member = await request('/api/account/session'); } catch { member = null; }
+   if (!member?.signedIn || !member.nickname) {
+    parent.append(element('p',member?.signedIn ? '마이페이지에서 별명을 설정한 뒤 작성할 수 있어요.' : '상단에서 로그인한 뒤 작성할 수 있어요.'));
+    return;
+   }
   }
   const form = element('form');
   const fields = comment ? [['body','댓글',500,'textarea']] : [['title','제목',100,'input'],['body','내용',4000,'textarea']];
@@ -60,31 +62,71 @@
    input.name = name;
    input.maxLength = limit;
    input.required = true;
+   if (existing) input.value = existing[name];
    const caption = element('label',label);
    caption.htmlFor = input.id;
    form.append(caption,input);
   }
-  const submit = element('button',comment ? '댓글 등록' : '글 등록','board-primary');
+  const submit = element('button',existing ? '수정 저장' : comment ? '댓글 등록' : '글 등록','board-primary');
   submit.type = 'submit';
   const feedback = element('p');
   feedback.setAttribute('role','alert');
-  form.append(submit,feedback);
+  const actions = element('div',null,'board-post-actions');
+  actions.append(submit);
+  const cancelButton = existing ? element('button','취소','board-secondary') : null;
+  if (cancelButton) {
+   cancelButton.type = 'button';
+   cancelButton.onclick = cancel;
+   actions.append(cancelButton);
+  }
+  form.append(actions,feedback);
   parent.append(form);
+  if (existing) form.elements.title.focus();
   form.onsubmit = async event => {
    event.preventDefault();
    submit.disabled = true;
+   if (cancelButton) cancelButton.disabled = true;
    feedback.textContent = '';
    try {
     const body = Object.fromEntries(new FormData(form));
-    const result = await request(comment ? api + '?post=' + encodeURIComponent(postId) : api,{
-     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)
+    const result = await request(comment || existing ? api + '?post=' + encodeURIComponent(postId) : api,{
+     method:existing ? 'PATCH' : 'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)
     });
     location.assign('board.html?post=' + encodeURIComponent(result.id));
    } catch (error) {
     feedback.textContent = error.message;
     submit.disabled = false;
+    if (cancelButton) cancelButton.disabled = false;
    }
   };
+ }
+ function addPostActions(article, view, post, url) {
+  const actions = element('div',null,'board-post-actions');
+  const edit = element('button','수정','board-secondary');
+  const remove = element('button','삭제','board-secondary board-danger');
+  const feedback = element('p',null,'board-danger');
+  feedback.setAttribute('role','alert');
+  edit.type = remove.type = 'button';
+  edit.onclick = () => {
+   const editor = element('div');
+   view.hidden = true;
+   article.append(editor);
+   void addForm(editor,false,post,() => { editor.remove(); view.hidden = false; edit.focus(); });
+  };
+  remove.onclick = async () => {
+   if (!window.confirm('이 글과 달린 댓글을 삭제할까요?')) return;
+   edit.disabled = remove.disabled = true;
+   feedback.textContent = '';
+   try {
+    await request(url,{method:'DELETE',headers:{'Content-Type':'application/json'}});
+    location.assign('board.html');
+   } catch (error) {
+    feedback.textContent = error.message;
+    edit.disabled = remove.disabled = false;
+   }
+  };
+  actions.append(edit,remove);
+  view.append(actions,feedback);
  }
  async function loadNotices() {
   const notices = document.getElementById('board-notices');
@@ -140,9 +182,12 @@
   status.textContent = '불러오는 중…';
   if (postId) {
    const url = api + '?post=' + encodeURIComponent(postId);
-   const {post,comments,next} = await request(url);
+   const {post,comments,next,canManage} = await request(url);
    const article = element('article',null,'board-card');
-   article.append(element('h2',post.title),metadata(post),element('p',post.body,'board-body'));
+   const view = element('div');
+   view.append(element('h2',post.title),metadata(post),element('p',post.body,'board-body'));
+   article.append(view);
+   if (canManage) addPostActions(article,view,post,url);
    content.append(article);
    const section = element('section',null,'board-card');
    section.append(element('h2','댓글'));

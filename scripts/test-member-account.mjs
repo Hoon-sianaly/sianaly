@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {DatabaseSync} from 'node:sqlite';
 import {createAccountHandler,safeAccountReturn,memberNickname} from './account-handler.mjs';
 const origin='https://dev.sianaly.com',now=Date.now();
 const env={AUTH_SITE_URL:origin,AUTH_ENABLED:'true',AUTH_PROVIDERS:'google,custom:kakao,custom:naver',SUPABASE_URL:'https://example.supabase.co',SUPABASE_PUBLISHABLE_KEY:'test-public',SUPABASE_SECRET_KEY:'test-server-only'};
@@ -58,6 +59,50 @@ user.last_sign_in_at=new Date(now).toISOString();response=await request('delete'
 assert.equal(response.status,200);assert.equal(deleted,user.id);assert.match(response.headers.get('Set-Cookie'),/Max-Age=0/);assert.ok(!response.headers.get('Set-Cookie').includes('unrelated'));
 assert.equal((await request('favorites',{method:'PUT',body:{}})).status,405);
 assert.equal((await request('favorites',{method:'POST',body:{company:'x'.repeat(1500)}})).status,503);
+const sqlite=new DatabaseSync(':memory:');
+const db={
+ prepare(sql){
+  function bind(...params){
+   return {
+    first:async()=>sqlite.prepare(sql).get(...params),
+    all:async()=>({results:sqlite.prepare(sql).all(...params)}),
+    run:async()=>{const {changes,lastInsertRowid}=sqlite.prepare(sql).run(...params);return {meta:{changes,last_row_id:lastInsertRowid}};}
+   };
+  }
+  return {...bind(),bind};
+ },
+ batch:async statements=>Promise.all(statements.map(statement=>statement.run()))
+};
+const board=(query='',options={})=>request('board'+query,{...options,overrides:{POPULAR_DB:db}});
+const memberCookie='__Host-sianaly-auth.0=test';
+user={id:'author',user_metadata:{sianaly_nickname:'작성자'}};
+const created=await board('',{method:'POST',body:{title:'원래 제목',body:'본문'}});
+assert.equal(created.status,201);
+const {id}=await created.json(), detail='?post='+id;
+assert.equal((await board(detail,{method:'POST',body:{body:'댓글'}})).status,201);
+assert.equal((await (await board(detail,{cookie:memberCookie})).json()).canManage,true);
+const publicDetail=await (await board(detail)).json();
+assert.equal(publicDetail.canManage,false);
+assert.ok(!Object.hasOwn(publicDetail.post,'owner'));
+assert.deepEqual((await (await board('?mine=1',{cookie:memberCookie})).json()).posts.map(post=>post.id),[id]);
+user={id:'other',user_metadata:{sianaly_nickname:'작성자'}};
+assert.equal((await (await board(detail,{cookie:memberCookie})).json()).canManage,false);
+assert.deepEqual((await (await board('?mine=1',{cookie:memberCookie})).json()).posts,[]);
+assert.equal((await board(detail,{method:'PATCH',body:{title:'다른 제목',body:'다른 본문'}})).status,404);
+assert.equal((await board(detail,{method:'DELETE'})).status,404);
+user=null;
+assert.equal((await board('?mine=1')).status,401);
+assert.equal((await board(detail,{method:'DELETE'})).status,401);
+assert.equal((await (await board(detail,{cookie:memberCookie})).json()).canManage,false);
+user={id:'author'};
+assert.equal((await board(detail,{method:'DELETE',requestOrigin:'https://evil.test'})).status,403);
+assert.equal((await board(detail,{method:'PATCH',body:{title:'',body:'새 본문'}})).status,400);
+assert.equal((await board(detail,{method:'PATCH',body:{title:'수정 제목',body:'새 본문'}})).status,200);
+assert.equal((await (await board(detail)).json()).post.title,'수정 제목');
+assert.equal((await board(detail,{method:'DELETE'})).status,200);
+assert.equal((await board(detail)).status,404);
+assert.equal(sqlite.prepare('SELECT count(*) AS total FROM board_comments').get().total,0);
+sqlite.close();
 // Exercise the official SDK's PKCE generation and cookie adapter without a live account or network request.
 const realHandler=createAccountHandler({companyKeys:keys});
 const realLogin=await realHandler({request:new Request(origin+'/api/account/login',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify({provider:'google',next:'/'})}),env,params:{action:'login'}});

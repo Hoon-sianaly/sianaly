@@ -34,6 +34,9 @@ body{margin:0;background:#f4f7fc;color:#17243b;font:16px/1.6 system-ui,sans-seri
 .board-secondary:hover{background:#edf5ff}
 .board-primary svg{width:17px;height:17px}
 .board-primary:disabled{opacity:.6;cursor:wait}
+.board-post-actions{display:flex;flex-wrap:wrap;gap:8px}
+.board .board-danger{color:#a32626}
+.board-danger:empty{margin:0}
 .board-card{background:white;border:1px solid #e0e8f5;border-radius:16px;padding:24px;margin:12px 0;box-shadow:0 5px 18px #12376c08}
 .board-card h2{margin-top:0}
 .board-feed{padding:0;overflow:hidden}

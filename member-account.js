@@ -26,7 +26,7 @@
  }
  function publishChange(){try{localStorage.setItem('sianaly.member.changed',String(Date.now()));}catch{}}
  function render(){
-  nav.textContent=session.signedIn?'내 계정':'로그인';
+  nav.textContent=session.signedIn?'마이페이지':'로그인';
   signup.hidden=session.signedIn;
   const favorite=document.querySelector('.member-favorite');if(favorite){const selected=favoriteKeys.has(favorite.dataset.company);favorite.setAttribute('aria-pressed',String(selected));favorite.textContent=selected?'★ 저장됨':'☆ 즐겨찾기';}
   if(homeList){homeList.parentElement.hidden=!session.signedIn;homeList.replaceChildren();for(const key of favoriteKeys){const company=catalog.get(key);if(!company)continue;const li=node('li'),link=node('a',company.name);link.href='company.html?company='+encodeURIComponent(key);li.append(link);homeList.append(li);}const empty=homeList.parentElement.querySelector('.member-favorites-empty');empty.hidden=Boolean(favoriteKeys.size);}
@@ -47,12 +47,36 @@
  function nicknameDialog(){
   showDialog('어떤 별명으로 시작할까요?');dialog.append(node('p','SIANALY에서 사용할 별명을 정하면 가입이 완료돼요. 소셜 계정의 이름은 사용하지 않아요.'),nicknameForm(async()=>{dialog.close();if(pendingCompany){const key=pendingCompany;pendingCompany=null;if(!favoriteKeys.has(key))await changeFavorite(key);}},true));
  }
+ function myPosts(){
+  const section=node('details',undefined,'member-information');
+  const summary=node('summary','내가 쓴 글'), list=node('ul'), status=node('p'), more=node('button','더 보기','member-menu-action');
+  const pagination=node('div');pagination.hidden=true;pagination.append(more);
+  status.setAttribute('role','status');more.type='button';
+  let next=null,loaded=false,busy=false;
+  async function load(){
+   if(busy)return;
+   busy=true;more.disabled=true;status.textContent='불러오는 중…';
+   try{
+    const page=await api('board?mine=1'+(next?'&before='+encodeURIComponent(next):''));
+    for(const post of page.posts){
+     const item=node('li'),link=node('a',post.title);
+     link.href='/board?post='+encodeURIComponent(post.id);item.append(link);list.append(item);
+    }
+    next=page.next;loaded=true;pagination.hidden=!next;
+    status.textContent=list.childElementCount?'':'아직 작성한 글이 없어요.';
+   }catch(error){status.textContent=errorText(error);more.textContent='다시 시도';pagination.hidden=false;}
+   finally{busy=false;more.disabled=false;}
+  }
+  more.onclick=()=>{more.textContent='더 보기';void load();};
+  section.ontoggle=()=>{if(section.open&&!loaded)void load();};
+  section.append(summary,list,status,pagination);return section;
+ }
  function accountDialog(){
   if(!session.signedIn){pendingCompany=null;loginDialog();return;}
-  showDialog('내 계정');dialog.append(node('p',(session.provider||'소셜')+' 계정으로 로그인 중'),nicknameForm());
+  showDialog('마이페이지');dialog.append(node('p',(session.provider||'소셜')+' 계정으로 로그인 중'),nicknameForm());
   const favorites=node('button','내 즐겨찾기','member-menu-action');favorites.type='button';favorites.onclick=()=>{dialog.close();if(homeList){homeList.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else location.assign('/#memberFavorites');};
   const logout=node('button','로그아웃','member-menu-action');logout.type='button';logout.onclick=async()=>{logout.disabled=true;try{await api('logout',{});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('로그아웃했어요.');}catch(e){logout.disabled=false;say(errorText(e));}};
-  dialog.append(favorites,logout);
+  dialog.append(favorites,myPosts(),logout);
   const deletion=node('details',undefined,'member-information');deletion.append(node('summary','회원 탈퇴'),node('p','회원 인증 정보와 즐겨찾기가 모두 삭제됩니다. 계속하려면 아래에 ‘회원탈퇴’를 입력하세요.'));
   const input=node('input',undefined,'member-delete-input');input.type='text';input.placeholder='회원탈퇴';input.setAttribute('aria-label','회원 탈퇴 확인 문구');input.autocomplete='off';
   const confirm=node('button','탈퇴하기','member-menu-action member-danger');confirm.type='button';confirm.disabled=true;input.oninput=()=>{confirm.disabled=input.value!=='회원탈퇴';};

@@ -34,7 +34,13 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const providers=(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
   const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY)&&providers.length>0;
   if(action==='config'&&request.method==='GET')return respond({ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[]});
-  if(action==='board'&&request.method==='GET'){
+  const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
+  const boardRead=action==='board'&&request.method==='GET',mine=url.searchParams.get('mine')==='1';
+  const hasSession=(request.headers.get('Cookie')||'').split(';').some(cookie=>{
+   const name=cookie.trim().split('=',1)[0];
+   return name===cookieName||name.startsWith(cookieName+'.');
+  });
+  if(boardRead&&!mine&&(!url.searchParams.has('post')||!ready||!hasSession)){
    try{return await handleBoard({db:env.POPULAR_DB,url,method:'GET',respond});}
    catch{return respond({code:'board_unavailable'},503);}
   }
@@ -52,10 +58,9 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({sub:id});
    }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}finally{clearTimeout(timer);}
   }
-  const methods={board:['POST'],session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
+  const methods={board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
-  const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
   let cookies;try{cookies=parseCookieHeader(request.headers.get('Cookie')||'');}catch{return respond({code:'invalid_session'},401);}
   const cookieOptions={path:'/',secure,httpOnly:true,sameSite:'lax',maxAge:60*60*24*30};
   function writeCookie(name,value,options={}){const final={...options,...cookieOptions};if(name.includes('code-verifier'))final.maxAge=600;if(options.maxAge===0)final.maxAge=0;if(options.expires)final.expires=options.expires;delete final.domain;headers.append('Set-Cookie',serializeCookieHeader(name,value,final));cookies=cookies.filter(c=>c.name!==name);if(final.maxAge!==0)cookies.push({name,value});}
@@ -81,8 +86,8 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    if(action==='logout'){
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }
-   if(!user)return respond({code:'login_required'},401);
-   if(action==='board')return await handleBoard({db:env.POPULAR_DB,url,method:request.method,user,nickname:memberNickname(user.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond});
+   if(!user&&!(boardRead&&!mine))return respond({code:'login_required'},401);
+   if(action==='board')return await handleBoard({db:env.POPULAR_DB,url,method:request.method,user,nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond});
    if(action==='nickname'){
     const body=await bodyJSON(request),nickname=memberNickname(body.nickname);
     if(Object.keys(body).some(k=>k!=='nickname')||nickname===null)return respond({code:'invalid_nickname'},400);
