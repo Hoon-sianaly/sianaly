@@ -51,7 +51,7 @@ main{max-width:1160px}#companyDiscovery{padding:0;background:transparent;border:
 header .logo{display:inline-flex;align-items:center;flex-shrink:0}
 header .logo img{display:block;width:clamp(30px, 7vw, 34px);height:auto}
 .hero-wordmark{display:block;width:min(370px, 75vw);height:auto;margin-inline:auto}
-.board-nav{display:inline-flex;align-items:center;min-height:40px;padding-inline:6px;color:#164578;font-size:13px;font-weight:600;white-space:nowrap}.board-nav:hover{text-decoration:underline;text-underline-offset:3px}header[data-member-page="home"] .member-header-actions{gap:10px}@media(max-width:430px){header[data-member-page="home"] .member-header-actions{gap:6px}header[data-member-page="home"] .member-nav-button{padding-inline:9px}}
+.board-nav{display:inline-flex;align-items:center;min-height:40px;padding-inline:6px;color:#164578;font-size:18px;line-height:1;font-weight:700;letter-spacing:1px;white-space:nowrap}.board-nav:hover{text-decoration:underline;text-underline-offset:3px}header[data-member-page="home"] .member-header-actions{gap:10px}@media(max-width:430px){header[data-member-page="home"] .member-header-actions{gap:6px}header[data-member-page="home"] .member-nav-button{padding-inline:9px}}
 .home-topbar{background:linear-gradient(105deg,#dcecff,#c7e0fc 63%,#b6d7fc);border-bottom:1px solid #a9cbee}
 .home-topbar .member-nav-button{background:#f5faff;border-color:#9ebfe8;color:#164578}
 .home-topbar .member-nav-button:hover{background:#fff;border-color:#608dc3;color:#103666}
@@ -67,7 +67,7 @@ body{background:#f3f7fd}
 @media(max-width:430px){.home-topbar .member-auth-buttons{gap:6px}}
 </style><link rel="stylesheet" href="member-account.css?v=20261105-auth-actions"></head>
 <body>
-<div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg" alt="SIANALY 홈" width="116" height="132"></a><a class="board-nav" href="board.html">게시판</a></header></div>
+<div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg" alt="SIANALY 홈" width="116" height="132"></a><a class="board-nav" href="board.html" aria-label="게시판" title="게시판">...</a></header></div>
 <section class="hero">
 <h1><img class="hero-wordmark" src="sianaly-wordmark.svg?v=blue-4" alt="SIANALY" width="370" height="64"></h1>
 <div class="search"><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span class="search-enter" aria-hidden="true">↵</span><input id="q" aria-label="기업명 또는 종목코드 검색" placeholder="기업명 또는 종목코드 검색" autocomplete="off"><div id="r" class="results hidden"></div></div>
