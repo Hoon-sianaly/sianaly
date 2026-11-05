@@ -7,7 +7,8 @@ const keys=new Set(['samsung','naver']);
 for(const value of ['https://evil.test','//evil.test','javascript:alert(1)','/unknown','/company?company=missing'])assert.equal(safeAccountReturn(value,origin,keys),'/');
 assert.equal(safeAccountReturn('/company?company=samsung&extra=1#x',origin,keys),'/company?company=samsung');
 let user=null,options,insert,removed,deleted,adminCalls=0,exchanged,nicknameUpdate,emailCall,emailError=null,emailHasSession=true;
-const handler=createAccountHandler({companyKeys:keys,clock:()=>now,serverClient:(url,key,opts)=>{
+let handlerNow=now,recoveryUsed=false,recoveryRequest,passwordUpdate,passwordError=null,signOutScope;
+const handler=createAccountHandler({companyKeys:keys,clock:()=>handlerNow,serverClient:(url,key,opts)=>{
  assert.equal(key,env.SUPABASE_PUBLISHABLE_KEY);options=opts;
  return {auth:{getUser:async()=>({data:{user},error:null}),signInWithOAuth:async args=>{
   assert.equal(args.options.redirectTo,origin+'/api/account/callback?next=%2F');
@@ -21,7 +22,15 @@ const handler=createAccountHandler({companyKeys:keys,clock:()=>now,serverClient:
   emailCall={action:'login',input};
   if(!emailError)opts.cookies.setAll([{name:'__Host-sianaly-auth',value:'test-email-session',options:{}}]);
   return {data:{session:{access_token:'never-return-this-token'}},error:emailError};
- },exchangeCodeForSession:async code=>{exchanged=code;return {};},signOut:async()=>({}),updateUser:async data=>{nicknameUpdate=data;return {}; }},from:table=>{
+ },resetPasswordForEmail:async(...args)=>{recoveryRequest=args;return {};},
+ verifyOtp:async input=>{
+  if(input.type!=='recovery'||input.token_hash!=='A'.repeat(64)||recoveryUsed)return {error:{code:'otp_expired'}};
+  recoveryUsed=true;user={id:'recovery-user',app_metadata:{provider:'email'},user_metadata:{sianaly_nickname:'복구회원'}};
+  opts.cookies.setAll([{name:'__Host-sianaly-auth',value:'recovered-session',options:{}}]);
+  return {data:{user,session:{access_token:'never-return-recovery-token'}}};
+ },exchangeCodeForSession:async code=>{exchanged=code;return {};},
+ signOut:async args=>{signOutScope=args.scope;return {};},
+ updateUser:async data=>{if(data.password){passwordUpdate=data;return {error:passwordError};}nicknameUpdate=data;return {}; }},from:table=>{
   assert.equal(table,'sianaly_favorites');return {
    select:()=>({order:()=>({limit:async()=>({data:[{company_key:'samsung',created_at:'today'},{company_key:'invalid',created_at:'today'}]})})}),
    upsert:async(row,settings)=>{insert={row,settings};return {};},
@@ -138,6 +147,41 @@ assert.equal(attempts.filter(r=>r.status===200).length,5);
 assert.equal(attempts.filter(r=>r.status===429).length,3);
 assert.ok(!JSON.stringify(sqlite.prepare('SELECT * FROM member_email_attempts').all()).includes('192.0.2.'));
 assert.equal((await emailRequest('email-signup',signupBody,{overrides:{POPULAR_DB:null}})).status,503);
+assert.equal((await emailRequest('password-forgot',{email:'invalid'})).status,400);
+assert.equal((await emailRequest('password-forgot',{email:'member@example.test',redirectTo:'https://evil.test'})).status,400);
+assert.equal((await emailRequest('password-forgot',{email:'member@example.test'},{requestOrigin:'https://evil.test'})).status,403);
+assert.deepEqual(await (await emailRequest('password-forgot',{email:'member@example.test'})).json(),{ok:true});
+assert.deepEqual(recoveryRequest,['member@example.test',{redirectTo:origin}]);
+assert.deepEqual(await (await emailRequest('password-forgot',{email:'unknown@example.test'})).json(),{ok:true});
+assert.equal((await emailRequest('password-forgot',{email:'member@example.test'})).status,200);
+assert.equal((await emailRequest('password-forgot',{email:'member@example.test'})).status,429);
+assert.equal((await emailRequest('password-recovery',{tokenHash:'invalid'})).status,400);
+assert.equal((await emailRequest('password-recovery',{tokenHash:'B'.repeat(64)})).status,400);
+const verified=await emailRequest('password-recovery',{tokenHash:'A'.repeat(64)});
+assert.equal(verified.status,200);assert.deepEqual(await verified.json(),{ok:true});
+const recoverySetCookie=verified.headers.getSetCookie().find(cookie=>cookie.startsWith('__Host-sianaly-auth-recovery='));
+for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/','Max-Age=600'])assert.ok(recoverySetCookie.includes(flag),flag);
+const recoveryCookie=recoverySetCookie.split(';',1)[0],resetBody={password:'new-test-password-123'};
+assert.equal((await emailRequest('password-recovery',{tokenHash:'A'.repeat(64)})).status,400);
+assert.equal((await emailRequest('password-update',resetBody)).status,409);
+assert.equal((await emailRequest('password-update',resetBody,{cookie:recoveryCookie,requestOrigin:'https://evil.test'})).status,403);
+assert.equal((await (await request('session',{cookie:recoveryCookie})).json()).passwordReset,true);
+const recoveredUser=user;
+user={...recoveredUser,id:'another-user'};
+assert.equal((await emailRequest('password-update',resetBody,{cookie:recoveryCookie})).status,409);
+user=recoveredUser;
+assert.equal((await emailRequest('password-update',resetBody,{cookie:recoveryCookie.slice(0,-4)+'ffff'})).status,409);
+handlerNow=now+600001;
+assert.equal((await emailRequest('password-update',resetBody,{cookie:recoveryCookie})).status,409);
+handlerNow=now;
+assert.equal((await emailRequest('password-update',{password:'short'},{cookie:recoveryCookie})).status,400);
+passwordError={code:'same_password'};
+assert.equal((await (await emailRequest('password-update',resetBody,{cookie:recoveryCookie})).json()).code,'password_reused');
+passwordError=null;
+const resetResponse=await emailRequest('password-update',resetBody,{cookie:recoveryCookie});
+assert.equal(resetResponse.status,200);assert.deepEqual(await resetResponse.json(),{ok:true,sessionWarning:false});
+assert.deepEqual(passwordUpdate,resetBody);assert.equal(signOutScope,'global');
+assert.ok(resetResponse.headers.getSetCookie().some(cookie=>cookie.startsWith('__Host-sianaly-auth-recovery=')&&cookie.includes('Max-Age=0')));
 sqlite.close();
 // Exercise the official SDK's PKCE generation and cookie adapter without a live account or network request.
 const realHandler=createAccountHandler({companyKeys:keys});

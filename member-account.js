@@ -2,13 +2,15 @@
  'use strict';
  let config,session={signedIn:false},favoriteKeys=new Set(),catalog=new Map(),busy=false,pendingCompany=null;
  let nav,signup,dialog,toast,toastTimer,homeList;const wiredFavorites=new WeakSet();
+ let recoveryToken=new URLSearchParams(location.hash.slice(1)).get('password-reset')||'';
+ if(recoveryToken)history.replaceState(null,'',location.pathname+location.search);
  const api=async(action,body,method=body?'POST':'GET')=>{
   const response=await fetch('/api/account/'+action,{method,credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json'}:{},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(15000)});
   const data=await response.json();if(!response.ok){const e=new Error(data.code||'unavailable');e.code=data.code;throw e;}return data;
  };
  function node(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
  function say(text){toast.textContent=text;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4500);}
- function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.',invalid_email:'이메일 주소를 확인해 주세요.',invalid_password:'비밀번호는 10~128자로 설정해 주세요.',too_many_attempts:'요청이 많아요. 잠시 후 다시 시도해 주세요.',email_login_failed:'이메일과 비밀번호를 확인해 주세요.',email_signup_failed:'가입하지 못했어요. 이미 가입한 이메일이라면 로그인해 주세요.',email_confirmation_required:'이메일 가입 설정을 확인 중이에요. 잠시 후 다시 시도해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
+ function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.',invalid_email:'이메일 주소를 확인해 주세요.',invalid_password:'비밀번호는 10~128자로 설정해 주세요.',too_many_attempts:'요청이 많아요. 잠시 후 다시 시도해 주세요.',email_login_failed:'이메일과 비밀번호를 확인해 주세요.',email_signup_failed:'가입하지 못했어요. 이미 가입한 이메일이라면 로그인해 주세요.',email_confirmation_required:'이메일 가입 설정을 확인 중이에요. 잠시 후 다시 시도해 주세요.',recovery_unavailable:'메일을 보내지 못했어요. 잠시 후 다시 시도해 주세요.',recovery_invalid:'링크가 만료됐거나 이미 사용됐어요. 재설정 메일을 다시 받아 주세요.',recovery_required:'비밀번호 변경 시간이 지났어요. 재설정 메일을 다시 받아 주세요.',password_reused:'이전과 다른 비밀번호를 입력해 주세요.',password_update_failed:'비밀번호를 변경하지 못했어요. 다른 비밀번호로 다시 시도해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
  function showDialog(title){
   dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
@@ -43,6 +45,7 @@
    }catch(e){error.textContent=errorText(e);submit.disabled=false;}
   };
   dialog.append(form);
+  if(!signingUp){const forgot=node('button','비밀번호를 잊었나요?','member-auth-toggle');forgot.type='button';forgot.onclick=passwordForgotDialog;dialog.append(forgot);}
   const providers=['custom:kakao','custom:naver'].map(id=>config.providers.find(provider=>provider.id===id)).filter(Boolean);
   if(providers.length)dialog.append(node('div','또는','member-auth-divider'));
   const social=node('div',undefined,'member-social-options');
@@ -53,7 +56,68 @@
    }catch(e){error.textContent=errorText(e);for(const b of dialog.querySelectorAll('.member-provider'))b.disabled=false;}};social.append(button);
   }
   const toggle=node('button',signingUp?'이미 가입했나요? 로그인':'처음이신가요? 회원가입','member-auth-toggle');toggle.type='button';toggle.onclick=()=>loginDialog(!signingUp);
-  dialog.append(social,toggle,node('p','비밀번호 찾기는 메일 발송 연결 후 제공 예정이에요. 비밀번호를 안전하게 보관해 주세요.'),info());
+  dialog.append(social,toggle,info());
+ }
+ function passwordForgotDialog(){
+  showDialog('비밀번호 찾기');
+  dialog.append(node('p','가입한 이메일로 비밀번호 재설정 링크를 보내드려요. 네이버·카카오 회원은 해당 서비스로 로그인해 주세요.'));
+  const form=node('form',undefined,'member-email-form'),label=node('label','이메일'),email=node('input',undefined,'member-delete-input');
+  email.id='memberRecoveryEmail';email.name='email';email.type='email';email.autocomplete='email';email.required=true;email.maxLength=254;label.htmlFor=email.id;
+  const submit=node('button','재설정 메일 받기','member-menu-action member-email-submit'),error=node('p','','member-error');
+  submit.type='submit';error.setAttribute('role','alert');
+  form.append(label,email,submit,error);
+  form.onsubmit=async event=>{
+   event.preventDefault();submit.disabled=true;error.textContent='';
+   try{
+    await api('password-forgot',{email:email.value});
+    showDialog('메일함을 확인해 주세요');
+    dialog.append(node('p','가입된 이메일이라면 재설정 메일을 보냈어요. 메일이 보이지 않으면 스팸함도 확인해 주세요.'),node('p','메일의 링크에서 새 비밀번호를 설정할 수 있어요. 링크는 한 번만 사용할 수 있어요.'));
+    const back=node('button','로그인으로 돌아가기','member-menu-action');back.type='button';back.onclick=()=>loginDialog();dialog.append(back);
+   }catch(e){error.textContent=errorText(e);submit.disabled=false;}
+  };
+  dialog.append(form);
+ }
+ function recoveryLinkDialog(){
+  showDialog('새 비밀번호 설정');
+  dialog.append(node('p','아래 버튼을 눌러 이메일 재설정 링크를 확인해 주세요.'));
+  const proceed=node('button','새 비밀번호 설정하기','member-menu-action'),error=node('p','','member-error');
+  proceed.type='button';error.setAttribute('role','alert');
+  proceed.onclick=async()=>{
+   proceed.disabled=true;error.textContent='';
+   try{
+    await api('password-recovery',{tokenHash:recoveryToken});
+    recoveryToken='';publishChange();await reloadSession();passwordUpdateDialog();
+   }catch(e){error.textContent=errorText(e);proceed.disabled=false;}
+  };
+  const retry=node('button','재설정 메일 다시 받기','member-auth-toggle');retry.type='button';retry.onclick=passwordForgotDialog;
+  dialog.append(proceed,error,retry);
+ }
+ function passwordUpdateDialog(){
+  showDialog('새 비밀번호 설정');
+  dialog.append(node('p','10자 이상의 새 비밀번호를 입력해 주세요.'));
+  const form=node('form',undefined,'member-email-form');
+  for(const [name,caption] of [['password','새 비밀번호'],['confirmation','새 비밀번호 확인']]){
+   const input=node('input',undefined,'member-delete-input'),label=node('label',caption);
+   input.id='memberReset-'+name;input.name=name;input.type='password';input.autocomplete='new-password';input.minLength=10;input.maxLength=128;input.required=true;label.htmlFor=input.id;form.append(label,input);
+  }
+  const submit=node('button','비밀번호 변경','member-menu-action member-email-submit'),error=node('p','','member-error');
+  submit.type='submit';error.setAttribute('role','alert');form.append(submit,error);
+  form.onsubmit=async event=>{
+   event.preventDefault();error.textContent='';
+   const data=new FormData(form);
+   if(data.get('password')!==data.get('confirmation')){error.textContent='두 비밀번호가 같지 않아요.';return;}
+   submit.disabled=true;
+   try{
+    const result=await api('password-update',{password:data.get('password')});
+    form.reset();session={signedIn:false};favoriteKeys.clear();render();publishChange();
+    showDialog('비밀번호 변경 완료');
+    dialog.append(node('p','새 비밀번호로 다시 로그인해 주세요.'));
+    if(result.sessionWarning)dialog.append(node('p','다른 기기의 로그인 정리가 완료되지 않았어요. 사용 중인 기기에서도 로그아웃해 주세요.'));
+    const login=node('button','로그인하기','member-menu-action');login.type='button';login.onclick=()=>loginDialog();dialog.append(login);
+   }catch(e){error.textContent=errorText(e);submit.disabled=false;}
+  };
+  const retry=node('button','재설정 메일 다시 받기','member-auth-toggle');retry.type='button';retry.onclick=passwordForgotDialog;
+  dialog.append(form,retry);
  }
  function publishChange(){try{localStorage.setItem('sianaly.member.changed',String(Date.now()));}catch{}}
  function render(){
@@ -138,7 +202,9 @@
   if(!document.getElementById('app')){const area=node('section',undefined,'member-favorites');area.id='memberFavorites';area.hidden=true;const head=node('div',undefined,'member-favorites-head');head.append(node('h2','내 즐겨찾기'));homeList=node('ul',undefined,'member-favorites-list');const empty=node('p','기업 페이지에서 ☆ 즐겨찾기를 눌러 저장할 수 있어요.','member-favorites-empty');area.append(head,homeList,empty);document.querySelector('main')?.before(area);}
   mountCompany();const app=document.getElementById('app');if(app)new MutationObserver(mountCompany).observe(app,{childList:true,subtree:true});
   await reloadSession();
-  if(session.signedIn){let pending;try{pending=JSON.parse(sessionStorage.getItem('sianaly.pendingFavorite')||'null');sessionStorage.removeItem('sianaly.pendingFavorite');}catch{}if(pending?.createdAt>Date.now()-600000&&catalog.has(pending.key)&&!favoriteKeys.has(pending.key))pendingCompany=pending.key;if(!session.nickname)nicknameDialog();else if(pendingCompany){const key=pendingCompany;pendingCompany=null;await changeFavorite(key);}}
+  if(recoveryToken)recoveryLinkDialog();
+  else if(session.passwordReset)passwordUpdateDialog();
+  else if(session.signedIn){let pending;try{pending=JSON.parse(sessionStorage.getItem('sianaly.pendingFavorite')||'null');sessionStorage.removeItem('sianaly.pendingFavorite');}catch{}if(pending?.createdAt>Date.now()-600000&&catalog.has(pending.key)&&!favoriteKeys.has(pending.key))pendingCompany=pending.key;if(!session.nickname)nicknameDialog();else if(pendingCompany){const key=pendingCompany;pendingCompany=null;await changeFavorite(key);}}
   const query=new URLSearchParams(location.search);if(query.has('accountError')){say('로그인을 완료하지 못했어요. 다시 시도해 주세요.');query.delete('accountError');history.replaceState(null,'',location.pathname+(query.size?'?'+query:'')+location.hash);}
   if(location.hash==='#memberFavorites'&&homeList&&!homeList.parentElement.hidden)homeList.parentElement.scrollIntoView({block:'center'});
   window.addEventListener('storage',event=>{if(event.key==='sianaly.member.changed'){favoriteKeys.clear();session={signedIn:false};render();reloadSession();}});

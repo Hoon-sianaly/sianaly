@@ -6,7 +6,7 @@ Company information remains public. The development site supports Naver, Kakao a
 
 - Supabase project `jprnqliszpqercqrdisi` (`sianaly`), free organization, Seoul region.
 - Google: built-in provider disabled on 2026-11-05 at the user's request. The site selector and server OAuth allowlist exclude Google. Existing accounts retain their data and active sessions.
-- Email: enabled, Confirm email OFF at the user's request. Signup requires email, a 10–128 character password and a valid site nickname, and signs in immediately. Passwords pass only to managed Auth. Email login uses the same secure server cookies as social login. Password recovery is deferred until an SMTP provider is connected, as explicitly chosen by the user. The signup form discloses this limitation.
+- Email: enabled, Confirm email OFF at the user's request. Signup requires email, a 10–128 character password and a valid site nickname, and signs in immediately. Passwords pass only to managed Auth. Email login uses the same secure server cookies as social login. Password recovery is available from the login form using a one-use email link. See the password recovery section below.
 - Naver: `custom:naver`, OAuth2, issuer `https://nid.naver.com`, no optional profile fields or scopes, email optional. The user approved the app terms and live identifier-only consent. App remains in development for registered members.
 - Kakao: app `1636001`, Login and OpenID Connect ON. `custom:kakao` uses issuer `https://kauth.kakao.com`, discovery, `openid` only and email optional. Actual consent displayed member-number-only access. The former built-in Kakao connection is disabled with explicit user approval because it automatically requested email/photo/nickname scopes. Kakao nickname/photo consent items remain unused. No business upgrade or paid API enabled.
 - Provider secrets are stored only in Supabase. The Supabase privileged server key was saved to the development site's encrypted Cloudflare Secret with explicit approval. No secret is in source, screenshots, chat or public GitHub.
@@ -28,6 +28,16 @@ Existing project `sianaly`, environment serving **dev.sianaly.com** and sianaly.
 Build command: `npm ci --omit=dev --ignore-scripts --no-audit --no-fund`. Functions use fail-closed behavior. The existing POPULAR_DB binding is preserved. Dependencies are lockfile pinned and excluded from static uploads.
 
 The legacy Google entry in AUTH_PROVIDERS is ignored by the server's explicit Naver/Kakao allowlist. Email signup/login use the existing POPULAR_DB binding for atomic limits of five signup attempts per IP/hour and thirty login attempts per IP/15 minutes. Only an HMAC of the edge-provided IP is retained, with expired buckets removed on subsequent requests. Supabase's direct Auth endpoints also need platform abuse protection before public launch.
+
+## Password recovery
+
+- Resend free account, verified sending domain `mail.sianaly.com`, Tokyo region, sender `SIANALY <noreply@mail.sianaly.com>`.
+- Custom SMTP uses `smtp.resend.com:465`, username `resend`. The domain-restricted Sending access key is stored only in Supabase's encrypted SMTP password setting.
+- Cloudflare authentication DNS records are scoped to the mail subdomain. The development site's DNS record is preserved.
+- Recovery subject `[SIANALY] 비밀번호 재설정`; body is versioned in `supabase/templates/recovery.html`. The one-use token hash is carried in the URL fragment, removed from the address bar when the account script loads, and exchanged only after the user clicks the confirmation button.
+- Supabase verifies the recovery token. A server-signed, HttpOnly, user-bound recovery cookie grants ten minutes to set a new 10–128 character password. A normal login or a different user's session cannot grant this permission. The server attempts global signout and clears local authentication/recovery cookies after success. A signout failure is explicitly reported to the user.
+- Reset requests use a generic success response to avoid revealing account existence and are limited to three attempts per edge IP/hour, in addition to Supabase's email limits. The sender's free quotas also apply.
+- Use a disposable account when testing recovery; do not change an existing member's password. Disable click/open tracking for authentication emails.
 
 ## Nickname signup
 
@@ -61,4 +71,4 @@ References: [Naver profile API](https://developers.naver.com/docs/login/profile/
 
 ## Before public member launch
 
-Finish Naver logo/review and required disclosures, provider-unlink callbacks, accurate operator/privacy notices and any applicable overseas-processing information. Connect custom SMTP and password recovery, and configure platform CAPTCHA/abuse protection for public email signup. Anonymous/phone/manual linking are off. Do not request phone/address/birth date/gender/contacts. Public provider approval is separate from successful owner-account development tests.
+Finish Naver logo/review and required disclosures, provider-unlink callbacks, accurate operator/privacy notices and any applicable overseas-processing information. Configure platform CAPTCHA/abuse protection for public email signup. Anonymous/phone/manual linking are off. Do not request phone/address/birth date/gender/contacts. Public provider approval is separate from successful owner-account development tests.
