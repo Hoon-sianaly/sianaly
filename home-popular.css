@@ -1,12 +1,13 @@
-.home-popular{max-width:640px;margin:21px auto 0;text-align:left;min-height:63px}
+.home-popular{max-width:640px;margin:0 auto 36px;padding:18px 20px;border:1px solid #cfdef4;border-radius:16px;background:linear-gradient(130deg,#e6f1ff,#f5f9ff);box-shadow:0 4px 14px #124c9410}
 .popular-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.popular-head h2{font-size:12px;line-height:1.6;font-weight:500;color:#627086;margin:0;letter-spacing:0}
-.popular-period{font-size:11px;line-height:1.6;color:#929cab;white-space:nowrap}
-.popular-list{display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;margin:6px 0 0;padding:0;overflow-x:auto;scrollbar-width:thin}
-.popular-list li{flex:none;min-width:0}
-.popular-list a{display:flex;align-items:center;gap:8px;min-height:34px;padding:5px 0;color:#536178;font-size:12px;line-height:1.5;white-space:nowrap}
-.popular-list a:hover{color:#3568e8}
-.popular-rank{color:#3568e8;font-weight:500;font-variant-numeric:tabular-nums}
-.popular-status{margin:10px 0 0;color:#929cab;font-size:12px;line-height:1.7}
+.popular-head h2{margin:0;color:#173d73;font-size:15px;line-height:1.5;letter-spacing:-.3px}
+.popular-period{padding:4px 8px;border-radius:999px;background:#dceaff;color:#355b8d;font-size:11px;white-space:nowrap}
+.popular-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:12px 0 0;padding:0}
+.popular-list:empty{margin:0}
+.popular-list li{min-width:0;max-width:100%}
+.popular-list a{display:flex;align-items:center;gap:7px;min-height:40px;padding:5px 9px;border:1px solid #d5e3f6;border-radius:9px;background:#fff;color:#213d61;font-size:13px;line-height:1.4;overflow-wrap:anywhere}
+.popular-list a:hover{border-color:#83abe2;color:#1658ae}
+.popular-rank{display:grid;place-items:center;flex:none;min-width:21px;height:21px;border-radius:6px;background:#e8f1ff;color:#1a57a9;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
+.popular-status{margin:10px 0 0;color:#526b8b;font-size:12px;line-height:1.7}
 .popular-status[hidden]{display:none}
-@media(max-width:540px){.home-popular{margin-top:18px;min-height:69px}.popular-list{justify-content:flex-start;gap:22px}.popular-list a{min-height:44px}.popular-head h2{font-size:12px}.popular-period{font-size:11px}}
+@media(max-width:540px){.home-popular{margin-bottom:26px;padding:14px}.popular-list a{min-height:44px}}
