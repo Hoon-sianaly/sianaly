@@ -225,7 +225,9 @@
   nav=node('button','로그인','member-nav-button');nav.type='button';nav.onclick=accountDialog;
   signup=node('button','회원가입','member-nav-button member-signup');signup.type='button';
   signup.onclick=()=>{pendingCompany=null;loginDialog(true);};
-  const authButtons=node('div',undefined,'member-auth-buttons');authButtons.append(nav,signup);
+  const authButtons=node('div',undefined,'member-auth-buttons');
+  const companyCommunity=header.querySelector('.company-board-nav');if(companyCommunity)authButtons.append(companyCommunity);
+  authButtons.append(nav,signup);
   const actions=node('div',undefined,'member-header-actions'),existing=header.lastElementChild;header.dataset.memberPage=document.querySelector('.company-search')?'company':'home';if(existing&&!existing.classList.contains('logo'))actions.append(existing);actions.append(authButtons);header.append(actions);
   dialog=node('dialog',undefined,'member-dialog');dialog.setAttribute('aria-labelledby','memberDialogTitle');dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});document.body.append(dialog);
   toast=node('div',undefined,'member-toast');toast.hidden=true;toast.setAttribute('role','status');document.body.append(toast);
