@@ -26,7 +26,7 @@ async function bodyJSON(request,maxBytes=1024){
  const body=JSON.parse(text+decoder.decode());if(!body||Array.isArray(body)||typeof body!=='object')throw Error('Invalid body');return body;
 }
 async function allowEmailAttempt(db,request,secret,action,now){
- const signup=action==='email-signup'||action==='reports',recovery=action==='password-forgot';
+ const signup=action==='email-signup'||action==='reports',recovery=action==='password-forgot'||action==='email-resend';
  const window=signup||recovery?3600000:900000,limit=signup?5:recovery?3:30;
  const bucket=Math.floor(now/window);
  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);
@@ -46,7 +46,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const administrativeClient=()=>adminClient(env.SUPABASE_URL,env.SUPABASE_SECRET_KEY,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
   const serveBoard=user=>handleBoard({db:env.POPULAR_DB,url,method:request.method,user,nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond,syncDepartures:()=>syncBoardDepartures(env.POPULAR_DB,administrativeClient())});
   let site;try{site=new URL(env.AUTH_SITE_URL);if(site.origin!==url.origin||site.pathname!=='/'||site.search||site.hash||site.username||site.password||(site.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(site.hostname)))throw Error('Invalid site');}catch{return respond({ready:false,code:'unavailable'},503);}
-  const providers=(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
+  const providers=env.AUTH_SOCIAL_LOGIN_ENABLED!=='true'?[]:(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
   const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY);
   const captchaRequired=env.AUTH_CAPTCHA_REQUIRED==='true';
   const captchaSiteKey=typeof env.AUTH_CAPTCHA_SITE_KEY==='string'&&/^[A-Za-z0-9_-]{10,100}$/.test(env.AUTH_CAPTCHA_SITE_KEY)?env.AUTH_CAPTCHA_SITE_KEY:null;
@@ -76,7 +76,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({sub:id});
    }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}finally{clearTimeout(timer);}
   }
-  const methods={reports:['GET','POST','PATCH'],board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],'password-forgot':['POST'],'password-recovery':['POST'],'password-update':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
+  const methods={reports:['GET','POST','PATCH'],board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],'email-confirm':['POST'],'email-resend':['POST'],'password-forgot':['POST'],'password-recovery':['POST'],'password-update':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
   const serveReports=user=>handleReports({db:env.POPULAR_DB,url,method:request.method,user,companyKeys:keys,readBody:()=>bodyJSON(request,10000),respond,now:clock(),allowAttempt:()=>allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,'reports',clock())});
@@ -90,6 +90,29 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   try{
    // A separate client per request; private cookies and API responses are never cached.
    const client=serverClient(env.SUPABASE_URL,env.SUPABASE_PUBLISHABLE_KEY,{cookieOptions:{...cookieOptions,name:cookieName},cookies:{getAll:()=>cookies,setAll:items=>{for(const c of items)writeCookie(c.name,c.value,c.options);}}});
+   if(action==='email-confirm'){
+    const body=await bodyJSON(request);
+    if(Object.keys(body).some(key=>key!=='tokenHash')||typeof body.tokenHash!=='string'||!/^[A-Za-z0-9_-]{20,256}$/.test(body.tokenHash))return respond({code:'email_confirmation_invalid'},400);
+    if(!env.POPULAR_DB)return respond({code:'unavailable'},503);
+    if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
+    const {data,error}=await client.auth.verifyOtp({type:'signup',token_hash:body.tokenHash});
+    if(error||!data?.session)return respond({code:'email_confirmation_invalid'},400);
+    return respond({ok:true});
+   }
+   if(action==='email-resend'){
+    const body=await bodyJSON(request,8192),email=typeof body.email==='string'?body.email.trim():'';
+    if(Object.keys(body).some(key=>!['email','captchaToken'].includes(key))||email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return respond({code:'invalid_email'},400);
+    if(captchaRequired&&!captchaSiteKey)return respond({code:'captcha_unavailable'},503);
+    if(captchaRequired&&!captchaOptions(body))return respond({code:'captcha_required'},400);
+    if(!env.POPULAR_DB)return respond({code:'unavailable'},503);
+    if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
+    const {error}=await client.auth.resend({type:'signup',email,options:{emailRedirectTo:site.origin,...(captchaOptions(body)||{})}});
+    if(error?.code==='captcha_failed')return respond({code:'captcha_invalid'},400);
+    if(error?.status===429)return respond({code:'too_many_attempts'},429);
+    // Do not disclose whether an address is already registered or confirmed.
+    if(error?.status>=500)return respond({code:'email_send_unavailable'},503);
+    return respond({ok:true});
+   }
    if(action==='password-forgot'||action==='password-recovery'){
     const body=await bodyJSON(request,8192),forgot=action==='password-forgot';
     const email=typeof body.email==='string'?body.email.trim():'';
@@ -130,14 +153,15 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     if(!env.POPULAR_DB)return respond({code:'unavailable'},503);
     if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
     const result=signingUp
-     ?await client.auth.signUp({email,password,options:{data:{sianaly_nickname:nickname},...(captchaOptions(body)||{})}})
+     ?await client.auth.signUp({email,password,options:{emailRedirectTo:site.origin,data:{sianaly_nickname:nickname},...(captchaOptions(body)||{})}})
      :await client.auth.signInWithPassword({email,password,...(captchaOptions(body)?{options:captchaOptions(body)}:{})});
     if(result.error){
      if(result.error.code==='captcha_failed')return respond({code:'captcha_invalid'},400);
+     if(result.error.code==='email_not_confirmed')return respond({code:'email_not_confirmed'},400);
      if(result.error.status===429)return respond({code:'too_many_attempts'},429);
      return respond({code:signingUp?'email_signup_failed':'email_login_failed'},400);
     }
-    if(!result.data?.session)return respond({code:'email_confirmation_required'},409);
+    if(!result.data?.session)return signingUp?respond({ok:true,confirmationRequired:true}):respond({code:'email_not_confirmed'},400);
     return respond({ok:true});
    }
    if(action==='login'){

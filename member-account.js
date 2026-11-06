@@ -2,19 +2,19 @@
  'use strict';
  let config,session={signedIn:false},favoriteKeys=new Set(),catalog=new Map(),busy=false,pendingCompany=null;
  let nav,signup,dialog,toast,toastTimer,homeList;const wiredFavorites=new WeakSet();
- let recoveryToken=new URLSearchParams(location.hash.slice(1)).get('password-reset')||'';
- if(recoveryToken)history.replaceState(null,'',location.pathname+location.search);
+ let recoveryToken=new URLSearchParams(location.hash.slice(1)).get('password-reset')||'',confirmationToken=new URLSearchParams(location.hash.slice(1)).get('email-confirm')||'';
+ if(recoveryToken||confirmationToken)history.replaceState(null,'',location.pathname+location.search);
  const api=async(action,body,method=body?'POST':'GET')=>{
   const response=await fetch('/api/account/'+action,{method,credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json'}:{},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(15000)});
   const data=await response.json();if(!response.ok){const e=new Error(data.code||'unavailable');e.code=data.code;throw e;}return data;
  };
  function node(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
  function say(text){toast.textContent=text;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4500);}
- function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',captcha_required:'보안 확인을 완료해 주세요.',captcha_invalid:'보안 확인이 만료됐어요. 다시 확인해 주세요.',captcha_unavailable:'보안 확인을 준비 중이에요. 잠시 후 다시 이용해 주세요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.',invalid_email:'이메일 주소를 확인해 주세요.',invalid_password:'비밀번호는 10~128자로 설정해 주세요.',too_many_attempts:'요청이 많아요. 잠시 후 다시 시도해 주세요.',email_login_failed:'이메일과 비밀번호를 확인해 주세요.',email_signup_failed:'가입하지 못했어요. 이미 가입한 이메일이라면 로그인해 주세요.',email_confirmation_required:'이메일 가입 설정을 확인 중이에요. 잠시 후 다시 시도해 주세요.',recovery_unavailable:'메일을 보내지 못했어요. 잠시 후 다시 시도해 주세요.',recovery_invalid:'링크가 만료됐거나 이미 사용됐어요. 재설정 메일을 다시 받아 주세요.',recovery_required:'비밀번호 변경 시간이 지났어요. 재설정 메일을 다시 받아 주세요.',password_reused:'이전과 다른 비밀번호를 입력해 주세요.',password_update_failed:'비밀번호를 변경하지 못했어요. 다른 비밀번호로 다시 시도해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
+ function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',captcha_required:'보안 확인을 완료해 주세요.',captcha_invalid:'보안 확인이 만료됐어요. 다시 확인해 주세요.',captcha_unavailable:'보안 확인을 준비 중이에요. 잠시 후 다시 이용해 주세요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.',invalid_email:'이메일 주소를 확인해 주세요.',invalid_password:'비밀번호는 10~128자로 설정해 주세요.',too_many_attempts:'요청이 많아요. 잠시 후 다시 시도해 주세요.',email_login_failed:'이메일과 비밀번호를 확인해 주세요.',email_signup_failed:'가입하지 못했어요. 이미 가입한 이메일이라면 로그인해 주세요.',email_not_confirmed:'받은 메일에서 이메일 인증을 완료해 주세요. 메일이 없다면 아래에서 다시 받을 수 있어요.',email_confirmation_invalid:'인증 링크가 만료됐거나 이미 사용됐어요. 로그인하거나 인증 메일을 다시 받아 주세요.',email_send_unavailable:'인증 메일을 보내지 못했어요. 잠시 후 다시 시도해 주세요.',recovery_unavailable:'메일을 보내지 못했어요. 잠시 후 다시 시도해 주세요.',recovery_invalid:'링크가 만료됐거나 이미 사용됐어요. 재설정 메일을 다시 받아 주세요.',recovery_required:'비밀번호 변경 시간이 지났어요. 재설정 메일을 다시 받아 주세요.',password_reused:'이전과 다른 비밀번호를 입력해 주세요.',password_update_failed:'비밀번호를 변경하지 못했어요. 다른 비밀번호로 다시 시도해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
  function showDialog(title){
   window.SianalyCaptcha?.clear(dialog);dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
- function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','네이버·카카오 또는 이메일로 가입할 수 있어요. 가입 후 사이트에서 사용할 별명을 설정해요.'),node('p','이메일과 비밀번호는 회원 인증 서비스에서 가입·로그인에 사용해요. 소셜 로그인에서 동의한 정보도 인증 서비스에 보관될 수 있어요.'),node('p','탈퇴하면 회원 인증 정보와 즐겨찾기가 삭제돼요. 작성한 글·댓글은 남으며 작성자는 ‘탈퇴한 회원’으로 표시돼요.'));return details;}
+ function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p',config.providers.length?'이메일 또는 연결된 소셜 계정으로 가입하고 사이트 별명을 설정해요.':'이메일·비밀번호·별명으로 가입해요. 받은 메일에서 이메일 인증을 완료하면 이용할 수 있어요.'),node('p','이메일과 비밀번호는 회원 인증 서비스에서 가입·로그인에 사용해요.'),node('p','탈퇴하면 회원 인증 정보와 즐겨찾기가 삭제돼요. 작성한 글·댓글은 남으며 작성자는 ‘탈퇴한 회원’으로 표시돼요.'));return details;}
  function mountCaptcha(form,submit){
   if(!config.captcha?.required)return;
   if(window.SianalyCaptcha)window.SianalyCaptcha.mount(form,submit,config.captcha);
@@ -22,7 +22,7 @@
  }
  function loginDialog(signingUp=false){
   showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');
-  dialog.append(node('p',signingUp?'이메일·비밀번호·별명을 입력하면 바로 가입돼요.':pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':'가입한 이메일과 비밀번호를 입력해 주세요.'));
+  dialog.append(node('p',signingUp?'이메일·비밀번호·별명을 입력하고 인증 메일을 확인해 주세요.':pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':'가입한 이메일과 비밀번호를 입력해 주세요.'));
   const form=node('form',undefined,'member-email-form');
   const fields=[['email','이메일','email','email'],['password','비밀번호','password',signingUp?'new-password':'current-password']];
   if(signingUp)fields.push(['nickname','별명','text','nickname']);
@@ -43,14 +43,15 @@
   form.onsubmit=async event=>{
    event.preventDefault();submit.disabled=true;error.textContent='';
    try{
-    await api(signingUp?'email-signup':'email-login',Object.fromEntries(new FormData(form)));
+    const result=await api(signingUp?'email-signup':'email-login',Object.fromEntries(new FormData(form)));
+    if(result.confirmationRequired){form.reset();signupMailDialog();return;}
     form.reset();publishChange();
     try{if(pendingCompany)sessionStorage.setItem('sianaly.pendingFavorite',JSON.stringify({key:pendingCompany,createdAt:Date.now()}));}catch{}
     location.reload();
    }catch(e){error.textContent=errorText(e);submit.disabled=false;window.SianalyCaptcha?.reset(form);}
   };
   dialog.append(form);mountCaptcha(form,submit);
-  if(!signingUp){const forgot=node('button','비밀번호를 잊었나요?','member-auth-toggle');forgot.type='button';forgot.onclick=passwordForgotDialog;dialog.append(forgot);}
+  if(!signingUp){const forgot=node('button','비밀번호를 잊었나요?','member-auth-toggle');forgot.type='button';forgot.onclick=passwordForgotDialog;const resend=node('button','인증 메일 다시 받기','member-auth-toggle');resend.type='button';resend.onclick=emailResendDialog;dialog.append(forgot,resend);}
   const providers=['custom:kakao','custom:naver'].map(id=>config.providers.find(provider=>provider.id===id)).filter(Boolean);
   if(providers.length)dialog.append(node('div','또는','member-auth-divider'));
   const social=node('div',undefined,'member-social-options');
@@ -63,9 +64,30 @@
   const toggle=node('button',signingUp?'이미 가입했나요? 로그인':'처음이신가요? 회원가입','member-auth-toggle');toggle.type='button';toggle.onclick=()=>loginDialog(!signingUp);
   dialog.append(social,toggle,info());
  }
+ function signupMailDialog(){
+  showDialog('이메일을 확인해 주세요');
+  dialog.append(node('p','가입을 요청한 이메일에서 인증 버튼을 눌러 주세요. 인증을 완료하면 사이트를 이용할 수 있어요.'),node('p','메일이 보이지 않으면 스팸함을 확인해 주세요. 이미 가입한 이메일이라면 로그인해 주세요.'));
+  const resend=node('button','인증 메일 다시 받기','member-menu-action');resend.type='button';resend.onclick=emailResendDialog;
+  const login=node('button','로그인으로 돌아가기','member-auth-toggle');login.type='button';login.onclick=()=>loginDialog();dialog.append(resend,login);
+ }
+ function emailResendDialog(){
+  showDialog('인증 메일 다시 받기');
+  dialog.append(node('p','가입을 요청한 이메일을 입력해 주세요. 잠시 전에 요청했다면 잠깐 기다린 뒤 다시 시도해 주세요.'));
+  const form=node('form',undefined,'member-email-form'),label=node('label','이메일'),email=node('input',undefined,'member-delete-input');
+  email.id='memberConfirmEmail';email.name='email';email.type='email';email.autocomplete='email';email.required=true;email.maxLength=254;label.htmlFor=email.id;
+  const submit=node('button','인증 메일 받기','member-menu-action member-email-submit'),error=node('p','','member-error');submit.type='submit';error.setAttribute('role','alert');form.append(label,email,submit,error);
+  form.onsubmit=async event=>{event.preventDefault();submit.disabled=true;error.textContent='';try{await api('email-resend',Object.fromEntries(new FormData(form)));signupMailDialog();}catch(e){error.textContent=errorText(e);submit.disabled=false;window.SianalyCaptcha?.reset(form);}};
+  dialog.append(form);mountCaptcha(form,submit);
+ }
+ function emailConfirmationDialog(){
+  showDialog('이메일 인증');dialog.append(node('p','아래 버튼을 눌러 가입한 이메일 인증을 완료해 주세요.'));
+  const proceed=node('button','이메일 인증 완료하기','member-menu-action'),error=node('p','','member-error');proceed.type='button';error.setAttribute('role','alert');
+  proceed.onclick=async()=>{proceed.disabled=true;error.textContent='';try{await api('email-confirm',{tokenHash:confirmationToken});confirmationToken='';publishChange();location.reload();}catch(e){error.textContent=errorText(e);proceed.disabled=false;}};
+  const resend=node('button','인증 메일 다시 받기','member-auth-toggle');resend.type='button';resend.onclick=emailResendDialog;dialog.append(proceed,error,resend);
+ }
  function passwordForgotDialog(){
   showDialog('비밀번호 찾기');
-  dialog.append(node('p','가입한 이메일로 비밀번호 재설정 링크를 보내드려요. 네이버·카카오 회원은 해당 서비스로 로그인해 주세요.'));
+  dialog.append(node('p','가입한 이메일로 비밀번호 재설정 링크를 보내드려요.'));
   const form=node('form',undefined,'member-email-form'),label=node('label','이메일'),email=node('input',undefined,'member-delete-input');
   email.id='memberRecoveryEmail';email.name='email';email.type='email';email.autocomplete='email';email.required=true;email.maxLength=254;label.htmlFor=email.id;
   const submit=node('button','재설정 메일 받기','member-menu-action member-email-submit'),error=node('p','','member-error');
@@ -209,7 +231,8 @@
   if(!document.getElementById('app')){const area=node('section',undefined,'member-favorites');area.id='memberFavorites';area.hidden=true;const head=node('div',undefined,'member-favorites-head');head.append(node('h2','내 즐겨찾기'));homeList=node('ul',undefined,'member-favorites-list');const empty=node('p','기업 페이지에서 ☆ 즐겨찾기를 눌러 저장할 수 있어요.','member-favorites-empty');area.append(head,homeList,empty);document.querySelector('main')?.before(area);}
   mountCompany();const app=document.getElementById('app');if(app)new MutationObserver(mountCompany).observe(app,{childList:true,subtree:true});
   await reloadSession();
-  if(recoveryToken)recoveryLinkDialog();
+  if(confirmationToken)emailConfirmationDialog();
+  else if(recoveryToken)recoveryLinkDialog();
   else if(session.passwordReset)passwordUpdateDialog();
   else if(session.signedIn){let pending;try{pending=JSON.parse(sessionStorage.getItem('sianaly.pendingFavorite')||'null');sessionStorage.removeItem('sianaly.pendingFavorite');}catch{}if(pending?.createdAt>Date.now()-600000&&catalog.has(pending.key)&&!favoriteKeys.has(pending.key))pendingCompany=pending.key;if(!session.nickname)nicknameDialog();else if(pendingCompany){const key=pendingCompany;pendingCompany=null;await changeFavorite(key);}}
   const query=new URLSearchParams(location.search);if(query.has('accountError')){say('로그인을 완료하지 못했어요. 다시 시도해 주세요.');query.delete('accountError');history.replaceState(null,'',location.pathname+(query.size?'?'+query:'')+location.hash);}

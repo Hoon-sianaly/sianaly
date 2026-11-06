@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {createAccountHandler,safeAccountReturn,memberNickname} from './account-handler.mjs';
 const origin='https://dev.sianaly.com',now=Date.now();
-const env={AUTH_SITE_URL:origin,AUTH_ENABLED:'true',AUTH_PROVIDERS:'google,custom:kakao,custom:naver',SUPABASE_URL:'https://example.supabase.co',SUPABASE_PUBLISHABLE_KEY:'test-public',SUPABASE_SECRET_KEY:'test-server-only'};
+const env={AUTH_SITE_URL:origin,AUTH_ENABLED:'true',AUTH_SOCIAL_LOGIN_ENABLED:'true',AUTH_PROVIDERS:'google,custom:kakao,custom:naver',SUPABASE_URL:'https://example.supabase.co',SUPABASE_PUBLISHABLE_KEY:'test-public',SUPABASE_SECRET_KEY:'test-server-only'};
 const sqlite=new DatabaseSync(':memory:');
 let failDepartureBatch=false;
 const departures=new Set();
@@ -28,7 +28,7 @@ const keys=new Set(['samsung','naver']);
 for(const value of ['https://evil.test','//evil.test','javascript:alert(1)','/unknown','/company?company=missing'])assert.equal(safeAccountReturn(value,origin,keys),'/');
 assert.equal(safeAccountReturn('/company?company=samsung&extra=1#x',origin,keys),'/company?company=samsung');
 let user=null,options,insert,removed,deleted,adminCalls=0,exchanged,nicknameUpdate,emailCall,emailError=null,emailHasSession=true;
-let handlerNow=now,recoveryUsed=false,recoveryRequest,passwordUpdate,passwordError=null,signOutScope;
+let handlerNow=now,recoveryUsed=false,recoveryRequest,passwordUpdate,passwordError=null,signOutScope,confirmationUsed=false,resendCall,resendError=null;
 const handler=createAccountHandler({companyKeys:keys,clock:()=>handlerNow,serverClient:(url,key,opts)=>{
  assert.equal(key,env.SUPABASE_PUBLISHABLE_KEY);options=opts;
  return {auth:{getUser:async()=>({data:{user},error:null}),signInWithOAuth:async args=>{
@@ -43,8 +43,14 @@ const handler=createAccountHandler({companyKeys:keys,clock:()=>handlerNow,server
   emailCall={action:'login',input};
   if(!emailError)opts.cookies.setAll([{name:'__Host-sianaly-auth',value:'test-email-session',options:{}}]);
   return {data:{session:{access_token:'never-return-this-token'}},error:emailError};
- },resetPasswordForEmail:async(...args)=>{recoveryRequest=args;return {};},
+ },resetPasswordForEmail:async(...args)=>{recoveryRequest=args;return {};},resend:async input=>{resendCall=input;return {error:resendError};},
  verifyOtp:async input=>{
+  if(input.type==='signup'){
+   if(input.token_hash!=='C'.repeat(64)||confirmationUsed)return {error:{code:'otp_expired'}};
+   confirmationUsed=true;user={id:'confirmed-user',app_metadata:{provider:'email'},user_metadata:{sianaly_nickname:'인증회원'}};
+   opts.cookies.setAll([{name:'__Host-sianaly-auth',value:'confirmed-session',options:{}}]);
+   return {data:{user,session:{access_token:'never-return-confirmation-token'}}};
+  }
   if(input.type!=='recovery'||input.token_hash!=='A'.repeat(64)||recoveryUsed)return {error:{code:'otp_expired'}};
   recoveryUsed=true;user={id:'recovery-user',app_metadata:{provider:'email'},user_metadata:{sianaly_nickname:'복구회원'}};
   opts.cookies.setAll([{name:'__Host-sianaly-auth',value:'recovered-session',options:{}}]);
@@ -78,6 +84,9 @@ async function request(action,{method='GET',body,requestOrigin=origin,cookie,ove
 }
 assert.equal((await request('config',{overrides:{AUTH_ENABLED:'false'}})).status,200);
 assert.deepEqual(await (await request('config')).json(),{ready:true,email:true,providers:[{id:'custom:kakao',name:'카카오'},{id:'custom:naver',name:'네이버'}]});
+assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).json()).providers,[]);
+assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:undefined}})).json()).providers,[]);
+assert.equal((await request('login',{method:'POST',body:{provider:'custom:naver'},overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).status,400);
 assert.equal((await request('session',{overrides:{AUTH_SITE_URL:'https://evil.test'}})).status,503);
 assert.equal((await request('favorites')).status,401);
 assert.equal((await request('nickname',{method:'POST',body:{nickname:'별명'}})).status,401);
@@ -200,7 +209,7 @@ assert.equal((await emailRequest('email-signup',{...signupBody,user_id:'victim'}
 const emailResponse=await emailRequest('email-signup',signupBody);
 assert.equal(emailResponse.status,200);
 assert.deepEqual(await emailResponse.json(),{ok:true});
-assert.deepEqual(emailCall,{action:'signup',input:{email:'member@example.test',password:'test-password-123',options:{data:{sianaly_nickname:'별명'}}}});
+assert.deepEqual(emailCall,{action:'signup',input:{email:'member@example.test',password:'test-password-123',options:{emailRedirectTo:origin,data:{sianaly_nickname:'별명'}}}});
 for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/','Max-Age=2592000'])assert.ok(emailResponse.headers.get('Set-Cookie').includes(flag),flag);
 assert.equal(adminCalls,adminCallsBeforeEmail);
 emailError={status:400};
@@ -209,8 +218,22 @@ emailError=null;
 assert.deepEqual(await (await emailRequest('email-login',{email:'member@example.test',password:'test-password-123'})).json(),{ok:true});
 assert.equal(emailCall.action,'login');
 emailHasSession=false;
-assert.equal((await emailRequest('email-signup',signupBody)).status,409);
+const pendingSignup=await emailRequest('email-signup',signupBody);
+assert.equal(pendingSignup.status,200);assert.deepEqual(await pendingSignup.json(),{ok:true,confirmationRequired:true});assert.equal(pendingSignup.headers.get('Set-Cookie'),null);
 emailHasSession=true;
+emailError={code:'email_not_confirmed'};
+assert.equal((await (await emailRequest('email-login',{email:'member@example.test',password:'test-password-123'})).json()).code,'email_not_confirmed');emailError=null;
+assert.equal((await emailRequest('email-confirm',{tokenHash:'C'.repeat(64),type:'recovery'})).status,400);
+assert.equal((await emailRequest('email-confirm',{tokenHash:'C'.repeat(64)},{requestOrigin:'https://evil.test'})).status,403);
+assert.equal((await emailRequest('email-confirm',{tokenHash:'invalid'})).status,400);
+const confirmResponse=await emailRequest('email-confirm',{tokenHash:'C'.repeat(64)});
+assert.equal(confirmResponse.status,200);assert.deepEqual(await confirmResponse.json(),{ok:true});assert.ok(!confirmResponse.headers.get('Set-Cookie').includes('recovery='));
+assert.equal((await emailRequest('email-confirm',{tokenHash:'C'.repeat(64)})).status,400);
+user=null;
+assert.deepEqual(await (await emailRequest('email-resend',{email:'member@example.test'})).json(),{ok:true});
+assert.deepEqual(resendCall,{type:'signup',email:'member@example.test',options:{emailRedirectTo:origin}});
+resendError={status:400,code:'email_not_found'};
+assert.deepEqual(await (await emailRequest('email-resend',{email:'unknown@example.test'})).json(),{ok:true});resendError=null;
 const attempts=await Promise.all(Array.from({length:8},()=>emailRequest('email-signup',signupBody,{ip:'192.0.2.2'})));
 assert.equal(attempts.filter(r=>r.status===200).length,5);
 assert.equal(attempts.filter(r=>r.status===429).length,3);
@@ -258,16 +281,17 @@ const captchaEnv={AUTH_CAPTCHA_REQUIRED:'true',AUTH_CAPTCHA_SITE_KEY:'public-tes
 const captchaToken='test-captcha-token',captchaEmail={email:'captcha@example.test',password:'safe-password-123',nickname:'보안테스트'};
 const captchaRequest=(action,body,overrides={})=>request(action,{method:'POST',body,overrides:{...captchaEnv,...overrides},ip:'192.0.2.90'});
 assert.deepEqual((await (await request('config',{overrides:captchaEnv})).json()).captcha,{required:true,siteKey:'public-test-site-key'});
-for(const action of ['email-signup','email-login','password-forgot']){
+for(const action of ['email-signup','email-login','password-forgot','email-resend']){
  const body=action==='email-signup'?captchaEmail:action==='email-login'?{email:captchaEmail.email,password:captchaEmail.password}:{email:captchaEmail.email};
- const beforeEmail=emailCall,beforeRecovery=recoveryRequest;
+ const beforeEmail=emailCall,beforeRecovery=recoveryRequest,beforeResend=resendCall;
  assert.equal((await captchaRequest(action,body,{AUTH_CAPTCHA_SITE_KEY:''})).status,503);
  for(const token of [undefined,'short','contains whitespace','x'.repeat(4097)]){
   assert.equal((await captchaRequest(action,{...body,...(token===undefined?{}:{captchaToken:token})})).status,400);
  }
- assert.equal(emailCall,beforeEmail);assert.equal(recoveryRequest,beforeRecovery);
+ assert.equal(emailCall,beforeEmail);assert.equal(recoveryRequest,beforeRecovery);assert.equal(resendCall,beforeResend);
  assert.equal((await captchaRequest(action,{...body,captchaToken})).status,200);
  if(action==='password-forgot')assert.deepEqual(recoveryRequest,[captchaEmail.email,{redirectTo:origin,captchaToken}]);
+ else if(action==='email-resend')assert.deepEqual(resendCall,{type:'signup',email:captchaEmail.email,options:{emailRedirectTo:origin,captchaToken}});
  else assert.equal(emailCall.input.options.captchaToken,captchaToken);
 }
 emailError={code:'captcha_failed'};
