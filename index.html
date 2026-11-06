@@ -102,4 +102,4 @@ q.addEventListener("input",e=>render(e.target.value));
 q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
-</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261106-email-launch" defer></script></body></html>
+</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261107-email-account" defer></script></body></html>

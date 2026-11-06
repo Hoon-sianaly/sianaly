@@ -66,9 +66,10 @@
  }
  function signupMailDialog(){
   showDialog('이메일을 확인해 주세요');
-  dialog.append(node('p','가입을 요청한 이메일에서 인증 버튼을 눌러 주세요. 인증을 완료하면 사이트를 이용할 수 있어요.'),node('p','메일이 보이지 않으면 스팸함을 확인해 주세요. 이미 가입한 이메일이라면 로그인해 주세요.'));
+  dialog.append(node('p','처음 가입한 이메일이라면 받은 메일에서 인증을 완료해 주세요.'),node('p','메일이 보이지 않으면 스팸함을 확인해 주세요. 이미 가입한 이메일에는 새 인증 메일이 오지 않을 수 있어요. 예전에 소셜 계정으로 가입했다면 아래에서 비밀번호를 설정해 이메일로 로그인할 수 있어요.'));
   const resend=node('button','인증 메일 다시 받기','member-menu-action');resend.type='button';resend.onclick=emailResendDialog;
-  const login=node('button','로그인으로 돌아가기','member-auth-toggle');login.type='button';login.onclick=()=>loginDialog();dialog.append(resend,login);
+  const password=node('button','비밀번호 설정·찾기','member-auth-toggle');password.type='button';password.onclick=passwordForgotDialog;
+  const login=node('button','로그인으로 돌아가기','member-auth-toggle');login.type='button';login.onclick=()=>loginDialog();dialog.append(resend,password,login);
  }
  function emailResendDialog(){
   showDialog('인증 메일 다시 받기');
@@ -195,7 +196,7 @@
  }
  function accountDialog(){
   if(!session.signedIn){pendingCompany=null;loginDialog();return;}
-  showDialog('마이페이지');dialog.append(node('p',(session.provider||'소셜')+' 계정으로 로그인 중'),nicknameForm());
+  showDialog('마이페이지');dialog.append(node('p',config.providers.length?(session.provider||'소셜')+' 계정으로 로그인 중':'로그인 중'),nicknameForm());
   const favorites=node('button','내 즐겨찾기','member-menu-action');favorites.type='button';favorites.onclick=()=>{dialog.close();if(homeList){homeList.parentElement.scrollIntoView({behavior:'smooth',block:'center'});}else location.assign('/#memberFavorites');};
   const logout=node('button','로그아웃','member-menu-action');logout.type='button';logout.onclick=async()=>{logout.disabled=true;try{await api('logout',{});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('로그아웃했어요.');}catch(e){logout.disabled=false;say(errorText(e));}};
   dialog.append(favorites,myPosts(),logout);
