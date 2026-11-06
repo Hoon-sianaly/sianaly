@@ -44,7 +44,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const respond=(body,status=200)=>{headers.set('Content-Type','application/json; charset=utf-8');return new Response(JSON.stringify(body),{status,headers});};
   const redirect=(path)=>{headers.set('Location',path);return new Response(null,{status:303,headers});};
   const administrativeClient=()=>adminClient(env.SUPABASE_URL,env.SUPABASE_SECRET_KEY,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
-  const serveBoard=user=>handleBoard({db:env.POPULAR_DB,url,method:request.method,user,nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond,syncDepartures:()=>syncBoardDepartures(env.POPULAR_DB,administrativeClient())});
+  const serveBoard=(user,viewerKey)=>handleBoard({db:env.POPULAR_DB,url,method:request.method,user,viewerKey,now:clock(),nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond,syncDepartures:()=>syncBoardDepartures(env.POPULAR_DB,administrativeClient())});
   let site;try{site=new URL(env.AUTH_SITE_URL);if(site.origin!==url.origin||site.pathname!=='/'||site.search||site.hash||site.username||site.password||(site.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(site.hostname)))throw Error('Invalid site');}catch{return respond({ready:false,code:'unavailable'},503);}
   const providers=env.AUTH_SOCIAL_LOGIN_ENABLED!=='true'?[]:(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
   const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY);
@@ -54,6 +54,13 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   if(action==='config'&&request.method==='GET')return respond({ready,email:ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[],...(captchaRequired?{captcha:{required:true,siteKey:captchaSiteKey}}:{})});
   const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
   const boardRead=action==='board'&&request.method==='GET',mine=url.searchParams.get('mine')==='1',moderation=url.searchParams.get('moderation')==='1';
+  const boardView=action==='board'&&request.method==='POST'&&url.searchParams.get('interaction')==='view';
+  function boardVisitor(){
+   const name=secure?'__Host-sianaly-board-visitor':'sianaly-board-visitor';
+   const previous=parseCookieHeader(request.headers.get('Cookie')||'').find(cookie=>cookie.name===name)?.value;
+   if(typeof previous==='string'&&/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(previous))return previous;
+   const value=crypto.randomUUID();headers.append('Set-Cookie',serializeCookieHeader(name,value,{path:'/',secure,httpOnly:true,sameSite:'lax',maxAge:7776000}));return value;
+  }
   const hasSession=(request.headers.get('Cookie')||'').split(';').some(cookie=>{
    const name=cookie.trim().split('=',1)[0];
    return name===cookieName||name.startsWith(cookieName+'.');
@@ -79,6 +86,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const methods={reports:['GET','POST','PATCH'],board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],'email-confirm':['POST'],'email-resend':['POST'],'password-forgot':['POST'],'password-recovery':['POST'],'password-update':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
+  if(boardView&&!hasSession){try{return await serveBoard(undefined,boardVisitor());}catch{return respond({code:'board_unavailable'},503);}}
   const serveReports=user=>handleReports({db:env.POPULAR_DB,url,method:request.method,user,companyKeys:keys,readBody:()=>bodyJSON(request,10000),respond,now:clock(),allowAttempt:()=>allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,'reports',clock())});
   if(action==='reports'&&request.method==='POST'){
    try{return await serveReports();}catch{return respond({code:'reports_unavailable'},503);}
@@ -184,7 +192,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    if(action==='logout'){
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }
-   if(!user&&!(boardRead&&!mine&&!moderation))return respond({code:'login_required'},401);
+   if(!user&&!boardView&&!(boardRead&&!mine&&!moderation))return respond({code:'login_required'},401);
    if(action==='password-update'){
     if(!passwordReset)return respond({code:'recovery_required'},409);
     const body=await bodyJSON(request);
@@ -196,7 +204,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     clearCookies();
     return respond({ok:true,sessionWarning});
    }
-   if(action==='board')return await serveBoard(user);
+   if(action==='board')return await serveBoard(user,boardView&&!user?boardVisitor():undefined);
    if(action==='reports')return await serveReports(user);
    if(action==='nickname'){
     const body=await bodyJSON(request),nickname=memberNickname(body.nickname);

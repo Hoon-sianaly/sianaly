@@ -7,7 +7,14 @@ export async function initializeBoard(db) {
   db.prepare('CREATE INDEX IF NOT EXISTS board_posts_owner_time ON board_posts (owner, created_at)'),
   db.prepare('CREATE INDEX IF NOT EXISTS board_comments_owner_time ON board_comments (owner, created_at)'),
   db.prepare('CREATE TABLE IF NOT EXISTS board_hidden_posts (post_id INTEGER PRIMARY KEY REFERENCES board_posts(id) ON DELETE CASCADE, hidden_at INTEGER NOT NULL)'),
-  db.prepare('CREATE TABLE IF NOT EXISTS board_departed_members (owner_hash TEXT PRIMARY KEY)')
+  db.prepare('CREATE TABLE IF NOT EXISTS board_departed_members (owner_hash TEXT PRIMARY KEY)'),
+  db.prepare('CREATE TABLE IF NOT EXISTS board_recommendations (post_id INTEGER NOT NULL REFERENCES board_posts(id) ON DELETE CASCADE, owner_hash TEXT NOT NULL, PRIMARY KEY(post_id, owner_hash))'),
+  db.prepare('CREATE INDEX IF NOT EXISTS board_recommendations_owner ON board_recommendations(owner_hash)'),
+  db.prepare('CREATE TABLE IF NOT EXISTS board_post_stats (post_id INTEGER PRIMARY KEY REFERENCES board_posts(id) ON DELETE CASCADE, views INTEGER NOT NULL DEFAULT 0)'),
+  db.prepare('CREATE TABLE IF NOT EXISTS board_view_visitors (post_id INTEGER NOT NULL REFERENCES board_posts(id) ON DELETE CASCADE, visitor_hash TEXT NOT NULL, seen_at INTEGER NOT NULL, PRIMARY KEY(post_id, visitor_hash))'),
+  db.prepare('CREATE INDEX IF NOT EXISTS board_view_visitors_seen ON board_view_visitors(seen_at)'),
+  db.prepare('CREATE TRIGGER IF NOT EXISTS board_view_insert AFTER INSERT ON board_view_visitors BEGIN INSERT INTO board_post_stats(post_id,views) VALUES(NEW.post_id,1) ON CONFLICT(post_id) DO UPDATE SET views=views+1; END'),
+  db.prepare('CREATE TRIGGER IF NOT EXISTS board_view_repeat AFTER UPDATE OF seen_at ON board_view_visitors BEGIN INSERT INTO board_post_stats(post_id,views) VALUES(NEW.post_id,1) ON CONFLICT(post_id) DO UPDATE SET views=views+1; END')
  ]);
 }
 async function ownerHash(id) {
@@ -22,9 +29,12 @@ export async function syncBoardDepartures(db, admin) {
   if (!data.length) return;
   const ids = data.map(row=>row.user_id);
   const hashes = await Promise.all(ids.map(ownerHash));
+  const viewHashes = await Promise.all(hashes.map(hash=>ownerHash('member:'+hash)));
   const placeholders = ids.map(()=>'?').join(',');
   await db.batch([
    db.prepare('INSERT OR IGNORE INTO board_departed_members (owner_hash) VALUES '+ids.map(()=>'(?)').join(',')).bind(...hashes),
+   db.prepare('DELETE FROM board_recommendations WHERE owner_hash IN ('+placeholders+')').bind(...hashes),
+   db.prepare('DELETE FROM board_view_visitors WHERE visitor_hash IN ('+placeholders+')').bind(...viewHashes),
    db.prepare("UPDATE board_posts SET owner = '', author = '탈퇴한 회원' WHERE owner IN ("+placeholders+')').bind(...ids),
    db.prepare("UPDATE board_comments SET owner = '', author = '탈퇴한 회원' WHERE owner IN ("+placeholders+')').bind(...ids)
   ]);
@@ -34,38 +44,63 @@ export async function syncBoardDepartures(db, admin) {
  }
  throw new Error('Departure synchronization pending');
 }
-export async function handleBoard({db, url, method, user, nickname, readBody, respond, syncDepartures}) {
+const countColumns = '(SELECT count(*) FROM board_recommendations r WHERE r.post_id=p.id) AS recommendations, coalesce((SELECT views FROM board_post_stats s WHERE s.post_id=p.id),0) AS views';
+export async function handleBoard({db, url, method, user, nickname, readBody, respond, syncDepartures, viewerKey, now=Date.now()}) {
  if (!db) return respond({code:'board_unavailable'},503);
  const postId = Number(url.searchParams.get('post') || 0);
  const before = Number(url.searchParams.get('before') || Number.MAX_SAFE_INTEGER);
  const mine = url.searchParams.get('mine') === '1';
  const moderation = url.searchParams.get('moderation') === '1';
  const canModerate = user?.app_metadata?.sianaly_role === 'admin';
+ const interaction = url.searchParams.get('interaction');
+ if (interaction && !['view','recommend'].includes(interaction)) return respond({code:'invalid_post'},400);
+ if (interaction && (!postId || interaction==='view'&&method!=='POST' || interaction==='recommend'&&method!=='PATCH')) return respond({code:'invalid_post'},400);
  if (!Number.isSafeInteger(postId) || postId < 0 || !Number.isSafeInteger(before) || before < 1) {
   return respond({code:'invalid_post'},400);
  }
  if (moderation && !canModerate) return respond({code:'forbidden'},403);
  await initializeBoard(db);
  if (syncDepartures) await syncDepartures();
+ const memberHash = user ? await ownerHash(user.id) : null;
+ if (interaction==='view') {
+  let raw;try{raw=await readBody();}catch{return respond({code:'invalid_post'},400);}
+  if (Object.keys(raw).length || !memberHash && !viewerKey) return respond({code:'invalid_post'},400);
+  const visitorHash = await ownerHash(memberHash?'member:'+memberHash:'browser:'+viewerKey);
+  await db.batch([
+   db.prepare('DELETE FROM board_view_visitors WHERE seen_at < ?').bind(now-86400000),
+   db.prepare('INSERT INTO board_view_visitors(post_id,visitor_hash,seen_at) SELECT id,?,? FROM board_posts WHERE id=? AND NOT EXISTS(SELECT 1 FROM board_hidden_posts WHERE post_id=?) ON CONFLICT(post_id,visitor_hash) DO UPDATE SET seen_at=excluded.seen_at WHERE board_view_visitors.seen_at <= ?').bind(visitorHash,now,postId,postId,now-1800000)
+  ]);
+  const post=await db.prepare('SELECT '+countColumns+' FROM board_posts p WHERE p.id=? AND NOT EXISTS(SELECT 1 FROM board_hidden_posts WHERE post_id=p.id)').bind(postId).first();
+  return post ? respond(post) : respond({code:'post_not_found'},404);
+ }
  if (method === 'GET') {
   if (mine) {
    if (!user) return respond({code:'login_required'},401);
-   const {results} = await db.prepare('SELECT p.id, p.title, p.author, p.created_at, h.post_id IS NOT NULL AS hidden FROM board_posts p LEFT JOIN board_hidden_posts h ON h.post_id = p.id WHERE p.owner = ? AND p.id < ? ORDER BY p.id DESC LIMIT 21').bind(user.id,before).all();
+   const {results} = await db.prepare('SELECT p.id, p.title, p.author, p.created_at, h.post_id IS NOT NULL AS hidden, '+countColumns+' FROM board_posts p LEFT JOIN board_hidden_posts h ON h.post_id = p.id WHERE p.owner = ? AND p.id < ? ORDER BY p.id DESC LIMIT 21').bind(user.id,before).all();
    return respond({posts:results.slice(0,20), next:results.length > 20 ? results[19].id : null});
   }
   if (postId) {
-   const post = await db.prepare('SELECT p.id, p.title, p.body, p.author, p.created_at, p.owner, h.post_id IS NOT NULL AS hidden FROM board_posts p LEFT JOIN board_hidden_posts h ON h.post_id = p.id WHERE p.id = ?').bind(postId).first();
+   const post = await db.prepare('SELECT p.id, p.title, p.body, p.author, p.created_at, p.owner, h.post_id IS NOT NULL AS hidden, '+countColumns+', EXISTS(SELECT 1 FROM board_recommendations r WHERE r.post_id=p.id AND r.owner_hash=?) AS recommended FROM board_posts p LEFT JOIN board_hidden_posts h ON h.post_id = p.id WHERE p.id = ?').bind(memberHash,postId).first();
    if (!post || post.hidden && !canModerate && user?.id!==post.owner) return respond({code:'post_not_found'},404);
    const {results} = await db.prepare('SELECT id, body, author, created_at FROM board_comments WHERE post_id = ? AND id < ? ORDER BY id DESC LIMIT 21').bind(postId,before).all();
    const {owner,...publicPost} = post;
    return respond({post:publicPost, canManage:user?.id===owner, canModerate, comments:results.slice(0,20), next:results.length > 20 ? results[19].id : null});
   }
-  const {results} = await db.prepare('SELECT p.id, p.title, p.author, p.created_at, h.post_id IS NOT NULL AS hidden FROM board_posts p LEFT JOIN board_hidden_posts h ON h.post_id = p.id WHERE p.id < ? AND (h.post_id IS NOT NULL) = ? ORDER BY p.id DESC LIMIT 21').bind(before,moderation?1:0).all();
+  const {results} = await db.prepare('SELECT p.id, p.title, p.author, p.created_at, h.post_id IS NOT NULL AS hidden, '+countColumns+' FROM board_posts p LEFT JOIN board_hidden_posts h ON h.post_id = p.id WHERE p.id < ? AND (h.post_id IS NOT NULL) = ? ORDER BY p.id DESC LIMIT 21').bind(before,moderation?1:0).all();
   return respond({posts:results.slice(0,20), canModerate, next:results.length > 20 ? results[19].id : null});
  }
  if (!user) return respond({code:'login_required'},401);
- const memberHash = await ownerHash(user.id);
  if (await db.prepare('SELECT owner_hash FROM board_departed_members WHERE owner_hash = ?').bind(memberHash).first()) return respond({code:'login_required'},401);
+ if (interaction==='recommend') {
+  let raw;try{raw=await readBody();}catch{return respond({code:'invalid_post'},400);}
+  if (Object.keys(raw).some(key=>key!=='recommended') || typeof raw.recommended!=='boolean') return respond({code:'invalid_post'},400);
+  const visible=await db.prepare('SELECT id FROM board_posts WHERE id=? AND NOT EXISTS(SELECT 1 FROM board_hidden_posts WHERE post_id=?)').bind(postId,postId).first();
+  if(!visible)return respond({code:'post_not_found'},404);
+  if(raw.recommended)await db.prepare('INSERT OR IGNORE INTO board_recommendations(post_id,owner_hash) SELECT id,? FROM board_posts WHERE id=? AND NOT EXISTS(SELECT 1 FROM board_hidden_posts WHERE post_id=?) AND NOT EXISTS(SELECT 1 FROM board_departed_members WHERE owner_hash=?)').bind(memberHash,postId,postId,memberHash).run();
+  else await db.prepare('DELETE FROM board_recommendations WHERE post_id=? AND owner_hash=?').bind(postId,memberHash).run();
+  const counts=await db.prepare('SELECT '+countColumns+', EXISTS(SELECT 1 FROM board_recommendations r WHERE r.post_id=p.id AND r.owner_hash=?) AS recommended FROM board_posts p WHERE p.id=? AND NOT EXISTS(SELECT 1 FROM board_hidden_posts WHERE post_id=p.id)').bind(memberHash,postId).first();
+  return counts ? respond(counts) : respond({code:'post_not_found'},404);
+ }
  if (method === 'PATCH' || method === 'DELETE') {
   if (!postId) return respond({code:'invalid_post'},400);
   let result;
@@ -95,7 +130,6 @@ export async function handleBoard({db, url, method, user, nickname, readBody, re
  const input = await readPostInput(readBody);
  if (!input) return respond({code:'invalid_post'},400);
  const {body,title} = input;
- const now = Date.now();
  if (postId) {
   if (!body || body.length > 500) return respond({code:'invalid_post'},400);
   const result = await db.prepare('INSERT INTO board_comments (post_id, owner, author, body, created_at) SELECT ?, ?, ?, ?, ? WHERE EXISTS (SELECT 1 FROM board_posts WHERE id = ?) AND NOT EXISTS (SELECT 1 FROM board_hidden_posts WHERE post_id = ?) AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?) AND NOT EXISTS (SELECT 1 FROM board_comments WHERE owner = ? AND created_at > ?)').bind(postId,user.id,nickname,body,now,postId,postId,memberHash,user.id,now-5000).run();

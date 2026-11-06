@@ -8,7 +8,7 @@
  const moderation = query.get('moderation') === '1';
  const api = '/api/account/board';
  const errors = {
-  login_required:'로그인한 뒤 작성할 수 있어요.',
+  login_required:'로그인한 뒤 이용할 수 있어요.',
   nickname_required:'먼저 마이페이지에서 별명을 설정해 주세요.',
   invalid_post:'입력 내용을 확인해 주세요.',
   slow_down:'잠시 기다렸다 다시 등록해 주세요.',
@@ -28,7 +28,8 @@
  }
  function metadata(item) {
   const time = new Date(item.created_at).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',dateStyle:'short',timeStyle:'short'});
-  return element('small',item.author + ' · ' + time,'board-meta');
+  const counts=Number.isSafeInteger(item.views)?' · 조회 '+item.views.toLocaleString('ko-KR')+' · 추천 '+(item.recommendations||0).toLocaleString('ko-KR'):'';
+  return element('small',item.author + ' · ' + time + counts,'board-meta');
  }
  async function request(url, options) {
   const response = await fetch(url,options);
@@ -213,7 +214,18 @@
    const {post,comments,next,canManage,canModerate} = await request(url);
    const article = element('article',null,'board-card');
    const view = element('div');
-   view.append(element('h2',post.title),metadata(post),element('p',post.body,'board-body'));
+   let meta=metadata(post);
+   const updateCounts=data=>{Object.assign(post,data);const replacement=metadata(post);meta.replaceWith(replacement);meta=replacement;};
+   view.append(element('h2',post.title),meta,element('p',post.body,'board-body'));
+   if(!post.hidden){
+    const engagement=element('div',null,'board-engagement'),recommend=element('button',null,'board-recommend'),feedback=element('p',null,'board-engagement-feedback');
+    recommend.type='button';feedback.setAttribute('role','status');
+    const renderRecommendation=()=>{recommend.textContent='추천 '+(post.recommendations||0).toLocaleString('ko-KR');recommend.setAttribute('aria-pressed',String(Boolean(post.recommended)));recommend.title=post.recommended?'추천 취소':'이 글 추천';};
+    renderRecommendation();engagement.append(recommend,feedback);view.append(engagement);
+    recommend.onclick=async()=>{recommend.disabled=true;feedback.textContent='';try{const counts=await request(url+'&interaction=recommend',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({recommended:!post.recommended})});updateCounts(counts);renderRecommendation();feedback.textContent=post.recommended?'추천했어요.':'추천을 취소했어요.';}catch(error){feedback.textContent=error.message;}finally{recommend.disabled=false;}};
+    // Count only opening the post, never loading comment pages or listing posts.
+    void request(url+'&interaction=view',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).then(counts=>updateCounts({views:counts.views})).catch(()=>{});
+   }
    if (post.hidden) view.prepend(element('p','운영자가 숨긴 글이에요. 작성자와 운영자만 볼 수 있어요.','board-hidden-label'));
    article.append(view);
    if (canManage) addPostActions(article,view,post,url);

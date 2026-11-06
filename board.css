@@ -54,6 +54,11 @@ body{margin:0;background:#f4f7fc;color:#17243b;font:16px/1.6 system-ui,sans-seri
 .board-empty-icon{display:inline-grid;place-items:center;width:54px;height:54px;border-radius:17px;background:#e8f2ff;color:#2163b8}
 .board-empty-icon::before{content:"···";display:grid;place-items:center;width:24px;height:17px;border:2px solid currentColor;border-radius:7px 7px 7px 2px;font-weight:800;line-height:1}
 .board-meta{display:block;color:#5e6c82;font-size:13px;margin:4px 0}
+.board-engagement{display:flex;flex-direction:column;align-items:center;gap:8px;margin:26px 0 18px}
+.board-recommend{min-width:116px;padding:10px 22px;border:1px solid #bdd3f4;border-radius:999px;background:#f3f8ff;color:#195bb2;font:inherit;font-weight:650;cursor:pointer}
+.board-recommend:hover{background:#e7f1ff}.board-recommend[aria-pressed=true]{background:#195bb2;border-color:#195bb2;color:white}
+.board-recommend:focus-visible{outline:3px solid #8bbcff;outline-offset:3px}.board-recommend:disabled{opacity:.6;cursor:wait}
+.board-engagement-feedback{margin:0;color:#5e6c82;font-size:13px}.board-engagement-feedback:empty{display:none}
 .board-body{white-space:pre-wrap;overflow-wrap:anywhere}
 .board form label{display:block;margin:10px 0 5px;font-weight:600}
 .board input,.board textarea{display:block;width:100%;padding:10px;border:1px solid #ccd8ea;border-radius:8px;font:inherit;margin-bottom:12px}

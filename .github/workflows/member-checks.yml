@@ -7,6 +7,8 @@ on:
       - 'functions/api/account/**'
       - 'scripts/*member*'
       - 'scripts/account-handler.mjs'
+      - 'scripts/board-handler.mjs'
+      - 'board.*'
       - 'scripts/*report*'
       - 'company-reports.js'
       - 'supabase/**'
