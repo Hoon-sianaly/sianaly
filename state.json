@@ -1626,5 +1626,209 @@
         "report": "data/dart-review-20261103.json"
       }
     ]
+  },
+  "publication": {
+    "commit": "8c9a4c42e6f3ac2bc0e2cdca79b3254507fba618",
+    "candidate": {
+      "schemaVersion": 1,
+      "status": "validated",
+      "baseSha": "ce56e0a530f97f859e94fb359280b46b459a1dbe",
+      "asOf": "2026-11-06",
+      "checkedAt": "2026-11-06T00:19:37.533Z",
+      "strategy": "new-disclosures",
+      "stats": {
+        "listRequests": 9,
+        "listedFilings": 143,
+        "targetIssuers": 6,
+        "financialRequests": 7,
+        "pendingJobs": 6,
+        "reviewItems": 48,
+        "reviewedItemsClosed": 0
+      },
+      "results": [
+        {
+          "key": "lghellovision",
+          "status": "pending",
+          "changes": [],
+          "pending": [
+            {
+              "id": "lghellovision/preliminary/20261104800154",
+              "key": "lghellovision",
+              "kind": "preliminary",
+              "receipt": "20261104800154",
+              "title": "[첨부정정]연결재무제표기준영업(잠정)실적(공정공시)              ",
+              "reason": "Official earnings document unavailable"
+            }
+          ],
+          "held": []
+        },
+        {
+          "key": "lotteshopping",
+          "status": "changed",
+          "changes": [
+            {
+              "year": 2026,
+              "quarter": 3,
+              "receipt": "20261106800080",
+              "fields": [
+                {
+                  "field": "sales",
+                  "before": null,
+                  "after": 3.653202
+                },
+                {
+                  "field": "op",
+                  "before": null,
+                  "after": 0.17556
+                }
+              ]
+            }
+          ],
+          "pending": [],
+          "held": []
+        },
+        {
+          "key": "kolmar",
+          "status": "changed",
+          "changes": [
+            {
+              "year": 2026,
+              "quarter": 3,
+              "receipt": "20261106800151",
+              "fields": [
+                {
+                  "field": "sales",
+                  "before": null,
+                  "after": 0.828166
+                },
+                {
+                  "field": "op",
+                  "before": null,
+                  "after": 0.081931
+                }
+              ]
+            }
+          ],
+          "pending": [],
+          "held": []
+        },
+        {
+          "key": "seers",
+          "status": "changed",
+          "changes": [
+            {
+              "year": 2026,
+              "quarter": 3,
+              "receipt": "20261106900007",
+              "fields": [
+                {
+                  "field": "sales",
+                  "before": null,
+                  "after": 0.009776
+                },
+                {
+                  "field": "op",
+                  "before": null,
+                  "after": -0.001899
+                }
+              ]
+            }
+          ],
+          "pending": [],
+          "held": []
+        },
+        {
+          "key": "toolgen",
+          "status": "pending",
+          "changes": [],
+          "pending": [
+            {
+              "id": "toolgen/2026/11012",
+              "key": "toolgen",
+              "year": 2026,
+              "report": "11012",
+              "receipt": "20261023000304",
+              "title": "[기재정정]반기보고서 (2026.06)",
+              "reason": "Financial API receipt is older than the filing or published data"
+            }
+          ],
+          "held": []
+        },
+        {
+          "key": "miwonchemicals",
+          "status": "changed",
+          "changes": [
+            {
+              "year": 2026,
+              "quarter": 3,
+              "receipt": "20261106000023",
+              "fields": [
+                {
+                  "field": "sales",
+                  "before": null,
+                  "after": 0.115307827798
+                },
+                {
+                  "field": "op",
+                  "before": null,
+                  "after": 0.022945670848
+                }
+              ]
+            }
+          ],
+          "pending": [],
+          "held": []
+        }
+      ],
+      "ready": [
+        {
+          "id": "lotteshopping/preliminary/20261106800080",
+          "key": "lotteshopping",
+          "kind": "preliminary",
+          "receipt": "20261106800080",
+          "title": "연결재무제표기준영업(잠정)실적(공정공시)              "
+        },
+        {
+          "id": "kolmar/preliminary/20261106800151",
+          "key": "kolmar",
+          "kind": "preliminary",
+          "receipt": "20261106800151",
+          "title": "연결재무제표기준영업(잠정)실적(공정공시)              "
+        },
+        {
+          "id": "seers/preliminary/20261106900007",
+          "key": "seers",
+          "kind": "preliminary",
+          "receipt": "20261106900007",
+          "title": "연결재무제표기준영업(잠정)실적(공정공시)              "
+        },
+        {
+          "id": "miwonchemicals/2026/11014",
+          "key": "miwonchemicals",
+          "year": 2026,
+          "report": "11014",
+          "receipt": "20261106000023",
+          "title": "분기보고서 (2026.09)"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/companies/kolmar.json",
+          "content": "{\n  \"schemaVersion\": 1,\n  \"profile\": {\n    \"key\": \"kolmar\",\n    \"rank\": 125,\n    \"name\": \"한국콜마\",\n    \"ticker\": \"161890\",\n    \"type\": \"화장품·의약품 기업\"\n  },\n  \"overview\": {\n    \"short\": \"화장품 ODM과 의약품·용기 사업을 운영하는 회사\",\n    \"summary\": \"화장품 ODM과 의약품·용기 사업을 운영하는 회사입니다. 화장품 고객 주문과 수출 성장의 구성을 봐야 합니다.\",\n    \"takeaways\": [\n      \"화장품 ODM과 의약품·용기 사업을 운영하는 회사입니다.\",\n      \"화장품 ODM: 화장품 처방 개발과 위탁 생산을 수행합니다.\",\n      \"전문의약품: 연결 자회사를 통해 의약품 등을 판매합니다.\",\n      \"패키징: 화장품 용기와 디스펜서를 제조합니다.\",\n      \"화장품 고객 주문과 수출 성장의 구성을 봐야 합니다.\"\n    ],\n    \"business\": [\n      {\n        \"name\": \"화장품 ODM\",\n        \"desc\": \"화장품 처방 개발과 위탁 생산을 수행합니다.\"\n      },\n      {\n        \"name\": \"전문의약품\",\n        \"desc\": \"연결 자회사를 통해 의약품 등을 판매합니다.\"\n      },\n      {\n        \"name\": \"패키징\",\n        \"desc\": \"화장품 용기와 디스펜서를 제조합니다.\"\n      }\n    ],\n    \"drivers\": [\n      {\n        \"title\": \"브랜드 주문\",\n        \"desc\": \"화장품 고객 주문과 수출 성장의 구성을 봐야 합니다.\"\n      },\n      {\n        \"title\": \"의약품 손익\",\n        \"desc\": \"의약품 판매·연구 비용과 자회사 손익이 중요합니다.\"\n      },\n      {\n        \"title\": \"생산 효율\",\n        \"desc\": \"공장 가동률·원가와 용기 사업의 수익성을 확인해야 합니다.\"\n      }\n    ],\n    \"financialNote\": \"연결 실적에는 의약품·패키징 자회사가 포함됩니다. 화장품 사업만의 실적과 구분합니다. 연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.\",\n    \"quarterlyNote\": \"DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다.\"\n  },\n  \"market\": {},\n  \"financials\": {\n    \"unit\": \"KRW_trillion\",\n    \"basis\": \"consolidated\",\n    \"verification\": {\n      \"status\": \"verified\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    \"annual\": [\n      {\n        \"year\": 2024,\n        \"sales\": 2.452063980463,\n        \"op\": 0.193850424348,\n        \"net\": 0.125324615188,\n        \"sourceIds\": [\n          \"dart-2024-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250318001173\",\n          \"rawKRW\": {\n            \"sales\": \"2452063980463\",\n            \"op\": \"193850424348\",\n            \"net\": \"125324615188\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2025,\n        \"sales\": 2.722419169325,\n        \"op\": 0.239594740448,\n        \"net\": 0.168220449431,\n        \"sourceIds\": [\n          \"dart-2025-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260318001196\",\n          \"rawKRW\": {\n            \"sales\": \"2722419169325\",\n            \"op\": \"239594740448\",\n            \"net\": \"168220449431\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"quarterly\": [\n      {\n        \"year\": 2025,\n        \"quarter\": 2,\n        \"sales\": 0.730849244128,\n        \"op\": 0.07347727989,\n        \"sourceIds\": [\n          \"dart-2025-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250814003001\",\n          \"rawKRW\": {\n            \"sales\": \"730849244128\",\n            \"op\": \"73477279890\",\n            \"net\": \"41803205089\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 1,\n        \"sales\": 0.728036468369,\n        \"op\": 0.07888601958,\n        \"sourceIds\": [\n          \"dart-2026-q1\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260514000877\",\n          \"rawKRW\": {\n            \"sales\": \"728036468369\",\n            \"op\": \"78886019580\",\n            \"net\": \"59954328251\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 2,\n        \"sales\": 0.861276727774,\n        \"op\": 0.110340891223,\n        \"sourceIds\": [\n          \"dart-2026-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260814002721\",\n          \"rawKRW\": {\n            \"sales\": \"861276727774\",\n            \"op\": \"110340891223\",\n            \"net\": \"70615085562\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 3,\n        \"sales\": 0.828166,\n        \"op\": 0.081931,\n        \"sourceIds\": [\n          \"dart-earnings-2026-q3\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20261106800151\",\n          \"rawKRW\": {\n            \"sales\": \"828166000000\",\n            \"op\": \"81931000000\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"매출액/당해실적\"\n            ],\n            \"op\": [\n              \"영업이익/당해실적\"\n            ]\n          }\n        },\n        \"disclosureStatus\": \"preliminary\",\n        \"reportPeriod\": \"2026-07-01–2026-09-30\"\n      }\n    ],\n    \"automaticUpdate\": {\n      \"provider\": \"OpenDART\",\n      \"scope\": \"Validated financial statements and explicitly labelled preliminary earnings\",\n      \"updatedAt\": \"2026.11.06\"\n    }\n  },\n  \"sources\": [\n    {\n      \"id\": \"dart-2025-annual\",\n      \"label\": \"2025년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001196\",\n      \"published\": \"2026.03.18\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2026-q1\",\n      \"label\": \"2026년 1분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260514000877\",\n      \"published\": \"2026.05.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2026-q2\",\n      \"label\": \"2026년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002721\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2024-annual\",\n      \"label\": \"2024년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318001173\",\n      \"published\": \"2025.03.18\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2025-q2\",\n      \"label\": \"2025년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003001\",\n      \"published\": \"2025.08.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"business\",\n      \"label\": \"한국콜마 2026년 반기보고서 · 사업의 내용\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002721\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-earnings-2026-q3\",\n      \"label\": \"2026년 3분기 영업(잠정)실적 공정공시 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800151\",\n      \"published\": \"2026.11.06\",\n      \"verifiedAt\": \"2026.11.06\"\n    }\n  ],\n  \"sectionSourceIds\": {\n    \"business\": [\n      \"business\"\n    ],\n    \"drivers\": [\n      \"business\"\n    ]\n  },\n  \"glossary\": [\n    {\n      \"name\": \"연결 기준\",\n      \"desc\": \"회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다.\"\n    },\n    {\n      \"name\": \"가동률\",\n      \"desc\": \"생산설비가 만들 수 있는 양에 비해 실제 얼마나 생산하고 있는지를 나타내는 비율입니다.\"\n    },\n    {\n      \"name\": \"ODM\",\n      \"desc\": \"생산사가 제품을 직접 연구·개발하고 고객 브랜드 이름으로 제조·공급하는 방식입니다.\"\n    },\n    {\n      \"name\": \"패키징\",\n      \"desc\": \"반도체 칩을 보호하고 외부 회로에 연결할 수 있게 조립하는 과정입니다.\"\n    },\n    {\n      \"name\": \"전문의약품\",\n      \"desc\": \"의사의 처방 등이 필요한 의약품입니다.\"\n    }\n  ],\n  \"presentation\": {\n    \"compact\": true,\n    \"chartStyle\": \"comparison\"\n  }\n}\n"
+        },
+        {
+          "path": "data/companies/lotteshopping.json",
+          "content": "{\n  \"schemaVersion\": 1,\n  \"profile\": {\n    \"key\": \"lotteshopping\",\n    \"rank\": 141,\n    \"name\": \"롯데쇼핑\",\n    \"ticker\": \"023530\",\n    \"type\": \"종합 유통 기업\"\n  },\n  \"overview\": {\n    \"short\": \"백화점·마트·슈퍼와 온라인 유통 사업을 운영하는 회사\",\n    \"summary\": \"백화점·마트·슈퍼와 온라인 유통 사업을 운영하는 회사입니다. 소비 경기와 점포별 판매·수익성이 중요합니다.\",\n    \"takeaways\": [\n      \"백화점·마트·슈퍼와 온라인 유통 사업을 운영하는 회사입니다.\",\n      \"오프라인 유통: 백화점·마트·슈퍼와 가전 유통을 운영합니다.\",\n      \"온라인·홈쇼핑: 온라인 쇼핑과 홈쇼핑 사업을 수행합니다.\",\n      \"관련 서비스: 영화상영 등 연결 계열 사업을 보유합니다.\",\n      \"소비 경기와 점포별 판매·수익성이 중요합니다.\"\n    ],\n    \"business\": [\n      {\n        \"name\": \"오프라인 유통\",\n        \"desc\": \"백화점·마트·슈퍼와 가전 유통을 운영합니다.\"\n      },\n      {\n        \"name\": \"온라인·홈쇼핑\",\n        \"desc\": \"온라인 쇼핑과 홈쇼핑 사업을 수행합니다.\"\n      },\n      {\n        \"name\": \"관련 서비스\",\n        \"desc\": \"영화상영 등 연결 계열 사업을 보유합니다.\"\n      }\n    ],\n    \"drivers\": [\n      {\n        \"title\": \"소비·매장\",\n        \"desc\": \"소비 경기와 점포별 판매·수익성이 중요합니다.\"\n      },\n      {\n        \"title\": \"사업 효율\",\n        \"desc\": \"적자 사업 조정과 온라인 경쟁 비용을 봐야 합니다.\"\n      },\n      {\n        \"title\": \"시설·부채\",\n        \"desc\": \"점포 투자·임차료·차입과 현금흐름을 확인해야 합니다.\"\n      }\n    ],\n    \"financialNote\": \"연결 기준입니다. 분기 수치는 각 3개월의 실적입니다.\",\n    \"quarterlyNote\": \"DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적을 2분기 수치로 표시하지 않습니다.\"\n  },\n  \"market\": {},\n  \"financials\": {\n    \"unit\": \"KRW_trillion\",\n    \"basis\": \"consolidated\",\n    \"verification\": {\n      \"status\": \"verified\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    \"annual\": [\n      {\n        \"year\": 2024,\n        \"sales\": 13.98657827006,\n        \"op\": 0.47311396478,\n        \"net\": -0.994075271502,\n        \"sourceIds\": [\n          \"dart-2024-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250314001659\",\n          \"rawKRW\": {\n            \"sales\": \"13986578270060\",\n            \"op\": \"473113964780\",\n            \"net\": \"-994075271502\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2025,\n        \"sales\": 13.738354725833,\n        \"op\": 0.547037221095,\n        \"net\": 0.073555557525,\n        \"sourceIds\": [\n          \"dart-2025-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260312001405\",\n          \"rawKRW\": {\n            \"sales\": \"13738354725833\",\n            \"op\": \"547037221095\",\n            \"net\": \"73555557525\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"quarterly\": [\n      {\n        \"year\": 2025,\n        \"quarter\": 2,\n        \"sales\": 3.349696312762,\n        \"op\": 0.040639191033,\n        \"sourceIds\": [\n          \"dart-2025-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250814003971\",\n          \"rawKRW\": {\n            \"sales\": \"3349696312762\",\n            \"op\": \"40639191033\",\n            \"net\": \"-10321824905\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 1,\n        \"sales\": 3.581595079314,\n        \"op\": 0.252882436712,\n        \"sourceIds\": [\n          \"dart-2026-q1\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260515002817\",\n          \"rawKRW\": {\n            \"sales\": \"3581595079314\",\n            \"op\": \"252882436712\",\n            \"net\": \"143872271700\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 2,\n        \"sales\": 3.485027676575,\n        \"op\": 0.089908892335,\n        \"sourceIds\": [\n          \"dart-2026-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260814003975\",\n          \"rawKRW\": {\n            \"sales\": \"3485027676575\",\n            \"op\": \"89908892335\",\n            \"net\": \"14617059196\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 3,\n        \"sales\": 3.653202,\n        \"op\": 0.17556,\n        \"sourceIds\": [\n          \"dart-earnings-2026-q3\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20261106800080\",\n          \"rawKRW\": {\n            \"sales\": \"3653202000000\",\n            \"op\": \"175560000000\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"매출액/당해실적\"\n            ],\n            \"op\": [\n              \"영업이익/당해실적\"\n            ]\n          }\n        },\n        \"disclosureStatus\": \"preliminary\",\n        \"reportPeriod\": \"2026-07-01–2026-09-30\"\n      }\n    ],\n    \"automaticUpdate\": {\n      \"provider\": \"OpenDART\",\n      \"scope\": \"Validated financial statements and explicitly labelled preliminary earnings\",\n      \"updatedAt\": \"2026.11.06\"\n    }\n  },\n  \"sources\": [\n    {\n      \"id\": \"dart-2025-annual\",\n      \"label\": \"2025년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001405\",\n      \"published\": \"2026.03.12\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2026-q1\",\n      \"label\": \"2026년 1분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002817\",\n      \"published\": \"2026.05.15\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2026-q2\",\n      \"label\": \"2026년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003975\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2024-annual\",\n      \"label\": \"2024년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250314001659\",\n      \"published\": \"2025.03.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-2025-q2\",\n      \"label\": \"2025년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003971\",\n      \"published\": \"2025.08.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"business\",\n      \"label\": \"롯데쇼핑 2026년 반기보고서 · 사업의 내용\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003975\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.08\"\n    },\n    {\n      \"id\": \"dart-earnings-2026-q3\",\n      \"label\": \"2026년 3분기 영업(잠정)실적 공정공시 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800080\",\n      \"published\": \"2026.11.06\",\n      \"verifiedAt\": \"2026.11.06\"\n    }\n  ],\n  \"sectionSourceIds\": {\n    \"business\": [\n      \"business\"\n    ],\n    \"drivers\": [\n      \"business\"\n    ]\n  },\n  \"glossary\": [\n    {\n      \"name\": \"연결 기준\",\n      \"desc\": \"회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다.\"\n    },\n    {\n      \"name\": \"차입\",\n      \"desc\": \"은행 대출이나 채권 발행 등으로 외부에서 돈을 빌리는 것입니다.\"\n    },\n    {\n      \"name\": \"임차료\",\n      \"desc\": \"건물·시설 등을 빌려 사용하는 대가로 지급하는 돈입니다.\"\n    }\n  ],\n  \"presentation\": {\n    \"compact\": true,\n    \"chartStyle\": \"comparison\"\n  }\n}\n"
+        },
+        {
+          "path": "data/companies/miwonchemicals.json",
+          "content": "{\n  \"schemaVersion\": 1,\n  \"profile\": {\n    \"key\": \"miwonchemicals\",\n    \"name\": \"미원화학\",\n    \"ticker\": \"134380\",\n    \"rank\": 468,\n    \"type\": \"황산·계면활성제\"\n  },\n  \"overview\": {\n    \"short\": \"미원화학은 황산·분말 유황과 계면활성제 등 화학제품을 만드는 회사\",\n    \"summary\": \"미원화학은 황산·분말 유황과 계면활성제 등 화학제품을 만드는 회사입니다. 유황 관련 제품은 고무·전자·화학 등 산업의 공정에 쓰입니다.\",\n    \"takeaways\": [\n      \"미원화학은 황산·분말 유황과 계면활성제 등 화학제품을 만드는 회사입니다.\",\n      \"유황 관련 제품은 고무·전자·화학 등 산업의 공정에 쓰입니다.\",\n      \"계면활성제는 세정·혼합 등 여러 용도의 소재로 공급합니다.\",\n      \"국내 판매와 수출을 통해 산업 고객에게 제품을 판매합니다.\",\n      \"이름이 비슷한 다른 미원 계열사의 전체 사업과 매출을 이 회사와 구분해야 합니다.\"\n    ],\n    \"business\": [\n      {\n        \"name\": \"유황·황산\",\n        \"desc\": \"분말 유황과 황산 등 산업용 화학제품을 생산·판매합니다.\"\n      },\n      {\n        \"name\": \"계면활성제\",\n        \"desc\": \"세정·혼합 등의 기능에 쓰이는 계면활성제를 공급합니다.\"\n      },\n      {\n        \"name\": \"국내외 판매\",\n        \"desc\": \"산업 고객별 용도와 국내외 판매망을 통해 제품을 공급합니다.\"\n      }\n    ],\n    \"drivers\": [\n      {\n        \"title\": \"제품·고객 수요\",\n        \"desc\": \"고무·화학 등 고객 생산과 용도별 판매를 확인합니다.\"\n      },\n      {\n        \"title\": \"원료·가격 차이\",\n        \"desc\": \"원료 가격과 최종 화학제품 판매가격의 차이가 이익에 중요합니다.\"\n      },\n      {\n        \"title\": \"수출·생산 비용\",\n        \"desc\": \"수출·환율과 공장 가동·물류 비용을 함께 봅니다.\"\n      }\n    ],\n    \"financialNote\": \"별도 기준입니다. 분기 수치는 각 3개월 실적입니다.\",\n    \"quarterlyNote\": \"DART 분기·반기 손익계산서의 3개월 실적입니다. 반기 누적과 구분합니다.\"\n  },\n  \"market\": {},\n  \"financials\": {\n    \"unit\": \"KRW_trillion\",\n    \"basis\": \"separate\",\n    \"verification\": {\n      \"status\": \"verified\",\n      \"verifiedAt\": \"2026.10.09\"\n    },\n    \"annual\": [\n      {\n        \"year\": 2024,\n        \"sales\": 0.256110289517,\n        \"op\": 0.028634790078,\n        \"net\": 0.026930538437,\n        \"sourceIds\": [\n          \"dart-2024-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250310000394\",\n          \"rawKRW\": {\n            \"sales\": \"256110289517\",\n            \"op\": \"28634790078\",\n            \"net\": \"26930538437\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2025,\n        \"sales\": 0.284512419024,\n        \"op\": 0.029153781514,\n        \"net\": 0.02472631045,\n        \"sourceIds\": [\n          \"dart-2025-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260309001317\",\n          \"rawKRW\": {\n            \"sales\": \"284512419024\",\n            \"op\": \"29153781514\",\n            \"net\": \"24726310450\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"quarterly\": [\n      {\n        \"year\": 2025,\n        \"quarter\": 2,\n        \"sales\": 0.070158179725,\n        \"op\": 0.008265286665,\n        \"sourceIds\": [\n          \"dart-2025-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250814001660\",\n          \"rawKRW\": {\n            \"sales\": \"70158179725\",\n            \"op\": \"8265286665\",\n            \"net\": \"5965347061\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 1,\n        \"sales\": 0.086411855559,\n        \"op\": 0.009001912621,\n        \"sourceIds\": [\n          \"dart-2026-q1\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260508000059\",\n          \"rawKRW\": {\n            \"sales\": \"86411855559\",\n            \"op\": \"9001912621\",\n            \"net\": \"8508209554\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 2,\n        \"sales\": 0.105425225124,\n        \"op\": 0.024349042189,\n        \"sourceIds\": [\n          \"dart-2026-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260814000187\",\n          \"rawKRW\": {\n            \"sales\": \"105425225124\",\n            \"op\": \"24349042189\",\n            \"net\": \"19658859073\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 3,\n        \"sales\": 0.115307827798,\n        \"op\": 0.022945670848,\n        \"sourceIds\": [\n          \"dart-2026-q3\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20261106000023\",\n          \"rawKRW\": {\n            \"sales\": \"115307827798\",\n            \"op\": \"22945670848\",\n            \"net\": \"15038070965\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"automaticUpdate\": {\n      \"provider\": \"OpenDART\",\n      \"scope\": \"Validated financial statements and explicitly labelled preliminary earnings\",\n      \"updatedAt\": \"2026.11.06\"\n    }\n  },\n  \"sources\": [\n    {\n      \"id\": \"dart-2025-annual\",\n      \"label\": \"2025년 연간 별도 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001317\",\n      \"published\": \"2026.03.09\",\n      \"verifiedAt\": \"2026.10.09\"\n    },\n    {\n      \"id\": \"dart-2026-q1\",\n      \"label\": \"2026년 1분기 별도 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260508000059\",\n      \"published\": \"2026.05.08\",\n      \"verifiedAt\": \"2026.10.09\"\n    },\n    {\n      \"id\": \"dart-2026-q2\",\n      \"label\": \"2026년 2분기 별도 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000187\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.09\"\n    },\n    {\n      \"id\": \"dart-2024-annual\",\n      \"label\": \"2024년 연간 별도 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250310000394\",\n      \"published\": \"2025.03.10\",\n      \"verifiedAt\": \"2026.10.09\"\n    },\n    {\n      \"id\": \"dart-2025-q2\",\n      \"label\": \"2025년 2분기 별도 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814001660\",\n      \"published\": \"2025.08.14\",\n      \"verifiedAt\": \"2026.10.09\"\n    },\n    {\n      \"id\": \"business\",\n      \"label\": \"미원화학 최신 반기보고서 · 사업의 내용\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000187\",\n      \"published\": \"2026.08.14\",\n      \"verifiedAt\": \"2026.10.09\"\n    },\n    {\n      \"id\": \"dart-2026-q3\",\n      \"label\": \"2026년 3분기 별도 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000023\",\n      \"published\": \"2026.11.06\",\n      \"verifiedAt\": \"2026.11.06\"\n    }\n  ],\n  \"sectionSourceIds\": {\n    \"business\": [\n      \"business\"\n    ],\n    \"drivers\": [\n      \"business\"\n    ]\n  },\n  \"glossary\": [\n    {\n      \"name\": \"별도 기준\",\n      \"desc\": \"자회사의 실적을 합산하지 않고 해당 회사 자체의 재무 정보를 표시한 기준입니다.\"\n    },\n    {\n      \"name\": \"공정\",\n      \"desc\": \"제품을 만들거나 설비를 완성하기 위해 순서대로 진행하는 작업 단계입니다.\"\n    },\n    {\n      \"name\": \"계면활성제\",\n      \"desc\": \"물과 기름 등의 경계면 성질을 바꾸어 세정·유화 등에 사용하는 물질입니다.\"\n    },\n    {\n      \"name\": \"황산\",\n      \"desc\": \"비료·화학제품 제조 등 산업에 쓰이는 강한 산성 화학물질입니다.\"\n    }\n  ],\n  \"presentation\": {\n    \"compact\": true,\n    \"chartStyle\": \"comparison\"\n  }\n}\n"
+        },
+        {
+          "path": "data/companies/seers.json",
+          "content": "{\n  \"schemaVersion\": 1,\n  \"profile\": {\n    \"key\": \"seers\",\n    \"name\": \"씨어스\",\n    \"ticker\": \"458870\",\n    \"rank\": 93,\n    \"type\": \"웨어러블 의료 플랫폼\"\n  },\n  \"overview\": {\n    \"short\": \"씨어스는 웨어러블 의료기기와 생체신호 분석 서비스를 제공하는 회사\",\n    \"summary\": \"씨어스는 웨어러블 의료기기와 생체신호 분석 서비스를 제공하는 회사입니다. mobiCARE는 심전도 분석을 통해 부정맥 진단을 돕습니다.\",\n    \"takeaways\": [\n      \"씨어스는 웨어러블 의료기기와 생체신호 분석 서비스를 제공하는 회사입니다.\",\n      \"mobiCARE는 심전도 분석을 통해 부정맥 진단을 돕습니다.\",\n      \"thynC는 입원환자의 생체신호를 모니터링하는 서비스입니다.\",\n      \"의료기기·소모품과 AI 분석을 의료기관의 진료 과정에 연결합니다.\",\n      \"병원 도입 수뿐 아니라 실제 검사·사용량과 서비스 운영비를 확인해야 합니다.\"\n    ],\n    \"business\": [\n      {\n        \"name\": \"심전도 분석\",\n        \"desc\": \"웨어러블 기기로 수집한 심전도를 분석해 의료진의 진단을 돕습니다.\"\n      },\n      {\n        \"name\": \"입원환자 모니터링\",\n        \"desc\": \"환자의 생체신호를 측정·감시하는 병원용 서비스를 제공합니다.\"\n      },\n      {\n        \"name\": \"기기·소모품\",\n        \"desc\": \"웨어러블 의료기기와 점착 소재, 환자 감시 장치를 개발·공급합니다.\"\n      }\n    ],\n    \"drivers\": [\n      {\n        \"title\": \"실제 사용량\",\n        \"desc\": \"도입 의료기관 수와 검사 건수·환자 사용량을 구분합니다.\"\n      },\n      {\n        \"title\": \"의료제도·허가\",\n        \"desc\": \"제품 인허가와 보험 수가, 병원 도입 절차를 확인합니다.\"\n      },\n      {\n        \"title\": \"운영 비용\",\n        \"desc\": \"기기·소모품 공급 원가와 분석·지원 인력, 개발비를 함께 살펴봅니다.\"\n      }\n    ],\n    \"financialNote\": \"연결 기준입니다. 분기는 실제 3개월 실적이며 반기 누적과 구분합니다. 최신 공시에서 재분류·수정된 과거 비교값을 반영했습니다.\",\n    \"quarterlyNote\": \"공식 손익계산서의 각 3개월 실적입니다.\"\n  },\n  \"market\": {},\n  \"financials\": {\n    \"unit\": \"KRW_trillion\",\n    \"basis\": \"consolidated\",\n    \"verification\": {\n      \"status\": \"verified\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    \"annual\": [\n      {\n        \"year\": 2024,\n        \"sales\": 0.00809975481,\n        \"op\": -0.008681501062,\n        \"net\": -0.008871453219,\n        \"sourceIds\": [\n          \"dart-2024-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260319000571\",\n          \"rawKRW\": {\n            \"sales\": \"8099754810\",\n            \"op\": \"-8681501062\",\n            \"net\": \"-8871453219\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2025,\n        \"sales\": 0.048170737719,\n        \"op\": 0.01632716647,\n        \"net\": 0.016045578543,\n        \"sourceIds\": [\n          \"dart-2025-annual\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260319000571\",\n          \"rawKRW\": {\n            \"sales\": \"48170737719\",\n            \"op\": \"16327166470\",\n            \"net\": \"16045578543\"\n          },\n          \"periodBasis\": \"annual\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      }\n    ],\n    \"quarterly\": [\n      {\n        \"year\": 2025,\n        \"quarter\": 2,\n        \"sales\": 0.007954083649,\n        \"op\": 0.001485484198,\n        \"sourceIds\": [\n          \"dart-2025-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20250812000096\",\n          \"rawKRW\": {\n            \"sales\": \"7954083649\",\n            \"op\": \"1485484198\",\n            \"net\": \"1499895527\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 1,\n        \"sales\": 0.032525756271,\n        \"op\": 0.013854047603,\n        \"sourceIds\": [\n          \"dart-2026-q1\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260512000005\",\n          \"rawKRW\": {\n            \"sales\": \"32525756271\",\n            \"op\": \"13854047603\",\n            \"net\": \"13724612600\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 2,\n        \"sales\": 0.028375516327,\n        \"op\": 0.012949759745,\n        \"sourceIds\": [\n          \"dart-2026-q2\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20260813000297\",\n          \"rawKRW\": {\n            \"sales\": \"28375516327\",\n            \"op\": \"12949759745\",\n            \"net\": \"12939614542\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"ifrs-full_Revenue\"\n            ],\n            \"op\": [\n              \"dart_OperatingIncomeLoss\"\n            ],\n            \"net\": [\n              \"ifrs-full_ProfitLoss\"\n            ]\n          }\n        }\n      },\n      {\n        \"year\": 2026,\n        \"quarter\": 3,\n        \"sales\": 0.009776,\n        \"op\": -0.001899,\n        \"sourceIds\": [\n          \"dart-earnings-2026-q3\"\n        ],\n        \"dart\": {\n          \"receipt\": \"20261106900007\",\n          \"rawKRW\": {\n            \"sales\": \"9776000000\",\n            \"op\": \"-1899000000\"\n          },\n          \"periodBasis\": \"three-month\",\n          \"accounts\": {\n            \"sales\": [\n              \"매출액/당해실적\"\n            ],\n            \"op\": [\n              \"영업이익/당해실적\"\n            ]\n          }\n        },\n        \"disclosureStatus\": \"preliminary\",\n        \"reportPeriod\": \"2026-07-01–2026-09-30\"\n      }\n    ],\n    \"automaticUpdate\": {\n      \"provider\": \"OpenDART\",\n      \"scope\": \"Validated financial statements and explicitly labelled preliminary earnings\",\n      \"updatedAt\": \"2026.11.06\"\n    }\n  },\n  \"sources\": [\n    {\n      \"id\": \"dart-2025-annual\",\n      \"label\": \"2025년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000571\",\n      \"published\": \"2026.03.19\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2026-q1\",\n      \"label\": \"2026년 1분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260512000005\",\n      \"published\": \"2026.05.12\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2026-q2\",\n      \"label\": \"2026년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000297\",\n      \"published\": \"2026.08.13\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2025-q2\",\n      \"label\": \"2025년 2분기 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250812000096\",\n      \"published\": \"2025.08.12\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-2024-annual\",\n      \"label\": \"2024년 연간 연결 재무제표 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260319000571\",\n      \"published\": \"2026.03.19\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"business\",\n      \"label\": \"씨어스 최신 정기보고서 · 사업의 내용\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000297\",\n      \"published\": \"2026.08.13\",\n      \"verifiedAt\": \"2026.10.14\"\n    },\n    {\n      \"id\": \"dart-earnings-2026-q3\",\n      \"label\": \"2026년 3분기 영업(잠정)실적 공정공시 · DART\",\n      \"url\": \"https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900007\",\n      \"published\": \"2026.11.06\",\n      \"verifiedAt\": \"2026.11.06\"\n    }\n  ],\n  \"sectionSourceIds\": {\n    \"business\": [\n      \"business\"\n    ],\n    \"drivers\": [\n      \"business\"\n    ]\n  },\n  \"glossary\": [\n    {\n      \"name\": \"연결 기준\",\n      \"desc\": \"회사와 지배하는 자회사의 재무 정보를 하나로 합친 기준입니다. 내부 거래는 제거합니다.\"\n    },\n    {\n      \"name\": \"AI\",\n      \"desc\": \"인공지능입니다. 데이터를 바탕으로 학습해 분류·예측·콘텐츠 생성 등의 작업을 수행하는 기술입니다.\"\n    },\n    {\n      \"name\": \"소모품\",\n      \"desc\": \"기기 사용 과정에서 소진돼 교체·보충하는 재료입니다. 인쇄용 토너 등이 해당합니다.\"\n    },\n    {\n      \"name\": \"플랫폼\",\n      \"desc\": \"여러 제품·기술을 개발하거나 서비스를 제공하는 데 활용하는 공통 기반입니다. 여기서는 약물 전달 등 기술 기반을 뜻합니다.\"\n    },\n    {\n      \"name\": \"재분류\",\n      \"desc\": \"사업 구분이나 회계 표시가 바뀌어 과거 비교 수치를 같은 기준으로 다시 나누는 것입니다.\"\n    },\n    {\n      \"name\": \"웨어러블\",\n      \"desc\": \"몸에 착용할 수 있는 형태의 기기입니다.\"\n    },\n    {\n      \"name\": \"심전도\",\n      \"desc\": \"심장 활동에서 발생하는 전기 신호를 기록한 검사 정보입니다.\"\n    }\n  ],\n  \"presentation\": {\n    \"compact\": true,\n    \"chartStyle\": \"comparison\"\n  }\n}\n"
+        }
+      ]
+    }
   }
 }
