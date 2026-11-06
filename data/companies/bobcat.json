@@ -106,6 +106,31 @@
         "sourceIds": [
           "q2"
         ]
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 2.4635,
+        "op": 0.1674,
+        "sourceIds": [
+          "review-20261106-bobcat-q3",
+          "review-20261106-bobcat-q3-dart"
+        ],
+        "reportedKRW": {
+          "sales": "2463500000000",
+          "op": "167400000000"
+        },
+        "disclosureStatus": "preliminary",
+        "reportPeriod": "2026-07-01–2026-09-30",
+        "numericReview": {
+          "asOf": "2026-11-06",
+          "report": "dart-review-20261106.json",
+          "precisionKRW": {
+            "sales": "100000000",
+            "op": "100000000"
+          },
+          "method": "official-KRW-preliminary-original"
+        }
       }
     ],
     "highlightFormat": "trillion"
@@ -152,6 +177,20 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003597",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "review-20261106-bobcat-q3",
+      "label": "2026년 3분기 연결 잠정실적 · 공식 원화 발표",
+      "url": "https://www.doosanbobcat.com/kr/mediacenter/news/detail?id=332",
+      "published": "2026.10.29",
+      "verifiedAt": "2026.11.06"
+    },
+    {
+      "id": "review-20261106-bobcat-q3-dart",
+      "label": "2026년 3분기 연결 영업(잠정)실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800568",
+      "published": "2026.10.29",
+      "verifiedAt": "2026.11.06"
     }
   ],
   "sectionSourceIds": {

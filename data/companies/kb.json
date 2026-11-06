@@ -164,6 +164,31 @@
             ]
           }
         }
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 4.6366,
+        "op": 2.367289,
+        "sourceIds": [
+          "review-20261106-kb-q3",
+          "review-20261106-kb-q3-dart"
+        ],
+        "reportedKRW": {
+          "sales": "4636600000000",
+          "op": "2367289000000"
+        },
+        "disclosureStatus": "preliminary",
+        "reportPeriod": "2026-07-01–2026-09-30",
+        "numericReview": {
+          "asOf": "2026-11-06",
+          "report": "dart-review-20261106.json",
+          "precisionKRW": {
+            "sales": "100000000",
+            "op": "1000000"
+          },
+          "method": "official-IR-and-DART-metric-reconciliation"
+        }
       }
     ],
     "highlightFormat": "mixed",
@@ -227,6 +252,20 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000667",
       "published": "2026.06.19",
       "verifiedAt": "2026.10.10"
+    },
+    {
+      "id": "review-20261106-kb-q3",
+      "label": "2026년 3분기 연결 잠정실적 · 회사 공식 IR",
+      "url": "https://www.kbfg.com/data/ir_presentation/2026_3QPT_ENG.pdf",
+      "published": "2026.10.29",
+      "verifiedAt": "2026.11.06"
+    },
+    {
+      "id": "review-20261106-kb-q3-dart",
+      "label": "2026년 3분기 연결 영업(잠정)실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800345",
+      "published": "2026.10.29",
+      "verifiedAt": "2026.11.06"
     }
   ],
   "sectionSourceIds": {

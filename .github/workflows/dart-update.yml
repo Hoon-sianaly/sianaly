@@ -12,7 +12,7 @@ on:
       - 'scripts/dart-disclosures.cjs'
       - 'scripts/dart-earnings.cjs'
       - 'scripts/dart-review.cjs'
-      - 'data/dart-review-20261103.json'
+      - 'data/dart-review-*.json'
       - 'data/dart-companies.json'
 permissions:
   contents: write

@@ -23,7 +23,7 @@ function reconcile(state,ledger,records){
    resolved=['monthly','basis','subsidiary'].includes(decision.exclusion)&&Boolean(decision.reason);
   }else if(decision.status!=='deferred')throw Error('Unknown review decision');
   if(resolved){
-   const history={key:item.key,receipt:item.receipt,title:item.title,status:decision.status,reason:decision.reason,reviewedAt:decision.reviewedAt,report:'data/dart-review-20261103.json'};
+   const history={key:item.key,receipt:item.receipt,title:item.title,status:decision.status,reason:decision.reason,reviewedAt:decision.reviewedAt,report:decision.report||'data/dart-review-20261103.json'};
    if(!next.reviewHistory.some(r=>r.key===item.key&&r.receipt===item.receipt))next.reviewHistory.push(history);
    closed.push(history);
   }else remaining.push({...item,reviewedAt:decision.reviewedAt,reviewReason:decision.reason,followUp:decision.followUp||'Published financial evidence must match before this item can close'});
@@ -33,6 +33,17 @@ function reconcile(state,ledger,records){
 }
 function reconcileCheckout(state,root=path.resolve(__dirname,'..')){
  const ledger=JSON.parse(fs.readFileSync(path.join(root,'data/dart-review-20261103.json'),'utf8')),records={};
+ const followUpFile=path.join(root,'data/dart-review-20261106.json');
+ if(fs.existsSync(followUpFile)){
+  const followUp=JSON.parse(fs.readFileSync(followUpFile,'utf8'));
+  const decisions=new Map(ledger.results.map(r=>[r.key+'/'+r.receipt,r]));
+  for(const r of followUp.results){
+   const previous=decisions.get(r.key+'/'+r.receipt);
+   if(!previous||previous.status!=='deferred')throw Error('Follow-up must reference an existing held receipt');
+   decisions.set(r.key+'/'+r.receipt,r);
+  }
+  ledger.results=[...decisions.values()];
+ }
  for(const {key,status}of ledger.results)if(['updated','confirmed'].includes(status)&&!records[key])records[key]=JSON.parse(fs.readFileSync(path.join(root,`data/companies/${key}.json`),'utf8'));
  return reconcile(state,ledger,records);
 }

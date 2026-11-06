@@ -102,6 +102,31 @@
         "sourceIds": [
           "quarter"
         ]
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 3.981,
+        "op": 1.584629,
+        "sourceIds": [
+          "review-20261106-shinhan-q3",
+          "review-20261106-shinhan-q3-dart"
+        ],
+        "reportedKRW": {
+          "sales": "3981000000000",
+          "op": "1584629000000"
+        },
+        "disclosureStatus": "preliminary",
+        "reportPeriod": "2026-07-01–2026-09-30",
+        "numericReview": {
+          "asOf": "2026-11-06",
+          "report": "dart-review-20261106.json",
+          "precisionKRW": {
+            "sales": "100000000",
+            "op": "1000000"
+          },
+          "method": "official-IR-and-DART-metric-reconciliation"
+        }
       }
     ],
     "highlightFormat": "mixed",
@@ -139,6 +164,20 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261007000223",
       "published": "2026.10.07",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "review-20261106-shinhan-q3",
+      "label": "2026년 3분기 연결 잠정실적 · 회사 공식 IR",
+      "url": "https://shinhangroup.com/main/downloadAttach?attachNo=b45c5537dcd94ff68c51124c049584f8&seq=1",
+      "published": "2026.10.27",
+      "verifiedAt": "2026.11.06"
+    },
+    {
+      "id": "review-20261106-shinhan-q3-dart",
+      "label": "2026년 3분기 연결 영업(잠정)실적 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800211",
+      "published": "2026.10.27",
+      "verifiedAt": "2026.11.06"
     }
   ],
   "sectionSourceIds": {
