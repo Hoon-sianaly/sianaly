@@ -10,11 +10,16 @@
  };
  function node(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
  function say(text){toast.textContent=text;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4500);}
- function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.',invalid_email:'이메일 주소를 확인해 주세요.',invalid_password:'비밀번호는 10~128자로 설정해 주세요.',too_many_attempts:'요청이 많아요. 잠시 후 다시 시도해 주세요.',email_login_failed:'이메일과 비밀번호를 확인해 주세요.',email_signup_failed:'가입하지 못했어요. 이미 가입한 이메일이라면 로그인해 주세요.',email_confirmation_required:'이메일 가입 설정을 확인 중이에요. 잠시 후 다시 시도해 주세요.',recovery_unavailable:'메일을 보내지 못했어요. 잠시 후 다시 시도해 주세요.',recovery_invalid:'링크가 만료됐거나 이미 사용됐어요. 재설정 메일을 다시 받아 주세요.',recovery_required:'비밀번호 변경 시간이 지났어요. 재설정 메일을 다시 받아 주세요.',password_reused:'이전과 다른 비밀번호를 입력해 주세요.',password_update_failed:'비밀번호를 변경하지 못했어요. 다른 비밀번호로 다시 시도해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
+ function errorText(error){return ({login_required:'로그인 후 이용할 수 있어요.',captcha_required:'보안 확인을 완료해 주세요.',captcha_invalid:'보안 확인이 만료됐어요. 다시 확인해 주세요.',captcha_unavailable:'보안 확인을 준비 중이에요. 잠시 후 다시 이용해 주세요.',reauth_required:'탈퇴하려면 다시 로그인해 주세요.',confirmation_required:'확인 문구를 정확히 입력해 주세요.',invalid_company:'이 기업은 저장할 수 없어요.',invalid_nickname:'별명은 글자·숫자·공백·밑줄·하이픈으로 2~20자 입력해 주세요.',invalid_email:'이메일 주소를 확인해 주세요.',invalid_password:'비밀번호는 10~128자로 설정해 주세요.',too_many_attempts:'요청이 많아요. 잠시 후 다시 시도해 주세요.',email_login_failed:'이메일과 비밀번호를 확인해 주세요.',email_signup_failed:'가입하지 못했어요. 이미 가입한 이메일이라면 로그인해 주세요.',email_confirmation_required:'이메일 가입 설정을 확인 중이에요. 잠시 후 다시 시도해 주세요.',recovery_unavailable:'메일을 보내지 못했어요. 잠시 후 다시 시도해 주세요.',recovery_invalid:'링크가 만료됐거나 이미 사용됐어요. 재설정 메일을 다시 받아 주세요.',recovery_required:'비밀번호 변경 시간이 지났어요. 재설정 메일을 다시 받아 주세요.',password_reused:'이전과 다른 비밀번호를 입력해 주세요.',password_update_failed:'비밀번호를 변경하지 못했어요. 다른 비밀번호로 다시 시도해 주세요.'})[error.code]||'요청을 처리하지 못했어요. 잠시 후 다시 시도해 주세요.';}
  function showDialog(title){
-  dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
+  window.SianalyCaptcha?.clear(dialog);dialog.replaceChildren();const h=node('h2',title);h.id='memberDialogTitle';const close=node('button','×','member-dialog-close');close.type='button';close.setAttribute('aria-label','계정 창 닫기');close.onclick=()=>dialog.close();dialog.append(h,close);if(!dialog.open)dialog.showModal();
  }
  function info(){const details=node('details',undefined,'member-information');details.append(node('summary','회원 정보 안내'),node('p','네이버·카카오 또는 이메일로 가입할 수 있어요. 가입 후 사이트에서 사용할 별명을 설정해요.'),node('p','이메일과 비밀번호는 회원 인증 서비스에서 가입·로그인에 사용해요. 소셜 로그인에서 동의한 정보도 인증 서비스에 보관될 수 있어요.'),node('p','탈퇴하면 회원 인증 정보와 즐겨찾기가 삭제돼요. 작성한 글·댓글은 남으며 작성자는 ‘탈퇴한 회원’으로 표시돼요.'));return details;}
+ function mountCaptcha(form,submit){
+  if(!config.captcha?.required)return;
+  if(window.SianalyCaptcha)window.SianalyCaptcha.mount(form,submit,config.captcha);
+  else {submit.disabled=true;form.append(node('p','보안 확인을 불러오지 못했어요. 새로고침 후 다시 이용해 주세요.','member-error'));}
+ }
  function loginDialog(signingUp=false){
   showDialog(signingUp?'SIANALY 회원가입':'SIANALY 로그인');
   dialog.append(node('p',signingUp?'이메일·비밀번호·별명을 입력하면 바로 가입돼요.':pendingCompany?'로그인하고 이 기업을 즐겨찾기에 저장하세요.':'가입한 이메일과 비밀번호를 입력해 주세요.'));
@@ -42,9 +47,9 @@
     form.reset();publishChange();
     try{if(pendingCompany)sessionStorage.setItem('sianaly.pendingFavorite',JSON.stringify({key:pendingCompany,createdAt:Date.now()}));}catch{}
     location.reload();
-   }catch(e){error.textContent=errorText(e);submit.disabled=false;}
+   }catch(e){error.textContent=errorText(e);submit.disabled=false;window.SianalyCaptcha?.reset(form);}
   };
-  dialog.append(form);
+  dialog.append(form);mountCaptcha(form,submit);
   if(!signingUp){const forgot=node('button','비밀번호를 잊었나요?','member-auth-toggle');forgot.type='button';forgot.onclick=passwordForgotDialog;dialog.append(forgot);}
   const providers=['custom:kakao','custom:naver'].map(id=>config.providers.find(provider=>provider.id===id)).filter(Boolean);
   if(providers.length)dialog.append(node('div','또는','member-auth-divider'));
@@ -69,13 +74,13 @@
   form.onsubmit=async event=>{
    event.preventDefault();submit.disabled=true;error.textContent='';
    try{
-    await api('password-forgot',{email:email.value});
+    await api('password-forgot',Object.fromEntries(new FormData(form)));
     showDialog('메일함을 확인해 주세요');
     dialog.append(node('p','가입된 이메일이라면 재설정 메일을 보냈어요. 메일이 보이지 않으면 스팸함도 확인해 주세요.'),node('p','메일의 링크에서 새 비밀번호를 설정할 수 있어요. 링크는 한 번만 사용할 수 있어요.'));
     const back=node('button','로그인으로 돌아가기','member-menu-action');back.type='button';back.onclick=()=>loginDialog();dialog.append(back);
-   }catch(e){error.textContent=errorText(e);submit.disabled=false;}
+   }catch(e){error.textContent=errorText(e);submit.disabled=false;window.SianalyCaptcha?.reset(form);}
   };
-  dialog.append(form);
+  dialog.append(form);mountCaptcha(form,submit);
  }
  function recoveryLinkDialog(){
   showDialog('새 비밀번호 설정');
@@ -114,7 +119,7 @@
     dialog.append(node('p','새 비밀번호로 다시 로그인해 주세요.'));
     if(result.sessionWarning)dialog.append(node('p','다른 기기의 로그인 정리가 완료되지 않았어요. 사용 중인 기기에서도 로그아웃해 주세요.'));
     const login=node('button','로그인하기','member-menu-action');login.type='button';login.onclick=()=>loginDialog();dialog.append(login);
-   }catch(e){error.textContent=errorText(e);submit.disabled=false;}
+   }catch(e){error.textContent=errorText(e);submit.disabled=false;window.SianalyCaptcha?.reset(form);}
   };
   const retry=node('button','재설정 메일 다시 받기','member-auth-toggle');retry.type='button';retry.onclick=passwordForgotDialog;
   dialog.append(form,retry);

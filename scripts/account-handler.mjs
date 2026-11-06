@@ -48,7 +48,10 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   let site;try{site=new URL(env.AUTH_SITE_URL);if(site.origin!==url.origin||site.pathname!=='/'||site.search||site.hash||site.username||site.password||(site.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(site.hostname)))throw Error('Invalid site');}catch{return respond({ready:false,code:'unavailable'},503);}
   const providers=(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
   const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY);
-  if(action==='config'&&request.method==='GET')return respond({ready,email:ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[]});
+  const captchaRequired=env.AUTH_CAPTCHA_REQUIRED==='true';
+  const captchaSiteKey=typeof env.AUTH_CAPTCHA_SITE_KEY==='string'&&/^[A-Za-z0-9_-]{10,100}$/.test(env.AUTH_CAPTCHA_SITE_KEY)?env.AUTH_CAPTCHA_SITE_KEY:null;
+  const captchaOptions=body=>typeof body.captchaToken==='string'&&body.captchaToken.length>=10&&body.captchaToken.length<=4096&&!/\s/.test(body.captchaToken)?{captchaToken:body.captchaToken}:null;
+  if(action==='config'&&request.method==='GET')return respond({ready,email:ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[],...(captchaRequired?{captcha:{required:true,siteKey:captchaSiteKey}}:{})});
   const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
   const boardRead=action==='board'&&request.method==='GET',mine=url.searchParams.get('mine')==='1',moderation=url.searchParams.get('moderation')==='1';
   const hasSession=(request.headers.get('Cookie')||'').split(';').some(cookie=>{
@@ -88,17 +91,20 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    // A separate client per request; private cookies and API responses are never cached.
    const client=serverClient(env.SUPABASE_URL,env.SUPABASE_PUBLISHABLE_KEY,{cookieOptions:{...cookieOptions,name:cookieName},cookies:{getAll:()=>cookies,setAll:items=>{for(const c of items)writeCookie(c.name,c.value,c.options);}}});
    if(action==='password-forgot'||action==='password-recovery'){
-    const body=await bodyJSON(request),forgot=action==='password-forgot';
+    const body=await bodyJSON(request,8192),forgot=action==='password-forgot';
     const email=typeof body.email==='string'?body.email.trim():'';
     if(forgot){
-     if(Object.keys(body).some(key=>key!=='email')||email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return respond({code:'invalid_email'},400);
+     if(Object.keys(body).some(key=>!['email','captchaToken'].includes(key))||email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return respond({code:'invalid_email'},400);
+     if(captchaRequired&&!captchaSiteKey)return respond({code:'captcha_unavailable'},503);
+     if(captchaRequired&&!captchaOptions(body))return respond({code:'captcha_required'},400);
     }else if(Object.keys(body).some(key=>key!=='tokenHash')||typeof body.tokenHash!=='string'||!/^[A-Za-z0-9_-]{20,256}$/.test(body.tokenHash)){
      return respond({code:'recovery_invalid'},400);
     }
     if(!env.POPULAR_DB)return respond({code:'unavailable'},503);
     if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
     if(forgot){
-     const {error}=await client.auth.resetPasswordForEmail(email,{redirectTo:site.origin});
+     const {error}=await client.auth.resetPasswordForEmail(email,{redirectTo:site.origin,...(captchaOptions(body)||{})});
+     if(error?.code==='captcha_failed')return respond({code:'captcha_invalid'},400);
      if(error)return respond({code:error.status===429?'too_many_attempts':'recovery_unavailable'},error.status===429?429:503);
      return respond({ok:true});
     }
@@ -112,19 +118,22 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({ok:true});
    }
    if(action==='email-signup'||action==='email-login'){
-    const body=await bodyJSON(request,4096),signingUp=action==='email-signup';
-    const allowed=signingUp?['email','password','nickname']:['email','password'];
+    const body=await bodyJSON(request,8192),signingUp=action==='email-signup';
+    const allowed=signingUp?['email','password','nickname','captchaToken']:['email','password','captchaToken'];
     const email=typeof body.email==='string'?body.email.trim():'',password=body.password;
     if(Object.keys(body).some(key=>!allowed.includes(key))||email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return respond({code:'invalid_email'},400);
     if(typeof password!=='string'||password.length>128||password.length<(signingUp?10:1))return respond({code:'invalid_password'},400);
     const nickname=signingUp?memberNickname(body.nickname):null;
     if(signingUp&&!nickname)return respond({code:'invalid_nickname'},400);
+    if(captchaRequired&&!captchaSiteKey)return respond({code:'captcha_unavailable'},503);
+    if(captchaRequired&&!captchaOptions(body))return respond({code:'captcha_required'},400);
     if(!env.POPULAR_DB)return respond({code:'unavailable'},503);
     if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
     const result=signingUp
-     ?await client.auth.signUp({email,password,options:{data:{sianaly_nickname:nickname}}})
-     :await client.auth.signInWithPassword({email,password});
+     ?await client.auth.signUp({email,password,options:{data:{sianaly_nickname:nickname},...(captchaOptions(body)||{})}})
+     :await client.auth.signInWithPassword({email,password,...(captchaOptions(body)?{options:captchaOptions(body)}:{})});
     if(result.error){
+     if(result.error.code==='captcha_failed')return respond({code:'captcha_invalid'},400);
      if(result.error.status===429)return respond({code:'too_many_attempts'},429);
      return respond({code:signingUp?'email_signup_failed':'email_login_failed'},400);
     }

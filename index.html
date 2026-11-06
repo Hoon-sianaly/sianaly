@@ -66,7 +66,7 @@ body{background:#f3f7fd}
 .discovery-markets button[aria-pressed="true"]{color:#20539b}
 @media(max-width:540px){.hero{padding-bottom:28px}}
 @media(max-width:430px){.home-topbar .member-auth-buttons{gap:6px}}
-</style><link rel="stylesheet" href="member-account.css?v=20261105-board-admin"></head>
+</style><link rel="stylesheet" href="member-account.css?v=20261106-public-prep"></head>
 <body>
 <div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="board-nav" href="board.html" aria-label="게시판" title="게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg></a></header></div>
 <section class="hero">
@@ -102,4 +102,4 @@ q.addEventListener("input",e=>render(e.target.value));
 q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
-</script><script src="member-account.js?v=20261105-reports" defer></script></body></html>
+</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261106-public-prep" defer></script></body></html>

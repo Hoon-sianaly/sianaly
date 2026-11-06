@@ -251,6 +251,28 @@ const resetResponse=await emailRequest('password-update',resetBody,{cookie:recov
 assert.equal(resetResponse.status,200);assert.deepEqual(await resetResponse.json(),{ok:true,sessionWarning:false});
 assert.deepEqual(passwordUpdate,resetBody);assert.equal(signOutScope,'global');
 assert.ok(resetResponse.headers.getSetCookie().some(cookie=>cookie.startsWith('__Host-sianaly-auth-recovery=')&&cookie.includes('Max-Age=0')));
+// Public signup protection: reject missing configuration/tokens before calling Auth,
+// and forward valid tokens to the provider for authoritative verification.
+user=null;
+const captchaEnv={AUTH_CAPTCHA_REQUIRED:'true',AUTH_CAPTCHA_SITE_KEY:'public-test-site-key'};
+const captchaToken='test-captcha-token',captchaEmail={email:'captcha@example.test',password:'safe-password-123',nickname:'보안테스트'};
+const captchaRequest=(action,body,overrides={})=>request(action,{method:'POST',body,overrides:{...captchaEnv,...overrides},ip:'192.0.2.90'});
+assert.deepEqual((await (await request('config',{overrides:captchaEnv})).json()).captcha,{required:true,siteKey:'public-test-site-key'});
+for(const action of ['email-signup','email-login','password-forgot']){
+ const body=action==='email-signup'?captchaEmail:action==='email-login'?{email:captchaEmail.email,password:captchaEmail.password}:{email:captchaEmail.email};
+ const beforeEmail=emailCall,beforeRecovery=recoveryRequest;
+ assert.equal((await captchaRequest(action,body,{AUTH_CAPTCHA_SITE_KEY:''})).status,503);
+ for(const token of [undefined,'short','contains whitespace','x'.repeat(4097)]){
+  assert.equal((await captchaRequest(action,{...body,...(token===undefined?{}:{captchaToken:token})})).status,400);
+ }
+ assert.equal(emailCall,beforeEmail);assert.equal(recoveryRequest,beforeRecovery);
+ assert.equal((await captchaRequest(action,{...body,captchaToken})).status,200);
+ if(action==='password-forgot')assert.deepEqual(recoveryRequest,[captchaEmail.email,{redirectTo:origin,captchaToken}]);
+ else assert.equal(emailCall.input.options.captchaToken,captchaToken);
+}
+emailError={code:'captcha_failed'};
+assert.equal((await (await captchaRequest('email-login',{email:captchaEmail.email,password:captchaEmail.password,captchaToken})).json()).code,'captcha_invalid');
+emailError=null;
 sqlite.close();
 // Exercise the official SDK's PKCE generation and cookie adapter without a live account or network request.
 const realHandler=createAccountHandler({companyKeys:keys});
