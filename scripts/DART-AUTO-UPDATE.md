@@ -4,7 +4,7 @@
 
 ## 매일 실행과 배포
 
-GitHub Actions의 `.github/workflows/dart-update.yml`이 매시 17분·47분(약 30분 간격)에 실행합니다. GitHub의 실행 대기 상황에 따라 시작이 늦어질 수 있습니다. 컴퓨터와 Codex 앱을 꺼도 실행됩니다. 2026-10-08 서버 첫 실행의 조회·검증이 성공했으며 기존 로컬 예약 `dart`는 중복 방지를 위해 일시 중지했습니다. GitHub Actions 화면의 Run workflow로 수동 실행할 수도 있습니다.
+GitHub Actions의 `.github/workflows/dart-update.yml`이 6시간 간격(한국 시간 매일 03:17·09:17·15:17·21:17)에 실행합니다. GitHub의 실행 대기 상황에 따라 시작이 늦어질 수 있습니다. 컴퓨터와 Codex 앱을 꺼도 실행됩니다. 2026-10-08 서버 첫 실행의 조회·검증이 성공했으며 기존 로컬 예약 `dart`는 중복 방지를 위해 일시 중지했습니다. GitHub Actions 화면의 Run workflow로 수동 실행할 수도 있습니다.
 
 서버는 Actions secret `OPENDART_API_KEY`를 실행 환경으로만 전달합니다. 아래 Windows 명령 대신 `node scripts/dart-actions.cjs`를 실행합니다. `codex/dart-state` 브랜치의 `state.json`에는 공개 공시의 조회일·대기열·검토 목록과 배포 확인 대기 정보를 보관합니다. 인증키와 API 캐시는 저장하지 않습니다. 신규 공시가 없는 날에는 재무 API를 호출하지 않습니다. 검증된 회사 데이터만 main에 게시하고 dev.sianaly.com 반영을 확인한 다음 완료 처리합니다. 배포 확인에 실패하면 다음 실행에서 확인을 재시도합니다. 생산 사이트의 별도 배포는 포함하지 않습니다.
 
