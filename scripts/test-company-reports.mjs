@@ -41,5 +41,12 @@ data=await (await send('GET')).json();assert.equal(data.reports.length,20);asser
 const next=await (await send('GET',undefined,'?before='+data.next)).json();assert.ok(next.reports.length);assert.ok(next.reports.every(row=>row.id<data.next));
 assert.equal(new Set([...data.reports,...next.reports].map(r=>r.id)).size,data.reports.length+next.reports.length);
 const response=await send('GET');assert.match(response.headers.get('Cache-Control'),/no-store/);
+const expiry=now-30*86400000;
+const insertRetention=sqlite.prepare('INSERT INTO company_reports (request_id,company_key,category,body,status,created_at,updated_at) VALUES (?,?,?,?,?,?,?)');
+for(const [status,updated] of [['resolved',expiry],['dismissed',expiry-1],['resolved',expiry+1],['pending',expiry-1],['reviewing',expiry-1]])insertRetention.run(crypto.randomUUID(),'samsung','other','retention fixture',status,expiry-1000,updated);
+await send('GET');
+assert.equal(sqlite.prepare("SELECT count(*) AS n FROM company_reports WHERE body='retention fixture' AND status='resolved'").get().n,1,'Only resolved reports at least 30 days old expire');
+assert.equal(sqlite.prepare("SELECT count(*) AS n FROM company_reports WHERE body='retention fixture' AND status='dismissed'").get().n,1,'Deferred reports are not resolved and must be preserved');
+assert.equal(sqlite.prepare("SELECT count(*) AS n FROM company_reports WHERE body='retention fixture' AND status IN ('pending','reviewing')").get().n,2,'Unfinished reports remain available for review');
 sqlite.close();
 console.log('Company reports: anonymous submission, CSRF, validation, idempotency, rate limits, trusted admin access, status changes and pagination passed.');

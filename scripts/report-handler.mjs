@@ -18,6 +18,9 @@ export async function handleReports({db,url,method,user,companyKeys,readBody,res
   db.prepare("CREATE TABLE IF NOT EXISTS company_reports (id INTEGER PRIMARY KEY AUTOINCREMENT, request_id TEXT UNIQUE NOT NULL, company_key TEXT NOT NULL, category TEXT NOT NULL, body TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending', created_at INTEGER NOT NULL, updated_at INTEGER NOT NULL)"),
   db.prepare('CREATE INDEX IF NOT EXISTS company_reports_status_id ON company_reports (status, id)')
  ]);
+ // The owner chose one month (30 days) after resolution.
+ // Pending, reviewing and deferred (dismissed in storage) reports stay available.
+ await db.prepare("DELETE FROM company_reports WHERE status = 'resolved' AND updated_at <= ?").bind(now-30*86400000).run();
  if(method==='POST'){
   if(!await allowAttempt())return respond({code:'too_many_attempts'},429);
   await db.prepare('INSERT OR IGNORE INTO company_reports (request_id, company_key, category, body, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)').bind(input.id,input.company,input.category,input.body.trim(),now,now).run();

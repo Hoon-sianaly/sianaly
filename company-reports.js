@@ -18,7 +18,7 @@
   const placeholder=node('option','선택해 주세요');placeholder.value='';placeholder.disabled=true;placeholder.selected=true;select.append(placeholder);select.required=true;
   for(const [key,text]of Object.entries(categories)){const option=node('option',text);option.value=key;select.append(option);}
   const bodyLabel=node('label','어떤 내용이 잘못됐나요?'),body=node('textarea');body.id='report-body';bodyLabel.htmlFor=body.id;body.name='body';body.rows=5;body.minLength=5;body.maxLength=2000;body.required=true;body.placeholder='오류가 있는 항목과 내용을 적어 주세요. 참고 자료가 있으면 함께 남겨 주세요.';
-  const note=node('p','로그인 없이 제보할 수 있어요. 이름·이메일 등 개인정보는 적지 마세요. 내용은 운영자에게만 전달돼요.','report-help');
+  const note=node('p','로그인 없이 제보할 수 있어요. 이름·이메일 등 개인정보는 적지 마세요. 내용은 운영자에게만 전달돼요. 처리 완료 후 30일이 지난 제보는 다음 제보 서비스 요청에서 자동 삭제돼요.','report-help');
   const feedback=node('p','','report-feedback');feedback.setAttribute('role','status');
   const submit=node('button','제보 접수','report-submit');submit.type='submit';
   const requestId=crypto.randomUUID();
