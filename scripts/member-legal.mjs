@@ -1,4 +1,4 @@
-export const MEMBER_POLICY_VERSION='2026-11-08';
+export const MEMBER_POLICY_VERSION='2026-11-08-r2';
 export const memberPolicy={version:MEMBER_POLICY_VERSION,minimumAge:14,terms:'/terms.html',privacy:'/privacy.html'};
 export function validMemberAcceptance(body){
  return body?.policyVersion===MEMBER_POLICY_VERSION&&body.age14===true&&body.termsAccepted===true&&body.privacyConsent===true;
@@ -18,7 +18,7 @@ async function receiptSignature(secret,text){
 }
 export async function pendingMemberReceipt(secret,id,now){const text=MEMBER_POLICY_VERSION+'.'+now+'.'+await legalOwnerHash(id);return text+'.'+await receiptSignature(secret,text);}
 export async function verifyPendingMemberReceipt(secret,id,value,now){
- if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}\.\d{13}\.[a-f0-9]{64}\.[a-f0-9]{64}$/.test(value))return null;
+ if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}(?:-r[1-9][0-9]*)?\.\d{13}\.[a-f0-9]{64}\.[a-f0-9]{64}$/.test(value))return null;
  const [version,time,owner,signature]=value.split('.'),acceptedAt=Number(time);
  if(version!==MEMBER_POLICY_VERSION||acceptedAt>now||now-acceptedAt>=86400000||owner!==await legalOwnerHash(id))return null;
  const expected=await receiptSignature(secret,value.slice(0,value.lastIndexOf('.')));

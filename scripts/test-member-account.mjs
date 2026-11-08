@@ -83,7 +83,7 @@ async function request(action,{method='GET',body,requestOrigin=origin,cookie,ove
  assert.match(response.headers.get('Cache-Control'),/no-store/);return response;
 }
 assert.equal((await request('config',{overrides:{AUTH_ENABLED:'false'}})).status,200);
-assert.deepEqual(await (await request('config')).json(),{ready:true,email:true,policy:{version:'2026-11-08',minimumAge:14,terms:'/terms.html',privacy:'/privacy.html'},providers:[{id:'custom:kakao',name:'카카오'},{id:'custom:naver',name:'네이버'}]});
+assert.deepEqual(await (await request('config')).json(),{ready:true,email:true,policy:{version:'2026-11-08-r2',minimumAge:14,terms:'/terms.html',privacy:'/privacy.html'},providers:[{id:'custom:kakao',name:'카카오'},{id:'custom:naver',name:'네이버'}]});
 assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).json()).providers,[]);
 assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:undefined}})).json()).providers,[]);
 assert.equal((await request('login',{method:'POST',body:{provider:'custom:naver'},overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).status,400);
@@ -239,7 +239,7 @@ assert.equal(sqlite.prepare('SELECT count(*) AS total FROM board_comments WHERE 
 const adminCallsBeforeEmail=adminCalls;
 user=null;
 const emailRequest=(action,body,options={})=>request(action,{method:'POST',body,overrides:{POPULAR_DB:db},...options});
-const signupBody={email:' member@example.test ',password:'test-password-123',nickname:'  별명  ',policyVersion:'2026-11-08',age14:true,termsAccepted:true,privacyConsent:true};
+const signupBody={email:' member@example.test ',password:'test-password-123',nickname:'  별명  ',policyVersion:'2026-11-08-r2',age14:true,termsAccepted:true,privacyConsent:true};
 assert.equal((await emailRequest('email-signup',signupBody,{requestOrigin:'https://evil.test'})).status,403);
 assert.equal((await emailRequest('email-signup',{...signupBody,email:'invalid'})).status,400);
 assert.equal((await emailRequest('email-signup',{...signupBody,password:'short'})).status,400);
