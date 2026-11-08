@@ -1,3 +1,4 @@
+import {initializeMemberLegal} from './member-legal.mjs';
 export async function initializeBoard(db) {
  if (!db) throw new Error('Board database required');
  await db.batch([
@@ -28,12 +29,14 @@ export async function syncBoardDepartures(db, admin) {
   if (error) throw new Error('Departure queue unavailable');
   if (!data.length) return;
   const ids = data.map(row=>row.user_id);
+  await initializeMemberLegal(db);
   const hashes = await Promise.all(ids.map(ownerHash));
   const viewHashes = await Promise.all(hashes.map(hash=>ownerHash('member:'+hash)));
   const placeholders = ids.map(()=>'?').join(',');
   await db.batch([
    db.prepare('INSERT OR IGNORE INTO board_departed_members (owner_hash) VALUES '+ids.map(()=>'(?)').join(',')).bind(...hashes),
    db.prepare('DELETE FROM board_recommendations WHERE owner_hash IN ('+placeholders+')').bind(...hashes),
+   db.prepare('DELETE FROM member_legal_acceptances WHERE owner_hash IN ('+placeholders+')').bind(...hashes),
    db.prepare('DELETE FROM board_view_visitors WHERE visitor_hash IN ('+placeholders+')').bind(...viewHashes),
    db.prepare("UPDATE board_posts SET owner = '', author = '탈퇴한 회원' WHERE owner IN ("+placeholders+')').bind(...ids),
    db.prepare("UPDATE board_comments SET owner = '', author = '탈퇴한 회원' WHERE owner IN ("+placeholders+')').bind(...ids)

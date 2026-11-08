@@ -2,6 +2,7 @@ import {handleBoard,initializeBoard,syncBoardDepartures} from './board-handler.m
 import {handleReports} from './report-handler.mjs';
 import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supabase/ssr';
 import {createClient} from '@supabase/supabase-js';
+import {memberPolicy,validMemberAcceptance,memberLegalStore,pendingMemberReceipt,verifyPendingMemberReceipt} from './member-legal.mjs';
 
 const providerNames={'custom:kakao':'카카오','custom:naver':'네이버'};
 export function memberNickname(value){
@@ -37,7 +38,7 @@ async function allowEmailAttempt(db,request,secret,action,now){
  const result=await db.prepare('INSERT INTO member_email_attempts (key, attempts, expires_at) VALUES (?, 1, ?) ON CONFLICT(key) DO UPDATE SET attempts = attempts + 1 WHERE attempts < ?').bind(action+':'+bucket+':'+hash,(bucket+1)*window,limit).run();
  return Boolean(result.meta.changes);
 }
-export function createAccountHandler({companyKeys,serverClient=createServerClient,adminClient=createClient,clock=Date.now,upstreamFetch=(...args)=>fetch(...args)}){
+export function createAccountHandler({companyKeys,serverClient=createServerClient,adminClient=createClient,clock=Date.now,legalStore=memberLegalStore,upstreamFetch=(...args)=>fetch(...args)}){
  const keys=new Set(companyKeys);
  return async function onRequest({request,env,params}){
   const url=new URL(request.url),action=String(params.action||''),headers=new Headers({'Cache-Control':'private, no-store','Pragma':'no-cache','Vary':'Cookie','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'});
@@ -51,7 +52,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const captchaRequired=env.AUTH_CAPTCHA_REQUIRED==='true';
   const captchaSiteKey=typeof env.AUTH_CAPTCHA_SITE_KEY==='string'&&/^[A-Za-z0-9_-]{10,100}$/.test(env.AUTH_CAPTCHA_SITE_KEY)?env.AUTH_CAPTCHA_SITE_KEY:null;
   const captchaOptions=body=>typeof body.captchaToken==='string'&&body.captchaToken.length>=10&&body.captchaToken.length<=4096&&!/\s/.test(body.captchaToken)?{captchaToken:body.captchaToken}:null;
-  if(action==='config'&&request.method==='GET')return respond({ready,email:ready,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[],...(captchaRequired?{captcha:{required:true,siteKey:captchaSiteKey}}:{})});
+  if(action==='config'&&request.method==='GET')return respond({ready,email:ready,policy:memberPolicy,providers:ready?providers.map(id=>({id,name:providerNames[id]})):[],...(captchaRequired?{captcha:{required:true,siteKey:captchaSiteKey}}:{})});
   const secure=site.protocol==='https:',cookieName=secure?'__Host-sianaly-auth':'sianaly-auth';
   const boardRead=action==='board'&&request.method==='GET',mine=url.searchParams.get('mine')==='1',moderation=url.searchParams.get('moderation')==='1';
   const boardView=action==='board'&&request.method==='POST'&&url.searchParams.get('interaction')==='view';
@@ -83,7 +84,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return respond({sub:id});
    }catch(error){console.error('naver_userinfo_fetch_failed',error instanceof Error?error.name:'UnknownError');return respond({code:'userinfo_unavailable'},502);}finally{clearTimeout(timer);}
   }
-  const methods={reports:['GET','POST','PATCH'],board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],'email-confirm':['POST'],'email-resend':['POST'],'password-forgot':['POST'],'password-recovery':['POST'],'password-update':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
+  const methods={legal:['POST'],reports:['GET','POST','PATCH'],board:['GET','POST','PATCH','DELETE'],session:['GET'],login:['POST'],'email-signup':['POST'],'email-login':['POST'],'email-confirm':['POST'],'email-resend':['POST'],'password-forgot':['POST'],'password-recovery':['POST'],'password-update':['POST'],callback:['GET'],logout:['POST'],favorites:['GET','POST','DELETE'],nickname:['POST'],delete:['POST']};
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
   if(boardView&&!hasSession){try{return await serveBoard(undefined,boardVisitor());}catch{return respond({code:'board_unavailable'},503);}}
@@ -93,7 +94,13 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   }
   let cookies;try{cookies=parseCookieHeader(request.headers.get('Cookie')||'');}catch{return respond({code:'invalid_session'},401);}
   const cookieOptions={path:'/',secure,httpOnly:true,sameSite:'lax',maxAge:60*60*24*30};
-  function writeCookie(name,value,options={}){const final={...options,...cookieOptions};if(name.includes('code-verifier')||name===cookieName+'-recovery')final.maxAge=600;if(options.maxAge===0)final.maxAge=0;if(options.expires)final.expires=options.expires;delete final.domain;headers.append('Set-Cookie',serializeCookieHeader(name,value,final));cookies=cookies.filter(c=>c.name!==name);if(final.maxAge!==0)cookies.push({name,value});}
+  function writeCookie(name,value,options={}){const final={...options,...cookieOptions};if(name.includes('code-verifier')||name===cookieName+'-recovery')final.maxAge=600;if(name===cookieName+'-policy')final.maxAge=86400;if(options.maxAge===0)final.maxAge=0;if(options.expires)final.expires=options.expires;delete final.domain;headers.append('Set-Cookie',serializeCookieHeader(name,value,final));cookies=cookies.filter(c=>c.name!==name);if(final.maxAge!==0)cookies.push({name,value});}
+  async function confirmPendingPolicy(user){
+   const receipt=cookies.find(cookie=>cookie.name===cookieName+'-policy')?.value;if(!user||!receipt)return;
+   const acceptedAt=await verifyPendingMemberReceipt(env.SUPABASE_SECRET_KEY,user.id,receipt,clock());
+   if(acceptedAt!==null)await legalStore.save(env.POPULAR_DB,user.id,acceptedAt);
+   writeCookie(cookieName+'-policy','',{maxAge:0});
+  }
   function clearCookies(){for(const {name}of [...cookies])if(name===cookieName||name.startsWith(cookieName+'.')||name.startsWith(cookieName+'-'))writeCookie(name,'',{maxAge:0});}
   try{
    // A separate client per request; private cookies and API responses are never cached.
@@ -105,6 +112,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
     const {data,error}=await client.auth.verifyOtp({type:'signup',token_hash:body.tokenHash});
     if(error||!data?.session)return respond({code:'email_confirmation_invalid'},400);
+    await confirmPendingPolicy(data.user);
     return respond({ok:true});
    }
    if(action==='email-resend'){
@@ -150,15 +158,17 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    }
    if(action==='email-signup'||action==='email-login'){
     const body=await bodyJSON(request,8192),signingUp=action==='email-signup';
-    const allowed=signingUp?['email','password','nickname','captchaToken']:['email','password','captchaToken'];
+    const allowed=signingUp?['email','password','nickname','captchaToken','policyVersion','age14','termsAccepted','privacyConsent']:['email','password','captchaToken'];
     const email=typeof body.email==='string'?body.email.trim():'',password=body.password;
     if(Object.keys(body).some(key=>!allowed.includes(key))||email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return respond({code:'invalid_email'},400);
     if(typeof password!=='string'||password.length>128||password.length<(signingUp?10:1))return respond({code:'invalid_password'},400);
     const nickname=signingUp?memberNickname(body.nickname):null;
     if(signingUp&&!nickname)return respond({code:'invalid_nickname'},400);
+    if(signingUp&&!validMemberAcceptance(body))return respond({code:'legal_required'},400);
     if(captchaRequired&&!captchaSiteKey)return respond({code:'captcha_unavailable'},503);
     if(captchaRequired&&!captchaOptions(body))return respond({code:'captcha_required'},400);
     if(!env.POPULAR_DB)return respond({code:'unavailable'},503);
+    if(signingUp)await legalStore.has(env.POPULAR_DB,'signup-storage-probe');
     if(!await allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,action,clock()))return respond({code:'too_many_attempts'},429);
     const result=signingUp
      ?await client.auth.signUp({email,password,options:{emailRedirectTo:site.origin,data:{sianaly_nickname:nickname},...(captchaOptions(body)||{})}})
@@ -169,6 +179,9 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
      if(result.error.status===429)return respond({code:'too_many_attempts'},429);
      return respond({code:signingUp?'email_signup_failed':'email_login_failed'},400);
     }
+    // Existing-account obfuscated signup responses have no identities. Never
+    // use them to attach consent to an existing member or fabricate a receipt.
+    if(signingUp&&result.data?.user?.id&&result.data.user.identities?.length)writeCookie(cookieName+'-policy',await pendingMemberReceipt(env.SUPABASE_SECRET_KEY,result.data.user.id,clock()));
     if(!result.data?.session)return signingUp?respond({ok:true,confirmationRequired:true}):respond({code:'email_not_confirmed'},400);
     return respond({ok:true});
    }
@@ -186,13 +199,21 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     return redirect(safeAccountReturn(url.searchParams.get('next'),site.origin,keys));
    }
    const {data,error}=await client.auth.getUser();const user=error?null:data?.user;
+   if(!['logout','delete','password-update'].includes(action))await confirmPendingPolicy(user);
    const proof=cookies.find(cookie=>cookie.name===cookieName+'-recovery')?.value;
    const passwordReset=Boolean(user&&await validRecoveryProof(proof,env.SUPABASE_SECRET_KEY,user.id,clock()));
-   if(action==='session')return respond({signedIn:Boolean(user),provider:user?({...providerNames,email:'이메일',google:'Google'})[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null,...(user?.app_metadata?.sianaly_role==='admin'?{isAdmin:true}:{}),...(passwordReset?{passwordReset:true}:{})});
+   if(action==='session')return respond({signedIn:Boolean(user),provider:user?({...providerNames,email:'이메일',google:'Google'})[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null,...(user?{legalRequired:!await legalStore.has(env.POPULAR_DB,user.id)}:{}),...(user?.app_metadata?.sianaly_role==='admin'?{isAdmin:true}:{}),...(passwordReset?{passwordReset:true}:{})});
    if(action==='logout'){
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }
    if(!user&&!boardView&&!(boardRead&&!mine&&!moderation))return respond({code:'login_required'},401);
+   if(action==='legal'){
+    const body=await bodyJSON(request);
+    if(Object.keys(body).some(key=>!['policyVersion','age14','termsAccepted','privacyConsent'].includes(key))||!validMemberAcceptance(body))return respond({code:'legal_required'},400);
+    await legalStore.save(env.POPULAR_DB,user.id,clock());return respond({ok:true});
+   }
+   const requiresLegal=user&&((action==='favorites'&&request.method==='POST')||(action==='board'&&((request.method==='POST'&&!boardView)||(request.method==='PATCH'&&url.searchParams.get('interaction')==='recommend'))));
+   if(requiresLegal&&!await legalStore.has(env.POPULAR_DB,user.id))return respond({code:'legal_required'},409);
    if(action==='password-update'){
     if(!passwordReset)return respond({code:'recovery_required'},409);
     const body=await bodyJSON(request);

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SIANALY</title>
-<link rel="stylesheet" href="site-contact.css?v=20261108-legal">
+<link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
 <link rel="stylesheet" href="home-popular.css?v=20261105-blue-home">
 <style>
 :root{color-scheme:light;--ink:#17243b;--muted:#7b8595;--line:#e7ebf0;--blue:#3568e8}
@@ -66,7 +66,7 @@ body{background:#f3f7fd}
 .discovery-markets button[aria-pressed="true"]{color:#20539b}
 @media(max-width:540px){.hero{padding-bottom:28px}}
 @media(max-width:430px){.home-topbar .member-auth-buttons{gap:6px}}
-</style><link rel="stylesheet" href="member-account.css?v=20261106-public-prep"></head>
+</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
 <body>
 <div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="board-nav" href="board.html" aria-label="게시판" title="게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg></a></header></div>
 <section class="hero">
@@ -81,7 +81,7 @@ body{background:#f3f7fd}
 <section class="market-panel" id="discoveryKosdaq" data-market="KOSDAQ" hidden aria-labelledby="kosdaqTitle"><div class="market-panel-head"><div><span class="market-eyebrow">KOSDAQ</span><h3 id="kosdaqTitle" tabindex="-1">코스닥</h3></div><div class="market-total">분석 가능한 종목<strong data-market-total>불러오는 중</strong></div></div><div class="industry-filters" role="group" aria-label="코스닥 업종 필터"></div><p class="market-results-label" role="status" aria-live="polite"></p><div class="company-grid" aria-label="코스닥 분석 가능한 기업 목록"><p class="discovery-empty" role="status">기업 목록을 불러오는 중입니다.</p></div><button class="market-more" type="button" hidden>더 보기</button><p class="ranking-caption"></p></section>
 </div></section>
 </main>
-<footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="data-guide.html">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
+<footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="terms.html">이용약관</a><a href="privacy.html" class="privacy-link">개인정보 처리방침</a><a href="data-guide.html">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261103-reading-3"></script>
 <script src="company-data.js?v=20261103-reading-1"></script>
 <script src="home-discovery.js?v=20261105-header"></script>
@@ -102,4 +102,4 @@ q.addEventListener("input",e=>render(e.target.value));
 q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
-</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261107-email-account" defer></script></body></html>
+</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261108-member-legal" defer></script></body></html>

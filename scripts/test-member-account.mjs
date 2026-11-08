@@ -29,7 +29,7 @@ for(const value of ['https://evil.test','//evil.test','javascript:alert(1)','/un
 assert.equal(safeAccountReturn('/company?company=samsung&extra=1#x',origin,keys),'/company?company=samsung');
 let user=null,options,insert,removed,deleted,adminCalls=0,exchanged,nicknameUpdate,emailCall,emailError=null,emailHasSession=true;
 let handlerNow=now,recoveryUsed=false,recoveryRequest,passwordUpdate,passwordError=null,signOutScope,confirmationUsed=false,resendCall,resendError=null;
-const handler=createAccountHandler({companyKeys:keys,clock:()=>handlerNow,serverClient:(url,key,opts)=>{
+const handler=createAccountHandler({companyKeys:keys,clock:()=>handlerNow,legalStore:{has:async()=>true,save:async()=>{}},serverClient:(url,key,opts)=>{
  assert.equal(key,env.SUPABASE_PUBLISHABLE_KEY);options=opts;
  return {auth:{getUser:async()=>({data:{user},error:null}),signInWithOAuth:async args=>{
   assert.equal(args.options.redirectTo,origin+'/api/account/callback?next=%2F');
@@ -83,7 +83,7 @@ async function request(action,{method='GET',body,requestOrigin=origin,cookie,ove
  assert.match(response.headers.get('Cache-Control'),/no-store/);return response;
 }
 assert.equal((await request('config',{overrides:{AUTH_ENABLED:'false'}})).status,200);
-assert.deepEqual(await (await request('config')).json(),{ready:true,email:true,providers:[{id:'custom:kakao',name:'카카오'},{id:'custom:naver',name:'네이버'}]});
+assert.deepEqual(await (await request('config')).json(),{ready:true,email:true,policy:{version:'2026-11-08',minimumAge:14,terms:'/terms.html',privacy:'/privacy.html'},providers:[{id:'custom:kakao',name:'카카오'},{id:'custom:naver',name:'네이버'}]});
 assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).json()).providers,[]);
 assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:undefined}})).json()).providers,[]);
 assert.equal((await request('login',{method:'POST',body:{provider:'custom:naver'},overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).status,400);
@@ -99,7 +99,7 @@ for(const flag of ['HttpOnly','Secure','SameSite=Lax','Path=/','Max-Age=600'])as
 assert.ok(!cookie.toLowerCase().includes('domain='));assert.equal(options.cookieOptions.name,'__Host-sianaly-auth');
 response=await request('callback?code=test&next=https://evil.test');assert.equal(response.status,303);assert.equal(response.headers.get('Location'),'/');assert.equal(exchanged,'test');
 user={id:'verified-user',last_sign_in_at:new Date(now).toISOString(),email:'private@example.test',app_metadata:{provider:'google'}};
-const session=await (await request('session')).json();assert.deepEqual(session,{signedIn:true,provider:'Google',nickname:''});
+const session=await (await request('session')).json();assert.deepEqual(session,{signedIn:true,provider:'Google',nickname:'',legalRequired:false});
 assert.equal((await request('favorites',{method:'POST',body:{company:'samsung'}})).status,409);
 assert.equal(memberNickname('<script>'),null);assert.equal(memberNickname('a\nb'),null);assert.equal(memberNickname('가'.repeat(21)),null);
 assert.equal((await request('nickname',{method:'POST',body:{nickname:'별명'},requestOrigin:'https://evil.test'})).status,403);
@@ -239,7 +239,7 @@ assert.equal(sqlite.prepare('SELECT count(*) AS total FROM board_comments WHERE 
 const adminCallsBeforeEmail=adminCalls;
 user=null;
 const emailRequest=(action,body,options={})=>request(action,{method:'POST',body,overrides:{POPULAR_DB:db},...options});
-const signupBody={email:' member@example.test ',password:'test-password-123',nickname:'  별명  '};
+const signupBody={email:' member@example.test ',password:'test-password-123',nickname:'  별명  ',policyVersion:'2026-11-08',age14:true,termsAccepted:true,privacyConsent:true};
 assert.equal((await emailRequest('email-signup',signupBody,{requestOrigin:'https://evil.test'})).status,403);
 assert.equal((await emailRequest('email-signup',{...signupBody,email:'invalid'})).status,400);
 assert.equal((await emailRequest('email-signup',{...signupBody,password:'short'})).status,400);
@@ -317,7 +317,7 @@ assert.ok(resetResponse.headers.getSetCookie().some(cookie=>cookie.startsWith('_
 // and forward valid tokens to the provider for authoritative verification.
 user=null;
 const captchaEnv={AUTH_CAPTCHA_REQUIRED:'true',AUTH_CAPTCHA_SITE_KEY:'public-test-site-key'};
-const captchaToken='test-captcha-token',captchaEmail={email:'captcha@example.test',password:'safe-password-123',nickname:'보안테스트'};
+const captchaToken='test-captcha-token',captchaEmail={...signupBody,email:'captcha@example.test',password:'safe-password-123',nickname:'보안테스트'};
 const captchaRequest=(action,body,overrides={})=>request(action,{method:'POST',body,overrides:{...captchaEnv,...overrides},ip:'192.0.2.90'});
 assert.deepEqual((await (await request('config',{overrides:captchaEnv})).json()).captcha,{required:true,siteKey:'public-test-site-key'});
 for(const action of ['email-signup','email-login','password-forgot','email-resend']){

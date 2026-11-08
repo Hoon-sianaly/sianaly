@@ -8,6 +8,7 @@
  const moderation = query.get('moderation') === '1';
  const api = '/api/account/board';
  const errors = {
+  legal_required:'마이페이지에서 회원 이용 안내를 먼저 확인해 주세요.',
   login_required:'로그인한 뒤 이용할 수 있어요.',
   nickname_required:'먼저 마이페이지에서 별명을 설정해 주세요.',
   invalid_post:'입력 내용을 확인해 주세요.',
