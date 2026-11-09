@@ -1,4 +1,5 @@
 import {initializeMemberLegal} from './member-legal.mjs';
+import {recoveryStatement} from './recovery-journal.mjs';
 export async function initializeBoard(db) {
  if (!db) throw new Error('Board database required');
  await db.batch([
@@ -48,7 +49,7 @@ export async function syncBoardDepartures(db, admin) {
  throw new Error('Departure synchronization pending');
 }
 const countColumns = '(SELECT count(*) FROM board_recommendations r WHERE r.post_id=p.id) AS recommendations, coalesce((SELECT views FROM board_post_stats s WHERE s.post_id=p.id),0) AS views';
-export async function handleBoard({db, url, method, user, nickname, readBody, respond, syncDepartures, viewerKey, now=Date.now()}) {
+export async function handleBoard({db, url, method, user, nickname, readBody, respond, syncDepartures, viewerKey, audit=async()=>{}, now=Date.now()}) {
  if (!db) return respond({code:'board_unavailable'},503);
  const postId = Number(url.searchParams.get('post') || 0);
  const before = Number(url.searchParams.get('before') || Number.MAX_SAFE_INTEGER);
@@ -87,9 +88,11 @@ export async function handleBoard({db, url, method, user, nickname, readBody, re
    if (!post || post.hidden && !canModerate && user?.id!==post.owner) return respond({code:'post_not_found'},404);
    const {results} = await db.prepare('SELECT id, body, author, created_at FROM board_comments WHERE post_id = ? AND id < ? ORDER BY id DESC LIMIT 21').bind(postId,before).all();
    const {owner,...publicPost} = post;
+   await audit('board.read',['post:'+postId,...results.slice(0,20).map(row=>'comment:'+row.id)]);
    return respond({post:publicPost, canManage:user?.id===owner, canModerate, comments:results.slice(0,20), next:results.length > 20 ? results[19].id : null});
   }
   const {results} = await db.prepare('SELECT p.id, p.title, p.author, p.created_at, h.post_id IS NOT NULL AS hidden, '+countColumns+' FROM board_posts p LEFT JOIN board_hidden_posts h ON h.post_id = p.id WHERE p.id < ? AND (h.post_id IS NOT NULL) = ? ORDER BY p.id DESC LIMIT 21').bind(before,moderation?1:0).all();
+  await audit('board.list',[moderation?'scope:hidden':'scope:public',...results.slice(0,20).map(row=>'post:'+row.id)]);
   return respond({posts:results.slice(0,20), canModerate, next:results.length > 20 ? results[19].id : null});
  }
  if (!user) return respond({code:'login_required'},401);
@@ -108,7 +111,11 @@ export async function handleBoard({db, url, method, user, nickname, readBody, re
   if (!postId) return respond({code:'invalid_post'},400);
   let result;
   if (method === 'DELETE') {
-   result = await db.prepare('DELETE FROM board_posts WHERE id = ? AND (owner = ? OR ? = 1) AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?)').bind(postId,user.id,canModerate?1:0,memberHash).run();
+   if(canModerate)await audit('board.delete',['post:'+postId]);
+   const target=await db.prepare('SELECT id,created_at FROM board_posts WHERE id = ? AND (owner = ? OR ? = 1)').bind(postId,user.id,canModerate?1:0).first();
+   if(!target)return respond({code:'post_not_found'},404);
+   const changes=await db.batch([await recoveryStatement(db,'post-delete',{id:postId,createdAt:target.created_at},now),db.prepare('DELETE FROM board_posts WHERE id = ? AND (owner = ? OR ? = 1) AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?)').bind(postId,user.id,canModerate?1:0,memberHash)]);
+   result=changes[1];
   } else {
    let raw;
    try { raw = await readBody(); } catch { return respond({code:'invalid_post'},400); }
@@ -116,6 +123,7 @@ export async function handleBoard({db, url, method, user, nickname, readBody, re
     if (!canModerate) return respond({code:'forbidden'},403);
     if (typeof raw.hidden!=='boolean' || Object.keys(raw).some(key=>key!=='hidden')) return respond({code:'invalid_post'},400);
     if (!await db.prepare('SELECT id FROM board_posts WHERE id = ?').bind(postId).first()) return respond({code:'post_not_found'},404);
+    await audit(raw.hidden?'board.hide':'board.restore',['post:'+postId]);
     if (raw.hidden) {
      await db.prepare('INSERT INTO board_hidden_posts (post_id, hidden_at) SELECT id, ? FROM board_posts WHERE id = ? AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?) ON CONFLICT(post_id) DO UPDATE SET hidden_at = excluded.hidden_at').bind(Date.now(),postId,memberHash).run();
     } else {
@@ -125,7 +133,10 @@ export async function handleBoard({db, url, method, user, nickname, readBody, re
    }
    const input = normalizePostInput(raw);
    if (!validPost(input)) return respond({code:'invalid_post'},400);
-   result = await db.prepare('UPDATE board_posts SET title = ?, body = ? WHERE id = ? AND owner = ? AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?)').bind(input.title,input.body,postId,user.id,memberHash).run();
+   const target=await db.prepare('SELECT id,created_at FROM board_posts WHERE id = ? AND owner = ?').bind(postId,user.id).first();
+   if(!target)return respond({code:'post_not_found'},404);
+   const changes=await db.batch([await recoveryStatement(db,'post-update',{id:postId,createdAt:target.created_at,title:input.title,body:input.body},now),db.prepare('UPDATE board_posts SET title = ?, body = ? WHERE id = ? AND owner = ? AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?)').bind(input.title,input.body,postId,user.id,memberHash)]);
+   result=changes[1];
   }
   return result.meta.changes ? respond({id:postId}) : respond({code:'post_not_found'},404);
  }

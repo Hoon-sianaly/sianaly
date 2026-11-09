@@ -7,6 +7,9 @@ on:
       - 'functions/api/account/**'
       - 'scripts/*member*'
       - 'scripts/account-handler.mjs'
+      - 'scripts/operator-audit.mjs'
+      - 'scripts/recovery-*.mjs'
+      - 'scripts/test-privacy-recovery.mjs'
       - 'scripts/board-handler.mjs'
       - 'board.*'
       - 'scripts/*report*'
@@ -33,6 +36,7 @@ jobs:
       - run: node scripts/test-member-account.mjs
       - run: node scripts/test-member-legal.mjs
       - run: node scripts/test-recent-privacy.mjs
+      - run: node scripts/test-privacy-recovery.mjs
       - run: node scripts/test-company-reports.mjs
       - run: node scripts/test-member-rls.mjs
       - run: npx --yes wrangler@3.114.17 pages functions build functions --outdir tmp/member-functions-build

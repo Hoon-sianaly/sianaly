@@ -1,5 +1,7 @@
 import {handleBoard,initializeBoard,syncBoardDepartures} from './board-handler.mjs';
 import {handleReports} from './report-handler.mjs';
+import {writeOperatorAudit} from './operator-audit.mjs';
+import {recordRecoveryEvent} from './recovery-journal.mjs';
 import {createServerClient,parseCookieHeader,serializeCookieHeader} from '@supabase/ssr';
 import {createClient} from '@supabase/supabase-js';
 import {memberPolicy,validMemberAcceptance,memberLegalStore,pendingMemberReceipt,verifyPendingMemberReceipt} from './member-legal.mjs';
@@ -45,7 +47,8 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const respond=(body,status=200)=>{headers.set('Content-Type','application/json; charset=utf-8');return new Response(JSON.stringify(body),{status,headers});};
   const redirect=(path)=>{headers.set('Location',path);return new Response(null,{status:303,headers});};
   const administrativeClient=()=>adminClient(env.SUPABASE_URL,env.SUPABASE_SECRET_KEY,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
-  const serveBoard=(user,viewerKey)=>handleBoard({db:env.POPULAR_DB,url,method:request.method,user,viewerKey,now:clock(),nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond,syncDepartures:()=>syncBoardDepartures(env.POPULAR_DB,administrativeClient())});
+  const auditFor=user=>(action,targets)=>writeOperatorAudit({db:env.POPULAR_DB,secret:env.SUPABASE_SECRET_KEY,request,user,action,targets,now:clock()});
+  const serveBoard=(user,viewerKey)=>handleBoard({db:env.POPULAR_DB,url,method:request.method,user,viewerKey,now:clock(),audit:auditFor(user),nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond,syncDepartures:()=>syncBoardDepartures(env.POPULAR_DB,administrativeClient())});
   let site;try{site=new URL(env.AUTH_SITE_URL);if(site.origin!==url.origin||site.pathname!=='/'||site.search||site.hash||site.username||site.password||(site.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(site.hostname)))throw Error('Invalid site');}catch{return respond({ready:false,code:'unavailable'},503);}
   const providers=env.AUTH_SOCIAL_LOGIN_ENABLED!=='true'?[]:(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
   const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY);
@@ -88,7 +91,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   if(!methods[action]?.includes(request.method))return respond({code:'method_not_allowed'},405);
   if(request.method!=='GET'&&(request.headers.get('Origin')!==site.origin||!request.headers.get('Content-Type')?.toLowerCase().startsWith('application/json')))return respond({code:'forbidden'},403);
   if(boardView&&!hasSession){try{return await serveBoard(undefined,boardVisitor());}catch{return respond({code:'board_unavailable'},503);}}
-  const serveReports=user=>handleReports({db:env.POPULAR_DB,url,method:request.method,user,companyKeys:keys,readBody:()=>bodyJSON(request,10000),respond,now:clock(),allowAttempt:()=>allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,'reports',clock())});
+  const serveReports=user=>handleReports({db:env.POPULAR_DB,url,method:request.method,user,audit:auditFor(user),companyKeys:keys,readBody:()=>bodyJSON(request,10000),respond,now:clock(),allowAttempt:()=>allowEmailAttempt(env.POPULAR_DB,request,env.SUPABASE_SECRET_KEY,'reports',clock())});
   if(action==='reports'&&request.method==='POST'){
    try{return await serveReports();}catch{return respond({code:'reports_unavailable'},503);}
   }
@@ -230,6 +233,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    if(action==='nickname'){
     const body=await bodyJSON(request),nickname=memberNickname(body.nickname);
     if(Object.keys(body).some(k=>k!=='nickname')||nickname===null)return respond({code:'invalid_nickname'},400);
+    await recordRecoveryEvent(env.POPULAR_DB,'nickname-update',{userId:user.id,nickname},clock());
     const {error}=await client.auth.updateUser({data:{sianaly_nickname:nickname}});
     return error?respond({code:'nickname_unavailable'},503):respond({nickname});
    }
@@ -242,6 +246,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     }
     if(request.method==='POST'&&!memberNickname(user.user_metadata?.sianaly_nickname))return respond({code:'nickname_required'},409);
     const body=await bodyJSON(request);if(Object.keys(body).some(k=>k!=='company')||!keys.has(body.company))return respond({code:'invalid_company'},400);
+    if(request.method==='DELETE')await recordRecoveryEvent(env.POPULAR_DB,'favorite-delete',{userId:user.id,company:body.company},clock());
     const result=request.method==='POST'?await client.from('sianaly_favorites').upsert({user_id:user.id,company_key:body.company},{onConflict:'user_id,company_key',ignoreDuplicates:true}):await client.from('sianaly_favorites').delete().eq('user_id',user.id).eq('company_key',body.company);
     return result.error?respond({code:'favorites_unavailable'},503):respond({ok:true});
    }
@@ -250,7 +255,9 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
     const signedInAt=Date.parse(user.last_sign_in_at);if(!Number.isFinite(signedInAt)||signedInAt<clock()-600000||signedInAt>clock()+60000)return respond({code:'reauth_required'},409);
     await initializeBoard(env.POPULAR_DB);
     const admin=administrativeClient();
+    await recordRecoveryEvent(env.POPULAR_DB,'member-delete-request',{userId:user.id},clock());
     const {error}=await admin.auth.admin.deleteUser(user.id);if(error)return respond({code:'delete_failed'},503);
+    await recordRecoveryEvent(env.POPULAR_DB,'member-deleted',{userId:user.id},clock());
     // The Auth trigger durably queues anonymization even if the D1 update has to retry.
     try{await syncBoardDepartures(env.POPULAR_DB,admin);}catch{console.error('board_departure_sync_pending');}
     clearCookies();return respond({ok:true});

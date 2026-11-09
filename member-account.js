@@ -23,7 +23,7 @@
  function legalFields(form){
   const group=node('fieldset',undefined,'member-legal');group.append(node('legend','가입 전 확인'));
   const policy=config.policy;
-  const summary=node('p','수집: 이메일·비밀번호 검증 정보·별명·회원 식별자. 목적: 회원 인증·계정 관리·회원 기능 제공. 보유: 회원 탈퇴 시까지(활동 기록·외부 처리의 별도 기준은 개인정보 처리방침 참고). 필수 동의를 거부하면 가입·회원 기능 이용이 제한되며 기업 정보는 계속 볼 수 있어요.','member-legal-summary');
+  const summary=node('p','수집: 이메일·비밀번호 검증 정보·별명·회원 식별자. 목적: 회원 인증·계정 관리·회원 기능 제공. 보유: 회원 탈퇴 시까지. 삭제·정정 재적용용 암호화 복구 기록은 45일, 로컬 백업은 생성 후 30일, 운영자 접근기록은 366일 보관(게시글·외부 처리 등 세부 기준은 개인정보 처리방침 참고). 필수 동의를 거부하면 가입·회원 기능 이용이 제한되며 기업 정보는 계속 볼 수 있어요.','member-legal-summary');
   for(const [name,text,href,caption]of [['age14','만 14세 이상입니다.'],['termsAccepted','이용약관에 동의합니다.',policy.terms,'이용약관 읽기'],['privacyConsent','회원가입에 필요한 개인정보 수집·이용에 동의합니다.',policy.privacy,'수집 항목·보관 기준 읽기']]){
    const row=node('div',undefined,'member-legal-row'),label=node('label'),checkbox=node('input');checkbox.type='checkbox';checkbox.name=name;checkbox.value='true';checkbox.required=true;
    label.append(checkbox,node('span','[필수] '+text));row.append(label);

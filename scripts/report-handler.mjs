@@ -1,6 +1,6 @@
 const categories=new Set(['financial','description','source','display','other']);
 const statuses=new Set(['pending','reviewing','resolved','dismissed']);
-export async function handleReports({db,url,method,user,companyKeys,readBody,respond,allowAttempt,now=Date.now()}){
+export async function handleReports({db,url,method,user,companyKeys,readBody,respond,allowAttempt,audit=async()=>{},now=Date.now()}){
  if(!db)return respond({code:'reports_unavailable'},503);
  if(method!=='POST'&&user?.app_metadata?.sianaly_role!=='admin')return respond({code:'forbidden'},403);
  let input;
@@ -27,9 +27,11 @@ export async function handleReports({db,url,method,user,companyKeys,readBody,res
   return respond({ok:true},201);
  }
  if(method==='PATCH'){
+  await audit('reports.status',['report:'+input.id,'status:'+input.status]);
   const result=await db.prepare('UPDATE company_reports SET status = ?, updated_at = ? WHERE id = ?').bind(input.status,now,input.id).run();
   return result.meta.changes?respond({ok:true}):respond({code:'report_not_found'},404);
  }
  const {results}=await db.prepare('SELECT id, company_key, category, body, status, created_at, updated_at FROM company_reports WHERE status = ? AND id < ? ORDER BY id DESC LIMIT 21').bind(status,before).all();
+ await audit('reports.read',['status:'+status,...results.slice(0,20).map(row=>'report:'+row.id)]);
  return respond({reports:results.slice(0,20),next:results.length>20?results[19].id:null});
 }

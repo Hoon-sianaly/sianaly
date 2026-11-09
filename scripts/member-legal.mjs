@@ -1,4 +1,4 @@
-export const MEMBER_POLICY_VERSION='2026-11-08-r3';
+export const MEMBER_POLICY_VERSION='2026-11-09';
 export const memberPolicy={version:MEMBER_POLICY_VERSION,minimumAge:14,terms:'/terms.html',privacy:'/privacy.html'};
 export function validMemberAcceptance(body){
  return body?.policyVersion===MEMBER_POLICY_VERSION&&body.age14===true&&body.termsAccepted===true&&body.privacyConsent===true;
