@@ -20,6 +20,7 @@
   const bodyLabel=node('label','어떤 내용이 잘못됐나요?'),body=node('textarea');body.id='report-body';bodyLabel.htmlFor=body.id;body.name='body';body.rows=5;body.minLength=5;body.maxLength=2000;body.required=true;body.placeholder='오류가 있는 항목과 내용을 적어 주세요. 참고 자료가 있으면 함께 남겨 주세요.';
   const note=node('p','로그인 없이 제보할 수 있어요. 이름·이메일 등 개인정보는 적지 마세요. 내용은 운영자에게만 전달돼요. 처리 완료 후 30일이 지난 제보는 다음 제보 서비스 요청에서 자동 삭제돼요.','report-help');
   const feedback=node('p','','report-feedback');feedback.setAttribute('role','status');
+  const privacyLink=node('a','개인정보 처리·보관 안내');privacyLink.href='/privacy.html#reports';privacyLink.target='_blank';privacyLink.rel='noopener noreferrer';note.append(' ',privacyLink);
   const submit=node('button','제보 접수','report-submit');submit.type='submit';
   const requestId=crypto.randomUUID();
   form.onsubmit=async e=>{e.preventDefault();submit.disabled=true;feedback.textContent='접수 중…';try{await api('',{id:requestId,company:button.dataset.company,category:select.value,body:body.value});form.replaceChildren(node('p','제보가 접수됐어요. 내용을 확인하고 검토할게요.','report-success'));const done=node('button','닫기','report-submit');done.type='button';done.onclick=()=>dialog.close();form.append(done);done.focus();}catch(error){feedback.textContent=errorText(error);submit.disabled=false;}};

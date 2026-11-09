@@ -11,6 +11,9 @@ on:
       - 'board.*'
       - 'scripts/*report*'
       - 'company-reports.js'
+      - 'company.html'
+      - 'home-discovery.js'
+      - 'scripts/test-recent-privacy.mjs'
       - 'supabase/**'
       - 'package*.json'
       - '.github/workflows/member-checks.yml'
@@ -29,6 +32,7 @@ jobs:
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: node scripts/test-member-account.mjs
       - run: node scripts/test-member-legal.mjs
+      - run: node scripts/test-recent-privacy.mjs
       - run: node scripts/test-company-reports.mjs
       - run: node scripts/test-member-rls.mjs
       - run: npx --yes wrangler@3.114.17 pages functions build functions --outdir tmp/member-functions-build
