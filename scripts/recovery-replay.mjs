@@ -23,6 +23,29 @@ export function verifyPrivateSnapshot(snapshot,privateKey){
  for(const row of receipts)openRecoveryEvent(row,privateKey);
  return {operatorSignaturesVerified:logs.length,recoveryEnvelopesVerified:receipts.length};
 }
+export function mergeFreshPrivacySnapshot(sqlite,snapshot,now=Date.now()){
+ const tables={operator_audit_keys:['key_id','event_id','created_at','envelope'],operator_access_audit:['event_id','created_at','payload','key_id','signature'],privacy_recovery_journal:['event_id','created_at','envelope']};
+ const allowed=new Set(Object.keys(tables));
+ for(const type of ['table','index','trigger'])for(const entry of snapshot.schema.filter(s=>s.type===type&&allowed.has(s.tbl_name))){
+  sqlite.exec(entry.sql.replace(/^CREATE\s+(TABLE|INDEX|TRIGGER)\s+(?!IF\s+NOT\s+EXISTS)/i,'CREATE $1 IF NOT EXISTS '));
+ }
+ sqlite.exec('BEGIN');
+ try{
+  for(const [table,columns] of Object.entries(tables))for(const row of snapshotRows(snapshot,table).sort((a,b)=>(a.seq||0)-(b.seq||0))){
+   const unique=table==='operator_audit_keys'?'key_id':'event_id';
+   const existing=sqlite.prepare('SELECT * FROM '+table+' WHERE '+unique+'=?').get(row[unique]);
+   if(existing){
+    if(table!=='operator_audit_keys'&&columns.some(c=>existing[c]!==row[c]))throw Error('Conflicting independent privacy record');
+    continue;
+   }
+   sqlite.prepare('INSERT INTO '+table+'('+columns.join(',')+') VALUES('+columns.map(()=>'?').join(',')+')').run(...columns.map(c=>row[c]));
+  }
+  const cutoff=Math.floor(now/1000)*1000;
+  const cleanup=[['company_reports',"status='resolved' AND updated_at <= ?",cutoff-30*86400000],['board_view_visitors','seen_at < ?',cutoff-86400000],['member_email_attempts','expires_at < ?',cutoff],['popular_views','viewed_at < ?',cutoff-48*3600000],['privacy_recovery_journal','created_at < ?',cutoff-45*86400000],['operator_access_audit','created_at < ?',cutoff-366*86400000]];
+  for(const [table,where,value]of cleanup)if(sqlite.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name=?").get(table))sqlite.prepare('DELETE FROM '+table+' WHERE '+where).run(value);
+  sqlite.exec('COMMIT');
+ }catch(e){sqlite.exec('ROLLBACK');throw e;}
+}
 export function openRecoveryEvent(row,privateKey){
  const envelope=JSON.parse(row.envelope),header=JSON.parse(envelope.header);
  if(header.version!==1||header.eventId!==row.event_id||header.at!==row.created_at)throw Error('Recovery envelope metadata mismatch');
@@ -61,11 +84,16 @@ export async function replayRecoveryEvents({pg,sqlite,events,backupStartedAt}){
   }else if(event.kind==='post-update'){
    if(typeof d.title!=='string'||typeof d.body!=='string'||d.title.length>100||d.body.length>4000)throw Error('Invalid correction');
    sqlite.prepare('UPDATE board_posts SET title=?,body=? WHERE id=? AND created_at=?').run(d.title,d.body,number(d.id),number(d.createdAt));
+  }else if(event.kind==='report-delete'){
+   sqlite.prepare('DELETE FROM company_reports WHERE id=? AND created_at=?').run(number(d.id),number(d.createdAt));
+  }else if(event.kind==='report-redact'){
+   if(typeof d.body!=='string'||d.body.length>2000)throw Error('Invalid report correction');
+   sqlite.prepare('UPDATE company_reports SET body=? WHERE id=? AND created_at=?').run(d.body,number(d.id),number(d.createdAt));
   }else if(event.kind==='favorite-delete'){
    if(typeof d.company!=='string'||!/^[a-z0-9_:-]{1,100}$/i.test(d.company))throw Error('Invalid company');
    await pg.query('DELETE FROM public.sianaly_favorites WHERE user_id=$1 AND company_key=$2',[id(d.userId),d.company]);
   }else if(event.kind==='nickname-update'){
-   if(typeof d.nickname!=='string'||Array.from(d.nickname).length<2||Array.from(d.nickname).length>20)throw Error('Invalid nickname');
+   if(typeof d.nickname!=='string'||Array.from(d.nickname).length<2||Array.from(d.nickname).length>20||!/^[\p{L}\p{N} _-]+$/u.test(d.nickname))throw Error('Invalid nickname');
    await pg.query("UPDATE auth.users SET raw_user_meta_data=jsonb_set(coalesce(raw_user_meta_data,'{}'::jsonb),'{sianaly_nickname}',$2::jsonb) WHERE id=$1",[id(d.userId),JSON.stringify(d.nickname)]);
   }else if(event.kind==='profile-minimize'){
    const user=id(d.userId);

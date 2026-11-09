@@ -1,7 +1,7 @@
 import {RECOVERY_PUBLIC_KEY} from './recovery-public-key.mjs';
 const enc=new TextEncoder();
 const b64=bytes=>btoa(String.fromCharCode(...new Uint8Array(bytes)));
-const allowed=new Set(['member-delete-request','member-deleted','post-delete','post-update','favorite-delete','nickname-update','profile-minimize','audit-key']);
+const allowed=new Set(['member-delete-request','member-deleted','post-delete','post-update','favorite-delete','nickname-update','profile-minimize','report-delete','report-redact','audit-key']);
 export const RECOVERY_RETENTION_DAYS=45;
 export async function initializeRecoveryJournal(db){
  if(!db)throw Error('Recovery journal unavailable');
@@ -31,5 +31,5 @@ export async function recoveryStatement(db,kind,data,now=Date.now(),publicKey=RE
 }
 export async function recordRecoveryEvent(db,kind,data,now=Date.now()){
  await (await recoveryStatement(db,kind,data,now)).run();
- await db.prepare('DELETE FROM privacy_recovery_journal WHERE created_at < ?').bind(now-RECOVERY_RETENTION_DAYS*86400000).run();
+ await db.prepare('DELETE FROM privacy_recovery_journal WHERE created_at < ?').bind(Math.floor(now/1000)*1000-RECOVERY_RETENTION_DAYS*86400000).run();
 }

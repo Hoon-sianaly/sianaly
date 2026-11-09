@@ -33,7 +33,7 @@ export async function writeOperatorAudit({db,secret,request,user,action,targets=
  }
  await db.prepare('INSERT INTO operator_access_audit(event_id,created_at,payload,key_id,signature) VALUES(?,?,?,?,?)').bind(eventId,now,payload,keyId,signature).run();
  // Only expire old records; the database independently rejects early deletion.
- await db.prepare('DELETE FROM operator_access_audit WHERE created_at < ?').bind(now-AUDIT_RETENTION_DAYS*86400000).run();
+ await db.prepare('DELETE FROM operator_access_audit WHERE created_at < ?').bind(Math.floor(now/1000)*1000-AUDIT_RETENTION_DAYS*86400000).run();
 }
 export async function verifyOperatorAudit(row,secret){
  if(typeof row.payload!=='string'||!/^[a-f0-9]{64}$/.test(row.signature||''))return false;

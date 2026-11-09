@@ -6,7 +6,7 @@ import {initializeBoard} from './board-handler.mjs';
 import {initializeMemberLegal} from './member-legal.mjs';
 import {writeOperatorAudit,verifyOperatorAudit} from './operator-audit.mjs';
 import {recoveryStatement,sealRecoveryEvent} from './recovery-journal.mjs';
-import {openRecoveryEvent,replayRecoveryEvents,verifyPrivateSnapshot} from './recovery-replay.mjs';
+import {openRecoveryEvent,replayRecoveryEvents,verifyPrivateSnapshot,mergeFreshPrivacySnapshot} from './recovery-replay.mjs';
 const sqlite=new DatabaseSync(':memory:');sqlite.exec('PRAGMA foreign_keys=ON');
 const db={prepare(sql){const bind=(...args)=>({run:async()=>{const r=sqlite.prepare(sql).run(...args);return {meta:{changes:r.changes,last_row_id:r.lastInsertRowid}}},first:async()=>sqlite.prepare(sql).get(...args),all:async()=>({results:sqlite.prepare(sql).all(...args)})});return{...bind(),bind}},async batch(statements){sqlite.exec('BEGIN');try{const results=[];for(const s of statements)results.push(await s.run());sqlite.exec('COMMIT');return results}catch(e){sqlite.exec('ROLLBACK');throw e}}};
 const pg=new PGlite();
@@ -30,8 +30,10 @@ for(const user of [operator.id,owner,retiring])await pg.query('INSERT INTO auth.
 await pg.query('INSERT INTO auth.identities VALUES($1,$2)',[operator.id,JSON.stringify({full_name:'old private name',avatar_url:'old private photo',sub:'preserve-provider-id'})]);
 for(const user of [owner,retiring])await pg.query('INSERT INTO public.sianaly_favorites VALUES($1,$2)',[user,'samsung']);
 const insert=sqlite.prepare('INSERT INTO board_posts(id,owner,author,title,body,created_at) VALUES(?,?,?,?,?,?)');
+sqlite.exec('CREATE TABLE company_reports(id INTEGER PRIMARY KEY,body TEXT,created_at INTEGER,status TEXT,updated_at INTEGER)');
+for(const n of [5,6])sqlite.prepare('INSERT INTO company_reports VALUES(?,?,?,?,?)').run(n,'old private report',now-1000,'pending',now-1000);
 insert.run(1,owner,'예전별명','old title','OLD_PRIVATE_CONTENT',now-1000);insert.run(2,owner,'별명','delete','old deleted content',now-1000);insert.run(3,retiring,'예전별명','retain','retain public body',now-1000);insert.run(4,owner,'별명','reused','preserve different row',now);
-const kinds=[['profile-minimize',{userId:operator.id}],['post-update',{id:1,createdAt:now-1000,title:'수정 제목',body:'개인정보 제거 완료'}],['post-delete',{id:2,createdAt:now-1000}],['post-delete',{id:4,createdAt:now-2000}],['favorite-delete',{userId:owner,company:'samsung'}],['nickname-update',{userId:owner,nickname:'새로운별명'}],['member-delete-request',{userId:retiring}],['member-deleted',{userId:retiring}]];
+const kinds=[['profile-minimize',{userId:operator.id}],['post-update',{id:1,createdAt:now-1000,title:'수정 제목',body:'개인정보 제거 완료'}],['post-delete',{id:2,createdAt:now-1000}],['post-delete',{id:4,createdAt:now-2000}],['favorite-delete',{userId:owner,company:'samsung'}],['nickname-update',{userId:owner,nickname:'새로운별명'}],['member-delete-request',{userId:retiring}],['member-deleted',{userId:retiring}],['report-redact',{id:5,createdAt:now-1000,body:'개인정보 제거됨'}],['report-delete',{id:6,createdAt:now-1000}]];
 for(const [kind,data] of kinds)await (await recoveryStatement(db,kind,data,now,publicKey)).run();
 const rows=sqlite.prepare('SELECT * FROM privacy_recovery_journal ORDER BY seq').all();
 const keyBytes=createHash('sha256').update('sianaly-operator-audit-v1:'+secret).digest();
@@ -40,7 +42,17 @@ const snapshot={tableDefinitions:[],tables:{}};
 for(const [name,records]of Object.entries({operator_access_audit:[audit],operator_audit_keys:[{key_id:audit.key_id,event_id:audit.event_id,created_at:audit.created_at,envelope:keyEnvelope}],privacy_recovery_journal:rows})){
  const columns=Object.keys(records[0]);snapshot.tableDefinitions.push({name,columns});snapshot.tables[name]=records.map(row=>columns.map(c=>[typeof row[c]==='number'?'integer':'text',String(row[c])]));
 }
-assert.deepEqual(verifyPrivateSnapshot(snapshot,privateKey),{operatorSignaturesVerified:1,recoveryEnvelopesVerified:8});
+assert.deepEqual(verifyPrivateSnapshot(snapshot,privateKey),{operatorSignaturesVerified:1,recoveryEnvelopesVerified:10});
+snapshot.schema=sqlite.prepare("SELECT type,name,tbl_name,sql FROM sqlite_master WHERE sql IS NOT NULL AND tbl_name IN ('operator_access_audit','operator_audit_keys','privacy_recovery_journal')").all();
+const second=new DatabaseSync(':memory:');
+second.exec('CREATE TABLE company_reports(id INTEGER PRIMARY KEY,status TEXT,updated_at INTEGER)');
+second.prepare('INSERT INTO company_reports VALUES(?,?,?)').run(1,'resolved',now-31*86400000);
+second.prepare('INSERT INTO company_reports VALUES(?,?,?)').run(2,'pending',now-31*86400000);
+mergeFreshPrivacySnapshot(second,snapshot,now);mergeFreshPrivacySnapshot(second,snapshot,now);
+assert.equal(second.prepare('SELECT count(*) AS n FROM privacy_recovery_journal').get().n,10,'Independent receipts must survive the restore and repeated merge');
+assert.equal(second.prepare('SELECT count(*) AS n FROM operator_access_audit').get().n,1,'Independent operator records must survive the restore');
+assert.equal(second.prepare('SELECT status FROM company_reports').get().status,'pending','Expired resolved reports must not revive on restore');
+second.close();
 const damaged=structuredClone(snapshot);const payloadIndex=damaged.tableDefinitions.find(t=>t.name==='operator_access_audit').columns.indexOf('payload');damaged.tables.operator_access_audit[0][payloadIndex][1]=audit.payload.replace('report:1','report:2');
 assert.throws(()=>verifyPrivateSnapshot(damaged,privateKey),/signature/,'A modified audit snapshot must fail backup verification');
 assert.ok(!JSON.stringify(rows).includes('개인정보 제거 완료'),'Correction content must be encrypted');
@@ -48,6 +60,7 @@ assert.throws(()=>openRecoveryEvent({...rows[0],created_at:now+1},privateKey),/m
 const events=rows.map(row=>openRecoveryEvent(row,privateKey));
 const result=await replayRecoveryEvents({pg,sqlite,events,backupStartedAt:now-500});
 assert.equal(result.releaseAllowed,true);
+assert.equal(sqlite.prepare('SELECT body FROM company_reports WHERE id=5').get().body,'개인정보 제거됨');assert.equal(sqlite.prepare('SELECT id FROM company_reports WHERE id=6').get(),undefined);
 assert.deepEqual({...sqlite.prepare('SELECT title,body FROM board_posts WHERE id=1').get()},{title:'수정 제목',body:'개인정보 제거 완료'});
 assert.equal(sqlite.prepare('SELECT id FROM board_posts WHERE id=2').get(),undefined);
 assert.equal(sqlite.prepare('SELECT body FROM board_posts WHERE id=4').get().body,'preserve different row');
