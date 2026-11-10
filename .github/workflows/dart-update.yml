@@ -1,19 +1,6 @@
 name: DART disclosure updates
 on:
-  schedule:
-    - cron: '17 0,6,12,18 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/dart-update.yml'
-      - 'scripts/dart-actions.cjs'
-      - 'scripts/dart-portfolio.cjs'
-      - 'scripts/dart-disclosures.cjs'
-      - 'scripts/dart-earnings.cjs'
-      - 'scripts/dart-review.cjs'
-      - 'data/dart-review-*.json'
-      - 'data/dart-companies.json'
 permissions:
   contents: write
 concurrency:
