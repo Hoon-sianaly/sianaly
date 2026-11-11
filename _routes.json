@@ -1,5 +1,10 @@
 {
   "version": 1,
-  "include": ["/api/popular", "/api/popular/", "/api/account/*"],
+  "include": [
+    "/api/popular", "/api/popular/",
+    "/api/account", "/api/account/*",
+    "/board", "/board/", "/board.html",
+    "/reports", "/reports/", "/reports.html"
+  ],
   "exclude": []
 }
