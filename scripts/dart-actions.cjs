@@ -42,11 +42,11 @@ function buildNoticeFeed(candidate,previous,publishedAt){
 }
 async function live(files){
  for(let attempt=0;attempt<20;attempt++){
-  const ok=await Promise.all(files.map(async f=>{try{const r=await fetch(`https://dev.sianaly.com/${f.path}?dart=${Date.now()}`,{signal:AbortSignal.timeout(20000)});if(!r.ok)return false;const actual=await r.json(),expected=JSON.parse(f.content);return ['financials','sources'].every(key=>JSON.stringify(actual[key])===JSON.stringify(expected[key]));}catch{return false;}}));
+  const ok=await Promise.all(files.map(async f=>{try{const r=await fetch(`https://sianaly.com/${f.path}?dart=${Date.now()}`,{signal:AbortSignal.timeout(20000)});if(!r.ok)return false;const actual=await r.json(),expected=JSON.parse(f.content);return ['financials','sources'].every(key=>JSON.stringify(actual[key])===JSON.stringify(expected[key]));}catch{return false;}}));
   if(ok.every(Boolean))return;
   await new Promise(r=>setTimeout(r,15000));
  }
- throw Error('Development deployment not verified; pending jobs retained');
+ throw Error('Production deployment at sianaly.com not verified; pending jobs retained');
 }
 async function main(){
  if(process.env.GITHUB_REPOSITORY!==repo||!process.env.GITHUB_TOKEN||!process.env.OPENDART_API_KEY)throw Error('Repository and Actions secrets required');
