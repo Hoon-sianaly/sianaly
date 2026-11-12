@@ -16,9 +16,10 @@
     <ul>
       <li><strong>필수 수집 항목:</strong> 이메일, 비밀번호 검증 정보, 회원 식별자, 사이트 별명</li>
       <li><strong>이용 목적:</strong> 회원가입, 이메일 인증, 로그인, 계정 복구 및 회원 기능 제공</li>
+      <li><strong>처리 근거:</strong> 가입에 필요한 개인정보의 수집·이용 동의(「개인정보 보호법」 제15조 제1항 제1호)</li>
       <li><strong>보유 기간:</strong> 회원 탈퇴 시까지</li>
     </ul>
-    <p>가입에 생년월일, 휴대전화 번호, 실명, 주소를 요청하지 않습니다. 필수 수집·이용에 동의하지 않을 수 있으며, 이 경우 가입과 회원 기능 이용이 제한됩니다. 개발 사이트에 접근할 수 있는 이용자는 사이트 회원가입 없이 기업 정보와 공개 게시글을 열람할 수 있습니다.</p>
+    <p>가입에 필요한 최소한의 정보를 요청합니다. 생년월일, 휴대전화 번호, 실명, 주소는 가입 항목에서 제외합니다. 필수 수집·이용에 동의하지 않을 수 있으며, 이 경우 가입과 회원 기능 이용이 제한됩니다. 개발 사이트에 접근할 수 있는 이용자는 사이트 회원가입 없이 기업 정보와 공개 게시글을 열람할 수 있습니다.</p>
   </section>
 
   <section id="reports">
@@ -48,7 +49,7 @@
 
   <section id="overseas">
     <h2>4. 개인정보의 처리위탁 및 국외 이전</h2>
-    <p>SIANALY는 회원 인증, 인증 메일 발송, 게시판 운영, 사이트 접속 보호에 필요한 업무를 아래 업체에 맡깁니다. 서비스에 접속하거나 해당 기능을 이용할 때 필요한 정보가 암호화 통신(HTTPS 또는 TLS)으로 전달됩니다.</p>
+    <p>SIANALY는 회원 인증, 인증 메일 발송, 게시판 운영, 사이트 접속 보호와 이메일 문의 응대를 아래 업체에 맡깁니다. 사이트 접속이나 해당 기능 이용 시 필요한 정보를 암호화 통신으로 전달합니다.</p>
     <div class="legal-table">
       <table>
         <thead><tr><th scope="col">수탁자 및 연락처</th><th scope="col">처리 목적·항목·시기</th><th scope="col">처리 국가·지역</th><th scope="col">보유 및 이용 기간</th></tr></thead>
@@ -61,14 +62,20 @@
           </tr>
           <tr>
             <td><strong>Cloudflare, Inc.</strong><br><a href="mailto:dpo@cloudflare.com">dpo@cloudflare.com</a></td>
-            <td>공개 페이지 접속과 보안 확인 시 사이트 전송과 부정 이용 방지를 위해 접속 IP, 요청 정보와 브라우저 신호를 처리합니다.</td>
-            <td>접속 경로에 따라 Cloudflare 글로벌 네트워크에서 처리하며, 해당 서비스의 전체 처리 국가는 확인 중입니다.</td>
+            <td>공개 페이지 접속 시 Pages가 페이지 전송과 보안을 위해 접속 IP, 요청 정보와 브라우저 신호를 처리합니다.</td>
+            <td>수탁자는 미국 소재입니다. 페이지 전송·보안은 접속 경로에 따라 Cloudflare 글로벌 네트워크에서 처리됩니다. 전체 처리 국가는 확인 중입니다.</td>
             <td>Cloudflare가 안내한 IP와 브라우저 신호는 14일, 일부(1%)는 6개월 보관합니다.</td>
+          </tr>
+          <tr>
+            <td><strong>Cloudflare, Inc. (Turnstile)</strong><br><a href="https://www.cloudflare.com/turnstile-privacy-policy/">개인정보 안내</a></td>
+            <td>가입·로그인 등에서 보안 확인이 실행될 때 자동 요청을 차단하기 위해 접속 IP, 브라우저 정보, 암호화 연결 특성, 사이트 키와 요청 출처 등의 신호를 처리합니다.</td>
+            <td>Cloudflare 글로벌 네트워크에서 처리하며 전체 처리 국가는 확인 중입니다.</td>
+            <td>Turnstile 신호의 세부 보관 기간은 확인 중입니다. 일부 신호는 Cloudflare의 봇 탐지 개선에도 쓰일 수 있습니다.</td>
           </tr>
           <tr>
             <td><strong>Cloudflare, Inc. (D1)</strong><br><a href="mailto:dpo@cloudflare.com">dpo@cloudflare.com</a></td>
             <td>글·댓글 작성, 제보 접수 및 관련 기능 이용 시 본문, 식별값, 시각 등 제3항의 운영 기록을 저장합니다.</td>
-            <td>서비스 데이터베이스는 아시아·태평양 지역으로 설정되어 있습니다. 데이터와 복구 사본의 실제 저장 국가는 확인 중입니다.</td>
+            <td>회원 기능용 데이터베이스의 배치 설정은 아시아·태평양(APAC)입니다. 데이터와 복구 사본이 실제로 저장되는 국가는 확인 중입니다.</td>
             <td>서비스 데이터는 제3항의 기준을 따릅니다. 데이터베이스 복구 이력은 7일입니다.</td>
           </tr>
           <tr>
@@ -77,12 +84,18 @@
             <td>메일 발송 리전은 일본 도쿄이며, 메일과 발송 기록은 미국에 저장됩니다.</td>
             <td>메일과 발송 기록은 30일, 백업은 7일 보관합니다. 서비스 계약 종료 후 남은 고객 데이터는 90일 이내 삭제합니다.</td>
           </tr>
+          <tr>
+            <td><strong>Google LLC (Gmail)</strong><br><a href="https://support.google.com/policies/contact/general_privacy_form">개인정보 문의 안내</a></td>
+            <td>문의 메일 수신·회신 시 발신 이메일 주소, 본문, 이용자가 첨부한 자료를 처리합니다.</td>
+            <td>Google 글로벌 인프라에서 처리하며 전체 처리 국가는 확인 중입니다.</td>
+            <td>SIANALY의 문의 메일 정리는 제3항의 기준을 따릅니다. Google의 처리·보관 기준은 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에서 확인할 수 있습니다.</td>
+          </tr>
         </tbody>
       </table>
     </div>
-    <p>Cloudflare Turnstile은 가입·로그인 등에서 자동 요청을 차단합니다. Cloudflare는 일부 신호를 봇 탐지 개선에도 사용합니다. 문의 메일은 이용자가 보낸 이메일, 본문과 첨부 자료를 Gmail에서 수신하고 제3항의 기준에 따라 정리합니다.</p>
-    <p>국외 처리위탁·보관의 근거는 업무별로 확인합니다. 계약 체결·이행에 필요한 위탁·보관에는 「개인정보 보호법」 제28조의8 제1항 제3호의 공개 요건을 검토하고, 별도 동의를 근거로 하는 경우에는 이전 전에 필요한 사항을 알리고 동의를 받습니다.</p>
-    <p>회원 기능 이용에 따른 국외 처리를 원하지 않으면 가입을 중단하거나 제9항의 연락처로 처리정지·탈퇴를 요청할 수 있습니다. 필수 인증·메일·저장 업무를 제한하면 관련 회원 기능 이용이 어려울 수 있습니다. 공개 페이지 접속에도 호스팅·보안 처리가 적용됩니다.</p>
+    <p>업체별 처리 범위와 재수탁 업체는 다음 안내에서 확인할 수 있습니다. <a href="https://www.cloudflare.com/privacypolicy/southkorea-addendum/">Cloudflare 한국 부칙</a> · <a href="https://www.cloudflare.com/gdpr/subprocessors/">Cloudflare 재수탁 업체</a> · <a href="https://supabase.com/legal/customer-resources/subprocessor-list">Supabase 재수탁 업체</a> · <a href="https://resend.com/legal/subprocessors">Resend 재수탁 업체</a></p>
+    <p>회원과의 계약을 체결하거나 이행하는 데 필요한 국외 위탁·보관에는 「개인정보 보호법」 제28조의8 제1항 제3호의 요건을 확인하고 있습니다. 국외 이전의 근거로 별도 동의를 사용하는 경우에는 이전 전에 항목, 국가, 수탁자, 보관 기간과 거부 방법을 안내하고 동의를 받습니다.</p>
+    <p>회원 기능 이용에 따른 국외 처리를 원하지 않으면 가입을 진행하기 전에 문의할 수 있습니다. 가입한 뒤에는 제9항의 연락처로 처리정지나 탈퇴를 요청할 수 있습니다. 필수 인증·메일·저장 업무를 제한하면 관련 회원 기능 이용이 어려울 수 있습니다. 공개 페이지 접속에도 호스팅·보안 처리가 적용됩니다.</p>
   </section>
 
   <section>
