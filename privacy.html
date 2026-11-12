@@ -49,7 +49,7 @@
 
   <section id="overseas">
     <h2>4. 개인정보의 처리위탁 및 국외 이전</h2>
-    <p>SIANALY는 서비스 제공에 필요한 개인정보 처리 업무를 아래 업체에 맡깁니다.</p>
+    <p>SIANALY는 회원 인증, 사이트 운영·보안, 인증 메일 발송을 아래 업체에 맡깁니다.</p>
     <div class="legal-table" tabindex="0" role="region" aria-label="처리위탁 및 국외 이전 표">
       <table>
         <thead>
@@ -63,22 +63,10 @@
             <td>회원 정보는 탈퇴 시까지<br>표준 API·DB 로그 1일</td>
           </tr>
           <tr>
-            <th scope="row">Cloudflare Pages<br><a href="mailto:dpo@cloudflare.com">Cloudflare, Inc. 문의</a></th>
-            <td>사이트 전송·보안<br>접속 IP, 브라우저 신호, 요청 정보</td>
-            <td>미국 소재 업체의 글로벌 네트워크. 접속 경로에 따라 처리 국가가 달라집니다.</td>
-            <td>Cloudflare가 안내한 IP·브라우저 신호는 14일, 일부(1%)는 6개월</td>
-          </tr>
-          <tr>
-            <th scope="row">Cloudflare Turnstile<br><a href="mailto:dpo@cloudflare.com">Cloudflare, Inc. 문의</a></th>
-            <td>가입·로그인 등에서 자동 요청 차단<br>접속 IP, 브라우저·암호화 연결 정보, 사이트 키, 요청 출처</td>
-            <td>Cloudflare 글로벌 네트워크</td>
-            <td>Turnstile 신호의 세부 기준은 확인 중입니다.</td>
-          </tr>
-          <tr>
-            <th scope="row">Cloudflare D1<br><a href="mailto:dpo@cloudflare.com">Cloudflare, Inc. 문의</a></th>
-            <td>게시글·제보 등 서비스 데이터 저장<br><a href="#reports">제3항의 활동 정보</a></td>
-            <td>아시아·태평양(APAC) 배치 설정. 실제 저장·복구 국가는 확인 중입니다.</td>
-            <td>서비스 데이터는 제3항 기준<br>회원 기능용 D1 복구 이력 7일</td>
+            <th scope="row">Cloudflare, Inc.<br><a href="mailto:dpo@cloudflare.com">개인정보 문의</a></th>
+            <td>사이트 전송·보안, 자동 요청 차단, 게시글·제보 저장<br>접속 IP, 브라우저 신호, 요청 정보, <a href="#reports">제3항의 활동 정보</a></td>
+            <td>미국 소재 업체. 전송·보안은 글로벌 네트워크에서 처리합니다.<br>D1은 아시아·태평양(APAC) 설정이며 실제 저장·복구 국가는 확인 중입니다.</td>
+            <td>IP·브라우저 신호 14일, 일부(1%)는 6개월<br>서비스 데이터는 제3항 기준, D1 복구 이력 7일</td>
           </tr>
           <tr>
             <th scope="row">Resend<br><small>Plus Five Five, Inc.</small><br><a href="mailto:support@resend.com">개인정보 문의</a></th>
@@ -86,21 +74,16 @@
             <td>일본 도쿄에서 발송, 미국에 저장</td>
             <td>메일·발송 기록 30일, 백업 7일<br>계약 종료 후 잔존 데이터 90일 이내 삭제</td>
           </tr>
-          <tr>
-            <th scope="row">Google LLC (Gmail)<br><a href="https://support.google.com/policies/contact/general_privacy_form">개인정보 문의</a></th>
-            <td>문의 메일 수신·회신<br>발신 이메일, 본문, 첨부파일</td>
-            <td>Google 글로벌 인프라</td>
-            <td>SIANALY의 메일함 정리는 제3항 기준</td>
-          </tr>
         </tbody>
       </table>
     </div>
+    <p><strong>이메일 문의</strong> · Google LLC의 Gmail로 발신 이메일, 본문과 첨부파일을 수신·회신합니다. Google 글로벌 인프라에서 처리되며, SIANALY의 메일함 정리는 제3항 기준을 따릅니다. <a href="https://support.google.com/policies/contact/general_privacy_form">Google 개인정보 문의</a></p>
     <p><strong>이전 시기와 방법</strong> · 사이트 접속, 가입·로그인·계정 복구, 게시판·제보 이용 시 필요한 정보를 암호화해 전송합니다. 문의 이메일은 수신·회신 시 처리합니다.</p>
     <p><strong>이전 근거</strong> · 계약 체결·이행에 필요한 국외 처리위탁·보관은 「개인정보 보호법」 제28조의8 제1항 제3호의 요건을 업무별로 확인하고 있습니다. 별도 동의를 근거로 하는 경우에는 이전 전에 필요한 사항을 알리고 동의를 받습니다.</p>
     <p><strong>거부 방법과 영향</strong> · 제9항의 연락처로 가입 전에 문의하거나 가입 후 처리정지·탈퇴를 요청할 수 있습니다. 인증·메일 발송·저장에 필요한 처리를 거부하면 관련 회원 기능이 제한될 수 있습니다. 공개 페이지 접속에도 Cloudflare의 전송·보안 처리가 적용됩니다.</p>
     <details>
       <summary>업체별 세부 안내 및 재수탁 업체</summary>
-      <p>Cloudflare와 Gmail의 전체 처리 국가는 확인 중입니다. Cloudflare는 Turnstile 신호 일부를 봇 탐지 개선에 사용합니다. <a href="https://www.cloudflare.com/privacypolicy/southkorea-addendum/">Cloudflare 한국 부칙</a> · <a href="https://www.cloudflare.com/turnstile-privacy-policy/">Turnstile 개인정보 안내</a> · <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a></p>
+      <p>Cloudflare와 Gmail의 전체 처리 국가는 확인 중입니다. Turnstile은 접속 IP, 브라우저·암호화 연결 정보, 사이트 키와 요청 출처를 처리합니다. Cloudflare는 일부 신호를 봇 탐지 개선에 사용하며, Turnstile 신호의 세부 보관 기준은 확인 중입니다. <a href="https://www.cloudflare.com/privacypolicy/southkorea-addendum/">Cloudflare 한국 부칙</a> · <a href="https://www.cloudflare.com/turnstile-privacy-policy/">Turnstile 개인정보 안내</a> · <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a></p>
       <p>재수탁 업체 안내 · <a href="https://www.cloudflare.com/gdpr/subprocessors/">Cloudflare</a> · <a href="https://supabase.com/legal/customer-resources/subprocessor-list">Supabase</a> · <a href="https://resend.com/legal/subprocessors">Resend</a></p>
     </details>
   </section>
