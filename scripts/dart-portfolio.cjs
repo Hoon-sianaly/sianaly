@@ -6,6 +6,7 @@ const {periods,koreanDate}=require('./update-dart-samsung.cjs');
 const catalog=require('../data/company-index.json');
 const readRecords=()=>Object.fromEntries(catalog.companies.map(c=>[c.key,JSON.parse(fs.readFileSync(path.join(core.root,'data/companies',c.file),'utf8'))]));
 const file=name=>path.join(core.out,name);
+const negativeSalesReason='Negative sales is unsupported by the current UI';
 function write(name,data){fs.mkdirSync(core.out,{recursive:true});fs.writeFileSync(file(name),JSON.stringify(data,null,2)+'\n');}
 function applyRows(record,rows,company,asOf){
  if(record.profile.key!==company.key||record.profile.ticker!==company.ticker||record.financials.unit!=='KRW_trillion'||record.financials.basis!==(company.fsDiv==='CFS'?'consolidated':'separate'))throw Error('Website identity or basis mismatch');
@@ -14,7 +15,7 @@ function applyRows(record,rows,company,asOf){
   if(row.currency!=='KRW'||row.basis!==record.financials.basis||!/^\d{14}$/.test(row.receipt)||row.periodBasis!==(row.quarter?'three-month':'annual'))throw Error('Invalid candidate provenance');
   if(!Number.isInteger(row.year)||row.year<2015||row.year>Number(asOf.slice(0,4))||row.quarter!==undefined&&![1,2,3,...(row.disclosureStatus==='preliminary'?[4]:[])].includes(row.quarter))throw Error('Invalid candidate period');
   for(const field of ['sales','op',...(row.net!==undefined?['net']:[])])if(!Number.isFinite(row[field])||row[field]!==Number(core.amount(row.rawKRW[field]))/1e12)throw Error('Invalid candidate amount');
-  if(row.sales<0)throw Error('Negative sales is unsupported by the current UI');
+  if(row.sales<0)throw Error(negativeSalesReason);
   const bucket=row.quarter?next.financials.quarterly:next.financials.annual,old=bucket.find(r=>r.year===row.year&&r.quarter===row.quarter);
   const preliminary=row.disclosureStatus==='preliminary';
   // Filed statements outrank preliminary releases, including later preliminary corrections.
@@ -145,10 +146,12 @@ async function update(baseSha){
       financialRequests++;const row=await earnings.fetchEarnings(c,job);
       const report=row.quarter?({1:'11013',2:'11012',3:'11014',4:'11011'}[row.quarter]):'11011';
       if(c.blockedPeriods?.some(b=>b.year===row.year&&b.report===report))throw Error('Existing period held for reporting-scope review');
+      if(row.sales<0)throw Error(negativeSalesReason);
       rows.push(row);completed.push(job);
      }catch(e){
       if(/OpenDART|unavailable/i.test(e.message)){pending.push({...job,reason:e.message});continue;}
       if(!state.reviewQueue.some(q=>q.receipt===job.receipt))state.reviewQueue.push({...job,reason:e.message});
+      held.push(job);
       disclosures.complete(state,[job]);
      }
      continue;
@@ -157,12 +160,19 @@ async function update(baseSha){
     if(payload.status==='013'){pending.push({...job,reason:'Financial API not ready'});continue;}
     const row=core.normalize(payload,c,job),old=(row.quarter?baseline.financials.quarterly:baseline.financials.annual).find(r=>r.year===row.year&&r.quarter===row.quarter);
     if(row.receipt<job.receipt||old?.disclosureStatus!=='preliminary'&&old?.dart?.receipt>row.receipt){pending.push({...job,reason:'Financial API receipt is older than the filing or published data'});continue;}
+    if(row.sales<0){
+     if(!state.reviewQueue.some(q=>q.receipt===job.receipt))state.reviewQueue.push({...job,reason:negativeSalesReason});
+     held.push(job);
+     disclosures.complete(state,[job]);
+     continue;
+    }
     rows.push(row);completed.push(job);
    }
    const applied=applyRows(baseline,rows,c,asOf);
    if(applied.changes.length){files.push({path:`data/companies/${key}.json`,content:JSON.stringify(applied.record,null,2)+'\n'});ready.push(...completed);}
    else disclosures.complete(state,completed);
-   results.push({key,status:applied.changes.length?'changed':pending.length?'pending':'unchanged',changes:applied.changes,pending,held});
+   const status=applied.changes.length?'changed':pending.length?'pending':held.length?'review':'unchanged';
+   results.push({key,status,changes:applied.changes,pending,held});
   }catch(e){results.push({key,status:'error',reason:e.message});}
  });
  disclosures.saveState(state,statePath);

@@ -96,10 +96,14 @@ async function main(){
    await live(candidate.files,notice);run('dart-portfolio',['--mode','acknowledge','--base-sha',commit.sha]);delete envelope.publication;await persist();
   }
   const errors=candidate.results.filter(r=>r.status==='error');
-  const review=JSON.parse(fs.readFileSync(path.join(out,'disclosure-state.json'))).reviewQueue.filter(item=>!priorReview.has(item.receipt));
-  const summary=`DART new-disclosure update\n\nChanged companies: ${candidate.files.length}\nFinancial API requests: ${candidate.stats.financialRequests}\nPending jobs: ${candidate.stats.pendingJobs}\nReview items: ${candidate.stats.reviewItems} (${review.length} new)\nReviewed items closed: ${candidate.stats.reviewedItemsClosed}\nErrors: ${errors.length}\n`+review.slice(0,30).map(item=>`\n- [${item.key} / ${item.receipt}](https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${item.receipt}): ${item.reason}`).join('')+'\n';
+  const finalState=JSON.parse(fs.readFileSync(statePath));
+  const review=finalState.reviewQueue.filter(item=>!priorReview.has(item.receipt));
+  const summary=`DART new-disclosure update\n\nChanged companies: ${candidate.files.length}\nFinancial API requests: ${candidate.stats.financialRequests}\nPending jobs: ${finalState.pending.length}\nReview items: ${finalState.reviewQueue.length} (${review.length} new)\nReviewed items closed: ${candidate.stats.reviewedItemsClosed}\nErrors: ${errors.length}\n`+review.slice(0,30).map(item=>`\n- [${item.key} / ${item.receipt}](https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${item.receipt}): ${item.reason}`).join('')+'\n';
   console.log(summary);if(process.env.GITHUB_STEP_SUMMARY)fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY,summary);
-  if(errors.length)throw Error('Some issuers require attention; their pending jobs were retained');
+  if(errors.length){
+   for(const {key,reason} of errors)console.error(`${key}: ${reason}`);
+   throw Error('Some issuers require attention; their pending jobs were retained');
+  }
  }catch(e){await persist();throw e;}
 }
 module.exports={validateFiles,buildNoticeFeed};if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1;});
