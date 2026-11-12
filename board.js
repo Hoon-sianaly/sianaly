@@ -33,7 +33,7 @@
   return element('small',item.author + ' · ' + time + counts,'board-meta');
  }
  async function request(url, options) {
-  const response = await fetch(url,options);
+  const response = await fetch(url,{...options,cache:'no-store',signal:AbortSignal.timeout(15000)});
   const data = await response.json();
   if (!response.ok) throw new Error(errors[data.code] || '게시판을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.');
   return data;
@@ -72,6 +72,12 @@
    form.append(caption,input);
   }
   const submit = element('button',existing ? '수정 저장' : comment ? '댓글 등록' : '글 등록','board-primary');
+  const initialValues = fields.map(([name]) => form.elements[name].value);
+  const hasChanges = () => fields.some(([name], index) => form.elements[name].value !== initialValues[index]);
+  const confirmLeaving = event => {
+   if (form.isConnected && hasChanges()) { event.preventDefault(); event.returnValue = ''; }
+  };
+  window.addEventListener('beforeunload',confirmLeaving);
   submit.type = 'submit';
   const feedback = element('p');
   feedback.setAttribute('role','alert');
@@ -80,7 +86,11 @@
   const cancelButton = existing ? element('button','취소','board-secondary') : null;
   if (cancelButton) {
    cancelButton.type = 'button';
-   cancelButton.onclick = cancel;
+   cancelButton.onclick = () => {
+    if (hasChanges() && !window.confirm('수정한 내용을 버리고 돌아갈까요?')) return;
+    window.removeEventListener('beforeunload',confirmLeaving);
+    cancel();
+   };
    actions.append(cancelButton);
   }
   form.append(actions,feedback);
@@ -88,6 +98,7 @@
   if (existing) form.elements.title.focus();
   form.onsubmit = async event => {
    event.preventDefault();
+   if (submit.disabled) return;
    submit.disabled = true;
    if (cancelButton) cancelButton.disabled = true;
    feedback.textContent = '';
@@ -96,6 +107,7 @@
     const result = await request(comment || existing ? api + '?post=' + encodeURIComponent(postId) : api,{
      method:existing ? 'PATCH' : 'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)
     });
+    window.removeEventListener('beforeunload',confirmLeaving);
     location.assign('board.html?post=' + encodeURIComponent(result.id));
    } catch (error) {
     feedback.textContent = error.message;
