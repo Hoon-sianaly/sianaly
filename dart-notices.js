@@ -1,6 +1,6 @@
 'use strict';
 
-const noticeFeed = document.getElementById('dart-notice-feed');
+const noticeFeed = document.getElementById('board-notice-feed');
 const metricNames = { sales: '매출액', op: '영업이익', net: '당기순이익' };
 const noticeDate = new Intl.DateTimeFormat('ko-KR', {
   timeZone: 'Asia/Seoul', dateStyle: 'medium', timeStyle: 'short',
@@ -64,4 +64,4 @@ async function loadDartNotices() {
   }
 }
 
-loadDartNotices();
+if (noticeFeed && !document.getElementById('board-notices').hidden) void loadDartNotices();

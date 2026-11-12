@@ -51,7 +51,7 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
   const serveBoard=(user,viewerKey)=>handleBoard({db:env.POPULAR_DB,url,method:request.method,user,viewerKey,now:clock(),audit:auditFor(user),nickname:memberNickname(user?.user_metadata?.sianaly_nickname),readBody:()=>bodyJSON(request,16384),respond,syncDepartures:()=>syncBoardDepartures(env.POPULAR_DB,administrativeClient())});
   let site;try{site=new URL(env.AUTH_SITE_URL);if(site.origin!==url.origin||site.pathname!=='/'||site.search||site.hash||site.username||site.password||(site.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(site.hostname)))throw Error('Invalid site');}catch{return respond({ready:false,code:'unavailable'},503);}
   const providers=env.AUTH_SOCIAL_LOGIN_ENABLED!=='true'?[]:(env.AUTH_PROVIDERS||'').split(',').map(s=>s.trim()).filter(p=>Object.hasOwn(providerNames,p));
-  const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY);
+  const ready=env.AUTH_ENABLED==='true'&&/^https:\/\//.test(env.SUPABASE_URL||'')&&Boolean(env.SUPABASE_PUBLISHABLE_KEY)&&Boolean(env.SUPABASE_SECRET_KEY)&&Boolean(env.POPULAR_DB);
   const captchaRequired=env.AUTH_CAPTCHA_REQUIRED==='true';
   const captchaSiteKey=typeof env.AUTH_CAPTCHA_SITE_KEY==='string'&&/^[A-Za-z0-9_-]{10,100}$/.test(env.AUTH_CAPTCHA_SITE_KEY)?env.AUTH_CAPTCHA_SITE_KEY:null;
   const captchaOptions=body=>typeof body.captchaToken==='string'&&body.captchaToken.length>=10&&body.captchaToken.length<=4096&&!/\s/.test(body.captchaToken)?{captchaToken:body.captchaToken}:null;

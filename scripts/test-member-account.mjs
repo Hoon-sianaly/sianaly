@@ -84,6 +84,9 @@ async function request(action,{method='GET',body,requestOrigin=origin,cookie,ove
 }
 assert.equal((await request('config',{overrides:{AUTH_ENABLED:'false'}})).status,200);
 assert.deepEqual(await (await request('config')).json(),{ready:true,email:true,policy:{version:'2026-11-10',minimumAge:14,terms:'/terms.html',privacy:'/privacy.html'},providers:[{id:'custom:kakao',name:'카카오'},{id:'custom:naver',name:'네이버'}]});
+const withoutDatabase=await (await request('config',{overrides:{POPULAR_DB:undefined}})).json();
+assert.equal(withoutDatabase.ready,false);
+assert.equal(withoutDatabase.email,false);
 assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).json()).providers,[]);
 assert.deepEqual((await (await request('config',{overrides:{AUTH_SOCIAL_LOGIN_ENABLED:undefined}})).json()).providers,[]);
 assert.equal((await request('login',{method:'POST',body:{provider:'custom:naver'},overrides:{AUTH_SOCIAL_LOGIN_ENABLED:'false'}})).status,400);

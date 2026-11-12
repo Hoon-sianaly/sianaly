@@ -14,7 +14,7 @@ Company information remains public. The development site supports Naver, Kakao a
 
 ## Cloudflare Pages
 
-Existing project `sianaly`, environment serving **dev.sianaly.com** and sianaly.pages.dev. This is not a deployment to sianaly.com.
+Use the **Preview** environment of Pages project `sianaly`. The branch `codex/dev` serves `dev.sianaly.com`. When moving a domain from Production to a branch preview, check the runtime variables and bindings in Preview. Cloudflare applies changes to the next deployment.
 
 | Setting | Value |
 | --- | --- |
@@ -24,6 +24,11 @@ Existing project `sianaly`, environment serving **dev.sianaly.com** and sianaly.
 | SUPABASE_URL | `https://jprnqliszpqercqrdisi.supabase.co` |
 | SUPABASE_PUBLISHABLE_KEY | Project publishable key, environment setting |
 | SUPABASE_SECRET_KEY | Encrypted Secret; own-account deletion and private departure synchronization |
+| POPULAR_DB | D1 binding used by the board, reports, consent records and request limits |
+| AUTH_CAPTCHA_REQUIRED | `true` |
+| AUTH_CAPTCHA_SITE_KEY | Public site key from the Turnstile widget for `dev.sianaly.com` |
+
+After a preview deploy, open `/api/account/config` on `dev.sianaly.com` and check `ready: true`. Open the board and verify the list loads. Open the login form and a company's error report form. Check that an unauthenticated request to the production account API stays unavailable.
 
 Build command: `npm ci --omit=dev --ignore-scripts --no-audit --no-fund`. Functions use fail-closed behavior. The existing POPULAR_DB binding is preserved. Dependencies are lockfile pinned and excluded from static uploads.
 

@@ -32,14 +32,16 @@ export function onRequest(context) {
   const url = new URL(request.url);
   const pathname = url.pathname.replace(/\/+$/, '');
 
-  if (pathname === '/api/account' || pathname.startsWith('/api/account/')) {
+  const communityEnabled = url.hostname === 'sianaly.com' || url.hostname === 'dev.sianaly.com' || url.hostname === 'codex-dev.sianaly.pages.dev';
+
+  if (!communityEnabled && (pathname === '/api/account' || pathname.startsWith('/api/account/'))) {
     return Response.json({ code: 'unavailable' }, {
       status: 404,
       headers: { 'Cache-Control': 'no-store' },
     });
   }
 
-  if (/^\/(board|reports)(\.html)?$/.test(pathname)) {
+  if (!communityEnabled && /^\/(board|reports)(\.html)?$/.test(pathname)) {
     return new Response(null, {
       status: 302,
       headers: { Location: '/', 'Cache-Control': 'no-store' },

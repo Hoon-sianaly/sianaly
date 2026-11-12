@@ -8,12 +8,6 @@
 }
 .dart-notice-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 .dart-notice-link:focus-visible { outline: 2px solid #3568e8; outline-offset: 3px; }
-.notice-main { margin-bottom: 32px; }
-.notice-main h1 { margin-bottom: 8px; }
-#dart-notice-feed { margin-top: 24px; }
-#dart-notice-feed details { border-top: 1px solid #dfe8f5; }
-#dart-notice-feed summary { cursor: pointer; padding: 13px 0; font-weight: 700; }
-#dart-notice-feed ul { padding-inline-start: 22px; }
 @media (max-width: 430px) {
   header:has(.dart-notice-link) .company-search { order: 1; }
 }

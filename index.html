@@ -79,9 +79,9 @@ body{background:#f3f7fd}
 .discovery-markets button[aria-pressed="true"]{color:#20539b}
 @media(max-width:540px){.hero{padding-bottom:28px}}
 @media(max-width:430px){.home-topbar .member-auth-buttons{gap:6px}}
-</style><link rel="stylesheet" href="/dart-notices.css"></head>
+</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
 <body>
-<div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="dart-notice-link" href="/dart-notices.html">공지사항</a></header></div>
+<div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="board-nav" href="/board" aria-label="자유게시판" title="자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg></a></header></div>
 <section class="hero">
 <h1><img class="hero-wordmark" src="sianaly-wordmark.svg?v=blue-4" alt="SIANALY" width="370" height="64"></h1>
 <div class="search"><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span class="search-enter" aria-hidden="true">↵</span><input id="q" aria-label="기업명 또는 종목코드 검색" placeholder="기업명 또는 종목코드 검색" autocomplete="off"><div id="r" class="results hidden"></div></div>
@@ -115,4 +115,4 @@ q.addEventListener("input",e=>render(e.target.value));
 q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
-</script></body></html>
+</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261109-privacy" defer></script></body></html>

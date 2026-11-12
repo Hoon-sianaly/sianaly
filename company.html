@@ -89,9 +89,9 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 
 header .logo{display:inline-flex;align-items:center;flex-shrink:0}
 header .logo img{display:block;width:clamp(30px, 7vw, 34px);height:auto}
-</style><link rel="stylesheet" href="/dart-notices.css"></head>
+</style><link rel="stylesheet" href="/dart-notices.css"><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
 <body>
-<header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div><a class="dart-notice-link" href="/dart-notices.html">공지사항</a></header>
+<header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div><a class="dart-notice-link" href="/board#board-notices">공지사항</a><a class="board-nav company-board-nav" href="/board" aria-label="자유게시판" title="자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg></a></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 기록 끄고 지우기" title="기록 끄고 지우기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 기록 켜기" title="최근 본 기업 기록 켜기">←</button></main>
 <footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="terms.html">이용약관</a><a href="privacy.html" class="privacy-link">개인정보 처리방침</a><a href="data-guide.html">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261103-reading-3"></script>
@@ -232,7 +232,8 @@ else{
   <div class="term"><b>DRAM</b><span>PC·스마트폰·서버 등에서 작업 중인 데이터를 빠르게 저장하고 꺼내 쓰는 메모리입니다.</span></div>
   <div class="term"><b>NAND</b><span>전원이 꺼져도 데이터가 남는 메모리로, SSD와 스마트폰 저장장치 등에 사용됩니다.</span></div>
  `}</div></section>`:""}
- </div>`;
+  <section class="company-report" aria-label="기업 정보 오류 제보"><div><h2>잘못된 정보가 있나요?</h2><p>내용이나 숫자에서 발견한 오류를 간편하게 남겨 주세요.</p></div><button type="button" class="company-report-link" data-company-report data-company="${esc(c.key)}" data-name="${esc(c.name)}" aria-label="${esc(c.name)} 오류 제보">오류 제보</button></section>
+</div>`;
  if(latestFirst){
   const markup=app.innerHTML,a=markup.indexOf('<section id="company-annual">'),q=markup.indexOf('<section id="company-quarterly">'),d=markup.indexOf('<section id="company-drivers">');
   if(a>=0&&a<q&&q<d)app.innerHTML=(markup.slice(0,a)+markup.slice(q,d)+markup.slice(a,q)+markup.slice(d)).replace(/(<a href="#company-annual">[\s\S]*?<\/a>)(<a href="#company-quarterly">[\s\S]*?<\/a>)/,'$2$1');
@@ -268,4 +269,4 @@ else{
  app.innerHTML='<section class="empty" role="alert">기업 정보를 불러오지 못했습니다.<br><br><button type="button" id="retryCompany">다시 시도</button></section>';
  document.getElementById("retryCompany").addEventListener("click",()=>location.reload());
 });
-</script></body></html>
+</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261109-privacy" defer></script><script src="company-reports.js?v=20261109-privacy" defer></script></body></html>
