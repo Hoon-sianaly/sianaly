@@ -11,6 +11,7 @@ function context(key, transform, failed = false) {
  const classList = () => ({add(){},toggle(){}});
  const ctx = vm.createContext({
   URLSearchParams, document:{body:{classList:classList()},getElementById(id){return nodes[id] ||= {innerHTML:"",classList:classList(),addEventListener(){}};}},
+  addEventListener(){},
   location:{search:`?company=${key}`,reload(){}},
   console:{error(error){errors.push(error);}},
   localStorage:{getItem:key=>storage.get(key) || null,setItem:(key,value)=>storage.set(key,value)},
@@ -36,7 +37,7 @@ function context(key, transform, failed = false) {
   const state = context(entry.key);
   await vm.runInContext(script,state.ctx);
   const out = state.nodes.app.innerHTML;
-  assert.equal(state.errors.length,0,entry.key);
+  assert.equal(state.errors.length,0,`${entry.key}: ${state.errors[0]?.stack || ""}`);
   assert.equal(state.financialTabsCalls.length,1,entry.key+' initializes shared financial tabs');
   assert.equal(state.financialTabsCalls[0].key,entry.key);
   assert.ok(out.includes(entry.name),entry.key);

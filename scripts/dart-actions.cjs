@@ -40,9 +40,10 @@ function buildNoticeFeed(candidate,previous,publishedAt){
  });
  return {updates:[{publishedAt,companies},...previous.updates].slice(0,20)};
 }
-async function live(files){
+async function live(files,notice){
+ const checks=notice?[...files,notice]:files;
  for(let attempt=0;attempt<20;attempt++){
-  const ok=await Promise.all(files.map(async f=>{try{const r=await fetch(`https://sianaly.com/${f.path}?dart=${Date.now()}`,{signal:AbortSignal.timeout(20000)});if(!r.ok)return false;const actual=await r.json(),expected=JSON.parse(f.content);return ['financials','sources'].every(key=>JSON.stringify(actual[key])===JSON.stringify(expected[key]));}catch{return false;}}));
+  const ok=await Promise.all(checks.map(async f=>{try{const r=await fetch(`https://sianaly.com/${f.path}?dart=${Date.now()}`,{signal:AbortSignal.timeout(20000)});if(!r.ok)return false;const actual=await r.json(),expected=JSON.parse(f.content);const fields=f.path===noticePath?['updates']:['financials','sources'];return fields.every(key=>JSON.stringify(actual[key])===JSON.stringify(expected[key]));}catch{return false;}}));
   if(ok.every(Boolean))return;
   await new Promise(r=>setTimeout(r,15000));
  }
@@ -66,7 +67,7 @@ async function main(){
   const p=envelope.publication;fs.writeFileSync(path.join(out,'portfolio-update.json'),JSON.stringify(p.candidate));
   let head=await api('git/ref/heads/main');
   if(head.object.sha===p.candidate.baseSha){await api('git/refs/heads/main','PATCH',{sha:p.commit,force:false});head={object:{sha:p.commit}};}
-  await live(p.candidate.files);run('dart-portfolio',['--mode','acknowledge','--base-sha',head.object.sha]);delete envelope.publication;await persist();
+  await live(p.candidate.files,p.notice);run('dart-portfolio',['--mode','acknowledge','--base-sha',head.object.sha]);delete envelope.publication;await persist();
  }
  try{
   const head=await api('git/ref/heads/main'),base=head.object.sha;
@@ -90,9 +91,9 @@ async function main(){
    const commitBase=await api(`git/commits/${base}`),tree=await api('git/trees','POST',{base_tree:commitBase.tree.sha,tree:[...candidate.files,notice].map(f=>({...f,mode:'100644',type:'blob'}))});
    const commit=await api('git/commits','POST',{message:'Update verified financials from new DART disclosures',tree:tree.sha,parents:[base]});
    const current=await api('git/ref/heads/main');if(current.object.sha!==base)throw Error('Main changed before publication');
-   envelope.publication={commit:commit.sha,candidate};await persist();
+   envelope.publication={commit:commit.sha,candidate,notice};await persist();
    await api('git/refs/heads/main','PATCH',{sha:commit.sha,force:false});
-   await live(candidate.files);run('dart-portfolio',['--mode','acknowledge','--base-sha',commit.sha]);delete envelope.publication;await persist();
+   await live(candidate.files,notice);run('dart-portfolio',['--mode','acknowledge','--base-sha',commit.sha]);delete envelope.publication;await persist();
   }
   const errors=candidate.results.filter(r=>r.status==='error');
   const review=JSON.parse(fs.readFileSync(path.join(out,'disclosure-state.json'))).reviewQueue.filter(item=>!priorReview.has(item.receipt));
