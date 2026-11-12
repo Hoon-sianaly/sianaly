@@ -1,6 +1,8 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'index.html'),'utf8');
-const script=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(m=>m[1]).join('\n');
+const script=[...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
+ .filter(([,attributes])=>!/\btype\s*=\s*["']application\/ld\+json["']/i.test(attributes))
+ .map(([, ,body])=>body).join('\n');
 const catalog=JSON.parse(fs.readFileSync(path.join(root,'data/company-index.json'),'utf8'));
 const discovery=fs.readFileSync(path.join(root,'home-discovery.js'),'utf8');
 const industries=vm.runInNewContext('('+discovery.slice(discovery.indexOf('const industries=')+17,discovery.indexOf('};')+1)+')');
