@@ -207,35 +207,37 @@
       {
         "year": 2026,
         "quarter": 3,
-        "sales": 0.050203,
-        "op": 0.008929,
+        "sales": 0.050203334868,
+        "op": 0.008928984836,
         "sourceIds": [
-          "dart-earnings-2026-q3"
+          "dart-2026-q3"
         ],
         "dart": {
-          "receipt": "20261109900187",
+          "receipt": "20261113000198",
           "rawKRW": {
-            "sales": "50203000000",
-            "op": "8929000000"
+            "sales": "50203334868",
+            "op": "8928984836",
+            "net": "4504042304"
           },
           "periodBasis": "three-month",
           "accounts": {
             "sales": [
-              "매출액/당해실적"
+              "ifrs-full_Revenue"
             ],
             "op": [
-              "영업이익/당해실적"
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
             ]
           }
-        },
-        "disclosureStatus": "preliminary",
-        "reportPeriod": "2026-07-01–2026-09-30"
+        }
       }
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
       "scope": "Validated financial statements and explicitly labelled preliminary earnings",
-      "updatedAt": "2026.11.09"
+      "updatedAt": "2026.11.13"
     }
   },
   "sources": [
@@ -287,6 +289,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900187",
       "published": "2026.11.09",
       "verifiedAt": "2026.11.09"
+    },
+    {
+      "id": "dart-2026-q3",
+      "label": "2026년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000198",
+      "published": "2026.11.13",
+      "verifiedAt": "2026.11.13"
     }
   ],
   "sectionSourceIds": {
