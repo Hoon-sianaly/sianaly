@@ -74,7 +74,8 @@ function renderUpdate({ publishedAt, companies }) {
 
 async function loadDartNotices() {
   try {
-    const response = await fetch('/data/dart-updates.json', { cache: 'no-cache', credentials: 'omit' });
+    // Same-origin credentials let the feed load behind Cloudflare Access on the development site.
+    const response = await fetch('/data/dart-updates.json', { cache: 'no-cache', credentials: 'same-origin' });
     if (!response.ok) throw new Error('Update history unavailable');
     const { updates } = await response.json();
     if (!updates.length) {
