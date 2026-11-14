@@ -71,7 +71,7 @@
   while(walker.nextNode())nodes.push(walker.currentNode);
   for(const node of nodes){
    const parent=node.parentElement;
-   if(!parent||parent.closest('script,style,svg,a,button,nav,summary,table,h1,.source-links,.source,.data-freshness,.num,.vcard,.term b'))continue;
+   if(!parent||parent.closest('script,style,svg,a,button,nav,summary,table,h1,.source-links,.source,.data-freshness,.num,.vcard,.term b,.insight-card small,.insight-note,.quarter-highlight'))continue;
    const text=parent.closest('#company-intro,#company-business,#company-drivers')?node.textContent:parent.closest('.glossary')?compactGlossaryText(node.textContent):compactCompanyText(node.textContent);node.textContent=text;
    if(parent.closest('.glossary'))continue;
    const matches=findCompanyTerms(text,entries);if(!matches.length)continue;
