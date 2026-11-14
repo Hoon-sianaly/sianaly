@@ -19,11 +19,21 @@ function reconcile(state,ledger,records){
    if(resolved&&(decision.status==='updated'||expected.receipt)){
     resolved=Boolean(row.sourceIds?.some(id=>record.sources?.some(s=>s.id===id&&s.url===decision.url)));
    }
+   // Regular reports take precedence over preliminary earnings. When a later regular filing for the same
+   // period, currency and basis is published with its own DART source, the reviewed preliminary figure is
+   // superseded rather than reopened.
+   if(!resolved&&/잠정/.test(decision.title||'')&&expected&&f&&row&&f.unit===`${expected.currency}_trillion`&&f.basis===expected.basis){
+    const receipt=row.dart?.receipt;
+    resolved=row.disclosureStatus!=='preliminary'&&/^\d{14}$/.test(receipt||'')&&receipt>item.receipt&&['sales','op'].every(k=>Number.isFinite(row[k]))&&
+     Boolean(row.sourceIds?.some(id=>record.sources?.some(s=>s.id===id&&s.url===`https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${receipt}`)));
+    if(resolved)item.supersededBy=receipt;
+   }
   }else if(decision.status==='excluded'){
    resolved=['monthly','basis','subsidiary'].includes(decision.exclusion)&&Boolean(decision.reason);
   }else if(decision.status!=='deferred')throw Error('Unknown review decision');
   if(resolved){
-   const history={key:item.key,receipt:item.receipt,title:item.title,status:decision.status,reason:decision.reason,reviewedAt:decision.reviewedAt,report:decision.report||'data/dart-review-20261103.json'};
+   const history={key:item.key,receipt:item.receipt,title:item.title,status:decision.status,reason:decision.reason,reviewedAt:decision.reviewedAt,report:decision.report||'data/dart-review-20261103.json',...(item.supersededBy?{supersededBy:item.supersededBy}:{})};
+   delete item.supersededBy;
    if(!next.reviewHistory.some(r=>r.key===item.key&&r.receipt===item.receipt))next.reviewHistory.push(history);
    closed.push(history);
   }else remaining.push({...item,reviewedAt:decision.reviewedAt,reviewReason:decision.reason,followUp:decision.followUp||'Published financial evidence must match before this item can close'});

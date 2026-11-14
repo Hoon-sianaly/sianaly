@@ -42,4 +42,19 @@ for(const decision of followUp.results.filter(r=>r.status==='updated')){
   const invalid=structuredClone(record);mutate(invalid);assert.equal(reconcile({reviewQueue:[decision]},{results:[decision]},{[decision.key]:invalid}).closed.length,0);
  }
 }
-console.log('PASS: 97 original decisions plus 25 follow-ups; 77 source-checked closures, 20 explained holds; publication guards, idempotence, fiscal periods and retained registry policy.');
+// A later regular report supersedes a reviewed preliminary figure; anything weaker keeps the item open.
+{
+ const prelim='20261022900289',regular='20261113000490',url=r=>`https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${r}`;
+ const supersedeLedger={results:[{key:'sample',receipt:prelim,title:'연결재무제표기준영업(잠정)실적(공정공시)',status:'updated',reason:'checked',reviewedAt:'2026.11.03',url:url(prelim),expected:{currency:'KRW',basis:'consolidated',year:2026,quarter:3,sales:0.265589,op:0.010962,receipt:prelim}}]};
+ const queue={reviewQueue:[{key:'sample',receipt:prelim,title:'잠정실적',reason:'identity'}],pending:[],completed:{}};
+ const record=(row,extra={})=>({financials:{unit:'KRW_trillion',basis:'consolidated',annual:[],quarterly:[{year:2026,quarter:3,sales:0.265589333068,op:0.010962320566,sourceIds:['dart-2026-q3'],dart:{receipt:regular},...row}],...extra},sources:[{id:'dart-2026-q3',url:url(regular)}]});
+ const run=rec=>reconcile(queue,supersedeLedger,{sample:rec});
+ const closed=run(record({}));
+ assert.equal(closed.closed.length,1);assert.equal(closed.closed[0].supersededBy,regular);assert.equal(closed.state.reviewQueue.length,0);
+ assert.equal(run(record({disclosureStatus:'preliminary'})).closed.length,0,'a newer preliminary row does not supersede');
+ assert.equal(run(record({dart:{receipt:'20261001000001'}})).closed.length,0,'an older receipt does not supersede');
+ assert.equal(run(record({sourceIds:['missing']})).closed.length,0,'the regular report must be a published source');
+ assert.equal(run(record({},{basis:'separate'})).closed.length,0,'basis must match');
+ assert.equal(run(record({sales:null})).closed.length,0,'regular figures must be present');
+}
+console.log('PASS: 97 original decisions plus 25 follow-ups; 77 source-checked closures, 20 explained holds; publication guards, idempotence, fiscal periods, regular-report supersession and retained registry policy.');
