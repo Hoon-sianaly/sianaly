@@ -6,7 +6,8 @@ export async function onRequestGet({ request, env }) {
     if (!indexResponse.ok) throw new Error('Company index is unavailable');
 
     const { companies } = await indexResponse.json();
-    const paths = ['/', '/dart-notices', ...companies.map(({ key }) =>
+    // Only final URLs: /dart-notices now redirects to the board, and search consoles flag redirects in sitemaps.
+    const paths = ['/', '/board', '/data-guide', '/terms', '/privacy', ...companies.map(({ key }) =>
       `/company?company=${encodeURIComponent(key)}`,
     )];
     const entries = paths.map(path => `  <url><loc>${publicOrigin}${path}</loc></url>`);
