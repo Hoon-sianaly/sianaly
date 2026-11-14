@@ -37,11 +37,23 @@ async function main(){
  storage.clear();let attempts=0;context.fetch=async(path,options)=>{sent.push(JSON.parse(options.body));return {ok:++attempts>1,status:attempts===1?503:200};};context.scheduleCompanyView('hynix');await delayed();await new Promise(r=>setImmediate(r));assert.equal(sent.at(-1).eventId,sent.at(-2).eventId);assert.equal(sent.at(-1).company,'hynix');
  assert(!fs.readFileSync(root+'/home-popular.js','utf8').includes('삼성전자'),'The ranking must not contain sample companies');
  class Element{constructor(tag='div'){this.tag=tag;this.children=[];this.hidden=false;this.attributes={};}append(...nodes){this.children.push(...nodes);}replaceChildren(...nodes){this.children=nodes;}setAttribute(k,v){this.attributes[k]=v;}}
- const list=new Element('ol'),status=new Element('p'),area={querySelector:selector=>selector==='.popular-list'?list:status};let timer,rankingResponse={status:'ready',windowHours:24,companies:[{key:'samsung',views:3},{key:'unknown',views:999},{key:'hynix',views:2},{key:'samsung',views:1}]};
- const ui=vm.createContext({document:{visibilityState:'visible',getElementById:()=>area,createElement:tag=>new Element(tag),addEventListener(){}},loadCompanyCatalog:async()=>({companies:[{key:'samsung',name:'삼성전자'},{key:'hynix',name:'SK하이닉스'}]}),fetch:async()=>({ok:true,json:async()=>rankingResponse}),AbortSignal,encodeURIComponent,setInterval:fn=>{timer=fn;}});
- vm.runInContext(fs.readFileSync(root+'/home-popular.js','utf8'),ui);await new Promise(r=>setImmediate(r));assert.equal(list.children.length,2);assert.equal(list.children[0].children[0].href,'company.html?company=samsung');assert.equal(list.children[0].children[0].children[1].textContent,'삼성전자');assert.equal(status.hidden,true);
- rankingResponse={status:'ready',windowHours:24,companies:[]};await timer();assert.equal(list.children.length,0);assert.equal(status.hidden,false);assert.match(status.textContent,/조회수가 쌓이면/);
- ui.fetch=async()=>({ok:false});await timer();assert.match(status.textContent,/집계 준비/);
+ const list=new Element('ol'),status=new Element('p'),period=new Element('span'),area={querySelector:selector=>selector==='.popular-list'?list:selector==='.popular-period'?period:status};let timer,rankingResponse={status:'ready',windowHours:24,companies:[{key:'samsung',views:3},{key:'unknown',views:999},{key:'hynix',views:2},{key:'samsung',views:1},{key:'lges',views:1}]};
+ const catalog={companies:[{key:'samsung',name:'삼성전자',market:'KOSPI'},{key:'hynix',name:'SK하이닉스',market:'KOSPI'},{key:'samsungpref',name:'삼성전자우',market:'KOSPI'},{key:'lges',name:'LG에너지솔루션',market:'KOSPI'},{key:'ecopro',name:'에코프로',market:'KOSDAQ'}]};
+ const ui=vm.createContext({document:{visibilityState:'visible',getElementById:()=>area,createElement:tag=>new Element(tag),addEventListener(){}},loadCompanyCatalog:async()=>catalog,fetch:async()=>({ok:true,json:async()=>rankingResponse}),AbortSignal,encodeURIComponent,setInterval:fn=>{timer=fn;}});
+ // Three or more viewed companies: the real 24-hour ranking, duplicates and unknown keys removed.
+ vm.runInContext(fs.readFileSync(root+'/home-popular.js','utf8'),ui);await new Promise(r=>setImmediate(r));assert.equal(list.children.length,3);assert.equal(list.children[0].children[0].href,'/company?company=samsung');assert.equal(list.children[0].children[0].children[1].textContent,'삼성전자');assert.equal(status.hidden,true);assert.equal(period.textContent,'최근 24시간');
+ // A ranking already on screen survives an empty refresh and a failed request.
+ rankingResponse={status:'ready',windowHours:24,companies:[]};await timer();assert.equal(list.children.length,3);
+ ui.fetch=async()=>({ok:false});await timer();assert.equal(list.children.length,3);
+ // A fresh page with fewer than three viewed companies shows KOSPI market-cap leaders (no preferred shares), labelled as such.
+ const list2=new Element('ol'),status2=new Element('p'),period2=new Element('span');area.querySelector=selector=>selector==='.popular-list'?list2:selector==='.popular-period'?period2:status2;
+ ui.fetch=async()=>({ok:true,json:async()=>({status:'ready',windowHours:24,companies:[{key:'hynix',views:4}]})});
+ vm.runInContext(fs.readFileSync(root+'/home-popular.js','utf8'),ui);await new Promise(r=>setImmediate(r));
+ assert.deepEqual(list2.children.map(li=>li.children[0].children[1].textContent),['삼성전자','SK하이닉스','LG에너지솔루션']);assert.equal(period2.textContent,'시가총액 상위');assert.equal(status2.hidden,false);assert.match(status2.textContent,/시가총액 상위/);
+ // If the request fails before any ranking, the same labelled fallback appears instead of an empty box.
+ const list3=new Element('ol'),status3=new Element('p'),period3=new Element('span');area.querySelector=selector=>selector==='.popular-list'?list3:selector==='.popular-period'?period3:status3;
+ ui.fetch=async()=>({ok:false});vm.runInContext(fs.readFileSync(root+'/home-popular.js','utf8'),ui);await new Promise(r=>setImmediate(r));await new Promise(r=>setImmediate(r));
+ assert.equal(list3.children.length,3);assert.equal(period3.textContent,'시가총액 상위');
  console.log('PASS popular: real SQLite aggregation, exact 24-hour cutoff, 48-hour cleanup, duplicate IDs, cached rankings, same-origin/valid-company gates, no personal fields, client cooldown and retry deduplication.');
 }
 main().catch(e=>{console.error(e);process.exitCode=1;});

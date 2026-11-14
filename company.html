@@ -98,7 +98,7 @@ th,td{font-size:12px;padding:13px 8px;border-color:#edf0f4;line-height:1.7}th{fo
 
 header .logo{display:inline-flex;align-items:center;flex-shrink:0}
 header .logo img{display:block;width:clamp(30px, 7vw, 34px);height:auto}
-.board-nav{gap:5px}.board-nav-label{font-size:14px;letter-spacing:0;font-weight:700}@media(max-width:359px){.board-nav-label{display:none}}@media(max-width:430px){header .company-search{order:1}}.quarter-highlight{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-top:18px;padding:12px 14px;border-radius:8px;background:#f4f8ff;font-size:14px;color:#334155}.qh-label{flex-basis:100%;font-size:12px;font-weight:700;color:#5a6b85}.quarter-highlight b{font-variant-numeric:tabular-nums;color:#0f172a}.quarter-highlight em{margin-left:6px;font-style:normal;font-size:13px;font-weight:700}.qh-up{color:#d6334a}.qh-down{color:#2f6fdc}.member-company-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.hero-action{font:inherit;font-size:12px;line-height:1.5;white-space:nowrap;padding:9px 14px;border:1px solid #dfe5ed;border-radius:7px;background:#fff;color:#536178;cursor:pointer;text-decoration:none}.hero-action:hover{border-color:#93b0f1;color:#3568e8}</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
+.board-nav{gap:5px}.board-nav-label{font-size:14px;letter-spacing:0;font-weight:700}@media(max-width:359px){.board-nav-label{display:none}}@media(max-width:430px){header .company-search{order:1}}.quarter-highlight{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-top:18px;padding:12px 14px;border-radius:8px;background:#f4f8ff;font-size:14px;color:#334155}.qh-label{flex-basis:100%;font-size:12px;font-weight:700;color:#5a6b85}.quarter-highlight b{font-variant-numeric:tabular-nums;color:#0f172a}.quarter-highlight em{margin-left:6px;font-style:normal;font-size:13px;font-weight:700}.qh-up{color:#d6334a}.qh-down{color:#2f6fdc}.qh-flat{color:#5a6b85}.member-company-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.hero-action{font:inherit;font-size:12px;line-height:1.5;white-space:nowrap;padding:9px 14px;border:1px solid #dfe5ed;border-radius:7px;background:#fff;color:#536178;cursor:pointer;text-decoration:none}.hero-action:hover{border-color:#93b0f1;color:#3568e8}/* Readable basis and source text: at least 12px and 4.5:1 contrast on white. */#app .num small,#app .source-links,#app .financial-basis,#app .insight-card small,#app .blue{font-size:12px;color:#5b6576}#app .data-freshness{font-size:13px;color:#3d4a5f;font-weight:600}#app .insight-card small b{color:#1e3a8a;font-weight:700}.section-toc summary{color:#5b6576}</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
 <body>
 <header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div><a class="board-nav company-board-nav" href="/board" aria-label="커뮤니티 자유게시판" title="커뮤니티 자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg><span class="board-nav-label">커뮤니티</span></a></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 기록 끄고 지우기" title="기록 끄고 지우기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 기록 켜기" title="최근 본 기업 기록 켜기">←</button></main>
@@ -185,10 +185,12 @@ function metricChange(current,previous,profit=false){
 function financialInsights(row,previous,basis){
  if(!row)return '';
  if(row.comparableToPrevious===false)previous=undefined;
+ const periodName=r=>r.periodLabel||(r.quarter?`${r.year}년 ${r.quarter}분기`:`${r.year}년`);
+ const comparedHelp=previous?`<b>${esc(basis)}</b> · ${esc(periodName(previous))} → ${esc(periodName(row))}`:'';
  const profitMetric=/이익|손익/.test(c.financialMetrics.op.label);
- const cards=[{label:`${salesLabel} 증감`,value:metricChange(row.sales,previous?.sales),help:previous?basis:'비교할 이전 기간 자료가 없습니다.'},{label:`${opLabel} 증감`,value:metricChange(row.op,previous?.op,profitMetric),help:previous?basis:'비교할 이전 기간 자료가 없습니다.'}];
+ const cards=[{label:`${salesLabel} 증감`,value:metricChange(row.sales,previous?.sales),help:previous?comparedHelp:'비교할 이전 기간 자료가 없습니다.'},{label:`${opLabel} 증감`,value:metricChange(row.op,previous?.op,profitMetric),help:previous?comparedHelp:'비교할 이전 기간 자료가 없습니다.'}];
  const ordinary=c.financialMetrics.sales.label==='매출'&&c.financialMetrics.op.label==='영업이익';
- if(ordinary)cards.push({label:'영업이익률',value:row.sales>0?`${(row.op/row.sales*100).toFixed(1)}%`:'산출 불가',help:'영업이익 ÷ 매출 × 100'});
+ if(ordinary)cards.push({label:'영업이익률',value:row.sales>0?`${(row.op/row.sales*100).toFixed(1)}%`:'산출 불가',help:`${esc(periodName(row))} · ${esc(c.financialBasis||'')} 영업이익 ÷ 매출 × 100`});
  return `<div class="insight-grid">${cards.map(card=>`<div class="insight-card"><span>${card.label}</span><strong>${card.value}</strong><small>${card.help}</small></div>`).join('')}</div><p class="insight-note">${esc((row.periodLabel || `${row.year}년${row.quarter?` ${row.quarter}분기`:" 연간"}`)+(row.reportPeriod?` · ${String(row.reportPeriod).replace(/-/g,".").replace("–","~")}`:""))} 실적 기준 · 증감률은 표시값으로 반올림하기 전 수치로 계산합니다.${ordinary?'':' 이 기업은 일반 매출·영업이익과 지표 구성이 달라 영업이익률을 표시하지 않습니다.'}</p>`;
 }
 if(!c){app.innerHTML='<section class="empty">기업 정보를 찾을 수 없습니다.<br><br><a href="index.html">기업 검색으로 돌아가기</a></section>';}
@@ -201,17 +203,16 @@ else{
  const quarterComparison=priorYearQuarter||priorQuarter;
  const quarterBasis=priorYearQuarter?`전년 동기 대비 · ${esc(priorYearQuarter.periodLabel || `${priorYearQuarter.year}년 ${priorYearQuarter.quarter}분기`)}`:`직전 분기 대비${priorQuarter?` · ${esc(priorQuarter.periodLabel || `${priorQuarter.year}년 ${priorQuarter.quarter}분기`)}`:''}`;
  const displayNumber=value=>formatFinancialHighlight(value,c.financialCurrency);
- const changeText=(current,previous)=>{
+ const changeText=(current,previous,profit)=>{
   if(!Number.isFinite(current)||!Number.isFinite(previous))return null;
-  if(previous<0&&current>0)return {text:'흑자 전환',tone:'up'};
-  if(previous>0&&current<0)return {text:'적자 전환',tone:'down'};
-  if(previous<=0||current<0)return null;
-  const rate=(current-previous)/previous*100;
-  return {text:`${rate>=0?'+':''}${rate.toFixed(1)}%`,tone:rate>=0?'up':'down'};
+  const text=metricChange(current,previous,profit);
+  if(text==='비교 자료 없음'||text==='비교 기준 0')return null;
+  const tone=/^\+|흑자|축소/.test(text)?'up':/^-|적자 전환|확대/.test(text)?'down':'flat';
+  return {text,tone};
  };
  const quarterMetric=(label,field)=>{
   if(!Number.isFinite(latestQuarter?.[field]))return '';
-  const change=changeText(latestQuarter[field],priorYearQuarter?.[field]);
+  const change=changeText(latestQuarter[field],priorYearQuarter?.[field],field==='op'&&/이익|손익/.test(c.financialMetrics.op.label));
   return `<span class="qh-metric">${label} <b>${displayNumber(latestQuarter[field])}</b>${change?`<em class="qh-${change.tone}">${change.text}</em>`:''}</span>`;
  };
  const quarterHighlight=awaiting||!latestQuarter?'':`<div class="quarter-highlight"><span class="qh-label">최근 분기 · ${esc(latestQuarter.periodLabel || `${latestQuarter.year}년 ${latestQuarter.quarter}분기${latestQuarter.disclosureStatus==="preliminary"?" (잠정)":""}`)}${priorYearQuarter?' · 전년 동기 대비':''}</span>${quarterMetric(salesLabel,'sales')}${quarterMetric(opLabel,'op')}</div>`;

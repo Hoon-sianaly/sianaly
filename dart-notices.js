@@ -50,12 +50,36 @@ function renderCompanyPage(list, more, companies) {
   more.textContent = `${Math.min(remaining, NOTICE_PAGE_SIZE)}개 더 보기 (남은 기업 ${remaining}개)`;
 }
 
-function renderUpdate({ publishedAt, companies }) {
+const noticeDay = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric', weekday: 'short' });
+const dayKey = publishedAt => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul' }).format(new Date(publishedAt));
+// Visible day lines before the archive; the feed keeps 20 publish batches, often several per day.
+const NOTICE_VISIBLE_DAYS = 3;
+
+// Several publishes on the same KST day become one entry; a company's periods merge by receipt number.
+function groupUpdatesByDay(updates) {
+  const days = new Map();
+  for (const update of updates) {
+    const key = dayKey(update.publishedAt);
+    if (!days.has(key)) days.set(key, { publishedAt: update.publishedAt, runs: 0, byCompany: new Map() });
+    const day = days.get(key);
+    day.runs += 1;
+    for (const company of update.companies) {
+      if (!day.byCompany.has(company.key)) day.byCompany.set(company.key, { ...company, periods: [] });
+      const merged = day.byCompany.get(company.key);
+      for (const period of company.periods) {
+        if (!merged.periods.some(existing => existing.receipt === period.receipt)) merged.periods.push(period);
+      }
+    }
+  }
+  return [...days.values()].map(day => ({ publishedAt: day.publishedAt, runs: day.runs, companies: [...day.byCompany.values()] }));
+}
+
+function renderUpdate({ publishedAt, runs, companies }) {
   const details = noticeElement('details', undefined, 'notice-update');
   const summary = noticeElement('summary');
   summary.append(
-    noticeElement('span', noticeDate.format(new Date(publishedAt)), 'notice-date'),
-    noticeElement('span', `${companies.length}개 기업 실적 반영`, 'notice-count'),
+    noticeElement('span', noticeDay.format(new Date(publishedAt)), 'notice-date'),
+    noticeElement('span', `${companies.length}개 기업 실적 반영${runs > 1 ? ` · ${runs}회 갱신` : ''}`, 'notice-count'),
   );
   details.append(summary);
   // Build the company list only when the reader opens it.
@@ -82,11 +106,12 @@ async function loadDartNotices() {
       noticeFeed.replaceChildren(noticeElement('p', '아직 반영된 업데이트가 없습니다.'));
       return;
     }
-    const [latest, ...older] = updates.map(renderUpdate);
-    const entries = [latest];
+    const days = groupUpdatesByDay(updates).map(renderUpdate);
+    const [latest] = days;
+    const entries = days.slice(0, NOTICE_VISIBLE_DAYS), older = days.slice(NOTICE_VISIBLE_DAYS);
     if (older.length) {
       const archive = noticeElement('details', undefined, 'notice-archive');
-      archive.append(noticeElement('summary', `이전 업데이트 ${older.length}건`), ...older);
+      archive.append(noticeElement('summary', `이전 업데이트 ${older.length}일`), ...older);
       entries.push(archive);
     }
     noticeFeed.replaceChildren(...entries);
