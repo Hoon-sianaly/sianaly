@@ -1,6 +1,40 @@
 const escapeAttribute = value => String(value)
   .replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
+const textList = values => (Array.isArray(values) ? values : [])
+  .filter(value => typeof value === 'string' && value.trim()).map(value => value.trim());
+
+function formatTrillionKRW(value) {
+  if (!Number.isFinite(value)) return null;
+  const abs = Math.abs(value), sign = value < 0 ? '-' : '';
+  if (abs >= 1) return `${sign}${abs.toLocaleString('ko-KR', { maximumFractionDigits: 2 })}조원`;
+  return `${sign}${Math.round(abs * 10000).toLocaleString('ko-KR')}억원`;
+}
+
+// Plain HTML for crawlers, link previews and text-only readers. company.html replaces it on load.
+function companySummaryHTML(record, name) {
+  const { profile = {}, overview = {}, financials = {} } = record;
+  const parts = [`<section class="empty" role="status"><h1>${escapeAttribute(name)}</h1>`];
+  const meta = [profile.ticker, profile.type].filter(value => typeof value === 'string' && value.trim());
+  if (meta.length) parts.push(`<p>${meta.map(escapeAttribute).join(' · ')}</p>`);
+  if (typeof overview.short === 'string' && overview.short.trim()) parts.push(`<p>${escapeAttribute(overview.short.trim())}</p>`);
+  const takeaways = textList(overview.takeaways);
+  if (takeaways.length) parts.push(`<h2>${escapeAttribute(name)} 한눈에 보기</h2><ol>${takeaways.map(line => `<li>${escapeAttribute(line)}</li>`).join('')}</ol>`);
+  const business = (Array.isArray(overview.business) ? overview.business : []).filter(item => typeof item?.name === 'string');
+  if (business.length) {
+    parts.push(`<h2>주요 사업</h2><ul>${business.map(item => `<li><strong>${escapeAttribute(item.name)}</strong>${typeof item.desc === 'string' ? ` · ${escapeAttribute(item.desc)}` : ''}</li>`).join('')}</ul>`);
+  }
+  const annual = Array.isArray(financials.annual) ? financials.annual : [];
+  const latest = financials.unit === 'KRW_trillion' && !financials.metrics
+    ? [...annual].reverse().find(row => Number.isFinite(row?.sales) && Number.isFinite(row?.op) && !row.partialPeriod) : null;
+  if (latest) {
+    const basis = financials.basis === 'separate' ? '별도' : '연결';
+    parts.push(`<p>${latest.year}년 연간 실적(${basis} 기준): 매출 ${formatTrillionKRW(latest.sales)}, 영업이익 ${formatTrillionKRW(latest.op)}</p>`);
+  }
+  parts.push('<p>기업 정보를 불러오는 중입니다.</p></section>');
+  return parts.join('');
+}
+
 // The page renders "기업 정보를 찾을 수 없습니다" itself; tell crawlers it is a real 404, not a soft one.
 function companyNotFound(page) {
   const headers = new Headers(page.headers);
@@ -44,6 +78,9 @@ async function withCompanyTitle({ env, next }, url) {
     .on('meta[property="og:title"]', replaceContent(title))
     .on('meta[property="og:description"]', replaceContent(description))
     .on('meta[property="og:url"]', replaceContent(canonical))
+    .on('#app', {
+      element(app) { app.setInnerContent(companySummaryHTML(record, name), { html: true }); },
+    })
     .on('head', {
       element(head) { head.append(`<link rel="canonical" href="${escapeAttribute(canonical)}">`, { html: true }); },
     })

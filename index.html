@@ -88,9 +88,9 @@ body{background:#f3f7fd}
 .discovery-markets button[aria-pressed="true"]{color:#20539b}
 @media(max-width:540px){.hero{padding-bottom:28px}}
 @media(max-width:430px){.home-topbar .member-auth-buttons{gap:6px}}
-</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
+.board-nav{gap:5px}.board-nav-label{font-size:14px;letter-spacing:0;font-weight:700}@media(max-width:359px){.board-nav-label{display:none}}</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
 <body>
-<div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="board-nav" href="/board" aria-label="자유게시판" title="자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg></a></header></div>
+<div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="board-nav" href="/board" aria-label="커뮤니티 자유게시판" title="커뮤니티 자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg><span class="board-nav-label">커뮤니티</span></a></header></div>
 <section class="hero">
 <h1><img class="hero-wordmark" src="sianaly-wordmark.svg?v=blue-4" alt="SIANALY" width="370" height="64"></h1>
 <div class="search"><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span class="search-enter" aria-hidden="true">↵</span><input id="q" aria-label="기업명 또는 종목코드 검색" placeholder="기업명 또는 종목코드 검색" autocomplete="off"><div id="r" class="results hidden"></div></div>
@@ -105,14 +105,14 @@ body{background:#f3f7fd}
 </main>
 <footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="terms.html">이용약관</a><a href="privacy.html" class="privacy-link">개인정보 처리방침</a><a href="data-guide.html">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261103-reading-3"></script>
-<script src="company-data.js?v=20261106-financial-review"></script>
-<script src="home-discovery.js?v=20261109-privacy"></script>
+<script src="company-data.js?v=20261115-timeout"></script>
+<script src="home-discovery.js?v=20261115-industries"></script>
 <script src="home-popular.js?v=20261103-popular-1"></script>
 <script>
 let companies=[], catalogState="loading";
 const q=document.getElementById("q"),r=document.getElementById("r");
 const normalize=v=>v.toLowerCase().replace(/\s+/g,"");
-function matches(c,s){return [c.name,c.ticker,c.alias||""].some(v=>normalize(v).includes(normalize(s)))}
+const CHOSUNG="ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ",toChosung=v=>[...v].map(ch=>{const code=ch.charCodeAt(0)-44032;return code>=0&&code<11172?CHOSUNG[Math.floor(code/588)]:ch}).join(""),isChosungQuery=q=>/^[ㄱ-ㅎ]+$/.test(q);function matches(c,s){const q=normalize(s);if(isChosungQuery(q))return [c.name,c.alias||""].some(v=>toChosung(normalize(v)).includes(q));return [c.name,c.ticker,c.alias||""].some(v=>normalize(v).includes(q))}
 loadCompanyCatalog().then(catalog=>{companies=catalog.companies;catalogState="ready";render(q.value)}).catch(error=>{console.error(error);catalogState="error";render(q.value)});
 function render(v){let s=v.trim().toLowerCase();if(!s){r.className="results hidden";return}
 if(catalogState!=="ready"){r.innerHTML=`<div class="result" role="status"><b>${catalogState==="loading"?"기업 목록을 불러오는 중입니다.":"기업 목록을 불러오지 못했습니다."}</b><span>${catalogState==="loading"?"잠시만 기다려 주세요.":"페이지를 새로고침해 다시 시도해 주세요."}</span></div>`;r.className="results";return}

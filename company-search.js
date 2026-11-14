@@ -3,6 +3,8 @@
  if(!input || !results)return;
  let companies=[],state="loading",matches=[],active=-1;
  const normalize=value=>value.toLowerCase().replace(/\s+/g,"");
+ // Initial-consonant search: "ㅅㅅㅈㅈ" finds 삼성전자.
+ const CHOSUNG="ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ",toChosung=v=>[...v].map(ch=>{const code=ch.charCodeAt(0)-44032;return code>=0&&code<11172?CHOSUNG[Math.floor(code/588)]:ch}).join(""),isChosungQuery=q=>/^[ㄱ-ㅎ]+$/.test(q);
  const escape=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  function close(){results.hidden=true;input.setAttribute("aria-expanded","false");input.removeAttribute("aria-activedescendant");active=-1;}
  function render(){
@@ -10,7 +12,7 @@
   if(!query){close();return;}
   if(state!=="ready")results.innerHTML=`<div class="company-search-status" role="status">${state==="loading"?"기업 목록을 불러오는 중입니다.":"기업 목록을 불러오지 못했습니다. 새로고침해 다시 시도해 주세요."}</div>`;
   else {
-   matches=companies.filter(company=>[company.name,company.ticker,company.alias||""].some(value=>normalize(value).includes(query)));
+   matches=companies.filter(company=>isChosungQuery(query)?[company.name,company.alias||""].some(value=>toChosung(normalize(value)).includes(query)):[company.name,company.ticker,company.alias||""].some(value=>normalize(value).includes(query)));
    results.innerHTML=matches.length?matches.map((company,i)=>`<a id="companySearchOption${i}" class="company-search-result" role="option" aria-selected="false" href="company.html?company=${encodeURIComponent(company.key)}"><b>${escape(company.name)}</b><span>${escape(company.ticker)} · ${escape(company.market||"KOSPI")}</span></a>`).join(""):'<div class="company-search-status" role="status">검색 결과가 없습니다.</div>';
   }
   results.hidden=false;input.setAttribute("aria-expanded","true");

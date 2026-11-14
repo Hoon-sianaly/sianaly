@@ -11,12 +11,13 @@
 <meta property="og:title" content="자유게시판 · SIANALY">
 <meta property="og:description" content="관심 있는 기업 이야기부터 가벼운 질문까지 나누는 SIANALY 커뮤니티와 DART 실적 반영 공지입니다.">
 <meta property="og:url" content="https://sianaly.com/board">
+<link rel="canonical" href="https://sianaly.com/board">
 <meta property="og:image" content="https://sianaly.com/favicon.png">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
 <link rel="stylesheet" href="member-account.css?v=20261108-member-legal">
-<link rel="stylesheet" href="board.css?v=20261115-notices-compact">
-<script src="company-data.js?v=20261106-financial-review" defer></script>
+<link rel="stylesheet" href="board.css?v=20261115-nav-label">
+<script src="company-data.js?v=20261115-timeout" defer></script>
 <script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261109-privacy" defer></script>
 <script src="board.js?v=20261115-errors" defer></script>
 <script src="/dart-notices.js?v=20261115-access" defer></script>
@@ -24,7 +25,7 @@
 <body>
 <header class="board-header">
 <a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a>
-<a class="board-nav" href="board.html" aria-label="게시판" title="게시판" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg></a>
+<a class="board-nav" href="/board" aria-label="커뮤니티 자유게시판" title="커뮤니티 자유게시판" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg><span class="board-nav-label">커뮤니티</span></a>
 </header>
 <main id="app" class="board">
 <section class="board-hero" aria-labelledby="board-title">
@@ -48,7 +49,7 @@
 </section>
 <div id="board-toolbar" class="board-toolbar">
   <h2>전체 글</h2>
-  <a id="board-write" class="board-primary" href="board.html?write=1">
+  <a id="board-write" class="board-primary" href="/board?write=1">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5 4 4M4 20l5-1L20 8a2.8 2.8 0 0 0-4-4L5 15l-1 5Z"/></svg>
     글쓰기
   </a>

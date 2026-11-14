@@ -133,6 +133,7 @@ export async function handleBoard({db, url, method, user, nickname, readBody, re
    }
    const input = normalizePostInput(raw);
    if (!validPost(input)) return respond({code:'invalid_post'},400);
+   if (promotionalContent(input)) return respond({code:'promotion_blocked'},400);
    const target=await db.prepare('SELECT id,created_at FROM board_posts WHERE id = ? AND owner = ?').bind(postId,user.id).first();
    if(!target)return respond({code:'post_not_found'},404);
    const changes=await db.batch([await recoveryStatement(db,'post-update',{id:postId,createdAt:target.created_at,title:input.title,body:input.body},now),db.prepare('UPDATE board_posts SET title = ?, body = ? WHERE id = ? AND owner = ? AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?)').bind(input.title,input.body,postId,user.id,memberHash)]);
@@ -144,6 +145,7 @@ export async function handleBoard({db, url, method, user, nickname, readBody, re
  const input = await readPostInput(readBody);
  if (!input) return respond({code:'invalid_post'},400);
  const {body,title} = input;
+ if (promotionalContent(input)) return respond({code:'promotion_blocked'},400);
  if (postId) {
   if (!body || body.length > 500) return respond({code:'invalid_post'},400);
   const result = await db.prepare('INSERT INTO board_comments (post_id, owner, author, body, created_at) SELECT ?, ?, ?, ?, ? WHERE EXISTS (SELECT 1 FROM board_posts WHERE id = ?) AND NOT EXISTS (SELECT 1 FROM board_hidden_posts WHERE post_id = ?) AND NOT EXISTS (SELECT 1 FROM board_departed_members WHERE owner_hash = ?) AND NOT EXISTS (SELECT 1 FROM board_comments WHERE owner = ? AND created_at > ?)').bind(postId,user.id,nickname,body,now,postId,postId,memberHash,user.id,now-5000).run();
@@ -164,6 +166,12 @@ async function readPostInput(readBody) {
 }
 function normalizePostInput(input) {
  return {body:typeof input.body === 'string' ? input.body.trim() : '',title:typeof input.title === 'string' ? input.title.trim() : ''};
+}
+// Paid stock-tip rooms recruit through messenger invites and phone numbers. Mentioning them in words is still allowed.
+const PROMOTION_PATTERNS=[/open\.kakao\.com/i,/pf\.kakao\.com/i,/(?:^|[^a-z0-9.])t\.me\//i,/telegram\.(?:me|dog)\//i,/band\.us\//i,/discord(?:\.gg|app\.com\/invite)\//i,/(?:^|\D)01[016789][-.\s]?\d{3,4}[-.\s]?\d{4}(?:\D|$)/];
+export function promotionalContent(input) {
+ const text=`${input?.title||''}\n${input?.body||''}`.normalize('NFKC');
+ return PROMOTION_PATTERNS.some(pattern=>pattern.test(text));
 }
 function validPost(input) {
  return input?.title && input.title.length <= 100 && input.body && input.body.length <= 4000;

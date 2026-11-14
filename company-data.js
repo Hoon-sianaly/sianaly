@@ -8,7 +8,14 @@ let financialPeriodReviewPromise;
 let companyCatalogPromise;
 
 async function readCompanyJSON(path) {
- const response = await fetch(`${path}?v=${COMPANY_DATA_VERSION}`, {cache:'no-cache'});
+ // A stalled request must end in the page's retry message instead of loading forever.
+ let response;
+ try {
+  const signal = typeof AbortSignal !== 'undefined' && AbortSignal.timeout ? AbortSignal.timeout(15000) : undefined;
+  response = await fetch(`${path}?v=${COMPANY_DATA_VERSION}`, {cache:'no-cache', signal});
+ } catch {
+  throw new Error("기업 데이터를 불러오지 못했습니다. 연결을 확인한 뒤 다시 시도해 주세요.");
+ }
  if (!response.ok) throw new Error(`기업 데이터를 불러오지 못했습니다 (${response.status}).`);
  const data = await response.json();
  if (data.schemaVersion !== 1) throw new Error("지원하지 않는 기업 데이터 형식입니다.");

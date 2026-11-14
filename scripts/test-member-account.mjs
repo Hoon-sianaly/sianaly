@@ -129,6 +129,13 @@ const created=await board('',{method:'POST',body:{title:'원래 제목',body:'�
 assert.equal(created.status,201);
 const {id}=await created.json(), detail='?post='+id;
 assert.equal((await board(detail,{method:'POST',body:{body:'댓글'}})).status,201);
+for(const promo of [{title:'수익 인증',body:'open.kakao.com/o/room 입장'},{title:'문의',body:'010-1234-5678로 연락'}]){
+ const blocked=await board('',{method:'POST',body:promo});
+ assert.equal(blocked.status,400);assert.equal((await blocked.json()).code,'promotion_blocked');
+}
+assert.equal((await (await board(detail,{method:'POST',body:{body:'https://t.me/room'}})).json()).code,'promotion_blocked');
+// Warning about tip rooms in words is fine; this second post may only meet the normal posting rate limit.
+assert.notEqual((await (await board('',{method:'POST',body:{title:'리딩방 주의',body:'리딩방 권유 연락은 조심하세요'}})).json()).code,'promotion_blocked');
 assert.equal((await (await board(detail,{cookie:memberCookie})).json()).canManage,true);
 const publicDetail=await (await board(detail)).json();
 assert.equal(publicDetail.canManage,false);

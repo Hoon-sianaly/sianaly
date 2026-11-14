@@ -12,6 +12,7 @@
   login_required:'로그인한 뒤 이용할 수 있어요.',
   nickname_required:'먼저 마이페이지에서 별명을 설정해 주세요.',
   invalid_post:'입력 내용을 확인해 주세요.',
+  promotion_blocked:'메신저 초대 링크나 전화번호는 올릴 수 없어요. 리딩방·유료 추천 홍보는 금지돼 있어요.',
   slow_down:'잠시 기다렸다 다시 등록해 주세요.',
   post_not_found:'글을 찾을 수 없어요.',
   forbidden:'운영자만 이용할 수 있어요.'
@@ -115,7 +116,7 @@
      method:existing ? 'PATCH' : 'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)
     });
     window.removeEventListener('beforeunload',confirmLeaving);
-    location.assign('board.html?post=' + encodeURIComponent(result.id));
+    location.assign('/board?post=' + encodeURIComponent(result.id));
    } catch (error) {
     feedback.textContent = error.message;
     submit.disabled = false;
@@ -142,7 +143,7 @@
    feedback.textContent = '';
    try {
     await request(url,{method:'DELETE',headers:{'Content-Type':'application/json'}});
-    location.assign('board.html');
+    location.assign('/board');
    } catch (error) {
     feedback.textContent = error.message;
     edit.disabled = remove.disabled = false;
@@ -164,7 +165,7 @@
    feedback.textContent = '';
    try {
     await request(url,{method:removing?'DELETE':'PATCH',headers:{'Content-Type':'application/json'},...(removing?{}:{body:JSON.stringify({hidden:!post.hidden})})});
-    if (removing) location.assign('board.html');
+    if (removing) location.assign('/board');
     else location.reload();
    } catch (error) {
     feedback.textContent = error.message;
@@ -181,7 +182,7 @@
   if (writing || postId) {
    document.getElementById('board-toolbar').hidden = true;
    document.querySelector('.board-hero').classList.add('board-hero-compact');
-   content.append(link('← 목록으로','board.html','board-secondary'));
+   content.append(link('← 목록으로','/board','board-secondary'));
   }
   if (writing) {
    const card = element('div',null,'board-card');
@@ -238,7 +239,7 @@
    const listApi = api + (moderation ? '?moderation=1' : '');
    if (moderation) {
     document.querySelector('#board-toolbar h2').textContent = '숨긴 글';
-    writeLink.before(link('전체 글','board.html','board-secondary'));
+    writeLink.before(link('전체 글','/board','board-secondary'));
    }
    const card = element('div',null,'board-card board-feed');
    const list = element('ul',null,'board-list');
@@ -246,10 +247,10 @@
    content.append(card);
    const loadPosts = async before => {
     const {posts,next,canModerate} = await request(before ? listApi + (moderation?'&':'?') + 'before=' + before : listApi);
-    if (!before && canModerate && !moderation) writeLink.before(link('숨긴 글','board.html?moderation=1','board-secondary'));
+    if (!before && canModerate && !moderation) writeLink.before(link('숨긴 글','/board?moderation=1','board-secondary'));
     for (const post of posts) {
      const item = element('li');
-     const title = link((post.hidden?'[숨김] ':'')+post.title,'board.html?post=' + encodeURIComponent(post.id));
+     const title = link((post.hidden?'[숨김] ':'')+post.title,'/board?post=' + encodeURIComponent(post.id));
      title.append(metadata(post));
      item.append(title);
      list.append(item);
