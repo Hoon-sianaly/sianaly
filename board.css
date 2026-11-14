@@ -23,10 +23,22 @@ body{margin:0;background:#f4f7fc;color:#17243b;font:16px/1.6 system-ui,sans-seri
 .board-notices h2{margin:0;font-size:16px}
 .board-notices h2 span{display:inline-block;margin-right:4px;padding:2px 7px;border-radius:5px;background:#d9e9ff;font-size:12px}
 .board-notices p{margin:8px 0 0;color:#536b8b;font-size:13px}
-.board-notices details{margin-top:8px;border-top:1px solid #d7e5f7}
-.board-notices summary{padding:8px 0 0;cursor:pointer;font-size:14px;font-weight:600}
-.board-notices ul{margin:8px 0;padding-left:21px;font-size:14px}
+.board-notices details{margin-top:10px;border-top:1px solid #d7e5f7}
+.board-notices summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 0 0;cursor:pointer;font-size:14px;font-weight:600}
+.board-notices summary::marker{color:#5a7fb0}
+.board-notices .notice-count{color:#1458a8}
+.board-notices .notice-archive>summary{color:#536b8b;font-weight:600}
+.board-notices .notice-archive .notice-update{margin-left:14px}
 .board-notices a{color:#1458a8;text-decoration:underline;text-underline-offset:2px}
+.notice-companies{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:6px 18px;margin:10px 0 4px;padding:0;list-style:none;font-size:13px}
+.notice-company{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px;padding:6px 0;border-bottom:1px dashed #d7e5f7}
+.board-notices .notice-company-name{font-weight:650;text-decoration:none}
+.board-notices .notice-company-name:hover{text-decoration:underline}
+.notice-period{color:#536b8b}
+.board-notices .notice-source{font-size:12px;color:#5a7fb0}
+.notice-more{margin:8px 0 2px;padding:7px 12px;border:1px solid #cfdff5;border-radius:9px;background:#fff;color:#1458a8;font:inherit;font-size:13px;font-weight:650;cursor:pointer}
+.notice-more[hidden]{display:none}
+@media(max-width:540px){.board-notices{padding:14px 16px}.notice-companies{grid-template-columns:1fr}}
 .board h2{line-height:1.4;overflow-wrap:anywhere}
 .board-primary,.board-secondary{display:inline-flex;align-items:center;gap:7px;border-radius:10px;padding:8px 14px;border:1px solid #dbe5f3;background:#fff;color:#264b83;font:inherit;font-weight:650;cursor:pointer}
 .board-primary{background:#175bbc;border-color:#175bbc;color:#fff}

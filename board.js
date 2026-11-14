@@ -33,9 +33,16 @@
   return element('small',item.author + ' · ' + time + counts,'board-meta');
  }
  async function request(url, options) {
-  const response = await fetch(url,{...options,cache:'no-store',signal:AbortSignal.timeout(15000)});
-  const data = await response.json();
-  if (!response.ok) throw new Error(errors[data.code] || '게시판을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.');
+  const fallback = '게시판을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.';
+  let response, data;
+  // Timeouts, offline networks and non-JSON error pages must not surface raw browser errors.
+  try {
+   response = await fetch(url,{...options,cache:'no-store',signal:AbortSignal.timeout(15000)});
+  } catch {
+   throw new Error('연결이 원활하지 않아요. 네트워크를 확인한 뒤 다시 시도해 주세요.');
+  }
+  try { data = await response.json(); } catch { throw new Error(fallback); }
+  if (!response.ok) throw new Error(errors[data?.code] || fallback);
   return data;
  }
  function renderMore(parent, next, load) {
