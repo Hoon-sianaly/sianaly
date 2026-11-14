@@ -14,7 +14,7 @@ function formatTrillionKRW(value) {
 // Plain HTML for crawlers, link previews and text-only readers. company.html replaces it on load.
 function companySummaryHTML(record, name) {
   const { profile = {}, overview = {}, financials = {} } = record;
-  const parts = [`<section class="empty" role="status"><h1>${escapeAttribute(name)}</h1>`];
+  const parts = [`<section class="empty" role="status" data-company="${escapeAttribute(profile.key)}"><h1>${escapeAttribute(name)}</h1>`];
   const meta = [profile.ticker, profile.type].filter(value => typeof value === 'string' && value.trim());
   if (meta.length) parts.push(`<p>${meta.map(escapeAttribute).join(' · ')}</p>`);
   if (typeof overview.short === 'string' && overview.short.trim()) parts.push(`<p>${escapeAttribute(overview.short.trim())}</p>`);

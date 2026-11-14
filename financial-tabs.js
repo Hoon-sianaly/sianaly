@@ -126,4 +126,8 @@ function initFinancialTabs(company, renderChart, renderSources, renderInsights) 
  render();
  followHash();
  window.addEventListener('hashchange', followHash);
+ // The quarterly chart scrolls sideways on narrow screens; open it at the newest quarter, not the oldest.
+ const showLatestQuarter=()=>{for(const scroller of quarter.querySelectorAll('.metric-panel'))if(scroller.scrollWidth>scroller.clientWidth)scroller.scrollLeft=scroller.scrollWidth;};
+ requestAnimationFrame(showLatestQuarter);
+ quarter.closest('section')?.parentElement?.addEventListener('click',event=>{if(event.target.closest('[data-period],[data-metric],[role="tab"]'))requestAnimationFrame(showLatestQuarter);});
 }

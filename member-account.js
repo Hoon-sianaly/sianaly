@@ -238,7 +238,7 @@
   const key=new URLSearchParams(location.search).get('company'),hero=document.querySelector('#app .hero');
   if(!hero||!catalog.has(key))return;
   let button=hero.querySelector('.member-favorite');if(button&&wiredFavorites.has(button))return;
-  if(!button){const controls=node('div',undefined,'member-company-controls');button=node('button','☆ 즐겨찾기','member-favorite');button.type='button';button.dataset.company=key;button.setAttribute('aria-pressed','false');controls.append(button);hero.append(controls);}
+  if(!button){const existing=hero.querySelector('.member-company-controls'),controls=existing||node('div',undefined,'member-company-controls');button=node('button','☆ 즐겨찾기','member-favorite');button.type='button';button.dataset.company=key;button.setAttribute('aria-pressed','false');controls.prepend(button);if(!existing)hero.append(controls);}
   wiredFavorites.add(button);button.onclick=()=>changeFavorite(key);render();
  }
  async function init(){

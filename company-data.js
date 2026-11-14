@@ -27,12 +27,26 @@ function loadCompanyCatalog() {
  return companyCatalogPromise;
 }
 
+const historyShard = key => [...key].reduce((n,ch)=>(n+ch.charCodeAt(0))%16,0).toString(16);
+
+// Every company file is data/companies/<key>.json, so start it, its history shard and its period
+// review together with the catalog instead of one after another. Only prefetch when the server
+// already confirmed the company (its summary carries data-company), so unknown keys stay one request.
+function prefetchCompanyFiles(key) {
+ if (!/^[a-z0-9_-]+$/.test(key) || !globalThis.document?.querySelector?.(`#app [data-company="${key}"]`)) return;
+ const quiet = promise => { promise.catch(() => {}); return promise; };
+ if (!companyDataCache.has(key)) companyDataCache.set(key, quiet(readCompanyJSON(`data/companies/${key}.json`)));
+ const shard = historyShard(key);
+ if (!financialHistoryCache.has(shard)) financialHistoryCache.set(shard, quiet(readCompanyJSON(`data/history/${shard}.json`)));
+ if (FINANCIAL_PERIOD_REVIEW_KEYS.has(key) && !financialPeriodReviewPromise) financialPeriodReviewPromise = quiet(readCompanyJSON('data/financial-period-review.json'));
+}
+
 async function loadCompanyRecord(key, ancestors = []) {
  if (ancestors.includes(key)) throw new Error("회사 실적 참조가 순환합니다.");
  const catalog = await loadCompanyCatalog();
  const entry = catalog.companies.find(company => company.key === key);
  if (!entry) return null;
- if (!companyDataCache.has(key)) companyDataCache.set(key, readCompanyJSON(`data/companies/${entry.file}`));
+ if (!companyDataCache.has(key) || entry.file !== `${key}.json`) companyDataCache.set(key, readCompanyJSON(`data/companies/${entry.file}`));
  const record = await companyDataCache.get(key);
  if (record.profile.key !== key) throw new Error("기업 식별자가 일치하지 않습니다.");
  if (!record.financials.companyRef) return record;
@@ -43,7 +57,7 @@ async function loadCompanyRecord(key, ancestors = []) {
 
 async function addFinancialHistory(record) {
  const identity=record.financialHistoryIdentity||record.profile;
- const shard=[...identity.key].reduce((n,ch)=>(n+ch.charCodeAt(0))%16,0).toString(16);
+ const shard=historyShard(identity.key);
  try {
   if(!financialHistoryCache.has(shard))financialHistoryCache.set(shard,readCompanyJSON(`data/history/${shard}.json`));
   const data=await financialHistoryCache.get(shard),history=data.companies[identity.key];
@@ -142,6 +156,8 @@ function companyPageData(record) {
 }
 
 async function loadCompanyData(key) {
+ loadCompanyCatalog();
+ prefetchCompanyFiles(key);
  let record = await loadCompanyRecord(key);
  if(record){const canonical=record.financials;record=await addFinancialHistory(record);record=await addFinancialPeriodReview(record,canonical);}
  if(!record)return null;

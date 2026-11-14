@@ -6,6 +6,8 @@
  const postId = query.get('post');
  const writing = query.get('write') === '1';
  const moderation = query.get('moderation') === '1';
+ // "이 기업 이야기하기" on a company page opens the form with "[기업명] " in the title.
+ let companyTopic = '';
  const api = '/api/account/board';
  const errors = {
   legal_required:'마이페이지에서 회원 이용 안내를 먼저 확인해 주세요.',
@@ -75,6 +77,7 @@
    input.maxLength = limit;
    input.required = true;
    if (existing) input.value = existing[name];
+   else if (name === 'title' && companyTopic) input.value = `[${companyTopic}] `;
    const caption = element('label',label);
    caption.htmlFor = input.id;
    form.append(caption,input);
@@ -185,6 +188,10 @@
    content.append(link('← 목록으로','/board','board-secondary'));
   }
   if (writing) {
+   const topicKey = query.get('company');
+   if (topicKey && typeof loadCompanyCatalog === 'function') {
+    try { companyTopic = (await loadCompanyCatalog()).companies.find(company => company.key === topicKey)?.name || ''; } catch {}
+   }
    const card = element('div',null,'board-card');
    card.append(element('h2','새 글'));
    content.append(card);
