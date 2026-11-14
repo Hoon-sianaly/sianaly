@@ -121,6 +121,38 @@
     ],
     "quarterly": [
       {
+        "year": 2025,
+        "quarter": 2,
+        "sales": 0.090138762582,
+        "op": 0.002265268387,
+        "net": -0.00132887937,
+        "sourceIds": [
+          "comparative-2025-q2"
+        ],
+        "dart": {
+          "receipt": "20260814003281",
+          "rawKRW": {
+            "sales": "90138762582",
+            "op": "2265268387",
+            "net": "-1328879370"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss",
+              "ifrs-full_ProfitLoss"
+            ]
+          },
+          "comparative": true
+        }
+      },
+      {
         "year": 2026,
         "quarter": 1,
         "sales": 0.093948704745,
@@ -181,20 +213,19 @@
         }
       },
       {
-        "year": 2025,
-        "quarter": 2,
-        "sales": 0.090138762582,
-        "op": 0.002265268387,
-        "net": -0.00132887937,
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.109218224929,
+        "op": -0.001264539089,
         "sourceIds": [
-          "comparative-2025-q2"
+          "dart-2026-q3"
         ],
         "dart": {
-          "receipt": "20260814003281",
+          "receipt": "20261113001153",
           "rawKRW": {
-            "sales": "90138762582",
-            "op": "2265268387",
-            "net": "-1328879370"
+            "sales": "109218224929",
+            "op": "-1264539089",
+            "net": "-4024856348"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -208,15 +239,14 @@
               "ifrs-full_ProfitLoss",
               "ifrs-full_ProfitLoss"
             ]
-          },
-          "comparative": true
+          }
         }
       }
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
-      "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.09"
+      "scope": "Validated financial statements and explicitly labelled preliminary earnings",
+      "updatedAt": "2026.11.15"
     }
   },
   "sources": [
@@ -261,6 +291,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003281",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q3",
+      "label": "2026년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001153",
+      "published": "2026.11.13",
+      "verifiedAt": "2026.11.15"
     }
   ],
   "sectionSourceIds": {
