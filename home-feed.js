@@ -10,7 +10,7 @@
  const notices=document.getElementById('homeNotices');
  if(notices&&typeof loadCompanyCatalog==='function'){
   const body=notices.querySelector('.feed-body'),badge=notices.querySelector('.feed-badge');
-  const feed=fetch('data/dart-updates.json',{cache:'no-cache'}).then(response=>{if(!response.ok)throw Error('feed');return response.json();});
+  const feed=fetch('/data/dart-updates.json').then(response=>{if(!response.ok)throw Error('feed');return response.json();});
   const trends=typeof readCompanyJSON==='function'?readCompanyJSON('data/company-trends.json').then(data=>data.companies).catch(()=>({})):Promise.resolve({});
   Promise.all([feed,loadCompanyCatalog(),trends]).then(([data,catalog,trendByKey])=>{
    const updates=Array.isArray(data.updates)?data.updates:[],latest=updates[0];
@@ -30,7 +30,7 @@
     return `<span class="feed-side ${tone}">${esc(t.text)}<small>${esc(t.label)} 전년 대비</small></span>`;
    };
    body.innerHTML=`<p class="feed-sub"><b>${companies.length.toLocaleString('ko-KR')}개 기업</b>의 실적이 ${today?'오늘':esc(monthDay(latest.publishedAt))} 공시로 새로 반영됐어요${preliminary?` · 잠정실적 ${preliminary.toLocaleString('ko-KR')}곳`:''}</p>`+
-    `<ul class="feed-list">${companies.slice(0,5).map(c=>`<li><a href="company.html?company=${encodeURIComponent(c.key)}"><span class="feed-main"><b>${esc(c.name)}</b><small>${esc(period(c.periods[0]))}</small></span>${side(c)}</a></li>`).join('')}</ul>`;
+    `<ul class="feed-list">${companies.slice(0,5).map(c=>`<li><a href="/company?company=${encodeURIComponent(c.key)}"><span class="feed-main"><b>${esc(c.name)}</b><small>${esc(period(c.periods[0]))}</small></span>${side(c)}</a></li>`).join('')}</ul>`;
   }).catch(()=>{body.innerHTML='<p class="feed-empty">공시 요약을 불러오지 못했어요. <a href="/board#board-notices">공시 업데이트 보기</a></p>';});
  }
 

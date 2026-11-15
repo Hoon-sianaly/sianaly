@@ -5,7 +5,10 @@ const assert = require("node:assert/strict");
 const root = path.resolve(__dirname, "..");
 const loader = fs.readFileSync(path.join(root, "company-reading.js"), "utf8")+'\n'+fs.readFileSync(path.join(root, "company-data.js"), "utf8");
 const html = fs.readFileSync(path.join(root, "company.html"), "utf8");
-const script = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(match => match[1]).join("\n");
+// Only executable scripts: speculation rules are JSON data for the browser, not code.
+const script = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
+ .filter(([, attributes]) => !/\btype\s*=\s*["'](?:application\/ld\+json|speculationrules)["']/i.test(attributes))
+ .map(match => match[2]).join("\n");
 function context(key, transform, failed = false) {
  const nodes = {}, storage = new Map(), errors = [], requests = [], financialTabsCalls = [];
  const classList = () => ({add(){},toggle(){}});

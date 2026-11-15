@@ -1,4 +1,4 @@
-// Home "두 기업 비교하기": choose two companies, then open compare.html?a=<key>&b=<key>.
+// Home "두 기업 비교하기": choose two companies, then open /compare?a=<key>&b=<key>.
 (function initHomeCompare(){
  const form=document.getElementById('homeCompareForm');
  if(!form||typeof loadCompanyCatalog!=='function')return;
@@ -48,7 +48,7 @@
  form.addEventListener('submit',event=>{
   event.preventDefault();
   if(submit.disabled)return;
-  location.href=`compare.html?a=${encodeURIComponent(keys[0])}&b=${encodeURIComponent(keys[1])}`;
+  location.href=`/compare?a=${encodeURIComponent(keys[0])}&b=${encodeURIComponent(keys[1])}`;
  });
  update();
 })();

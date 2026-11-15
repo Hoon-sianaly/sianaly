@@ -173,7 +173,7 @@
   signup.hidden=session.signedIn;
   authButtons.classList.toggle('member-pending',!sessionKnown);
   const favorite=document.querySelector('.member-favorite');if(favorite){const selected=favoriteKeys.has(favorite.dataset.company);favorite.setAttribute('aria-pressed',String(selected));favorite.textContent=selected?'★ 저장됨':'☆ 즐겨찾기';if(!sessionKnown){favorite.disabled=true;favorite.dataset.waiting='1';}else if(favorite.dataset.waiting){favorite.disabled=false;delete favorite.dataset.waiting;}}
-  if(homeList){homeList.parentElement.hidden=!session.signedIn;homeList.replaceChildren();for(const key of favoriteKeys){const company=catalog.get(key);if(!company)continue;const li=node('li'),link=node('a',company.name);link.href='company.html?company='+encodeURIComponent(key);li.append(link);homeList.append(li);}const empty=homeList.parentElement.querySelector('.member-favorites-empty');empty.hidden=Boolean(favoriteKeys.size);}
+  if(homeList){homeList.parentElement.hidden=!session.signedIn;homeList.replaceChildren();for(const key of favoriteKeys){const company=catalog.get(key);if(!company)continue;const li=node('li'),link=node('a',company.name);link.href='/company?company='+encodeURIComponent(key);li.append(link);homeList.append(li);}const empty=homeList.parentElement.querySelector('.member-favorites-empty');empty.hidden=Boolean(favoriteKeys.size);}
  }
  async function changeFavorite(key){
   if(!session.signedIn){pendingCompany=key;loginDialog();return;}

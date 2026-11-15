@@ -1,4 +1,4 @@
-// Side-by-side view of two companies' official figures: compare.html?a=<key>&b=<key>.
+// Side-by-side view of two companies' official figures: /compare?a=<key>&b=<key>.
 // buildComparison() is pure (no DOM) so scripts/test-compare.cjs can run it for every company.
 const COMPARE_PAGE=(()=>{
  const esc=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -56,7 +56,7 @@ const COMPARE_PAGE=(()=>{
 
  function head(s){
   const c=s.c;
-  return `<div class="cmp-company"><span class="cmp-tag">${esc(c.ticker)} · ${esc(marketName(c.market))} · ${esc(industryOf(c.key))}</span><h2>${esc(c.name)}</h2><p>${esc(c.short||'')}</p><a href="company.html?company=${encodeURIComponent(c.key)}">기업 분석 보기 ›</a></div>`;
+  return `<div class="cmp-company"><span class="cmp-tag">${esc(c.ticker)} · ${esc(marketName(c.market))} · ${esc(industryOf(c.key))}</span><h2>${esc(c.name)}</h2><p>${esc(c.short||'')}</p><a href="/company?company=${encodeURIComponent(c.key)}">기업 분석 보기 ›</a></div>`;
  }
 
  function buildComparison(a,b){

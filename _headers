@@ -6,3 +6,8 @@
 
 https://dev.sianaly.com/*
   X-Robots-Tag: noindex
+
+# Data files: browsers may reuse them for 5 minutes instead of re-checking on every page.
+# DART updates therefore reach an open browser within about 5 minutes.
+/data/*
+  Cache-Control: public, max-age=300

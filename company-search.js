@@ -13,7 +13,7 @@
   if(state!=="ready")results.innerHTML=`<div class="company-search-status" role="status">${state==="loading"?"기업 목록을 불러오는 중입니다.":"기업 목록을 불러오지 못했습니다. 새로고침해 다시 시도해 주세요."}</div>`;
   else {
    matches=companies.filter(company=>isChosungQuery(query)?[company.name,company.alias||""].some(value=>toChosung(normalize(value)).includes(query)):[company.name,company.ticker,company.alias||""].some(value=>normalize(value).includes(query)));
-   results.innerHTML=matches.length?matches.map((company,i)=>`<a id="companySearchOption${i}" class="company-search-result" role="option" aria-selected="false" href="company.html?company=${encodeURIComponent(company.key)}"><b>${escape(company.name)}</b><span>${escape(company.ticker)} · ${escape(company.market||"KOSPI")}</span></a>`).join(""):'<div class="company-search-status" role="status">검색 결과가 없습니다.</div>';
+   results.innerHTML=matches.length?matches.map((company,i)=>`<a id="companySearchOption${i}" class="company-search-result" role="option" aria-selected="false" href="/company?company=${encodeURIComponent(company.key)}"><b>${escape(company.name)}</b><span>${escape(company.ticker)} · ${escape(company.market||"KOSPI")}</span></a>`).join(""):'<div class="company-search-status" role="status">검색 결과가 없습니다.</div>';
   }
   results.hidden=false;input.setAttribute("aria-expanded","true");
  }
@@ -34,7 +34,7 @@
   }
   if(event.key==="Enter"){
    if(results.hidden || !matches.length)return;event.preventDefault();
-   location.href=`company.html?company=${encodeURIComponent(matches[active<0?0:active].key)}`;
+   location.href=`/company?company=${encodeURIComponent(matches[active<0?0:active].key)}`;
   }
  });
  document.addEventListener("click",event=>{if(!event.target.closest(".company-search"))close();});

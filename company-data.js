@@ -12,7 +12,7 @@ async function readCompanyJSON(path) {
  let response;
  try {
   const signal = typeof AbortSignal !== 'undefined' && AbortSignal.timeout ? AbortSignal.timeout(15000) : undefined;
-  response = await fetch(`${path}?v=${COMPANY_DATA_VERSION}`, {cache:'no-cache', signal});
+  response = await fetch(`${path}?v=${COMPANY_DATA_VERSION}`, {signal}); // /data/* may be reused for 5 minutes (_headers)
  } catch {
   throw new Error("기업 데이터를 불러오지 못했습니다. 연결을 확인한 뒤 다시 시도해 주세요.");
  }
