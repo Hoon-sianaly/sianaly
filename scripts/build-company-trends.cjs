@@ -49,7 +49,7 @@ if(require.main===module){
  buildTrends().then(content=>{
   const file=path.join(root,output);
   if(process.argv.includes('--check')){
-   if(!fs.existsSync(file)||fs.readFileSync(file,'utf8')!==content){console.error(`${output} is out of date. Run: node scripts/build-company-trends.cjs`);process.exitCode=1;return;}
+   if(!fs.existsSync(file)||fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n')!==content){console.error(`${output} is out of date. Run: node scripts/build-company-trends.cjs`);process.exitCode=1;return;}
    console.log(`${output} is up to date.`);return;
   }
   fs.writeFileSync(file,content);
