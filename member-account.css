@@ -50,21 +50,3 @@ header .company-board-nav:hover{color:#195bb2}header .company-board-nav:focus-vi
 .member-auth-toggle:hover{text-decoration:underline;text-underline-offset:3px}
 .member-captcha{margin-top:18px;min-width:0;overflow:hidden}.member-captcha-status{font-size:12px;color:#73829a;line-height:1.7;margin:8px 0}.member-captcha-status:empty{display:none}
 .member-legal{min-width:0;margin:20px 0 6px;padding:16px;border:1px solid #d9e5f5;border-radius:10px;background:#f6f9fe}.member-legal legend{padding:0 5px;font-size:13px;font-weight:600;color:#355677}.member-legal-row{margin:9px 0 14px}.member-legal .member-legal-row label{display:flex;align-items:flex-start;gap:9px;font-size:13px;line-height:1.6;font-weight:400;cursor:pointer}.member-legal input[type=checkbox]{flex:none;width:17px;height:17px;min-height:0;margin:3px 0 0;padding:0;accent-color:#2563c2}.member-legal-row a{display:inline-block;margin:5px 0 0 26px;color:#245b9f;text-decoration:underline;text-underline-offset:3px;font-size:12px}.member-legal-summary{font-size:11px;line-height:1.8;color:#60718a;margin:12px 0 0}.member-legal input:focus-visible{outline:2px solid #3568e8;outline-offset:3px}
-
-/* 2026-11-15: on the home page the favorites list lives in the row under the search bar. Wide screens: the right card
-   (the popular box is on the left). Narrower screens: a slim row under the popular row. */
-.home-trio .member-favorites{max-width:none;margin:14px 0 0;padding:0;text-align:left}
-.home-trio .member-favorites-head{margin-bottom:8px}
-.home-trio .member-favorites h2{font-size:12px;font-weight:600;color:#4f6687}
-.home-trio .member-favorites-list{gap:6px;padding:0 0 2px;scrollbar-width:none}
-.home-trio .member-favorites-list::-webkit-scrollbar{display:none}
-.home-trio .member-favorites-list a{padding:7px 12px;border-color:#d5e3f6;border-radius:999px;color:#213d61;font-size:12px}
-.home-trio .member-favorites-list a:hover{border-color:#83abe2;color:#1658ae}
-.home-trio .member-favorites-empty{font-size:11px;line-height:1.6}
-@media(min-width:1140px){
- .home-trio .member-favorites{grid-column:3;display:flex;flex-direction:column;margin:0;padding:14px 12px 10px 14px;border:1px solid #d3e1f4;border-radius:14px;background:#fff;box-shadow:0 6px 20px #124c940d}
- .home-trio .member-favorites-list{flex-direction:column;gap:1px;flex:1;min-height:0;max-height:none;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin}
- .home-trio .member-favorites-list a{padding:6px 8px;border:0;border-radius:8px;background:none;font-size:13px;overflow:hidden;text-overflow:ellipsis}
- .home-trio .member-favorites-list a::before{content:"★";margin-right:7px;color:#f2b33d;font-size:12px}
- .home-trio .member-favorites-list a:hover{background:#f2f6fe}
-}

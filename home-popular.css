@@ -11,27 +11,3 @@
 .popular-status{margin:10px 0 0;color:#526b8b;font-size:12px;line-height:1.7}
 .popular-status[hidden]{display:none}
 @media(max-width:540px){.home-popular{margin-bottom:26px;padding:14px}.popular-list a{min-height:44px}}
-
-/* 2026-11-15: the box moved into the row under the search bar. Wide screens: the left card of the row under the search bar.
-   Narrower screens: one slim row of chips under the search bar. */
-.home-trio .home-popular{max-width:none;margin:14px 0 0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;text-align:left}
-.home-trio .popular-head{justify-content:flex-start;gap:8px}
-.home-trio .popular-head h2{font-size:12px;font-weight:600;color:#4f6687}
-.home-trio .popular-period{padding:2px 7px;font-size:10px}
-.home-trio .popular-list{flex-wrap:nowrap;gap:6px;margin-top:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
-.home-trio .popular-list::-webkit-scrollbar{display:none}
-.home-trio .popular-list li{flex:none}
-.home-trio .popular-list a{min-height:34px;padding:4px 11px 4px 6px;border-radius:999px;font-size:12px;white-space:nowrap}
-.home-trio .popular-rank{min-width:19px;height:19px;border-radius:50%;font-size:10px}
-.home-trio .popular-list:not(:empty)+.popular-status{display:none}
-.home-trio .popular-status{font-size:11px;margin-top:6px}
-@media(min-width:1140px){
- .home-trio .home-popular{grid-column:1;display:flex;flex-direction:column;margin:0;padding:14px 12px 10px 14px;border:1px solid #d3e1f4;border-radius:14px;background:#fff;box-shadow:0 6px 20px #124c940d}
- .home-trio .popular-head{justify-content:space-between;padding-right:2px}
- .home-trio .popular-list{flex-direction:column;gap:1px;margin-top:8px;overflow:visible;padding:0}
- .home-trio .popular-list li{flex:none;max-width:100%}
- .home-trio .popular-list a{min-height:31px;padding:4px 6px;border:0;border-radius:8px;background:none;font-size:13px;overflow:hidden}
- .home-trio .popular-list a span:last-child{overflow:hidden;text-overflow:ellipsis}
- .home-trio .popular-list a:hover{background:#f2f6fe}
- .home-trio .popular-rank{border-radius:6px}
-}
