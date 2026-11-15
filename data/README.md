@@ -46,7 +46,7 @@
 
 ## 배포
 
-현재 Cloudflare Pages의 `sianaly` 프로젝트는 `main` 브랜치를 자동 배포하며 연결된 도메인은 `dev.sianaly.com`입니다. `sianaly.com`은 운영용입니다. 운영 사이트 반영은 사용자가 별도로 요청한 경우에만 진행합니다.
+Cloudflare Pages의 `sianaly` 프로젝트는 `main` 브랜치를 **운영 사이트 `sianaly.com`**에 바로 배포합니다. 개발 사이트 `dev.sianaly.com`은 `codex/dev` 브랜치이며 Cloudflare Access 로그인이 필요합니다(2026-11-15 확인). 먼저 `codex/dev`에 올려 확인한 뒤 `main`에 반영합니다. 운영 사이트 반영은 사용자가 별도로 요청한 경우에만 진행합니다.
 
 기존 `companies.js`는 캐시된 이전 화면을 위한 호환 파일입니다. 새 데이터의 원본은 JSON 파일이며 이 호환 파일에는 새 기업을 추가하지 않습니다.
 
