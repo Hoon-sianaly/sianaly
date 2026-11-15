@@ -68,7 +68,12 @@ async function withCompanyTitle({ env, next }, url) {
   const summary = typeof record.overview?.short === 'string' && record.overview.short.trim()
     ? record.overview.short.trim() : `${name}의 사업과 실적`;
   const description = `${name}: ${summary}. 주요 사업, 연간·분기 실적과 핵심 변수를 공식 공시 출처와 함께 쉽게 정리했습니다.`;
-  const canonical = `https://sianaly.com/company?company=${encodeURIComponent(key)}`;
+  // A preferred share has no business or figures of its own (financials.companyRef points to the common
+  // stock), so search engines should treat the common stock's page as the original.
+  const canonicalKey = typeof record.financials?.companyRef === 'string' && /^[a-z0-9_-]+$/.test(record.financials.companyRef)
+    ? record.financials.companyRef : key;
+  const canonical = `https://sianaly.com/company?company=${encodeURIComponent(canonicalKey)}`;
+  const pageURL = `https://sianaly.com/company?company=${encodeURIComponent(key)}`;
   const replaceContent = value => ({ element(meta) { meta.setAttribute('content', value); } });
   return new HTMLRewriter()
     .on('head > title', {
@@ -77,7 +82,7 @@ async function withCompanyTitle({ env, next }, url) {
     .on('meta[name="description"]', replaceContent(description))
     .on('meta[property="og:title"]', replaceContent(title))
     .on('meta[property="og:description"]', replaceContent(description))
-    .on('meta[property="og:url"]', replaceContent(canonical))
+    .on('meta[property="og:url"]', replaceContent(pageURL))
     .on('#app', {
       element(app) { app.setInnerContent(companySummaryHTML(record, name), { html: true }); },
     })

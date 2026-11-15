@@ -88,7 +88,9 @@ async function main(){
    for(const script of ['validate-data','test-company-data','test-insights','test-search','test-financial-format'])run(script);
    const previous=JSON.parse(fs.readFileSync(noticePath,'utf8'));
    const notice={path:noticePath,content:JSON.stringify(buildNoticeFeed(candidate,previous,new Date().toISOString()),null,2)+'\n'};
-   const commitBase=await api(`git/commits/${base}`),tree=await api('git/trees','POST',{base_tree:commitBase.tree.sha,tree:[...candidate.files,notice].map(f=>({...f,mode:'100644',type:'blob'}))});
+   // The home list's quarter trends are derived from the company files, so publish them in the same commit.
+   const {buildTrends,output:trendsPath}=require('./build-company-trends.cjs'),trends={path:trendsPath,content:await buildTrends()};
+   const commitBase=await api(`git/commits/${base}`),tree=await api('git/trees','POST',{base_tree:commitBase.tree.sha,tree:[...candidate.files,notice,trends].map(f=>({...f,mode:'100644',type:'blob'}))});
    const commit=await api('git/commits','POST',{message:'Update verified financials from new DART disclosures',tree:tree.sha,parents:[base]});
    const current=await api('git/ref/heads/main');if(current.object.sha!==base)throw Error('Main changed before publication');
    envelope.publication={commit:commit.sha,candidate,notice};await persist();

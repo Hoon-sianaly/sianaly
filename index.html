@@ -10,8 +10,11 @@
 <meta property="og:title" content="한눈에 보는 기업 | SIANALY">
 <meta property="og:description" content="코스피·코스닥 상장 기업의 사업, 연간·분기 실적과 핵심 변수를 공식 공시 출처와 함께 쉽게 읽는 기업 정보 사이트입니다.">
 <meta property="og:url" content="https://sianaly.com/">
-<meta property="og:image" content="https://sianaly.com/favicon.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://sianaly.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SIANALY · 한눈에 보는 기업">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="192x192" href="https://sianaly.com/favicon.png">
 <script type="application/ld+json">
 {
@@ -88,11 +91,19 @@ body{background:#f3f7fd}
 .discovery-markets button[aria-pressed="true"]{color:#20539b}
 @media(max-width:540px){.hero{padding-bottom:28px}}
 @media(max-width:430px){.home-topbar .member-auth-buttons{gap:6px}}
-.board-nav{gap:5px}.board-nav-label{font-size:14px;letter-spacing:0;font-weight:700}@media(max-width:359px){.board-nav-label{display:none}}</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
+.board-nav{gap:5px}.board-nav-label{font-size:14px;letter-spacing:0;font-weight:700}@media(max-width:359px){.board-nav-label{display:none}}
+.hero .hero-intro{max-width:560px;margin:20px auto 0;font-size:17px;line-height:1.6;letter-spacing:-.4px;color:#5d6b82;word-break:keep-all}
+@media(max-width:540px){.hero .hero-intro{font-size:15px;margin-top:14px}}
+.market-panel .company-card .company-meta{grid-column:2;grid-row:2;font-size:11px;color:#98a1ae;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.market-panel .company-card .company-trend{grid-column:3;grid-row:1 / 3;align-self:center;display:block;margin:0;min-width:64px;text-align:right;line-height:1.35;font-variant-numeric:tabular-nums}
+.company-trend b{display:block;font-size:13px;font-weight:700;color:#5d6b82}.company-trend small{display:block;font-size:10px;color:#9aa3b0;white-space:nowrap}
+.company-trend.trend-up b{color:#d6453d}.company-trend.trend-down b{color:#2f6fdf}
+@media(max-width:340px){.company-trend small{display:none}}</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
 <body>
 <div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="board-nav" href="/board" aria-label="커뮤니티 자유게시판" title="커뮤니티 자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg><span class="board-nav-label">커뮤니티</span></a></header></div>
 <section class="hero">
 <h1><img class="hero-wordmark" src="sianaly-wordmark.svg?v=blue-4" alt="SIANALY" width="370" height="64"></h1>
+<p class="hero-intro">코스피·코스닥 상장 기업의 사업과 실적을 공시 출처와 함께 쉽게 읽어요</p>
 <div class="search"><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span class="search-enter" aria-hidden="true">↵</span><input id="q" aria-label="기업명 또는 종목코드 검색" placeholder="기업명 또는 종목코드 검색" autocomplete="off"><div id="r" class="results hidden"></div></div>
 </section>
 <main>
@@ -106,7 +117,8 @@ body{background:#f3f7fd}
 <footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="terms.html">이용약관</a><a href="privacy.html" class="privacy-link">개인정보 처리방침</a><a href="data-guide.html">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261103-reading-3"></script>
 <script src="company-data.js?v=20261115-parallel"></script>
-<script src="home-discovery.js?v=20261115-industries"></script>
+<script src="company-industries.js?v=20261115-related"></script>
+<script src="home-discovery.js?v=20261115-trends"></script>
 <script src="home-popular.js?v=20261115-fallback"></script>
 <script>
 let companies=[], catalogState="loading";

@@ -4,7 +4,7 @@ const script=[...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
  .filter(([,attributes])=>!/\btype\s*=\s*["']application\/ld\+json["']/i.test(attributes))
  .map(([, ,body])=>body).join('\n');
 const catalog=JSON.parse(fs.readFileSync(path.join(root,'data/company-index.json'),'utf8'));
-const discovery=fs.readFileSync(path.join(root,'home-discovery.js'),'utf8');
+const discovery=fs.readFileSync(path.join(root,'company-industries.js'),'utf8');
 const industries=vm.runInNewContext('('+discovery.slice(discovery.indexOf('const industries=')+17,discovery.indexOf('};')+1)+')');
 for(const entry of catalog.companies)assert.ok(Object.hasOwn(industries,entry.key),entry.key+' must appear in an industry category');
 function setup(failed=false){
