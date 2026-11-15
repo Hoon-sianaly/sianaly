@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>기업 비교 | SIANALY</title>
+<meta name="description" content="두 상장 기업의 매출, 영업이익과 증감을 공식 공시 수치로 나란히 비교합니다.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SIANALY">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="기업 비교 | SIANALY">
+<meta property="og:description" content="두 상장 기업의 매출, 영업이익과 증감을 공식 공시 수치로 나란히 비교합니다.">
+<meta property="og:image" content="https://sianaly.com/og-image.png?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SIANALY · 한눈에 보는 기업">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="192x192" href="https://sianaly.com/favicon.png">
+<link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#111827;font-family:Arial,"Noto Sans KR",sans-serif}
+a{color:inherit;text-decoration:none}button,input{font:inherit}
+header{height:70px;background:#fff;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;padding:0 7%}
+header .logo img{display:block;width:34px;height:auto}.home-link{font-size:14px;color:#536178}.home-link:hover{color:#2563eb}
+main{max-width:1000px;margin:auto;padding:36px 20px 70px}
+h1{font-size:30px;letter-spacing:-.8px;margin:0}.lead{color:#5b6779;font-size:14px;line-height:1.7;margin:8px 0 0}
+.cmp-pickers{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin:24px 0}
+.cmp-vs{font-size:13px;font-weight:800;color:#9aa3b0}
+.cmp-picker{position:relative}
+.cmp-picker input{width:100%;height:52px;border:1px solid #cfdbec;border-radius:10px;background:#fff;padding:0 16px;font-size:15px;outline:none}
+.cmp-picker input:focus{border-color:#7195ee;box-shadow:0 0 0 4px #3568e812}
+.cmp-chosen{display:flex;align-items:center;gap:10px;min-height:52px;padding:8px 10px 8px 16px;border:1px solid #cfdbec;border-radius:10px;background:#fff}
+.cmp-chosen[hidden],.cmp-picker input[hidden],.cmp-results[hidden]{display:none}
+.cmp-chosen b{font-size:16px}.cmp-chosen span{font-size:12px;color:#8b95a5}.cmp-chosen button{margin-left:auto;padding:7px 12px;border:1px solid #dfe5ed;border-radius:7px;background:#fff;color:#536178;font-size:12px;cursor:pointer}
+.cmp-chosen button:hover{border-color:#93b0f1;color:#2563eb}
+.cmp-results{position:absolute;left:0;right:0;top:58px;z-index:10;background:#fff;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 12px 30px #17243b14;max-height:320px;overflow:auto}
+.cmp-results button{display:block;width:100%;text-align:left;padding:12px 16px;border:0;border-bottom:1px solid #f0f2f6;background:#fff;cursor:pointer}.cmp-results button:hover,.cmp-results button:focus-visible{background:#f4f7fd}
+.cmp-results b{display:block;font-size:14px}.cmp-results span{display:block;font-size:12px;color:#8b95a5;margin-top:3px}.cmp-results p{margin:0;padding:14px 16px;font-size:13px;color:#8b95a5}
+#compareApp{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:24px 26px}
+.cmp-empty{margin:0;color:#5b6779;font-size:14px;line-height:1.7}
+.cmp-suggest-title{font-size:12px;color:#8b95a5;margin:18px 0 8px}.cmp-suggest{display:flex;flex-wrap:wrap;gap:8px}
+.cmp-suggest button{padding:9px 14px;border:1px solid #dfe5ed;border-radius:999px;background:#fff;font-size:13px;color:#334155;cursor:pointer}.cmp-suggest button:hover{border-color:#93b0f1;color:#2563eb}
+.cmp-row{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,1fr);gap:0 20px;padding:12px 0;border-bottom:1px solid #f0f2f6;align-items:start}
+.cmp-label{font-size:13px;color:#5b6779;font-weight:600;padding-top:2px}.cmp-label small{display:block;font-weight:400;font-size:11px;color:#9aa3b0;margin-top:3px}
+.cmp-cell{min-width:0;font-size:14px;color:#334155}.cmp-cell strong{font-size:17px;color:#111827;font-variant-numeric:tabular-nums}
+.cmp-metric{display:block;font-size:11px;color:#9aa3b0;margin-top:2px}
+.cmp-bar{display:block;height:6px;margin-top:8px;border-radius:3px;background:#eef2f8;overflow:hidden}.cmp-bar i{display:block;height:100%;border-radius:3px;background:#5b8def}
+.cmp-change{font-weight:700;font-variant-numeric:tabular-nums}.cmp-up{color:#d6334a}.cmp-down{color:#2f6fdc}.cmp-flat{color:#5a6b85}.cmp-none{color:#9aa3b0;font-weight:400;font-size:13px}
+.cmp-heads{border-bottom:2px solid #e5e7eb;padding-top:0}
+.cmp-company .cmp-tag{font-size:11px;color:#627ba7;background:#f1f5fc;border-radius:4px;padding:3px 7px;display:inline-block}
+.cmp-company h2{font-size:22px;letter-spacing:-.5px;margin:8px 0 6px;overflow-wrap:anywhere}.cmp-company p{font-size:13px;color:#5b6779;line-height:1.6;margin:0 0 8px}
+.cmp-company a{font-size:13px;color:#2563eb}
+.cmp-section{font-size:15px;margin:26px 0 4px;color:#111827}
+.cmp-notes{margin:22px 0 0;padding:14px 16px 14px 32px;background:#f8fafc;border-radius:8px;font-size:12px;color:#5b6779;line-height:1.8}
+.cmp-actions{display:flex;gap:8px;margin-top:18px}.cmp-actions button{padding:9px 14px;border:1px solid #dfe5ed;border-radius:7px;background:#fff;color:#536178;font-size:12px;cursor:pointer}.cmp-actions button:hover{border-color:#93b0f1;color:#2563eb}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #2563eb;outline-offset:2px}
+@media(max-width:650px){
+ header{padding:0 20px;height:62px}main{padding:26px 16px 56px}h1{font-size:24px}
+ .cmp-pickers{grid-template-columns:1fr;gap:8px}.cmp-vs{text-align:center}
+ #compareApp{padding:18px 16px}
+ .cmp-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px 14px}.cmp-label{grid-column:1 / -1}
+ .cmp-heads .cmp-label{display:none}.cmp-company h2{font-size:18px}.cmp-company p{display:none}.cmp-cell strong{font-size:15px}
+}
+</style>
+</head>
+<body>
+<header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="home-link" href="index.html">기업 목록으로</a></header>
+<main>
+<h1>기업 비교</h1>
+<p class="lead">두 기업의 매출과 영업이익을 공식 공시 수치로 나란히 봅니다.</p>
+<div class="cmp-pickers">
+ <div class="cmp-picker" data-compare-slot="0"><div class="cmp-chosen" hidden></div><input type="search" placeholder="첫 번째 기업 · 기업명 또는 종목코드" aria-label="첫 번째 기업 검색" aria-expanded="false" autocomplete="off"><div class="cmp-results" role="listbox" aria-label="첫 번째 기업 검색 결과" hidden></div></div>
+ <span class="cmp-vs" aria-hidden="true">VS</span>
+ <div class="cmp-picker" data-compare-slot="1"><div class="cmp-chosen" hidden></div><input type="search" placeholder="두 번째 기업 · 기업명 또는 종목코드" aria-label="두 번째 기업 검색" aria-expanded="false" autocomplete="off"><div class="cmp-results" role="listbox" aria-label="두 번째 기업 검색 결과" hidden></div></div>
+</div>
+<section id="compareApp" aria-live="polite"><p class="cmp-empty">기업 목록을 불러오는 중입니다.</p></section>
+</main>
+<footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="terms.html">이용약관</a><a href="privacy.html" class="privacy-link">개인정보 처리방침</a><a href="data-guide.html">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
+<script src="company-reading.js?v=20261115-insights"></script>
+<script src="company-data.js?v=20261115-parallel"></script>
+<script src="company-industries.js?v=20261115-related"></script>
+<script src="compare.js?v=20261115-compare"></script>
+</body>
+</html>
