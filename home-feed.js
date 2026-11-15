@@ -1,4 +1,4 @@
-// Home: 공시 요약 (latest DART updates, data/dart-updates.json) and 커뮤니티 (newest public board posts).
+// Home: 공시 요약 (latest DART updates, data/dart-updates.json) and 자유게시판 (newest public board posts).
 (function initHomeFeed(){
  'use strict';
  const esc=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -34,7 +34,7 @@
   }).catch(()=>{body.innerHTML='<p class="feed-empty">공시 요약을 불러오지 못했어요. <a href="/board#board-notices">공시 업데이트 보기</a></p>';});
  }
 
- // 커뮤니티: newest public posts. ?public=1 makes the server serve the anonymous list even for a signed-in visitor.
+ // 자유게시판: newest public posts. ?public=1 makes the server serve the anonymous list even for a signed-in visitor.
  const community=document.getElementById('homeCommunity');
  if(community){
   const body=community.querySelector('.feed-body');
@@ -44,6 +44,6 @@
    const posts=(Array.isArray(data.posts)?data.posts:[]).filter(p=>Number.isSafeInteger(p.id)&&typeof p.title==='string').slice(0,5);
    if(!posts.length){body.innerHTML='<p class="feed-empty">아직 글이 없어요. <a href="/board?write=1">첫 글 남기기</a></p>';return;}
    body.innerHTML=`<ul class="feed-list">${posts.map(p=>`<li><a href="/board?post=${p.id}"><span class="feed-main"><b>${esc(p.title)}</b><small>${esc(p.author||'회원')} · ${esc(ago(p.created_at))}${p.views?` · 조회 ${Number(p.views).toLocaleString('ko-KR')}`:''}</small></span>${p.recommendations?`<span class="feed-side">추천 ${Number(p.recommendations).toLocaleString('ko-KR')}</span>`:''}</a></li>`).join('')}</ul>`;
-  }).catch(()=>{body.innerHTML='<p class="feed-empty">커뮤니티 글을 불러오지 못했어요. <a href="/board">커뮤니티로 가기</a></p>';});
+  }).catch(()=>{body.innerHTML='<p class="feed-empty">자유게시판 글을 불러오지 못했어요. <a href="/board">자유게시판으로 가기</a></p>';});
  }
 })();
