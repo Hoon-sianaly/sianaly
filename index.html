@@ -30,6 +30,7 @@
 <meta name="naver-site-verification" content="11891f301a05b0ca85f6d6f8a9a95cbba4f084f0">
 <link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
 <link rel="stylesheet" href="home-popular.css?v=20261105-blue-home">
+<link rel="stylesheet" href="home-compare.css?v=20261115-compare">
 <style>
 :root{color-scheme:light;--ink:#17243b;--muted:#7b8595;--line:#e7ebf0;--blue:#3568e8}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans KR",sans-serif;color:var(--ink);background:#f7f8fa}a{color:inherit;text-decoration:none}button,input{font:inherit}
@@ -105,6 +106,7 @@ body{background:#f3f7fd}
 </section>
 <main>
 <section class="home-popular" id="homePopular" aria-labelledby="popularTitle"><div class="popular-head"><h2 id="popularTitle">지금 많이 보는 기업</h2><span class="popular-period">최근 24시간</span></div><ol class="popular-list" aria-label="인기 기업 TOP 5"></ol><p class="popular-status" role="status">인기 기업을 불러오는 중</p></section>
+<section class="home-compare" aria-labelledby="homeCompareTitle"><div class="hc-head"><h2 id="homeCompareTitle">두 기업 비교하기</h2><p>매출과 영업이익을 나란히 봐요</p></div><form class="hc-form" id="homeCompareForm" autocomplete="off"><div class="hc-field"><input type="text" placeholder="첫 번째 기업" aria-label="비교할 첫 번째 기업" role="combobox" aria-autocomplete="list" aria-expanded="false"><button type="button" class="hc-clear" aria-label="첫 번째 기업 지우기">×</button><div class="hc-results" role="listbox" hidden></div></div><span class="hc-vs" aria-hidden="true">VS</span><div class="hc-field"><input type="text" placeholder="두 번째 기업" aria-label="비교할 두 번째 기업" role="combobox" aria-autocomplete="list" aria-expanded="false"><button type="button" class="hc-clear" aria-label="두 번째 기업 지우기">×</button><div class="hc-results" role="listbox" hidden></div></div><button type="submit" class="hc-submit" disabled>비교하기</button></form><div class="hc-examples"><span>예시</span><a href="compare.html?a=samsung&amp;b=hynix">삼성전자<b>vs</b>SK하이닉스</a><a href="compare.html?a=hyundai&amp;b=kia">현대차<b>vs</b>기아</a><a href="compare.html?a=naver&amp;b=kakao">NAVER<b>vs</b>카카오</a><a href="compare.html?a=kb&amp;b=shinhan">KB금융<b>vs</b>신한지주</a></div></section>
 <section class="section" id="homeRecent" hidden><div class="discovery-head"><h2>최근 본 기업</h2></div><div id="homeRecentList" class="recent-home-list"><p class="discovery-empty">기업분석을 열면 여기에 최근 본 기업이 표시됩니다.</p></div></section>
 <section class="section" id="companyDiscovery" aria-labelledby="discoveryTitle"><div class="discovery-head market-overview-head"><h2 id="discoveryTitle">기업 목록</h2><div class="discovery-markets" role="group" aria-label="시장 선택"><button type="button" data-discovery-market="KOSPI" aria-pressed="true" aria-controls="discoveryKospi">코스피</button><button type="button" data-discovery-market="KOSDAQ" aria-pressed="false" aria-controls="discoveryKosdaq">코스닥</button></div></div><div class="market-panels">
 <section class="market-panel" id="discoveryKospi" data-market="KOSPI" aria-labelledby="kospiTitle"><div class="market-panel-head"><div><span class="market-eyebrow">KOSPI</span><h3 id="kospiTitle" tabindex="-1">코스피</h3></div><div class="market-total">분석 가능한 종목<strong data-market-total>불러오는 중</strong></div></div><div class="industry-filters" role="group" aria-label="코스피 업종 필터"></div><p class="market-results-label" role="status" aria-live="polite"></p><div class="company-grid" aria-label="코스피 분석 가능한 기업 목록"><p class="discovery-empty" role="status">기업 목록을 불러오는 중입니다.</p></div><button class="market-more" type="button" hidden>더 보기</button><p class="ranking-caption"></p></section>
@@ -117,6 +119,7 @@ body{background:#f3f7fd}
 <script src="company-industries.js?v=20261115-related"></script>
 <script src="home-discovery.js?v=20261115-trends"></script>
 <script src="home-popular.js?v=20261115-fallback"></script>
+<script src="home-compare.js?v=20261115-compare"></script>
 <script>
 let companies=[], catalogState="loading";
 const q=document.getElementById("q"),r=document.getElementById("r");

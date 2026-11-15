@@ -1,0 +1,37 @@
+/* Home: pick two companies and open compare.html. Sits under the popular box at the same width. */
+.home-compare{max-width:640px;margin:0 auto 36px;padding:20px;border:1px solid #dbe6f5;border-radius:16px;background:#fff;box-shadow:0 4px 14px #124c940b}
+.hc-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.hc-head h2{margin:0;color:#173d73;font-size:15px;line-height:1.5;letter-spacing:-.3px}
+.hc-head p{margin:0;color:#7487a3;font-size:12px}
+.hc-form{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;margin-top:14px}
+.hc-field{position:relative;min-width:0}
+.hc-field input{width:100%;height:48px;padding:0 38px 0 14px;border:1px solid #d5e1f1;border-radius:11px;background:#f8fbff;color:#17243b;font:inherit;font-size:14px;outline:none;transition:border-color .15s,background .15s,box-shadow .15s}
+.hc-field input::placeholder{color:#9aa7ba}
+.hc-field input:focus{border-color:#7da2e6;background:#fff;box-shadow:0 0 0 4px #3568e812}
+.hc-field.is-chosen input{border-color:#9fbdf0;background:#eef4ff;color:#1a4f9c;font-weight:700}
+.hc-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);display:none;width:26px;height:26px;border:0;border-radius:7px;background:transparent;color:#7a8ba5;font-size:16px;line-height:1;cursor:pointer}
+.hc-clear:hover{background:#dde8fb;color:#1a4f9c}
+.hc-field.is-chosen .hc-clear{display:block}
+.hc-vs{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#173d73;color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px}
+.hc-results{position:absolute;left:0;right:0;top:54px;z-index:20;max-height:300px;overflow:auto;background:#fff;border:1px solid #e1e8f2;border-radius:12px;box-shadow:0 14px 34px #17243b18}
+.hc-results[hidden]{display:none}
+.hc-results button{display:flex;align-items:baseline;justify-content:space-between;gap:10px;width:100%;padding:11px 14px;border:0;border-bottom:1px solid #f0f3f8;background:#fff;color:#17243b;font:inherit;font-size:14px;text-align:left;cursor:pointer}
+.hc-results button:last-child{border-bottom:0}
+.hc-results button:hover,.hc-results button.is-active{background:#f2f6fe}
+.hc-results small{flex:none;color:#8b97a9;font-size:11px}
+.hc-results p{margin:0;padding:13px 14px;color:#8b97a9;font-size:13px}
+.hc-submit{grid-column:1 / -1;height:48px;border:0;border-radius:11px;background:#195bb2;color:#fff;font:inherit;font-size:15px;font-weight:700;cursor:pointer;transition:background .15s,opacity .15s}
+.hc-submit:hover:not(:disabled){background:#134a93}
+.hc-submit:disabled{background:#e9eff8;color:#9aabc6;cursor:default}
+.hc-examples{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:14px}
+.hc-examples span{margin-right:2px;color:#8b97a9;font-size:12px}
+.hc-examples a{padding:6px 10px;border:1px solid #e1e8f2;border-radius:999px;color:#43597a;font-size:12px;white-space:nowrap}
+.hc-examples a:hover{border-color:#83abe2;color:#1658ae;background:#f5f9ff}
+.hc-examples b{color:#9aa7ba;font-weight:400;margin:0 3px}
+@media(max-width:540px){
+ .home-compare{margin-bottom:26px;padding:16px 14px}
+ .hc-head{flex-direction:column;gap:2px}
+ .hc-form{grid-template-columns:minmax(0,1fr);gap:8px}
+ .hc-vs{justify-self:center;width:28px;height:28px;font-size:10px;margin:-2px 0}
+ .hc-field input{font-size:16px}
+}
