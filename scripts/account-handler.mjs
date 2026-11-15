@@ -69,7 +69,10 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    const name=cookie.trim().split('=',1)[0];
    return name===cookieName||name.startsWith(cookieName+'.');
   });
-  if(boardRead&&!mine&&!moderation&&(!ready||!hasSession)){
+  // ?public=1 (the home page's newest-posts card) always gets the anonymous public list, even with a session,
+  // so it never reaches the signed-in path or writes operator audit records.
+  const publicList=boardRead&&url.searchParams.get('public')==='1'&&!url.searchParams.has('post');
+  if(boardRead&&!mine&&!moderation&&(!ready||!hasSession||publicList)){
    try{return await serveBoard();}
    catch{return respond({code:'board_unavailable'},503);}
   }

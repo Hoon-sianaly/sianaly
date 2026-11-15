@@ -34,13 +34,13 @@
   }).catch(()=>{body.innerHTML='<p class="feed-empty">공시 요약을 불러오지 못했어요. <a href="/board#board-notices">공시 업데이트 보기</a></p>';});
  }
 
- // 커뮤니티: newest public posts. Read anonymously so a signed-in operator's visit is not logged as a board read.
+ // 커뮤니티: newest public posts. ?public=1 makes the server serve the anonymous list even for a signed-in visitor.
  const community=document.getElementById('homeCommunity');
  if(community){
   const body=community.querySelector('.feed-body');
   const ago=ms=>{const minutes=Math.floor((Date.now()-ms)/60000);if(minutes<1)return '방금';if(minutes<60)return minutes+'분 전';if(minutes<1440)return Math.floor(minutes/60)+'시간 전';return monthDay(ms);};
   const timeout=typeof AbortSignal!=='undefined'&&AbortSignal.timeout?AbortSignal.timeout(10000):undefined;
-  fetch('/api/account/board',{credentials:'omit',cache:'no-store',signal:timeout}).then(response=>{if(!response.ok)throw Error('board');return response.json();}).then(data=>{
+  fetch('/api/account/board?public=1',{credentials:'same-origin',cache:'no-store',signal:timeout}).then(response=>{if(!response.ok)throw Error('board');return response.json();}).then(data=>{
    const posts=(Array.isArray(data.posts)?data.posts:[]).filter(p=>Number.isSafeInteger(p.id)&&typeof p.title==='string').slice(0,5);
    if(!posts.length){body.innerHTML='<p class="feed-empty">아직 글이 없어요. <a href="/board?write=1">첫 글 남기기</a></p>';return;}
    body.innerHTML=`<ul class="feed-list">${posts.map(p=>`<li><a href="/board?post=${p.id}"><span class="feed-main"><b>${esc(p.title)}</b><small>${esc(p.author||'회원')} · ${esc(ago(p.created_at))}${p.views?` · 조회 ${Number(p.views).toLocaleString('ko-KR')}`:''}</small></span>${p.recommendations?`<span class="feed-side">추천 ${Number(p.recommendations).toLocaleString('ko-KR')}</span>`:''}</a></li>`).join('')}</ul>`;
