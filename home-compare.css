@@ -35,3 +35,21 @@
  .hc-vs{justify-self:center;width:28px;height:28px;font-size:10px;margin:-2px 0}
  .hc-field input{font-size:16px}
 }
+
+/* The row under the search bar: popular (left) | compare (centre, under the search) | favorites (right).
+   Columns are fixed so the compare box stays centred even when signed out and favorites are hidden.
+   Narrower screens stack popular, favorites, then compare. */
+.home-trio{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;max-width:640px;margin:14px auto 0;text-align:left}
+.home-trio .home-popular{order:1;margin:0}
+.home-trio .member-favorites{order:2}
+.home-trio .home-compare{order:3;max-width:none;margin:10px 0 0}
+@media(min-width:1140px){
+ .home-trio{grid-template-columns:212px 640px 212px;justify-content:center;align-items:stretch;gap:24px;max-width:none;margin-top:28px}
+ .home-trio .home-popular,.home-trio .member-favorites{order:0;grid-row:1}
+ .home-trio .home-compare{order:0;grid-column:2;grid-row:1;margin:0}
+}
+/* The row now sits inside .hero, whose big ".hero p" text style must not reach these small notes. */
+.home-trio .hc-head p{margin:0;font-size:12px;letter-spacing:0;color:#7487a3}
+.home-trio .member-favorites-empty{margin:0;letter-spacing:0;color:#929cab}
+.home-trio .popular-status{letter-spacing:0;color:#526b8b}
+.home-trio .member-favorites-list:empty{flex:0}
