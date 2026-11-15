@@ -113,6 +113,9 @@ assert.deepEqual(nicknameUpdate,{data:{sianaly_nickname:'별명'}});assert.equal
 user.user_metadata={sianaly_nickname:'별명'};assert.equal((await (await request('session')).json()).nickname,'별명');
 assert.equal((await request('nickname',{method:'POST',body:{nickname:''}})).status,400);
 assert.deepEqual(await (await request('favorites')).json(),{companies:[{key:'samsung',createdAt:'today'}]});
+// One round trip on page load: session?favorites=1 carries the same favorites as GET favorites.
+const combined=await (await request('session?favorites=1')).json();assert.equal(combined.signedIn,true);assert.deepEqual(combined.favorites,[{key:'samsung',createdAt:'today'}]);assert.equal(adminCalls,0);
+assert.equal('favorites' in await (await request('session')).json(),false,'plain session stays unchanged');
 assert.equal((await request('favorites',{method:'POST',body:{company:'samsung',user_id:'victim'}})).status,400);
 assert.equal((await request('favorites',{method:'POST',body:{company:'samsung'}})).status,200);assert.equal(insert.row.user_id,user.id);assert.equal(insert.settings.ignoreDuplicates,true);
 await request('favorites',{method:'DELETE',body:{company:'samsung'}});assert.equal(removed.id,user.id);assert.equal(removed.key,'samsung');assert.equal(adminCalls,0);

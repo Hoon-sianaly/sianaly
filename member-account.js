@@ -1,7 +1,7 @@
 (function(){
  'use strict';
  let config,session={signedIn:false},favoriteKeys=new Set(),catalog=new Map(),busy=false,pendingCompany=null;
- let nav,signup,dialog,toast,toastTimer,homeList;const wiredFavorites=new WeakSet();
+ let nav,signup,dialog,toast,toastTimer,homeList,authButtons,sessionKnown=false,sessionRequest=null;const wiredFavorites=new WeakSet();
  let recoveryToken=new URLSearchParams(location.hash.slice(1)).get('password-reset')||'',confirmationToken=new URLSearchParams(location.hash.slice(1)).get('email-confirm')||'';
  if(recoveryToken||confirmationToken)history.replaceState(null,'',location.pathname+location.search);
  const api=async(action,body,method=body?'POST':'GET')=>{
@@ -171,7 +171,8 @@
  function render(){
   nav.textContent=session.signedIn?'마이페이지':'로그인';
   signup.hidden=session.signedIn;
-  const favorite=document.querySelector('.member-favorite');if(favorite){const selected=favoriteKeys.has(favorite.dataset.company);favorite.setAttribute('aria-pressed',String(selected));favorite.textContent=selected?'★ 저장됨':'☆ 즐겨찾기';}
+  authButtons.classList.toggle('member-pending',!sessionKnown);
+  const favorite=document.querySelector('.member-favorite');if(favorite){const selected=favoriteKeys.has(favorite.dataset.company);favorite.setAttribute('aria-pressed',String(selected));favorite.textContent=selected?'★ 저장됨':'☆ 즐겨찾기';if(!sessionKnown){favorite.disabled=true;favorite.dataset.waiting='1';}else if(favorite.dataset.waiting){favorite.disabled=false;delete favorite.dataset.waiting;}}
   if(homeList){homeList.parentElement.hidden=!session.signedIn;homeList.replaceChildren();for(const key of favoriteKeys){const company=catalog.get(key);if(!company)continue;const li=node('li'),link=node('a',company.name);link.href='company.html?company='+encodeURIComponent(key);li.append(link);homeList.append(li);}const empty=homeList.parentElement.querySelector('.member-favorites-empty');empty.hidden=Boolean(favoriteKeys.size);}
  }
  async function changeFavorite(key){
@@ -230,9 +231,10 @@
   const error=node('p','','member-error');error.setAttribute('role','alert');confirm.onclick=async()=>{confirm.disabled=true;try{await api('delete',{confirmation:input.value});session={signedIn:false};favoriteKeys.clear();render();dialog.close();publishChange();say('회원 탈퇴가 완료됐어요.');}catch(e){if(e.code==='reauth_required'){loginDialog();return;}error.textContent=errorText(e);confirm.disabled=false;}};
   deletion.append(input,confirm,error);dialog.append(deletion,info());
  }
- async function reloadSession(){
-  try{session=await api('session');favoriteKeys.clear();if(session.signedIn){const data=await api('favorites');favoriteKeys=new Set(data.companies.map(c=>c.key).filter(key=>catalog.has(key)));}render();}
-  catch(e){session={signedIn:false};favoriteKeys.clear();render();}
+ async function reloadSession(request=api('session?favorites=1')){
+  try{const data=await request;const list=Array.isArray(data.favorites)?data.favorites:data.signedIn?(await api('favorites')).companies:[];delete data.favorites;session=data;favoriteKeys=new Set(list.map(c=>c.key).filter(key=>catalog.has(key)));}
+  catch(e){session={signedIn:false};favoriteKeys.clear();}
+  sessionKnown=true;render();
  }
  function mountCompany(){
   const key=new URLSearchParams(location.search).get('company'),hero=document.querySelector('#app .hero');
@@ -242,12 +244,13 @@
   wiredFavorites.add(button);button.onclick=()=>changeFavorite(key);render();
  }
  async function init(){
-  try{config=await api('config');if(!config.ready||(!config.providers.length&&!config.email))return;const data=await loadCompanyCatalog();catalog=new Map(data.companies.map(c=>[c.key,c]));}catch{return;}
+  sessionRequest=api('session?favorites=1');sessionRequest.catch(()=>{});
+  try{const [loadedConfig,data]=await Promise.all([api('config'),loadCompanyCatalog()]);config=loadedConfig;if(!config.ready||(!config.providers.length&&!config.email))return;catalog=new Map(data.companies.map(c=>[c.key,c]));}catch{return;}
   const header=document.querySelector('header');if(!header)return;
   nav=node('button','로그인','member-nav-button');nav.type='button';nav.onclick=accountDialog;
   signup=node('button','회원가입','member-nav-button member-signup');signup.type='button';
   signup.onclick=()=>{pendingCompany=null;loginDialog(true);};
-  const authButtons=node('div',undefined,'member-auth-buttons');
+  authButtons=node('div',undefined,'member-auth-buttons member-pending');
   const companyCommunity=header.querySelector('.company-board-nav');if(companyCommunity)authButtons.append(companyCommunity);
   authButtons.append(nav,signup);
   const actions=node('div',undefined,'member-header-actions'),existing=header.lastElementChild;header.dataset.memberPage=document.querySelector('.company-search')?'company':'home';if(existing&&!existing.classList.contains('logo'))actions.append(existing);actions.append(authButtons);header.append(actions);
@@ -255,7 +258,7 @@
   toast=node('div',undefined,'member-toast');toast.hidden=true;toast.setAttribute('role','status');document.body.append(toast);
   if(!document.getElementById('app')){const area=node('section',undefined,'member-favorites');area.id='memberFavorites';area.hidden=true;const head=node('div',undefined,'member-favorites-head');head.append(node('h2','내 즐겨찾기'));homeList=node('ul',undefined,'member-favorites-list');const empty=node('p','기업 페이지에서 ☆ 즐겨찾기를 눌러 저장할 수 있어요.','member-favorites-empty');area.append(head,homeList,empty);/* Home: a chip row under the search bar, after 지금 많이 보는 기업. */const chips=document.getElementById('heroChips');if(chips)chips.append(area);else document.querySelector('main')?.before(area);}
   mountCompany();const app=document.getElementById('app');if(app)new MutationObserver(mountCompany).observe(app,{childList:true,subtree:true});
-  await reloadSession();
+  await reloadSession(sessionRequest);
   if(confirmationToken)emailConfirmationDialog();
   else if(recoveryToken)recoveryLinkDialog();
   else if(session.passwordReset)passwordUpdateDialog();
@@ -263,8 +266,8 @@
   else if(session.signedIn){let pending;try{pending=JSON.parse(sessionStorage.getItem('sianaly.pendingFavorite')||'null');sessionStorage.removeItem('sianaly.pendingFavorite');}catch{}if(pending?.createdAt>Date.now()-600000&&catalog.has(pending.key)&&!favoriteKeys.has(pending.key))pendingCompany=pending.key;if(!session.nickname)nicknameDialog();else if(pendingCompany){const key=pendingCompany;pendingCompany=null;await changeFavorite(key);}}
   const query=new URLSearchParams(location.search);if(query.has('accountError')){say('로그인을 완료하지 못했어요. 다시 시도해 주세요.');query.delete('accountError');history.replaceState(null,'',location.pathname+(query.size?'?'+query:'')+location.hash);}
   if(location.hash==='#memberFavorites'&&homeList&&!homeList.parentElement.hidden)homeList.parentElement.scrollIntoView({block:'center'});
-  window.addEventListener('storage',event=>{if(event.key==='sianaly.member.changed'){favoriteKeys.clear();session={signedIn:false};render();reloadSession();}});
-  window.addEventListener('pageshow',event=>{if(event.persisted){favoriteKeys.clear();session={signedIn:false};render();reloadSession();}});
+  window.addEventListener('storage',event=>{if(event.key==='sianaly.member.changed')reloadSession();});
+  window.addEventListener('pageshow',event=>{if(event.persisted)reloadSession();});
  }
  init();
 })();

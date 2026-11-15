@@ -208,7 +208,14 @@ export function createAccountHandler({companyKeys,serverClient=createServerClien
    if(!['logout','delete','password-update'].includes(action))await confirmPendingPolicy(user);
    const proof=cookies.find(cookie=>cookie.name===cookieName+'-recovery')?.value;
    const passwordReset=Boolean(user&&await validRecoveryProof(proof,env.SUPABASE_SECRET_KEY,user.id,clock()));
-   if(action==='session')return respond({signedIn:Boolean(user),provider:user?({...providerNames,email:'이메일',google:'Google'})[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null,...(user?{legalRequired:!await legalStore.has(env.POPULAR_DB,user.id)}:{}),...(user?.app_metadata?.sianaly_role==='admin'?{isAdmin:true}:{}),...(passwordReset?{passwordReset:true}:{})});
+   if(action==='session'){
+    // ?favorites=1 also returns the member's favorites (read with the user's own client, like GET favorites),
+    // so a page restores sign-in and favorites in one round trip instead of two.
+    const withFavorites=Boolean(user)&&url.searchParams.get('favorites')==='1';
+    const [legalAccepted,favoriteRows]=await Promise.all([user?legalStore.has(env.POPULAR_DB,user.id):null,withFavorites?client.from('sianaly_favorites').select('company_key,created_at').order('created_at',{ascending:false}).limit(keys.size):null]);
+    const favorites=withFavorites&&!favoriteRows.error?{favorites:(favoriteRows.data||[]).filter(row=>keys.has(row.company_key)).map(row=>({key:row.company_key,createdAt:row.created_at}))}:{};
+    return respond({signedIn:Boolean(user),provider:user?({...providerNames,email:'이메일',google:'Google'})[user.app_metadata?.provider]||'소셜 계정':null,nickname:user?memberNickname(user.user_metadata?.sianaly_nickname)||'':null,...(user?{legalRequired:!legalAccepted}:{}),...(user?.app_metadata?.sianaly_role==='admin'?{isAdmin:true}:{}),...(passwordReset?{passwordReset:true}:{}),...favorites});
+   }
    if(action==='logout'){
     await client.auth.signOut({scope:'local'});clearCookies();return respond({ok:true});
    }

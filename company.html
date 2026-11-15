@@ -113,7 +113,7 @@ header .logo img{display:block;width:clamp(30px, 7vw, 34px);height:auto}
 .related-card b{display:block;font-size:14px;color:#111827;overflow-wrap:anywhere}.related-card span{display:block;font-size:12px;color:#9ca3af;margin-top:4px}
 .related-more{display:inline-block;margin-top:14px;font-size:13px;color:#2563eb}
 @media(max-width:650px){.related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-</style><link rel="stylesheet" href="member-account.css?v=20261108-member-legal"></head>
+</style><link rel="stylesheet" href="member-account.css?v=20261115-session"></head>
 <body>
 <header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><div class="company-search"><input id="companySearch" type="search" placeholder="다른 기업 검색 · 기업명 또는 종목코드" aria-label="다른 기업 검색" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="companySearchResults" autocomplete="off"><div id="companySearchResults" class="company-search-results" role="listbox" aria-label="기업 검색 결과" hidden></div></div><a class="board-nav company-board-nav" href="/board" aria-label="커뮤니티 자유게시판" title="커뮤니티 자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg><span class="board-nav-label">커뮤니티</span></a></header>
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 기록 끄고 지우기" title="기록 끄고 지우기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 기록 켜기" title="최근 본 기업 기록 켜기">←</button></main>
@@ -350,4 +350,4 @@ else{
  app.innerHTML='<section class="empty" role="alert">기업 정보를 불러오지 못했습니다.<br><br><button type="button" id="retryCompany">다시 시도</button></section>';
  document.getElementById("retryCompany").addEventListener("click",()=>location.reload());
 });
-</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261115-controls" defer></script><script src="company-reports.js?v=20261109-privacy" defer></script></body></html>
+</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261115-session" defer></script><script src="company-reports.js?v=20261109-privacy" defer></script></body></html>

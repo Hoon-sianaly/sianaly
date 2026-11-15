@@ -98,7 +98,7 @@ body{background:#f3f7fd}
 .market-panel .company-card .company-trend{grid-column:3;grid-row:1 / 3;align-self:center;display:block;margin:0;min-width:64px;text-align:right;line-height:1.35;font-variant-numeric:tabular-nums}
 .company-trend b{display:block;font-size:13px;font-weight:700;color:#5d6b82}.company-trend small{display:block;font-size:10px;color:#9aa3b0;white-space:nowrap}
 .company-trend.trend-up b{color:#d6453d}.company-trend.trend-down b{color:#2f6fdf}
-@media(max-width:340px){.company-trend small{display:none}}</style><link rel="stylesheet" href="member-account.css?v=20261115-layout"></head>
+@media(max-width:340px){.company-trend small{display:none}}</style><link rel="stylesheet" href="member-account.css?v=20261115-session"></head>
 <body>
 <div class="home-topbar"><header><a class="logo" href="index.html"><img src="sianaly-symbol.svg?v=20261105-sa-logo" alt="SIANALY 홈" width="34" height="34"></a><a class="board-nav" href="/board" aria-label="커뮤니티 자유게시판" title="커뮤니티 자유게시판"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-7l-5 3v-3a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M7.5 11h.01m4.49 0h.01m4.49 0h.01" stroke-width="2.4"/></svg><span class="board-nav-label">커뮤니티</span></a></header></div>
 <section class="hero">
@@ -138,4 +138,4 @@ q.addEventListener("input",e=>render(e.target.value));
 q.addEventListener("keydown",e=>{if(e.key==="Escape"){r.className="results hidden";return}if(e.key!=="Enter")return;let s=q.value.trim().toLowerCase();if(!s)return;let c=companies.find(x=>matches(x,s));if(c){e.preventDefault();go(c)}});
 r.addEventListener("click",e=>{let x=e.target.closest(".result[data-key]");if(!x)return;let c=companies.find(c=>c.key===x.dataset.key);if(c)go(c)});
 document.addEventListener("click",e=>{if(!e.target.closest(".search"))r.className="results hidden"});
-</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261115-layout" defer></script></body></html>
+</script><script src="member-captcha.js?v=20261106-public-prep" defer></script><script src="member-account.js?v=20261115-session" defer></script></body></html>
