@@ -22,6 +22,13 @@ async function readCompanyJSON(path) {
  return data;
 }
 
+// Quarter trends for the home list and 공시 요약: one request shared by both.
+let companyTrendsPromise;
+function loadCompanyTrends() {
+ if (!companyTrendsPromise) companyTrendsPromise = readCompanyJSON("data/company-trends.json").then(data => data.companies).catch(() => ({}));
+ return companyTrendsPromise;
+}
+
 function loadCompanyCatalog() {
  if (!companyCatalogPromise) companyCatalogPromise = readCompanyJSON("data/company-index.json");
  return companyCatalogPromise;

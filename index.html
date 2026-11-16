@@ -28,7 +28,7 @@
 <link rel="canonical" href="https://sianaly.com/">
 <meta name="google-site-verification" content="PJsmGjF6KkfiNDHHVWpTMsqMBcoB8_FhFPXKt23sdBI">
 <meta name="naver-site-verification" content="11891f301a05b0ca85f6d6f8a9a95cbba4f084f0">
-<link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
+<!-- Start company data with the page instead of after the scripts (must match COMPANY_DATA_VERSION in company-data.js). --><link rel="preload" href="/data/company-index.json?v=20261106-financial-review" as="fetch" crossorigin><link rel="preload" href="/data/company-trends.json?v=20261106-financial-review" as="fetch" crossorigin><link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
 <link rel="stylesheet" href="home-popular.css?v=20261115-layout">
 <link rel="stylesheet" href="home-compare.css?v=20261115-layout">
 <link rel="stylesheet" href="home-layout.css?v=20261115-layout">
@@ -116,12 +116,12 @@ body{background:#f3f7fd}
 </main>
 <footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="/terms">이용약관</a><a href="/privacy" class="privacy-link">개인정보 처리방침</a><a href="/data-guide">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261103-reading-3"></script>
-<script src="company-data.js?v=20261115-links"></script>
+<script src="company-data.js?v=20261116-preload"></script>
 <script src="company-industries.js?v=20261115-related"></script>
-<script src="home-discovery.js?v=20261115-links"></script>
+<script src="home-discovery.js?v=20261116-preload"></script>
 <script src="home-popular.js?v=20261115-fallback"></script>
 <script src="home-compare.js?v=20261115-links"></script>
-<script src="home-feed.js?v=20261116-board"></script>
+<script src="home-feed.js?v=20261116-preload"></script>
 <script>
 let companies=[], catalogState="loading";
 const q=document.getElementById("q"),r=document.getElementById("r");

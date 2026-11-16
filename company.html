@@ -15,7 +15,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="SIANALY · 한눈에 보는 기업">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
+<!-- Start company data with the page instead of after the scripts (must match COMPANY_DATA_VERSION in company-data.js). --><link rel="preload" href="/data/company-index.json?v=20261106-financial-review" as="fetch" crossorigin><link rel="stylesheet" href="site-contact.css?v=20261108-member-legal">
 <link rel="stylesheet" href="company-reading.css?v=20261103-reading-1">
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#111827;font-family:Arial,"Noto Sans KR",sans-serif}
@@ -119,7 +119,7 @@ header .logo img{display:block;width:clamp(30px, 7vw, 34px);height:auto}
 <main><div class="layout" id="layout"><div id="app" class="content"></div><aside class="side" id="recentSide"><div class="recent" id="recentBox"><div class="recent-head"><h3>최근 본 기업</h3><button class="recent-toggle" id="recentToggle" type="button" aria-label="최근 본 기업 기록 끄고 지우기" title="기록 끄고 지우기">→</button></div><div class="recent-sub">이 브라우저에서 본 기업</div><div id="recentList"></div></div></aside></div><button class="side-open hidden" id="sideOpen" type="button" aria-label="최근 본 기업 기록 켜기" title="최근 본 기업 기록 켜기">←</button></main>
 <footer class="site-contact"><div class="footer-brand">SIANALY</div><p class="investment-notice">SIANALY의 기업 정보와 분석은 참고용 자료이며 특정 금융상품의 매수·매도나 수익을 보장하지 않습니다. 투자 판단과 그 결과에 대한 책임은 이용자 본인에게 있습니다. 자료에는 오류나 갱신 지연이 있을 수 있으므로 원문 공시와 최신 자료를 확인해 주세요.</p><div class="site-contact-links"><a href="/terms">이용약관</a><a href="/privacy" class="privacy-link">개인정보 처리방침</a><a href="/data-guide">자료 출처·투자 유의사항</a><span>문의 및 제안</span><a href="mailto:sianaly11@gmail.com">sianaly11@gmail.com</a></div></footer>
 <script src="company-reading.js?v=20261115-insights"></script>
-<script src="company-data.js?v=20261115-links"></script>
+<script src="company-data.js?v=20261116-preload"></script>
 <script src="company-search.js?v=20261115-links"></script>
 <script src="financial-periods.js?v=20261103-review97-1"></script>
 <script src="financial-tabs.js?v=20261115-latest"></script>

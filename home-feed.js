@@ -11,7 +11,7 @@
  if(notices&&typeof loadCompanyCatalog==='function'){
   const body=notices.querySelector('.feed-body'),badge=notices.querySelector('.feed-badge');
   const feed=fetch('/data/dart-updates.json').then(response=>{if(!response.ok)throw Error('feed');return response.json();});
-  const trends=typeof readCompanyJSON==='function'?readCompanyJSON('data/company-trends.json').then(data=>data.companies).catch(()=>({})):Promise.resolve({});
+  const trends=typeof loadCompanyTrends==='function'?loadCompanyTrends():Promise.resolve({});
   Promise.all([feed,loadCompanyCatalog(),trends]).then(([data,catalog,trendByKey])=>{
    const updates=Array.isArray(data.updates)?data.updates:[],latest=updates[0];
    if(!latest){body.innerHTML='<p class="feed-empty">최근 반영된 공시가 없어요.</p>';return;}

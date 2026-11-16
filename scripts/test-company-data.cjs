@@ -152,3 +152,13 @@ function context(key, transform, failed = false) {
  assert.ok(loss.nodes.app.innerHTML.includes("영업손실은 0선 아래"));
  console.log(`Passed: all ${catalog.companies.length} pages, sector metrics, shared financials, future periods, invalid keys, load failure and circular references.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
+
+// Preloaded data must use the same version string as company-data.js, or browsers download it twice.
+{
+ const version = fs.readFileSync(path.join(root, "company-data.js"), "utf8").match(/COMPANY_DATA_VERSION = "([^"]+)"/)[1];
+ for (const page of ["index.html", "company.html", "compare.html"]) {
+  const hrefs = [...fs.readFileSync(path.join(root, page), "utf8").matchAll(/<link rel="preload" href="([^"]+)"/g)].map(m => m[1]);
+  assert.ok(hrefs.length, page + " preloads company data");
+  for (const href of hrefs) assert.ok(href.endsWith("?v=" + version), page + " preload " + href + " must match COMPANY_DATA_VERSION");
+ }
+}
