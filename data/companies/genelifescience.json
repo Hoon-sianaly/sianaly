@@ -155,7 +155,7 @@
           "dart-2026-q1"
         ],
         "dart": {
-          "receipt": "20260515003080",
+          "receipt": "20261116000794",
           "rawKRW": {
             "sales": "2580978673",
             "op": "-2343245720",
@@ -203,12 +203,41 @@
             ]
           }
         }
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.00178199232,
+        "op": -0.005414413256,
+        "sourceIds": [
+          "dart-2026-q3"
+        ],
+        "dart": {
+          "receipt": "20261116000791",
+          "rawKRW": {
+            "sales": "1781992320",
+            "op": "-5414413256",
+            "net": "-15407607540"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
-      "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.13"
+      "scope": "Validated financial statements and explicitly labelled preliminary earnings",
+      "updatedAt": "2026.11.16"
     }
   },
   "sources": [
@@ -222,9 +251,9 @@
     {
       "id": "dart-2026-q1",
       "label": "2026년 1분기 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515003080",
-      "published": "2026.05.15",
-      "verifiedAt": "2026.10.13"
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000794",
+      "published": "2026.11.16",
+      "verifiedAt": "2026.11.16"
     },
     {
       "id": "dart-2026-q2",
@@ -253,6 +282,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004064",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.13"
+    },
+    {
+      "id": "dart-2026-q3",
+      "label": "2026년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000791",
+      "published": "2026.11.16",
+      "verifiedAt": "2026.11.16"
     }
   ],
   "sectionSourceIds": {

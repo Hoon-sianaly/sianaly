@@ -233,17 +233,46 @@
       {
         "year": 2026,
         "quarter": 2,
-        "sales": 17.476099254,
-        "op": 2.268242166,
+        "sales": 0.017476099254,
+        "op": 0.002268242166,
         "sourceIds": [
           "dart-2026-q2"
         ],
         "dart": {
-          "receipt": "20260814002366",
+          "receipt": "20261116000854",
           "rawKRW": {
-            "sales": "17476099254000",
-            "op": "2268242166000",
-            "net": "1918475270000"
+            "sales": "17476099254",
+            "op": "2268242166",
+            "net": "1918475270"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.021341777899,
+        "op": 0.002117213694,
+        "sourceIds": [
+          "dart-2026-q3"
+        ],
+        "dart": {
+          "receipt": "20261116000873",
+          "rawKRW": {
+            "sales": "21341777899",
+            "op": "2117213694",
+            "net": "1671883519"
           },
           "periodBasis": "three-month",
           "accounts": {
@@ -262,8 +291,8 @@
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
-      "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.16"
+      "scope": "Validated financial statements and explicitly labelled preliminary earnings",
+      "updatedAt": "2026.11.16"
     }
   },
   "sources": [
@@ -284,9 +313,9 @@
     {
       "id": "dart-2026-q2",
       "label": "2026년 2분기 별도 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002366",
-      "published": "2026.08.14",
-      "verifiedAt": "2026.10.16"
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000854",
+      "published": "2026.11.16",
+      "verifiedAt": "2026.11.16"
     },
     {
       "id": "dart-2024-annual",
@@ -322,6 +351,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002366",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.16"
+    },
+    {
+      "id": "dart-2026-q3",
+      "label": "2026년 3분기 별도 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000873",
+      "published": "2026.11.16",
+      "verifiedAt": "2026.11.16"
     }
   ],
   "sectionSourceIds": {
