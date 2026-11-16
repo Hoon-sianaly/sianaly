@@ -1,3 +1,5 @@
+import { companyBundle, companyBundleScript } from '../scripts/company-bundle.mjs';
+
 const escapeAttribute = value => String(value)
   .replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -74,6 +76,15 @@ async function withCompanyTitle({ env, next }, url) {
     ? record.financials.companyRef : key;
   const canonical = `https://sianaly.com/company?company=${encodeURIComponent(canonicalKey)}`;
   const pageURL = `https://sianaly.com/company?company=${encodeURIComponent(key)}`;
+  // Send the page's company data inside the HTML (one round trip instead of several). If anything goes
+  // wrong the page still works: company-data.js falls back to fetching the files itself.
+  let bundle = null;
+  try {
+    bundle = await companyBundle(async path => {
+      const response = await env.ASSETS.fetch(new URL(path, url));
+      return response.ok && response.headers.get('Content-Type')?.includes('json') ? response.json() : null;
+    }, key, record);
+  } catch { bundle = null; }
   const replaceContent = value => ({ element(meta) { meta.setAttribute('content', value); } });
   return new HTMLRewriter()
     .on('head > title', {
@@ -87,7 +98,10 @@ async function withCompanyTitle({ env, next }, url) {
       element(app) { app.setInnerContent(companySummaryHTML(record, name), { html: true }); },
     })
     .on('head', {
-      element(head) { head.append(`<link rel="canonical" href="${escapeAttribute(canonical)}">`, { html: true }); },
+      element(head) {
+        head.append(`<link rel="canonical" href="${escapeAttribute(canonical)}">`, { html: true });
+        if (bundle) head.append(companyBundleScript(bundle), { html: true });
+      },
     })
     .transform(page);
 }

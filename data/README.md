@@ -215,3 +215,7 @@ E1·PI첨단소재·대상·솔루스첨단소재·광전자의 재작성 비교
 ### 홈 목록의 분기 증감 (company-trends.json)
 
 `company-trends.json`은 기업별 최근 분기 이익을 전년 같은 분기와 비교한 값으로, 기업 페이지의 ‘최근 분기’ 표시와 같은 방식으로 계산합니다. DART 자동 업데이트가 실적을 반영할 때 같은 커밋에 다시 만들어 함께 올립니다. 기업 파일이나 과거 실적을 직접 고친 경우에는 `node scripts/build-company-trends.cjs`로 다시 만들고, `--check`로 최신 여부를 확인합니다.
+
+### 기업별 과거 실적·검토 조각 (data/extras)
+
+`data/extras/<기업키>.json`은 `data/history/*.json`(묶음)과 `financial-period-review.json`에서 그 기업 부분만 잘라 둔 파일입니다. 기업 페이지는 330KB짜리 묶음 대신 이 2~5KB 파일을 받고, 실제 사이트에서는 서버가 회사 파일과 함께 페이지 안에 넣어 보냅니다(`scripts/company-bundle.mjs`, `functions/_middleware.js`). 원본은 묶음과 검토 파일이며 DART 자동 업데이트는 이 파일들을 바꾸지 않습니다. 묶음이나 검토 파일을 직접 고쳤다면 `node scripts/build-company-extras.cjs`로 다시 만들고 `--check`로 확인합니다.
