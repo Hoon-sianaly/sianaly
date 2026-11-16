@@ -5,10 +5,20 @@
  const dayKey=value=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));
  const monthDay=value=>new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',month:'long',day:'numeric'}).format(new Date(value));
  const metricNames={sales:'매출',op:'영업이익',net:'순이익'};
+ // These cards sit below the search and popular companies, so load them once they come near the screen
+ // or the page has finished loading, whichever is first. The top of the page gets the connection first.
+ function whenNeeded(element,load){
+  let done=false;const run=()=>{if(done)return;done=true;observer?.disconnect();load();};
+  const observer=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))run();},{rootMargin:'200px'}):null;
+  if(!observer){run();return;}
+  observer.observe(element);
+  const afterLoad=()=>setTimeout(run,typeof requestIdleCallback==='function'?0:300);
+  if(document.readyState==='complete')afterLoad();else addEventListener('load',afterLoad,{once:true});
+ }
 
  // 공시 요약: every update published on the latest update's day (KST), largest companies first.
  const notices=document.getElementById('homeNotices');
- if(notices&&typeof loadCompanyCatalog==='function'){
+ if(notices&&typeof loadCompanyCatalog==='function')whenNeeded(notices,()=>{
   const body=notices.querySelector('.feed-body'),badge=notices.querySelector('.feed-badge');
   const feed=fetch('/data/dart-updates.json').then(response=>{if(!response.ok)throw Error('feed');return response.json();});
   const trends=typeof loadCompanyTrends==='function'?loadCompanyTrends():Promise.resolve({});
@@ -32,11 +42,11 @@
    body.innerHTML=`<p class="feed-sub"><b>${companies.length.toLocaleString('ko-KR')}개 기업</b>의 실적이 ${today?'오늘':esc(monthDay(latest.publishedAt))} 공시로 새로 반영됐어요${preliminary?` · 잠정실적 ${preliminary.toLocaleString('ko-KR')}곳`:''}</p>`+
     `<ul class="feed-list">${companies.slice(0,5).map(c=>`<li><a href="/company?company=${encodeURIComponent(c.key)}"><span class="feed-main"><b>${esc(c.name)}</b><small>${esc(period(c.periods[0]))}</small></span>${side(c)}</a></li>`).join('')}</ul>`;
   }).catch(()=>{body.innerHTML='<p class="feed-empty">공시 요약을 불러오지 못했어요. <a href="/board#board-notices">공시 업데이트 보기</a></p>';});
- }
+ });
 
  // 자유게시판: newest public posts. ?public=1 makes the server serve the anonymous list even for a signed-in visitor.
  const community=document.getElementById('homeCommunity');
- if(community){
+ if(community)whenNeeded(community,()=>{
   const body=community.querySelector('.feed-body');
   const ago=ms=>{const minutes=Math.floor((Date.now()-ms)/60000);if(minutes<1)return '방금';if(minutes<60)return minutes+'분 전';if(minutes<1440)return Math.floor(minutes/60)+'시간 전';return monthDay(ms);};
   const timeout=typeof AbortSignal!=='undefined'&&AbortSignal.timeout?AbortSignal.timeout(10000):undefined;
@@ -45,5 +55,5 @@
    if(!posts.length){body.innerHTML='<p class="feed-empty">아직 글이 없어요. <a href="/board?write=1">첫 글 남기기</a></p>';return;}
    body.innerHTML=`<ul class="feed-list">${posts.map(p=>`<li><a href="/board?post=${p.id}"><span class="feed-main"><b>${esc(p.title)}</b><small>${esc(p.author||'회원')} · ${esc(ago(p.created_at))}${p.views?` · 조회 ${Number(p.views).toLocaleString('ko-KR')}`:''}</small></span>${p.recommendations?`<span class="feed-side">추천 ${Number(p.recommendations).toLocaleString('ko-KR')}</span>`:''}</a></li>`).join('')}</ul>`;
   }).catch(()=>{body.innerHTML='<p class="feed-empty">자유게시판 글을 불러오지 못했어요. <a href="/board">자유게시판으로 가기</a></p>';});
- }
+ });
 })();
