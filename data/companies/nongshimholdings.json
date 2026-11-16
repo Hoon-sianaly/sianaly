@@ -66,7 +66,7 @@
           "dart-2024-annual"
         ],
         "dart": {
-          "receipt": "20250814002854",
+          "receipt": "20261116001519",
           "rawKRW": {
             "sales": "798272530395",
             "op": "86638898915",
@@ -95,7 +95,7 @@
           "dart-2025-annual"
         ],
         "dart": {
-          "receipt": "20260318001210",
+          "receipt": "20261116001583",
           "rawKRW": {
             "sales": "858816121290",
             "op": "81116780194",
@@ -203,21 +203,50 @@
             ]
           }
         }
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.267452320187,
+        "op": 0.017998330912,
+        "sourceIds": [
+          "dart-2026-q3"
+        ],
+        "dart": {
+          "receipt": "20261116001654",
+          "rawKRW": {
+            "sales": "267452320187",
+            "op": "17998330912",
+            "net": "12460183633"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
-      "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.09"
+      "scope": "Validated financial statements and explicitly labelled preliminary earnings",
+      "updatedAt": "2026.11.17"
     }
   },
   "sources": [
     {
       "id": "dart-2025-annual",
       "label": "2025년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001210",
-      "published": "2026.03.18",
-      "verifiedAt": "2026.10.09"
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001583",
+      "published": "2026.11.16",
+      "verifiedAt": "2026.11.17"
     },
     {
       "id": "dart-2026-q1",
@@ -236,9 +265,9 @@
     {
       "id": "dart-2024-annual",
       "label": "2024년 연간 연결 재무제표 · DART",
-      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002854",
-      "published": "2025.08.14",
-      "verifiedAt": "2026.10.09"
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001519",
+      "published": "2026.11.16",
+      "verifiedAt": "2026.11.17"
     },
     {
       "id": "dart-2025-q2",
@@ -253,6 +282,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003032",
       "published": "2026.08.14",
       "verifiedAt": "2026.10.09"
+    },
+    {
+      "id": "dart-2026-q3",
+      "label": "2026년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001654",
+      "published": "2026.11.16",
+      "verifiedAt": "2026.11.17"
     }
   ],
   "sectionSourceIds": {
