@@ -8,7 +8,7 @@ export async function onRequestGet({ request, env }) {
     const { companies } = await indexResponse.json();
     // Only final URLs: /dart-notices now redirects to the board, and search consoles flag redirects in sitemaps.
     // Preferred shares (keys containing 'pref') repeat the common stock's figures and point their canonical there.
-    const paths = ['/', '/board', '/data-guide', '/terms', '/privacy',
+    const paths = ['/', '/companies', '/board', '/data-guide', '/terms', '/privacy',
       ...companies.filter(({ key }) => !key.includes('pref')).map(({ key }) =>
       `/company?company=${encodeURIComponent(key)}`,
     )];

@@ -22,3 +22,6 @@ function setup(failed=false){
  const failure=setup(true);failure.nodes.q.value='삼성';await new Promise(setImmediate);assert.ok(failure.nodes.r.innerHTML.includes('불러오지 못했습니다'));
  console.log(`Search passed: ${catalog.companies.length} tickers, Korean/English aliases, whitespace, Enter, empty and unavailable catalog.`);
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+// companies.html lists every company page as a plain link; it must match the catalog and industry map.
+require('node:child_process').execFileSync(process.execPath,[path.join(root,'scripts/build-company-directory.cjs'),'--check'],{stdio:'inherit'});

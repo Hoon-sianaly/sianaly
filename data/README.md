@@ -219,3 +219,7 @@ E1·PI첨단소재·대상·솔루스첨단소재·광전자의 재작성 비교
 ### 기업별 과거 실적·검토 조각 (data/extras)
 
 `data/extras/<기업키>.json`은 `data/history/*.json`(묶음)과 `financial-period-review.json`에서 그 기업 부분만 잘라 둔 파일입니다. 기업 페이지는 330KB짜리 묶음 대신 이 2~5KB 파일을 받고, 실제 사이트에서는 서버가 회사 파일과 함께 페이지 안에 넣어 보냅니다(`scripts/company-bundle.mjs`, `functions/_middleware.js`). 원본은 묶음과 검토 파일이며 DART 자동 업데이트는 이 파일들을 바꾸지 않습니다. 묶음이나 검토 파일을 직접 고쳤다면 `node scripts/build-company-extras.cjs`로 다시 만들고 `--check`로 확인합니다.
+
+### 전체 기업 목록 페이지 (companies.html)
+
+`companies.html`(/companies)은 기업 페이지 링크를 시장·업종별로 모은 페이지로, `node scripts/build-company-directory.cjs`가 `company-index.json`과 `company-industries.js`에서 만듭니다. 첫 화면 목록은 프로그램이 그려서 검색 로봇이 링크를 바로 보지 못하므로, 이 페이지가 모든 기업 페이지로 가는 일반 링크를 제공합니다. 기업을 추가하거나 업종을 바꾸면 다시 만들어야 하며, `test-search.cjs`가 최신 여부를 검사합니다.
