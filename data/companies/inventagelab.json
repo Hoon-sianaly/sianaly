@@ -203,12 +203,41 @@
             ]
           }
         }
+      },
+      {
+        "year": 2026,
+        "quarter": 3,
+        "sales": 0.000436923112,
+        "op": -0.010252275497,
+        "sourceIds": [
+          "dart-2026-q3"
+        ],
+        "dart": {
+          "receipt": "20261127002002",
+          "rawKRW": {
+            "sales": "436923112",
+            "op": "-10252275497",
+            "net": "-7524294819"
+          },
+          "periodBasis": "three-month",
+          "accounts": {
+            "sales": [
+              "ifrs-full_Revenue"
+            ],
+            "op": [
+              "dart_OperatingIncomeLoss"
+            ],
+            "net": [
+              "ifrs-full_ProfitLoss"
+            ]
+          }
+        }
       }
     ],
     "automaticUpdate": {
       "provider": "OpenDART",
-      "scope": "Validated financial statement metrics",
-      "updatedAt": "2026.10.14"
+      "scope": "Validated financial statements and explicitly labelled preliminary earnings",
+      "updatedAt": "2026.11.28"
     }
   },
   "sources": [
@@ -253,6 +282,13 @@
       "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260826000836",
       "published": "2026.08.26",
       "verifiedAt": "2026.10.14"
+    },
+    {
+      "id": "dart-2026-q3",
+      "label": "2026년 3분기 연결 재무제표 · DART",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261127002002",
+      "published": "2026.11.27",
+      "verifiedAt": "2026.11.28"
     }
   ],
   "sectionSourceIds": {
