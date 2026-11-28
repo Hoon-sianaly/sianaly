@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Makes one slot of daily posts: one Instagram card news (jpg set) and one Naver blog draft (같은 그림 + 설명 글).
-//   morning (06:30 KST): 랜덤으로 고른 기업 하나
-//   evening (18:30 KST): 공시로 새로 반영된 실적 하나
-// Usage: node scripts/social/make-posts.cjs [--slot morning|evening|auto] [--out output/social] [--state state.json] [--date YYYY-MM-DD] [--preview]
+//   morning (06:30 KST), evening (18:30 KST): 둘 다 랜덤으로 고른 기업 하나 (최근 90일에 올린 기업은 빼고 골라요)
+//   --topic earnings 를 주면 공시로 새로 반영된 실적 하나를 골라요 (지금은 안 써요)
+// Usage: node scripts/social/make-posts.cjs [--slot morning|evening|auto] [--topic random|earnings] [--out output/social] [--state state.json] [--date YYYY-MM-DD] [--preview]
 'use strict';
 const fs = require('node:fs'), path = require('node:path');
 const L = require('./lib.cjs');
@@ -159,7 +159,7 @@ async function render(pick, dir) {
     if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'skip=true\n');
     return;
   }
-  let pick = slot === 'morning' ? await pickRandom() : await pickEarnings();
+  let pick = args.topic === 'earnings' ? await pickEarnings() : await pickRandom();
   if (!pick) { console.log('새로 반영된 실적이 없어 랜덤 기업으로 대신 만들어요.'); pick = await pickRandom(); }
   const id = `${date}-${slot}`, dir = path.join(outRoot, id);
   fs.rmSync(dir, {recursive: true, force: true});
