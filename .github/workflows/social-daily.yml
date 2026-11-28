@@ -1,5 +1,5 @@
 name: Daily social posts
-# 매일 06:30 / 18:30 (한국 시간)에 인스타 카드뉴스 1개 + 네이버 블로그 글 1개씩, 하루 총 4개.
+# 매일 06:30 / 18:30 (한국 시간)에 인스타 카드뉴스 1개씩, 하루 총 2개. (네이버 블로그 초안은 지금 꺼 둠)
 #   아침: 랜덤으로 고른 기업 하나 / 저녁: 공시로 새로 반영된 실적 하나
 #   인스타는 자동으로 올라가요. 네이버 블로그는 자동 글쓰기 기능이 없어서(2020년 종료),
 #   다 만든 초안을 GitHub 알림(이슈)으로 보내고 발행 버튼만 사람이 눌러요.
@@ -18,6 +18,10 @@ on:
         default: auto
       upload:
         description: '검토를 통과하면 실제로 올릴까요? (끄면 만들고 검토만 해요)'
+        type: boolean
+        default: false
+      force:
+        description: '이미 올린 순서라도 다시 만들어 올릴까요? (인스타 다시 시도할 때만 켜기)'
         type: boolean
         default: false
 permissions:
@@ -51,7 +55,7 @@ jobs:
 
       - name: Make one card news and one blog draft
         id: make
-        run: node scripts/social/make-posts.cjs --slot ${{ inputs.slot || 'auto' }} --out output/social --state social-store/state.json
+        run: node scripts/social/make-posts.cjs --slot ${{ inputs.slot || 'auto' }} --out output/social --state social-store/state.json ${{ inputs.force == true && '--force' || '' }}
 
       - name: Review twice (내용 검토 + 파일 검토)
         if: steps.make.outputs.skip != 'true'
@@ -83,8 +87,9 @@ jobs:
           find social-store/posts -mindepth 1 -maxdepth 1 -type d | sort | head -n -20 | xargs -r rm -rf
           bash scripts/social/push-store.sh "Card images for ${{ steps.make.outputs.id }}"
 
+      # 블로그 초안은 지금은 쉬어요. 다시 켜려면 저장소 Settings → Variables에 BLOG_DRAFTS = on 을 넣으면 돼요.
       - name: Send the Naver blog draft (GitHub notification)
-        if: steps.make.outputs.skip != 'true' && env.UPLOAD == 'true'
+        if: steps.make.outputs.skip != 'true' && env.UPLOAD == 'true' && vars.BLOG_DRAFTS == 'on'
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
