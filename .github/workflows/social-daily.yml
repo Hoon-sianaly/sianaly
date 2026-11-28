@@ -1,0 +1,112 @@
+name: Daily social posts
+# 매일 06:30 / 18:30 (한국 시간)에 인스타 카드뉴스 1개 + 네이버 블로그 글 1개씩, 하루 총 4개.
+#   아침: 랜덤으로 고른 기업 하나 / 저녁: 공시로 새로 반영된 실적 하나
+#   인스타는 자동으로 올라가요. 네이버 블로그는 자동 글쓰기 기능이 없어서(2020년 종료),
+#   다 만든 초안을 GitHub 알림(이슈)으로 보내고 발행 버튼만 사람이 눌러요.
+# GitHub 예약 실행은 몇 분~수십 분 늦게 시작할 때가 있어서 40분 일찍 만들기 시작하고, 정해진 시각까지 기다렸다가 올려요.
+# 자세한 설명과 키 넣는 방법: scripts/SOCIAL-AUTOPOST.md
+on:
+  schedule:
+    - cron: '50 20 * * *' # 05:50 KST 시작 → 06:30 올리기
+    - cron: '50 8 * * *'  # 17:50 KST 시작 → 18:30 올리기
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: '어느 순서를 만들까요? (auto = 지금 시각 기준)'
+        type: choice
+        options: [auto, morning, evening]
+        default: auto
+      upload:
+        description: '검토를 통과하면 실제로 올릴까요? (끄면 만들고 검토만 해요)'
+        type: boolean
+        default: false
+permissions:
+  contents: write # 올린 기록과 카드 그림을 social-posts 브랜치에 저장
+  issues: write   # 네이버 블로그 초안을 알림(이슈)으로 보내기
+concurrency:
+  group: social-daily-posts
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      UPLOAD: ${{ github.event_name == 'schedule' || inputs.upload == true }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Korean fonts and ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk ffmpeg > /dev/null
+          google-chrome --version && ffmpeg -version | head -1
+
+      - name: Load posting history
+        run: |
+          mkdir -p social-store
+          if git fetch --depth=1 origin social-posts 2>/dev/null; then git archive FETCH_HEAD | tar -x -C social-store; fi
+          ls social-store
+
+      - name: Make one card news and one blog draft
+        id: make
+        run: node scripts/social/make-posts.cjs --slot ${{ inputs.slot || 'auto' }} --out output/social --state social-store/state.json
+
+      - name: Review twice (내용 검토 + 파일 검토)
+        if: steps.make.outputs.skip != 'true'
+        run: REVIEW_VERBOSE=1 node scripts/social/review-posts.cjs "${{ steps.make.outputs.dir }}"
+
+      - name: Keep the files for checking (7 days)
+        if: always() && steps.make.outputs.dir != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-${{ steps.make.outputs.id }}
+          path: |
+            ${{ steps.make.outputs.dir }}/*.jpg
+            ${{ steps.make.outputs.dir }}/blog.*
+            ${{ steps.make.outputs.dir }}/*.json
+          retention-days: 7
+
+      - name: Wait until 06:30 / 18:30 KST
+        if: steps.make.outputs.skip != 'true' && env.UPLOAD == 'true'
+        run: node scripts/social/finish.cjs wait "${{ steps.make.outputs.dir }}"
+
+      - name: Put card images on the public social-posts branch (Instagram and the blog draft read them there)
+        if: steps.make.outputs.skip != 'true' && env.UPLOAD == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "social-store/posts/${{ steps.make.outputs.id }}"
+          cp "${{ steps.make.outputs.dir }}"/*.jpg "social-store/posts/${{ steps.make.outputs.id }}/"
+          # 최근 10일(20번) 것만 남겨요. 블로그 초안 알림 속 그림도 이 기간 동안 보여요.
+          find social-store/posts -mindepth 1 -maxdepth 1 -type d | sort | head -n -20 | xargs -r rm -rf
+          bash scripts/social/push-store.sh "Card images for ${{ steps.make.outputs.id }}"
+
+      - name: Send the Naver blog draft (GitHub notification)
+        if: steps.make.outputs.skip != 'true' && env.UPLOAD == 'true'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/social-posts/posts/${{ steps.make.outputs.id }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/social/post-blog-draft.cjs "${{ steps.make.outputs.dir }}"
+
+      - name: Upload to Instagram (card news)
+        if: steps.make.outputs.skip != 'true' && env.UPLOAD == 'true'
+        continue-on-error: true
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/social-posts/posts/${{ steps.make.outputs.id }}
+        run: node scripts/social/upload-instagram.cjs "${{ steps.make.outputs.dir }}"
+
+      - name: Save what was posted
+        if: always() && steps.make.outputs.dir != '' && steps.make.outputs.skip != 'true' && env.UPLOAD == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/social/finish.cjs record "${{ steps.make.outputs.dir }}" social-store/state.json
+          bash scripts/social/push-store.sh "Posted ${{ steps.make.outputs.id }}"
+          # 하나라도 실패했으면 작업을 '실패'로 표시해서 GitHub가 메일로 알려 주게 해요.
+          node -e "const fs=require('fs'),d=process.argv[1];const bad=['blog-draft.json','upload-instagram.json'].map(n=>{try{return JSON.parse(fs.readFileSync(d+'/'+n))}catch{return null}}).filter(r=>r&&!r.ok);if(bad.length){console.error(bad.map(r=>r.message).join('\n'));process.exit(1)}" "${{ steps.make.outputs.dir }}"
